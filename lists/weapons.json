@@ -1,10 +1,31 @@
 {
   "weapons": [
-    {
+     {
+      "name": "Twin Accelerator Macrocannon",
+      "modes": [
+        {
+          "firepower": "2x AP4+/AT2+",
+          "range": 75,
+         "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+      {
       "name": "Assault Cannon",
       "modes": [
         {
           "firepower": "AP5+/AT5+",
+          "range": 30
+        }
+      ]
+    },
+          {
+      "name": "Storm Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
           "range": 30
         }
       ]
@@ -18,28 +39,72 @@
         }
       ]
     },
+        {
+      "name": "Battle Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT4+",
+          "range": 75
+        }
+      ]
+    },
+    {
+      "name": "Kratos Battle Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+/AT3+",
+          "range": 75
+        }
+      ]
+    },
+        {
+      "name": "Baneblade Battle Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+/AT3+",
+          "range": 90
+        }
+      ]
+    },
+            {
+      "name": "Vanquisher Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT3+",
+          "range": 75
+        }
+      ]
+    },
+
+        {
+      "name": "Predator Autocannon",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT6+",
+          "range": 45
+        }
+      ]
+    },
+            {
+      "name": "Twin Accelerator Autocannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT6+/AA6+",
+          "range": 60
+        }
+      ]
+    },
     {
       "name": "Bolt Pistols",
       "modes": [
         {
-          "firepower": "Small Arms"
+          "firepower": "AP5+",
+          "range": 15
         }
       ]
     },
-    {
-      "name": "Demolisher",
-      "modes": [
         {
-          "firepower": "AP3+/AT4+",
-          "range": 30,
-          "specialRules": [
-            "IC"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Heavy Bolter",
+      "name": "Bolters",
       "modes": [
         {
           "firepower": "AP5+",
@@ -47,32 +112,145 @@
         }
       ]
     },
-    {
-      "name": "Hunter-Killer",
+        {
+      "name": "Combi-Bolters",
       "modes": [
         {
-          "firepower": "AP4+/AA4+",
-          "range": 60
+          "firepower": "2x AP5+",
+          "range": 30
+        }
+      ]
+    },
+        {
+      "name": "Heavy Bolter",
+      "modes": [
+        {
+          "firepower": "AP4+",
+          "range": 30
+        }
+      ]
+    },
+        {
+      "name": "Twin Heavy Bolter",
+      "modes": [
+        {
+          "firepower": "AP3+",
+          "range": 30
+        }
+      ]
+    },
+            {
+      "name": "Vulcan Mega Bolter",
+      "modes": [
+        {
+          "firepower": "4x AP3+/AT5+",
+          "range": 45
+        }
+      ]
+    },
+                {
+      "name": "Paired Vulcan Mega Bolters",
+      "modes": [
+        {
+          "firepower": "8x AP3+/AT5+",
+          "range": 45
         }
       ]
     },
     {
-      "name": "Hurricane Bolter",
+      "name": "Demolisher Cannon",
       "modes": [
         {
-          "firepower": "Small Arms",
+          "firepower": "AP3+/AT4+",
+          "range": 30,
           "specialRules": [
-            "EA(+1)"
+            "IC",
+            "Disrupt"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Flamer",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 15,
+          "specialRules": [
+            "IC"
           ]
         }
       ]
     },
     {
+      "name": "Heavy Flamer",
+      "modes": [
+        {
+          "firepower": "AP4+",
+          "range": 15,
+          "specialRules": [
+            "IC",
+            "Disrupt"
+          ]
+        }
+      ]
+    },
+                {
+      "name": "Scout Inferno Gun",
+      "modes": [
+        {
+          "firepower": "3 BP",
+          "range": 30,
+          "specialRules": [
+            "IC"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Hyperios Missiles",
+      "modes": [
+        {
+          "firepower": "AT6+/AA5+",
+          "range": 60
+        }
+      ]
+    },
+        {
       "name": "Lascannon",
       "modes": [
         {
-          "firepower": "AT5+",
+          "firepower": "AP6+/AT5+",
           "range": 45
+        }
+      ]
+    },
+        {
+      "name": "Twin Lascannon",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
+          "range": 45
+        }
+      ]
+    },
+            {
+      "name": "Quad Lascannon",
+      "modes": [
+        {
+          "firepower": "AP6+/AT3+",
+          "range": 45
+        }
+      ]
+    },
+                {
+      "name": "Scout Turbo Laser",
+      "modes": [
+        {
+          "firepower": "4x AP5+/AT3+",
+          "range": 45,
+          "specialRules": [
+          ]
         }
       ]
     },
@@ -80,8 +258,33 @@
       "name": "Missile Launcher",
       "modes": [
         {
-          "firepower": "AP5+/AT6+",
-          "range": 45
+          "firepower": "AP6+/AT6+",
+          "range": 60
+        }
+      ]
+    },
+        {
+      "name": "Destroyer Missile Launcher",
+      "modes": [
+        {
+          "firepower": "AP6+",
+          "range": 45,
+          "specialRules": [
+           "IC",
+           "Disrupt"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Melta Gun",
+      "modes": [
+        {
+          "firepower": "AT6+",
+          "range": 15,
+          "specialRules": [
+           "MW"
+          ]
         }
       ]
     },
@@ -89,8 +292,11 @@
       "name": "Multi-melta",
       "modes": [
         {
-          "firepower": "MW5+",
-          "range": 15
+          "firepower": "AP6+/AT5+",
+          "range": 15,
+          "specialRules": [
+           "MW"
+          ]
         },
         {
           "firepower": "Small Arms",
@@ -101,6 +307,259 @@
         }
       ]
     },
+        {
+      "name": "Melta Lance",
+      "modes": [
+        {
+          "firepower": "AP6+/AT3+",
+          "range": 15,
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Incisor Melta Lance",
+      "modes": [
+        {
+          "firepower": "AP5+/AT2+",
+          "range": 15,
+          "specialRules": [
+           "MW",
+           "TK(1)"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Melta Blastgun",
+      "modes": [
+        {
+          "firepower": "AP6+/AT2+",
+          "range": 15,
+          "specialRules": [
+           "MW",
+           "TK(1)"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "MW",
+           "TK(1)"
+          ]
+        }
+      ]
+    },
+                    {
+      "name": "Multi-Laser",
+      "modes": [
+        {
+          "firepower": "2x AP6+/AT6+",
+          "range": 45,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+                {
+      "name": "Plasma Pistols",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+",
+          "range": 15,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Plasma Gun",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+",
+          "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Plasma Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT5+",
+          "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+     {
+      "name": "Plasma Blastgun",
+      "modes": [
+        {
+          "firepower": "2x AP4+/AT2+",
+          "range": 45,
+          "specialRules": [
+            "Slow"
+          ]
+        }
+      ]
+    },
+                {
+      "name": "Natrix Shock Lance",
+      "modes": [
+        {
+          "firepower": "4x AP6+/AT4+",
+          "range": 15,
+          "specialRules": [
+           "Shield Piercer",
+           "Disrupt",
+           "Titan Hunter"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Quad Launcher",
+      "modes": [
+        {
+          "firepower": "AP5+/AT6+",
+          "range": 45,
+          "specialRules": [
+            "Indirect"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Rotor Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AA6+",
+          "range": 30,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Omega Plasma Array",
+      "modes": [
+        {
+          "firepower": "AP6+/AT5+",
+          "range": 30,
+          "specialRules": [
+           "MW",
+            "Energetic"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Volkite Culvertin",
+      "modes": [
+        {
+          "firepower": "AT5+",
+          "range": 30,
+          "specialRules": [
+           "Disrupt",
+           "Crippling(5+)",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Volkite Eradicator",
+      "modes": [
+        {
+          "firepower": "3x AP6+/AT4+",
+          "range": 30,
+          "specialRules": [
+           "Disrupt",
+           "Crippling(5+)",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Volkite Carronade",
+      "modes": [
+        {
+          "firepower": "3x AP5+/AT3+",
+          "range": 45,
+          "specialRules": [
+           "Disrupt",
+           "Crippling(5+)",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+                {
+      "name": "Vulcano Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT2+",
+          "range": 75,
+          "specialRules": [
+           "MW",
+           "TK(D3)"
+          ]
+        }
+      ]
+    },
+                    {
+      "name": "Twin Vulcano Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT2+",
+          "range": 75,
+          "specialRules": [
+           "MW",
+           "TK(D3+1)"
+          ]
+        }
+      ]
+    },
+                        {
+      "name": "Belicosa Vulcano Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT2+",
+          "range": 90,
+          "specialRules": [
+           "MW",
+           "TK(D3)",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+
+
     {
       "name": "Power Weapons",
       "modes": [
@@ -125,76 +584,21 @@
         }
       ]
     },
-    {
-      "name": "Sternguard Bolters",
+        {
+      "name": "Siege Claw",
       "modes": [
         {
-          "firepower": "Small Arms",
-          "specialRules": ["S"]
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)",
+            "MW",
+            "Titan Hunter"
+          ]
         }
       ]
     },
-    {
-      "name": "Storm Bolter",
-      "modes": [
-        {
-          "firepower": "Small Arms"
-        }
-      ]
-    },
-    {
-      "name": "Tempest Missile Launcher",
-      "modes": [
-        {
-          "firepower": "AP4+/AT5+/AA5+",
-          "range": 45
-        }
-      ]
-    },
-    {
-      "name": "Twin Anti-Air Bolter",
-      "modes": [
-        {
-          "firepower": "AP4+/AA5+",
-          "range": 15
-        }
-      ]
-    },
-    {
-      "name": "Twin Assault Cannon",
-      "modes": [
-        {
-          "firepower": "AP4+/AT4+",
-          "range": 30
-        }
-      ]
-    },
-    {
-      "name": "Twin Bolters",
-      "modes": [
-        {
-          "firepower": "Small Arms"
-        }
-      ]
-    },
-    {
-      "name": "Twin Heavy Bolter",
-      "modes": [
-        {
-          "firepower": "AP4+",
-          "range": 30
-        }
-      ]
-    },
-    {
-      "name": "Twin Lascannon",
-      "modes": [
-        {
-          "firepower": "AT4+",
-          "range": 45
-        }
-      ]
-    },
+
+
     {
       "name": "Twin Typhoon Missile",
       "modes": [
@@ -233,6 +637,10 @@
     {
       "name": "MW",
       "description": "Macro Weapon"
+    },
+        {
+      "name": "Energetic",
+      "description": "Energetic"
     },
     {
       "name": "S",
