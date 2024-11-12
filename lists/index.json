@@ -1,35 +1,68 @@
 {
   "index": [
     {
-      "section": "Imperial Forces",
+      "section": "Legions Imperialis - Loyalists",
       "index": [
         {
-          "name": "Adeptus Mechanicus",
+          "name": "Loyalist Legions",
+          "abbreviation": "SM",
+          "lists": [
+            {
+              "name": "Codex Astartes",
+              "file": "codexastartes",
+              "status": "approved",
+              "img": "images/AdeptusAstartes_Codex.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Legions Imperialis - Traitors",
+      "index": [
+        {
+          "name": "Traitor Legions",
+          "abbreviation": "Chaos",
+          "lists": [
+            {
+              "name": "Iron Warriors",
+              "file": "ironwarriors",
+              "status": "approved",
+              "img": "images/Chaos_Iron.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Solar Auxilia",
+      "index": [
+        {
+          "name": "Astra Militarum",
+          "abbreviation": "IG",
+          "lists": [
+            {
+              "name": "Cadian Shock Troops",
+              "file": "cadianshocktroops",
+              "status": "approved",
+              "img": "images/AstraMilitarum_Cadian.jpg"
+            }
+                   ]
+        }
+      ]
+    },
+    {
+      "section": "Mechanicus",
+      "index": [
+              {
+          "name": "Mechanicum",
           "abbreviation": "AM",
           "lists": [
             {
-              "name": "Collegia Titanica",
-              "file": "amtl",
-              "status": "approved",
-              "img": "images/AdeptusMechanicus_Titan.jpg"
-            },
-            {
-              "name": "Legiones Skitarii: Mars",
-              "file": "legionesskitariimars",
-              "status": "alpha",
-              "img": "images/AdeptusMechanicus_LegionesMars.jpg"
-            },
-            {
-              "name": "Legiones Skitarii: Metalica",
+              "name": "Mechanicus",
               "file": "legionesskitariimetalica",
               "status": "approved",
               "img": "images/AdeptusMechanicus_LegionesMetalica.jpg"
-            },
-            {
-              "name": "Knight World",
-              "file": "questorisimperialis",
-              "status": "approved",
-              "img": "images/AdeptusMechanicus_KnightWorld.jpg"
             },
             {
               "name": "Questoris Mechanicus",
@@ -40,438 +73,14 @@
           ]
         },
         {
-          "name": "Astra Militarum",
-          "abbreviation": "IG",
-          "lists": [
-            {
-              "name": "Baran Siegemasters",
-              "file": "barans",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Baran.jpg"
-            },
-            {
-              "name": "Cadian Shock Troops",
-              "file": "cadianshocktroops",
-              "status": "experimental",
-              "img": "images/AstraMilitarum_Cadian.jpg"
-            },
-            {
-              "name": "Catachan Jungle Fighters",
-              "file": "catachandeathworld",
-              "status": "alpha",
-              "img": "images/AstraMilitarum_Catachan.jpg"
-            },
-            {
-              "name": "Death Korps of Krieg",
-              "file": "deathkorps",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Korps.jpg"
-            },
-            {
-              "name": "Elysian Drop Troops",
-              "file": "elysiandroptroops",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Elysian.jpg"
-            },
-            {
-              "name": "Minervan Tank Legion",
-              "file": "minervans",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Minervans.jpg"
-            },
-            {
-              "name": "Steel Legion",
-              "file": "steellegion",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Steel.jpg"
-            },
-            {
-              "name": "Valhallan Ice Warriors",
-              "file": "valhallanicewarriors",
-              "status": "alpha",
-              "img": "images/AstraMilitarum_Valhallans.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Imperial Inquisition",
-          "abbreviation": "IQ",
-          "lists": [
-            {
-              "name": "Adepta Sororitas",
-              "file": "adeptasororitas",
-              "status": "approved",
-              "img": "images/Inquisition_Sisters.jpg"
-            },
-            {
-              "name": "Deathwatch",
-              "file": "deathwatch",
-              "status": "alpha",
-              "img": "images/Inquisition_Deathwatch.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Adeptus Astartes",
-          "abbreviation": "SM",
-          "lists": [
-            {
-              "name": "Blood Ravens/Grey Knights",
-              "file": "greyknights",
-              "status": "alpha",
-              "img": "images/Inquisition_GreyKnights.jpg"
-            },
-            {
-              "name": "Blood Angels",
-              "file": "bloodangels",
-              "status": "approved",
-              "img": "images/AdeptusAstartes_BloodAngels.jpg"
-            },
-            {
-              "name": "Codex Astartes",
-              "file": "codexastartes",
-              "status": "approved",
-              "img": "images/AdeptusAstartes_Codex.jpg"
-            },
-            {
-              "name": "Dark Angels",
-              "file": "darkangels",
-              "status": "approved",
-              "img": "images/AdeptusAstartes_DarkAngels.jpg"
-            },
-            {
-              "name": "Imperial Fists",
-              "file": "imperialfists",
-              "status": "approved",
-              "img": "images/AdeptusAstartes_ImperialFists.jpg"
-            },
-            {
-              "name": "Iron Hands",
-              "file": "ironhands",
-              "status": "approved",
-              "img": "images/AdeptusAstartes_Hands.jpg"
-            },
-            {
-              "name": "Primaris",
-              "file": "primaris",
-              "status": "alpha",
-              "img": "images/AdeptusAstartes_Primaris.jpg"
-            },
-            {
-              "name": "Raven Guard",
-              "file": "ravenguard",
-              "status": "approved",
-              "img": "images/AdeptusAstartes_Raven.jpg"
-            },
-            {
-              "name": "Space Wolves",
-              "file": "spacewolves",
-              "status": "approved",
-              "img": "images/AdeptusAstartes_Wolves.jpg"
-            },
-            {
-              "name": "White Scars",
-              "file": "whitescars",
-              "status": "approved",
-              "img": "images/AdeptusAstartes_White.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Squats",
-          "abbreviation": "SQ",
-          "lists": [
-            {
-              "name": "Wodanaz Stronghold",
-              "file": "squats",
-              "status": "approved",
-              "img": "images/Squats.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Forces of Chaos",
-      "index": [
-        {
-          "name": "Chaos Space Marines",
-          "abbreviation": "Chaos",
-          "lists": [
-            {
-              "name": "Alpha Legion",
-              "file": "alphalegion",
-              "status": "approved",
-              "img": "images/Chaos_Alpha.jpg"
-            },
-            {
-              "name": "Black Legion",
-              "file": "blacklegion",
-              "status": "approved",
-              "img": "images/Chaos_Legion.jpg"
-            },
-            {
-              "name": "Death Guard",
-              "file": "deathguard",
-              "status": "approved",
-              "img": "images/Chaos_Death.jpg"
-            },
-            {
-              "name": "Emperor's Children",
-              "file": "emperorschildren",
-              "status": "approved",
-              "img": "images/Chaos_Noise.jpg"
-            },
-            {
-              "name": "Iron Warriors",
-              "file": "ironwarriors",
-              "status": "approved",
-              "img": "images/Chaos_Iron.jpg"
-            },
-            {
-              "name": "Night Lords",
-              "file": "nightlords",
-              "status": "alpha",
-              "img": "images/Chaos_Lords.jpg"
-            },
-            {
-              "name": "Word Bearers",
-              "file": "wordbearers",
-              "status": "approved",
-              "img": "images/Chaos_Word.jpg"
-            },
-            {
-              "name": "World Eaters",
-              "file": "worldeaters",
-              "status": "approved",
-              "img": "images/Chaos_Eaters.jpg"
-            },
-            {
-              "name": "Thousand Sons",
-              "file": "thousandsons",
-              "status": "approved",
-              "img": "images/Chaos_Sons.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Chaos Cultists",
-          "abbreviation": "Cultists",
-          "lists": [
-            {
-              "name": "Daemonic Incursion",
-              "file": "DI",
-              "status": "approved",
-              "img": "images/Cultist_Daemon.jpg"
-            },
-            {
-              "name": "Lost and the Damned",
-              "file": "LatD",
-              "status": "approved",
-              "img": "images/Cultist_Damned.jpg"
-            },
-            {
-              "name": "Slaves to Darkness",
-              "file": "StD",
-              "status": "approved",
-              "img": "images/Cultist_Slaves.jpg"
-            }
-          ]
-        },
-        {
           "name": "Dark Mechanicus",
           "abbreviation": "DM",
           "lists": [
             {
               "name": "Questor Traitoris",
               "file": "QT",
-              "status": "alpha",
+              "status": "approved",
               "img": "images/DarkMech_QT.jpg"
-            },
-            {
-              "name": "Traitor Titan Legion",
-              "file": "TTL",
-              "status": "alpha",
-              "img": "images/DarkMech_Titan.jpg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Xenos",
-      "index": [
-        {
-          "name": "Eldar",
-          "abbreviation": "EL",
-          "lists": [
-            {
-              "name": "Biel-Tan",
-              "file": "bieltan",
-              "status": "approved",
-              "img": "images/Eldar_BielTan.jpg"
-            },
-            {
-              "name": "Fir Lirithion",
-              "file": "firlirithion",
-              "status": "alpha",
-              "img": "images/Eldar_Titan.jpg"
-            },
-            {
-              "name": "Iyanden",
-              "file": "iyanden",
-              "status": "approved",
-              "img": "images/Eldar_Iyanden.jpg"
-            },
-            {
-              "name": "Mymeara",
-              "file": "mymeara",
-              "status": "experimental",
-              "img": "images/Eldar_Mymeara.jpg"
-            },
-            {
-              "name": "Saim-Hann",
-              "file": "saimhann",
-              "status": "approved",
-              "img": "images/Eldar_SaimHann.jpg"
-            },
-            {
-              "name": "Ulthwé",
-              "file": "ulthwe",
-              "status": "approved",
-              "img": "images/Eldar_Ulthwe.jpg"
-            },
-            {
-              "name": "Yme-Loc",
-              "file": "ymeloc",
-              "status": "alpha",
-              "img": "images/Eldar_YmeLoc.jpg"
-            },
-            {
-              "name": "Lugganath/Harlequins",
-              "file": "masqueoftheveiledpath",
-              "status": "alpha",
-              "img": "images/Harlequin_Veiled.jpg"
-            },
-            {
-              "name": "Exodites",
-              "file": "exodites",
-              "status": "approved",
-              "img": "images/Eldar_Exodites.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Dark Eldar",
-          "abbreviation": "DE",
-          "lists": [
-            {
-              "name": "Kabal of the Wraithkind / Harlequins",
-              "file": "masqueofthemidnightsorrow",
-              "status": "approved",
-              "img": "images/Harlequin_Sorrow.jpg"
-            },
-            {
-              "name": "Kabal of the Black Heart",
-              "file": "kabaloftheblackheart",
-              "status": "approved",
-              "img": "images/DarkEldar_Bladed.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Necrons",
-          "abbreviation": "NC",
-          "lists": [
-            {
-              "name": "Maynarkh Dynasty",
-              "file": "maynarkhdynasty",
-              "status": "approved",
-              "img": "images/Necron_Maynarkh.jpg"
-            },
-            {
-              "name": "Sautekh Dynasty",
-              "file": "sautekhdynasty",
-              "status": "experimental",
-              "img": "images/Necron_Sautekh.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Orks",
-          "abbreviation": "O",
-          "lists": [
-            {
-              "name": "Bad Moons Big Mob",
-              "file": "gargants",
-              "status": "approved",
-              "img": "images/Ork_Gargant.jpg"
-            },
-            {
-              "name": "Clan Goffs Warhorde",
-              "file": "goffsclan",
-              "status": "approved",
-              "img": "images/Ork_Goffs.jpg"
-            },
-            {
-              "name": "Evil Sunz Speed Freeks",
-              "file": "speedfreeks",
-              "status": "approved",
-              "img": "images/Ork_EvilSun.jpg"
-            },
-            {
-              "name": "Snakebite Clan Feral Orks",
-              "file": "snakebiteclan",
-              "status": "approved",
-              "img": "images/Ork_Snakebite.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Tau",
-          "abbreviation": "TAU",
-          "lists": [
-            {
-              "name": "Fal'shia",
-              "file": "falshia",
-              "status": "alpha",
-              "img": "images/Tau_Falshia.jpg"
-            },
-            {
-              "name": "Sa'cea",
-              "file": "sacea",
-              "status": "approved",
-              "img": "images/Tau_Sacea.jpg"
-            },
-            {
-              "name": "Vior'la",
-              "file": "viorla",
-              "status": "approved",
-              "img": "images/Tau_Viorla.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Tyranids",
-          "abbreviation": "NID",
-          "lists": [
-            {
-              "name": "Cult of the Rusted Claw",
-              "file": "gscult",
-              "status": "approved",
-              "img": "images/Genestealer_Rust.jpg"
-            },
-            {
-              "name": "Hive Fleet Dagon",
-              "file": "dagon",
-              "status": "approved",
-              "img": "images/Tyranid_Dagon.jpg"
-            },
-            {
-              "name": "Hive Fleet Hydra",
-              "file": "hydra",
-              "status": "approved",
-              "img": "images/Tyranid_Hydra.jpg"
             }
           ]
         }
