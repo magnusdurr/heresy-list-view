@@ -1,14 +1,14 @@
 {
   "index": [
     {
-      "section": "Legions Imperialis - Loyalists",
+      "section": "Legiones Astartes - Loyalists",
       "index": [
         {
           "name": "Loyalist Legions",
           "abbreviation": "SM",
           "lists": [
             {
-              "name": "Codex Astartes",
+              "name": "Ultramarines",
               "file": "codexastartes",
               "status": "approved",
               "img": "images/AdeptusAstartes_Codex.jpg"
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "section": "Legions Imperialis - Traitors",
+      "section": "Legiones Astartes - Traitors",
       "index": [
         {
           "name": "Traitor Legions",
@@ -35,14 +35,14 @@
       ]
     },
     {
-      "section": "Solar Auxilia",
+      "section": "Excertus Imperialis",
       "index": [
         {
-          "name": "Astra Militarum",
+          "name": "Imperialis Auxilia",
           "abbreviation": "IG",
           "lists": [
             {
-              "name": "Cadian Shock Troops",
+              "name": "Solar Auxilia",
               "file": "cadianshocktroops",
               "status": "approved",
               "img": "images/AstraMilitarum_Cadian.jpg"
