@@ -1,0 +1,315 @@
+{
+  "fraction": "Loyalist Legiones Astartes",
+  "army": "Ultramarines",
+  "version": "1.0.Alpha",
+  "release": "2025-00-00",
+  "intro": "The Codex Astartes army list allows you to field an army based on one of the Space Marine Chapters that follows the teachings of the Codex Astartes. The list has a flexible structure to allow you to build an army that represents your favorite Space Marine Chapter on the battlefield.",
+  "armyforge": "EAR_Loyalist_LegionesAstartes_Ultramarines",
+  "strategy": "Space Marine armies have a Strategy Rating of 5.",
+  "Initiative": "All formations have an Initiative Rating of 1+.",
+  "armyRules": "The <i>Dauntless</i> special rule applies to all formations.",
+  "specialRules": [
+    "Drop Pods",
+    "Dauntless"
+  ],
+  "units": [
+    {
+      "from": "LegionesAstartes.json",
+      "units": [
+        "Lieutenant",
+        "Chaplain",
+        "Captain",
+        "Librarian",
+        "Supreme Commander",
+        "Assault Legionaries",
+        "Specialist Legionaries - Plasma",
+        "Tactical Legionaries - Melta",
+        "Support Legionaries - Missile Launcher",
+        "Cataphractii Terminators - Melta",
+        "Legion Outriders - Plasma",
+        "Land Speeder",
+        "Land Speeder Tornado",
+        "Land Speeder Typhoon",
+        "Attack Bike",
+        "Dreadnought",
+        "Dreadnought, Hellfire",
+        "Land Raider",
+        "Predator Annihilator",
+        "Predator Destructor",
+        "Rhino",
+        "Vindicator",
+        "Thunderhawk",
+        "Drop Pod"
+      ],
+      "unitRules": [
+      ]
+    },
+    {
+      "from": "ImperialAllies.json",
+      "units": [
+        "Warhound",
+        "Reaver Titan"
+      ],
+      "unitRules": [
+        "Void Shields"
+      ]
+    },
+    {
+      "from": "ImperialNavy.json",
+      "units": [
+        "Thunderbolt Fighter",
+        "Marauder Bomber"
+      ],
+      "unitRules": [
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "name": "Codex Astartes Detachments",
+      "description": "Up to one Scout Detachment for each non-Scout Detachment.",
+      "formations": [
+        {
+          "name": "Assaults",
+          "units": "Four Assaults",
+          "extraUnits": [
+            "Commander",
+            "Vindicators"
+          ],
+          "points": 175
+        },
+        {
+          "name": "Bikes",
+          "units": "Five Assault Bikes",
+          "extraUnits": [
+            "Attack Bikes",
+            "Commander"
+          ],
+          "points": 200
+        },
+        {
+          "name": "Devastators",
+          "units": "Four Devastators plus transport",
+          "extraUnits": [
+            "Anti-Air",
+            "Commander",
+            "Land Raider Transport",
+            "Dreadnoughts",
+            "Razorback",
+            "Vindicators"
+          ],
+          "points": 250
+        },
+        {
+          "name": "Land Raiders",
+          "units": "Three Land Raiders",
+          "extraUnits": [
+            "Add one Land Raider: 50 points",
+            "Anti-Air"
+          ],
+          "points": 275
+        },
+        {
+          "name": "Land Speeders",
+          "units": "Any five of the following units: Land Speeder, Land Speeder Tornado",
+          "extraUnits": [
+            "Typhoons"
+          ],
+          "points": 200
+        },
+        {
+          "name": "Predators",
+          "units": "Four Predator Destructors and/or Predator Annihilators",
+          "extraUnits": [
+            "Anti-Air"
+          ],
+          "points": 250
+        },
+        {
+          "name": "Scouts",
+          "units": "Four Scouts plus transport",
+          "extraUnits": [
+            "Razorbacks",
+            "Snipers"
+          ],
+          "points": 150
+        },
+        {
+          "name": "Tacticals",
+          "units": "Six Tacticals plus transport",
+          "extraUnits": [
+            "Anti-Air",
+            "Commander",
+            "Dreadnoughts",
+            "Land Raider Transport",
+            "Razorback",
+            "Vindicators"
+          ],
+          "points": 275
+        },
+        {
+          "name": "Terminators",
+          "units": "Four Terminators",
+          "extraUnits": [
+            "Commander",
+            "Land Raider Transport"
+          ],
+          "points": 350
+        },
+        {
+          "name": "Vindicators",
+          "units": "Four Vindicators",
+          "extraUnits": [
+            "Anti-Air"
+          ],
+          "points": 225
+        },
+        {
+          "name": "Whirlwinds",
+          "units": "Four Whirlwinds",
+          "extraUnits": [
+            "Anti-Air"
+          ],
+          "points": 275
+        }
+      ]
+    },
+    {
+      "name": "Codex Astartes Navy, Imperial Aircraft & Collegia Titanica Allies",
+      "description": "Up to a third of the points available may be spent on these formations.",
+      "formations": [
+        {
+          "name": "Storm Talons",
+          "units": "Two Storm Talons",
+          "points": 200
+        },
+        {
+          "name": "Thunderhawk",
+          "units": "One Thunderhawk",
+          "points": 225
+        },
+        {
+          "name": "Marauder Squadron",
+          "units": "Two Marauder Bombers",
+          "points": 250
+        },
+        {
+          "name": "Thunderbolt Squadron",
+          "units": "Two Thunderbolt Fighters",
+          "points": 175
+        },
+        {
+          "name": "Landing Craft",
+          "units": "One Landing Craft",
+          "points": 325
+        },
+        {
+          "name": "0-1 Orbital Support",
+          "units": "One Strike Cruiser",
+          "extraUnits": [
+            "Battle Barge"
+          ],
+          "points": 200
+        },
+        {
+          "name": "Warhounds",
+          "units": "One Warhound Titan",
+          "extraUnits": [
+            "Add an additional Warhound Titan: 200 points"
+          ],
+          "points": 275
+        },
+        {
+          "name": "Reaver",
+          "units": "One Reaver Titan",
+          "extraUnits": [
+          ],
+          "points": 600
+        }
+      ]
+    }
+  ],
+  "upgrades": {
+    "title": "Codex Astartes Upgrades",
+    "description": "Each upgrade may be taken once per detachment",
+    "items": [
+      {
+        "name": "Anti-Air",
+        "description": "Add any one of the following units to the formation",
+        "options": [
+          {
+            "description": "Add one Hunter",
+            "points": "75 points"
+          },
+          {
+            "description": "Add one Stalker",
+            "points": "50 points"
+          }
+        ]
+      },
+      {
+        "name": "Attack Bikes",
+        "description": "Replace any number of Assault Bikes with an equal number of Attack Bikes",
+        "points": "Free"
+      },
+      {
+        "name": "Battle Barge",
+        "description": "Replace the Strike Cruiser with a Battle Barge",
+        "points": "75 points"
+      },
+      {
+        "name": "Commander",
+        "description": "Add any one of the following characters to any unit in the formation",
+        "options": [
+          {
+            "description": "Captain, Librarian",
+            "points": "25 points"
+          },
+          {
+            "description": "Chaplain",
+            "points": "50 points"
+          },
+          {
+            "description": "0–1 Supreme Commander",
+            "points": "75 points"
+          }
+        ]
+      },
+      {
+        "name": "Dreadnoughts",
+        "description": "Add any two of the following: Dreadnought, Hellfire Dreadnought",
+        "points": [
+          "50 points each"
+        ]
+      },
+      {
+        "name": "Land Raider Transport",
+        "description": "Add any number of Land Raiders, up to the number required to transport the formation",
+        "points": "50 points each"
+      },
+      {
+        "name": "Razorbacks",
+        "description": "Add any number of Razorbacks, up to the number required to transport the formation",
+        "points": "25 points each"
+      },
+      {
+        "name": "Snipers",
+        "description": "Give all Scouts in the formation 'Sniper' on their Heavy Bolters",
+        "points": "25 points"
+      },
+      {
+        "name": "Typhoons",
+        "description": "Replace up to five Land Speeders with an equal number of Land Speeder Typhoons",
+        "points": "10 points each"
+      },
+      {
+        "name": "Vindicators",
+        "description": "Add up to two Vindicators",
+        "points": [
+          "50 points each",
+          "75 points per pair"
+        ]
+      }
+    ]
+  }
+}

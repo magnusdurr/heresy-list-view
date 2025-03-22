@@ -376,7 +376,7 @@
           "range": 30,
           "specialRules": [
             "IC",
-            "Disrupt"
+            "D"
           ]
         }
       ]
@@ -613,6 +613,18 @@
         }
       ]
     },
+                {
+      "name": "Plasma Guns",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+",
+          "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
         {
       "name": "Plasma Cannon",
       "modes": [
@@ -658,7 +670,7 @@
           "firepower": "AP5+/AT6+",
           "range": 45,
           "specialRules": [
-            "Indirect"
+            "Ind"
           ]
         }
       ]
@@ -770,7 +782,17 @@
       ]
     },
 
-
+        {
+      "name": "Chainswords",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)"
+          ]
+        }
+      ]
+    },
     {
       "name": "Power Weapons",
       "modes": [
@@ -795,6 +817,18 @@
         }
       ]
     },
+        {
+            "name": "Smite",
+            "modes": [
+                {
+                    "firepower": "Small Arms",
+                    "specialRules": [
+                        "EA(+1)",
+                        "MW"
+                    ]
+                }
+            ]
+        },
         {
       "name": "Siege Claw",
       "modes": [
@@ -826,8 +860,28 @@
       "description": "Apocalyptic Barrage"
     },
     {
+      "name": "Crippling(5+)",
+      "description": "Crippling (5+)"
+    },
+        {
+      "name": "Crippling(4+)",
+      "description": "Crippling (4+)"
+    },
+    {
       "name": "D",
       "description": "Disrupt"
+    },
+        {
+      "name": "Disrupt",
+      "description": "Disrupt"
+    },
+        {
+      "name": "E",
+      "description": "Energetic"
+    },
+    {
+      "name": "Energetic",
+      "description": "Energetic"
     },
     {
       "name": "EA(+1)",
@@ -924,6 +978,10 @@
     {
       "name": "Psybolts",
       "description": "Psybolts"
+    },
+        {
+      "name": "Titan Hunter",
+      "description": "Titan Hunter"
     },
     {
       "name": "TK(1)",

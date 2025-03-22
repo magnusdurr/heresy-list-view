@@ -5,11 +5,11 @@
       "index": [
         {
           "name": "Loyalist Legions",
-          "abbreviation": "SM",
+          "abbreviation": "LegionesAstartes",
           "lists": [
             {
               "name": "Ultramarines",
-              "file": "codexastartes",
+              "file": "Loyalist_Ultramarines",
               "status": "approved",
               "img": "images/AdeptusAstartes_Codex.jpg"
             }

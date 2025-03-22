@@ -1,87 +1,31 @@
 [
   {
-    "name": "Space Marine Forces",
+    "name": "Legiones Astartes Forces",
     "specialRules": [
     ],
     "unit": [
       {
-        "name": "",
+        "name": "Lieutenant",
         "type": "CH",
         "weapons": [
-          "Power Weapon"
-        ],
+         ],
         "specialRules": [
-          "Commander",
-          "Invulnerable Save",
-          "Leader"
+          "Leader",
+          "Vox-Caster"
         ]
       },
       {
-        "name": "Wolf Lord Captain",
+        "name": "Captain",
         "type": "CH",
         "weapons": [
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Commander",
-          "Extended Command",
-          "Invulnerable Save",
-          "Leader"
-        ]
-      },
-      {
-        "name": "Wolf Standard Bearer",
-        "type": "CH",
-        "weapons": [],
-        "specialRules": [
-          "Invulnerable Save",
-          "Leader"
-        ]
-      },
-      {
-        "name": "Dark Angels Captain",
-        "type": "CH",
-        "weapons": [
-          "Power Weapon"
-        ],
+        "Power Weapon"
+         ],
         "specialRules": [
           "Commander",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer"
-        ]
-      },
-      {
-        "name": "Grey Knights Captain",
-        "type": "CH",
-        "weapons": [
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Leader"
-        ]
-      },
-      {
-        "name": "Grey Knights Justicar",
-        "type": "CH",
-        "weapons": [
-          "n/a"
-        ],
-        "specialRules": [
-          "Extended Command",
-          "Commander",
-          "Teleport Homer",
-          "Leader"
-        ]
-      },
-      {
-        "name": "Watch Sergeant",
-        "type": "CH",
-        "weapons": [
-          "n/a"
-        ],
-        "specialRules": [
-          "Commander"
+          "Vox-Caster",
+          "Blitz"
         ]
       },
       {
@@ -93,30 +37,8 @@
         "specialRules": [
           "Inspiring",
           "Invulnerable Save",
-          "Leader"
-        ]
-      },
-      {
-        "name": "Iron Hands Captain",
-        "type": "CH",
-        "weapons": [
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Bionics",
-          "Commander",
-          "Invulnerable Save",
-          "Leader"
-        ]
-      },
-      {
-        "name": "Iron Hands Veteran Sergeant",
-        "type": "CH",
-        "weapons": [
-          "Bolt Pistols"
-        ],
-        "specialRules": [
-          "Leader"
+          "Leader",
+          "Vox-Caster"
         ]
       },
       {
@@ -128,7 +50,8 @@
         "specialRules": [
           "Battlefield Repairs",
           "Invulnerable Save",
-          "Leader"
+          "Leader",
+          "Vox-Caster"
         ]
       },
       {
@@ -138,45 +61,23 @@
           "Smite"
         ],
         "specialRules": [
+          "Psyker",
           "Invulnerable Save",
-          "Leader"
+          "Leader",
+          "Vox-Caster"
         ]
       },
       {
-        "name": "Blood Ravens Librarian",
+        "name": "Diabolist",
         "type": "CH",
         "weapons": [
           "Smite"
         ],
         "specialRules": [
-          "Teleport Homer",
           "Invulnerable Save",
-          "Leader"
-        ]
-      },
-      {
-        "name": "Blood Ravens Supreme Commander",
-        "type": "CH",
-        "weapons": [
-          "Smite",
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Teleport Homer",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Iron Hands Supreme Commander",
-        "type": "CH",
-        "weapons": [
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Bionics",
-          "Supreme Commander",
-          "Invulnerable Save"
+          "Leader",
+          "Psyker",
+          "Vox-Caster"
         ]
       },
       {
@@ -187,84 +88,18 @@
         ],
         "specialRules": [
           "Supreme Commander",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Great Wolf Supreme Commander",
-        "type": "CH",
-        "weapons": [
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Extended Command",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Grey Knights Grand Master",
-        "type": "CH",
-        "weapons": [
-          "Heavy Daemon Hammer"
-        ],
-        "specialRules": [
+          "Vox-Caster",
           "Invulnerable Save",
-          "Supreme Commander",
-          "Extended Command",
-          "Teleport Homer"
+          "Blitz"
         ]
       },
       {
-        "name": "Watch Commander",
-        "type": "CH",
-        "weapons": [
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Fearless",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Assaults",
+        "name": "Assault Legionaries",
         "type": "INF",
         "speed": 30,
         "armour": 4,
         "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Plasma Pistols",
-          "Chainswords"
-        ],
-        "specialRules": [
-          "Jump Packs"
-        ]
-      },
-      {
-        "name": "Blood Claw Assaults",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Bolt Pistols",
-          "Chainswords"
-        ],
-        "specialRules": [
-          "Infiltrators"
-        ],
-        "notes": "Counts as Tacticals for all transport purposes."
-      },
-      {
-        "name": "Sky Claw Assaults",
-        "type": "INF",
-        "speed": 30,
-        "armour": 4,
-        "cc": 4,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
           "Bolt Pistols",
           "Chainswords"
@@ -274,198 +109,47 @@
         ]
       },
       {
-        "name": "Assault Bikes",
+        "name": "Specialist Legionaries - Plasma",
         "type": "INF",
-        "speed": 35,
-        "armour": 4,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Twin Bolter",
-          "Chainswords"
-        ],
-        "specialRules": [
-          "Mounted"
-        ]
-      },
-      {
-        "name": "Swift Claw Assault Bikes",
-        "type": "INF",
-        "speed": 35,
+        "speed": 30,
         "armour": 4,
         "cc": 4,
         "ff": 5,
         "weapons": [
-          "Twin Bolter",
-          "Chainswords"
+          "Plasma Guns|2"
         ],
         "specialRules": [
-          "Mounted"
         ]
       },
       {
-        "name": "Fenrisian Wolves",
+        "name": "Legion Outriders - Plasma",
         "type": "INF",
         "speed": 35,
-        "armour": 5,
+        "armour": 4,
         "cc": 3,
+        "ff": 6,
         "weapons": [
-          "Claws and Fangs"
+          "Plasma Guns"
         ],
         "specialRules": [
-        ]
-      },
-      {
-        "name": "Thunderwolf Cavalry",
-        "type": "INF",
-        "speed": 25,
-        "armour": 3,
-        "cc": 3,
-        "ff": 5,
-        "weapons": [
-          "Thunder Hammer and Storm Shield"
-        ],
-        "specialRules": [
-          "Invulnerable Save",
           "Mounted",
-          "Walker"
-        ],
-        "notes": "Counts as Terminators for the purpose of being transported."
+          "Vanguard",
+          "Bulky"
+        ]
       },
       {
-        "name": "Death Company Marines",
+        "name": "Support Legionaries - Missile Launcher",
         "type": "INF",
-        "speed": "15cm",
+        "speed": 15,
         "armour": 4,
-        "cc": 3,
+        "cc": 6,
         "ff": 4,
         "weapons": [
-          "Bolters",
-          "Chainswords"
-        ],
-        "specialRules": [
-          "Fearless",
-          "Infiltrators"
-        ],
-        "notes": "Counts as Tacticals for the purposes of being transported."
-      },
-      {
-        "name": "Devastators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Missile Launcher|2"
+          "Missile Launcher|3"
         ]
       },
-      {
-        "name": "Iron Hands Devastators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Graviton Guns"
-        ]
-      },
-      {
-        "name": "Long Fang Devastators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 3,
-        "weapons": [
-          "Lascannon|2",
-          "Heavy Bolter"
-        ],
-        "notes": "Count as Devastators for all transport purposes."
-      },
-      {
-        "name": "Dark Angels Devastators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Plasma Cannon|2"
-        ]
-      },
-      {
-        "name": "Deathwatch Devastators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Dragonfire Heavy Bolter",
-          "Frag Cannon"
-        ]
-      },
-      {
-        "name": "Scouts",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Infiltrators",
-          "Scout"
-        ]
-      },
-      {
-        "name": "Raven Guard Scouts",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Expert Reconnaissance",
-          "Infiltrators",
-          "Scout"
-        ]
-      },
-      {
-        "name": "Wolf Scouts",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Infiltrators",
-          "Scout"
-        ]
-      },
-      {
-        "name": "Tacticals",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Missile Launcher"
-        ]
-      },
-      {
-        "name": "Grey Hunter Tacticals",
+       {
+        "name": "Tactical Legionaries - Melta",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -473,35 +157,11 @@
         "ff": 4,
         "weapons": [
           "Bolters",
-          "Chainswords"
-        ],
-        "notes": "Count as Tacticals for all transport purposes."
-      },
-      {
-        "name": "Deathwatch Tacticals",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Dragonfire Heavy Bolter"
+          "Melta Gun"
         ]
       },
       {
-        "name": "Deathwatch Black Shields",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Bolters",
-          "Heavy Thunder Hammers"
-        ]
-      },
-      {
-        "name": "Space Marine Rapier",
+        "name": "Legion Rapier",
         "type": "INF",
         "speed": 10,
         "armour": 5,
@@ -514,7 +174,7 @@
         ]
       },
       {
-        "name": "Space Marine Thudd Gun",
+        "name": "Legion Quad Launcher",
         "type": "INF",
         "speed": 10,
         "armour": 5,
@@ -540,386 +200,26 @@
         ]
       },
       {
-        "name": "Terminators",
+        "name": "Cataphractii Terminators - Melta",
         "type": "INF",
         "speed": 15,
         "armour": 4,
         "cc": 3,
-        "ff": 3,
+        "ff": 2,
         "weapons": [
-          "Assault Cannon|2",
+          "Combi-Bolters",
+          "Melta Gun",
           "Power Weapons"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Teleport",
-          "Thick Rear Armour"
-        ]
-      },
-      {
-        "name": "Wolf Guard Terminators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Assault Cannon|2",
-          "Power Weapons"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Thick Rear Armour"
-        ],
-        "notes": "May be deployed in Drop Pods."
-      },
-      {
-        "name": "Assault Terminators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 2,
-        "ff": 5,
-        "weapons": [
-          "Storm Bolters",
-          "Thunder Hammer and Storm Shield"
         ],
         "specialRules": [
           "Reinforced Armour",
           "Teleport",
           "Thick Rear Armour",
-          "Invulnerable Save"
+          "Bulky",
+          "Vanguard"
         ]
       },
-      {
-        "name": "Deathwatch Terminators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 3,
-        "ff": 5,
-        "weapons": [
-          "Assault Cannon",
-          "Frag Cannon",
-          "Power Weapons"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Teleport",
-          "Thick Rear Armour"
-        ]
-      },
-      {
-        "name": "Cyclone Terminators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Cyclone Missile Launchers",
-          "Power Weapons"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Teleport",
-          "Thick Rear Armour"
-        ]
-      },
-      {
-        "name": "Deathwing Terminators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Assault Cannon|2",
-          "Power Weapons"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Teleport",
-          "Thick Rear Armour"
-        ]
-      },
-      {
-        "name": "Deathwing Knights",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 3,
-        "weapons": [
-          "Maces of Absolution and Storm Shields",
-          "Flail of the Unforgiven"
-        ],
-        "specialRules": [
-          "Fearless",
-          "Reinforced Armour",
-          "Teleport",
-          "Thick Rear Armour",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Grey Knights Terminators",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 2,
-        "ff": 3,
-        "weapons": [
-          "Psilencer|2|",
-          "Holocaust",
-          "Nemesis Daemon Hammers"
-        ],
-        "specialRules": [
-          "Faithful",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Teleport",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Assault Centurions",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Heavy Flamer",
-          "Hurricane Bolters",
-          "Siege Drills"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ],
-        "notes": "Counts as Terminators for the purposes of being transported."
-      },
-      {
-        "name": "Devastator Centurions",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 5,
-        "ff": 4,
-        "weapons": [
-          "Missile Launcher",
-          "Lascannon",
-          "Twin Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ],
-        "notes": "Counts as Terminators for the purposes of being transported."
-      },
-      {
-        "name": "Sanguinary Guards",
-        "type": "INF",
-        "speed": 30,
-        "armour": 3,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Angelus Boltguns",
-          "Glaives Encarmine"
-        ],
-        "specialRules": [
-          "Honour Guard",
-          "Jump Packs"
-        ],
-        "notes": "Counts as Assaults for the purposes of being transported."
-      },
-      {
-        "name": "Sternguard Veterans",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Heavy Bolter",
-          "Sternguard Bolters"
-        ],
-        "specialRules": [
-          "Infiltrators",
-          "Teleport",
-          "Lightning Charge"
-        ]
-      },
-      {
-        "name": "Vanguard Veterans",
-        "type": "INF",
-        "speed": 30,
-        "armour": 4,
-        "cc": 3,
-        "ff": 5,
-        "weapons": [
-          "Bolt Pistols",
-          "Hawk's Talons"
-        ],
-        "specialRules": [
-          "Jump Packs",
-          "Lightning Charge"
-        ]
-      },
-      {
-        "name": "Deathwatch Assaults",
-        "type": "INF",
-        "speed": 30,
-        "armour": 4,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Bolt Pistols",
-          "Power Weapons"
-        ],
-        "specialRules": [
-          "Jump Packs"
-        ]
-      },
-      {
-        "name": "Grey Knights Strike Squad",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 2,
-        "ff": 3,
-        "weapons": [
-          "Psycannon",
-          "Holocaust",
-          "Nemesis Force Weapons"
-        ],
-        "specialRules": [
-          "Faithful",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Grey Knights Purgation Squad",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 3,
-        "weapons": [
-          "Incinerator|2|",
-          "Holocaust"
-        ],
-        "specialRules": [
-          "Faithful",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Grey Knights Interceptor Squad",
-        "type": "INF",
-        "speed": 30,
-        "armour": 4,
-        "cc": 2,
-        "ff": 3,
-        "weapons": [
-          "Holocaust",
-          "Nemesis Force Weapons"
-        ],
-        "specialRules": [
-          "Faithful",
-          "Invulnerable Save",
-          "Teleport",
-          "Jump Packs"
-        ]
-      },
-      {
-        "name": "White Scars Assault Bikes",
-        "type": "INF",
-        "speed": 35,
-        "armour": 4,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Twin Bolter",
-          "Chainswords"
-        ],
-        "specialRules": [
-          "Born in the Saddle",
-          "Mounted",
-          "Walker"
-        ]
-      },
-      {
-        "name": "White Scars Scout Bikes",
-        "type": "INF",
-        "speed": 35,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Twin Bolter",
-          "Chainswords"
-        ],
-        "specialRules": [
-          "Born in the Saddle",
-          "Mounted",
-          "Scout",
-          "Walker"
-        ]
-      },
-      {
-        "name": "Ravenwing Assault Bikes",
-        "type": "INF",
-        "speed": 35,
-        "armour": 4,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Twin Bolter"
-        ],
-        "specialRules": [
-          "Mounted",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Ravenwing Black Knights",
-        "type": "INF",
-        "speed": 35,
-        "armour": 4,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Plasma Talons",
-          "Corvus Hammers"
-        ],
-        "specialRules": [
-          "Mounted",
-          "Scout",
-          "Commander",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Nemesis Dreadknight",
-        "type": "LV",
-        "speed": 15,
-        "armour": 4,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Gatling Psilencer",
-          "Nemesis Daemon Hammer"
-        ],
-        "specialRules": [
-          "Walker",
-          "Reinforced Armour",
-          "Infiltrators",
-          "Teleport",
-          "Faithful",
-          "Invulnerable Save"
-        ]
-      },
-      {
+       {
         "name": "Attack Bike",
         "type": "LV",
         "speed": 35,
@@ -930,49 +230,7 @@
           "Heavy Bolter"
         ]
       },
-      {
-        "name": "Deathwatch Attack Bike",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 5,
-        "ff": 4,
-        "weapons": [
-          "Dragonfire Heavy Bolter"
-        ],
-        "specialRules": [
-          "Teleport Homer",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Melta Bike",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Multi-Melta"
-        ],
-        "specialRules": []
-      },
-      {
-        "name": "Ravenwing Attack Bike",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 5,
-        "ff": 4,
-        "weapons": [
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Invulnerable Save",
-          "Teleport Homer"
-        ]
-      },
-      {
+       {
         "name": "Land Speeder Storm",
         "type": "LV",
         "speed": 35,
