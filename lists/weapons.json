@@ -233,10 +233,38 @@
       ]
     },
           {
-      "name": "Storm Cannon",
+      "name": "Rotor Cannon",
+      "modes": [
+        {
+          "firepower": "2x AP6+/AT6+",
+          "range": 30
+        }
+      ]
+    },
+     {
+      "name": "Punisher Gatling Cannon",
+      "modes": [
+        {
+          "firepower": "3x AP6+/AT6+",
+          "range": 45
+        }
+      ]
+    },
+
+         {
+      "name": "Kheres Assault Cannon",
       "modes": [
         {
           "firepower": "AP4+/AT5+",
+          "range": 30
+        }
+      ]
+    },
+          {
+      "name": "Storm Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+/AT5+",
           "range": 30
         }
       ]
@@ -246,6 +274,15 @@
       "modes": [
         {
           "firepower": "AP5+/AT6+",
+          "range": 45
+        }
+      ]
+    },
+        {
+      "name": "Twin Autocannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT6+",
           "range": 45
         }
       ]
@@ -288,11 +325,20 @@
     },
 
         {
-      "name": "Predator Autocannon",
+      "name": "Predator Cannon",
       "modes": [
         {
           "firepower": "2x AP5+/AT6+",
           "range": 45
+        }
+      ]
+    },
+            {
+      "name": "Sabre Autocannon",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT6+",
+          "range": 30
         }
       ]
     },
@@ -305,6 +351,7 @@
         }
       ]
     },
+
     {
       "name": "Bolt Pistols",
       "modes": [
@@ -332,6 +379,24 @@
         }
       ]
     },
+            {
+      "name": "AC Heavy Bolter",
+      "modes": [
+        {
+          "firepower": "AP4+/AA6+",
+          "range": 30
+        }
+      ]
+    },
+                {
+      "name": "AC Twin Heavy Bolter",
+      "modes": [
+        {
+          "firepower": "AP3+/AA6+",
+          "range": 30
+        }
+      ]
+    },
         {
       "name": "Heavy Bolter",
       "modes": [
@@ -346,6 +411,15 @@
       "modes": [
         {
           "firepower": "AP3+",
+          "range": 30
+        }
+      ]
+    },
+                    {
+      "name": "Avenger Bolt Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
           "range": 30
         }
       ]
@@ -382,13 +456,14 @@
       ]
     },
             {
-      "name": "Flamer",
+      "name": "Flamers",
       "modes": [
         {
           "firepower": "AP5+",
           "range": 15,
           "specialRules": [
-            "IC"
+            "IC",
+            "Disrupt"
           ]
         }
       ]
@@ -398,6 +473,19 @@
       "modes": [
         {
           "firepower": "AP4+",
+          "range": 15,
+          "specialRules": [
+            "IC",
+            "Disrupt"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Twin Heavy Flamer",
+      "modes": [
+        {
+          "firepower": "AP3+",
           "range": 15,
           "specialRules": [
             "IC",
@@ -418,15 +506,7 @@
         }
       ]
     },
-        {
-      "name": "Hyperios Missiles",
-      "modes": [
-        {
-          "firepower": "AT6+/AA5+",
-          "range": 60
-        }
-      ]
-    },
+
         {
       "name": "Lascannon",
       "modes": [
@@ -475,6 +555,24 @@
       ]
     },
         {
+      "name": "Aiolos Missile Launcher",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+/AA6+",
+          "range": 60
+        }
+      ]
+    },
+            {
+      "name": "Arcus Missile Launcher",
+      "modes": [
+        {
+          "firepower": "2x AP6+/AT6+/AA6+",
+          "range": 60
+        }
+      ]
+    },
+        {
       "name": "Destroyer Missile Launcher",
       "modes": [
         {
@@ -483,6 +581,71 @@
           "specialRules": [
            "IC",
            "Disrupt"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Hyperios Missile Launcher",
+      "modes": [
+        {
+          "firepower": "AT6+/AA5+",
+          "range": 45,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Vengeance Launcher",
+      "modes": [
+        {
+          "firepower": "AP4+",
+          "range": 30,
+          "specialRules": [
+          "Disrupt"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+1)"
+          ]
+        }
+      ]
+    },
+     {
+      "name": "Tempest Rockets",
+      "modes": [
+        {
+          "firepower": "AT5+/AA5+",
+          "range": 30,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+     {
+      "name": "Sabre Missiles",
+      "modes": [
+        {
+          "firepower": "AT5+",
+          "range": 30,
+          "specialRules": [
+          "SS"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Quad Launcher",
+      "modes": [
+        {
+          "firepower": "AP4+/AT6+",
+          "range": 45,
+          "specialRules": [
+          "Ind"
           ]
         }
       ]
@@ -500,7 +663,7 @@
       ]
     },
     {
-      "name": "Multi-melta",
+      "name": "Multi-Melta",
       "modes": [
         {
           "firepower": "AP6+/AT5+",
@@ -525,14 +688,16 @@
           "firepower": "AP6+/AT3+",
           "range": 15,
           "specialRules": [
-           "MW"
+           "MW",
+           "Crippling"
           ]
         },
         {
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "MW"
+            "MW",
+           "Crippling"
           ]
         }
       ]
@@ -561,19 +726,18 @@
       "name": "Melta Blastgun",
       "modes": [
         {
-          "firepower": "AP6+/AT2+",
+          "firepower": "AP3+/AT2+",
           "range": 15,
           "specialRules": [
            "MW",
-           "TK(1)"
+           "IC"
           ]
         },
         {
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-           "MW",
-           "TK(1)"
+           "MW"
           ]
         }
       ]
@@ -582,9 +746,35 @@
       "name": "Multi-Laser",
       "modes": [
         {
-          "firepower": "2x AP6+/AT6+",
+          "firepower": "2x AP5+/AT6+",
           "range": 45,
           "specialRules": [
+          ]
+        }
+      ]
+    },
+                        {
+      "name": "Laser Destroyer",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
+          "range": 45,
+          "specialRules": [
+          "Shield Disruptor",
+          "Crippling"
+          ]
+        }
+      ]
+    },
+                            {
+      "name": "Magna Laser Destroyer",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
+          "range": 60,
+          "specialRules": [
+          "Shield Disruptor",
+          "Crippling"
           ]
         }
       ]
@@ -637,6 +827,18 @@
         }
       ]
     },
+    {
+      "name": "Plasma Cannonade",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
      {
       "name": "Plasma Blastgun",
       "modes": [
@@ -645,6 +847,19 @@
           "range": 45,
           "specialRules": [
             "Slow"
+          ]
+        }
+      ]
+    },
+         {
+      "name": "Neutron Blaster",
+      "modes": [
+        {
+          "firepower": "AT3+",
+          "range": 30,
+          "specialRules": [
+            "Shield Disruptor",
+            "Energetic"
           ]
         }
       ]
@@ -667,7 +882,7 @@
       "name": "Quad Launcher",
       "modes": [
         {
-          "firepower": "AP5+/AT6+",
+          "firepower": "AP4+/AT6+",
           "range": 45,
           "specialRules": [
             "Ind"
@@ -707,7 +922,7 @@
           "range": 30,
           "specialRules": [
            "Disrupt",
-           "Crippling(5+)",
+           "Crippling",
            "Shield Disruptor"
           ]
         }
@@ -721,7 +936,7 @@
           "range": 30,
           "specialRules": [
            "Disrupt",
-           "Crippling(5+)",
+           "Crippling",
            "Shield Disruptor"
           ]
         }
@@ -735,7 +950,7 @@
           "range": 45,
           "specialRules": [
            "Disrupt",
-           "Crippling(5+)",
+           "Crippling",
            "Shield Disruptor"
           ]
         }
@@ -818,6 +1033,37 @@
       ]
     },
         {
+      "name": "Power Fist",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+      {
+      "name": "Aetheric Lightning",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)",
+            "Force"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+1)",
+            "Force"
+          ]
+        }
+      ]
+    },
+        {
             "name": "Smite",
             "modes": [
                 {
@@ -835,9 +1081,9 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
             "MW",
-            "Titan Hunter"
+            "Titan Hunter",
+            "Crippling"
           ]
         }
       ]
@@ -860,12 +1106,8 @@
       "description": "Apocalyptic Barrage"
     },
     {
-      "name": "Crippling(5+)",
-      "description": "Crippling (5+)"
-    },
-        {
-      "name": "Crippling(4+)",
-      "description": "Crippling (4+)"
+      "name": "Crippling",
+      "description": "Crippling"
     },
     {
       "name": "D",
@@ -910,6 +1152,10 @@
     {
       "name": "FwA",
       "description": "Forward Arc"
+    },
+    {
+      "name": "Force",
+      "description": "Force"
     },
     {
       "name": "GM",

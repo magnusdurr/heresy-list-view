@@ -1,10 +1,51 @@
 <h2>Terrain</h2>
 
 <p class="lead">
-    In Epic Armageddon, certain types of terrain have become much more common than others, simply because some terrain
-    types tend to favor certain types of armies over others. For this reason we have created a revised Terrain Effects
-    table where we also introduced a few new terrain effects. We hope this will contribute to more varied game tables
-    while keeping the balance of the armies intact.
+    In EA - Heresy, games tend to occur in urban areas or around fortifications. One essential part of this is more detailed rules for intact buildings, which in EA - Heresy are termed Strongholds. They replace the Large Building category in EA:Ragnarök.  
+</p>
+
+<h4>Strongholds</h4>
+<p>
+    Strongholds are a new type of terrain representing large buildings and fortifications that is an essential part of EA - Heresy, in practice a type of neutral WE transport that can be occupied by either side. While it is certainly possible to play without them, this will affect game balance as certain types of units are assumed to benefit from them or to counter them. For this reason, it is the only type of terrain that is compulsory in the main game scenario.
+</p>
+
+<h6>Stronghold Stats</h6>
+<p>
+    Strongholds are basically a type of immobile War Engine, and come in three sizes; small (3 DC), medium (4 DC) and large (5 DC). They have 5+ Armour Save, and counts as having Reinforced Armour and Thick Rear Armour. Critical hits on a Stronghold cause one additional point of damage.
+</p>
+
+<h6>Occupying Strongholds</h6>
+<p>
+    For each starting DC, the Stronghold can be occupied by two INF, one INF with the 'Bulky' or 'Mounted' special rules, or one AV or LV with the 'Walker' special rule. Once a unit enters a Stronghold it must stop, and may not move any further. As with a transport WE, there is no need to keep track of where inside a Stronghold each unit is, or on which floor they are. Once there is a unit inside, the Stronghold counts as being part of the occupying army, and may not be entered by the opposing side.
+</p>
+<p>
+    Some Strongholds have flat roofs which makes it possible to store occupying units there. But since many do not, it is recommended to use counters next to occupied Strongholds to mark which side is occupying them, placing the 'transported' units next to the battlefield. Blast Markers and Order Tokens/Dice should be stored next to the Stronghold.
+</p>
+<p>
+    ""Occupying Strongholds in enemy ZOC""
+</p>
+<h6>Strongholds and Line of Sight</h6>
+<p>
+    Unlike WE, Strongholds blocks line of sight in the same way that any other terrain does. Certain Strongholds may also count as being 'Tall', in which case they also block line of sight to e.g. units on hills, Support Craft, or certain Titans.
+</p>
+<h6>Strongholds and Blast Markers</h6>
+<p>
+    When a formation occupies a Stronghold, it becomes part of the formation, and increases their formation size accordingly. This also means that any damage, or e.g. hits with the Disrupt special rule, caused on the Stronghold will cause BMs to accumulate on the occupying formation(s). If there is more than one formation inside, the occupying player may choose how to divide the BMs caused.
+</p>
+<h6>Strongholds and Shooting</h6>
+<p>
+    Units inside a Stronghold can shoot as normal, and can do so from any part of the Stronghold. When shooting at a Stronghold, units inside cannot be hit directly, but can only be affected when the Stronghold they are in goes down to 0 DC and is 'Wrecked' (see below). Strongholds are affected by shooting like any other WE, but in addition weapons with the Ignore Cover or BP type weapons (that uses templates) may use AP instead of AT when rolling to hit.
+</p>
+<h6>Strongholds and Assaults</h6>
+<p>
+    As with Shooting, all attacks during an assault is directed against the Stronghold and not the units inside. Units inside may only use their FF stats, and must be moved outside of the Stronghold (for example with a Countercharge move) if they want to use their CC stats. If the Stronghold goes down to 0 DC during the Assault it is 'Wrecked' (see below).
+</p>
+<p>
+    Strongholds only count for Outnumber in an Assault if there is at least one unit inside that is participating in the combat.
+</p>
+<h6>Wrecking Strongholds</h6>
+<p>
+    Once a Stronghold goes down to 0 DC, it counts as being Wrecked, and will be considered Impassable Terrain for the rest of the game. Any formation with at least one unit inside a Wrecked Stronghold suffers a BM and all units inside takes a hit (with all damage counted towards Combat Resolution). Any surviving units are forced to exit the building after the current action has been resolved. Any formation with at least one unit inside a Wrecked Stronghold loses their chance to activate this turn if they have not already done so. If the formation is on Overwatch, they instead count as having taken an 'Hold' action.
 </p>
 
 <h4>True line of sight vs. infinite height</h4>
@@ -66,127 +107,125 @@
     <b>Armoured Vehicles</b>:
     Infantry units counts as being in cover and receive the -1 to hit modifier (but no cover save) if they are touching
     a <b>friendly</b> Armoured Vehicle or War Engine, to represent their ability to take cover from enemy fire by
-    crouching behind the vehicle. There can be no more than two units for each Armoured Vehicle, four for each H-AV, or
+    crouching behind the vehicle. There can be no more than two units for each Armoured Vehicle, or
     two for each DC that a War Engine has.
 </p>
 
-<p><b>Hull Down</b>: All terrain that blocks Line of Sight can give Hull Down to units that are inside such terrain, or
-    that is even partially obscured behind it, to all units in the firing formation.</p>
+<p>
+    <b>Hull Down</b>: All terrain that blocks Line of Sight can give Hull Down to units that are inside such terrain, or
+    that is even partially obscured behind it, to all units in the firing formation.
+</p>
 
 <table class="table table-striped">
     <thead>
-    <tr>
-        <th scope="col">Terrain Type</th>
-        <th scope="col">INF</th>
-        <th scope="col">AV</th>
-        <th scope="col">War Engines</th>
-        <th scope="col">Blocks Line of Sight</th>
-    </tr>
+        <tr>
+            <th scope="col">Terrain Type</th>
+            <th scope="col">INF</th>
+            <th scope="col">AV</th>
+            <th scope="col">War Engines</th>
+            <th scope="col">Blocks Line of Sight</th>
+        </tr>
     </thead>
     <tbody>
-    <tr>
-        <th scope="row">Large Building</th>
-        <td>4+ Cover Save</td>
-        <td>Impassable</td>
-        <td>Impassable</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <th scope="row">Urban Area</th>
-        <td>5+ Cover Save</td>
-        <td>Difficult</td>
-        <td>Difficult</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <th scope="row">Ruins, Rubble</th>
-        <td>4+ Cover Save</td>
-        <td>Dangerous</td>
-        <td>Dangerous</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <th scope="row">Craters</th>
-        <td>4+ Cover Save</td>
-        <td>Dangerous</td>
-        <td>Dangerous</td>
-        <td>No</td>
-    </tr>
-    <tr>
-        <th scope="row">Jungle</th>
-        <td>4+ Cover Save, Difficult</td>
-        <td>Dangerous</td>
-        <td>Dangerous</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <th scope="row">Woods</th>
-        <td>5+ Cover Save</td>
-        <td>Dangerous</td>
-        <td>Dangerous</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <th scope="row">Marsh</th>
-        <td>5+ Cover Save</td>
-        <td>Dangerous</td>
-        <td>Dangerous</td>
-        <td>No</td>
-    </tr>
-    <tr>
-        <th scope="row">Scrub</th>
-        <td>6+ Cover Save</td>
-        <td>Difficult</td>
-        <td>Difficult</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <th scope="row">Field</th>
-        <td>6+ Cover Save</td>
-        <td>No Effect</td>
-        <td>No Effect</td>
-        <td>No</td>
-    </tr>
-    <tr>
-        <th scope="row">Stream, Shallow River</th>
-        <td>6+ Cover Save, Difficult</td>
-        <td>Difficult</td>
-        <td>No Effect</td>
-        <td>No</td>
-    </tr>
-    <tr>
-        <th scope="row">Open Ground</th>
-        <td>No Effect</td>
-        <td>No Effect</td>
-        <td>No Effect</td>
-        <td>No</td>
-    </tr>
-    <tr>
-        <th scope="row">Road (See special rules)</th>
-        <td>No Effect</td>
-        <td>No Effect</td>
-        <td>No Effect</td>
-        <td>No</td>
-    </tr>
-    <tr>
-        <th scope="row">Hill (See special rules)</th>
-        <td>No Effect</td>
-        <td>No Effect</td>
-        <td>No Effect</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <th scope="row">Mountain</th>
-        <td>Impassable</td>
-        <td>Impassable</td>
-        <td>Impassable</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <th scope="row">Lake / Lava Field</th>
-        <td>Impassable</td>
-        <td>Impassable</td>
-        <td>Impassable</td>
-        <td>No</td>
+        <tr>
+            <th scope="row">Urban Area</th>
+            <td>5+ Cover Save</td>
+            <td>Difficult</td>
+            <td>Difficult</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">Ruins, Rubble</th>
+            <td>4+ Cover Save</td>
+            <td>Dangerous</td>
+            <td>Dangerous</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">Craters</th>
+            <td>4+ Cover Save</td>
+            <td>Dangerous</td>
+            <td>Dangerous</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <th scope="row">Jungle</th>
+            <td>4+ Cover Save, Difficult</td>
+            <td>Dangerous</td>
+            <td>Dangerous</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">Woods</th>
+            <td>5+ Cover Save</td>
+            <td>Dangerous</td>
+            <td>Dangerous</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">Marsh</th>
+            <td>5+ Cover Save</td>
+            <td>Dangerous</td>
+            <td>Dangerous</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <th scope="row">Scrub</th>
+            <td>6+ Cover Save</td>
+            <td>Difficult</td>
+            <td>Difficult</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">Field</th>
+            <td>6+ Cover Save</td>
+            <td>No Effect</td>
+            <td>No Effect</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <th scope="row">Stream, Shallow River</th>
+            <td>6+ Cover Save, Difficult</td>
+            <td>Difficult</td>
+            <td>No Effect</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <th scope="row">Open Ground</th>
+            <td>No Effect</td>
+            <td>No Effect</td>
+            <td>No Effect</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <th scope="row">Road (See special rules)</th>
+            <td>No Effect</td>
+            <td>No Effect</td>
+            <td>No Effect</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <th scope="row">Hill (See special rules)</th>
+            <td>No Effect</td>
+            <td>No Effect</td>
+            <td>No Effect</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">Mountain</th>
+            <td>Impassable</td>
+            <td>Impassable</td>
+            <td>Impassable</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">Lake / Lava Field</th>
+            <td>Impassable</td>
+            <td>Impassable</td>
+            <td>Impassable</td>
+            <td>No</td>
     </tbody>
 </table>
+
+
+

@@ -24,8 +24,8 @@
           "Commander",
           "Invulnerable Save",
           "Leader",
-          "Vox-Caster",
-          "Blitz"
+          "Blitz",
+          "Vox-Caster"
         ]
       },
       {
@@ -38,6 +38,7 @@
           "Inspiring",
           "Invulnerable Save",
           "Leader",
+          "Blitz",
           "Vox-Caster"
         ]
       },
@@ -54,29 +55,169 @@
           "Vox-Caster"
         ]
       },
+
       {
-        "name": "Librarian",
+        "name": "Librarian - Telepathy",
         "type": "CH",
         "weapons": [
-          "Smite"
+          "Aetheric Lightning"
         ],
         "specialRules": [
-          "Psyker",
+          "Psyker - Telepathy",
           "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+            {
+        "name": "Librarian - Thaumaturgy",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Thaumaturgy",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+            {
+        "name": "Librarian - Telekinesis",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Telekinesis",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+            {
+        "name": "Librarian - Pyromancy",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Pyromancy",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+            {
+        "name": "Librarian - Divination",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Divination",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+            {
+        "name": "Librarian - Biomancy",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Biomancy",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+       {
+        "name": "Lieutenant - Prosperine Arcana",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+          "Psyker - Prosperine Arcana",
           "Leader",
           "Vox-Caster"
         ]
       },
-      {
-        "name": "Diabolist",
+           {
+        "name": "Librarian - Anathemata",
         "type": "CH",
         "weapons": [
-          "Smite"
+          "Aetheric Lightning"
         ],
         "specialRules": [
+          "Psyker - Anathemata",
           "Invulnerable Save",
           "Leader",
-          "Psyker",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+        {
+        "name": "Librarian - Aetherbane",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Anathemata",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+      {
+        "name": "Librarian - Diabolism",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Diabolism",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+            {
+        "name": "Librarian - Storm's Fury",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Storm's Fury",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
+          "Vox-Caster"
+        ]
+      },
+            {
+        "name": "Librarian - Winds of Fenris",
+        "type": "CH",
+        "weapons": [
+          "Aetheric Lightning"
+        ],
+        "specialRules": [
+          "Psyker - Diabolism",
+          "Invulnerable Save",
+          "Leader",
+          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -109,7 +250,7 @@
         ]
       },
       {
-        "name": "Specialist Legionaries - Plasma",
+        "name": "Support Legionaries - Plasma",
         "type": "INF",
         "speed": 30,
         "armour": 4,
@@ -117,6 +258,45 @@
         "ff": 5,
         "weapons": [
           "Plasma Guns|2"
+        ],
+        "specialRules": [
+        ]
+      },
+       {
+        "name": "Support Legionaries - Flamer",
+        "type": "INF",
+        "speed": 30,
+        "armour": 4,
+        "cc": 4,
+        "ff": 3,
+        "weapons": [
+          "Flamers|2"
+        ],
+        "specialRules": [
+        ]
+      },
+        {
+        "name": "Support Legionaries - Rotor Cannon",
+        "type": "INF",
+        "speed": 30,
+        "armour": 4,
+        "cc": 4,
+        "ff": 2,
+        "weapons": [
+          "Rotor Cannon|2"
+        ],
+        "specialRules": [
+        ]
+      },
+        {
+        "name": "Support Legionaries - Volkite Calvier",
+        "type": "INF",
+        "speed": 30,
+        "armour": 4,
+        "cc": 4,
+        "ff": 5,
+        "weapons": [
+          "Volkite Calvier|2"
         ],
         "specialRules": [
         ]
@@ -134,11 +314,12 @@
         "specialRules": [
           "Mounted",
           "Vanguard",
+          "Evasive",
           "Bulky"
         ]
       },
       {
-        "name": "Support Legionaries - Missile Launcher",
+        "name": "Heavy Support Legionaries - Missile Launcher",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -146,6 +327,83 @@
         "ff": 4,
         "weapons": [
           "Missile Launcher|3"
+        ]
+      },
+            {
+        "name": "Heavy Support Legionaries - Plasma Cannon",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Plasma Cannon|3"
+        ]
+      },
+            {
+        "name": "Heavy Support Legionaries - Lascannon",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Lascannon|3"
+        ]
+      },
+           {
+        "name": "Heavy Support Legionaries - Heavy Bolter",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 2,
+        "weapons": [
+          "Heavy Bolter|3"
+        ]
+      },
+           {
+        "name": "Heavy Support Legionaries - Multi-Melta",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Multi-Melta|3"
+        ]
+      },
+           {
+        "name": "Heavy Support Legionaries - Autocannon",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Autocannon|3"
+        ]
+      },
+           {
+        "name": "Heavy Support Legionaries - Volkite Culvertin",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Volkite Culvertin|3"
+        ]
+      },
+           {
+        "name": "Heavy Support Legionaries - Heavy Flamer",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 2,
+        "weapons": [
+          "Heavy Flamer|3"
         ]
       },
        {
@@ -161,42 +419,59 @@
         ]
       },
       {
-        "name": "Legion Rapier",
-        "type": "INF",
+        "name": "Legion Rapier - Laser Destroyer",
+        "type": "LV",
         "speed": 10,
         "armour": 5,
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Rapier Laser Destroyer"
+          "Laser Destroyer"
         ],
         "specialRules": [
+        "Walker"
         ]
       },
       {
-        "name": "Legion Quad Launcher",
-        "type": "INF",
+        "name": "Legion Rapier - Quad Launcher",
+        "type": "LV",
         "speed": 10,
         "armour": 5,
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Thudd Gun"
+          "Quad Launcher"
         ],
         "specialRules": [
+        "Walker"
         ]
       },
-      {
-        "name": "Space Marine Thunderfire",
-        "type": "INF",
-        "speed": 10,
+            {
+        "name": "Tarantula - Lascannon",
+        "type": "LV",
+        "speed": "Immobile",
         "armour": 5,
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Thunderfire Cannon"
+          "Twin Lascannons"
         ],
         "specialRules": [
+        "Automaton"
+        ]
+      },
+                  {
+        "name": "Tarantula - Hyperios",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Hyperios Missile Launcher"
+        ],
+        "specialRules": [
+        "Automaton"
         ]
       },
       {
@@ -220,284 +495,94 @@
         ]
       },
        {
-        "name": "Attack Bike",
-        "type": "LV",
+        "name": "Scimitar Jetbikes - Bolter",
+        "type": "INF",
         "speed": 35,
         "armour": 4,
         "cc": 5,
-        "ff": 4,
+        "ff": 3,
         "weapons": [
-          "Heavy Bolter"
+          "Heavy Bolter|2"
+        ],
+        "specialRules": [
+          "Skimmer",
+          "Mounted"
         ]
       },
        {
-        "name": "Land Speeder Storm",
+        "name": "Land Speeder - Melta",
         "type": "LV",
         "speed": 35,
         "armour": 4,
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Heavy Bolter"
+          "Multi-Melta",
+          "Heavy Flamer"
         ],
         "specialRules": [
+          "Skirmisher",
           "Skimmer",
-          "Transport"
-        ],
-        "notes": "May transport one unit of Scouts."
-      },
-      {
-        "name": "Land Speeder",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Multi-Melta"
-        ],
-        "specialRules": [
-          "Scout",
-          "Skimmer"
+          "Vanguard"
         ]
       },
-      {
-        "name": "White Scars Land Speeder",
+       {
+        "name": "Land Speeder - Plasma",
         "type": "LV",
         "speed": 35,
         "armour": 4,
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Multi-Melta"
+          "Plasma Cannon",
+          "Heavy Bolter"
         ],
         "specialRules": [
-          "Wind-Swift",
-          "Scout",
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "Ravenwing Land Speeder",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Multi-Melta"
-        ],
-        "specialRules": [
-          "Scout",
+          "Skirmisher",
           "Skimmer",
-          "Invulnerable Save",
-          "Teleport Homer"
+          "Vanguard"
         ]
       },
-      {
-        "name": "Land Speeder Tornado",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Assault Cannon",
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Scout",
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "White Scars Land Speeder Tornado",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Assault Cannon",
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Wind-Swift",
-          "Scout",
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "Deathwatch Land Speeder Tornado",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Assault Cannon",
-          "Dragonfire Heavy Bolter"
-        ],
-        "specialRules": [
-          "Scout",
-          "Skimmer",
-          "Teleport Homer",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Ravenwing Land Speeder Tornado",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Assault Cannon",
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Scout",
-          "Skimmer",
-          "Invulnerable Save",
-          "Teleport Homer"
-        ]
-      },
-      {
-        "name": "Land Speeder Typhoon",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Typhoon Missile",
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Scout",
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "White Scars Land Speeder Typhoon",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Typhoon Missile",
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Wind-Swift",
-          "Scout",
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "Land Speeder Tempest",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Missile Launcher",
-          "Assault Cannon"
-        ],
-        "specialRules": [
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "White Scars Land Speeder Tempest",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Missile Launcher",
-          "Assault Cannon"
-        ],
-        "specialRules": [
-          "Wind-Swift",
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "Ravenwing Land Speeder Venegance",
+             {
+        "name": "Attack Speeder - Missile Launcher",
         "type": "LV",
         "speed": 30,
         "armour": 4,
         "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Plasma Storm Battery",
-          "Assault Cannon"
-        ],
-        "specialRules": [
-          "Skimmer",
-          "Invulnerable Save",
-          "Teleport Homer"
-        ]
-      },
-      {
-        "name": "White Scars Attack Bike",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 5,
-        "ff": 4,
-        "weapons": [
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Born in the Saddle",
-          "Wind-Swift",
-          "Walker"
-        ]
-      },
-      {
-        "name": "White Scars Melta Bike",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 5,
         "ff": 5,
         "weapons": [
-          "Multi-Melta"
+          "Lascannon",
+          "Heavy Flamer",
+          "Missile Launcher"
         ],
         "specialRules": [
-          "Born in the Saddle",
-          "Wind-Swift",
-          "Walker"
+          "Skimmer"
         ]
       },
-      {
-        "name": "Dreadnought, Venerable",
-        "type": "CH",
-        "weapons": [
-          "n/a"
-        ],
-        "specialRules": [
-          "Fearless",
-          "Inspiring",
-          "Invulnerable Save"
-        ],
-        "notes": "May only be added to a Dreadnought unit of any configuration."
-      },
-      {
-        "name": "Dreadnought",
+        {
+        "name": "Contemptor Dreadnought - Assault Cannon",
         "type": "AV",
         "speed": 15,
         "armour": 3,
         "cc": 3,
-        "ff": 4,
+        "ff": 3,
         "weapons": [
-          "Assault Cannon",
+          "Kheres Assault Cannon",
+          "Power Fist"
+        ],
+        "specialRules": [
+          "Walker"
+        ]
+      },
+             {
+        "name": "Contemptor Dreadnought - Lascannon",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 5,
+        "weapons": [
+          "Twin Lascannon",
           "Power Fist"
         ],
         "specialRules": [
@@ -505,186 +590,70 @@
         ]
       },
       {
-        "name": "Librarian Dreadnought",
+        "name": "Leviathan Dreadnought - Storm Cannon",
         "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Force Halberd and Power Fist",
-          "Smite"
-        ],
-        "specialRules": [
-          "Leader",
-          "Walker",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Dreadnought, Wulfen",
-        "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Helfrost Cannon",
-          "Great Wolf Claw"
-        ],
-        "specialRules": [
-          "Fearless",
-          "Infiltrators",
-          "Walker"
-        ]
-      },
-      {
-        "name": "Deathwatch Dreadnought",
-        "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 3,
-        "ff": 5,
-        "weapons": [
-          "Power Fist",
-          "Frag Cannon"
-        ],
-        "specialRules": [
-          "Walker"
-        ]
-      },
-      {
-        "name": "Death Company Dreadnought",
-        "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Blood Talon|2"
-        ],
-        "specialRules": [
-          "Fearless",
-          "Infiltrators",
-          "Walker"
-        ],
-        "notes": "Counts as a Dreadnought for the purposes of being transported."
-      },
-      {
-        "name": "Dreadnought, Mortis",
-        "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 4,
-        "ff": 3,
-        "weapons": [
-          "Twin Mortis Autocannon|2"
-        ],
-        "specialRules": [
-          "Walker"
-        ],
-        "notes": "Counts as a Dreadnought for the purposes of being transported."
-      },
-      {
-        "name": "Dreadnought, Deathwing",
-        "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Power Fist",
-          "Plasma Cannon"
-        ],
-        "specialRules": [
-          "Walker"
-        ],
-        "notes": "Counts as a Dreadnought for the purposes of being transported."
-      },
-      {
-        "name": "Dreadnought, Furioso",
-        "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 3,
-        "ff": 5,
-        "weapons": [
-          "Power Fist",
-          "Frag Cannon"
-        ],
-        "specialRules": [
-          "Walker"
-        ],
-        "notes": "Counts as a Dreadnought for the purposes of being transported."
-      },
-      {
-        "name": "Dreadnought, Hellfire",
-        "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 4,
-        "ff": 3,
-        "weapons": [
-          "Missile Launcher",
-          "Twin Lascannon"
-        ],
-        "specialRules": [
-          "Walker"
-        ],
-        "notes": "Counts as a Dreadnought for the purposes of being transported."
-      },
-      {
-        "name": "Doomglaive Dreadnought",
-        "type": "AV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Psycannon",
-          "Nemesis Doomglaive"
-        ],
-        "specialRules": [
-          "Walker",
-          "Faithful",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Dreadnought, Ironclad",
-        "type": "AV",
-        "speed": 15,
+        "speed": 10,
         "armour": 4,
         "cc": 3,
-        "ff": 4,
+        "ff": 3,
         "weapons": [
-          "Hurricane Bolters",
-          "Seismic Hammer"
+          "Storm Cannon",
+          "Siege Claw"
         ],
         "specialRules": [
           "Reinforced Armour",
-          "Walker"
-        ],
-        "notes": "Counts as a Dreadnought for the purposes of being transported."
+          "Infiltrators",
+          "Walker",
+          "Vanguard"
+        ]
       },
-      {
-        "name": "Dreadnought, Siege",
+            {
+        "name": "Leviathan Dreadnought - Melta Lance",
+        "type": "AV",
+        "speed": 10,
+        "armour": 4,
+        "cc": 3,
+        "ff": 5,
+        "weapons": [
+          "Melta Lance",
+          "Siege Claw"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Infiltrators",
+          "Walker",
+          "Vanguard"
+        ]
+      },
+                  {
+        "name": "Deredeo Dreadnought - Plasma",
         "type": "AV",
         "speed": 15,
         "armour": 3,
-        "cc": 4,
+        "cc": 5,
         "ff": 4,
         "weapons": [
-          "Twin Heavy Bolter",
-          "Heavy Flamer",
-          "Siege Drill"
+          "Aiolos Missile Launcher",
+          "Plasma Cannonade"
         ],
         "specialRules": [
-          "Walker"
-        ],
-        "notes": "Counts as a Dreadnought for the purposes of being transported."
+        ]
       },
-      {
+                        {
+        "name": "Deredeo Dreadnought - Autocannon",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 5,
+        "ff": 3,
+        "weapons": [
+          "Aiolos Missile Launcher",
+          "Autocannon|2"
+        ],
+        "specialRules": [
+        ]
+      },
+       {
         "name": "Predator Annihilator",
         "type": "AV",
         "speed": 30,
@@ -709,159 +678,32 @@
         ]
       },
       {
-        "name": "Baal Predator Hades",
-        "type": "AV",
-        "speed": 30,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Assault Cannon",
-          "Multi-Melta|2"
-        ],
-        "specialRules": [
-          "Lucifer Pattern Engine"
-        ]
-      },
-      {
-        "name": "Baal Predator Infernus",
-        "type": "AV",
-        "speed": 30,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Flamestorm Cannon ",
-          "Heavy Flamer|2"
-        ],
-        "specialRules": [
-          "Lucifer Pattern Engine"
-        ]
-      },
-      {
-        "name": "Deimos Predator Executioner",
-        "type": "AV",
-        "speed": 30,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Plasma Destroyer",
-          "Lascannon|2"
-        ]
-      },
-     {
-        "name": "Leman Russ Exterminator",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Autocannon",
-          "Heavy Flamer",
-          "Heavy Bolter|2|"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Razorback",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": "5+/4",
-        "weapons": [
-          {
-            "name": "0-1x Twin Lascannon",
-            "modes": [
-              {
-                "firepower": "AT4+",
-                "range": 45
-              }
-            ]
-          },
-          {
-            "name": "0-1x Twin Heavy Bolter",
-            "modes": [
-              {
-                "firepower": "AP4+",
-                "range": 30
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Transport"
-        ],
-        "notes": "May transport one infantry unit (except Terminators) without Jump Packs or Mounted. Armed with either Twin Lascannon or Twin Heavy Bolter. Razorbacks armed with Twin Heavy Bolter have their firefight value increased to 4+."
-      },
-      {
-        "name": "Blood Angels Razorback",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": "5+/4",
-        "weapons": [
-          {
-            "name": "0-1x Twin Lascannon",
-            "modes": [
-              {
-                "firepower": "AT4+",
-                "range": 45
-              }
-            ]
-          },
-          {
-            "name": "0-1x Twin Heavy Bolter",
-            "modes": [
-              {
-                "firepower": "AP4+",
-                "range": 30
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Transport",
-          "Lucifer Pattern Engine"
-        ],
-        "notes": "May transport one infantry unit (except Terminators) without Jump Packs or Mounted. Armed with either Twin Lascannon or Twin Heavy Bolter. Razorbacks armed with Twin Heavy Bolter have their firefight value increased to 4+."
-      },
-      {
-        "name": "Deathwatch Razorback",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Dragonfire Heavy Bolter"
-        ],
-        "specialRules": [
-          "Transport"
-        ],
-        "notes": "May transport one infantry unit (except a Terminator unit) without Jump Packs or Mounted."
-      },
-      {
-        "name": "Vortimer Razorback",
+        "name": "Support Rhino - Melta",
         "type": "AV",
         "speed": 30,
         "armour": 5,
         "cc": 6,
         "ff": 6,
         "weapons": [
-          "Twin Psycannon"
+          "Multi-Melta"
         ],
         "specialRules": [
-          "Transport",
-          "Faithful",
-          "Invulnerable Save"
+          "Transport (1)"
+        ]
+      },
+            {
+        "name": "Support Rhino - Missile Launcher",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Missile Launcher"
         ],
-        "notes": "May transport one infantry unit (except a Terminator unit) without Jump Packs or Mounted."
+        "specialRules": [
+          "Transport (1)"
+        ]
       },
       {
         "name": "Rhino",
@@ -871,143 +713,10 @@
         "cc": 6,
         "ff": 6,
         "weapons": [
-          "Storm Bolter"
+          "Bolters"
         ],
         "specialRules": [
-          "Transport"
-        ],
-        "notes": "May transport two infantry units (except Terminators) without Jump Packs or Mounted."
-      },
-      {
-        "name": "Blood Angels Rhino",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Storm Bolter"
-        ],
-        "specialRules": [
-          "Transport",
-          "Lucifer Pattern Engine"
-        ],
-        "notes": "May transport two infantry units (except Terminators) without Jump Packs or Mounted."
-      },
-      {
-        "name": "Siege Rhino",
-        "type": "AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Storm Bolter"
-        ],
-        "specialRules": [
-          "Walker",
-          "Transport"
-        ],
-        "notes": "May transport two infantry units (except Terminators) without Jump Packs or Mounted."
-      },
-      {
-        "name": "Damocles Command Rhino",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Storm Bolter"
-        ],
-        "specialRules": [
-          "Extended Command",
-          "Transport"
-        ],
-        "notes": "May transport one infantry unit (except Terminators) without Jump Packs or Mounted."
-      },
-      {
-        "name": "Grey Knights Rhino",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Storm Bolter"
-        ],
-        "specialRules": [
-          "Transport",
-          "Faithful",
-          "Invulnerable Save"
-        ],
-        "notes": "May transport two infantry units (except Terminators) without Jump Packs or Mounted."
-      },
-            {
-        "name": "Grey Knights Razorback",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Psycannon"
-        ],
-        "specialRules": [
-          "Transport",
-          "Faithful",
-          "Invulnerable Save"
-        ],
-        "notes": "May transport two infantry units (except Terminators) without Jump Packs or Mounted."
-      },
-      {
-        "name": "Hunter",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Hunter-Killer"
-        ]
-      },
-      {
-        "name": "Blood Angels Hunter",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Hunter-Killer"
-        ],
-        "specialRules": [
-          "Lucifer Pattern Engine"
-        ]
-      },
-      {
-        "name": "Stalker",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Icarus Stormcannons"
-        ]
-      },
-      {
-        "name": "Blood Angels Stalker",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Icarus Stormcannons"
-        ],
-        "specialRules": [
-          "Lucifer Pattern Engine"
+          "Transport (2)"
         ]
       },
       {
@@ -1018,7 +727,7 @@
         "cc": 6,
         "ff": 4,
         "weapons": [
-          "Demolisher"
+          "Demolisher Cannon"
         ],
         "specialRules": [
           "Walker"
@@ -1032,270 +741,239 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Laser Destroyer Array"
+          "Magna Laser Destroyer"
         ]
       },
       {
-        "name": "Whirlwind",
+        "name": "Land Raider Proteus",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Twin Lascannon|2",
+          "Twin Heavy Bolter"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Heavy Transport (2)"
+        ]
+      },
+            {
+        "name": "Land Raider Proteus Explorator",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Twin Lascannon|2",
+          "Twin Heavy Bolter"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Heavy Transport (2)",
+          "Leader",
+          "Vox-Caster",
+          "Commander"
+        ]
+      },
+         {
+        "name": "Sicarian - Autocannon",
+        "type": "AV",
+        "speed": 25,
         "armour": 5,
         "cc": 6,
-        "ff": 5,
+        "ff": 2,
         "weapons": [
-          "Whirlwind Launcher"
+         "Twin Accelerator Autocannon",
+          "Heavy Bolter|3"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+        {
+        "name": "Sicarian - Plasma",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 2,
+        "weapons": [
+         "Omega Plasma Array",
+         "Heavy Bolter",
+         "Lascannon|2"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+        {
+        "name": "Sicarian Punisher",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 2,
+        "weapons": [
+         "Punisher Gatling Cannon",
+          "Heavy Bolter|3"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
         ]
       },
       {
-        "name": "White Scars Vindicator",
+        "name": "Sicarian Arcus",
         "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 2,
+        "weapons": [
+         "Arcus Missile Launcher",
+         "Heavy Bolter",
+         "Lascannon|2"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+       {
+        "name": "Sabre - Autocannon",
+        "type": "LV",
         "speed": 30,
         "armour": 4,
         "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Demolisher"
-        ]
-      },
-      {
-        "name": "Land Raider",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Lascannon|2",
-          "Twin Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Transport"
-        ],
-        "notes": "May transport one Terminator unit or two infantry units without Jump Packs or Mounted."
-      },
-      {
-        "name": "Land Raider Redeemer",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 5,
-        "ff": 4,
-        "weapons": [
-          "Flamestorm Cannon|2",
-          "Twin Assault Cannon"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Transport"
-        ],
-        "notes": "May transport three infantry units without Jump Packs or Mounted; Terminators count as one and a half units each, rounding up. Counts as a Land Raider for the purposes of being transported."
-      },
-      {
-        "name": "Deathwing Land Raider",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Lascannon|2",
-          "Twin Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Transport",
-          "Invulnerable Save"
-        ],
-        "notes": "May transport one Terminator unit or two infantry units without Jump Packs or Mounted."
-      },
-      {
-        "name": "Vortimer Land Raider",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Lascannon|2",
-          "Twin Psycannon"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Faithful",
-          "Thick Rear Armour",
-          "Transport",
-          "Invulnerable Save"
-        ],
-        "notes": "May transport one Terminator unit or two infantry units without Jump Packs or Mounted."
-      },
-      {
-        "name": "Vortimer Land Raider Redeemer",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 5,
-        "ff": 4,
-        "weapons": [
-          "Twin Psycannon",
-          "Incinerator|2"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Faithful",
-          "Thick Rear Armour",
-          "Transport",
-          "Invulnerable Save"
-        ],
-        "notes": "May transport three infantry units without Jump Packs or Mounted; Terminators count as one and a half units each, rounding up. Counts as a Land Raider for the purposes of being transported."
-      },
-      {
-        "name": "Land Raider Ares",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 5,
         "ff": 3,
         "weapons": [
-          "Demolisher",
-          "Twin Assault Cannon",
-          "Heavy Flamer|2"
+         "Sabre Autocannon",
+         "Heavy Bolter",
+         "Sabre Missiles"
         ],
         "specialRules": [
+        "Blitz",
+        "Evasive",
+        "Vanguard"
+        ]
+      },
+        {
+        "name": "Sabre - Neutron Blaster",
+        "type": "LV",
+        "speed": 30,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+         "Neutron Blaster",
+         "Multi-Melta",
+         "Sabre Missiles"
+        ],
+        "specialRules": [
+        "Blitz",
+        "Evasive",
+        "Vanguard"
+        ]
+      },
+           {
+        "name": "Spartan - Lascannon",
+        "type": "WE",
+        "speed": "20",
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Quad Lascannon|2|FwA",
+          "Twin Heavy Bolter||FwA"
+        ],
+        "specialRules": [
+          "Damage Capacity: 2",
           "Reinforced Armour",
           "Thick Rear Armour",
+          "Heavy Transport (4)",
           "Walker"
-        ]
-      },
-      {
-        "name": "Land Raider Achilles",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Thunderfire Cannon",
-          "Twin Multi-Melta|2|"
         ],
-        "specialRules": [
-          "Leader",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Transport"
-        ],
-        "notes": "May transport one infantry unit without Jump Packs or Mounted. Counts as a Land Raider for the purposes of being transported."
+        "crit": "The Spartan is destroyed."
       },
-      {
-        "name": "Land Raider Anvilarum",
-        "type": "AV",
-        "speed": 25,
+        {
+        "name": "Spartan - Laser Destroyer",
+        "type": "WE",
+        "speed": "20",
         "armour": 4,
         "cc": 6,
-        "ff": 5,
+        "ff": 3,
         "weapons": [
-          "Quad Lascannon"
+          "Laser Destroyer|2|FwA",
+          "Twin Heavy Bolter||FwA"
         ],
         "specialRules": [
-          "Reinforced Armour",
-          "Transport"
-        ],
-        "notes": "May transport one Dreadnought or two infantry units without Jump Packs or Mounted. Counts as a Land Raider for the purposes of being transported."
-      },
-      {
-        "name": "Land Raider Crusader",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Twin Assault Cannon",
-          "Hurricane Bolters|2"
-        ],
-        "specialRules": [
+          "Damage Capacity: 2",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Transport"
+          "Heavy Transport (4)",
+          "Walker"
         ],
-        "notes": "May transport three infantry units without Jump Packs or Mounted. Terminators count as one and a half units each, rounding up. Counts as a Land Raider for the purposes of being transported."
+        "crit": "The Spartan is destroyed."
       },
-      {
-        "name": "Deathwatch Land Raider",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
+       {
+        "name": "Kratos - Battlecannon",
+        "type": "WE",
+        "speed": "20",
+        "armour": 3,
+        "cc": 6,
+        "ff": 3,
         "weapons": [
-          "Twin Dragonfire Heavy Bolter",
-          "Hurricane Bolters|2"
+          "Kratos Battlecannon",
+          "Autocannon",
+          "Twin Heavy Bolter|2|FwA"
         ],
         "specialRules": [
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Teleport Homer",
-          "Transport"
+          "Damage Capacity: 2",
+          "Thick Rear Armour"
         ],
-        "notes": "May transport three infantry units without Jump Packs or Mounted. Terminators count as one and a half units each, rounding up. Counts as a Land Raider for the purposes of being transported."
+        "crit": "The Kratos is destroyed."
       },
       {
-        "name": "Land Raider Helios",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Twin Lascannon|2",
-          "Hyperios Launcher|0-1",
-          "Whirlwind Launcher|0-1"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Transport"
-        ],
-        "notes": "Armed with either a Hyperios or Whirlwind Launcher. May transport one infantry unit (except a Terminator unit) without Jump Packs or Mounted. Counts as a Land Raider for the purposes of being transported."
-      },
-      {
-        "name": "Land Raider Prometheus",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 5,
+        "name": "Kratos - Melta",
+        "type": "WE",
+        "speed": "20",
+        "armour": 3,
+        "cc": 6,
         "ff": 4,
         "weapons": [
-          "Quad Heavy Bolter|2"
+          "Melta Blastgun",
+          "Autocannon",
+          "Twin Lascannon|2|FwA"
         ],
         "specialRules": [
-          "Extended Command",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Transport"
+          "Damage Capacity: 2",
+          "Thick Rear Armour"
         ],
-        "notes": "May transport one Terminator unit or two infantry units without Jump Packs or Mounted."
+        "crit": "The Kratos is destroyed."
       },
-      {
-        "name": "Land Raider Wrath of Mjalnar",
-        "type": "AV",
-        "speed": 25,
+       {
+        "name": "Spartan - Laser Destroyer",
+        "type": "WE",
+        "speed": "20",
         "armour": 4,
-        "cc": 5,
-        "ff": 4,
+        "cc": 6,
+        "ff": 3,
         "weapons": [
-          "Twin Lascannon|2|",
-          "Twin Helfrost Cannon"
+          "Laser Destroyer|2|FwA",
+          "Twin Heavy Bolter||FwA"
         ],
         "specialRules": [
+          "Damage Capacity: 2",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Transport"
+          "Heavy Transport (4)",
+          "Walker"
         ],
-        "notes": "May transport one Terminator unit or two infantry units without Jump Packs or Mounted."
+        "crit": "The Spartan is destroyed."
       },
       {
         "name": "Bastion",
@@ -1357,271 +1035,105 @@
         "crit": "The Glaive is destroyed. All units within 5cm suffer a hit on a 5+."
       },
       {
-        "name": "Deathwatch Landing Craft",
+        "name": "Fire Raptor - Heavy Bolter",
         "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Twin Lascannon|2",
-          "AC Twin Dragonfire Heavy Bolter|3"
-        ],
-        "specialRules": [
-          "Damage Capacity 4",
-          "Fearless",
-          "Planetfall",
-          "Reinforced Armour",
-          "Transport"
-        ],
-        "notes": "May transport twelve infantry units, Attack Bikes or Dreadnoughts; Terminators and Dreadnoughts count as two units each; plus any six armoured vehicle units (except Dreadnoughts); Land Raiders count as one and a half units each, rounding up.",
-        "crit": "The unit and all units being carried are destroyed. All units within 5cm suffer a hit."
-      },
-      {
-        "name": "Grey Knights Landing Craft",
-        "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Twin Lascannon|2",
-          "AC Twin Psycannon|3"
-        ],
-        "specialRules": [
-          "Damage Capacity 4",
-          "Fearless",
-          "Faithful",
-          "Planetfall",
-          "Reinforced Armour",
-          "Invulnerable Save",
-          "Transport"
-        ],
-        "notes": "May transport twelve infantry units or Dreadnoughts; Terminators and Dreadnoughts count as two units each; plus any six armoured vehicle units (except Dreadnoughts); Land Raiders count as one and a half units each, rounding up. Critical Hit Effect: The unit and all units being carried are destroyed. All units within 5cm suffer a hit on 4+."
-      },
-      {
-        "name": "Stormwolf Assault Boat",
-        "type": "AC/WE",
-        "speed": "Bomber",
+         "speed": "35cm/Hover",
         "armour": 5,
-        "cc": 5,
         "ff": 4,
         "weapons": [
-          "AC Twin Lascannon||FxF",
-          "AC Twin Heavy Bolter||",
-          "Twin Helfrost Cannon||"
+          "Avenger Bolt Cannon||FwA",
+          "Tempest Rockets||FwA",
+          "AC Twin Heavy Bolter||Left",
+          "AC Twin Heavy Bolter||Right"
         ],
         "specialRules": [
           "Damage Capacity 2",
           "Reinforced Armour",
-          "Planetfall",
-          "Transport"
+          "Thick Rear Armour"
         ],
-        "notes": "May transport six infantry units without Mounted; Terminators and Dreadnoughts count as two units each. Counts as a Landing Craft for the purposes of being transported.",
-        "crit": "The Stormwolf and all units being carried are destroyed."
+        "crit": "The Fire Raptor is destroyed."
       },
-      {
-        "name": "Stormfang Gunship",
+            {
+        "name": "Fire Raptor - Autocannon",
         "type": "AC/WE",
-        "speed": "Bomber",
+         "speed": "35cm/Hover",
         "armour": 5,
+        "ff": 5,
         "weapons": [
-          "AC Helfrost Destructor||FxF",
-          "AC Twin Lascannon||FxF",
-          "AC Twin Heavy Bolter||"
+          "Avenger Bolt Cannon||FwA",
+          "Tempest Rockets||FwA",
+          "Twin Autocannon||Left",
+          "Twin Autocannon||Right"
         ],
         "specialRules": [
           "Damage Capacity 2",
-          "Reinforced Armour"
-        ],
-        "crit": "The Stormfang is destroyed."
-      },
-      {
-        "name": "Storm Talon",
-        "type": "AC",
-        "speed": "Fighter",
-        "armour": 5,
-        "weapons": [
-          "AC Twin Assault Cannon||FwA",
-          "AC Twin Heavy Bolter||FxF"
-        ]
-      },
-      {
-        "name": "Deathwatch Storm Talon",
-        "type": "AC",
-        "speed": "Fighter",
-        "armour": 5,
-        "weapons": [
-          "AC Twin Assault Cannon||FwA",
-          "AC Twin Dragonfire Heavy Bolter||FxF"
-        ]
-      },
-      {
-        "name": "Grey Knights Storm Talon",
-        "type": "AC",
-        "speed": "Fighter",
-        "armour": 5,
-        "weapons": [
-          "AC Twin Assault Cannon||FwA",
-          "AC Twin Psycannon||FxF"
-        ],
-        "specialRules": [
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Stormraven",
-        "type": "AV",
-        "speed": 35,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Assault Cannon",
-          "Bloodstrike Missiles",
-          "Hurricane Bolters"
-        ],
-        "specialRules": [
           "Reinforced Armour",
-          "Skimmer",
-          "Planetfall",
-          "Descent of Angels",
-          "Transport"
+          "Thick Rear Armour"
         ],
-        "notes": "May transport one Terminator or two infantry units without Mounted. May in addition transport one Dreadnought. Counts as a Drop Pod for the purpose of being transported."
+        "crit": "The Fire Raptor is destroyed."
       },
-      {
-        "name": "Corvus Blackstar Dropship",
+            {
+        "name": "Fire Raptor - Lascannon",
         "type": "AC/WE",
-        "speed": "Fighter-Bomber",
-        "armour": 4,
-        "cc": 6,
+         "speed": "35cm/Hover",
+        "armour": 5,
         "ff": 5,
         "weapons": [
-          "AC Twin Assault Cannon||FxF",
-          "AC Blackstar Rockets",
-          "Blackstar Hurricane Bolters"
+          "Avenger Bolt Cannon||FwA",
+          "Tempest Rockets||FwA",
+          "Twin Lascannon||Left",
+          "Twin Lascannon||Right"
         ],
         "specialRules": [
           "Damage Capacity 2",
-          "Planetfall",
-          "Wings of the Sky Angel",
-          "Transport"
-        ],
-        "notes": "May transport three infantry units or Attack Bikes. Terminators count as one and a half units each, rounding up. May in addition transport one Dreadnought or Land Speeder."
-      },
-      {
-        "name": "Ravenwing Nephilim",
-        "type": "AC",
-        "speed": "Fighter",
-        "armour": 5,
-        "weapons": [
-          "AC Twin Heavy Bolter||FxF",
-          "AC Twin Lascannon||FxF"
-        ],
-        "specialRules": [
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Ravenwing Dark Talon",
-        "type": "AC",
-        "speed": "Fighter-Bomber",
-        "armour": 5,
-        "weapons": [
-          "AC Rift Cannon||FxF",
-          "AC Hurricane Bolters||FxF",
-          "AC Stasis Bomb||FxF"
-        ],
-        "specialRules": [
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Fire Raptor",
-        "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 5,
-        "weapons": [
-          "AC Twin Avenger Bolt Cannon||FxF",
-          "AC Missile Array||FxF",
-          "AC Quad Heavy Bolter Turrets||"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour"
+          "Reinforced Armour",
+          "Thick Rear Armour"
         ],
         "crit": "The Fire Raptor is destroyed."
       },
       {
         "name": "Storm Eagle",
         "type": "AC/WE",
-        "speed": "Bomber",
+         "speed": "35cm/Hover",
         "armour": 5,
-        "cc": 6,
         "ff": 4,
         "weapons": [
-          "AC Quad Lascannon||FxF",
-          "AC Twin Heavy Bolter||FxF",
+          "Twin Lascannon||FwA",
+          "AC Heavy Bolter||FwA",
           "Vengeance Launcher||"
         ],
         "specialRules": [
           "Damage Capacity 2",
-          "Planetfall",
           "Reinforced Armour",
-          "Transport"
+          "Thick Rear Armour",
+          "Heavy Transport (4)"
         ],
-        "notes": "May transport four infantry units without Mounted; Terminators and Dreadnoughts count as two units each. Counts as a Thunderhawk for the purpose of being transported.",
-        "crit": "The Storm Eagle and all units being carried are destroyed."
-      },
-      {
-        "name": "Darkwing Storm Eagle",
-        "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 5,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "AC Quad Lascannon|2|FxF",
-          "AC Twin Heavy Bolter||FxF",
-          "Vengeance Launcher||FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Planetfall",
-          "Reinforced Armour",
-          "Invulnerable Save",
-          "Transport"
-        ],
-        "notes": "May transport four infantry units without Mounted; Terminators and Dreadnoughts count as two units each.",
         "crit": "The Storm Eagle and all units being carried are destroyed."
       },
       {
         "name": "Thunderhawk",
         "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 4,
-        "cc": 6,
+        "speed": "30cm/Hover",
+        "armour": 5,
         "ff": 4,
         "weapons": [
-          "Battle Cannon||FxF",
-          "AC Twin Heavy Bolter|2|FxF",
+          "Battle Cannon||FwA",
+          "AC Twin Heavy Bolter|2|FwA",
           "AC Twin Heavy Bolter||Left",
           "AC Twin Heavy Bolter||Right"
         ],
         "specialRules": [
-          "Damage Capacity 2",
-          "Planetfall",
+          "Damage Capacity 3",
           "Reinforced Armour",
-          "Transport"
+          "Thick Rear Armour",
+          "Assault Transport (8)"
         ],
-        "notes": "May transport eight infantry units, Attack Bikes; Terminators and Dreadnoughts count as two units each.",
         "crit": "The Thunderhawk and all units being carried are destroyed."
       },
       {
         "name": "Thunderhawk Transporter",
         "type": "AC/WE",
-        "speed": "Bomber",
+         "speed": "30cm/Hover",
         "armour": 4,
         "cc": 6,
         "ff": 5,
@@ -1637,217 +1149,6 @@
         ],
         "notes": "May carry up to two of the following units: Stalkers, Hunters, Predators, Razorbacks, Rhinos and Vindicators. Land Raiders counts as two units each. In addition it may also carry any infantry transported in these vehicles, which counts as being located in the vehicles when disembarking.",
         "crit": "The Thunderhawk Transporter and all units being carried are destroyed."
-      },
-      {
-        "name": "Iron Hands Thunderhawk Transporter",
-        "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "AC Twin Heavy Bolter|2|Left",
-          "AC Twin Heavy Bolter|2|Right"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Planetfall",
-          "Reinforced Armour",
-          "Transport"
-        ],
-        "notes": "May carry up to two of the following units: Dreadnoughts, Hunters, Predators, Razorbacks, Rhinos, Stalkers and Vindicators. Land Raiders counts as two units each. In addition it may also carry any infantry transported in these vehicles, which counts as being located in the vehicles when disembarking.",
-        "crit": "The Thunderhawk Transporter and all units being carried are destroyed."
-      },
-      {
-        "name": "Deathwatch Thunderhawk Transporter",
-        "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "AC Twin Dragonfire Heavy Bolter|2|Left",
-          "AC Twin Dragonfire Heavy Bolter|2|Right"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Planetfall",
-          "Reinforced Armour",
-          "Transport"
-        ],
-        "notes": "May carry up to two of the following units: Stalkers, Hunters, Predators, Razorbacks, Rhinos and Vindicators. Land Raiders counts as two units each. In addition it may also carry any infantry transported in these vehicles, which counts as being located in the vehicles when disembarking.",
-        "crit": "The Thunderhawk Transporter and all units being carried are destroyed."
-      },
-      {
-        "name": "Grey Knights Thunderhawk Transporter",
-        "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "AC Twin Psycannon|2|Left",
-          "AC Twin Psycannon|2|Right"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Planetfall",
-          "Reinforced Armour",
-          "Faithful",
-          "Invulnerable Save",
-          "Transport"
-        ],
-        "notes": "May carry up to two of the following units: Stalkers, Hunters, Predators, Razorbacks, Rhinos and Vindicators. Land Raiders counts as two units each. In addition it may also carry any infantry transported in these vehicles, which counts as being located in the vehicles when disembarking.",
-        "crit": "The Thunderhawk Transporter and all units being carried are destroyed."
-      },
-      {
-        "name": "Thunderhawk Bomber",
-        "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 4,
-        "weapons": [
-          "Battle Cannon||FxF",
-          "AC Twin Heavy Bolter|2|FxF",
-          "AC Twin Heavy Bolter||Left",
-          "AC Twin Heavy Bolter||Right",
-          "AC Bomb Racks||FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour"
-        ],
-        "crit": "The Thunderhawk is destroyed."
-      },
-      {
-        "name": "Landing Craft",
-        "type": "AC/WE",
-        "speed": "Bomber",
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Twin Lascannon|2",
-          "AC Twin Heavy Bolter|3"
-        ],
-        "specialRules": [
-          "Damage Capacity 4",
-          "Fearless",
-          "Planetfall",
-          "Reinforced Armour",
-          "Transport"
-        ],
-        "notes": "May transport twelve infantry units, Attack Bikes or Dreadnoughts; Terminators and Dreadnoughts count as two units each; plus any six armoured vehicle units (except H-AV, Dreadnoughts); Land Raiders count as one and a half units each, rounding up.",
-        "crit": "The Landing Craft and all units being carried are destroyed. All units within 5cm suffer a hit."
-      },
-      {
-        "name": "Hunter Class Destroyer",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "1BP, MW"
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Transport"
-        ],
-        "notes": "May transport four infantry units. These may only deploy on to the battlefield using Teleport."
-      },
-      {
-        "name": "Dark Hunter Class Destroyer",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "1BP, MW"
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Transport"
-        ],
-        "notes": "May transport four infantry units. These may only deploy on to the battlefield using Teleport. May in addition transport five Corvus Blackstars and three Thunderhawk Transporters along with any units these transport."
-      },
-      {
-        "name": "Vanguard Class Light Cruiser",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "3BP, MW"
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Transport"
-        ],
-        "notes": "May transport 12 infantry units, Attack Bikes, or Dreadnoughts; plus five light vehicles or armoured vehicle units (except Attack Bikes and Dreadnoughts); plus two Thunderhawks and enough Drop Pods to transport any other units being carried."
-      },
-      {
-        "name": "Strike Cruiser",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "4BP, MW"
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Transport"
-        ],
-        "notes": "May transport 20 infantry units, Attack Bikes, or Dreadnoughts; plus 10 light vehicles or armoured vehicle units (except Attack Bikes and Dreadnoughts); plus six Thunderhawks and enough Drop Pods or Landing Craft to transport any other units being carried."
-      },
-      {
-        "name": "Grey Knights Strike Cruiser",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "4BP, MW"
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Navis Nobilite",
-          "Transport"
-        ],
-        "notes": "May transport 20 infantry units, Attack Bikes, Dreadnoughts; plus 10 light vehicles or armoured vehicle units (except Attack Bikes and Dreadnoughts) ; plus 6 Thunderhawks/Storm Eagles and enough Drop Pods or Landing Craft to transport any other units being carried."
-      },
-      {
-        "name": "Battle Barge",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "10BP, MW"
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Slow to Arrive (May only arrive from turn 2 onwards)",
-          "Transport"
-        ],
-        "notes": "May transport 30 infantry units, Attack Bikes, or Dreadnoughts; plus 20 armoured vehicle units (except Attack Bikes or Dreadnoughts); plus 9 Thunderhawks and enough Drop Pods or Landing Craft to transport any other units being carried."
       },
       {
         "name": "Drop Pod",
@@ -1867,330 +1168,7 @@
           "Transport"
         ],
         "notes": "May transport one formation of only the following units: Tacticals, Devastators, Dreadnought, Sternguard Veterans, Wolf Guard Terminators, Grey Knights Strike Squad, Grey Knights Purgation Squad. After the Drop Pod lands, its Deathwind attacks all enemy units within 15cm. Each enemy formation attacked receives a Blast Marker for coming under fire, and an extra Blast Marker for each casualty. Then any troops carried in the Drop Pod must disembark within 5cm of the Drop Pod or within 5cm of another unit from the same formation that has already landed, so long as all units are placed within 15cm of the Drop Pod. Drop pod models should be removed from the board once the formation they transport has disembarked."
-      },
-      {
-        "name": "Intercessor",
-        "type": "INF",
-        "speed": "15",
-        "armour": 3,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Bolt Rifle"
-        ]
-      },
-      {
-        "name": "Assault Intercessor",
-        "type": "INF",
-        "speed": "15",
-        "armour": 3,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Heavy Bolt Pistol & Chainsword"
-        ],
-        "specialRules": [
-          "Infiltrators"
-        ]
-      },
-      {
-        "name": "Heavy Intercessor",
-        "type": "INF",
-        "speed": "15",
-        "armour": 3,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Heavy Bolt Rifle"
-        ]
-      },
-      {
-        "name": "Inceptor",
-        "type": "INF",
-        "speed": "30",
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Assault Bolter"
-        ],
-        "specialRules": [
-          "Jump Packs",
-          "Reinforced Armor",
-          "Overlord Insertion"
-        ]
-      },
-      {
-        "name": "Hellblaster",
-        "type": "INF",
-        "speed": "15",
-        "armour": 3,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          " Plasma Incinerator|2"
-        ]
-      },
-      {
-        "name": "Outrider",
-        "type": "INF",
-        "speed": "35",
-        "armour": 3,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Heavy Bolt Pistol & Chainsword"
-        ],
-        "specialRules": [
-          "Mounted"
-        ]
-      },
-      {
-        "name": "Eradicator",
-        "type": "INF",
-        "speed": "15",
-        "armour": 4,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Heavy Melta Rifle"
-        ],
-        "specialRules": [
-          "Reinforced Armor"
-        ]
-      },
-      {
-        "name": "Aggressor",
-        "type": "INF",
-        "speed": "15",
-        "armour": 4,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Flame Gauntlet|2"
-        ],
-        "specialRules": [
-          "Reinforced Armor"
-        ]
-      },
-      {
-        "name": "Suppressor",
-        "type": "INF",
-        "speed": "30",
-        "armour": 4,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Accelerator Autocannon"
-        ],
-        "specialRules": [
-          "Jump Packs",
-          "Overlord Insertion",
-          "Reinforced Armor"
-        ]
-      },
-      {
-        "name": "Reiver",
-        "type": "INF",
-        "speed": "15",
-        "armour": 4,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-        ],
-        "specialRules": [
-          "Infiltrators",
-          "Overlord Insertion",
-          "Scout"
-        ]
-      },
-      {
-        "name": "Eliminator",
-        "type": "INF",
-        "speed": "15",
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Bolt Sniper Rife"
-        ],
-        "specialRules": [
-          "Scout"
-        ]
-      },
-      {
-        "name": "Infiltrator",
-        "type": "INF",
-        "speed": "15",
-        "armour": 4,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-        ],
-        "specialRules": [
-          "Teleport"
-        ]
-      },
-      {
-        "name": "Invader",
-        "type": "LV",
-        "speed": "35",
-        "armour": 3,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Onslaught Gatling Cannon"
-        ]
-      },
-      {
-        "name": "Invictor Warsuit",
-        "type": "LV",
-        "speed": "15",
-        "armour": 4,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Twin Autocannon",
-          "Servo Arm"
-        ],
-        "specialRules": [
-          "Reinforced Armor",
-          "Walker"
-        ]
-      },
-      {
-        "name": "Redemptor Dreadnought",
-        "type": "AV",
-        "speed": "15",
-        "armour": 4,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Onslaught Heavy Gatling Cannon",
-          "Icarus Rocket Pods",
-          "Power Fist"
-        ],
-        "specialRules": [
-          "Reinforced Armor",
-          "Walker"
-        ]
-      },
-      {
-        "name": "Impulsor",
-        "type": "AV",
-        "speed": "35",
-        "armour": 5,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Missile Launcher"
-        ],
-        "specialRules": [
-          "Transport"
-        ],
-        "notes": "May transport two infantry units without Jump Packs or Mounted. Aggressors and Eradicators counts as two units each."
-      },
-      {
-        "name": "Repulsor",
-        "type": "AV",
-        "speed": "30",
-        "armour": 4,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Onslaught Gatling Cannon",
-          "Las-Talon"
-        ],
-        "specialRules": [
-          "Reinforced Armor",
-          "Transport"
-        ],
-        "notes": "May transport two infantry units without Jump Packs or Mounted. Aggressors and Eradicators counts as two units each."
-      },
-      {
-        "name": "Gladiator, Lancer",
-        "type": "AV",
-        "speed": "30",
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Heavy Laser Destroyer"
-        ]
-      },
-      {
-        "name": "Gladiator, Valiant",
-        "type": "AV",
-        "speed": "30",
-        "armour": 4,
-        "cc": 5,
-        "ff": 4,
-        "weapons": [
-          "Twin Las-Talon",
-          "Multi-Melta|2"
-        ]
-      },
-      {
-        "name": "Gladiator, Reaper",
-        "type": "AV",
-        "speed": "30",
-        "armour": 4,
-        "cc": 5,
-        "ff": 4,
-        "weapons": [
-          "Onslaught Heavy Gatling Cannon"
-        ]
-      },
-      {
-        "name": "Storm Speeder, Thunderstrike",
-        "type": "AV",
-        "speed": "35",
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Stormfury Missiles",
-          "Icarus Rocket Pods",
-          "Las-Talon"
-        ],
-        "specialRules": [
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "Storm Speeder, Hammerstrike",
-        "type": "AV",
-        "speed": "35",
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Melta Destroyer",
-          "Hammerstrike Launcher"
-        ],
-        "specialRules": [
-          "Skimmer"
-        ]
-      },
-      {
-        "name": "Astraeus",
-        "type": "WE",
-        "speed": "20",
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Macro-Accelerator Cannon",
-          "Plasma Eradicator|2|FxF",
-          "Twin Heavy Bolter||FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity: 4",
-          "Void Shields 2",
-          "Reinforced Armour"
-        ],
-        "crit": "The Astraeus is destroyed. All units within 5cm suffer a hit on a 5+."
       }
-    ]
+         ]
   }
 ]
