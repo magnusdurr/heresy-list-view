@@ -3,11 +3,11 @@
   "army": "Ultramarines",
   "version": "1.0.Alpha",
   "release": "2025-00-00",
-  "intro": "The Codex Astartes army list allows you to field an army based on one of the Space Marine Chapters that follows the teachings of the Codex Astartes. The list has a flexible structure to allow you to build an army that represents your favorite Space Marine Chapter on the battlefield.",
+  "intro": "Ultramarine armies gain 12 formation points (F/p), 5 upgrade points (U/p), 3 War Engine points (WE/p), and 3 Ally points (A/p) for a normal sized battle.",
   "armyforge": "EAR_Loyalist_LegionesAstartes_Ultramarines",
-  "strategy": "Space Marine armies have a Strategy Rating of 5.",
-  "Initiative": "All formations have an Initiative Rating of 1+.",
-  "armyRules": "The <i>Dauntless</i> special rule applies to all formations.",
+  "strategy": "Legiones Astartes armies have a Strategy Rating of 3.",
+  "Initiative": "All Ultramarine Detachments and Collegia Titanica allied Banners have an initiative of 1+. Battle Automata Detachments have an initiative of 2+. Solar Auxilia allied Tercios have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
+  "armyRules": "The <i>Dauntless</i> special rule applies to all Ultramarine Detachments and Collegia Titanica Banners.",
   "specialRules": [
     "Drop Pods",
     "Dauntless"
@@ -55,11 +55,12 @@
 
         "Spartan - Lascannon",
         "Spartan - Laser Destroyer",
-        "Kratos - Battlecannon",
+        "Kratos - Battle Cannon",
         "Kratos - Melta",
 
         
         "Thunderhawk",
+        "Xiphon Interceptor",
         "Fire Raptor - Autocannon",
         "Fire Raptor - Lascannon",
         "Fire Raptor - Heavy Bolter",
@@ -91,112 +92,119 @@
   ],
   "sections": [
     {
-      "name": "Codex Astartes Detachments",
-      "description": "Up to one Scout Detachment for each non-Scout Detachment.",
+      "name": "Ultramarine Core Detachments",
+      "description": "Ultramarine armies must have at least one Core Detachment",
       "formations": [
         {
-          "name": "Assaults",
-          "units": "Four Assaults",
+          "name": "Tactical Legionaries",
+          "units": "One Lieutenant, four Tacticals - Melta",
           "extraUnits": [
             "Commander",
-            "Vindicators"
+            "Transport",
+            "Tacticals",
+            "Support",
+            "Heavy Support",
+            "Terminators"
+
           ],
-          "points": 175
-        },
-        {
-          "name": "Bikes",
-          "units": "Five Assault Bikes",
-          "extraUnits": [
-            "Attack Bikes",
-            "Commander"
-          ],
-          "points": 200
-        },
-        {
-          "name": "Devastators",
-          "units": "Four Devastators plus transport",
-          "extraUnits": [
-            "Anti-Air",
-            "Commander",
-            "Land Raider Transport",
-            "Dreadnoughts",
-            "Razorback",
-            "Vindicators"
-          ],
-          "points": 250
-        },
-        {
-          "name": "Land Raiders",
-          "units": "Three Land Raiders",
-          "extraUnits": [
-            "Add one Land Raider: 50 points",
-            "Anti-Air"
-          ],
-          "points": 275
-        },
-        {
-          "name": "Land Speeders",
-          "units": "Any five of the following units: Land Speeder, Land Speeder Tornado",
-          "extraUnits": [
-            "Typhoons"
-          ],
-          "points": 200
-        },
-        {
-          "name": "Predators",
-          "units": "Four Predator Destructors and/or Predator Annihilators",
-          "extraUnits": [
-            "Anti-Air"
-          ],
-          "points": 250
-        },
-        {
-          "name": "Scouts",
-          "units": "Four Scouts plus transport",
-          "extraUnits": [
-            "Razorbacks",
-            "Snipers"
-          ],
-          "points": 150
-        },
-        {
-          "name": "Tacticals",
-          "units": "Six Tacticals plus transport",
-          "extraUnits": [
-            "Anti-Air",
-            "Commander",
-            "Dreadnoughts",
-            "Land Raider Transport",
-            "Razorback",
-            "Vindicators"
-          ],
-          "points": 275
-        },
-        {
-          "name": "Terminators",
-          "units": "Four Terminators",
-          "extraUnits": [
-            "Commander",
-            "Land Raider Transport"
-          ],
-          "points": 350
-        },
-        {
-          "name": "Vindicators",
-          "units": "Four Vindicators",
-          "extraUnits": [
-            "Anti-Air"
-          ],
-          "points": 225
-        },
-        {
-          "name": "Whirlwinds",
-          "units": "Four Whirlwinds",
-          "extraUnits": [
-            "Anti-Air"
-          ],
-          "points": 275
+          "points": "1 F/p"
         }
+      ]
+    },
+        {
+      "name": "Ultramarine Elite Detachments",
+      "description": "Ultramarine armies may not have more Elite Detachments than Core Detachments.",
+      "formations": [
+         {
+          "name": "Cataphractii Terminators",
+          "units": "One Lieutenant, thre Cataphractii Terminators - Melta",
+          "extraUnits": [
+            "Commander"
+
+          ],
+          "points": "1 F/p"
+        }
+      ]
+    },
+      {
+      "name": "Ultramarine Fast Attack Detachments",
+      "description": "Ultramarine armies may not have more Fast Attack Detachments than Core Detachments.",
+      "formations": [
+ 
+      ]
+    },
+      {
+      "name": "Ultramarine Support Detachments",
+      "description": "Ultramarine armies may not have more Support Detachments than Core Detachments.",
+      "formations": [
+ 
+      ]
+    },
+          {
+      "name": "Ultramarine Heavy Support Detachments",
+      "description": "Ultramarine armies must have at least two Core Detachments for each Heavy Support Detachment.",
+      "formations": [
+ 
+      ]
+    },
+          {
+      "name": "Ultramarine Navy Detachments",
+      "description": "Ultramarine armies may not have more Navy Detachments than Fast Attack Detachments.",
+      "formations": [
+         {
+          "name": "Thunderhawk",
+          "units": "One Thunderhawk",
+          "points": "1 F/p"
+        }
+      ]
+    },
+      {
+      "name": "Ultramarine Offboard Support Assets",
+      "description": "",
+      "formations": [
+ 
+      ]
+    },
+     {
+      "name": "Allies: Collegia Titanica",
+      "description": "Ultramarine armies may not have more Navy Detachments than Core Detachments.",
+      "formations": [
+         {
+          "name": "Warhounds",
+          "units": "One Warhound Titan",
+          "extraUnits": [
+            "Add an additional Warhound Titan: 1 WE/p"
+          ],
+          "points": "1 F/p, 1 WE/p, 1 A/p"
+        },
+        {
+          "name": "Reaver",
+          "units": "One Reaver Titan",
+          "extraUnits": [
+          ],
+          "points": "2 F/p, 1 WE/p, 1 A/p"
+        },
+        {
+          "name": "Warlord",
+          "units": "One Reaver Titan",
+          "extraUnits": [
+          ],
+          "points": "2 F/p, 2 WE/p, 1 A/p"
+        }
+      ]
+    },
+        {
+      "name": "Allies: Solar Auxilia",
+      "description": "Ultramarine armies may not have more Navy Detachments than Core Detachments.",
+      "formations": [
+ 
+      ]
+    },
+            {
+      "name": "Allies: Questoris Familia",
+      "description": "Ultramarine armies may not have more Navy Detachments than Core Detachments.",
+      "formations": [
+ 
       ]
     },
     {
@@ -208,11 +216,7 @@
           "units": "Two Storm Talons",
           "points": 200
         },
-        {
-          "name": "Thunderhawk",
-          "units": "One Thunderhawk",
-          "points": 225
-        },
+
         {
           "name": "Marauder Squadron",
           "units": "Two Marauder Bombers",
@@ -235,22 +239,8 @@
             "Battle Barge"
           ],
           "points": 200
-        },
-        {
-          "name": "Warhounds",
-          "units": "One Warhound Titan",
-          "extraUnits": [
-            "Add an additional Warhound Titan: 200 points"
-          ],
-          "points": 275
-        },
-        {
-          "name": "Reaver",
-          "units": "One Reaver Titan",
-          "extraUnits": [
-          ],
-          "points": 600
         }
+
       ]
     }
   ],

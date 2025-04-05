@@ -424,7 +424,7 @@
         "speed": 10,
         "armour": 5,
         "cc": 6,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
           "Laser Destroyer"
         ],
@@ -438,7 +438,7 @@
         "speed": 10,
         "armour": 5,
         "cc": 6,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
           "Quad Launcher"
         ],
@@ -787,7 +787,7 @@
         "speed": 25,
         "armour": 5,
         "cc": 6,
-        "ff": 2,
+        "ff": 3,
         "weapons": [
          "Twin Accelerator Autocannon",
           "Heavy Bolter|3"
@@ -802,7 +802,7 @@
         "speed": 25,
         "armour": 5,
         "cc": 6,
-        "ff": 2,
+        "ff": 5,
         "weapons": [
          "Omega Plasma Array",
          "Heavy Bolter",
@@ -833,7 +833,7 @@
         "speed": 25,
         "armour": 5,
         "cc": 6,
-        "ff": 2,
+        "ff": 5,
         "weapons": [
          "Arcus Missile Launcher",
          "Heavy Bolter",
@@ -920,14 +920,14 @@
         "crit": "The Spartan is destroyed."
       },
        {
-        "name": "Kratos - Battlecannon",
+        "name": "Kratos - Battle Cannon",
         "type": "WE",
         "speed": "20",
         "armour": 3,
         "cc": 6,
         "ff": 3,
         "weapons": [
-          "Kratos Battlecannon",
+          "Kratos Battle Cannon",
           "Autocannon",
           "Twin Heavy Bolter|2|FwA"
         ],
@@ -954,26 +954,6 @@
           "Thick Rear Armour"
         ],
         "crit": "The Kratos is destroyed."
-      },
-       {
-        "name": "Spartan - Laser Destroyer",
-        "type": "WE",
-        "speed": "20",
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Laser Destroyer|2|FwA",
-          "Twin Heavy Bolter||FwA"
-        ],
-        "specialRules": [
-          "Damage Capacity: 2",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Heavy Transport (4)",
-          "Walker"
-        ],
-        "crit": "The Spartan is destroyed."
       },
       {
         "name": "Bastion",
@@ -1149,6 +1129,18 @@
         ],
         "notes": "May carry up to two of the following units: Stalkers, Hunters, Predators, Razorbacks, Rhinos and Vindicators. Land Raiders counts as two units each. In addition it may also carry any infantry transported in these vehicles, which counts as being located in the vehicles when disembarking.",
         "crit": "The Thunderhawk Transporter and all units being carried are destroyed."
+      },
+            {
+        "name": "Xiphon Interceptor",
+        "type": "AC",
+        "speed": "Fighter",
+        "armour": 5,
+        "weapons": [
+          "AC Quad Lascannon||FxF",
+          "AC Xiphon Rotary Missile Launcher||FxF"
+        ],
+        "specialRules": [
+        ]
       },
       {
         "name": "Drop Pod",

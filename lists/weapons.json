@@ -757,8 +757,8 @@
       "name": "Laser Destroyer",
       "modes": [
         {
-          "firepower": "AP6+/AT4+",
-          "range": 45,
+          "firepower": "AT4+",
+          "range": 60,
           "specialRules": [
           "Shield Disruptor",
           "Crippling"
