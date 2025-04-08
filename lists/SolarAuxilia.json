@@ -1,0 +1,1145 @@
+[
+  {
+    "name": "Solar Auxilia",
+    "specialRules": [
+    ],
+    "unit": [
+      {
+        "name": "Solar Auxilia Command Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 6,
+        "cc": 4,
+        "ff": 5,
+        "weapons": [
+          "Plasma Guns",
+          "Power Weapon"
+        ],
+        "specialRules": [
+          "Commander",
+          "Vox-Caster",
+          "Invulnerable Save",
+          "Inspiring"
+        ]
+      },
+      {
+        "name": "Auxilia Lasrifle Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 6,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Lasrifles"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Auxilia Flamer Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 6,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Flamers"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Charonite Ogryns",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "weapons": [
+          "Charonite Claws"
+        ],
+        "specialRules": [
+        "Bulky",
+        "Blitz"
+        ]
+      },
+      {
+        "name": "Veletarii",
+        "type": "INF",
+        "speed": 15,
+        "armour": 6,
+        "cc": 5,
+        "ff": 6,
+        "weapons": [
+          "Laspistols",
+          "Power Axes"
+        ],
+        "specialRules": [
+          "Infiltrators",
+          "Skirmishers"
+        ]
+      },
+      {
+        "name": "Thudd Gun",
+        "type": "INF",
+        "speed": 10,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Thudd Gun"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Rapier",
+        "type": "INF",
+        "speed": 10,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Rapier Laser Destroyer"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Mole Launcher Squad",
+        "type": "INF",
+        "speed": 10,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Mole Launchers"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Mole Mortar",
+        "type": "INF",
+        "speed": 10,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Mole Mortar"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Catachan Sentinel",
+        "type": "LV",
+        "speed": 20,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Flamer"
+        ],
+        "specialRules": [
+          "Scout",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Aethon Heavy Sentinel",
+        "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Multi-Laser",
+          "Missile Launcher"
+        ],
+        "specialRules": [
+          "Skirmisher",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Sentinel",
+        "type": "LV",
+        "speed": 20,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Multilaser"
+        ],
+        "specialRules": [
+          "Scout",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Drop Sentinel",
+        "type": "LV",
+        "speed": 20,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Multi-Melta"
+        ],
+        "specialRules": [
+          "Grav-Chutes",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Support Sentinel",
+        "type": "LV",
+        "speed": 15,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Multi-Rocket Pod"
+        ],
+        "specialRules": [
+          "Walker"
+        ]
+      },
+      {
+        "name": "Tauros",
+        "type": "LV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Tauros Grenade Launcher"
+        ],
+        "specialRules": [
+          "Scout"
+        ]
+      },
+      {
+        "name": "Tauros Venator",
+        "type": "LV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Twin Autocannon"
+        ]
+      },
+      {
+        "name": "Tauros Flak",
+        "type": "LV",
+        "speed": 35,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Twin Heavy Stubber Turret"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Siegfried Light Tank",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Multilaser"
+        ],
+        "specialRules": [
+          "Walker",
+          "Scout"
+        ]
+      },
+      {
+        "name": "Salamander Scout Tank",
+        "type": "LV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Autocannon",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+          "Scout"
+        ]
+      },
+      {
+        "name": "Storm Chimera",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Autocannon",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+          "Transport"
+        ],
+        "notes": "May carry two infantry units without Jump Packs or Mounted."
+      },
+      {
+        "name": "Chimera",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Multilaser",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+          "Transport"
+        ],
+        "notes": "May carry two infantry units without Jump Packs or Mounted."
+      },
+      {
+        "name": "Death World Chimera",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Flamer",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+          "Walker",
+          "Transport"
+        ],
+        "notes": "May carry two infantry units without Jump Packs or Mounted."
+      },
+      {
+        "name": "Hellhound",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Inferno Cannon",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Bane Wolf",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Chem Gun",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+          "Walker"
+        ]
+      },
+      {
+        "name": "Devil Dog",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Melta Cannon",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+          "Walker"
+        ]
+      },
+      {
+        "name": "Land Transporter",
+        "type": "LV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Heavy Stubber"
+        ],
+        "specialRules": [
+          "Transport"
+        ],
+        "notes": "May carry two infantry units without Jump Packs or Mounted."
+      },
+      {
+        "name": "Taurox",
+        "type": "AV",
+        "speed": 30,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Twin Assault Cannon"
+        ],
+        "specialRules": [
+          "Walker",
+          "Transport"
+        ],
+        "notes": "May carry two infantry units without Jump Packs or Mounted"
+      },
+      {
+        "name": "Centaur",
+        "type": "LV",
+        "speed": 25,
+        "armour": 6,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Heavy Stubber"
+        ],
+        "specialRules": [
+          "Transport: One Infantry unit, and one Rapier or Thudd Gun"
+        ]
+      },
+      {
+        "name": "Trojan",
+        "type": "LV",
+        "speed": 20,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+          "Transport: One Earthshaker Gun or Heavy AA Gun"
+        ]
+      },
+      {
+        "name": "Deathstrike",
+        "type": "AV",
+        "speed": 20,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Deathstrike Missile",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Deathstrike Silo",
+        "type": "WE",
+        "speed": "Immobile",
+        "armour": 5,
+        "weapons": [
+          "Deathstrike Missile|2"
+        ],
+        "specialRules": [
+          "Damage Capacity 2",
+          "Reinforced Armour"
+        ],
+        "crit": "The Deathstrike Silo is destroyed. All units within 10cm takes a hit."
+      },
+      {
+        "name": "Griffon",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Mortar",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Valhallan Griffon",
+        "type": "AV",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Mortar",
+          "Heavy Flamer"
+        ],
+        "specialRules": [
+          "Walker"
+        ]
+      },
+      {
+        "name": "Basilisk",
+        "type": "AV",
+        "speed": 20,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Earthshaker Cannon",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Bombard",
+        "type": "AV",
+        "speed": 20,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Siege Mortar",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Medusa",
+        "type": "AV",
+        "speed": "20",
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Medusa Siege Gun",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Earthshaker Gun",
+        "type": "LV",
+        "speed": 5,
+        "armour": 6,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Earthshaker Cannon"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Medusa Gun",
+        "type": "LV",
+        "speed": 5,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Medusa Siege Gun"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Elysian Mortar Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Accatran Mortar"
+        ]
+      },
+      {
+        "name": "Heavy AA Gun",
+        "type": "LV",
+        "speed": 5,
+        "armour": 6,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Heavy AA Gun"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Howitzer",
+        "type": "LV",
+        "speed": 5,
+        "armour": 6,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Howitzer"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Manticore",
+        "type": "AV",
+        "speed": 20,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Rocket Launcher",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Hydra",
+        "type": "AV",
+        "speed": 30,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Twin Hydra Autocannon|2",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Hades Breaching Drill",
+        "type": "Spec",
+        "weapons": [
+          "n/a"
+        ],
+        "specialRules": [
+        ],
+        "notes": "Formation must start the game in the reserves, and may only enter the board by Tunneling. When resolving tunnelers, first place the Hades Breaching Drill at the designated co-ordinates. Then place the remainder of the formation within 5cm of it, or within 5cm of another unit from the same formation that has already been placed, so long as all units are placed within 15cm of the Hades Breaching Drill. Finally, remove the Hades Breaching Drill from the board."
+      },
+      {
+        "name": "Ragnarok Heavy Tank",
+        "type": "AV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Ragnarok Battle Cannon",
+          "Heavy Stubber|2|"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Leman Russ",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Battle Cannon",
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Leman Russ Annihilator",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Twin Lascannon",
+          "Lascannon",
+          "Multi-Melta|2|"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Leman Russ Exterminator",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Twin Autocannon",
+          "Heavy Flamer",
+          "Heavy Bolter|2|"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Leman Russ Executioner",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Plasma Destroyer",
+          "Lascannon",
+          "Plasma Cannon|2|"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Leman Russ Thunderer",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Demolisher"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Leman Russ Conqueror",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Conqueror Cannon",
+          "Heavy Bolter|3|"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Leman Russ Demolisher",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Demolisher",
+          "Lascannon",
+          "Plasma Cannon|2|"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Leman Russ Destroyer",
+        "type": "AV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Laser Destroyer"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Leman Russ Vanquisher",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Vanquisher Cannon",
+          "Lascannon"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Leman Russ Punisher",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Punisher Gatling Cannon",
+          "Lascannon",
+          "Heavy Bolter|2|"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Malcador",
+        "type": "H-AV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Battle Cannon",
+          "Heavy Bolter|3|"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Malcador Annihilator",
+        "type": "H-AV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Twin Lascannon",
+          "Demolisher",
+          "Heavy Stubber|2|"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Malcador Defender",
+        "type": "H-AV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Demolisher",
+          "Heavy Bolter Array"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Praetor Assault Launcher",
+        "type": "H-AV",
+        "speed": 25,
+        "armour": 3,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Bolter|2",
+          "Praetor Heavy Assault Launcher"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Crassus Assault Transport",
+        "type": "H-AV",
+        "speed": 25,
+        "armour": 3,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Bolter|4"
+        ],
+        "specialRules": [
+          "Transport"
+        ],
+        "notes": "May carry six infantry units without Jump Packs or Mounted"
+      },
+      {
+        "name": "Minotaur",
+        "type": "H-AV",
+        "speed": 10,
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Twin Earthshaker Cannon"
+        ],
+        "specialRules": [
+        ],
+        "crit": "The Minotaur is destroyed. All units within 5cm suffers a hit on 6+."
+      },
+      {
+        "name": "Macharius",
+        "type": "H-AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Twin Battle Cannon",
+          "Twin Heavy Stubber",
+          "Heavy Bolter|2|"
+        ],
+        "specialRules": [
+          "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Macharius Command",
+        "type": "H-AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Twin Vanquisher Cannon|0-1|",
+          "Vulcan Mega-Bolter|0-1|",
+          "Twin Heavy Stubber||",
+          "Heavy Bolter|2|"
+        ],
+        "specialRules": [
+          "Damage Capacity 2",
+          "Reinforced Armour"
+        ],
+        "notes": "Must be equipped with either Twin Vanquisher Cannon or a Vulcan Mega-Bolter.",
+        "crit": "The Macharius is destroyed."
+      },
+      {
+        "name": "Baran Macharius",
+        "type": "H-AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Twin Ragnarok Battle Cannon",
+          "Twin Heavy Stubber|3|FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity 2",
+          "Reinforced Armour"
+        ],
+        "crit": "The Macharius is destroyed."
+      },
+      {
+        "name": "Macharius Medusa",
+        "type": "H-AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Medusa Siege Gun||FxF",
+          "Twin Heavy Stubber|3|"
+        ],
+        "specialRules": [
+          "Damage Capacity 2",
+          "Reinforced Armour"
+        ],
+        "crit": "The Macharius is destroyed."
+      },
+      {
+        "name": "Defense Laser",
+        "type": "WE",
+        "speed": "Immobile",
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Planetary Defense Laser",
+          "Twin Heavy Stubber|3|"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour"
+        ],
+        "crit": "The Defence Laser plasma reservoirs explodes, destroying the unit. All units within 5cm of the model suffer a hit on a roll of 4+."
+      },
+      {
+        "name": "Gorgon",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Twin Heavy Stubber|4|"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Walker",
+          "Transport"
+        ],
+        "notes": "May carry 10 infantry units without Jump Pack or Mounted.",
+        "crit": "The Gorgon is immobilized, and may not move for the rest of the game. 1D3 random units inside takes a hit. Any subsequent criticals destroys the Gorgon."
+      },
+      {
+        "name": "Baneblade",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Baneblade Cannon",
+          "Autocannon",
+          "Demolisher||FxF",
+          "Lascannon|2|FxF",
+          "Twin Heavy Bolter|3|FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour"
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+      },
+      {
+        "name": "Hellhammer",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Hellhammer Cannon",
+          "Autocannon",
+          "Demolisher||FxF",
+          "Twin Heavy Bolter|3|FxF",
+          "Heavy Flamer|2|"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour"
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+      },
+      {
+        "name": "Stormlord",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Vulcan Mega-Bolter||FxF",
+          "Twin Heavy Bolter||FxF",
+          "Twin Heavy Flamer  |2|"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Transport"
+        ],
+        "notes": "May transport twelve infantry units without Jump Pack or Mounted, two may fire from the firing deck and participate with FF during assaults.",
+        "crit": "The Stormlord is immobilized, and may not move for the rest of the game. 1D3 random units inside takes a hit. Subsequent hits destroys the unit."
+      },
+      {
+        "name": "Banehammer",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Tremor Cannon||FxF",
+          "Twin Heavy Bolter|2|FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Transport"
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+      },
+      {
+        "name": "Shadowsword",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Volcano Cannon||FxF",
+          "Twin Heavy Bolter|2|FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour"
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+      },
+      {
+        "name": "Stormblade",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Stormblade Blastgun||FxF",
+          "Lascannon|2|FxF",
+          "Twin Heavy Bolter|3|FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour"
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+      },
+      {
+        "name": "Stormsword",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Siege Cannon||FxF",
+          "Twin Heavy Bolter|3|FxF",
+          "Heavy Flamer |2|"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour"
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+      },
+      {
+        "name": "Stormhammer",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Twin Ragnarok Battle Cannon||",
+          "Twin Ragnarok Battle Cannon||FxF",
+          "Quad Lascannon||FxF",
+          "Quad Heavy Bolter|2|FwA"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour"
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+      }
+    ]
+  }
+]

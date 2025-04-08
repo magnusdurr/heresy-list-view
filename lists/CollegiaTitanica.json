@@ -1,0 +1,190 @@
+[
+  {
+    "name": "Collegia Titanica Forces",
+    "specialRules": [
+    ],
+    "unit": [
+      {
+        "name": "Legate",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+          "Supreme Commander"
+        ]
+      },
+      {
+        "name": "Veteran Princeps",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+          "Commander",
+          "Leader"
+        ]
+      },
+       {
+        "name": "Warmaster Heavy Battle Titan",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Ardex-Defensor Turret|4",
+          "Suzerain Plasma Destructor|2|FwA",
+          "Revelator Missile Launcher|1|FwA",
+          "CARAPACE (choose one)",
+          "2x Apocalypse Missile Launcher|0-1|FwA",
+          "2x Titan Melta Cannon|0-1|FwA",
+          "2x Inferno Gun|0-1|FwA",
+          "2x Vulcan Mega-Bolter|0-1|FwA",
+          "2x Turbo-Laser Destructor|0-1|FwA",
+          "2x Plasma Blastgun|0-1|FwA"
+        ],
+        "specialRules": [
+          "Damage Capacity 10",
+          "Void Shields 8",
+          "Ripple Fire",
+          "Dauntless",
+          "Reinforced Armour",
+          "Walker",
+          "Tall"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
+        "crit": "The unit takes a point of damage."
+      },
+      {
+        "name": "Warlord Battle Titan",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "ff": 4,
+        "weapons": [
+        "Ardex-Defensor Turret|2",
+        "CARAPACE (choose one)",
+        "Paired Turbo-Laser Destructors||FwA",
+        "Paired Apocalypse Missile Launchers||FwA",
+        "Paired Turbo-Laser Blasters||FwA",
+        "Paired Gatling Blasters",
+        "Paired Vulcan Mega-Bolters",
+        "Sunfury Plasma Annihilator|0-1|FwA",
+        "Belicosa Vulcano Cannon|0-1|FwA",
+        "Macro-Gatling Blaster|0-2|FwA",
+        "Mori Quake Cannon|0-2|FwA",
+        "Conversion Beam Extripator|0-1|FwA",
+        "Graviton Ruinator|0-1|FwA",
+        "Volkite Destructor|0-1|FwA",
+        "Titan Power Claw|0-1|"
+
+        ],
+        "specialRules": [
+          "Damage Capacity 8",
+          "Void Shields 6",
+          "Split Fire",
+          "Dauntless",
+          "Reinforced Armour",
+          "Walker",
+          "Tall"
+        ],
+        "notes": "Must be armed with either Paired Turbo-Laser Destructors or Paired Apocalypse Missile Launchers. May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
+        "crit": "The unit takes a point of damage."
+      },
+      {
+        "name": "Reaver Battle Titan",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 4,
+        "ff": 4,
+        "weapons": [
+         "CARAPACE (choose one)",
+          "Turbo-Laser Destructor|0-1|FwA",
+          "Vulcan Mega-Bolter|0-1|FwA",
+          "Apocalypse Missile Launcher|0-1|FwA",
+          "Graviton Eradicator|0-1|FwA",
+          "Conversion Beam Dissolutor|0-1|FwA",
+          "Titan Warp Missile|0-1|FwA",
+          "Volkite Eradicator|0-1|FwA",
+          "ARMS (choose two)",
+          "Turbo-Laser Blaster|0-2|FwA",
+          "Gatling Blaster|0-2|FwA",
+          "Vulcano Cannon|0-1|FwA",
+          "Titan Melta Cannon|0-1|FwA",
+          "Titan Power Fist|0-1|",
+          "Titan Chainfist|0-1|"
+
+
+        ],
+        "specialRules": [
+          "Damage Capacity 6",
+          "Void Shields 4",
+          "Dauntless",
+          "Blitz",
+          "Reinforced Armour",
+          "Walker",
+          "Tall"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
+       "crit": "The unit takes a point of damage."
+      },
+      {
+        "name": "Dire Wolf Heavy Scout Titan",
+        "type": "WE",
+        "speed": 20,
+        "armour": 5,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Ardex Mega-Bolter|2|FwA",
+        "CARAPACE (choose one)",
+          "Neutron Laser|0-1|FwA",
+          "Vulcano Cannon|0-1|FwA",
+          "Conversion Beam Dissipator|0-1|FwA"
+          
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Void Shields 2",
+          "Fearless",
+          "Reinforced Armour",
+          "Walker"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide",
+        "crit": "The unit takes a point of damage."
+      },
+      {
+        "name": "Warhound Scout Titan",
+        "type": "WE",
+        "speed": 25,
+        "armour": 5,
+        "cc": 4,
+        "ff": 5,
+        "weapons": [
+          "Plasma Blastgun|0-1|FwA",
+          "Vulcan Mega-Bolter|0-1|FwA",
+          "Turbo-Laser|0-1|FwA",
+          "Inferno Gun|0-1|FwA",
+          "Ursus Claw|0-1|FwA",
+          "Natrix Shock Lance|0-1|FwA",
+          "Incisor Melta Lance|0-1|FwA",
+          "Graviton Eradicator|0-1|FwA",
+          "Conversion Beam Dissolutor|0-1|FwA",
+          "Scout Shudder Missile Launcher|0-1|FwA",
+          "Scout Swarmer Missile Launcher|0-1|FwA"
+          
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Void Shields 2",
+          "Dauntless",
+          "Reinforced Armour",
+          "Walker"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide",
+        "crit": "The unit takes a point of damage."
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Legiones Astartes Automata Forces",
+    "specialRules": [
+    ],
+    "unit": [
+            {
+        "name": "Tarantula - Lascannon",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 5,
+        "ff": 5,
+        "weapons": [
+          "Twin Lascannon"
+        ],
+        "specialRules": [
+        "Machine Spirit"
+        ]
+      },
+                  {
+        "name": "Tarantula - Hyperios",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 5,
+        "weapons": [
+          "Hyperios Missile Launcher"
+        ],
+        "specialRules": [
+        "Machine Spirit"
+        ]
+      }
+         ]
+  }
+]

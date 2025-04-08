@@ -1,0 +1,125 @@
+[
+  {
+    "name": "Legiones Astartes Navy and Offboard Support",
+    "specialRules": [
+    ],
+    "unit": [
+       {
+        "name": "Fire Raptor",
+        "type": "AC/WE",
+         "speed": "35cm/Hover",
+        "armour": 5,
+        "ff": 5,
+        "weapons": [
+          "Avenger Bolt Cannon||FwA",
+          "Tempest Rockets||FwA",
+          ">Heavy Bolter Configuration<",
+          "AC Twin Heavy Bolter||Left",
+          "AC Twin Heavy Bolter||Right",
+          ">Autocannon Configuration<",
+          "Twin Autocannon||Left",
+          "Twin Autocannon||Right",
+          ">Lascannon Configuration<",
+          "Twin Lascannon||Left",
+          "Twin Lascannon||Right"
+        ],
+        "specialRules": [
+          "Damage Capacity 2",
+          "Reinforced Armour",
+          "Thick Rear Armour"
+        ],
+        "crit": "The Fire Raptor is destroyed."
+      },
+      {
+        "name": "Storm Eagle",
+        "type": "AC/WE",
+         "speed": "35cm/Hover",
+        "armour": 5,
+        "ff": 4,
+        "weapons": [
+          "Twin Lascannon||FwA",
+          "AC Heavy Bolter||FwA",
+          "Vengeance Launcher||"
+        ],
+        "specialRules": [
+          "Damage Capacity 2",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Heavy Transport (4)"
+        ],
+        "crit": "The Storm Eagle and all units being carried are destroyed."
+      },
+      {
+        "name": "Thunderhawk",
+        "type": "AC/WE",
+        "speed": "30cm/Hover",
+        "armour": 5,
+        "ff": 4,
+        "weapons": [
+          "Battle Cannon||FwA",
+          "AC Twin Heavy Bolter|2|FwA",
+          "AC Twin Heavy Bolter||Left",
+          "AC Twin Heavy Bolter||Right"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Assault Transport (8)"
+        ],
+        "crit": "The Thunderhawk and all units being carried are destroyed."
+      },
+      {
+        "name": "Thunderhawk Transporter",
+        "type": "AC/WE",
+         "speed": "30cm/Hover",
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "AC Quad Heavy Bolter||Left",
+          "AC Quad Heavy Bolter||Right"
+        ],
+        "specialRules": [
+          "Damage Capacity 2",
+          "Planetfall",
+          "Reinforced Armour",
+          "Transport"
+        ],
+        "notes": "May carry up to two of the following units: Stalkers, Hunters, Predators, Razorbacks, Rhinos and Vindicators. Land Raiders counts as two units each. In addition it may also carry any infantry transported in these vehicles, which counts as being located in the vehicles when disembarking.",
+        "crit": "The Thunderhawk Transporter and all units being carried are destroyed."
+      },
+            {
+        "name": "Xiphon Interceptor",
+        "type": "AC",
+        "speed": "Fighter",
+        "armour": 5,
+        "weapons": [
+          "AC Quad Lascannon||FxF",
+          "AC Rotary Missile Launcher||FxF"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Drop Pod",
+        "weapons": [
+          {
+            "name": "Deathwind",
+            "modes": [
+              {
+                "firepower": "AP6+/AT6+",
+                "range": 15
+              }
+            ]
+          }
+        ],
+        "specialRules": [
+          "Planetfall",
+          "Transport"
+        ],
+        "notes": "May transport one formation of only the following units: Tacticals, Devastators, Dreadnought, Sternguard Veterans, Wolf Guard Terminators, Grey Knights Strike Squad, Grey Knights Purgation Squad. After the Drop Pod lands, its Deathwind attacks all enemy units within 15cm. Each enemy formation attacked receives a Blast Marker for coming under fire, and an extra Blast Marker for each casualty. Then any troops carried in the Drop Pod must disembark within 5cm of the Drop Pod or within 5cm of another unit from the same formation that has already landed, so long as all units are placed within 15cm of the Drop Pod. Drop pod models should be removed from the board once the formation they transport has disembarked."
+      }
+         ]
+  }
+]

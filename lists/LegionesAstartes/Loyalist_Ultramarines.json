@@ -1,13 +1,13 @@
 {
   "fraction": "Loyalist Legiones Astartes",
-  "army": "Ultramarines",
+  "army": "Ultramarines (XIII) Legion",
   "version": "1.0.Alpha",
   "release": "2025-00-00",
-  "intro": "Ultramarine armies gain 12 formation points (F/p), 5 upgrade points (U/p), 3 War Engine points (WE/p), and 3 Ally points (A/p) for a normal sized battle.",
+  "intro": "Ultramarines Legion armies gain 120 formation points (F/p), 60 upgrade points (U/p), 40 Titan points (T/p), and 40 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAR_Loyalist_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 3.",
-  "Initiative": "All Ultramarine Detachments and Collegia Titanica allied Banners have an initiative of 1+. Battle Automata Detachments have an initiative of 2+. Solar Auxilia allied Tercios have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
-  "armyRules": "The <i>Dauntless</i> special rule applies to all Ultramarine Detachments and Collegia Titanica Banners.",
+  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica allied Banners have an initiative of 1+. Astartes Automata Detachments have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Solar Auxilia allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
+  "armyRules": "The <i>Dauntless</i> special rule applies to all Ultramarines Legion Detachments and Collegia Titanica Banners.",
   "specialRules": [
     "Drop Pods",
     "Dauntless"
@@ -56,14 +56,27 @@
         "Spartan - Lascannon",
         "Spartan - Laser Destroyer",
         "Kratos - Battle Cannon",
-        "Kratos - Melta",
-
-        
+        "Kratos - Melta"
+      ],
+      "unitRules": [
+      ]
+    },
+        {
+      "from": "LegionesAstartesAutomata.json",
+      "units": [
+        "Tarantula - Lascannon",
+        "Tarantula - Hyperios"
+      ],
+      "unitRules": [
+      "Machine Spirit"
+      ]
+    },
+    {
+      "from": "LegionesAstartesNavy.json",
+      "units": [
         "Thunderhawk",
         "Xiphon Interceptor",
-        "Fire Raptor - Autocannon",
-        "Fire Raptor - Lascannon",
-        "Fire Raptor - Heavy Bolter",
+        "Fire Raptor",
         "Storm Eagle",
         "Drop Pod"
       ],
@@ -71,20 +84,44 @@
       ]
     },
     {
-      "from": "ImperialAllies.json",
+      "from": "CollegiaTitanica.json",
       "units": [
-        "Warhound",
-        "Reaver Titan"
+        "Warhound Scout Titan",
+        "Dire Wolf Heavy Scout Titan",
+        "Reaver Battle Titan",
+        "Warlord Battle Titan",
+        "Warmaster Heavy Battle Titan"
       ],
       "unitRules": [
         "Void Shields"
       ]
     },
-    {
-      "from": "ImperialNavy.json",
+            {
+      "from": "SolarAuxilia.json",
       "units": [
-        "Thunderbolt Fighter",
-        "Marauder Bomber"
+        "Solar Auxilia Command Squad",
+        "Auxilia Lasrifle Squad",
+        "Auxilia Flamer Squad",
+        "Veletarii",
+        "Charonite Ogryns",
+        "Aethon Heavy Sentinel",
+        "Leman Russ",
+        "Leman Russ Vanquisher"
+      ],
+      "unitRules": [
+      ]
+    },
+    {
+      "from": "QuestorisFamilia.json",
+      "units": [
+        "Armiger Knight-Warglaive",
+        "Armiger Knight-Helverin",
+        "Questoris Knight-Paladin",
+        "Questoris Knight-Errant",
+        "Questoris Knight-Crusader",
+        "Questoris Knight-Gallant",
+        "Questoris Knight-Warden",
+        "Questoris Rocket Pod"
       ],
       "unitRules": [
       ]
@@ -92,155 +129,391 @@
   ],
   "sections": [
     {
-      "name": "Ultramarine Core Detachments",
-      "description": "Ultramarine armies must have at least one Core Detachment",
+      "name": "Ultramarines Core Detachments",
+      "description": "Ultramarines Legion armies must have at least one Core Detachment.",
       "formations": [
         {
-          "name": "Tactical Legionaries",
-          "units": "One Lieutenant, four Tacticals - Melta",
+          "name": "Tactical Detachment",
+          "units": "One Lieutenant character, four Tactical Legionaries - Melta",
           "extraUnits": [
-            "Commander",
-            "Transport",
-            "Tacticals",
-            "Support",
-            "Heavy Support",
-            "Terminators"
-
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian - Thaumaturgy (5 U/p), or with a Supreme Commander (0-1 in the army, 0 U/p)",
+            "Add Tactical Legionaries - Melta: 10 U/p",
+            "Add Support Legionaries - Plasma, or two Heavy Support Legionaries - Missile Launcher: 10 U/p",
+            "Add two Contemptor Dreadnoughts of any type: 10 U/p",
+            "Add two Cataphractii Terminators - Melta: 15 U/p"
           ],
-          "points": "1 F/p"
+          "points": "10 F/p"
+        },
+        {
+          "name": "Mechanized Tactical Detachment",
+          "units": "One Lieutenant character, four Tactical Legionaries - Melta, two Rhinos",
+          "extraUnits": [
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian - Thaumaturgy (5 U/p), or with a Supreme Commander (0-1 in the army, 0 U/p)",
+           "Add two Tactical Legionaries - Melta and a Rhino: 10 U/p",
+           "Add two Assault Legionaries: 10 U/p",
+            "Replace two Rhinos in the formation with four Support Rhino - Melta, and/or Support Rhino - Missile Launcher: 5 U/p each",
+            "Replace up to two Rhinos in the formation with two Land Raider Proteus: 5 U/p each",
+            "Replace up to two Rhinos in the formation with one Spartan of any type: 5 U/p each"
+          ],
+          "points": "10 F/p"
         }
       ]
     },
         {
-      "name": "Ultramarine Elite Detachments",
-      "description": "Ultramarine armies may not have more Elite Detachments than Core Detachments.",
+      "name": "Ultramarines Elite Detachments",
+      "description": "Ultramarines Legion armies may not have more Elite Detachments than Core Detachments.",
       "formations": [
          {
-          "name": "Cataphractii Terminators",
-          "units": "One Lieutenant, thre Cataphractii Terminators - Melta",
+          "name": "Terminator Detachment",
+          "units": "One Lieutenant character, three Cataphractii Terminators - Melta",
           "extraUnits": [
-            "Commander"
-
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian - Thaumaturgy: 5 U/p"
           ],
-          "points": "1 F/p"
+          "points": "10 F/p, 5 U/p"
+        },
+        {
+          "name": "Contemptor Detachment",
+          "units": "Four Contemptor Dreadnought - Assault Cannon, and/or Contemptor Dreadnought - Lascannon",
+          "extraUnits": [
+            "Add up to two Contemptor Dreadnoughts of any type: 5 U/p each"
+            ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Leviathan Detachment",
+          "units": "Three Leviathan Dreadnought - Storm Cannon, and/or Leviathan Dreadnought - Melta Lance",
+          "extraUnits": [
+          "Add one Leviathan Dreadnoughts of any type: 5 U/p"
+            ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Deredeo Detachment",
+          "units": "Three Deredeo Dreadnought - Plasma, and/or Deredeo Dreadnought - Autocannon",
+          "extraUnits": [
+          "Add one Deredeo Dreadnought of any type: 5 U/p"
+            ],
+          "points": "10 F/p"
+        }
+
+      ]
+    },
+
+      {
+      "name": "Ultramarines Support Detachments",
+      "description": "Ultramarines Legion armies may not have more Support Detachments than Core Detachments.",
+      "formations": [
+              {
+          "name": "Rapier Detachment",
+          "units": "Four Legion Rapier - Laser Destroyer, and/or Legion Rapier - Quad Launcher",
+          "extraUnits": [
+             ],
+          "points": "10 F/p, -5 U/p"
+        },
+        {
+          "name": "Tarantula Automata Detachment",
+          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
+          "extraUnits": [
+             ],
+          "points": "10 F/p, -10 U/p"
+        },
+        {
+          "name": "Support Detachment",
+          "units": "Two Support Legionaries - Plasma, one Rhino",
+          "extraUnits": [
+          "Add two Support Legionaries - Plasma, one Rhino: 10 U/p",
+          "Replace up to two Rhinos with two Support Rhinos of any type: 5 U/p each",
+          "Replace up to two Rhinos with two Contemptor Dreadnoughts of any type: 5 U/p each"
+             ],
+          "points": "10 F/p, -10 U/p"
+        },
+        {
+          "name": "Heavy Support Detachment",
+          "units": "Two Heavy Support Legionaries - Missile Launcher, one Rhino",
+          "extraUnits": [
+          "Add two Heavy Support Legionaries - Missile Launcher, one Rhino: 10 U/p",
+          "Replace up to two Rhinos with two Support Rhinos of any type: 5 U/p each",
+          "Replace up to two Rhinos with two Contemptor Dreadnoughts of any type: 5 U/p each"
+             ],
+          "points": "10 F/p, -5 U/p"
+        }
+ 
+      ]
+    },
+          {
+      "name": "Ultramarines Fast Attack Detachments",
+      "description": "Ultramarines Legion armies may not have more Fast Attack Detachments than Core Detachments.",
+      "formations": [
+        {
+          "name": "Assault Detachment",
+          "units": "One Lieutenant character, four Assault Legionaries",
+          "extraUnits": [
+           "Replace the Lieutenant character with a Captain, Chaplain, or Librarian - Thaumaturgy (5 U/p)",
+          "Add up to two Land Speeders or Attack Speeders of any type: 5 U/p each"
+            ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Land Speeder Detachment",
+          "units": "Three Land Speeder - Plasma, and/or Land Speeder - Melta",
+          "extraUnits": [
+          "Add one Land Speeder of any type: 5 U/p"
+            ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Attack Speeder Detachment",
+          "units": "Three Attack Speeder - Missile Launcher",
+          "extraUnits": [
+           "Add one Attack Speeder: 5 U/p"
+            ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Scimitar Detachment",
+          "units": "One Lieutenant character, three Scimitar Jetbikes",
+          "extraUnits": [
+          "Add up to two Land Speeders or Attack Speeders of any type: 5 U/p each"
+            ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Outrider Detachment",
+          "units": "One Lieutenant character, four Legion Outriders - Plasma",
+          "extraUnits": [
+             "Add up to two Legion Outriders: 5 U/p each"
+            ],
+          "points": "10 F/p"
+        }
+ 
+      ]
+    },
+          {
+      "name": "Ultramarines Armoured Detachments",
+      "description": "Ultramarines Legion armies may not have more Armoured Detachments than Core Detachments.",
+      "formations": [
+         {
+          "name": "Predator Detachment",
+          "units": "Three Predator Annihilator, and/or Predator Destructor",
+          "extraUnits": [
+                "Add up to three Predators of any type: 5 U/p each"
+             ],
+          "points": "10 F/p"
+        },
+       {
+          "name": "Sicarian Detachment",
+          "units": "Two Sicarian - Autocannon, Sicarian - Plasma, Sicarian Punisher, and/or Sicarian Arcus",
+          "extraUnits": [
+            "Add up to two Sicarians of any type: 5 U/p each"
+             ],
+          "points": "10 F/p, -5 U/p"
+        },
+               {
+          "name": "Land Raider Detachment",
+          "units": "Two Land Raider Proteus",
+          "extraUnits": [
+            "Add up to two Land Raider Proteus: 5 U/p each"
+             ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Sabre Detachment",
+          "units": "Three Sabre - Autocannon, and/or Sabre - Neutron Blaster",
+          "extraUnits": [
+          "Add one Sabre: 5 U/p"
+            ],
+          "points": "10 F/p"
         }
       ]
     },
-      {
-      "name": "Ultramarine Fast Attack Detachments",
-      "description": "Ultramarine armies may not have more Fast Attack Detachments than Core Detachments.",
+              {
+      "name": "Ultramarines Heavy Armoured Detachments",
+      "description": "Ultramarines Legion armies may not have more Heavy Armoured Detachments than Armoured Detachments.",
       "formations": [
- 
-      ]
-    },
-      {
-      "name": "Ultramarine Support Detachments",
-      "description": "Ultramarine armies may not have more Support Detachments than Core Detachments.",
-      "formations": [
+        {
+          "name": "Spartan Detachment",
+          "units": "Two Spartan - Lascannon and/or Spartan - Laser Destroyer",
+          "extraUnits": [
+             ],
+          "points": "10 F/p, 5 U/p"
+        },
+        {
+          "name": "Kratos Detachment",
+          "units": "Two Kratos - Battle Cannon and/or Kratos - Melta",
+          "extraUnits": [
+             ],
+          "points": "10 F/p, 5 U/p"
+        }
  
       ]
     },
           {
-      "name": "Ultramarine Heavy Support Detachments",
-      "description": "Ultramarine armies must have at least two Core Detachments for each Heavy Support Detachment.",
+      "name": "Ultramarines Navy Detachments",
+      "description": "Ultramarines Legion armies may not have more Navy Detachments than Core Detachments.",
       "formations": [
- 
-      ]
-    },
-          {
-      "name": "Ultramarine Navy Detachments",
-      "description": "Ultramarine armies may not have more Navy Detachments than Fast Attack Detachments.",
-      "formations": [
+        {
+          "name": "Storm Eagle",
+          "units": "One Storm Eagle",
+          "points": "10 F/p"
+        },
          {
           "name": "Thunderhawk",
           "units": "One Thunderhawk",
-          "points": "1 F/p"
+          "points": "10 F/p, 10 U/p"
+        },
+       {
+          "name": "Fire Raptor",
+          "units": "One Fire Raptor of any configuration",
+          "points": "10 F/p, -10 U/p"
+        },
+        {
+          "name": "Xiphon Interceptor",
+          "units": "Two Xiphon Interceptors",
+          "points": "10 F/p, -10 U/p"
         }
       ]
     },
       {
-      "name": "Ultramarine Offboard Support Assets",
+      "name": "Ultramarines Offboard Support Assets",
       "description": "",
       "formations": [
- 
+          {
+          "name": "Drop Pods",
+          "points": "10 U/p"
+        },
+        {
+          "name": "Orbital Pin-Point Attack",
+          "points": "10 U/p"
+        },
+        {
+          "name": "Orbital Barrage",
+          "points": "10 U/p"
+        },
+        {
+          "name": "Artillery Barrage Strike",
+          "points": "10 U/p"
+        },
+        {
+          "name": "Artillery Blind Strike",
+          "points": "10 U/p"
+        }
       ]
     },
      {
-      "name": "Allies: Collegia Titanica",
-      "description": "Ultramarine armies may not have more Navy Detachments than Core Detachments.",
+      "name": "Allies: Collegia Titanica Banners",
+      "description": "",
       "formations": [
          {
-          "name": "Warhounds",
-          "units": "One Warhound Titan",
+          "name": "Warhound",
+          "units": "One Warhound Scout Titan",
           "extraUnits": [
-            "Add an additional Warhound Titan: 1 WE/p"
           ],
-          "points": "1 F/p, 1 WE/p, 1 A/p"
+          "points": "10 F/p, 10 T/p, 10 A/p"
+        },
+        {
+          "name": "Warhound Pair",
+          "units": "Two Warhound Scout Titans",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 20 T/p, 10 A/p"
+        },
+        {
+          "name": "Dire Wolf",
+          "units": "One Dire Wolf Heavy Scout Titan",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 10 T/p, 10 A/p"
         },
         {
           "name": "Reaver",
-          "units": "One Reaver Titan",
+          "units": "One Reaver Battle Titan",
           "extraUnits": [
           ],
-          "points": "2 F/p, 1 WE/p, 1 A/p"
+          "points": "20 F/p, 10 T/p, 10 A/p"
         },
         {
           "name": "Warlord",
-          "units": "One Reaver Titan",
+          "units": "One Warlord Battle Titan",
           "extraUnits": [
           ],
-          "points": "2 F/p, 2 WE/p, 1 A/p"
+          "points": "20 F/p, 20 T/p, 10 A/p"
+        },
+        {
+          "name": "Warmaster",
+          "units": "One Warmaster Heavy Battle Titan",
+          "extraUnits": [
+          ],
+          "points": "20 F/p, 30 T/p, 10 A/p"
         }
       ]
     },
         {
-      "name": "Allies: Solar Auxilia",
-      "description": "Ultramarine armies may not have more Navy Detachments than Core Detachments.",
+      "name": "Allies: Solar Auxilia Sections",
+      "description": "There must be at least one Auxilia Lasrifle Section for each other Section",
       "formations": [
- 
+         {
+          "name": "Auxilia Lasrifle Section",
+          "units": "One Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
+          "extraUnits": [
+           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 5 U/p"
+          ],
+          "points": "10 F/p, 10 A/p"
+        },
+        {
+          "name": "Auxilia Ogryn Section",
+          "units": "Four Charonite Ogryns",
+          "extraUnits": [
+          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 5 U/p"
+          ],
+          "points": "10 F/p, 10 A/p"
+        },
+        {
+          "name": "Veletarii Section",
+          "units": "Four Veletarii",
+          "extraUnits": [
+           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 5 U/p"
+          ],
+          "points": "10 F/p, 10 A/p"
+        },
+        {
+          "name": "Auxilia Heavy Sentinel Section",
+          "units": "Four Aethon Heavy Sentinels",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 10 A/p"
+        },
+        {
+          "name": "Auxilia Leman Russ Strike Section",
+          "units": "Four Leman Russ, and/or Leman Russ Vanquisher",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 10 A/p"
+        }
       ]
     },
+
+
+
             {
-      "name": "Allies: Questoris Familia",
-      "description": "Ultramarine armies may not have more Navy Detachments than Core Detachments.",
+      "name": "Allies: Questoris Familia Lances",
+      "description": "",
       "formations": [
- 
-      ]
-    },
-    {
-      "name": "Codex Astartes Navy, Imperial Aircraft & Collegia Titanica Allies",
-      "description": "Up to a third of the points available may be spent on these formations.",
-      "formations": [
-        {
-          "name": "Storm Talons",
-          "units": "Two Storm Talons",
-          "points": 200
-        },
-
-        {
-          "name": "Marauder Squadron",
-          "units": "Two Marauder Bombers",
-          "points": 250
-        },
-        {
-          "name": "Thunderbolt Squadron",
-          "units": "Two Thunderbolt Fighters",
-          "points": 175
-        },
-        {
-          "name": "Landing Craft",
-          "units": "One Landing Craft",
-          "points": 325
-        },
-        {
-          "name": "0-1 Orbital Support",
-          "units": "One Strike Cruiser",
+         {
+          "name": "Armiger Lance",
+          "units": "Three Knight-Warglaives and/or Knight-Helverins",
           "extraUnits": [
-            "Battle Barge"
-          ],
-          "points": 200
-        }
 
+          ],
+         "points": "10 F/p, 10 A/p"
+        },
+                {
+          "name": "Questoris Lance",
+          "units": "Two Questoris Knight-Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
+          "extraUnits": [
+            "Add one Questoris Rocket Pod to the entire formation: 5 U/p"
+          ],
+          "points": "10 F/p, 10 A/p"
+        }
       ]
     }
   ],
@@ -248,83 +521,6 @@
     "title": "Codex Astartes Upgrades",
     "description": "Each upgrade may be taken once per detachment",
     "items": [
-      {
-        "name": "Anti-Air",
-        "description": "Add any one of the following units to the formation",
-        "options": [
-          {
-            "description": "Add one Hunter",
-            "points": "75 points"
-          },
-          {
-            "description": "Add one Stalker",
-            "points": "50 points"
-          }
-        ]
-      },
-      {
-        "name": "Attack Bikes",
-        "description": "Replace any number of Assault Bikes with an equal number of Attack Bikes",
-        "points": "Free"
-      },
-      {
-        "name": "Battle Barge",
-        "description": "Replace the Strike Cruiser with a Battle Barge",
-        "points": "75 points"
-      },
-      {
-        "name": "Commander",
-        "description": "Add any one of the following characters to any unit in the formation",
-        "options": [
-          {
-            "description": "Captain, Librarian",
-            "points": "25 points"
-          },
-          {
-            "description": "Chaplain",
-            "points": "50 points"
-          },
-          {
-            "description": "0–1 Supreme Commander",
-            "points": "75 points"
-          }
-        ]
-      },
-      {
-        "name": "Dreadnoughts",
-        "description": "Add any two of the following: Dreadnought, Hellfire Dreadnought",
-        "points": [
-          "50 points each"
-        ]
-      },
-      {
-        "name": "Land Raider Transport",
-        "description": "Add any number of Land Raiders, up to the number required to transport the formation",
-        "points": "50 points each"
-      },
-      {
-        "name": "Razorbacks",
-        "description": "Add any number of Razorbacks, up to the number required to transport the formation",
-        "points": "25 points each"
-      },
-      {
-        "name": "Snipers",
-        "description": "Give all Scouts in the formation 'Sniper' on their Heavy Bolters",
-        "points": "25 points"
-      },
-      {
-        "name": "Typhoons",
-        "description": "Replace up to five Land Speeders with an equal number of Land Speeder Typhoons",
-        "points": "10 points each"
-      },
-      {
-        "name": "Vindicators",
-        "description": "Add up to two Vindicators",
-        "points": [
-          "50 points each",
-          "75 points per pair"
-        ]
-      }
-    ]
+          ]
   }
 }

@@ -28,28 +28,10 @@
         ]
       },
       {
-        "name": "Twin Icarus Autocannon",
-        "type": "CH",
-        "weapons": [
-          "Twin Icarus Autocannon"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Ironstorm Missile Pod",
-        "type": "CH",
-        "weapons": [
-          "Ironstorm Missile Pod||FwA"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
         "name": "Armiger Knight-Warglaive",
         "type": "AV",
         "speed": 30,
-        "armour": 5,
+        "armour": 4,
         "cc": 4,
         "ff": 5,
         "weapons": [
@@ -57,27 +39,27 @@
           "Reaper Chain-Cleaver"
         ],
         "specialRules": [
-          "Stubborn",
           "Walker",
-          "Scout",
-          "Ion Shield (4+)"
+          "Skirmisher",
+          "Evasive",
+          "Ion Shield (5+)"
         ]
       },
       {
         "name": "Armiger Knight-Helverin",
         "type": "AV",
         "speed": 30,
-        "armour": 5,
+        "armour": 4,
         "cc": 4,
         "ff": 5,
         "weapons": [
           "Twin Autocannon"
         ],
         "specialRules": [
-          "Stubborn",
           "Walker",
-          "Scout",
-          "Ion Shield (4+)"
+          "Skirmisher",
+          "Evasive",
+          "Ion Shield (5+)"
         ]
       },
       {
@@ -103,150 +85,124 @@
       },
       {
         "name": "Questoris Knight-Paladin",
-        "type": "H-AV",
-        "speed": 25,
+        "type": "WE",
+        "speed": 20,
         "armour": 5,
         "cc": 3,
         "ff": 4,
         "weapons": [
           "Rapid Fire Battle Cannon",
-          "Reaper Chainsword"
+          "Reaper Chainsword",
+          "Heavy Stubber"
         ],
         "specialRules": [
-          "Stubborn",
+        "Damage Capacity 2",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
-          "Ion Shield (3+)"
-        ]
+          "Ion Shield (4+)"
+        ],
+        "crit": "The unit is destroyed."
       },
       {
         "name": "Questoris Knight-Errant",
-        "type": "H-AV",
-        "speed": 25,
+        "type": "WE",
+        "speed": 20,
         "armour": 5,
         "cc": 3,
         "ff": 4,
         "weapons": [
           "Thermal Cannon",
-          "Reaper Chainsword"
+          "Reaper Chainsword",
+          "Heavy Stubber"
         ],
         "specialRules": [
-          "Stubborn",
+        "Damage Capacity 2",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
-          "Ion Shield (3+)"
-        ]
+          "Blitz",
+          "Ion Shield (4+)"
+        ],
+        "crit": "The unit is destroyed."
       },
       {
         "name": "Questoris Knight-Crusader",
-        "type": "H-AV",
-        "speed": 25,
+        "type": "WE",
+        "speed": 20,
         "armour": 5,
-        "cc": 3,
+        "cc": 5,
         "ff": 4,
         "weapons": [
-          "Rapid Fire Battle Cannon",
-          "Avenger Gatling Cannon"
+          "Thermal Cannon",
+          "Avenger Gatling Cannon",
+          "Heavy Stubber"
         ],
         "specialRules": [
-          "Stubborn",
+        "Damage Capacity 2",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
-          "Ion Shield (3+)"
-        ]
+          "Ion Shield (4+)"
+        ],
+        "crit": "The unit is destroyed."
       },
       {
         "name": "Questoris Knight-Gallant",
-        "type": "H-AV",
+        "type": "WE",
         "speed": 25,
         "armour": 5,
         "cc": 3,
-        "ff": 4,
+        "ff": 6,
         "weapons": [
-          "Twin Icarus Autocannon",
           "Thunderstrike Gauntlet",
-          "Reaper Chainsword"
+          "Reaper Chainsword",
+          "Melta Gun"
         ],
         "specialRules": [
-          "Stubborn",
+        "Damage Capacity 2",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
-          "Ion Shield (3+)"
-        ]
+          "Blitz",
+          "Ion Shield (4+)"
+        ],
+        "crit": "The unit is destroyed."
       },
       {
         "name": "Questoris Knight-Warden",
-        "type": "H-AV",
-        "speed": 25,
+        "type": "WE",
+        "speed": 20,
         "armour": 5,
         "cc": 3,
         "ff": 4,
         "weapons": [
           "Avenger Gatling Cannon",
-          "Ironstorm Missile Pod",
-          "Reaper Chainsword"
+          "Reaper Chainsword",
+          "Melta Gun"
         ],
         "specialRules": [
-          "Stubborn",
+        "Damage Capacity 2",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
-          "Ion Shield (3+)"
-        ]
+          "Blitz",
+          "Ion Shield (4+)"
+        ],
+        "crit": "The unit is destroyed."
       },
       {
-        "name": "Questoris Knight-Preceptor",
-        "type": "H-AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 3,
-        "ff": 4,
+        "name": "Questoris Rocket Pod",
+        "type": "CH",
         "weapons": [
-          "Las Impulsor",
-          "Thunderstrike Gauntlet"
+          "Questoris Rocket Pod"
         ],
         "specialRules": [
-          "Stubborn",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Walker",
-          "Ion Shield (3+)"
-        ]
-      },
-      {
-        "name": "Questoris Knight-Freeblade",
-        "type": "H-AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 3,
-        "ff": 4,
-        "weapons": [
-          "Thunderstrike Gauntlet",
-          ">Chrimson Glaive<",
-          "Conflagration Cannon",
-          ">Iron Wolf<",
-          "Helfrost Destructor",
-          ">Justice<",
-          "Castigator Cannon",
-          ">Canis Rex<",
-          "Las Impulsor"
-        ],
-        "specialRules": [
-          "Stubborn",
-          "Fearless",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Walker",
-          "Ion Shield (3+)"
         ]
       },
       {
         "name": "Questoris Relic Knight-Styrix",
-        "type": "H-AV",
+        "type": "WE",
         "speed": 25,
         "armour": 5,
         "cc": 3,
