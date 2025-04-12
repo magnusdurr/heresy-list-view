@@ -95,17 +95,18 @@
         ]
       },
       {
-        "name": "Hecate Heavy Dropship",
-        "type": "WE",
-        "speed": "Bomber",
-        "armour": 4,
+        "name": "Lunar Class Cruiser",
+        "type": "SC",
         "weapons": [
-          "AC Twin Lascannon||FxF",
-          "AC Colossus Bomb||FxF",
-          "AC Twin Heavy Bolter Turret|2|"
-        ],
-        "specialRules": [
-        "Damage Capacity 6"
+          {
+            "name": "Orbital Bombardment",
+            "modes": [
+              {
+                "firepower": "3BP, MW"
+              }
+            ]
+          },
+          "Pin Point"
         ]
       },
       {

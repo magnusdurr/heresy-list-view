@@ -35,22 +35,83 @@
       ]
     },
     {
-      "section": "Excertus Imperialis",
+      "section": "Imperialis Auxilia",
       "index": [
         {
-          "name": "Imperialis Auxilia",
-          "abbreviation": "IG",
+          "name": "Solar Auxilia",
+          "abbreviation": "SolarAuxilia",
           "lists": [
             {
-              "name": "Solar Auxilia",
-              "file": "cadianshocktroops",
+              "name": "Saturnyne Rams (I-Xth COH)",
+              "file": "SaturnyneRams",
               "status": "approved",
               "img": "images/AstraMilitarum_Cadian.jpg"
             }
-                   ]
+          ]
+        },
+       {
+          "name": "Calth High Guard (CCLVth COH)",
+          "abbreviation": "SolarAuxilia",
+          "lists": [
+            {
+              "name": "Calth High Guard",
+              "file": "CalthHighGuard",
+              "status": "approved",
+              "img": "images/AstraMilitarum_Cadian.jpg"
+            }
+         ]
+        },
+       {
+          "name": "Solar Auxilia",
+          "abbreviation": "Prospero Spireguard (XXVIIIth EXF)",
+          "lists": [
+            {
+              "name": "Prospero Spireguard",
+              "file": "SolarAuxilia_SG",
+              "status": "approved",
+              "img": "images/AstraMilitarum_Cadian.jpg"
+            }
+          ]
+        },
+       {
+          "name": "Solar Auxilia",
+          "abbreviation": "Necromundan Coursers (MCXXVIIIth COH)",
+          "lists": [
+            {
+              "name": "Necromundan Coursers",
+              "file": "SolarAuxilia_NG",
+              "status": "approved",
+              "img": "images/AstraMilitarum_Cadian.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Imperialis Militia",
+          "abbreviation": "Loyalist Imperialis Militia",
+          "lists": [
+            {
+              "name": "Imperialis Militia",
+              "file": "ImperialisMilitia",
+              "status": "approved",
+              "img": "images/AstraMilitarum_Cadian.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Imperialis Militia",
+          "abbreviation": "Traitor Imperialis Militia",
+          "lists": [
+            {
+              "name": "Ruinstorm Cultists",
+              "file": "RuinstormCultists",
+              "status": "approved",
+              "img": "images/AstraMilitarum_Cadian.jpg"
+            }
+          ]
         }
       ]
     },
+
     {
       "section": "Mechanicus",
       "index": [
@@ -59,13 +120,19 @@
           "abbreviation": "AM",
           "lists": [
             {
+              "name": "Collegia Titanica",
+              "file": "legionesskitariimetalica",
+              "status": "approved",
+              "img": "images/AdeptusMechanicus_LegionesMetalica.jpg"
+            },
+            {
               "name": "Mechanicus",
               "file": "legionesskitariimetalica",
               "status": "approved",
               "img": "images/AdeptusMechanicus_LegionesMetalica.jpg"
             },
             {
-              "name": "Questoris Mechanicus",
+              "name": "Questoris Familia",
               "file": "questorismechanicus",
               "status": "approved",
               "img": "images/AdeptusMechanicus_Questoris.jpg"

@@ -1,0 +1,310 @@
+{
+  "fraction": "Solar Auxilia",
+  "army": "Saturnyne Rams (I-Xth COH)",
+  "version": "1.0.Alpha",
+  "release": "2025-00-20",
+    "intro": "Saturnyne Rams armies gain 140 formation points (F/p), 60 upgrade points (U/p), 20 Titan points (T/p), and 20 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "armyforge": "EAR_ImperialGuard_SteelLegion",
+  "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
+  "Initiative": "Legiones Astartes allied Detachments and Collegia Titanica allied Banners have an Initiative Rating of 1+. Solar Auxilia Tercios have an Initiative Rating of 2+, and are subject to the 'Warriors of the Void' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
+  "specialRules": [
+  ],
+  "units": [
+    {
+      "from": "SolarAuxilia.json",
+      "units": [
+        "Legate Marshal Command Squad",
+        "Captain Command Squad",
+        "Auxilia Lasrifle Squad",
+        "Auxilia Flamer Squad",
+        "Veletarii",
+        "Charonite Ogryns",
+        "Aethon Heavy Sentinel",
+        "Basilisk",
+        "Medusa",
+        "Leman Russ",
+        "Leman Russ Demolisher",
+        "Leman Russ Vanquisher",
+        "Leman Russ Executioner",
+        "Leman Russ Annihilator",
+        "Malcador - Battle Cannon",
+        "Malcador - Vanquisher",
+        "Malcador - Lascannon",
+        "Malcador Infernus",
+        "Stormhammer",
+        "Stormsword",
+        "Stormblade",
+        "Shadowsword",
+        "Baneblade",
+        "Hellhammer",
+        "Dracosan - Lascannon",
+        "Dracosan - Demolisher"
+      ],
+      "unitRules": [
+      ]
+    },
+    {
+      "from": "CollegiaTitanica.json",
+      "units": [
+        "Warhound Scout Titan"
+      ],
+      "unitRules": [
+        "Lightning Charge",
+        "Void Shields",
+        "God Machine",
+        "Split Fire"
+      ]
+    },
+    {
+      "from": "SolarAuxiliaNavy.json",
+      "units": [
+        "Arvus Lighter",
+        "Thunderbolt Fighter",
+        "Marauder Bomber",
+        "Marauder Destroyer",
+        "Avenger Strike Fighter",
+        "Lightning Fighter"
+      ],
+      "unitRules": [
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "name": "Saturnyne Rams Core Tercios",
+      "description": "Saturnyne Rams armies must contain one Cohort Command Tercio, and at least one Lasrifle Tercio.",
+      "formations": [
+        {
+          "name": "1 Cohort Command Tercio",
+          "units": "One Auxilia Legate Command Squad, four Auxilia Lasrifle Squad, and one Auxilia Flamer Squad",
+          "extraUnits": [
+            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii: 5 U/p"
+          ],
+          "points": "10 F/p"
+        },
+               {
+          "name": "1+ Auxilia Lasrifle Tercio",
+          "units": "One Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
+          "extraUnits": [
+           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 5 U/p"
+          ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Veletarii Tercio",
+          "units": "Four Veletarii",
+          "extraUnits": [
+           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 5 U/p"
+          ],
+          "points": "10 F/p, -5 U/p"
+        },
+        {
+          "name": "Auxilia Ogryn Tercio",
+          "units": "Three Charonite Ogryns",
+          "extraUnits": [
+          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 5 U/p"
+          ],
+          "points": "10 F/p, -5 U/p"
+        },
+        {
+          "name": "Auxilia Leman Russ Strike Tercio",
+          "units": "Three Leman Russ, or three Leman Russ Vanquisher, or three Leman Russ Exterminator, or three Leman Russ Annihilators",
+          "extraUnits": [
+          "Add one Leman Russ of the same configuration: 5 U/p"
+          ],
+          "points": "10 F/p"
+        }
+
+      ]
+    },
+    {
+      "name": "Saturnyne Rams Support Tercios",
+      "description": "Up to one Support Tercio for each Core Tercio.",
+      "formations": [
+        {
+          "name": "Auxilia Heavy Sentinel Tercio",
+          "units": "Four Aethon Heavy Sentinels",
+          "extraUnits": [
+          ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Auxilia Rapier Tercio",
+          "units": "Four Rapiers of any configuration",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, -5 U/p"
+        },
+        {
+          "name": "Tarantula Automata Tercio",
+          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
+          "extraUnits": [
+             ],
+          "points": "10 F/p, -10 U/p"
+        },
+        {
+          "name": "Tarantula Automata Tercio",
+          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
+          "extraUnits": [
+             ],
+          "points": "10 F/p, -10 U/p"
+        }
+
+       ]
+    },
+    {
+      "name": "Saturnyne Rams Heavy Support Tercios",
+      "description": "Up to one Heavy Support Tercio for each Support Tercio.",
+      "formations": [
+       {
+          "name": "Auxilia Artillery Tercio",
+          "units": "Four Basilisk and/or Medusa",
+          "extraUnits": [
+          ],
+          "points": "10 F/p"
+        },
+        {
+          "name": "Auxilia Dracosan Attack Tercio",
+          "units": "Two Dracosan - Lascannon, four Auxilia Lasrifle Squads, two Charonite Ogryns",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 10 U/p"
+        },
+         {
+          "name": "Auxilia Dracosan Breach Tercio",
+          "units": "Two Dracosan - Demolisher, four Auxilia Flamer Squads",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 5 U/p"
+        }
+      
+      ]
+    },
+    {
+      "name": "Saturnyne Rams Armoured Tercios",
+      "description": "Up to one Armoured Tercio for each two Core Tercios.",
+      "formations": [
+
+        {
+          "name": "Auxilia Leman Russ Attack Tercio",
+          "units": "Four Leman Russ Executioners, or four Leman Russ Demolishers, or four Leman Russ Annihilators, or four Leman Russ Exterminators",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 5 U/p"
+        },        
+        {
+          "name": "Auxilia Malcador Tercio",
+          "units": "Two Malcador - Battle Cannon, or two Malcador - Vanquisher, or two Malcador - Lascannon",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 5 U/p"
+        }
+      
+      ]
+    },
+    {
+      "name": "Saturnyne Rams Heavy Armoured Tercios",
+      "description": "Up to one Heavy Armoured Tercio for each two Core Tercios.",
+      "formations": [
+        {
+          "name": "Auxilia Heavy Malcador Tercio",
+          "units": "Two Malcador Infernus, or two Malcador Valdor Tank Destroyers",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 5 U/p"
+        },
+        {
+          "name": "Auxilia Super Heavy Tank Tercio",
+          "units": "One Baneblade, or one Hellhammer, or one Stormblade, or one Stormsword, or one Stormhammer, or one Shadowsword",
+          "extraUnits": [
+          "Add one Super Heavy Tank of the same type: 10 U/p"
+          ],
+          "points": "10 F/p"
+        }
+      
+      ]
+    },
+    {
+      "name": "Collegia Titanica and Imperial Navy Formations",
+      "description": "Up to a third of the points available may be spent on Collegia Titanica and Imperial Navy Formations",
+      "formations": [
+        {
+          "name": "Warhound",
+          "units": "One Warhound Scout Titan",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 10 T/p, 10 A/p"
+        },
+        {
+          "name": "Warhound Pack",
+          "units": "Two Warhound Scout Titans",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 20 T/p, 10 A/p"
+        },
+        {
+          "name": "Dire Wolf",
+          "units": "One Dire Wolf Heavy Scout Titan",
+          "extraUnits": [
+          ],
+          "points": "10 F/p, 10 T/p, 10 A/p"
+        },
+        {
+          "name": "Reaver",
+          "units": "One Reaver Battle Titan",
+          "extraUnits": [
+          ],
+          "points": "20 F/p, 10 T/p, 10 A/p"
+        },
+        {
+          "name": "Warlord",
+          "units": "One Warlord Battle Titan",
+          "extraUnits": [
+          ],
+          "points": "20 F/p, 20 T/p, 10 A/p"
+        }
+      ]
+    },
+    {
+      "name": "Collegia Titanica and Imperial Navy Formations",
+      "description": "Up to a third of the points available may be spent on Collegia Titanica and Imperial Navy Formations",
+      "formations": [
+        {
+          "name": "Thunderbolt Squadron",
+          "units": "Two Thunderbolt Fighters",
+         "extraUnits": [
+         "Add up to two Thunderbolt Fighters: 5 U/p each"
+          ],
+          "points": "10 F/p, -10 U/p"
+        },
+        {
+          "name": "Lightning Squadron",
+          "units": "Two Thunderbolt Fighters",
+         "extraUnits": [
+         "Add up to two Thunderbolt Fighters: 5 U/p each"
+          ],
+          "points": "10 F/p, -10 U/p"
+        },
+        {
+          "name": "Avenger Squadron",
+          "units": "Two Avenger Strike Fighters",
+          "extraUnits": [
+          "Add up to two Avenger Strike Fighters: 5 U/p each"
+          ],
+          "points": "10 F/p, -10 U/p"
+        },
+        {
+          "name": "Marauder Squadron",
+          "units": "Two Marauder Bombers",
+          "points": 250
+        }
+      ]
+    }
+  ],
+  "upgrades": {
+    "title": "Steel Legion Upgrades",
+    "description": "Each upgrade may be taken once per formation. No more than three upgrades per Company",
+    "items": [
+     ]
+  }
+}

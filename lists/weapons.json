@@ -44,7 +44,28 @@
             ]
         },
         {
-            "name": "BATTLE CAR WEAPONS",
+            "name": "BATTLE WEAPONS (choose two)",
+            "modes": [
+                {
+                }
+            ]
+        },
+        {
+            "name": "BATTLE WEAPONS",
+            "modes": [
+                {
+                }
+            ]
+        },
+        {
+            "name": "SUPPORT WEAPONS",
+            "modes": [
+                {
+                }
+            ]
+        },
+        {
+            "name": "HEAVY SUPPORT WEAPONS",
             "modes": [
                 {
                 }
@@ -73,6 +94,20 @@
         },
         {
             "name": ">Close Assault Configuration<",
+            "modes": [
+                {
+                }
+            ]
+        },
+                 {
+            "name": ">Battle Cannon Configuration<",
+            "modes": [
+                {
+                }
+            ]
+        },
+                 {
+            "name": ">Turbo-Laser Configuration<",
             "modes": [
                 {
                 }
@@ -367,6 +402,44 @@
       ]
     },
     {
+      "name": "Earthshaker Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 90,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 60,
+          "specialRules": [
+          "Ind"
+           ]
+        }
+      ]
+    },
+        {
+      "name": "Medusa Siege Gun",
+      "modes": [
+        {
+          "firepower": "AP3+/AT5+",
+          "range": 60,
+          "specialRules": [
+              "IC"
+          ]
+        },
+        {
+          "firepower": "AP3+/AT5+",
+          "range": 45,
+          "specialRules": [
+              "Ind",
+              "IC"
+           ]
+        }
+      ]
+    },
+    {
       "name": "Rapid Fire Battle Cannon",
       "modes": [
         {
@@ -392,6 +465,18 @@
           "range": 90
         }
       ]
+    },
+    {
+     "name": "Hellhammer Cannon",
+            "modes": [
+                {
+                    "firepower": "AP2+/AT2+",
+                    "range": 60,
+                    "specialRules": [
+                        "IC"
+                    ]
+                }
+            ]
     },
             {
       "name": "Vanquisher Cannon",
@@ -424,8 +509,8 @@
       "name": "Twin Accelerator Autocannon",
       "modes": [
         {
-          "firepower": "AP4+/AT6+/AA6+",
-          "range": 60
+          "firepower": "AP4+/AT5+/AA6+",
+          "range": 45
         }
       ]
     },
@@ -491,6 +576,15 @@
       "modes": [
         {
           "firepower": "AP5+",
+          "range": 15
+        }
+      ]
+    },
+    {
+      "name": "Autoguns",
+      "modes": [
+        {
+          "firepower": "AP6+",
           "range": 15
         }
       ]
@@ -650,6 +744,26 @@
         }
       ]
     },
+        {
+      "name": "Flamers",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 15,
+          "specialRules": [
+            "IC",
+            "Disrupt"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC"
+          ]
+        }
+      ]
+    },
     {
       "name": "Heavy Flamer",
       "modes": [
@@ -663,6 +777,26 @@
         }
       ]
     },
+            {
+      "name": "Heavy Flamer ",
+      "modes": [
+        {
+          "firepower": "AP4+",
+          "range": 15,
+          "specialRules": [
+            "IC",
+            "Disrupt"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC"
+          ]
+        }
+      ]
+    },
         {
       "name": "Twin Heavy Flamer",
       "modes": [
@@ -672,6 +806,38 @@
           "specialRules": [
             "IC",
             "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Twin Heavy Flamer ",
+      "modes": [
+        {
+          "firepower": "AP3+",
+          "range": 15,
+          "specialRules": [
+            "IC",
+            "Disrupt"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Malcador Inferno Gun",
+      "modes": [
+        {
+          "firepower": "2BP",
+          "range": 30,
+          "specialRules": [
+            "IC"
           ]
         }
       ]
@@ -737,6 +903,17 @@
         {
           "firepower": "AP6+/AT3+",
           "range": 45
+        }
+      ]
+    },
+          {
+      "name": "AC Turbo-Laser",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT3+",
+          "range": 60,
+          "specialRules": [
+          ]
         }
       ]
     },
@@ -895,6 +1072,33 @@
       ]
     },
     {
+      "name": "Cyclops Demolition Charge",
+      "modes": [
+        {
+          "firepower": "3BP",
+          "range": 0,
+          "specialRules": [
+          "MW",
+          "Titan Hunter",
+          "Crippling"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cyclops Incineration Charge",
+      "modes": [
+        {
+          "firepower": "3BP",
+          "range": 0,
+          "specialRules": [
+          "IC",
+          "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Apocalypse Missile Launcher",
       "modes": [
         {
@@ -1015,6 +1219,19 @@
           "range": 45,
           "specialRules": [
           "Ind"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mole Mortar",
+      "modes": [
+        {
+          "firepower": "AP4+/AT6+",
+          "range": 30,
+          "specialRules": [
+          "Ind",
+          "IC"
           ]
         }
       ]
@@ -1240,7 +1457,7 @@
       "modes": [
         {
           "firepower": "AT4+",
-          "range": 60,
+          "range": 45,
           "specialRules": [
           "Shield Disruptor",
           "Crippling"
@@ -1313,8 +1530,20 @@
       "name": "Plasma Cannonade",
       "modes": [
         {
-          "firepower": "AP4+/AT5+",
+          "firepower": "AP5+/AT4+",
           "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plasma Destroyer",
+      "modes": [
+        {
+          "firepower": "AP4+/AT3+",
+          "range": 45,
           "specialRules": [
             "Energetic"
           ]
@@ -1325,7 +1554,7 @@
       "name": "Scout Plasma Blastgun",
       "modes": [
         {
-          "firepower": "2x AP4+/AT3+",
+          "firepower": "2x AP5+/AT3+",
           "range": 45,
           "specialRules": [
             "MW",
@@ -1339,7 +1568,7 @@
       "name": "Plasma Blastgun",
       "modes": [
         {
-          "firepower": "2x AP4+/AT3+",
+          "firepower": "2x AP5+/AT3+",
           "range": 60,
           "specialRules": [
             "MW",
@@ -1353,7 +1582,7 @@
       "name": "2x Plasma Blastgun",
       "modes": [
         {
-          "firepower": "2x AP4+/AT3+",
+          "firepower": "2x AP5+/AT3+",
           "range": 60,
           "specialRules": [
             "MW",
@@ -1367,7 +1596,7 @@
       "name": "Paired Plasma Blastguns",
       "modes": [
         {
-          "firepower": "4x AP4+/AT3+",
+          "firepower": "4x AP5+/AT3+",
           "range": 60,
           "specialRules": [
             "MW",
@@ -1391,8 +1620,22 @@
         }
       ]
     },
-             {
-      "name": "Neutron Laser",
+    {
+      "name": "Neutron Beam Laser",
+      "modes": [
+        {
+          "firepower": "3x AP6+/AT4+",
+          "range": 45,
+          "specialRules": [
+            "Shield Disruptor",
+            "Disrupt",
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Titan Neutron Laser",
       "modes": [
         {
           "firepower": "4x AP6+/AT4+",
@@ -1405,12 +1648,13 @@
         }
       ]
     },
+
              {
       "name": "Sunfury Plasma Annihilator",
       "modes": [
         {
-          "firepower": "4x AP5+/AT3+",
-          "range": 90,
+          "firepower": "5x AP5+/AT3+",
+          "range": 75,
           "specialRules": [
             "MW",
             "Slow",
@@ -1553,17 +1797,59 @@
         }
       ]
     },
-
-        {
-      "name": "Volkite Culvertin",
+     {
+      "name": "Volkite Charger",
       "modes": [
         {
-          "firepower": "AT5+",
+          "firepower": "AT6+/AT5+",
+          "range": 15,
+          "specialRules": [
+           "Disrupt",
+           "Crippling",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Volkite Calvier",
+      "modes": [
+        {
+          "firepower": "AT6+/AT5+",
           "range": 30,
           "specialRules": [
            "Disrupt",
            "Crippling",
            "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Volkite Culvertin",
+      "modes": [
+        {
+          "firepower": "AT6+/AT4+",
+          "range": 30,
+          "specialRules": [
+           "Disrupt",
+           "Crippling",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Volkite Macro-Saker",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT3+",
+          "range": 30,
+          "specialRules": [
+           "Disrupt",
+           "Crippling",
+           "Shield Disruptor",
+           "IC"
           ]
         }
       ]
@@ -1613,7 +1899,7 @@
         }
       ]
     },
-                {
+    {
       "name": "Vulcano Cannon",
       "modes": [
         {
@@ -1626,7 +1912,7 @@
         }
       ]
     },
-                    {
+    {
       "name": "Twin Vulcano Cannon",
       "modes": [
         {
@@ -1639,7 +1925,7 @@
         }
       ]
     },
-                        {
+    {
       "name": "Belicosa Vulcano Cannon",
       "modes": [
         {

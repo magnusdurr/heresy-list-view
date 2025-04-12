@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Legiones Cybernetica Forces",
+    "specialRules": [
+    ],
+    "unit": [
+            {
+        "name": "Tarantula - Lascannon",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 5,
+        "ff": 5,
+        "weapons": [
+          "Twin Lascannon"
+        ],
+        "specialRules": [
+        "Machine Spirit",
+        "Fearless"
+        ]
+      },
+                  {
+        "name": "Tarantula - Hyperios",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 5,
+        "weapons": [
+          "Hyperios Missile Launcher"
+        ],
+        "specialRules": [
+        "Machine Spirit",
+        "Fearless",
+        "Steadfast"
+        ]
+      },
+       {
+        "name": "Cyclops - Demolitor",
+        "type": "LV",
+        "speed": 10,
+        "armour": 4,
+        "weapons": [
+          "Cyclops Demolition Charge"
+        ],
+        "specialRules": [
+        "Machine Spirit",
+        "Infiltrators",
+        "Fearless",
+        "Ponderous",
+        "Expendable"
+        ]
+      },
+       {
+        "name": "Cyclops - Incinerator",
+        "type": "LV",
+        "speed": 10,
+        "armour": 4,
+        "weapons": [
+          "Cyclops Incineration Charge"
+        ],
+        "specialRules": [
+        "Machine Spirit",
+        "Infiltrators",
+        "Fearless",
+        "Ponderous",
+        "Expendable"
+        ]
+      }
+         ]
+  }
+]

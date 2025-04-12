@@ -35,11 +35,13 @@
           "Suzerain Plasma Destructor|2|FwA",
           "Revelator Missile Launcher|1|FwA",
           "CARAPACE (choose one)",
+          "BATTLE WEAPONS",
           "2x Apocalypse Missile Launcher|0-1|FwA",
-          "2x Titan Melta Cannon|0-1|FwA",
           "2x Inferno Gun|0-1|FwA",
           "2x Vulcan Mega-Bolter|0-1|FwA",
           "2x Turbo-Laser Destructor|0-1|FwA",
+          "SUPPORT WEAPONS",
+          "2x Titan Melta Cannon|0-1|FwA",
           "2x Plasma Blastgun|0-1|FwA"
         ],
         "specialRules": [
@@ -67,17 +69,20 @@
         "Paired Turbo-Laser Destructors||FwA",
         "Paired Apocalypse Missile Launchers||FwA",
         "Paired Turbo-Laser Blasters||FwA",
-        "Paired Gatling Blasters",
-        "Paired Vulcan Mega-Bolters",
-        "Sunfury Plasma Annihilator|0-1|FwA",
-        "Belicosa Vulcano Cannon|0-1|FwA",
+        "Paired Gatling Blasters||FwA",
+        "Paired Vulcan Mega-Bolters||FwA",
+        "ARMS (choose two)",
+        "BATTLE WEAPONS",
         "Macro-Gatling Blaster|0-2|FwA",
         "Mori Quake Cannon|0-2|FwA",
+        "Titan Power Claw|0-1|",
+        "SUPPORT WEAPONS",
+        "Volkite Destructor|0-1|FwA",
         "Conversion Beam Extripator|0-1|FwA",
         "Graviton Ruinator|0-1|FwA",
-        "Volkite Destructor|0-1|FwA",
-        "Titan Power Claw|0-1|"
-
+        "HEAVY SUPPORT WEAPONS",
+        "Sunfury Plasma Annihilator|0-1|FwA",
+        "Belicosa Vulcano Cannon|0-1|FwA"
         ],
         "specialRules": [
           "Damage Capacity 8",
@@ -99,23 +104,27 @@
         "cc": 4,
         "ff": 4,
         "weapons": [
-         "CARAPACE (choose one)",
+          "CARAPACE (choose one)",
+          "BATTLE WEAPONS",
           "Turbo-Laser Destructor|0-1|FwA",
           "Vulcan Mega-Bolter|0-1|FwA",
           "Apocalypse Missile Launcher|0-1|FwA",
-          "Graviton Eradicator|0-1|FwA",
-          "Conversion Beam Dissolutor|0-1|FwA",
+          "SUPPORT WEAPONS",
           "Titan Warp Missile|0-1|FwA",
           "Volkite Eradicator|0-1|FwA",
+          "Conversion Beam Dissolutor|0-1|FwA",
+          "Graviton Eradicator|0-1|FwA",
+
           "ARMS (choose two)",
+          "BATTLE WEAPONS",
           "Turbo-Laser Blaster|0-2|FwA",
           "Gatling Blaster|0-2|FwA",
-          "Vulcano Cannon|0-1|FwA",
-          "Titan Melta Cannon|0-1|FwA",
           "Titan Power Fist|0-1|",
-          "Titan Chainfist|0-1|"
-
-
+          "Titan Chainfist|0-1|",
+          "SUPPORT WEAPONS",
+          "Titan Melta Cannon|0-1|FwA",
+          "HEAVY SUPPORT WEAPONS",
+          "Vulcano Cannon|0-1|FwA"
         ],
         "specialRules": [
           "Damage Capacity 6",
@@ -138,21 +147,23 @@
         "ff": 5,
         "weapons": [
           "Ardex Mega-Bolter|2|FwA",
-        "CARAPACE (choose one)",
-          "Neutron Laser|0-1|FwA",
-          "Vulcano Cannon|0-1|FwA",
-          "Conversion Beam Dissipator|0-1|FwA"
+          "CARAPACE (choose one)",
+          "SUPPORT WEAPONS",
+          "Titan Neutron Laser|0-1|FwA",
+          "Conversion Beam Dissipator|0-1|FwA",
+          "HEAVY SUPPORT WEAPONS",
+          "Vulcano Cannon|0-1|FwA"
           
         ],
         "specialRules": [
           "Damage Capacity 3",
           "Void Shields 2",
-          "Fearless",
+          "Dauntless",
           "Reinforced Armour",
           "Walker"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide",
-        "crit": "The unit takes a point of damage."
+        "crit": "The unit is destroyed. All units within 5cm takes a MW hit on a 6+."
       },
       {
         "name": "Warhound Scout Titan",
@@ -162,18 +173,20 @@
         "cc": 4,
         "ff": 5,
         "weapons": [
-          "Plasma Blastgun|0-1|FwA",
+          "ARMS (choose two)",
+          "BATTLE WEAPONS",
           "Vulcan Mega-Bolter|0-1|FwA",
-          "Turbo-Laser|0-1|FwA",
           "Inferno Gun|0-1|FwA",
           "Ursus Claw|0-1|FwA",
           "Natrix Shock Lance|0-1|FwA",
+          "Scout Shudder Missile Launcher|0-1|FwA",
+          "Scout Swarmer Missile Launcher|0-1|FwA",
+          "SUPPORT WEAPONS",
+          "Plasma Blastgun|0-1|FwA",
+          "Turbo-Laser|0-1|FwA",
           "Incisor Melta Lance|0-1|FwA",
           "Graviton Eradicator|0-1|FwA",
-          "Conversion Beam Dissolutor|0-1|FwA",
-          "Scout Shudder Missile Launcher|0-1|FwA",
-          "Scout Swarmer Missile Launcher|0-1|FwA"
-          
+          "Conversion Beam Dissolutor|0-1|FwA"
         ],
         "specialRules": [
           "Damage Capacity 3",

@@ -50,16 +50,35 @@
         "crit": "The Storm Eagle and all units being carried are destroyed."
       },
       {
-        "name": "Thunderhawk",
+        "name": "Thunderhawk Gunship - Battle Cannon",
         "type": "AC/WE",
         "speed": "30cm/Hover",
         "armour": 5,
-        "ff": 4,
+        "ff": 3,
         "weapons": [
-          "Battle Cannon||FwA",
-          "AC Twin Heavy Bolter|2|FwA",
-          "AC Twin Heavy Bolter||Left",
-          "AC Twin Heavy Bolter||Right"
+        "Battle Cannon||FwA",
+        "Twin Heavy Bolter|2|FwA",
+        "AC Twin Heavy Bolter|2"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Assault Transport (8)"
+        ],
+        "crit": "The Thunderhawk and all units being carried are destroyed."
+      },
+            {
+        "name": "Thunderhawk Gunship - Turbo-Laser",
+        "type": "AC/WE",
+        "speed": "30cm/Hover",
+        "armour": 5,
+        "ff": 5,
+        "weapons": [
+        "Turbo-Laser||FwA",
+        "Lascannon|2|FwA",
+        "AC Twin Heavy Bolter|2"
+        
         ],
         "specialRules": [
           "Damage Capacity 3",

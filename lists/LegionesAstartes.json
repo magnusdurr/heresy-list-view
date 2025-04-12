@@ -246,7 +246,9 @@
           "Chainswords"
         ],
         "specialRules": [
-          "Jump Packs"
+          "Jump Packs",
+          "Evasive",
+          "Vanguard"
         ]
       },
       {
@@ -467,7 +469,7 @@
         ]
       },
        {
-        "name": "Scimitar Jetbikes - Bolter",
+        "name": "Scimitar Jetbikes - Heavy Bolter",
         "type": "INF",
         "speed": 35,
         "armour": 4,
@@ -804,7 +806,7 @@
       {
         "name": "Sicarian Arcus",
         "type": "AV",
-        "speed": 25,
+        "speed": 20,
         "armour": 5,
         "cc": 6,
         "ff": 5,
