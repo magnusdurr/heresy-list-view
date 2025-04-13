@@ -234,7 +234,22 @@
           "Blitz"
         ]
       },
+
       {
+        "name": "Tactical Legionaries - Melta",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 3,
+        "ff": 4,
+        "weapons": [
+          "Bolters",
+          "Melta Gun"
+        ]
+      },
+
+      {
+
         "name": "Assault Legionaries",
         "type": "INF",
         "speed": 30,
@@ -316,7 +331,7 @@
         "specialRules": [
           "Mounted",
           "Vanguard",
-          "Evasive",
+          "Walker",
           "Bulky"
         ]
       },
@@ -408,18 +423,19 @@
           "Heavy Flamer|3"
         ]
       },
-       {
-        "name": "Tactical Legionaries - Melta",
+
+     {
+        "name": "Destroyer Legionaries - Rad Missile Launcher",
         "type": "INF",
         "speed": 15,
         "armour": 4,
-        "cc": 3,
-        "ff": 4,
+        "cc": 6,
+        "ff": 2,
         "weapons": [
-          "Bolters",
-          "Melta Gun"
+          "Heavy Flamer|3"
         ]
       },
+
       {
         "name": "Legion Rapier - Laser Destroyer",
         "type": "LV",
@@ -449,7 +465,7 @@
         ]
       },
       {
-        "name": "Cataphractii Terminators - Melta",
+        "name": "Legion Terminators - Melta",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -461,6 +477,7 @@
           "Power Weapons"
         ],
         "specialRules": [
+          "Invulnerable Save",
           "Reinforced Armour",
           "Teleport",
           "Thick Rear Armour",
@@ -954,17 +971,17 @@
         "crit": "The Bastion takes an extra point of damage."
       },
       {
-        "name": "Fellblade",
+        "name": "Fellblade Super-Heavy Tank",
         "type": "WE",
         "speed": "15",
         "armour": 4,
         "cc": 6,
         "ff": 4,
         "weapons": [
-          "Accelerator Cannon",
-          "Quad Lascannon|2|FxF",
-          "Demolisher||FxF",
-          "Twin Heavy Bolter||FxF"
+          "Fellblade Accelerator Cannon",
+          "Quad Lascannon|2|FwA",
+          "Demolisher Cannon||FwA",
+          "Twin Heavy Bolter||FwA"
         ],
         "specialRules": [
           "Damage Capacity: 4",
@@ -973,7 +990,25 @@
         "crit": "The Fellblade is destroyed. All units within 5cm suffer a hit on a 5+."
       },
       {
-        "name": "Glaive",
+        "name": "Falchion Super-Heavy Tank",
+        "type": "WE",
+        "speed": "15",
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Twin Vulcano Cannon",
+          "Quad Lascannon|2|FxF",
+          "Twin Heavy Bolter||FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity: 4",
+          "Reinforced Armour"
+        ],
+        "crit": "The Falchion is destroyed. All units within 5cm suffer a hit on a 5+."
+      },
+      {
+        "name": "Glaive Super-Heavy Tank",
         "type": "WE",
         "speed": "15",
         "armour": 4,

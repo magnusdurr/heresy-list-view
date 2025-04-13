@@ -285,12 +285,116 @@
         }
       ]
     },
+                {
+      "name": "AC Heavy Bolter",
+      "modes": [
+        {
+          "firepower": "AP4+/AA6+",
+          "range": 30
+        }
+      ]
+    },
+                {
+      "name": "AC Twin Heavy Bolter",
+      "modes": [
+        {
+          "firepower": "AP3+/AA6+",
+          "range": 30
+        }
+      ]
+    },
+    {
+      "name": "AC Heavy Stubber Turret",
+      "modes": [
+        {
+          "firepower": "AA6+",
+          "range": 15
+        }
+      ]
+    },
             {
       "name": "AC Quad Lascannon",
       "modes": [
         {
           "firepower": "AP6+/AT5+/AA5+",
           "range": 30,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
+     {
+      "name": "AC Twin Lascannon",
+      "modes": [
+        {
+          "firepower": "AP6+/AT5+/AA6+",
+          "range": 30,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AC Quad Autocannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT6+/AA5+",
+          "range": 15,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AC Skystrike Missiles",
+      "modes": [
+        {
+          "firepower": "AA6+",
+          "range": 30,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AC Hellstrike Missiles",
+      "modes": [
+        {
+          "firepower": "AT5+",
+          "range": 30,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
+        {
+      "name": "AC Bomb Racks",
+      "modes": [
+        {
+          "firepower": "BP 1",
+          "range": 15,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AC Bomb Bay",
+      "modes": [
+        {
+          "firepower": "BP 3",
+          "range": 15,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AC Twin Heavy Bolter Turret",
+      "modes": [
+        {
+          "firepower": "AA5+",
+          "range": 15,
          "specialRules": [
           ]
         }
@@ -423,18 +527,22 @@
       "name": "Medusa Siege Gun",
       "modes": [
         {
-          "firepower": "AP3+/AT5+",
-          "range": 60,
+          "firepower": "AP4+/AT5+",
+          "range": 45,
           "specialRules": [
-              "IC"
+              "IC",
+              "Disrupt",
+              "Crippling"
           ]
         },
         {
-          "firepower": "AP3+/AT5+",
-          "range": 45,
+          "firepower": "AP4+/AT5+",
+          "range": 30,
           "specialRules": [
               "Ind",
-              "IC"
+              "IC",
+              "Disrupt",
+              "Crippling"
            ]
         }
       ]
@@ -445,6 +553,15 @@
         {
           "firepower": "2x AP4+/AT4+",
           "range": 60
+        }
+      ]
+    },
+        {
+      "name": "Twin Battle Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+/AT3+",
+          "range": 75
         }
       ]
     },
@@ -467,13 +584,38 @@
       ]
     },
     {
+      "name": "Stormhammer Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+/AT3+",
+          "range": 75
+        }
+      ]
+    },
+    {
      "name": "Hellhammer Cannon",
             "modes": [
                 {
-                    "firepower": "AP2+/AT2+",
+                    "firepower": "AP3+/AT4+",
                     "range": 60,
                     "specialRules": [
-                        "IC"
+                        "IC",
+                        "Disrupt",
+                        "Crippling"
+                    ]
+                }
+            ]
+    },
+    {
+     "name": "Siege Cannon",
+            "modes": [
+                {
+                    "firepower": "BP 3",
+                    "range": 30,
+                    "specialRules": [
+                        "IC",
+                        "Disrupt",
+                        "Crippling"
                     ]
                 }
             ]
@@ -625,24 +767,7 @@
         }
       ]
     },
-            {
-      "name": "AC Heavy Bolter",
-      "modes": [
-        {
-          "firepower": "AP4+/AA6+",
-          "range": 30
-        }
-      ]
-    },
-                {
-      "name": "AC Twin Heavy Bolter",
-      "modes": [
-        {
-          "firepower": "AP3+/AA6+",
-          "range": 30
-        }
-      ]
-    },
+
         {
       "name": "Heavy Bolter",
       "modes": [
@@ -726,7 +851,8 @@
           "range": 30,
           "specialRules": [
             "IC",
-            "D"
+            "Disrupt",
+            "Crippling"
           ]
         }
       ]
@@ -1078,6 +1204,7 @@
           "firepower": "3BP",
           "range": 0,
           "specialRules": [
+          "Self-Destruct",
           "MW",
           "Titan Hunter",
           "Crippling"
@@ -1092,6 +1219,7 @@
           "firepower": "3BP",
           "range": 0,
           "specialRules": [
+          "Self-Destruct",
           "IC",
           "Disrupt"
           ]
@@ -1579,6 +1707,20 @@
       ]
     },
          {
+      "name": "Heavy Plasma Blastgun",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT3+",
+          "range": 60,
+          "specialRules": [
+            "MW",
+            "Energetic"
+          ]
+        }
+      ]
+    },
+
+         {
       "name": "2x Plasma Blastgun",
       "modes": [
         {
@@ -1602,6 +1744,18 @@
             "MW",
             "Energetic",
             "Slow"
+          ]
+        }
+      ]
+    },
+             {
+      "name": "Fellblade Accelerator Cannon",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT3+",
+          "range": 75,
+          "specialRules": [
+            "MW"
           ]
         }
       ]
@@ -2251,8 +2405,8 @@
       "description": "Macro Weapon"
     },
     {
-      "name": "Resurrection Orb",
-      "description": "Resurrection Orb"
+      "name": "Self-Destruct",
+      "description": "Self-Destruct"
     },
     {
       "name": "Portal",

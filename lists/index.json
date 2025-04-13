@@ -60,54 +60,6 @@
               "img": "images/AstraMilitarum_Cadian.jpg"
             }
          ]
-        },
-       {
-          "name": "Solar Auxilia",
-          "abbreviation": "Prospero Spireguard (XXVIIIth EXF)",
-          "lists": [
-            {
-              "name": "Prospero Spireguard",
-              "file": "SolarAuxilia_SG",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Cadian.jpg"
-            }
-          ]
-        },
-       {
-          "name": "Solar Auxilia",
-          "abbreviation": "Necromundan Coursers (MCXXVIIIth COH)",
-          "lists": [
-            {
-              "name": "Necromundan Coursers",
-              "file": "SolarAuxilia_NG",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Cadian.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Imperialis Militia",
-          "abbreviation": "Loyalist Imperialis Militia",
-          "lists": [
-            {
-              "name": "Imperialis Militia",
-              "file": "ImperialisMilitia",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Cadian.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Imperialis Militia",
-          "abbreviation": "Traitor Imperialis Militia",
-          "lists": [
-            {
-              "name": "Ruinstorm Cultists",
-              "file": "RuinstormCultists",
-              "status": "approved",
-              "img": "images/AstraMilitarum_Cadian.jpg"
-            }
-          ]
         }
       ]
     },

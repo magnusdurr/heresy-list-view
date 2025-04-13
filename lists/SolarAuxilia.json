@@ -4,6 +4,17 @@
     "specialRules": [
     ],
     "unit": [
+
+        {
+        "name": "Auxilia Adjutant",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+          "Leader",
+          "Vox-Caster"
+        ]
+      },
             {
         "name": "Legate Marshal Command Squad",
         "type": "INF",
@@ -266,6 +277,36 @@
         ]
       },
       {
+        "name": "Termite Assault Drill",
+        "type": "AV",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Bolters"
+        ],
+        "specialRules": [
+         "Transport 2"
+        ]
+      },
+       {
+        "name": "Hellbore Burrowing Transport",
+        "type": "WE",
+        "speed": "Immobile",
+        "armour": 5,
+        "ff": 5,
+        "weapons": [
+          "Ardex-Defensor Turret|2"
+        ],
+        "specialRules": [
+         "Damage Capacity 3",
+         "Reinforced Armour",
+         "Thick Rear Armour",
+         "Assault Transport 8"
+        ]
+      },
+      {
         "name": "Aurox",
         "type": "AV",
         "speed": 25,
@@ -345,7 +386,7 @@
         "speed": 20,
         "armour": 4,
         "cc": 6,
-        "ff": 3,
+        "ff": 4,
         "weapons": [
           "Demolisher Cannon",
           "Heavy Bolter"
@@ -505,7 +546,7 @@
         ]
       },
       {
-        "name": "Baneblade",
+        "name": "Baneblade Super-Heavy Tank",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -525,12 +566,12 @@
         "crit": "The unit is destroyed."
       },
       {
-        "name": "Hellhammer",
+        "name": "Hellhammer Super-Heavy Tank",
         "type": "WE",
         "speed": 15,
         "armour": 4,
         "cc": 6,
-        "ff": 3,
+        "ff": 4,
         "weapons": [
           "Hellhammer Cannon",
           "Autocannon",
@@ -546,15 +587,16 @@
         "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
       },
       {
-        "name": "Shadowsword",
+        "name": "Shadowsword Super-Heavy Tank",
         "type": "WE",
         "speed": 15,
         "armour": 4,
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Vulcano Cannon||FxF",
-          "Twin Heavy Bolter|2|FxF"
+          "Vulcano Cannon||FwA",
+          "Heavy Bolter|3|FwA",
+          "Lascannon|2|FwA"
         ],
         "specialRules": [
           "Damage Capacity 3",
@@ -563,16 +605,34 @@
         "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
       },
       {
-        "name": "Stormblade",
+        "name": "Stormblade Super-Heavy Tank",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Plasma Blastgun||FwA",
+          "Heavy Bolter|3|FwA",
+          "Lascannon|2|FwA"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour"
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+      },
+      {
+        "name": "Stormsword Super-Heavy Tank",
         "type": "WE",
         "speed": 15,
         "armour": 4,
         "cc": 6,
         "ff": 4,
         "weapons": [
-          "Stormblade Blastgun||FxF",
-          "Lascannon|2|FxF",
-          "Twin Heavy Bolter|3|FxF"
+          "Siege Cannon||FwA",
+          "Heavy Bolter|3|FwA",
+          "Lascannon|2|FwA"
         ],
         "specialRules": [
           "Damage Capacity 3",
@@ -581,35 +641,17 @@
         "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
       },
       {
-        "name": "Stormsword",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Siege Cannon||FxF",
-          "Twin Heavy Bolter|3|FxF",
-          "Heavy Flamer |2|"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Stormhammer",
+        "name": "Stormhammer Super-Heavy Tank",
         "type": "WE",
         "speed": 15,
         "armour": 4,
         "cc": 6,
         "ff": 3,
         "weapons": [
-          "Twin Ragnarok Battle Cannon||",
-          "Twin Ragnarok Battle Cannon||FxF",
-          "Quad Lascannon||FxF",
-          "Quad Heavy Bolter|2|FwA"
+          "Stormhammer Cannon||",
+          "Twin Battle Cannon||FwA",
+          "Multi-Laser|3|FwA",
+          "Lascannon|3|FwA"
         ],
         "specialRules": [
           "Damage Capacity 3",

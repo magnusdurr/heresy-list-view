@@ -40,7 +40,6 @@
           "2x Inferno Gun|0-1|FwA",
           "2x Vulcan Mega-Bolter|0-1|FwA",
           "2x Turbo-Laser Destructor|0-1|FwA",
-          "SUPPORT WEAPONS",
           "2x Titan Melta Cannon|0-1|FwA",
           "2x Plasma Blastgun|0-1|FwA"
         ],
@@ -51,7 +50,10 @@
           "Dauntless",
           "Reinforced Armour",
           "Walker",
-          "Tall"
+          "Towering",
+          "Ponderous",
+          "Steadfast",
+          "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
         "crit": "The unit takes a point of damage."
@@ -91,7 +93,10 @@
           "Dauntless",
           "Reinforced Armour",
           "Walker",
-          "Tall"
+          "Towering",
+          "Ponderous",
+          "Steadfast",
+          "Vanguard"
         ],
         "notes": "Must be armed with either Paired Turbo-Laser Destructors or Paired Apocalypse Missile Launchers. May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
         "crit": "The unit takes a point of damage."
@@ -133,7 +138,10 @@
           "Blitz",
           "Reinforced Armour",
           "Walker",
-          "Tall"
+          "Towering",
+          "Ponderous",
+          "Steadfast",
+          "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
        "crit": "The unit takes a point of damage."
@@ -193,7 +201,8 @@
           "Void Shields 2",
           "Dauntless",
           "Reinforced Armour",
-          "Walker"
+          "Walker",
+          "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide",
         "crit": "The unit takes a point of damage."

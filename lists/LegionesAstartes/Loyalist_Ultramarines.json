@@ -25,7 +25,7 @@
         "Support Legionaries - Plasma",
         "Tactical Legionaries - Melta",
         "Heavy Support Legionaries - Missile Launcher",
-        "Cataphractii Terminators - Melta",
+        "Legion Terminators - Melta",
         "Legion Outriders - Plasma",
         "Legion Rapier - Laser Destroyer",
         "Legion Rapier - Quad Launcher",
@@ -46,7 +46,6 @@
         "Rhino",
         "Support Rhino - Melta",
         "Support Rhino - Missile Launcher",
-        "Vindicator",
         "Sicarian - Autocannon",
         "Sicarian - Plasma",
         "Sicarian Punisher",
@@ -55,9 +54,22 @@
         "Spartan - Lascannon",
         "Spartan - Laser Destroyer",
         "Kratos - Battle Cannon",
-        "Kratos - Melta"
+        "Kratos - Melta",
+        "Fellblade Super-Heavy Tank",
+        "Falchion Super-Heavy Tank"
       ],
       "unitRules": [
+      "Energetic",
+      "Crippling",
+      "Psyker - Thaumaturgy",
+      "Skirmisher",
+      "Vox-Caster",
+      "Vanguard",
+      "Evasive",
+      "Blitz",
+      "Transport (x)",
+      "Heavy Transport (x)",
+      "Assault Transport (x)"
       ]
     },
         {
@@ -77,10 +89,16 @@
         "Thunderhawk Gunship - Turbo-Laser",
         "Xiphon Interceptor",
         "Fire Raptor",
-        "Storm Eagle",
-        "Drop Pod"
+        "Storm Eagle"
       ],
       "unitRules": [
+      "Offboard Support",
+      "Drop Pods",
+      "Orbital Pin-Point Attack",
+      "Orbital Barrage",
+      "Artillery Barrage Strike",
+      "Artillery Blind Strike"
+
       ]
     },
     {
@@ -93,7 +111,15 @@
         "Warmaster Heavy Battle Titan"
       ],
       "unitRules": [
-        "Void Shields"
+        "Void Shields",
+        "Towering",
+        "Beam Projector",
+        "Graviton",
+        "Titan Hunter",
+        "Shield Piercer",
+        "Shield Disruptor",
+        "Ponderous",
+        "Steadfast"
       ]
     },
             {
@@ -109,6 +135,7 @@
         "Leman Russ Vanquisher"
       ],
       "unitRules": [
+      "Army of Mankind"
       ]
     },
     {
@@ -124,6 +151,8 @@
         "Questoris Rocket Pod"
       ],
       "unitRules": [
+      "Chivalry",
+      "Ion Shield (x)"
       ]
     }
   ],
@@ -138,7 +167,7 @@
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Supreme Commander (0-1 in the army, 0 U/p)",
             "Add up to two Tactical Legionaries, Support Legionaries, and/or Heavy Support Legionaries: 1 U/p each",
-            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminators - Melta (3 U/p)"
+            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Legion Terminators (3 U/p)"
           ],
           "points": "1 F/p"
         },
@@ -198,7 +227,7 @@
     },
        {
       "name": "Ultramarines Special Detachments",
-      "description": "May only have one Special Detachment for each Core Detachment",
+      "description": "May only have one Special Detachment for each two Core Detachments",
       "formations": [
               {
           "name": "Rapier Detachment",
@@ -208,7 +237,7 @@
           "points": "1 F/p, -1 U/p"
         },
         {
-          "name": "Tarantula Battery",
+          "name": "Cybernetica Tarantula Battery",
           "units": "Four Tarantula of any configuration",
           "extraUnits": [
              ],
@@ -269,11 +298,11 @@
     },
            {
       "name": "Ultramarines Elite Detachments",
-      "description": "May only have one Elite Detachment for each two Core Detachments",
+      "description": "May only have one Elite Detachment for each three Core Detachments",
       "formations": [
          {
-          "name": "Cataphractii Detachment",
-          "units": "One Lieutenant character, three Cataphractii Terminators",
+          "name": "Terminator Detachment",
+          "units": "One Lieutenant character, three Legion Terminators",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p"
           ],
@@ -317,13 +346,20 @@
           "extraUnits": [
              ],
           "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "Fellblade Detachment",
+          "units": "One Fellblade Super-Heavy Tank",
+          "extraUnits": [
+             ],
+          "points": "1 F/p, 1 U/p"
         }
 
       ]
     },
      {
       "name": "Ultramarines Navy Detachments",
-      "description": "May only have one Navy Detachment for each two Core or Special Detachments",
+      "description": "May only have one Navy Detachment for each three Core or Special Detachments",
       "formations": [
         {
           "name": "Storm Eagle",
@@ -381,7 +417,7 @@
       "description": "",
       "formations": [
         {
-          "name": "Warhound Banner",
+          "name": "Warhound",
           "units": "One Warhound Scout Titan",
           "extraUnits": [
           "Replace one Battle Weapon with a Support Weapon: 1 U/p"
@@ -389,7 +425,7 @@
           "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
         },
         {
-          "name": "Warhound Pack Banner",
+          "name": "Warhound Pack",
           "units": "Two Warhound Scout Titans (must have the same armament)",
           "extraUnits": [
           "Replace one Battle Weapon with a Support Weapon: 2 U/p"
@@ -397,7 +433,7 @@
           "points": "1 F/p, 2 U/p, 2 T/p, 1 A/p"
         },
         {
-          "name": "Dire Wolf Banner",
+          "name": "Dire Wolf",
           "units": "One Dire Wolf Heavy Scout Titan",
           "extraUnits": [
           "Replace one Support Weapon with a Heavy Support Weapon (1 U/p)"
@@ -405,7 +441,7 @@
           "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
         },
         {
-          "name": "Reaver Banner",
+          "name": "Reaver",
           "units": "One Reaver Battle Titan",
           "extraUnits": [
           "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
@@ -413,7 +449,7 @@
           "points": "2 F/p, 1 T/p, 1 A/p"
         },
         {
-          "name": "Warlord Banner",
+          "name": "Warlord",
           "units": "One Warlord Battle Titan",
           "extraUnits": [
           "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
@@ -421,10 +457,9 @@
           "points": "2 F/p, 1 U/p, 2 T/p, 1 A/p"
         },
         {
-          "name": "Warmaster Banner",
+          "name": "Warmaster",
           "units": "One Warmaster Heavy Battle Titan",
           "extraUnits": [
-          "Replace two Battle Weapons with two Support Weapons of the same type (1 U/p)"
           ],
           "points": "3 F/p, 2 U/p, 3 T/p, 1 A/p"
         }
@@ -432,7 +467,7 @@
     },
         {
       "name": "Solar Auxilia Allied Tercios",
-      "description": "The first Tercio selected must be an Auxilia Lasrifle Tercio",
+      "description": "The first formation selected must be an Auxilia Lasrifle Tercio",
       "formations": [
          {
           "name": "Auxilia Lasrifle Tercio",
@@ -459,14 +494,14 @@
           "points": "1 F/p, -2 U/p, 1 A/p"
         },
         {
-          "name": "Auxilia Heavy Sentinel Tercio",
+          "name": "Auxilia Heavy Sentinel Patrol",
           "units": "Four Aethon Heavy Sentinels",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 A/p"
         },
         {
-          "name": "Auxilia Leman Russ Strike Tercio",
+          "name": "Auxilia Leman Russ Squadron",
           "units": "Three Leman Russ of any configuration",
           "extraUnits": [
           "Add one Leman Russ of any configuration: 1 U/p"
@@ -494,17 +529,11 @@
           "name": "Questoris Lance",
           "units": "Two Questoris Knight-Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
           "extraUnits": [
-            "Add two Questoris Rocket Pods: 1 U/p"
+            "Add one Questoris Rocket Pod to each Knight in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 A/p"
         }
       ]
     }
-  ],
-  "upgrades": {
-    "title": "Codex Astartes Upgrades",
-    "description": "Each upgrade may be taken once per detachment",
-    "items": [
-          ]
-  }
+  ]
 }

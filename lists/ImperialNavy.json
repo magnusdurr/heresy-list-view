@@ -1,21 +1,9 @@
 [
   {
-    "name": "Imperial Navy",
+    "name": "Imperial Navy and Offboard Support",
     "specialRules": [
     ],
     "unit": [
-      {
-        "name": "Lightning Strike Fighter",
-        "type": "AC",
-        "speed": "Fighter-Bomber",
-        "armour": 6,
-        "weapons": [
-          "AC Twin Lascannon||FxF",
-          "AC Underwing Rockets||FxF"
-        ],
-        "specialRules": [
-        ]
-      },
       {
         "name": "Lightning Interceptor",
         "type": "AC",
@@ -34,9 +22,9 @@
         "speed": "Fighter-Bomber",
         "armour": 6,
         "weapons": [
-          "AC Multilaser||FxF",
-          "AC Underwing Rockets||FxF",
-          "AC Storm Bolters||FxF"
+          "AC Quad Autocannon||FxF",
+          "AC Twin Lascannon||FxF",
+          "AC Skystrike Missiles||FxF"
         ],
         "specialRules": [
         ]
@@ -47,7 +35,7 @@
         "speed": "Fighter-Bomber",
         "armour": 5,
         "weapons": [
-          "AC Avenger Bolt Cannon||FxF",
+          "Avenger Bolt Cannon||FxF",
           "AC Twin Lascannon||FxF",
           "AC Heavy Stubber Turret"
         ],
@@ -60,8 +48,8 @@
         "speed": "Bomber",
         "armour": 4,
         "weapons": [
-          "AC Twin Lascannon||FxF",
-          "AC Bomb Racks||FxF",
+          "Twin Lascannon||FxF",
+          "AC Bomb Bay||FxF",
           "AC Twin Heavy Bolter Turret|2|"
         ],
         "specialRules": [

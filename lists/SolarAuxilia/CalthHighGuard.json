@@ -1,18 +1,21 @@
 {
   "fraction": "Solar Auxilia",
-  "army": "Calth High Guard",
+  "army": "Calth High Guard (CCLVth Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
     "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 14 formation points (F/p), 12 upgrade points (U/p), 2 Titan points (T/p), and 6 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
-  "armyforge": "EAR_ImperialGuard_SteelLegion",
-  "strategy": "Solar Auxilia armies have a Strategy Rating of 2. The highest dice rolled suffers a negative modifier of -1 for each type of ally in the army.",
-  "Initiative": "Legiones Astartes allied Detachments and Collegia Titanica allied Banners have an Initiative Rating of 1+. Solar Auxilia Tercios have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
+  "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
+  "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
+  "Initiative": "Legiones Astartes allied Detachments and Collegia Titanica allied Banners have an Initiative Rating of 1+. Calth High Guard Tercios have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The Tarantula Battery have an Initiative Rating of 2+, and is subject to the 'Machine Spirit' special rule.",
   "specialRules": [
+  "Army of Mankind",
+  "Tunnelers"
   ],
   "units": [
     {
       "from": "SolarAuxilia.json",
       "units": [
+        "Auxilia Auxilia Adjutant",
         "Legate Marshal Command Squad",
         "Auxilia Command Squad",
         "Auxilia Lasrifle Squad",
@@ -25,21 +28,33 @@
         "Auxilia Rapier - Mole Mortar",
         "Basilisk",
         "Medusa",
+        "Termite Assault Drill",
         "Leman Russ",
         "Leman Russ Demolisher",
         "Leman Russ Vanquisher",
         "Leman Russ Executioner",
         "Leman Russ Annihilator",
+        "Leman Russ Exterminator",
         "Malcador - Battle Cannon",
         "Malcador - Vanquisher",
         "Malcador - Lascannon",
-        "Baneblade",
-        "Hellhammer",
-        "Stormsword",
-        "Stormblade",
-        "Shadowsword"
+        "Malcador Infernus",
+        "Malcador Valdor",
+        "Baneblade Super-Heavy Tank",
+        "Hellhammer Super-Heavy Tank",
+        "Stormsword Super-Heavy Tank",
+        "Stormblade Super-Heavy Tank",
+        "Shadowsword Super-Heavy Tank"
       ],
       "unitRules": [
+      "Energetic",
+      "Crippling",
+      "Skirmisher",
+      "Vox-Caster",
+      "Vanguard",
+      "Evasive",
+      "Blitz",
+      "Transport (x)"
       ]
     },
     {
@@ -51,17 +66,23 @@
         "Cyclops - Incinerator"
       ],
       "unitRules": [
-      "Machine Spirit"
+      "Machine Spirit",
+      "Self-Destruct"
       ]
     },
     {
-      "from": "SolarAuxiliaNavy.json",
+      "from": "ImperialNavy.json",
       "units": [
         "Thunderbolt Fighter",
-        "Marauder Bomber",
-        "Avenger Strike Fighter"
+        "Marauder Bomber"
       ],
       "unitRules": [
+      "Offboard Support",
+      "Deathstrike Attacks",
+      "Deathstrike Warp Missile Attack",
+      "Deathstrike Plasma Missile Attack",
+      "Artillery Barrage Strike",
+      "Termite Subterranean Assault"
       ]
     },
        {
@@ -78,11 +99,11 @@
         "Contemptor Dreadnought - Lascannon",
         "Predator Annihilator",
         "Predator Destructor",
-        "Rhino",
         "Sicarian - Autocannon",
         "Sicarian - Plasma"
       ],
       "unitRules": [
+      "Psyker - Thaumaturgy"
       ]
     },
     {
@@ -95,7 +116,15 @@
         "Warmaster Heavy Battle Titan"
       ],
       "unitRules": [
-        "Void Shields"
+        "Void Shields",
+        "Towering",
+        "Beam Projector",
+        "Graviton",
+        "Titan Hunter",
+        "Shield Piercer",
+        "Shield Disruptor",
+        "Ponderous",
+        "Steadfast"
       ]
     },
     {
@@ -111,20 +140,23 @@
         "Questoris Rocket Pod"
       ],
       "unitRules": [
+      "Chivalry",
+      "Ion Shield (x)"
       ]
     }
   ],
   "sections": [
     {
       "name": "Calth High Guard Core Tercios",
-      "description": "Calth High Guard armies must contain one Section Command Tercio, and at least one Lasrifle Tercio",
+      "description": "Calth High Guard armies must contain one Section Command Tercio, and at least one Auxilia Lasrifle Tercio",
       "formations": [
         {
           "name": "1 Section Command Tercio",
           "units": "One Legate Marshal Command Squad, four Auxilia Lasrifle Squad, and one Auxilia Flamer Squad",
           "extraUnits": [
             "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns (this upgrade may be taken twice): 1 U/p",
-            "Add two Cyclops of any configuration: 1 U/p"
+            "Add two Cyclops of any single configuration: 1 U/p",
+            "Add one Malcador of any configuration: 2 U/p"
           ],
           "points": "1 F/p"
         },
@@ -133,7 +165,8 @@
           "units": "One Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns (this upgrade may be taken twice): 1 U/p",
-            "Add two Cyclops of any single configuration: 1 U/p"
+            "Add two Cyclops of any single configuration: 1 U/p",
+            "Add one Malcador of any configuration: 2 U/p"
           ],
           "points": "1 F/p"
         },
@@ -152,47 +185,50 @@
           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
           ],
           "points": "1 F/p, -1 U/p"
+        },
+        {
+          "name": "Auxilia Rapier Tercio",
+          "units": "Four Rapiers of any configuration",
+          "extraUnits": [
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+          ],
+          "points": "1 F/p, -1 U/p"
         }
 
       ]
     },
     {
       "name": "Calth High Guard Special Tercios",
-      "description": "May only have one Special Tercio for each Core Tercio",
+      "description": "May only have one Special Tercio for each two Core Tercios",
       "formations": [
         {
-          "name": "Auxilia Heavy Sentinel Tercio",
+          "name": "Auxilia Heavy Sentinel Patrol",
           "units": "Four Aethon Heavy Sentinels",
           "extraUnits": [
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
           "points": "1 F/p"
         },
         {
-          "name": "Auxilia Rapier Tercio",
-          "units": "Four Rapiers of any configuration",
+          "name": "Cybernetica Tarantula Battery",
+          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
           "extraUnits": [
+             ],
+          "points": "1 F/p, -2 U/p"
+        },
+        {
+          "name": "Auxilia Leman Russ Squadron",
+          "units": "Three Leman Russ of any configuration",
+          "extraUnits": [
+          "Add one Leman Russ of any configuration: 1 U/p"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p"
         },
         {
-          "name": "Tarantula Automata Tercio",
-          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
+          "name": "Auxilia Artillery Battery",
+          "units": "Three Basilisk and/or Medusa",
           "extraUnits": [
-             ],
-          "points": "1 F/p, -2 U/p"
-        },
-        {
-          "name": "Tarantula Automata Tercio",
-          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
-          "extraUnits": [
-             ],
-          "points": "1 F/p, -2 U/p"
-        },
-        {
-          "name": "Auxilia Leman Russ Tercio",
-          "units": "Three Leman Russ of any single configuration",
-          "extraUnits": [
-          "Add one Leman Russ of the same configuration: 1 U/p"
+          "Add Basilisk and/or Medusa: 1 U/p"
           ],
           "points": "1 F/p"
         }
@@ -201,62 +237,61 @@
     },
     {
       "name": "Calth High Guard Elite Tercios",
-      "description": "May only have one Elite Tercio for each two Core Tercios",
+      "description": "May only have one Elite Tercio for each three Core Tercios",
       "formations": [
-       {
-          "name": "Auxilia Artillery Tercio",
-          "units": "Four Basilisk and/or Medusa",
-          "extraUnits": [
-          ],
-          "points": "1 F/p"
-        },
-       {
-          "name": "Auxilia Malcador Tercio",
-          "units": "Two Malcador - Battle Cannon, or two Malcador - Vanquisher, or two Malcador - Lascannon",
+         {
+          "name": "Auxilia Malcador Squadron",
+          "units": "Two Malcadors of any single configuration",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "Auxilia Heavy Malcador Tercio",
+          "name": "Heavy Malcador Squadron",
           "units": "Two Malcador Infernus, or two Malcador Valdor Tank Destroyers",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "Auxilia Super Heavy Tank Tercio",
-          "units": "One Super Heavy Tank of any configuration",
+          "name": "Super-Heavy Tank Squadron",
+          "units": "One Super-Heavy Tank of any configuration",
           "extraUnits": [
-          "Add one Super Heavy Tank of the same type: 2 U/p"
+          "Add one Super-Heavy Tank of any configuration: 3 U/p",
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
           "points": "1 F/p"
+        },
+                {
+          "name": "Auxilia Leman Russ Company",
+          "units": "Six Leman Russ of any configuration",
+          "extraUnits": [
+          "Add up to two Leman Russ of any configuration: 1 U/p each",
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+          ],
+          "points": "2 F/p"
+        },
+        {
+          "name": "Auxilia Artillery Company",
+          "units": "Six Basilisk and/or Medusa",
+          "extraUnits": [
+          "Add up to two Basilisk and/or Medusa: 1 U/p each",
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+          ],
+          "points": "2 F/p"
         }
       
       ]
     },
         {
       "name": "Imperial Navy Squadrons",
-      "description": "May only have one Navy Squadron for each two Core Tercios",
+      "description": "May only have one Navy Squadron for each three Core or Special Tercios",
       "formations": [
         {
           "name": "Thunderbolt Squadron",
           "units": "Two Thunderbolt Fighters",
          "extraUnits": [
-          ],
-          "points": "1 F/p, -2 U/p"
-        },
-        {
-          "name": "Lightning Squadron",
-          "units": "Three Lightning Fighters",
-         "extraUnits": [
-          ],
-          "points": "1 F/p, -2 U/p"
-        },
-        {
-          "name": "Avenger Squadron",
-          "units": "Two Avenger Strike Fighters",
-          "extraUnits": [
+         "Add up to two Thunderbolt Fighters: 1 U/p each"
           ],
           "points": "1 F/p, -2 U/p"
         },
@@ -276,10 +311,6 @@
           "points": "2 U/p"
         },
         {
-          "name": "Deathstrike Vortex Missile Attack",
-          "points": "2 U/p"
-        },
-        {
           "name": "Deathstrike Plasma Missile Attack",
           "points": "2 U/p"
         },
@@ -288,40 +319,44 @@
           "points": "2 U/p"
         },
         {
-          "name": "Artillery Blind Strike",
+          "name": "Termite Subterranean Assault",
           "points": "2 U/p"
         }
       ]
     },
-    {
+      {
       "name": "Collegia Titanica Allied Banners",
-      "description": "Up to a third of the points available may be spent on Collegia Titanica and Imperial Navy Formations",
+      "description": "",
       "formations": [
         {
           "name": "Warhound",
           "units": "One Warhound Scout Titan",
           "extraUnits": [
+          "Replace one Battle Weapon with a Support Weapon: 1 U/p"
           ],
-          "points": "1 F/p, 1 T/p, 1 A/p"
+          "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
         },
         {
           "name": "Warhound Pack",
-          "units": "Two Warhound Scout Titans",
+          "units": "Two Warhound Scout Titans (must have the same armament)",
           "extraUnits": [
+          "Replace one Battle Weapon with a Support Weapon: 2 U/p"
           ],
-          "points": "1 F/p, 2 T/p, 1 A/p"
+          "points": "1 F/p, 2 U/p, 2 T/p, 1 A/p"
         },
         {
           "name": "Dire Wolf",
           "units": "One Dire Wolf Heavy Scout Titan",
           "extraUnits": [
+          "Replace one Support Weapon with a Heavy Support Weapon (1 U/p)"
           ],
-          "points": "1 F/p, 1 T/p, 1 A/p"
+          "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
         },
         {
           "name": "Reaver",
           "units": "One Reaver Battle Titan",
           "extraUnits": [
+          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
           ],
           "points": "2 F/p, 1 T/p, 1 A/p"
         },
@@ -329,54 +364,32 @@
           "name": "Warlord",
           "units": "One Warlord Battle Titan",
           "extraUnits": [
+          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
           ],
-          "points": "2 F/p, 2 T/p, 1 A/p"
+          "points": "2 F/p, 1 U/p, 2 T/p, 1 A/p"
+        },
+        {
+          "name": "Warmaster",
+          "units": "One Warmaster Heavy Battle Titan",
+          "extraUnits": [
+          "Replace two Battle Weapons with two Support Weapons of the same type (1 U/p)"
+          ],
+          "points": "3 F/p, 2 U/p, 3 T/p, 1 A/p"
         }
       ]
     },
     {
       "name": "Legiones Astartes Allied Detachments",
-      "description": "",
+      "description": "The first formation selected must be a Tactical Detachment",
       "formations": [
         {
           "name": "Tactical Detachment",
-          "units": "One Lieutenant character, four Tactical Legionaries - Melta",
+          "units": "One Lieutenant character, four Tactical Legionaries",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian - Thaumaturgy (1 U/p)",
-            "Add Tactical Legionaries - Melta: 2 U/p",
-            "Add Support Legionaries - Plasma, or two Heavy Support Legionaries - Missile Launcher: 2 U/p",
-            "Add two Contemptor Dreadnoughts of any type: 2 U/p"
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
+            "Add up to two Tactical Legionaries, Support Legionaries, and/or Heavy Support Legionaries: 1 U/p each",
+            "Add two Contemptor Dreadnoughts of any single configuration: 2 U/p"
           ],
-          "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Land Speeder Detachment",
-          "units": "Three Land Speeders of any configuration",
-          "extraUnits": [
-          "Add one Land Speeder of any configuration: 1 U/p"
-            ],
-          "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Attack Speeder Detachment",
-          "units": "Three Attack Speeder - Missile Launcher",
-          "extraUnits": [
-           "Add one Attack Speeder - Missile Launcher: 1 U/p"
-            ],
-          "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Scimitar Detachment",
-          "units": "One Lieutenant character, three Scimitar Jetbikes - Heavy Bolter",
-          "extraUnits": [
-            ],
-          "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Outrider Detachment",
-          "units": "One Lieutenant character, four Legion Outriders - Plasma",
-          "extraUnits": [
-            ],
           "points": "1 F/p, 1 A/p"
         },
          {
@@ -418,17 +431,11 @@
           "name": "Questoris Lance",
           "units": "Two Questoris Knight-Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
           "extraUnits": [
-            "Add one Questoris Rocket Pod to the entire formation: 1 U/p"
+            "Add one Questoris Rocket Pod to each Knight in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 A/p"
         }
       ]
     }
-  ],
-  "upgrades": {
-    "title": "Steel Legion Upgrades",
-    "description": "Each upgrade may be taken once per formation. No more than three upgrades per Company",
-    "items": [
-     ]
-  }
+  ]
 }
