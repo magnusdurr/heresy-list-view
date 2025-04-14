@@ -23,9 +23,11 @@
         "Supreme Commander",
         "Assault Legionaries",
         "Support Legionaries - Plasma",
-        "Tactical Legionaries - Melta",
+        "Tactical Legionaries",
         "Heavy Support Legionaries - Missile Launcher",
-        "Legion Terminators - Melta",
+        "Nemesis Destroyer Squad",
+        "Legion Terminators",
+        "Fulmentarus Terminators",
         "Legion Outriders - Plasma",
         "Legion Rapier - Laser Destroyer",
         "Legion Rapier - Quad Launcher",
@@ -178,8 +180,8 @@
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Supreme Commander (0-1 in the army, 0 U/p)",
             "Add up to two Assault Legionaries: 1 U/p each",
             "Replace two Rhinos in the formation with four Support Rhino - Melta, four Support Rhino - Missile Launcher, or two of each: 2 U/p",
-            "Replace two Rhinos in the formation with two Land Raider Proteus: 2 U/p",
-            "Replace two Rhinos in the formation with one Spartan of any configuration: 2 U/p"
+            "Replace two Rhinos in the formation with two Land Raider Proteus: 3 U/p",
+            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
           ],
           "points": "1 F/p"
         },
@@ -187,7 +189,7 @@
           "name": "Support Detachment",
           "units": "Two Support Legionaries, one Rhino",
           "extraUnits": [
-          "Replace Rhino with two Support Rhinos of any single configuration (1 U/p), one Land Raider (1 U/p), one Contemptor Dreadnought (1 U/p), or two Support Legionaries (2 U/p)"
+          "Replace Rhino with two Support Rhinos of any single configuration (1 U/p), one Contemptor Dreadnought (1 U/p), one Land Raider Proteus (2 U/p), or two Support Legionaries (2 U/p)"
              ],
           "points": "1 F/p, -2 U/p"
         },
@@ -195,7 +197,7 @@
           "name": "Heavy Support Detachment",
           "units": "Two Heavy Support Legionaries - Missile Launcher, one Rhino",
           "extraUnits": [
-          "Replace Rhino with two Support Rhinos of any single configuration (1 U/p), one Land Raider (1 U/p), one Contemptor Dreadnought (1 U/p), or two Heavy Support Legionaries (3 U/p)"
+          "Replace Rhino with two Support Rhinos of any single configuration (1 U/p), one Contemptor Dreadnought (1 U/p), one Land Raider Proteus (2 U/p), or two Heavy Support Legionaries (3 U/p)"
              ],
           "points": "1 F/p, -1 U/p"
         },
@@ -211,7 +213,7 @@
           "name": "Predator Detachment",
           "units": "Three Predator Annihilator, and/or Predator Destructor",
           "extraUnits": [
-                "Add up to three Predators of any type: 1 U/p each"
+                "Add up to three Predators of any configuration: 1 U/p each"
              ],
           "points": "1 F/p"
         },
@@ -219,7 +221,7 @@
           "name": "Sicarian Detachment",
           "units": "Two Sicarian - Autocannon, Sicarian - Plasma, Sicarian Punisher, and/or Sicarian Arcus",
           "extraUnits": [
-            "Add up to one Sicarian of any type: 1 U/p"
+            "Add up to two Sicarians of any configuration: 1 U/p each"
              ],
           "points": "1 F/p, -1 U/p"
         }
@@ -304,11 +306,22 @@
           "name": "Terminator Detachment",
           "units": "One Lieutenant character, three Legion Terminators",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p"
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
+            "Replace three Legion Terminators with Fulmentarus Terminators: 1 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },
-
+        {
+          "name": "Nemesis Destroyer Squad",
+          "units": "One Lieutenant character, four Nemesis Destroyer Squads",
+          "extraUnits": [
+            "Add two Rhinos to the formation: Free",
+            "Replace two Rhinos in the formation with four Support Rhino - Melta, four Support Rhino - Missile Launcher, or two of each: 2 U/p",
+            "Replace two Rhinos in the formation with two Land Raider Proteus: 3 U/p",
+            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
+            ],
+          "points": "1 F/p, 1 U/p"
+        },
         {
           "name": "Leviathan Detachment",
           "units": "Three Leviathan Dreadnought of any configuration",

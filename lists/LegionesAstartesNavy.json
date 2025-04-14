@@ -64,7 +64,8 @@
           "Damage Capacity 3",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Assault Transport (8)"
+          "Assault Transport (8)",
+          "Ion Shield (5+)"
         ],
         "crit": "The Thunderhawk and all units being carried are destroyed."
       },
@@ -84,7 +85,8 @@
           "Damage Capacity 3",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Assault Transport (8)"
+          "Assault Transport (8)",
+          "Ion Shield (5+)"
         ],
         "crit": "The Thunderhawk and all units being carried are destroyed."
       },
@@ -100,13 +102,36 @@
           "AC Quad Heavy Bolter||Right"
         ],
         "specialRules": [
-          "Damage Capacity 2",
+          "Damage Capacity 3",
           "Planetfall",
           "Reinforced Armour",
-          "Transport"
+          "Transport",
+          "Ion Shield (5+)"
         ],
         "notes": "May carry up to two of the following units: Stalkers, Hunters, Predators, Razorbacks, Rhinos and Vindicators. Land Raiders counts as two units each. In addition it may also carry any infantry transported in these vehicles, which counts as being located in the vehicles when disembarking.",
         "crit": "The Thunderhawk Transporter and all units being carried are destroyed."
+      },
+            {
+        "name": "Sokar Stormbird",
+        "type": "AC/WE",
+         "speed": "20cm/Hover",
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+        "Twin Lascannon|2|Left",
+        "Twin Lascannon|2|Right",
+          "AC Twin Heavy Bolter|3|",
+          "AC Hellstrike Missiles|2|FwA"
+        ],
+        "specialRules": [
+          "Damage Capacity 6",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Assault Transport (16)",
+          "Ion Shield (5+)"
+        ],
+        "crit": "The Sokar Stormbird and all units being carried are destroyed."
       },
             {
         "name": "Xiphon Interceptor",
@@ -119,25 +144,6 @@
         ],
         "specialRules": [
         ]
-      },
-      {
-        "name": "Drop Pod",
-        "weapons": [
-          {
-            "name": "Deathwind",
-            "modes": [
-              {
-                "firepower": "AP6+/AT6+",
-                "range": 15
-              }
-            ]
-          }
-        ],
-        "specialRules": [
-          "Planetfall",
-          "Transport"
-        ],
-        "notes": "May transport one formation of only the following units: Tacticals, Devastators, Dreadnought, Sternguard Veterans, Wolf Guard Terminators, Grey Knights Strike Squad, Grey Knights Purgation Squad. After the Drop Pod lands, its Deathwind attacks all enemy units within 15cm. Each enemy formation attacked receives a Blast Marker for coming under fire, and an extra Blast Marker for each casualty. Then any troops carried in the Drop Pod must disembark within 5cm of the Drop Pod or within 5cm of another unit from the same formation that has already landed, so long as all units are placed within 15cm of the Drop Pod. Drop pod models should be removed from the board once the formation they transport has disembarked."
       }
          ]
   }

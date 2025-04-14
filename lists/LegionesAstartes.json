@@ -15,6 +15,27 @@
         ]
       },
       {
+        "name": "Decurion Defensor",
+        "type": "CH",
+        "weapons": [
+         ],
+        "specialRules": [
+          "Leader",
+          "Vox-Caster"
+        ]
+      },
+      {
+        "name": "Red Hand Blood Bonded",
+        "type": "CH",
+        "weapons": [
+        "Power Weapon"
+         ],
+        "specialRules": [
+          "Invulnerable Save",
+          "Leader"
+        ]
+      },
+      {
         "name": "Captain",
         "type": "CH",
         "weapons": [
@@ -236,7 +257,7 @@
       },
 
       {
-        "name": "Tactical Legionaries - Melta",
+        "name": "Tactical Legionaries",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -248,6 +269,31 @@
         ]
       },
 
+      {
+        "name": "Veteran Legionaries",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 3,
+        "ff": 3,
+        "weapons": [
+          "Bolters",
+          "Melta Gun"
+        ]
+      },
+
+      {
+        "name": "Breacher Legionaries - Lascutter",
+        "type": "INF",
+        "speed": 15,
+        "armour": 3,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Volkite Chargers",
+          "Lascutter"
+        ]
+      },
       {
 
         "name": "Assault Legionaries",
@@ -267,12 +313,46 @@
         ]
       },
       {
-        "name": "Support Legionaries - Plasma",
+
+        "name": "Despoiler Legionaries",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 3,
+        "ff": 6,
+        "weapons": [
+          "Bolt Pistols",
+          "Chainswords"
+        ],
+        "specialRules": [
+          "Blitz",
+          "Evasive",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Red Hand Assault Squad - World Eaters",
         "type": "INF",
         "speed": 30,
         "armour": 4,
+        "cc": 3,
+        "ff": 6,
+        "weapons": [
+          "Bolt Pistols",
+          "Chainaxes"
+        ],
+        "specialRules": [
+        "Jump Packs",
+        "Vanguard"
+        ]
+      },
+      {
+        "name": "Support Legionaries - Plasma",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
         "cc": 4,
-        "ff": 5,
+        "ff": 4,
         "weapons": [
           "Plasma Guns|2"
         ],
@@ -282,7 +362,7 @@
        {
         "name": "Support Legionaries - Flamer",
         "type": "INF",
-        "speed": 30,
+        "speed": 15,
         "armour": 4,
         "cc": 4,
         "ff": 3,
@@ -295,7 +375,7 @@
         {
         "name": "Support Legionaries - Rotor Cannon",
         "type": "INF",
-        "speed": 30,
+        "speed": 15,
         "armour": 4,
         "cc": 4,
         "ff": 2,
@@ -308,7 +388,7 @@
         {
         "name": "Support Legionaries - Volkite Calvier",
         "type": "INF",
-        "speed": 30,
+        "speed": 15,
         "armour": 4,
         "cc": 4,
         "ff": 5,
@@ -316,6 +396,20 @@
           "Volkite Calvier|2"
         ],
         "specialRules": [
+        ]
+      },
+      {
+        "name": "Seeker Legionaries",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 3,
+        "ff": 5,
+        "weapons": [
+          "Nemesis Bolters"
+        ],
+        "specialRules": [
+        "Skirmishers"
         ]
       },
       {
@@ -327,6 +421,40 @@
         "ff": 6,
         "weapons": [
           "Plasma Guns"
+        ],
+        "specialRules": [
+          "Mounted",
+          "Vanguard",
+          "Walker",
+          "Bulky"
+        ]
+      },
+            {
+        "name": "Legion Outriders - Meltagun",
+        "type": "INF",
+        "speed": 35,
+        "armour": 4,
+        "cc": 3,
+        "ff": 6,
+        "weapons": [
+          "Meltaguns"
+        ],
+        "specialRules": [
+          "Mounted",
+          "Vanguard",
+          "Walker",
+          "Bulky"
+        ]
+      },
+       {
+        "name": "Legion Outriders - Flamer",
+        "type": "INF",
+        "speed": 35,
+        "armour": 4,
+        "cc": 3,
+        "ff": 6,
+        "weapons": [
+          "Flamers"
         ],
         "specialRules": [
           "Mounted",
@@ -425,16 +553,49 @@
       },
 
      {
-        "name": "Destroyer Legionaries - Rad Missile Launcher",
+        "name": "Destroyer Assault Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
-        "cc": 6,
-        "ff": 2,
+        "cc": 4,
+        "ff": 4,
         "weapons": [
-          "Heavy Flamer|3"
+          "Volkite Serpenta",
+          "Destroyer Missile Launcher"
+        ],
+        "specialRules": [
+        "Jump Packs"
         ]
       },
+           {
+        "name": "Mortalis Destroyer Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "ff": 4,
+        "weapons": [
+          "Bolt Pistols|2",
+          "Disintegrator"
+        ],
+        "specialRules": [
+        ]
+      },
+           {
+        "name": "Nemesis Destroyer Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "ff": 4,
+        "weapons": [
+          "Mortifier Bolters",
+          "Destroyer Missile Launcher"
+        ],
+        "specialRules": [
+        ]
+      },
+
 
       {
         "name": "Legion Rapier - Laser Destroyer",
@@ -473,8 +634,50 @@
         "ff": 2,
         "weapons": [
           "Combi-Bolters",
-          "Melta Gun",
+          "Combi-Melta|2",
           "Power Weapons"
+        ],
+        "specialRules": [
+          "Invulnerable Save",
+          "Reinforced Armour",
+          "Teleport",
+          "Thick Rear Armour",
+          "Bulky",
+          "Vanguard"
+        ]
+      },
+            {
+        "name": "Fulmentarus Terminators",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "ff": 3,
+        "weapons": [
+          "Combi-Bolters",
+          "Cyclone Missile Launcher|2",
+          "Power Weapons"
+        ],
+        "specialRules": [
+          "Invulnerable Save",
+          "Reinforced Armour",
+          "Teleport",
+          "Thick Rear Armour",
+          "Bulky",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Atramentar Terminators",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 2,
+        "ff": 2,
+        "weapons": [
+          "Volkite Chargers",
+          "Reaper Autocannon",
+          "Chainglaives"
         ],
         "specialRules": [
           "Invulnerable Save",
@@ -713,7 +916,83 @@
         ]
       },
       {
-        "name": "Vindicator",
+        "name": "Damocles Command Rhino",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Bolters"
+        ],
+        "specialRules": [
+          "Leader",
+          "Commander",
+          "Vox-Caster",
+          "Teleport Homer"
+        ]
+      },
+      {
+        "name": "Scorpius",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+         "Bolters",
+         "Scorpius Missile Launcher"
+        ],
+        "specialRules": [
+        ]
+      },
+       {
+        "name": "Arquitor - Bombard",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+        "Morbus Bombard",
+        "Heavy Bolter|2"
+        ],
+        "specialRules": [
+        "Reinforced Armour"
+        ]
+      },
+             {
+        "name": "Arquitor - Graviton",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+         "Graviton-Charge Cannon",
+         "Volkite Culvertin|2"
+        ],
+        "specialRules": [
+        "Reinforced Armour"
+        ]
+      },
+             {
+        "name": "Arquitor - Spicula",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+         "Spicula Rocket System",
+         "Autocannon|2"
+        ],
+        "specialRules": [
+        "Reinforced Armour"
+        ]
+      },
+      {
+        "name": "Vindicator - Demolisher",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -727,12 +1006,12 @@
         ]
       },
       {
-        "name": "Deimos Laser Vindicator",
+        "name": "Vindicator - Laser Destroyer",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 4,
         "cc": 6,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
           "Magna Laser Destroyer"
         ]
@@ -768,7 +1047,7 @@
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Heavy Transport (2)",
+          "Transport (1)",
           "Leader",
           "Vox-Caster",
           "Commander"
@@ -845,8 +1124,7 @@
         "ff": 3,
         "weapons": [
          "Sabre Autocannon",
-         "Heavy Bolter",
-         "Sabre Missiles"
+         "Heavy Bolter"
         ],
         "specialRules": [
         "Blitz",
@@ -863,8 +1141,24 @@
         "ff": 5,
         "weapons": [
          "Neutron Blaster",
-         "Multi-Melta",
-         "Sabre Missiles"
+         "Multi-Melta"
+        ],
+        "specialRules": [
+        "Blitz",
+        "Evasive",
+        "Vanguard"
+        ]
+      },
+       {
+        "name": "Sabre - Volkite",
+        "type": "LV",
+        "speed": 25,
+        "armour": 3,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+         "Volkite Saker",
+         "Volkite Culvertin"
         ],
         "specialRules": [
         "Blitz",
@@ -888,7 +1182,7 @@
           "Reinforced Armour",
           "Thick Rear Armour",
           "Heavy Transport (4)",
-          "Walker"
+          "Ion Shield (6+)"
         ],
         "crit": "The Spartan is destroyed."
       },
@@ -908,9 +1202,47 @@
           "Reinforced Armour",
           "Thick Rear Armour",
           "Heavy Transport (4)",
-          "Walker"
+          "Ion Shield (6+)"
         ],
         "crit": "The Spartan is destroyed."
+      },
+       {
+        "name": "Cerberus",
+        "type": "WE",
+        "speed": "20",
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Neutron Laser Battery||FxF",
+          "Lascannon|2|FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity: 2",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Ion Shield (6+)"
+        ],
+        "crit": "The Cerberus is destroyed."
+      },
+      {
+        "name": "Typhon",
+        "type": "WE",
+        "speed": "20",
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Dreadhammer Siege Cannon||FxF",
+          "Heavy Bolter|2|FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity: 2",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Ion Shield (6+)"
+        ],
+        "crit": "The Typhon is destroyed."
       },
        {
         "name": "Kratos - Battle Cannon",
@@ -926,7 +1258,8 @@
         ],
         "specialRules": [
           "Damage Capacity: 2",
-          "Thick Rear Armour"
+          "Thick Rear Armour",
+          "Ion Shield (6+)"
         ],
         "crit": "The Kratos is destroyed."
       },
@@ -944,7 +1277,8 @@
         ],
         "specialRules": [
           "Damage Capacity: 2",
-          "Thick Rear Armour"
+          "Thick Rear Armour",
+          "Ion Shield (6+)"
         ],
         "crit": "The Kratos is destroyed."
       },
@@ -962,8 +1296,7 @@
           "Thunderfire Cannon|0-2|"
         ],
         "specialRules": [
-          "Damage Capacity: 4",
-          "Fearless",
+          "Damage Capacity 4",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -979,9 +1312,9 @@
         "ff": 4,
         "weapons": [
           "Fellblade Accelerator Cannon",
-          "Quad Lascannon|2|FwA",
-          "Demolisher Cannon||FwA",
-          "Twin Heavy Bolter||FwA"
+          "Quad Lascannon|2|FxF",
+          "Demolisher Cannon||FxF",
+          "Twin Heavy Bolter||FxF"
         ],
         "specialRules": [
           "Damage Capacity: 4",
@@ -990,7 +1323,7 @@
         "crit": "The Fellblade is destroyed. All units within 5cm suffer a hit on a 5+."
       },
       {
-        "name": "Falchion Super-Heavy Tank",
+        "name": "Falchion Super-Heavy Tank - Vulcano",
         "type": "WE",
         "speed": "15",
         "armour": 4,
@@ -998,7 +1331,25 @@
         "ff": 5,
         "weapons": [
           "Twin Vulcano Cannon",
-          "Quad Lascannon|2|FxF",
+          "Laser Destroyer|2|FxF",
+          "Twin Heavy Bolter||FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity: 4",
+          "Reinforced Armour"
+        ],
+        "crit": "The Falchion is destroyed. All units within 5cm suffer a hit on a 5+."
+      },
+            {
+        "name": "Falchion Super-Heavy Tank - Neutron-Wave",
+        "type": "WE",
+        "speed": "15",
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Neutron-Wave Cannon",
+          "Laser Destroyer|2|FxF",
           "Twin Heavy Bolter||FxF"
         ],
         "specialRules": [
@@ -1024,6 +1375,32 @@
           "Reinforced Armour"
         ],
         "crit": "The Glaive is destroyed. All units within 5cm suffer a hit on a 5+."
+      },
+      {
+        "name": "Legion Mastodon",
+        "type": "WE",
+        "speed": "15",
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Siege Melta Array|FxF",
+          "Lascannon|2|FxF",
+          "Heavy Flamer||FxF",
+          "Skyreaper Battery"
+        ],
+        "specialRules": [
+          "Damage Capacity: 6",
+          "Void Shields 2",
+          "Assault Transport 8",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Walker",
+          "Vanguard",
+          "Ponderous",
+          "Steadfast"
+        ],
+        "crit": "The Mastodon is Immobilized. Further critical hits cause one additional point of damage."
       }
          ]
   }

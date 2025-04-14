@@ -33,15 +33,15 @@
         "weapons": [
           "Ardex-Defensor Turret|4",
           "Suzerain Plasma Destructor|2|FwA",
-          "Revelator Missile Launcher|1|FwA",
+          "Revelator Missile Launcher|1|FxF",
           "CARAPACE (choose one)",
           "BATTLE WEAPONS",
-          "2x Apocalypse Missile Launcher|0-1|FwA",
-          "2x Inferno Gun|0-1|FwA",
-          "2x Vulcan Mega-Bolter|0-1|FwA",
-          "2x Turbo-Laser Destructor|0-1|FwA",
-          "2x Titan Melta Cannon|0-1|FwA",
-          "2x Plasma Blastgun|0-1|FwA"
+          "2x Apocalypse Missile Launcher|0-1|FxF",
+          "2x Inferno Gun|0-1|FxF",
+          "2x Vulcan Mega-Bolter|0-1|FxF",
+          "2x Turbo-Laser Destructor|0-1|FxF",
+          "2x Titan Melta Cannon|0-1|FxF",
+          "2x Plasma Blastgun|0-1|FxF"
         ],
         "specialRules": [
           "Damage Capacity 10",
@@ -68,11 +68,11 @@
         "weapons": [
         "Ardex-Defensor Turret|2",
         "CARAPACE (choose one)",
-        "Paired Turbo-Laser Destructors||FwA",
-        "Paired Apocalypse Missile Launchers||FwA",
-        "Paired Turbo-Laser Blasters||FwA",
-        "Paired Gatling Blasters||FwA",
-        "Paired Vulcan Mega-Bolters||FwA",
+        "Paired Turbo-Laser Destructors||FxF",
+        "Paired Apocalypse Missile Launchers||FxF",
+        "Paired Turbo-Laser Blasters||FxF",
+        "Paired Gatling Blasters||FxF",
+        "Paired Vulcan Mega-Bolters||FxF",
         "ARMS (choose two)",
         "BATTLE WEAPONS",
         "Macro-Gatling Blaster|0-2|FwA",
@@ -111,14 +111,14 @@
         "weapons": [
           "CARAPACE (choose one)",
           "BATTLE WEAPONS",
-          "Turbo-Laser Destructor|0-1|FwA",
-          "Vulcan Mega-Bolter|0-1|FwA",
-          "Apocalypse Missile Launcher|0-1|FwA",
+          "Turbo-Laser Destructor|0-1|FxF",
+          "Vulcan Mega-Bolter|0-1|FxF",
+          "Apocalypse Missile Launcher|0-1|FxF",
           "SUPPORT WEAPONS",
-          "Titan Warp Missile|0-1|FwA",
-          "Volkite Eradicator|0-1|FwA",
-          "Conversion Beam Dissolutor|0-1|FwA",
-          "Graviton Eradicator|0-1|FwA",
+          "Titan Warp Missile|0-1|FxF",
+          "Volkite Eradicator|0-1|FxF",
+          "Conversion Beam Dissolutor|0-1|FxF",
+          "Graviton Eradicator|0-1|FxF",
 
           "ARMS (choose two)",
           "BATTLE WEAPONS",
@@ -154,13 +154,13 @@
         "cc": 5,
         "ff": 5,
         "weapons": [
-          "Ardex Mega-Bolter|2|FwA",
+          "Ardex Mega-Bolter|2|FxF",
           "CARAPACE (choose one)",
           "SUPPORT WEAPONS",
-          "Titan Neutron Laser|0-1|FwA",
-          "Conversion Beam Dissipator|0-1|FwA",
+          "Titan Neutron Laser|0-1|FxF",
+          "Conversion Beam Dissipator|0-1|FxF",
           "HEAVY SUPPORT WEAPONS",
-          "Vulcano Cannon|0-1|FwA"
+          "Vulcano Cannon|0-1|FxF"
           
         ],
         "specialRules": [

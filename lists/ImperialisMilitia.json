@@ -1,22 +1,66 @@
 [
   {
-    "name": "Solar Auxilia",
+    "name": "Imperialis Militia",
     "specialRules": [
     ],
     "unit": [
 
         {
-        "name": "Auxilia Adjutant",
+        "name": "Expeditionary Navigator - Loyalist",
         "type": "CH",
         "weapons": [
         ],
         "specialRules": [
-          "Leader",
-          "Vox-Caster"
+          "Psyker"
         ]
       },
-            {
-        "name": "Legate Marshal Command Squad",
+              {
+        "name": "Rouge Psyker - Traitor",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+          "Psyker"
+        ]
+      },
+                  {
+        "name": "Force Commander Cadre - Legacy of the Great Crusade (Balanced, Loyalist allies only)",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
+        "ff": 5,
+        "weapons": [
+          "Plasma Guns",
+          "Power Weapon"
+        ],
+        "specialRules": [
+          "Supreme Commander",
+          "Vox-Caster",
+          "Invulnerable Save",
+          "Inspiring"
+        ]
+      },
+     {
+        "name": "Force Commander Cadre - Forge World Remnant (access to mechanicus)",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
+        "ff": 5,
+        "weapons": [
+          "Plasma Guns",
+          "Power Weapon"
+        ],
+        "specialRules": [
+          "Supreme Commander",
+          "Vox-Caster",
+          "Invulnerable Save",
+          "Inspiring"
+        ]
+      },
+           {
+        "name": "Force Commander Cadre - Debased Rabble (Traitor, lots of levy, abhuman, traitor allies only)",
         "type": "INF",
         "speed": 15,
         "armour": 5,
@@ -34,7 +78,7 @@
         ]
       },
       {
-        "name": "Auxilia Command Squad",
+        "name": "Force Commander Cadre - Survivors of the Dark Age (lots of high tech)",
         "type": "INF",
         "speed": 15,
         "armour": 5,
@@ -45,155 +89,258 @@
           "Power Weapon"
         ],
         "specialRules": [
-          "Commander",
-          "Leader",
+          "Supreme Commander",
+          "Vox-Caster",
+          "Invulnerable Save",
+          "Inspiring"
+        ]
+      },
+            {
+        "name": "Imperial Militia Command Cadre",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
+        "ff": 5,
+        "weapons": [
+          "Plasma Guns",
+          "Power Weapon"
+        ],
+        "specialRules": [
+          "Supreme Commander",
           "Vox-Caster",
           "Invulnerable Save",
           "Inspiring"
         ]
       },
       {
-        "name": "Auxilia Penal Squad",
+        "name": "Militia Infantry Squad",
         "type": "INF",
         "speed": 15,
-        "armour": 6,
-        "cc": 4,
-        "ff": 6,
-        "weapons": [
-          "Heavy Stubber"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Auxilia Lasrifle Squad",
-        "type": "INF",
-        "speed": 15,
-        "armour": 6,
-        "cc": 5,
+        "cc": 6,
         "ff": 5,
         "weapons": [
-          "Lasrifles"
+          "Autorifles"
         ],
         "specialRules": [
         ]
       },
       {
-        "name": "Auxilia Flamer Squad",
+        "name": "Militia Levy Squad",
         "type": "INF",
         "speed": 15,
-        "armour": 6,
-        "cc": 5,
+        "cc": 6,
         "ff": 5,
         "weapons": [
-          "Flamers"
+          "Stubcarbines"
         ],
         "specialRules": [
         ]
       },
       {
-        "name": "Auxilia Volkite Squad",
+        "name": "Militia Grenadier Squad",
         "type": "INF",
         "speed": 15,
-        "armour": 6,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Volkite Chargers"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Charonite Ogryns",
-        "type": "LV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 4,
-        "weapons": [
-          "Charonite Claws"
-        ],
-        "specialRules": [
-        "Walker",
-        "Blitz"
-        ]
-      },
-      {
-        "name": "Veletarii",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 5,
-        "ff": 6,
-        "weapons": [
-          "Laspistols",
-          "Power Axes"
-        ],
-        "specialRules": [
-          "Infiltrators",
-          "Skirmishers",
-          "Evasive"
-        ]
-      },
-      {
-        "name": "Auxilia Rapier - Quad Launcher",
-        "type": "LV",
-        "speed": 10,
-        "armour": 6,
-        "ff": 6,
-        "weapons": [
-          "Quad Launcher"
-        ],
-        "specialRules": [
-        "Walker"
-        ]
-      },
-      {
-        "name": "Auxilia Rapier - Laser Destroyer",
-        "type": "LV",
-        "speed": 10,
-        "armour": 6,
-        "ff": 6,
-        "weapons": [
-          "Laser Destroyer"
-        ],
-        "specialRules": [
-        "Walker"
-        ]
-      },
-      {
-        "name": "Auxilia Rapier - Mole Mortar",
-        "type": "LV",
-        "speed": 10,
-        "armour": 6,
-        "ff": 6,
-        "weapons": [
-          "Mole Mortar"
-        ],
-        "specialRules": [
-        "Walker"
-        ]
-      },
-      {
-        "name": "Catachan Sentinel",
-        "type": "LV",
-        "speed": 20,
         "armour": 6,
         "cc": 6,
         "ff": 5,
         "weapons": [
+          "Bolters"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Fire Support Squad",
+        "type": "INF",
+        "speed": 15,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Autocannon|2"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Reconnaissance Squad",
+        "type": "INF",
+        "speed": 15,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Sniper Rifles"
+        ],
+        "specialRules": [
+        "Skirmishers"
+        ]
+      },
+      {
+        "name": "Militia Cavalry Squad",
+        "type": "INF",
+        "speed": 20,
+        "armour": 6,
+        "cc": 4,
+        "ff": 6,
+        "weapons": [
+          "Laspistols",
+          "Hunting Lances"
+        ],
+        "specialRules": [
+        "Skirmishers",
+        "Infiltrators"
+        ]
+      },
+      {
+        "name": "Ogryn Brute Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 3,
+        "ff": 5,
+        "weapons": [
+          "Ripper Guns"
+        ],
+        "specialRules": [
+        "Walker",
+        "Bulky"
+        ]
+      },
+      
+      {
+        "name": "Rhino - Legacy of the Great Crusade",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Bolters"
+        ],
+        "specialRules": [
+          "Transport (2)"
+        ]
+      },
+      {
+        "name": "Land Raider Proteus",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Bolters"
+        ],
+        "specialRules": [
+          "Transport (2)"
+        ]
+      },
+      {
+        "name": "Termite Assault Drill - ",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Bolters"
+        ],
+        "specialRules": [
+          "Transport (2)"
+        ]
+      },
+            {
+        "name": "Triaros Armoured Conveyor - Forge World Remnant",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Bolters"
+        ],
+        "specialRules": [
+          "Transport (2)"
+        ]
+      },
+      {
+        "name": "Thunderblast Field Gun",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 6,
+        "ff": 6,
+        "weapons": [
+          "Thunderblast Cannon"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Thunderblast Field Gun",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 6,
+        "ff": 6,
+        "weapons": [
+          "Thunderblast Cannon"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Heavy Lascannon Field Gun",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 6,
+        "ff": 6,
+        "weapons": [
+          "Heavy Lascannon"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Kalliope Mortar Field Gun",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 6,
+        "ff": 6,
+        "weapons": [
+          "Heavy Lascannon"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Earthshaker Gun",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 6,
+        "ff": 6,
+        "weapons": [
+          "Earthshaker Cannon"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Cargo-8 Hauler",
+        "type": "LV",
+        "speed": 20,
+        "armour": 4,
+        "weapons": [
           "Heavy Flamer"
         ],
         "specialRules": [
-          "Scout",
+          "Transport (4)",
           "Walker"
         ]
       },
       {
-        "name": "Hermes Light Sentinel",
+        "name": "Sentinel",
         "type": "LV",
-        "speed": 25,
-        "armour": 5,
+        "speed": 20,
+        "armour": 6,
         "cc": 6,
         "ff": 5,
         "weapons": [
@@ -204,78 +351,7 @@
           "Walker"
         ]
       },
-      {
-        "name": "Hermes Veletaris Sentinel",
-        "type": "LV",
-        "speed": 20,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Volkite Caliver"
-        ],
-        "specialRules": [
-          "Scout",
-          "Walker"
-        ]
-      },
-      {
-        "name": "Aethon Heavy Sentinel",
-        "type": "LV",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Multi-Laser",
-          "Missile Launcher"
-        ],
-        "specialRules": [
-          "Skirmisher"
-        ]
-      },
 
-      {
-        "name": "Basilisk",
-        "type": "AV",
-        "speed": 20,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Earthshaker Cannon"
-        ],
-        "specialRules": [
-        "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Bombard",
-        "type": "AV",
-        "speed": 20,
-        "armour": 6,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Siege Mortar"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Medusa",
-        "type": "AV",
-        "speed": "20",
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Medusa Siege Gun"
-        ],
-        "specialRules": [
-         "Reinforced Armour"
-        ]
-      },
       {
         "name": "Termite Assault Drill",
         "type": "AV",
@@ -304,20 +380,21 @@
          "Reinforced Armour",
          "Thick Rear Armour",
          "Assault Transport 8"
-        ]
+        ] 
       },
       {
-        "name": "Aurox",
+        "name": "Krios - Forge World Remnants",
         "type": "AV",
-        "speed": 25,
+        "speed": 20,
         "armour": 4,
         "cc": 6,
-        "ff": 6,
+        "ff": 4,
         "weapons": [
-          "Heavy Stubber"
+          "Battle Cannon",
+          "Heavy Bolter"
         ],
         "specialRules": [
-         "Transport 2"
+          "Reinforced Armour"
         ]
       },
       {
@@ -480,10 +557,10 @@
         ]
       },
        {
-        "name": "Malcador Infernus",
+        "name": "Gorgon Heavy Transporter",
         "type": "WE",
-        "speed": 15,
-        "armour": 5,
+        "speed": 20,
+        "armour": 4,
         "cc": 6,
         "ff": 4,
         "weapons": [
@@ -491,61 +568,12 @@
           "Autocannon|2|FxF"
         ],
         "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour"
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Walker"
         ]
       },
        {
-        "name": "Malcador Valdor",
-        "type": "WE",
-        "speed": 15,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Neutron Beam Laser||FxF",
-          "Lascannon|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Dracosan - Lascannon",
-        "type": "WE",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Lascannon||FwA"
-        ],
-        "specialRules": [
-        "Damage Capacity 2",
-          "Reinforced Armour",
-          "Walker",
-          "Heavy Transport 4"
-        ]
-      },
-       {
-        "name": "Dracosan - Demolisher",
-        "type": "WE",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Demolisher Cannon||FwA"
-        ],
-        "specialRules": [
-        "Damage Capacity 2",
-          "Reinforced Armour",
-          "Walker",
-          "Heavy Transport 2"
-        ]
-      },
-      {
         "name": "Baneblade Super-Heavy Tank",
         "type": "WE",
         "speed": 15,
@@ -579,79 +607,6 @@
           "Lascannon|2|FxF",
           "Heavy Bolter",
           "Heavy Flamer|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Shadowsword Super-Heavy Tank",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Vulcano Cannon||FxF",
-          "Heavy Bolter|3|FxF",
-          "Lascannon|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Stormblade Super-Heavy Tank",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Heavy Plasma Blastgun||FxF",
-          "Heavy Bolter|3|FxF",
-          "Lascannon|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Stormsword Super-Heavy Tank",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Siege Cannon||FxF",
-          "Heavy Bolter|3|FxF",
-          "Lascannon|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Stormhammer Super-Heavy Tank",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Stormhammer Cannon",
-          "Twin Battle Cannon||FxF",
-          "Multi-Laser|3|FxF",
-          "Lascannon|3|FxF"
         ],
         "specialRules": [
           "Damage Capacity 3",
