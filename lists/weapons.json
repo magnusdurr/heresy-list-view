@@ -1218,6 +1218,15 @@
         }
       ]
     },
+    {
+      "name": "Cyclone Missile Launchers",
+      "modes": [
+        {
+          "firepower": "3x AP6+/AT6+",
+          "range": 45
+        }
+      ]
+    },
         {
       "name": "Aiolos Missile Launcher",
       "modes": [

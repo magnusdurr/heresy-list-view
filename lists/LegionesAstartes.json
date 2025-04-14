@@ -638,7 +638,6 @@
           "Power Weapons"
         ],
         "specialRules": [
-          "Invulnerable Save",
           "Reinforced Armour",
           "Teleport",
           "Thick Rear Armour",
@@ -655,11 +654,10 @@
         "ff": 3,
         "weapons": [
           "Combi-Bolters",
-          "Cyclone Missile Launcher|2",
+          "Cyclone Missile Launchers",
           "Power Weapons"
         ],
         "specialRules": [
-          "Invulnerable Save",
           "Reinforced Armour",
           "Teleport",
           "Thick Rear Armour",
@@ -680,7 +678,6 @@
           "Chainglaives"
         ],
         "specialRules": [
-          "Invulnerable Save",
           "Reinforced Armour",
           "Teleport",
           "Thick Rear Armour",
