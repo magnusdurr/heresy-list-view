@@ -23,8 +23,8 @@
           "Leader"
         ]
       },
-       {
-        "name": "Warmaster Heavy Battle Titan",
+            {
+        "name": "Warmaster Iconoclast Heavy Battle Titan",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -32,16 +32,20 @@
         "ff": 5,
         "weapons": [
           "Ardex-Defensor Turret|4",
-          "Suzerain Plasma Destructor|2|FwA",
-          "Revelator Missile Launcher|1|FxF",
+          "Anvillus Defence Batteries|2",
+          "Desolator Chainsword",
+          "Cruciator Gatling Array|FxF",
+          "ARMS (choose one)",
+          "Kirus Siege Drill|0-1",
+          "Kirus Grav Imploder|0-1|FwA",
           "CARAPACE (choose one)",
           "BATTLE WEAPONS",
-          "2x Apocalypse Missile Launcher|0-1|FxF",
-          "2x Inferno Gun|0-1|FxF",
-          "2x Vulcan Mega-Bolter|0-1|FxF",
-          "2x Turbo-Laser Destructor|0-1|FxF",
-          "2x Titan Melta Cannon|0-1|FxF",
-          "2x Plasma Blastgun|0-1|FxF"
+          "2x Apocalypse Missile Launcher|0-1|FwA",
+          "2x Inferno Gun|0-1|FwA",
+          "2x Vulcan Mega-Bolter|0-1|FwA",
+          "2x Turbo-Laser Destructor|0-1|FwA",
+          "2x Titan Melta Cannon|0-1|FwA",
+          "2x Plasma Blastgun|0-1|FwA"
         ],
         "specialRules": [
           "Damage Capacity 10",
@@ -54,6 +58,89 @@
           "Ponderous",
           "Steadfast",
           "Vanguard"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
+        "crit": "The unit takes a point of damage."
+      },
+       {
+        "name": "Warmaster Heavy Battle Titan",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Ardex-Defensor Turret|4",
+          "Anvillus Defence Batteries|2",
+          "Suzerain Plasma Destructor|2|FwA",
+          "Revelator Missile Launcher|1|FxF",
+          "CARAPACE (choose one)",
+          "BATTLE WEAPONS",
+          "2x Apocalypse Missile Launcher|0-1|FwA",
+          "2x Inferno Gun|0-1|FwA",
+          "2x Vulcan Mega-Bolter|0-1|FwA",
+          "2x Turbo-Laser Destructor|0-1|FwA",
+          "2x Titan Melta Cannon|0-1|FwA",
+          "2x Plasma Blastgun|0-1|FwA"
+        ],
+        "specialRules": [
+          "Damage Capacity 10",
+          "Void Shields 8",
+          "Ripple Fire",
+          "Dauntless",
+          "Reinforced Armour",
+          "Walker",
+          "Towering",
+          "Ponderous",
+          "Steadfast",
+          "Vanguard"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
+        "crit": "The unit takes a point of damage."
+      },
+           {
+        "name": "Warlord-Sinister Battle Titan",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "ff": 4,
+        "weapons": [
+        "Ardex-Defensor Turret|2",
+        "Sinistramanus Tenebrae||FwA",
+        "Death Pulse||FwA",
+        "Antipathic Tempest||FwA",
+        "CARAPACE (choose one)",
+        "Paired Turbo-Laser Destructors||FxF",
+        "Paired Apocalypse Missile Launchers||FxF",
+        "Paired Turbo-Laser Blasters||FxF",
+        "Paired Gatling Blasters||FxF",
+        "Paired Vulcan Mega-Bolters||FxF",
+        "ARMS (choose one)",
+        "BATTLE WEAPONS",
+        "Macro-Gatling Blaster|0-1|FwA",
+        "Mori Quake Cannon|0-1|FwA",
+        "Arioch Power Claw|0-1|",
+        "SUPPORT WEAPONS",
+        "Volkite Destructor|0-1|FwA",
+        "Conversion Beam Extripator|0-1|FwA",
+        "Graviton Ruinator|0-1|FwA",
+        "HEAVY SUPPORT WEAPONS",
+        "Sunfury Plasma Annihilator|0-1|FwA",
+        "Belicosa Vulcano Cannon|0-1|FwA"
+        ],
+        "specialRules": [
+          "Damage Capacity 8",
+          "Void Shields 6",
+          "Split Fire",
+          "Dauntless",
+          "Reinforced Armour",
+          "Walker",
+          "Towering",
+          "Ponderous",
+          "Steadfast",
+          "Vanguard",
+          "Psyker - Divination"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
         "crit": "The unit takes a point of damage."
@@ -77,7 +164,7 @@
         "BATTLE WEAPONS",
         "Macro-Gatling Blaster|0-2|FwA",
         "Mori Quake Cannon|0-2|FwA",
-        "Titan Power Claw|0-1|",
+        "Arioch Power Claw|0-1|",
         "SUPPORT WEAPONS",
         "Volkite Destructor|0-1|FwA",
         "Conversion Beam Extripator|0-1|FwA",
@@ -98,8 +185,45 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "Must be armed with either Paired Turbo-Laser Destructors or Paired Apocalypse Missile Launchers. May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
         "crit": "The unit takes a point of damage."
+      },
+      {
+        "name": "Warbringer Nemesis Titan",
+        "type": "WE",
+        "speed": 15,
+        "armour": 5,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Ardex-Defensor Turret",
+          "Anvillus Defence Batteries",
+          "CARAPACE (choose one)",
+          "BATTLE WEAPONS",
+          "Mori Quake Cannon|0-1|FxF",
+          "SUPPORT WEAPONS",
+          "Belicosa Vulcano Cannon|0-1|FxF",
+          "ARMS (choose two)",
+          "BATTLE WEAPONS",
+          "Turbo-Laser Blaster|0-2|FwA",
+          "Gatling Blaster|0-2|FwA",
+          "SUPPORT WEAPONS",
+          "Titan Melta Cannon|0-1|FwA",
+          "HEAVY SUPPORT WEAPONS",
+          "Vulcano Cannon|0-1|FwA"
+        ],
+        "specialRules": [
+          "Damage Capacity 6",
+          "Void Shields 6",
+          "Dauntless",
+          "Reinforced Armour",
+          "Walker",
+          "Towering",
+          "Ponderous",
+          "Steadfast"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
+       "crit": "The unit takes a point of damage."
       },
       {
         "name": "Reaver Battle Titan",
@@ -146,6 +270,7 @@
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
        "crit": "The unit takes a point of damage."
       },
+ 
       {
         "name": "Dire Wolf Heavy Scout Titan",
         "type": "WE",

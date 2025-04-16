@@ -15,7 +15,7 @@
     {
       "title": "Void Shields",
       "description": [
-        "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by Void Shields, but allocate one Blast Marker for each that goes down. If the formation in broken, its Void Shields are considered to have the 'Expendable' special rule.",
+        "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by Void Shields, but allocate one Blast Marker for each that goes down. If the formation in broken, its Void Shields are considered to have the 'Expendable' special rule. Downed Void Shields does not count as kills during assaults (but will still cause BMs on the winning formation).",
         "Once all of the shields have been knocked down, the War Engine may be damaged normally and you may make saving throws against any hits that are scored. Hits from close combat ignore void shields but units using their firefight values must first knock down any shields before they can damage the Titan.",
         "Void shields that have been knocked down can be repaired. Each War Engine can repair one downed Void Shield in the End Phase of each turn.",
         "In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it can use the dice roll both to repair Void Shields and remove Blast Markers. However, only half the points generated (fractions rounded up) may be spent on restoring Void Shields (e.g. if you rolled a 3 you could remove three Blast Markers, or repair two Void Shields and remove one Blast Marker)."
@@ -153,7 +153,7 @@
     {
       "title": "Evasive",
       "description": [
-        "Units with the 'Evasive' special rule gains an additional 5 cm in speed when consolidating after winning an assault. In addition, a unit with this special rule may consolidate after supporting a winning assault."
+        "Units with the 'Evasive' special rule may consolidate up to 15 cm after winning an assault, or supporting a winning assault."
       ]
     },
     {
@@ -240,7 +240,7 @@
     {
       "title": "Shield Piercer",
       "description": [
-        "Weapons with the <i>Shield Piercer</i> special rule ignores Deflector Shields, Ion Shields, Powerfields, Shadowfields and Void Shields (Shadowfields still provide cover from shooting)."
+        "Weapons with the <i>Shield Piercer</i> special rule ignores Ion Shields, Powerfields, Construct Shields and Void Shields."
       ]
     },
     {
@@ -261,6 +261,12 @@
         "Weapons with the 'Titan Hunter' special rule gains an additional +1 to hit against War Engines, but suffers an additional -1 to hit against INF."
       ]
     },
+    {
+      "title": "Siege Weapon",
+      "description": [
+        "Weapons with the 'Siege Weapon' special rule may use AP instead of AT when shooting against Strongholds and Immobile War Engines. In addition, it gains the 'Crippling' special rule against such targets."
+      ]
+    },
          {
       "title": "Crippling",
       "description": [
@@ -273,10 +279,17 @@
         "Weapons with the 'Rad' special rule causes BMs for each hit inflicted, just like weapons with the 'Disrupt' special rule. Unlike 'Disrupt', the 'Rad' special rule does not force their targets to roll armour saves, and they are not removed as casualties for failing to save."
       ]
     },
+            {
+      "title": "Shock Pulse",
+      "description": [
+        "Formations that suffers at least one point of damage from a weapon with the 'Shock Pulse' special rule suffers D6 BMs for coming under fire, instead of just one."
+      ]
+    },
+
          {
       "title": "Graviton",
       "description": [
-        "Weapons with the 'Graviton' special rule gains the Titan Killer(x) special rule gainst WE and/or any units with the Reinforced Armour special rules. Units without either of these special rules may re-roll failed armour saves against hits caused by weapons with the 'Graviton' special rule. Weapons with this special rule may not be fired as part of an Overwatch action."
+        "Weapons with the 'Graviton' special rule gains an additional +1 to hit and the Titan Killer(D2) special rule against WE and/or any units with the Reinforced Armour special rules."
       ]
     },
              {
@@ -295,6 +308,36 @@
       "title": "Force",
       "description": [
         "A weapon with the 'Force' special rule counts as having the 'Sniper' special rule against units with the 'Daemonic' or 'Psyker' special rules. Weapons with 'Force' may only be used if the unit is unbroken."
+      ]
+    },
+    {
+      "title": "Lightning Charge",
+      "description": [
+        "Weapon or Unit gains <i>First Strike</i> during engages initiated by the formation."
+      ]
+    },
+    {
+      "title": "Unstable",
+      "description": [
+        "If a natural 1 is rolled when rolling to hit, roll another dice. If the result is yet another natural 1, the wielder takes one point of damage."
+      ]
+    },
+    {
+      "title": "Feedback",
+      "description": [
+        "If a unit firing a weapon with the Feedback special rule fails to cause damage when hitting an enemy unit, roll a D6 for each successful armour save the enemy unit made. The firing unit takes a blast marker for each 1 rolled."
+      ]
+    },
+    {
+      "title": "Singularity",
+      "description": [
+        "When rolling to hit with a Singularity weapon, any unmodified to hit roll of six (6) generates an additional attack die. Successive rolls of a natural six can generate additional dice."
+      ]
+    },
+    {
+      "title": "Psi",
+      "description": [
+        "Each model may only fire with a single weapon with the Psi trait per round. Psi weapons cannot be fired as part of an Overwatch."
       ]
     },
     {
@@ -375,24 +418,7 @@
         "If there is at least one unit with the 'Psyker - Winds of Fenris' special rule in a formation, and it is unbroken, one additional unit in the formation counts as being in Cover when targeted by shooting."
       ]
     },
-    {
-      "title": "Lightning Charge",
-      "description": [
-        "Weapon or Unit gains <i>First Strike</i> during engages initiated by the formation."
-      ]
-    },
-    {
-      "title": "Unstable",
-      "description": [
-        "If a natural 1 is rolled when rolling to hit, roll another dice. If the result is yet another natural 1, the wielder takes one point of damage."
-      ]
-    },
-    {
-      "title": "Grav-Chutes",
-      "description": [
-        "Units with the <i>Grav-Chutes</i> special rule may disembark within 10cm of a <i>Skimmer</i> transport vehicles instead of the normal 5cm."
-      ]
-    },
+
     {
       "title": "Fortified Positions",
       "description": [
@@ -633,6 +659,12 @@
       ]
     },
     {
+      "title": "Construct Shields",
+      "description": [
+        "Construct Shields work in exactly the same manner as Void Shields (see Void Shields), with the sole exception that they may not be repaired once they have been knocked down by a hit, and will instead remain down for the remainder of the battle."
+      ]
+    },
+    {
       "title": "Daemon Engine (x)",
       "description": [
         "Formations where at least one unit has the Daemon Engine (x) special rule gain the bonus associated with that faction:",
@@ -828,6 +860,7 @@
         "Some Ork war engines are protected by banks of power fields. The number each war engine has is noted on its datasheet. Power fields work in exactly the same manner as Void Shields (see Void Shields), with the sole exception that they may not be repaired once they have been knocked down by a hit, and will instead remain down for the remainder of the battle. In the case of a variable amount of power fields, roll for them straight after the formation is deployed on the table or offboard."
       ]
     },
+
     {
       "title": "Super-Expendable",
       "description": [
@@ -998,7 +1031,7 @@
         {
       "title": "Orbital Barrage",
       "description": [
-        "An Orbital Barrage has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (MW) attack."
+        "An Orbital Barrage has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (MW, Siege Weapon) attack."
       ]
     },
     {
@@ -1022,7 +1055,7 @@
      {
       "title": "Artillery Barrage Strike",
       "description": [
-        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (Disrupt) attack."
+        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (Disrupt, Siege Weapon) attack."
       ]
     },
     {

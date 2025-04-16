@@ -138,6 +138,18 @@
         ]
       },
       {
+        "name": "Militia Mutant Squad",
+        "type": "INF",
+        "armour": 6,
+        "speed": 15,
+        "cc": 4,
+        "weapons": [
+          "Claws"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
         "name": "Militia Grenadier Squad",
         "type": "INF",
         "speed": 15,
@@ -176,7 +188,7 @@
         ]
       },
       {
-        "name": "Militia Cavalry Squad",
+        "name": "Militia Cavalry",
         "type": "INF",
         "speed": 20,
         "armour": 6,
@@ -192,7 +204,7 @@
         ]
       },
       {
-        "name": "Ogryn Brute Squad",
+        "name": "Ogryn Brutes",
         "type": "INF",
         "speed": 15,
         "armour": 5,
@@ -202,7 +214,6 @@
           "Ripper Guns"
         ],
         "specialRules": [
-        "Walker",
         "Bulky"
         ]
       },
@@ -276,18 +287,6 @@
         ]
       },
       {
-        "name": "Thunderblast Field Gun",
-        "type": "LV",
-        "speed": "Immobile",
-        "armour": 6,
-        "ff": 6,
-        "weapons": [
-          "Thunderblast Cannon"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
         "name": "Heavy Lascannon Field Gun",
         "type": "LV",
         "speed": "Immobile",
@@ -306,7 +305,7 @@
         "armour": 6,
         "ff": 6,
         "weapons": [
-          "Heavy Lascannon"
+          "Kalliope Mortar"
         ],
         "specialRules": [
         ]
@@ -326,14 +325,13 @@
       {
         "name": "Cargo-8 Hauler",
         "type": "LV",
-        "speed": 20,
-        "armour": 4,
+        "speed": 25,
+        "armour": 5,
         "weapons": [
-          "Heavy Flamer"
+          "Heavy Stubber"
         ],
         "specialRules": [
-          "Transport (4)",
-          "Walker"
+          "Transport (4)"
         ]
       },
       {
@@ -365,22 +363,6 @@
         "specialRules": [
          "Transport 2"
         ]
-      },
-       {
-        "name": "Hellbore Burrowing Transport",
-        "type": "WE",
-        "speed": "Immobile",
-        "armour": 5,
-        "ff": 5,
-        "weapons": [
-          "Ardex-Defensor Turret|2"
-        ],
-        "specialRules": [
-         "Damage Capacity 3",
-         "Reinforced Armour",
-         "Thick Rear Armour",
-         "Assault Transport 8"
-        ] 
       },
       {
         "name": "Krios - Forge World Remnants",

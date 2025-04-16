@@ -625,8 +625,50 @@
         "Walker"
         ]
       },
+            {
+        "name": "Legion Rapier - Graviton Cannon",
+        "type": "LV",
+        "speed": 10,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Graviton Cannon"
+        ],
+        "specialRules": [
+        "Walker"
+        ]
+      },
       {
-        "name": "Legion Terminators - Melta",
+        "name": "Legion Rapier - Multi-Laser",
+        "type": "LV",
+        "speed": 10,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Quad Multi-Laser"
+        ],
+        "specialRules": [
+        "Walker"
+        ]
+      },
+      {
+        "name": "Legion Rapier - Heavy Bolter",
+        "type": "LV",
+        "speed": 10,
+        "armour": 5,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Quad Heavy Bolter"
+        ],
+        "specialRules": [
+        "Walker"
+        ]
+      },
+      {
+        "name": "Cataphractii Terminators",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -636,6 +678,26 @@
           "Combi-Bolters",
           "Combi-Melta|2",
           "Power Weapons"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Teleport",
+          "Thick Rear Armour",
+          "Bulky",
+          "Vanguard"
+        ]
+      },
+
+       {
+        "name": "Tartaros Terminators",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 2,
+        "ff": 4,
+        "weapons": [
+          "Combi-Bolters",
+          "Lightning Claws"
         ],
         "specialRules": [
           "Reinforced Armour",

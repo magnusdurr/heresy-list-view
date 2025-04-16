@@ -26,7 +26,7 @@
         "Tactical Legionaries",
         "Heavy Support Legionaries - Missile Launcher",
         "Nemesis Destroyer Squad",
-        "Legion Terminators",
+        "Cataphractii Terminators",
         "Fulmentarus Terminators",
         "Legion Outriders - Plasma",
         "Legion Rapier - Laser Destroyer",
@@ -65,6 +65,7 @@
       "Crippling",
       "Psyker - Thaumaturgy",
       "Skirmisher",
+      "Siege Weapon",
       "Vox-Caster",
       "Vanguard",
       "Evasive",
@@ -169,7 +170,7 @@
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Supreme Commander (0-1 in the army, 0 U/p)",
             "Add up to two Tactical Legionaries, Support Legionaries, and/or Heavy Support Legionaries: 1 U/p each",
-            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Legion Terminators (3 U/p)"
+            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminators (3 U/p)"
           ],
           "points": "1 F/p"
         },
@@ -213,7 +214,7 @@
           "name": "Predator Detachment",
           "units": "Three Predator Annihilator, and/or Predator Destructor",
           "extraUnits": [
-                "Add up to three Predators of any configuration: 1 U/p each"
+                "Add one Predator of any configuration: 1 U/p"
              ],
           "points": "1 F/p"
         },
@@ -221,7 +222,7 @@
           "name": "Sicarian Detachment",
           "units": "Two Sicarian - Autocannon, Sicarian - Plasma, Sicarian Punisher, and/or Sicarian Arcus",
           "extraUnits": [
-            "Add up to two Sicarians of any configuration: 1 U/p each"
+            "Add up to one Sicarian of any configuration: 1 U/p"
              ],
           "points": "1 F/p, -1 U/p"
         }
@@ -304,10 +305,10 @@
       "formations": [
          {
           "name": "Terminator Detachment",
-          "units": "One Lieutenant character, three Legion Terminators",
+          "units": "One Lieutenant character, three Cataphractii Terminators",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
-            "Replace three Legion Terminators with Fulmentarus Terminators: 1 U/p"
+            "Add one Cataphractii Terminator, or replace three Cataphractii Terminators with Fulmentarus Terminators: 2 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },

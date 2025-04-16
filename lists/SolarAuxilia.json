@@ -57,8 +57,8 @@
         "type": "INF",
         "speed": 15,
         "armour": 6,
-        "cc": 4,
-        "ff": 6,
+        "cc": 5,
+        "ff": 5,
         "weapons": [
           "Heavy Stubber"
         ],
@@ -69,8 +69,8 @@
         "name": "Auxilia Lasrifle Squad",
         "type": "INF",
         "speed": 15,
-        "armour": 6,
-        "cc": 5,
+        "armour": 5,
+        "cc": 6,
         "ff": 5,
         "weapons": [
           "Lasrifles"
@@ -82,8 +82,8 @@
         "name": "Auxilia Flamer Squad",
         "type": "INF",
         "speed": 15,
-        "armour": 6,
-        "cc": 5,
+        "armour": 5,
+        "cc": 6,
         "ff": 5,
         "weapons": [
           "Flamers"
@@ -95,8 +95,8 @@
         "name": "Auxilia Volkite Squad",
         "type": "INF",
         "speed": 15,
-        "armour": 6,
-        "cc": 5,
+        "armour": 5,
+        "cc": 6,
         "ff": 5,
         "weapons": [
           "Volkite Chargers"
@@ -123,7 +123,7 @@
         "type": "INF",
         "speed": 15,
         "armour": 5,
-        "cc": 5,
+        "cc": 4,
         "ff": 6,
         "weapons": [
           "Laspistols",
@@ -139,7 +139,7 @@
         "name": "Auxilia Rapier - Quad Launcher",
         "type": "LV",
         "speed": 10,
-        "armour": 6,
+        "armour": 5,
         "ff": 6,
         "weapons": [
           "Quad Launcher"
@@ -152,7 +152,7 @@
         "name": "Auxilia Rapier - Laser Destroyer",
         "type": "LV",
         "speed": 10,
-        "armour": 6,
+        "armour": 5,
         "ff": 6,
         "weapons": [
           "Laser Destroyer"
@@ -165,7 +165,7 @@
         "name": "Auxilia Rapier - Mole Mortar",
         "type": "LV",
         "speed": 10,
-        "armour": 6,
+        "armour": 5,
         "ff": 6,
         "weapons": [
           "Mole Mortar"
@@ -175,18 +175,29 @@
         ]
       },
       {
-        "name": "Catachan Sentinel",
+        "name": "Auxilia Rapier - Heavy Bolter",
         "type": "LV",
-        "speed": 20,
-        "armour": 6,
-        "cc": 6,
-        "ff": 5,
+        "speed": 10,
+        "armour": 5,
+        "ff": 3,
         "weapons": [
-          "Heavy Flamer"
+          "Quad Heavy Bolter"
         ],
         "specialRules": [
-          "Scout",
-          "Walker"
+        "Walker"
+        ]
+      },
+      {
+        "name": "Auxilia Rapier - Multi-Laser",
+        "type": "LV",
+        "speed": 10,
+        "armour": 5,
+        "ff": 5,
+        "weapons": [
+          "Quad Multi-Laser"
+        ],
+        "specialRules": [
+        "Walker"
         ]
       },
       {
@@ -250,19 +261,6 @@
         ]
       },
       {
-        "name": "Bombard",
-        "type": "AV",
-        "speed": 20,
-        "armour": 6,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Siege Mortar"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
         "name": "Medusa",
         "type": "AV",
         "speed": "20",
@@ -287,7 +285,9 @@
           "Bolters"
         ],
         "specialRules": [
-         "Transport 2"
+        "Tunneler",
+         "Transport 2",
+         "Walker"
         ]
       },
        {
@@ -425,6 +425,7 @@
           "Reinforced Armour"
         ]
       },
+
        {
         "name": "Malcador - Battle Cannon",
         "type": "WE",

@@ -83,6 +83,19 @@
         ]
       },
       {
+        "name": "Arvus Lighter",
+        "type": "AC/AV",
+        "speed": "30/Hover",
+        "armour": 4,
+        "weapons": [
+          "Vanquisher Cannon",
+          "Lascannon"
+        ],
+        "specialRules": [
+        "Transport (2)"
+        ]
+      },
+      {
         "name": "Hecate Heavy Dropship",
         "type": "WE",
         "speed": "Bomber",
