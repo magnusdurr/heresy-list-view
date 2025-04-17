@@ -1436,7 +1436,7 @@
       "modes": [
         {
           "firepower": "AT3+",
-          "range": "Unlimited",
+          "range": "∞",
           "specialRules": [
           "MW",
           "TK(D3)",
