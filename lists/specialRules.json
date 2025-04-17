@@ -81,31 +81,31 @@
     {
       "title": "Warriors of the Void",
       "description": [
-        "All Solar Auxilia Tercios receive a +1 modifier to their Action Test when carrying out an Engage or March action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+        "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Engage or March action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
      {
       "title": "Army of Mankind",
       "description": [
-        "All Solar Auxilia Tercios receive a +1 modifier to their Action Test when carrying out an Advance or Overwatch action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+        "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Advance or Overwatch action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
      {
       "title": "Veterans of the Great Crusade",
       "description": [
-        "All Solar Auxilia Tercios receive a +1 modifier to their Action Test when carrying out a Sustain Fire or Marshal action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+        "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out a Sustain Fire or Marshal action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
          {
       "title": "Superior Firepower",
       "description": [
-        "All Solar Auxilia Tercios receive a +1 modifier to their Action Test when carrying out an Advance or Double action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character"
+        "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Advance or Double action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character"
       ]
     },
          {
       "title": "Tenacious in Adversity",
       "description": [
-        "All Solar Auxilia Tercios receive a +1 modifier to their Action Test when carrying out an Engage or Double action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+        "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Engage or Double action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
         {
@@ -240,7 +240,7 @@
     {
       "title": "Shield Piercer",
       "description": [
-        "Weapons with the <i>Shield Piercer</i> special rule ignores Ion Shields, Powerfields, Construct Shields and Void Shields."
+        "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Saves, Ion Shields, Powerfields, Construct Shields and Void Shields."
       ]
     },
     {
@@ -262,9 +262,9 @@
       ]
     },
     {
-      "title": "Siege Weapon",
+      "title": "Siege",
       "description": [
-        "Weapons with the 'Siege Weapon' special rule may use AP instead of AT when shooting against Strongholds and Immobile War Engines. In addition, it gains the 'Crippling' special rule against such targets."
+        "Weapons with the 'Siege' special rule special rule gains an additional +1 to hit against Strongholds and Immobile War Engines (weapons without an AT value may use AP instead). In addition, it gains the 'Crippling' special rule against such targets."
       ]
     },
          {
@@ -279,17 +279,17 @@
         "Weapons with the 'Rad' special rule causes BMs for each hit inflicted, just like weapons with the 'Disrupt' special rule. Unlike 'Disrupt', the 'Rad' special rule does not force their targets to roll armour saves, and they are not removed as casualties for failing to save."
       ]
     },
-            {
+    {
       "title": "Shock Pulse",
       "description": [
-        "Formations that suffers at least one point of damage from a weapon with the 'Shock Pulse' special rule suffers D6 BMs for coming under fire, instead of just one."
+        "Formations that suffers at least one hit from a weapon with the 'Shock Pulse' special rule suffers D6 BMs for coming under fire, instead of just one."
       ]
     },
 
-         {
-      "title": "Graviton",
+    {
+      "title": "Graviton(x)",
       "description": [
-        "Weapons with the 'Graviton' special rule gains an additional +1 to hit and the Titan Killer(D2) special rule against WE and/or any units with the Reinforced Armour special rules."
+        "Weapons with the 'Graviton(x)' special rule gains the 'MW' and 'TK(x)' special rules against WE and/or any units with the Reinforced Armour special rules."
       ]
     },
              {
@@ -1031,7 +1031,7 @@
         {
       "title": "Orbital Barrage",
       "description": [
-        "An Orbital Barrage has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (MW, Siege Weapon) attack."
+        "An Orbital Barrage has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (MW, Siege) attack."
       ]
     },
     {
@@ -1055,7 +1055,7 @@
      {
       "title": "Artillery Barrage Strike",
       "description": [
-        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (Disrupt, Siege Weapon) attack."
+        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (Disrupt, Siege) attack."
       ]
     },
     {

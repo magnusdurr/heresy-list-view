@@ -242,7 +242,7 @@
         ]
       },
       {
-        "name": "Supreme Commander",
+        "name": "Praetor",
         "type": "CH",
         "weapons": [
           "Power Weapon"
@@ -255,7 +255,7 @@
         ]
       },
       {
-        "name": "Tactical Legionaries",
+        "name": "Legion Tactical Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -267,7 +267,7 @@
         ]
       },
       {
-        "name": "Veteran Legionaries",
+        "name": "Legion Veteran Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -279,7 +279,7 @@
         ]
       },
       {
-        "name": "Breacher Legionaries - Lascutter",
+        "name": "Legion Breacher Squad - Lascutter",
         "type": "INF",
         "speed": 15,
         "armour": 3,
@@ -291,7 +291,7 @@
         ]
       },
       {
-        "name": "Assault Legionaries",
+        "name": "Legion Assault Squad",
         "type": "INF",
         "speed": 30,
         "armour": 4,
@@ -308,7 +308,7 @@
         ]
       },
       {
-        "name": "Despoiler Legionaries",
+        "name": "Legion Despoiler Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -325,7 +325,7 @@
         ]
       },
       {
-        "name": "Red Hand Assault Squad - World Eaters",
+        "name": "Red Hand Assault Squad",
         "type": "INF",
         "speed": 30,
         "armour": 4,
@@ -341,7 +341,7 @@
         ]
       },
       {
-        "name": "Support Legionaries",
+        "name": "Legion Support Squad",
         "type": "INF",
         "variants": [
           {
@@ -363,11 +363,11 @@
             "cc": 4,
             "ff": 3,
             "weapons": [
-              "Flamers|2"
+              "Flamers |2"
             ]
           },
           {
-            "name": "Support Legionaries - Rotor Cannon",
+            "name": "Legion Support Squad - Rotor Cannon",
             "type": "INF",
             "speed": 15,
             "armour": 4,
@@ -378,7 +378,7 @@
             ]
           },
           {
-            "name": "Support Legionaries - Volkite Calvier",
+            "name": "Legion Support Squad - Volkite Calvier",
             "type": "INF",
             "speed": 15,
             "armour": 4,
@@ -391,7 +391,7 @@
         ]
       },
       {
-        "name": "Seeker Legionaries",
+        "name": "Legion Seeker Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -449,7 +449,7 @@
         ]
       },
       {
-        "name": "Heavy Support Legionaries",
+        "name": "Legion Heavy Support Squad",
         "type": "INF",
         "variants": [
           {
@@ -535,15 +535,15 @@
             "speed": 15,
             "armour": 4,
             "cc": 6,
-            "ff": 2,
+            "ff": 3,
             "weapons": [
-              "Heavy Flamer|3"
+              "Heavy Flamer |3"
             ]
           }
         ]
       },
       {
-        "name": "Destroyer Assault Squad",
+        "name": "Legion Destroyer Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -650,7 +650,7 @@
         ]
       },
       {
-        "name": "Cataphractii Terminators",
+        "name": "Cataphractii Terminator Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -670,7 +670,7 @@
         ]
       },
       {
-        "name": "Tartaros Terminators",
+        "name": "Tartaros Terminator Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -689,7 +689,7 @@
         ]
       },
       {
-        "name": "Fulmentarus Terminators",
+        "name": "Fulmentarus Terminator Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -709,7 +709,7 @@
         ]
       },
       {
-        "name": "Atramentar Terminators",
+        "name": "Atramentar Terminator Squad",
         "type": "INF",
         "speed": 15,
         "armour": 4,
@@ -728,15 +728,21 @@
           "Vanguard"
         ]
       },
-      {
-        "name": "Scimitar Jetbikes - Heavy Bolter",
+            {
+        "name": "Scimitar Jetbikes",
+        "type": "INF",
+        "variants": [
+          {
+            "name": "Bolter",
         "type": "INF",
         "speed": 35,
         "armour": 4,
         "cc": 5,
         "ff": 3,
-        "weapons": [
-          "Heavy Bolter|2"
+            "weapons": [
+        "Heavy Bolter|2"
+            ]
+          }
         ],
         "specialRules": [
           "Skimmer",
@@ -744,7 +750,7 @@
         ]
       },
       {
-        "name": "Land Speeder",
+        "name": "Proteus Land Speeder",
         "type": "LV",
         "variants": [
           {
@@ -756,7 +762,7 @@
             "ff": 5,
             "weapons": [
               "Multi-Melta",
-              "Heavy Flamer"
+              "Heavy Bolter"
             ]
           },
           {
@@ -778,54 +784,80 @@
           "Vanguard"
         ]
       },
-      {
-        "name": "Attack Speeder - Missile Launcher",
+         {
+        "name": "Javelin Attack Speeder",
         "type": "LV",
-        "speed": 30,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Lascannon",
-          "Heavy Flamer",
-          "Missile Launcher"
+        "variants": [
+          {
+            "name": "Cyclone",
+            "type": "LV",
+            "speed": 35,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Cyclone Missile Launchers",
+              "Heavy Flamer "
+            ]
+          },
+          {
+            "name": "Lascannon",
+            "type": "LV",
+            "speed": 35,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+         "Twin Lascannon",
+          "Heavy Flamer "
+            ]
+          }
         ],
         "specialRules": [
-          "Skimmer"
+          "Skirmisher",
+          "Skimmer",
+          "Vanguard"
         ]
       },
       {
-        "name": "Contemptor Dreadnought - Assault Cannon",
+        "name": "Contemptor Dreadnought",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Assault Cannon",
         "type": "AV",
         "speed": 15,
         "armour": 3,
         "cc": 3,
         "ff": 3,
-        "weapons": [
+            "weapons": [
           "Kheres Assault Cannon",
           "Power Fist"
-        ],
-        "specialRules": [
-          "Walker"
-        ]
-      },
-      {
-        "name": "Contemptor Dreadnought - Lascannon",
+            ]
+          },
+          {
+            "name": "Lascannon",
         "type": "AV",
         "speed": 15,
         "armour": 3,
         "cc": 3,
         "ff": 5,
-        "weapons": [
+            "weapons": [
           "Twin Lascannon",
           "Power Fist"
+            ]
+          }
         ],
         "specialRules": [
           "Walker"
         ]
       },
-      {
-        "name": "Leviathan Dreadnought - Storm Cannon",
+       {
+        "name": "Leviathan Dreadnought",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Storm",
         "type": "AV",
         "speed": 10,
         "armour": 4,
@@ -834,112 +866,102 @@
         "weapons": [
           "Storm Cannon",
           "Siege Claw"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Infiltrators",
-          "Walker",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Leviathan Dreadnought - Melta Lance",
+            ]
+          },
+          {
+            "name": "Melta",
         "type": "AV",
         "speed": 10,
         "armour": 4,
         "cc": 3,
         "ff": 5,
-        "weapons": [
+            "weapons": [
           "Dreadnought Melta Lance",
           "Siege Claw"
+            ]
+          },
+          {
+            "name": "Grav-Flux",
+        "type": "AV",
+        "speed": 10,
+        "armour": 4,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+          "Grav-Flux Bombard",
+          "Siege Claw"
+            ]
+          }
         ],
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
           "Infiltrators",
-          "Walker",
           "Vanguard"
         ]
       },
-      {
-        "name": "Deredeo Dreadnought - Plasma",
+       {
+        "name": "Deredeo Dreadnought",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Hellfire",
         "type": "AV",
         "speed": 10,
         "armour": 3,
         "cc": 5,
         "ff": 4,
-        "weapons": [
-          "Aiolos Missile Launcher",
-          "Plasma Cannonade"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Deredeo Dreadnought - Autocannon",
+            "weapons": [
+           "Aiolos Missile Launcher",
+          "Hellfire Plasma Cannonade"
+            ]
+          },
+          {
+            "name": "Anvilus",
         "type": "AV",
         "speed": 10,
         "armour": 3,
         "cc": 5,
         "ff": 3,
-        "weapons": [
+            "weapons": [
           "Aiolos Missile Launcher",
-          "Autocannon|2"
+          "Twin Autocannon|2"
+            ]
+          }
         ],
         "specialRules": [
         ]
       },
+ 
       {
-        "name": "Predator Annihilator",
+        "name": "Support Rhino",
         "type": "AV",
-        "speed": 30,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Lascannon",
-          "Lascannon|2"
-        ]
-      },
-      {
-        "name": "Predator Destructor",
-        "type": "AV",
-        "speed": 30,
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Predator Cannon",
-          "Heavy Bolter|2"
-        ]
-      },
-      {
-        "name": "Support Rhino - Melta",
+        "variants": [
+          {
+            "name": "Melta",
         "type": "AV",
         "speed": 30,
         "armour": 5,
         "cc": 6,
         "ff": 6,
-        "weapons": [
+            "weapons": [
           "Multi-Melta"
-        ],
-        "specialRules": [
-          "Transport (1)"
-        ]
-      },
-      {
-        "name": "Support Rhino - Missile Launcher",
+            ]
+          },
+          {
+            "name": "Havoc",
         "type": "AV",
         "speed": 30,
         "armour": 5,
         "cc": 6,
         "ff": 6,
-        "weapons": [
-          "Missile Launcher"
+            "weapons": [
+            "Missile Launcher"
+            ]
+          }
         ],
         "specialRules": [
-          "Transport (1)"
+        "Transport (1)"
         ]
       },
       {
@@ -953,6 +975,7 @@
           "Bolters"
         ],
         "specialRules": [
+        "Blitz",
           "Transport (2)"
         ]
       },
@@ -987,53 +1010,53 @@
         "specialRules": [
         ]
       },
-      {
-        "name": "Arquitor - Bombard",
+           {
+        "name": "Arquitor",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Bombard",
         "type": "AV",
         "speed": 20,
         "armour": 4,
         "cc": 6,
         "ff": 4,
-        "weapons": [
+            "weapons": [
           "Morbus Bombard",
           "Heavy Bolter|2"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Arquitor - Graviton",
+            ]
+          },
+          {
+            "name": "Graviton",
         "type": "AV",
         "speed": 20,
         "armour": 4,
         "cc": 6,
         "ff": 4,
-        "weapons": [
+            "weapons": [
           "Graviton-Charge Cannon",
           "Volkite Culvertin|2"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Arquitor - Spicula",
+            ]
+          },
+          {
+            "name": "Spicula",
         "type": "AV",
         "speed": 20,
         "armour": 4,
         "cc": 6,
         "ff": 4,
-        "weapons": [
+            "weapons": [
           "Spicula Rocket System",
           "Autocannon|2"
+            ]
+          }
         ],
         "specialRules": [
-          "Reinforced Armour"
+        "Reinforced Armour"
         ]
       },
-      {
-        "name": "Vindicator - Demolisher",
+       {
+        "name": "Vindicator Demolisher",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -1047,7 +1070,7 @@
         ]
       },
       {
-        "name": "Vindicator - Laser Destroyer",
+        "name": "Vindicator Destroyer",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -1058,7 +1081,7 @@
         ]
       },
       {
-        "name": "Land Raider Proteus",
+        "name": "Land Raider",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -1075,7 +1098,7 @@
         ]
       },
       {
-        "name": "Land Raider Proteus Explorator",
+        "name": "Land Raider Explorator",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -1099,7 +1122,7 @@
         "type": "AV",
         "variants": [
           {
-            "name": "Autocannon",
+            "name": "Accelerator",
             "type": "AV",
             "speed": 25,
             "armour": 5,
@@ -1111,7 +1134,7 @@
             ]
           },
           {
-            "name": "Plasma",
+            "name": "Omega",
             "type": "AV",
             "speed": 25,
             "armour": 5,
@@ -1217,7 +1240,7 @@
             ]
           },
           {
-            "name": "Laser Destroyer",
+            "name": "Destroyer",
             "type": "WE",
             "speed": "20",
             "armour": 4,
@@ -1276,27 +1299,25 @@
         ],
         "crit": "The Typhon is destroyed."
       },
-      {
-        "name": "Kratos - Battle Cannon",
+           {
+        "name": "Kratos",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Battle Cannon",
         "type": "WE",
         "speed": "20",
         "armour": 3,
         "cc": 6,
         "ff": 3,
-        "weapons": [
+            "weapons": [
           "Kratos Battle Cannon",
           "Autocannon",
           "Twin Heavy Bolter|2|FwA"
-        ],
-        "specialRules": [
-          "Damage Capacity: 2",
-          "Thick Rear Armour",
-          "Ion Shield (6+)"
-        ],
-        "crit": "The Kratos is destroyed."
-      },
-      {
-        "name": "Kratos - Melta",
+            ]
+          },
+          {
+            "name": "Melta",
         "type": "WE",
         "speed": "20",
         "armour": 3,
@@ -1306,6 +1327,21 @@
           "Melta Blastgun",
           "Autocannon",
           "Twin Lascannon|2|FwA"
+            ]
+          },
+          {
+            "name": "Volkite",
+        "type": "WE",
+        "speed": "20",
+        "armour": 3,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Volkite Cardanelle",
+          "Autocannon",
+          "Volkite Culvertin|2|FwA"
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity: 2",
@@ -1314,7 +1350,7 @@
         ],
         "crit": "The Kratos is destroyed."
       },
-      {
+       {
         "name": "Bastion",
         "type": "WE",
         "speed": "Immobile",
@@ -1354,8 +1390,12 @@
         ],
         "crit": "The Fellblade is destroyed. All units within 5cm suffer a hit on a 5+."
       },
-      {
-        "name": "Falchion Super-Heavy Tank - Vulcano",
+            {
+        "name": "Falchion Super-Heavy Tank",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Vulcano Cannon",
         "type": "WE",
         "speed": "15",
         "armour": 4,
@@ -1365,15 +1405,10 @@
           "Twin Vulcano Cannon",
           "Laser Destroyer|2|FxF",
           "Twin Heavy Bolter||FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity: 4",
-          "Reinforced Armour"
-        ],
-        "crit": "The Falchion is destroyed. All units within 5cm suffer a hit on a 5+."
-      },
-      {
-        "name": "Falchion Super-Heavy Tank - Neutron-Wave",
+        ]
+          },
+          {
+            "name": "Neutron-Wave",
         "type": "WE",
         "speed": "15",
         "armour": 4,
@@ -1383,6 +1418,8 @@
           "Neutron-Wave Cannon",
           "Laser Destroyer|2|FxF",
           "Twin Heavy Bolter||FxF"
+        ]
+          }
         ],
         "specialRules": [
           "Damage Capacity: 4",
@@ -1390,7 +1427,7 @@
         ],
         "crit": "The Falchion is destroyed. All units within 5cm suffer a hit on a 5+."
       },
-      {
+       {
         "name": "Glaive Super-Heavy Tank",
         "type": "WE",
         "speed": "15",

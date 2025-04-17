@@ -4,7 +4,33 @@
     "specialRules": [
     ],
     "unit": [
-
+            {
+        "name": "Auxilia Legate Marshal",
+        "type": "CH",
+        "weapons": [
+         "Power Weapon"
+        ],
+        "specialRules": [
+          "Supreme Commander",
+          "Vox-Caster",
+          "Invulnerable Save",
+          "Inspiring"
+        ]
+      },
+              {
+        "name": "Auxilia Captain",
+        "type": "CH",
+        "weapons": [
+        "Power Weapon"
+        ],
+        "specialRules": [
+          "Commander",
+          "Leader",
+          "Vox-Caster",
+          "Invulnerable Save",
+          "Inspiring"
+        ]
+      },
         {
         "name": "Auxilia Adjutant",
         "type": "CH",
@@ -15,24 +41,6 @@
           "Vox-Caster"
         ]
       },
-            {
-        "name": "Legate Marshal Command Squad",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Plasma Guns",
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Vox-Caster",
-          "Invulnerable Save",
-          "Inspiring"
-        ]
-      },
       {
         "name": "Auxilia Command Squad",
         "type": "INF",
@@ -41,15 +49,9 @@
         "cc": 4,
         "ff": 5,
         "weapons": [
-          "Plasma Guns",
-          "Power Weapon"
+          "Plasma Guns"
         ],
         "specialRules": [
-          "Commander",
-          "Leader",
-          "Vox-Caster",
-          "Invulnerable Save",
-          "Inspiring"
         ]
       },
       {
@@ -84,7 +86,7 @@
         "speed": 15,
         "armour": 5,
         "cc": 6,
-        "ff": 5,
+        "ff": 4,
         "weapons": [
           "Flamers"
         ],
@@ -97,7 +99,7 @@
         "speed": 15,
         "armour": 5,
         "cc": 6,
-        "ff": 5,
+        "ff": 4,
         "weapons": [
           "Volkite Chargers"
         ],

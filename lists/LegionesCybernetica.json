@@ -4,8 +4,13 @@
     "specialRules": [
     ],
     "unit": [
-            {
-        "name": "Tarantula - Lascannon",
+
+         {
+        "name": "Tarantula",
+        "type": "LV",
+        "variants": [
+          {
+            "name": "Lascannon",
         "type": "LV",
         "speed": "Immobile",
         "armour": 5,
@@ -13,58 +18,52 @@
         "weapons": [
           "Twin Lascannon"
         ],
-        "specialRules": [
-        "Machine Spirit",
-        "Fearless",
-        "Expendable"
-        ]
-      },
-                  {
-        "name": "Tarantula - Hyperios",
+          },
+          {
+            "name": "Hyperios",
         "type": "LV",
         "speed": "Immobile",
         "armour": 5,
-        "weapons": [
+            "weapons": [
           "Hyperios Missile Launcher"
+            ]
+          }
         ],
         "specialRules": [
         "Machine Spirit",
-        "Fearless",
         "Expendable"
         ]
       },
-       {
-        "name": "Cyclops - Demolitor",
+             {
+        "name": "Cyclops",
         "type": "LV",
-        "speed": 10,
-        "armour": 4,
+        "variants": [
+          {
+            "name": "Demolitor",
+        "type": "LV",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
         "weapons": [
           "Cyclops Demolition Charge"
-        ],
-        "specialRules": [
-        "Machine Spirit",
-        "Infiltrators",
-        "Fearless",
-        "Ponderous",
-        "Expendable"
         ]
-      },
-       {
-        "name": "Cyclops - Incinerator",
+          },
+          {
+            "name": "Incinerator",
         "type": "LV",
-        "speed": 10,
-        "armour": 4,
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
         "weapons": [
           "Cyclops Incineration Charge"
+        ]
+          }
         ],
         "specialRules": [
         "Machine Spirit",
-        "Infiltrators",
-        "Fearless",
-        "Ponderous",
-        "Expendable"
+        "Blitz"
         ]
       }
-         ]
+    ]
   }
 ]
