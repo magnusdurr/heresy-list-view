@@ -49,20 +49,6 @@
                     </table>
                 </div>
                 <div class="col-12 col-md-7">{{> weapons}}</div>
-
-                {{#if (hasSpecialNotes this)}}
-                <div class="col-12">
-                    <small>
-                        <span class="notes-header">Notes:</span>
-                        {{#each specialRules}}
-                        {{#unless @last}}<i>{{this}}</i>,{{/unless}}
-                        {{#if @last}}<i>{{this}}</i>.{{/if}}
-                        {{/each}}
-                        {{notes}}
-                        {{#if crit}}<b>Critical hit effect:</b> {{crit}}{{/if}}
-                    </small>
-                </div>
-                {{/if}}
                 {{#unless @last}}
                 <div class="col-12"><hr class="variant-separator"/></div>
                 {{/unless}}

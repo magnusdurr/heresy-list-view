@@ -353,8 +353,6 @@
             "ff": 4,
             "weapons": [
               "Plasma Guns|2"
-            ],
-            "specialRules": [
             ]
           },
           {
@@ -366,8 +364,6 @@
             "ff": 3,
             "weapons": [
               "Flamers|2"
-            ],
-            "specialRules": [
             ]
           }
         ]
@@ -621,70 +617,64 @@
         ]
       },
       {
-        "name": "Legion Rapier - Laser Destroyer",
+        "name": "Legion Rapier",
         "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Laser Destroyer"
-        ],
-        "specialRules": [
-          "Walker"
-        ]
-      },
-      {
-        "name": "Legion Rapier - Quad Launcher",
-        "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Quad Launcher"
-        ],
-        "specialRules": [
-          "Walker"
-        ]
-      },
-      {
-        "name": "Legion Rapier - Graviton Cannon",
-        "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Graviton Cannon"
-        ],
-        "specialRules": [
-          "Walker"
-        ]
-      },
-      {
-        "name": "Legion Rapier - Multi-Laser",
-        "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Quad Multi-Laser"
-        ],
-        "specialRules": [
-          "Walker"
-        ]
-      },
-      {
-        "name": "Legion Rapier - Heavy Bolter",
-        "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Quad Heavy Bolter"
+        "variants": [
+          {
+            "name": "Laser Destroyer",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 6,
+            "weapons": [
+              "Laser Destroyer"
+            ]
+          },
+          {
+            "name": "Quad Launcher",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 6,
+            "weapons": [
+              "Quad Launcher"
+            ]
+          },
+          {
+            "name": "Graviton Cannon",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 6,
+            "weapons": [
+              "Graviton Cannon"
+            ]
+          },
+          {
+            "name": "Multi-Laser",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Quad Multi-Laser"
+            ]
+          },
+          {
+            "name": "Heavy Bolter",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+              "Quad Heavy Bolter"
+            ]
+          }
         ],
         "specialRules": [
           "Walker"
@@ -785,32 +775,33 @@
         ]
       },
       {
-        "name": "Land Speeder - Melta",
+        "name": "Land Speeder",
         "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Multi-Melta",
-          "Heavy Flamer"
-        ],
-        "specialRules": [
-          "Skirmisher",
-          "Skimmer",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Land Speeder - Plasma",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Plasma Cannon",
-          "Heavy Bolter"
+        "variants": [
+          {
+            "name": "Melta",
+            "type": "LV",
+            "speed": 35,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Multi-Melta",
+              "Heavy Flamer"
+            ]
+          },
+          {
+            "name": "Plasma",
+            "type": "LV",
+            "speed": 35,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Plasma Cannon",
+              "Heavy Bolter"
+            ]
+          }
         ],
         "specialRules": [
           "Skirmisher",
@@ -1251,57 +1242,6 @@
               "Vanguard"
             ]
           }
-        ]
-      },
-      {
-        "name": "Sabre - Autocannon",
-        "type": "LV",
-        "speed": 25,
-        "armour": 3,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Sabre Autocannon",
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Blitz",
-          "Evasive",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Sabre - Neutron Blaster",
-        "type": "LV",
-        "speed": 25,
-        "armour": 3,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Neutron Blaster",
-          "Multi-Melta"
-        ],
-        "specialRules": [
-          "Blitz",
-          "Evasive",
-          "Vanguard"
-        ]
-      },
-      {
-        "name": "Sabre - Volkite",
-        "type": "LV",
-        "speed": 25,
-        "armour": 3,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Volkite Saker",
-          "Volkite Culvertin"
-        ],
-        "specialRules": [
-          "Blitz",
-          "Evasive",
-          "Vanguard"
         ]
       },
       {
