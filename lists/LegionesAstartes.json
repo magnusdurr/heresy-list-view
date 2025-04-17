@@ -405,14 +405,41 @@
         ]
       },
       {
-        "name": "Legion Outriders - Plasma",
+        "name": "Legion Outriders",
         "type": "INF",
-        "speed": 35,
-        "armour": 4,
-        "cc": 3,
-        "ff": 6,
-        "weapons": [
-          "Plasma Guns"
+        "variants": [
+          {
+            "name": "Plasma",
+            "speed": 35,
+            "armour": 4,
+            "cc": 3,
+            "ff": 6,
+            "weapons": [
+              "Plasma Guns"
+            ]
+          },
+          {
+            "name": "Meltagun",
+            "type": "INF",
+            "speed": 35,
+            "armour": 4,
+            "cc": 3,
+            "ff": 6,
+            "weapons": [
+              "Meltaguns"
+            ]
+          },
+          {
+            "name": "Flamer",
+            "type": "INF",
+            "speed": 35,
+            "armour": 4,
+            "cc": 3,
+            "ff": 6,
+            "weapons": [
+              "Flamers"
+            ]
+          }
         ],
         "specialRules": [
           "Mounted",
@@ -422,125 +449,97 @@
         ]
       },
       {
-        "name": "Legion Outriders - Meltagun",
+        "name": "Heavy Support Legionaries",
         "type": "INF",
-        "speed": 35,
-        "armour": 4,
-        "cc": 3,
-        "ff": 6,
-        "weapons": [
-          "Meltaguns"
-        ],
-        "specialRules": [
-          "Mounted",
-          "Vanguard",
-          "Walker",
-          "Bulky"
-        ]
-      },
-      {
-        "name": "Legion Outriders - Flamer",
-        "type": "INF",
-        "speed": 35,
-        "armour": 4,
-        "cc": 3,
-        "ff": 6,
-        "weapons": [
-          "Flamers"
-        ],
-        "specialRules": [
-          "Mounted",
-          "Vanguard",
-          "Walker",
-          "Bulky"
-        ]
-      },
-      {
-        "name": "Heavy Support Legionaries - Missile Launcher",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Missile Launcher|3"
-        ]
-      },
-      {
-        "name": "Heavy Support Legionaries - Plasma Cannon",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Plasma Cannon|3"
-        ]
-      },
-      {
-        "name": "Heavy Support Legionaries - Lascannon",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Lascannon|3"
-        ]
-      },
-      {
-        "name": "Heavy Support Legionaries - Heavy Bolter",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 2,
-        "weapons": [
-          "Heavy Bolter|3"
-        ]
-      },
-      {
-        "name": "Heavy Support Legionaries - Multi-Melta",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Multi-Melta|3"
-        ]
-      },
-      {
-        "name": "Heavy Support Legionaries - Autocannon",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Autocannon|3"
-        ]
-      },
-      {
-        "name": "Heavy Support Legionaries - Volkite Culvertin",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Volkite Culvertin|3"
-        ]
-      },
-      {
-        "name": "Heavy Support Legionaries - Heavy Flamer",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 2,
-        "weapons": [
-          "Heavy Flamer|3"
+        "variants": [
+          {
+            "name": "Missile Launcher",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Missile Launcher|3"
+            ]
+          },
+          {
+            "name": "Plasma Cannon",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Plasma Cannon|3"
+            ]
+          },
+          {
+            "name": "Lascannon",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Lascannon|3"
+            ]
+          },
+          {
+            "name": "Heavy Bolter",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 2,
+            "weapons": [
+              "Heavy Bolter|3"
+            ]
+          },
+          {
+            "name": "Multi-Melta",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Multi-Melta|3"
+            ]
+          },
+          {
+            "name": "Autocannon",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Autocannon|3"
+            ]
+          },
+          {
+            "name": "Volkite Culvertin",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Volkite Culvertin|3"
+            ]
+          },
+          {
+            "name": "Heavy Flamer",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 2,
+            "weapons": [
+              "Heavy Flamer|3"
+            ]
+          }
         ]
       },
       {
@@ -1096,62 +1095,59 @@
         ]
       },
       {
-        "name": "Sicarian - Autocannon",
+        "name": "Sicarian",
         "type": "AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Twin Accelerator Autocannon",
-          "Heavy Bolter|3"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Sicarian - Plasma",
-        "type": "AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Omega Plasma Array",
-          "Heavy Bolter",
-          "Lascannon|2"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Sicarian Punisher",
-        "type": "AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 6,
-        "ff": 2,
-        "weapons": [
-          "Punisher Gatling Cannon",
-          "Heavy Bolter|3"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Sicarian Arcus",
-        "type": "AV",
-        "speed": 20,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Arcus Missile Launcher",
-          "Heavy Bolter",
-          "Lascannon|2"
+        "variants": [
+          {
+            "name": "Autocannon",
+            "type": "AV",
+            "speed": 25,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+              "Twin Accelerator Autocannon",
+              "Heavy Bolter|3"
+            ]
+          },
+          {
+            "name": "Plasma",
+            "type": "AV",
+            "speed": 25,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Omega Plasma Array",
+              "Heavy Bolter",
+              "Lascannon|2"
+            ]
+          },
+          {
+            "name": "Punisher",
+            "type": "AV",
+            "speed": 25,
+            "armour": 5,
+            "cc": 6,
+            "ff": 2,
+            "weapons": [
+              "Punisher Gatling Cannon",
+              "Heavy Bolter|3"
+            ]
+          },
+          {
+            "name": "Arcus",
+            "type": "AV",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Arcus Missile Launcher",
+              "Heavy Bolter",
+              "Lascannon|2"
+            ]
+          }
         ],
         "specialRules": [
           "Reinforced Armour"
@@ -1205,35 +1201,33 @@
         ]
       },
       {
-        "name": "Spartan - Lascannon",
+        "name": "Spartan",
         "type": "WE",
-        "speed": "20",
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Quad Lascannon|2|FwA",
-          "Twin Heavy Bolter||FwA"
-        ],
-        "specialRules": [
-          "Damage Capacity: 2",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Heavy Transport (4)",
-          "Ion Shield (6+)"
-        ],
-        "crit": "The Spartan is destroyed."
-      },
-      {
-        "name": "Spartan - Laser Destroyer",
-        "type": "WE",
-        "speed": "20",
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Laser Destroyer|2|FwA",
-          "Twin Heavy Bolter||FwA"
+        "variants": [
+          {
+            "name": "Lascannon",
+            "type": "WE",
+            "speed": "20",
+            "armour": 4,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+              "Quad Lascannon|2|FwA",
+              "Twin Heavy Bolter||FwA"
+            ]
+          },
+          {
+            "name": "Laser Destroyer",
+            "type": "WE",
+            "speed": "20",
+            "armour": 4,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+              "Laser Destroyer|2|FwA",
+              "Twin Heavy Bolter||FwA"
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity: 2",
