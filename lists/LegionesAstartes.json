@@ -365,59 +365,29 @@
             "weapons": [
               "Flamers|2"
             ]
+          },
+          {
+            "name": "Support Legionaries - Rotor Cannon",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 2,
+            "weapons": [
+              "Rotor Cannon|2"
+            ]
+          },
+          {
+            "name": "Support Legionaries - Volkite Calvier",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 5,
+            "weapons": [
+              "Volkite Calvier|2"
+            ]
           }
-        ]
-      },
-      {
-        "name": "Support Legionaries - Plasma",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Plasma Guns|2"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Support Legionaries - Flamer",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 3,
-        "weapons": [
-          "Flamers|2"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Support Legionaries - Rotor Cannon",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 2,
-        "weapons": [
-          "Rotor Cannon|2"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Support Legionaries - Volkite Calvier",
-        "type": "INF",
-        "speed": 15,
-        "armour": 4,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Volkite Calvier|2"
-        ],
-        "specialRules": [
         ]
       },
       {
@@ -1201,11 +1171,6 @@
             "weapons": [
               "Sabre Autocannon",
               "Heavy Bolter"
-            ],
-            "specialRules": [
-              "Blitz",
-              "Evasive",
-              "Vanguard"
             ]
           },
           {
@@ -1218,11 +1183,6 @@
             "weapons": [
               "Neutron Blaster",
               "Multi-Melta"
-            ],
-            "specialRules": [
-              "Blitz",
-              "Evasive",
-              "Vanguard"
             ]
           },
           {
@@ -1235,13 +1195,13 @@
             "weapons": [
               "Volkite Saker",
               "Volkite Culvertin"
-            ],
-            "specialRules": [
-              "Blitz",
-              "Evasive",
-              "Vanguard"
             ]
           }
+        ],
+        "specialRules": [
+          "Blitz",
+          "Evasive",
+          "Vanguard"
         ]
       },
       {
