@@ -23,6 +23,55 @@
                 <div class="col-12">
                     <b>{{name}}</b>
                 </div>
+                {{#if variants}}
+                {{#each variants}}
+                <div class="col-12">
+                    <span class="variant-title">Variant: {{name}}</span>
+                </div>
+                <div class="col-md-5">
+                    <table class="table-sm stats-table">
+                        <tbody>
+                        <tr>
+                            <td>Type</td>
+                            <td>Speed</td>
+                            <td>Armour</td>
+                            <td>CC</td>
+                            <td>FF</td>
+                        </tr>
+                        <tr>
+                            <td>{{#if type}}{{type}}{{else}}n/a{{/if}}</td>
+                            <td>{{#if speed}}{{appendOnNumber speed 'cm'}}{{else}}n/a{{/if}}</td>
+                            <td>{{#if armour}}{{armour}}+{{else}}n/a{{/if}}</td>
+                            <td>{{#if cc}}{{cc}}+{{else}}n/a{{/if}}</td>
+                            <td colspan="3">{{#if ff}}{{ff}}+{{else}}n/a{{/if}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-md-7">{{> weapons}}</div>
+
+                {{#if (hasSpecialNotes this)}}
+                <div class="col-12">
+                    <small>
+                        <span class="notes-header">Notes:</span>
+                        {{#each specialRules}}
+                        {{#unless @last}}<i>{{this}}</i>,{{/unless}}
+                        {{#if @last}}<i>{{this}}</i>.{{/if}}
+                        {{/each}}
+                        {{notes}}
+                        {{#if crit}}<b>Critical hit effect:</b> {{crit}}{{/if}}
+                    </small>
+                </div>
+                {{/if}}
+                {{#unless @last}}
+                <div class="col-12"><hr class="variant-separator"/></div>
+                {{/unless}}
+                {{/each}}
+                {{/if}}
+                {{#unless variants}}
+                <div class="col-12">
+                    <small>{{description}}</small>
+                </div>
                 <div class="col-md-5">
                     <table class="table-sm stats-table">
                         <tbody>
@@ -45,18 +94,19 @@
 
                 </div>
                 <div class="col-12 col-md-7">{{> weapons}}</div>
+                {{/unless}}
             </div>
             {{#if @hasNotes}}
             <div class="row">
                 <div class="col">
                     <small>
-                        <b>Notes:</b>
+                        <span class="notes-header">Notes:</span>
                         {{#each specialRules}}
                         {{#unless @last}}<i>{{this}}</i>,{{/unless}}
                         {{#if @last}}<i>{{this}}</i>.{{/if}}
                         {{/each}}
                         {{notes}}
-                        {{#if crit}}<b>Critical hit effect:</b> {{crit}}{{/if}}
+                        {{#if crit}}<span class="notes-header">Critical hit effect:</span> {{crit}}{{/if}}
                     </small>
                 </div>
             </div>

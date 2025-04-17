@@ -8,7 +8,7 @@
         "name": "Lieutenant",
         "type": "CH",
         "weapons": [
-         ],
+        ],
         "specialRules": [
           "Leader",
           "Vox-Caster"
@@ -18,7 +18,7 @@
         "name": "Decurion Defensor",
         "type": "CH",
         "weapons": [
-         ],
+        ],
         "specialRules": [
           "Leader",
           "Vox-Caster"
@@ -28,8 +28,8 @@
         "name": "Red Hand Blood Bonded",
         "type": "CH",
         "weapons": [
-        "Power Weapon"
-         ],
+          "Power Weapon"
+        ],
         "specialRules": [
           "Invulnerable Save",
           "Leader"
@@ -39,8 +39,8 @@
         "name": "Captain",
         "type": "CH",
         "weapons": [
-        "Power Weapon"
-         ],
+          "Power Weapon"
+        ],
         "specialRules": [
           "Commander",
           "Invulnerable Save",
@@ -76,7 +76,6 @@
           "Vox-Caster"
         ]
       },
-
       {
         "name": "Librarian - Telepathy",
         "type": "CH",
@@ -91,7 +90,7 @@
           "Vox-Caster"
         ]
       },
-            {
+      {
         "name": "Librarian - Thaumaturgy",
         "type": "CH",
         "weapons": [
@@ -105,7 +104,7 @@
           "Vox-Caster"
         ]
       },
-            {
+      {
         "name": "Librarian - Telekinesis",
         "type": "CH",
         "weapons": [
@@ -119,7 +118,7 @@
           "Vox-Caster"
         ]
       },
-            {
+      {
         "name": "Librarian - Pyromancy",
         "type": "CH",
         "weapons": [
@@ -133,7 +132,7 @@
           "Vox-Caster"
         ]
       },
-            {
+      {
         "name": "Librarian - Divination",
         "type": "CH",
         "weapons": [
@@ -147,7 +146,7 @@
           "Vox-Caster"
         ]
       },
-            {
+      {
         "name": "Librarian - Biomancy",
         "type": "CH",
         "weapons": [
@@ -161,7 +160,7 @@
           "Vox-Caster"
         ]
       },
-       {
+      {
         "name": "Lieutenant - Prosperine Arcana",
         "type": "CH",
         "weapons": [
@@ -172,7 +171,7 @@
           "Vox-Caster"
         ]
       },
-           {
+      {
         "name": "Librarian - Anathemata",
         "type": "CH",
         "weapons": [
@@ -186,7 +185,7 @@
           "Vox-Caster"
         ]
       },
-        {
+      {
         "name": "Librarian - Aetherbane",
         "type": "CH",
         "weapons": [
@@ -214,7 +213,7 @@
           "Vox-Caster"
         ]
       },
-            {
+      {
         "name": "Librarian - Storm's Fury",
         "type": "CH",
         "weapons": [
@@ -228,7 +227,7 @@
           "Vox-Caster"
         ]
       },
-            {
+      {
         "name": "Librarian - Winds of Fenris",
         "type": "CH",
         "weapons": [
@@ -255,7 +254,6 @@
           "Blitz"
         ]
       },
-
       {
         "name": "Tactical Legionaries",
         "type": "INF",
@@ -268,7 +266,6 @@
           "Melta Gun"
         ]
       },
-
       {
         "name": "Veteran Legionaries",
         "type": "INF",
@@ -281,7 +278,6 @@
           "Melta Gun"
         ]
       },
-
       {
         "name": "Breacher Legionaries - Lascutter",
         "type": "INF",
@@ -295,7 +291,6 @@
         ]
       },
       {
-
         "name": "Assault Legionaries",
         "type": "INF",
         "speed": 30,
@@ -313,7 +308,6 @@
         ]
       },
       {
-
         "name": "Despoiler Legionaries",
         "type": "INF",
         "speed": 15,
@@ -342,8 +336,40 @@
           "Chainaxes"
         ],
         "specialRules": [
-        "Jump Packs",
-        "Vanguard"
+          "Jump Packs",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Support Legionaries",
+        "type": "INF",
+        "variants": [
+          {
+            "name": "Plasma",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 4,
+            "weapons": [
+              "Plasma Guns|2"
+            ],
+            "specialRules": [
+            ]
+          },
+          {
+            "name": "Flamer",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 3,
+            "weapons": [
+              "Flamers|2"
+            ],
+            "specialRules": [
+            ]
+          }
         ]
       },
       {
@@ -359,7 +385,7 @@
         "specialRules": [
         ]
       },
-       {
+      {
         "name": "Support Legionaries - Flamer",
         "type": "INF",
         "speed": 15,
@@ -372,7 +398,7 @@
         "specialRules": [
         ]
       },
-        {
+      {
         "name": "Support Legionaries - Rotor Cannon",
         "type": "INF",
         "speed": 15,
@@ -385,7 +411,7 @@
         "specialRules": [
         ]
       },
-        {
+      {
         "name": "Support Legionaries - Volkite Calvier",
         "type": "INF",
         "speed": 15,
@@ -409,7 +435,7 @@
           "Nemesis Bolters"
         ],
         "specialRules": [
-        "Skirmishers"
+          "Skirmishers"
         ]
       },
       {
@@ -429,7 +455,7 @@
           "Bulky"
         ]
       },
-            {
+      {
         "name": "Legion Outriders - Meltagun",
         "type": "INF",
         "speed": 35,
@@ -446,7 +472,7 @@
           "Bulky"
         ]
       },
-       {
+      {
         "name": "Legion Outriders - Flamer",
         "type": "INF",
         "speed": 35,
@@ -474,7 +500,7 @@
           "Missile Launcher|3"
         ]
       },
-            {
+      {
         "name": "Heavy Support Legionaries - Plasma Cannon",
         "type": "INF",
         "speed": 15,
@@ -485,7 +511,7 @@
           "Plasma Cannon|3"
         ]
       },
-            {
+      {
         "name": "Heavy Support Legionaries - Lascannon",
         "type": "INF",
         "speed": 15,
@@ -496,7 +522,7 @@
           "Lascannon|3"
         ]
       },
-           {
+      {
         "name": "Heavy Support Legionaries - Heavy Bolter",
         "type": "INF",
         "speed": 15,
@@ -507,7 +533,7 @@
           "Heavy Bolter|3"
         ]
       },
-           {
+      {
         "name": "Heavy Support Legionaries - Multi-Melta",
         "type": "INF",
         "speed": 15,
@@ -518,7 +544,7 @@
           "Multi-Melta|3"
         ]
       },
-           {
+      {
         "name": "Heavy Support Legionaries - Autocannon",
         "type": "INF",
         "speed": 15,
@@ -529,7 +555,7 @@
           "Autocannon|3"
         ]
       },
-           {
+      {
         "name": "Heavy Support Legionaries - Volkite Culvertin",
         "type": "INF",
         "speed": 15,
@@ -540,7 +566,7 @@
           "Volkite Culvertin|3"
         ]
       },
-           {
+      {
         "name": "Heavy Support Legionaries - Heavy Flamer",
         "type": "INF",
         "speed": 15,
@@ -551,8 +577,7 @@
           "Heavy Flamer|3"
         ]
       },
-
-     {
+      {
         "name": "Destroyer Assault Squad",
         "type": "INF",
         "speed": 15,
@@ -564,10 +589,10 @@
           "Destroyer Missile Launcher"
         ],
         "specialRules": [
-        "Jump Packs"
+          "Jump Packs"
         ]
       },
-           {
+      {
         "name": "Mortalis Destroyer Squad",
         "type": "INF",
         "speed": 15,
@@ -581,7 +606,7 @@
         "specialRules": [
         ]
       },
-           {
+      {
         "name": "Nemesis Destroyer Squad",
         "type": "INF",
         "speed": 15,
@@ -595,8 +620,6 @@
         "specialRules": [
         ]
       },
-
-
       {
         "name": "Legion Rapier - Laser Destroyer",
         "type": "LV",
@@ -608,7 +631,7 @@
           "Laser Destroyer"
         ],
         "specialRules": [
-        "Walker"
+          "Walker"
         ]
       },
       {
@@ -622,10 +645,10 @@
           "Quad Launcher"
         ],
         "specialRules": [
-        "Walker"
+          "Walker"
         ]
       },
-            {
+      {
         "name": "Legion Rapier - Graviton Cannon",
         "type": "LV",
         "speed": 10,
@@ -636,7 +659,7 @@
           "Graviton Cannon"
         ],
         "specialRules": [
-        "Walker"
+          "Walker"
         ]
       },
       {
@@ -650,7 +673,7 @@
           "Quad Multi-Laser"
         ],
         "specialRules": [
-        "Walker"
+          "Walker"
         ]
       },
       {
@@ -664,7 +687,7 @@
           "Quad Heavy Bolter"
         ],
         "specialRules": [
-        "Walker"
+          "Walker"
         ]
       },
       {
@@ -687,8 +710,7 @@
           "Vanguard"
         ]
       },
-
-       {
+      {
         "name": "Tartaros Terminators",
         "type": "INF",
         "speed": 15,
@@ -707,7 +729,7 @@
           "Vanguard"
         ]
       },
-            {
+      {
         "name": "Fulmentarus Terminators",
         "type": "INF",
         "speed": 15,
@@ -747,7 +769,7 @@
           "Vanguard"
         ]
       },
-       {
+      {
         "name": "Scimitar Jetbikes - Heavy Bolter",
         "type": "INF",
         "speed": 35,
@@ -762,7 +784,7 @@
           "Mounted"
         ]
       },
-       {
+      {
         "name": "Land Speeder - Melta",
         "type": "LV",
         "speed": 35,
@@ -779,7 +801,7 @@
           "Vanguard"
         ]
       },
-       {
+      {
         "name": "Land Speeder - Plasma",
         "type": "LV",
         "speed": 35,
@@ -796,7 +818,7 @@
           "Vanguard"
         ]
       },
-             {
+      {
         "name": "Attack Speeder - Missile Launcher",
         "type": "LV",
         "speed": 30,
@@ -812,7 +834,7 @@
           "Skimmer"
         ]
       },
-        {
+      {
         "name": "Contemptor Dreadnought - Assault Cannon",
         "type": "AV",
         "speed": 15,
@@ -827,7 +849,7 @@
           "Walker"
         ]
       },
-             {
+      {
         "name": "Contemptor Dreadnought - Lascannon",
         "type": "AV",
         "speed": 15,
@@ -861,7 +883,7 @@
           "Vanguard"
         ]
       },
-            {
+      {
         "name": "Leviathan Dreadnought - Melta Lance",
         "type": "AV",
         "speed": 10,
@@ -880,7 +902,7 @@
           "Vanguard"
         ]
       },
-                  {
+      {
         "name": "Deredeo Dreadnought - Plasma",
         "type": "AV",
         "speed": 10,
@@ -894,7 +916,7 @@
         "specialRules": [
         ]
       },
-                        {
+      {
         "name": "Deredeo Dreadnought - Autocannon",
         "type": "AV",
         "speed": 10,
@@ -908,7 +930,7 @@
         "specialRules": [
         ]
       },
-       {
+      {
         "name": "Predator Annihilator",
         "type": "AV",
         "speed": 30,
@@ -946,7 +968,7 @@
           "Transport (1)"
         ]
       },
-            {
+      {
         "name": "Support Rhino - Missile Launcher",
         "type": "AV",
         "speed": 30,
@@ -999,13 +1021,13 @@
         "cc": 6,
         "ff": 6,
         "weapons": [
-         "Bolters",
-         "Scorpius Missile Launcher"
+          "Bolters",
+          "Scorpius Missile Launcher"
         ],
         "specialRules": [
         ]
       },
-       {
+      {
         "name": "Arquitor - Bombard",
         "type": "AV",
         "speed": 20,
@@ -1013,14 +1035,14 @@
         "cc": 6,
         "ff": 4,
         "weapons": [
-        "Morbus Bombard",
-        "Heavy Bolter|2"
+          "Morbus Bombard",
+          "Heavy Bolter|2"
         ],
         "specialRules": [
-        "Reinforced Armour"
+          "Reinforced Armour"
         ]
       },
-             {
+      {
         "name": "Arquitor - Graviton",
         "type": "AV",
         "speed": 20,
@@ -1028,14 +1050,14 @@
         "cc": 6,
         "ff": 4,
         "weapons": [
-         "Graviton-Charge Cannon",
-         "Volkite Culvertin|2"
+          "Graviton-Charge Cannon",
+          "Volkite Culvertin|2"
         ],
         "specialRules": [
-        "Reinforced Armour"
+          "Reinforced Armour"
         ]
       },
-             {
+      {
         "name": "Arquitor - Spicula",
         "type": "AV",
         "speed": 20,
@@ -1043,11 +1065,11 @@
         "cc": 6,
         "ff": 4,
         "weapons": [
-         "Spicula Rocket System",
-         "Autocannon|2"
+          "Spicula Rocket System",
+          "Autocannon|2"
         ],
         "specialRules": [
-        "Reinforced Armour"
+          "Reinforced Armour"
         ]
       },
       {
@@ -1092,7 +1114,7 @@
           "Heavy Transport (2)"
         ]
       },
-            {
+      {
         "name": "Land Raider Proteus Explorator",
         "type": "AV",
         "speed": 25,
@@ -1112,7 +1134,7 @@
           "Commander"
         ]
       },
-         {
+      {
         "name": "Sicarian - Autocannon",
         "type": "AV",
         "speed": 25,
@@ -1120,14 +1142,14 @@
         "cc": 6,
         "ff": 3,
         "weapons": [
-         "Twin Accelerator Autocannon",
+          "Twin Accelerator Autocannon",
           "Heavy Bolter|3"
         ],
         "specialRules": [
           "Reinforced Armour"
         ]
       },
-        {
+      {
         "name": "Sicarian - Plasma",
         "type": "AV",
         "speed": 25,
@@ -1135,15 +1157,15 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-         "Omega Plasma Array",
-         "Heavy Bolter",
-         "Lascannon|2"
+          "Omega Plasma Array",
+          "Heavy Bolter",
+          "Lascannon|2"
         ],
         "specialRules": [
           "Reinforced Armour"
         ]
       },
-        {
+      {
         "name": "Sicarian Punisher",
         "type": "AV",
         "speed": 25,
@@ -1151,7 +1173,7 @@
         "cc": 6,
         "ff": 2,
         "weapons": [
-         "Punisher Gatling Cannon",
+          "Punisher Gatling Cannon",
           "Heavy Bolter|3"
         ],
         "specialRules": [
@@ -1166,15 +1188,72 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-         "Arcus Missile Launcher",
-         "Heavy Bolter",
-         "Lascannon|2"
+          "Arcus Missile Launcher",
+          "Heavy Bolter",
+          "Lascannon|2"
         ],
         "specialRules": [
           "Reinforced Armour"
         ]
       },
-       {
+      {
+        "name": "Sabre",
+        "type": "LV",
+        "variants": [
+          {
+            "name": "Autocannon",
+            "type": "LV",
+            "speed": 25,
+            "armour": 3,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+              "Sabre Autocannon",
+              "Heavy Bolter"
+            ],
+            "specialRules": [
+              "Blitz",
+              "Evasive",
+              "Vanguard"
+            ]
+          },
+          {
+            "name": "Neutron Blaster",
+            "type": "LV",
+            "speed": 25,
+            "armour": 3,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Neutron Blaster",
+              "Multi-Melta"
+            ],
+            "specialRules": [
+              "Blitz",
+              "Evasive",
+              "Vanguard"
+            ]
+          },
+          {
+            "name": "Volkite",
+            "type": "LV",
+            "speed": 25,
+            "armour": 3,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Volkite Saker",
+              "Volkite Culvertin"
+            ],
+            "specialRules": [
+              "Blitz",
+              "Evasive",
+              "Vanguard"
+            ]
+          }
+        ]
+      },
+      {
         "name": "Sabre - Autocannon",
         "type": "LV",
         "speed": 25,
@@ -1182,16 +1261,16 @@
         "cc": 6,
         "ff": 3,
         "weapons": [
-         "Sabre Autocannon",
-         "Heavy Bolter"
+          "Sabre Autocannon",
+          "Heavy Bolter"
         ],
         "specialRules": [
-        "Blitz",
-        "Evasive",
-        "Vanguard"
+          "Blitz",
+          "Evasive",
+          "Vanguard"
         ]
       },
-        {
+      {
         "name": "Sabre - Neutron Blaster",
         "type": "LV",
         "speed": 25,
@@ -1199,16 +1278,16 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-         "Neutron Blaster",
-         "Multi-Melta"
+          "Neutron Blaster",
+          "Multi-Melta"
         ],
         "specialRules": [
-        "Blitz",
-        "Evasive",
-        "Vanguard"
+          "Blitz",
+          "Evasive",
+          "Vanguard"
         ]
       },
-       {
+      {
         "name": "Sabre - Volkite",
         "type": "LV",
         "speed": 25,
@@ -1216,16 +1295,16 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-         "Volkite Saker",
-         "Volkite Culvertin"
+          "Volkite Saker",
+          "Volkite Culvertin"
         ],
         "specialRules": [
-        "Blitz",
-        "Evasive",
-        "Vanguard"
+          "Blitz",
+          "Evasive",
+          "Vanguard"
         ]
       },
-           {
+      {
         "name": "Spartan - Lascannon",
         "type": "WE",
         "speed": "20",
@@ -1245,7 +1324,7 @@
         ],
         "crit": "The Spartan is destroyed."
       },
-        {
+      {
         "name": "Spartan - Laser Destroyer",
         "type": "WE",
         "speed": "20",
@@ -1265,7 +1344,7 @@
         ],
         "crit": "The Spartan is destroyed."
       },
-       {
+      {
         "name": "Cerberus",
         "type": "WE",
         "speed": "20",
@@ -1303,7 +1382,7 @@
         ],
         "crit": "The Typhon is destroyed."
       },
-       {
+      {
         "name": "Kratos - Battle Cannon",
         "type": "WE",
         "speed": "20",
@@ -1399,7 +1478,7 @@
         ],
         "crit": "The Falchion is destroyed. All units within 5cm suffer a hit on a 5+."
       },
-            {
+      {
         "name": "Falchion Super-Heavy Tank - Neutron-Wave",
         "type": "WE",
         "speed": "15",
@@ -1461,6 +1540,6 @@
         ],
         "crit": "The Mastodon is Immobilized. Further critical hits cause one additional point of damage."
       }
-         ]
+    ]
   }
 ]

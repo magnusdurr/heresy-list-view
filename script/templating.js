@@ -69,6 +69,10 @@ var eaTemplating = {
             return options.fn(context, {data: data})
         });
 
+        Handlebars.registerHelper('hasSpecialNotes', function (value) {
+            return value !== undefined && (value.specialRules !== undefined || value.notes !== undefined || value.crit !== undefined);
+        });
+
         Handlebars.registerHelper('unit', function (context, options) {
             if (options.data)
             {

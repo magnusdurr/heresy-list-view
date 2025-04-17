@@ -103,7 +103,14 @@ var units = {
                         })
 
                         section.unit.forEach(function (unit) {
-                            unit.weapons = unit.weapons.map(weapon => replaceWeapon(weapon, weapons, unit));
+                            if (unit.weapons !== undefined) {
+                                unit.weapons = unit.weapons.map(weapon => replaceWeapon(weapon, weapons, unit));
+                            }
+                            else if (unit.variants !== undefined) {
+                                unit.variants.forEach(function (variant) {
+                                    variant.weapons = variant.weapons.map(weapon => replaceWeapon(weapon, weapons, unit));
+                                })
+                            }
                         });
 
                         section.specialRules.forEach(function (rule) {

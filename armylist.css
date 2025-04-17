@@ -85,3 +85,17 @@ h6 {
 .special-rules-table {
   margin-bottom: 0px;
 }
+
+.variant-title {
+  font-style: italic;
+  font-weight: 450;
+}
+
+.variant-separator {
+  margin: 0.5rem;
+}
+
+.notes-header {
+  font-weight: bold;
+  color: #585858;
+}
