@@ -1862,7 +1862,7 @@
       ]
     },
     {
-      "name": "Plasma Cannonade",
+      "name": "Hellfire Plasma Cannonade",
       "modes": [
         {
           "firepower": "AP5+/AT4+",
@@ -2295,12 +2295,27 @@
         }
       ]
     },
-    {
+        {
       "name": "Volkite Saker",
       "modes": [
         {
           "firepower": "AP5+/AT3+",
           "range": 30,
+          "specialRules": [
+          "IC",
+           "Disrupt",
+           "Crippling",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Volkite Demi-Culverin",
+      "modes": [
+        {
+          "firepower": "AP5+/AT3+",
+          "range": 45,
           "specialRules": [
           "IC",
            "Disrupt",

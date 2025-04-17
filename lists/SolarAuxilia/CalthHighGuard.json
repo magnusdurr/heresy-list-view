@@ -3,7 +3,7 @@
   "army": "Calth High Guard (CCLVth Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-    "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 14 formation points (F/p), 12 upgrade points (U/p), 2 Titan points (T/p), and 6 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+    "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 12 upgrade points (U/p), 3 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes allied Detachments and Collegia Titanica allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The Tarantula Battery have an Initiative Rating of 2+, and is subject to the 'Machine Spirit' special rule.",
@@ -24,28 +24,14 @@
         "Veletarii",
         "Charonite Ogryns",
         "Aethon Heavy Sentinel",
-        "Auxilia Rapier - Quad Launcher",
-        "Auxilia Rapier - Laser Destroyer",
-        "Auxilia Rapier - Mole Mortar",
+        "Auxilia Rapier|Quad Launcher|Laser Destroyer|Mole Mortar",
         "Basilisk",
         "Medusa",
         "Termite Assault Drill",
-        "Leman Russ",
-        "Leman Russ Demolisher",
-        "Leman Russ Vanquisher",
-        "Leman Russ Executioner",
-        "Leman Russ Annihilator",
-        "Leman Russ Exterminator",
-        "Malcador - Battle Cannon",
-        "Malcador - Vanquisher",
-        "Malcador - Lascannon",
-        "Malcador Infernus",
-        "Malcador Valdor",
-        "Baneblade Super-Heavy Tank",
-        "Hellhammer Super-Heavy Tank",
-        "Stormsword Super-Heavy Tank",
-        "Stormblade Super-Heavy Tank",
-        "Shadowsword Super-Heavy Tank"
+        "Leman Russ|Battle Tank|Demolisher|Vanquisher|Executioner|Annihilator|Exterminator|Incinerator",
+        "Malcador|Assault Tank|Annihilator|Vanquisher",
+        "Heavy Malcador|Infernus|Valdor",
+        "Auxilia Super-Heavy Tank|Baneblade|Hellhammer|Stormsword|Stormblade|Shadowsword"
       ],
       "unitRules": [
       "Energetic",
@@ -155,7 +141,7 @@
           "extraUnits": [
             "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
             "Add two Cyclops of any single configuration: 1 U/p",
-            "Add one Malcador of any configuration: 2 U/p"
+            "Add up to two Malcadors of any single configuration: 2 U/p each"
           ],
           "points": "1 F/p"
         },
@@ -165,7 +151,7 @@
           "extraUnits": [
            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
             "Add two Cyclops of any single configuration: 1 U/p",
-            "Add one Malcador of any configuration: 2 U/p"
+            "Add one Malcadors of any configuration: 2 U/p"
           ],
           "points": "1 F/p"
         },
@@ -247,7 +233,7 @@
         },
         {
           "name": "Heavy Malcador Squadron",
-          "units": "Two Malcador Infernus, or two Malcador Valdor Tank Destroyers",
+          "units": "Two Heavy Malcador Infernus, or two Heavy Malcador Valdor",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 U/p"

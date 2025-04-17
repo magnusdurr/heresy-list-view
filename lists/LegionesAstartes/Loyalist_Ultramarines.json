@@ -3,7 +3,7 @@
   "army": "Ultramarines (XIII) Legion",
   "version": "1.0.Alpha",
   "release": "2025-00-00",
-  "intro": "Ultramarines Legion armies gain 12 formation points (F/p), 12 upgrade points (U/p), 4 Titan points (T/p), and 6 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "intro": "Ultramarines Legion armies gain 12 formation points (F/p), 12 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
   "Initiative": "All Legiones Astartes Detachments and Collegia Titanica allied Banners have an initiative of 1+. Legiones Cybernetica Batteries have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Solar Auxilia allied Tercios have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
@@ -42,7 +42,7 @@
         "Sicarian|Accelerator|Omega|Punisher|Arcus",
         "Land Raider",
         "Spartan|Lascannon|Destroyer",
-        "Kratos|Battle Cannon|Melta",
+        "Kratos|Battle Tank|Melta",
         "Fellblade Super-Heavy Tank"
       ],
       "unitRules": [
@@ -117,8 +117,7 @@
         "Veletarii",
         "Charonite Ogryns",
         "Aethon Heavy Sentinel",
-        "Leman Russ",
-        "Leman Russ Vanquisher"
+        "Leman Russ|Battle Tank|Vanquisher"
       ],
       "unitRules": [
         "Army of Mankind"
@@ -145,57 +144,72 @@
   "sections": [
     {
       "name": "Ultramarines Core Detachments",
-      "description": "Must have at least one Tactical or Mechanized Tactical Detachment",
+      "description": "",
       "formations": [
         {
           "name": "Tactical Detachment",
-          "units": "One Lieutenant character, four Tactical Legionaries",
+          "units": "One Lieutenant character, four Legion Tactical Squads",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 0 U/p)",
-            "Add up to two Tactical Legionaries, Legion Support Squad, and/or Legion Heavy Support Squad: 1 U/p each",
-            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminator Squad (3 U/p)"
+            "Replace two Tactical Legionaries with two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
+            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminator Squads (3 U/p)"
           ],
           "points": "1 F/p"
         },
         {
           "name": "Mechanized Tactical Detachment",
-          "units": "One Lieutenant character, four Tactical Legionaries, two Rhinos",
+          "units": "One Lieutenant character, four Legion Tactical Squads, two Rhinos",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 0 U/p)",
-            "Add up to two Legion Assault Squad: 1 U/p each",
-            "Replace two Rhinos in the formation with four Support Rhino - Melta, four Support Rhino - Missile Launcher, or two of each: 2 U/p",
+            "Replace two Rhinos in the formation with two Support Rhino of any single configuration: 1 U/p",
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
           ],
           "points": "1 F/p"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Ultramarines Special Detachments",
+      "description": "May have one Special Detachment for each Core Detachment",
+      "formations": [
         {
-          "name": "Support Detachment",
-          "units": "Two Legion Support Squad, one Rhino",
+          "name": "Rapier Detachment",
+          "units": "Four Legion Rapiers of any configuration",
           "extraUnits": [
-            "Replace Rhino with two Support Rhinos of any single configuration (1 U/p), one Contemptor Dreadnought (1 U/p), one Land Raider (2 U/p), or two Legion Support Squad (2 U/p)"
-          ],
-          "points": "1 F/p, -2 U/p"
-        },
-        {
-          "name": "Heavy Support Detachment",
-          "units": "Two Legion Heavy Support Squad - Missile Launcher, one Rhino",
-          "extraUnits": [
-            "Replace Rhino with two Support Rhinos of any single configuration (1 U/p), one Contemptor Dreadnought (1 U/p), one Land Raider (2 U/p), or two Legion Heavy Support Squad (3 U/p)"
+          "Add up to two Contemptor Dreadnoughts of any configurations: 1 U/p each"
           ],
           "points": "1 F/p, -1 U/p"
         },
         {
-          "name": "Contemptor Detachment",
-          "units": "Four Contemptor Dreadnoughts of any configuration",
+          "name": "Cybernetica Tarantula Battery",
+          "units": "Four Tarantulas of any configuration",
           "extraUnits": [
-            "Add up to two Contemptor Dreadnoughts of any configuration: 1 U/p each"
+          ],
+          "points": "1 F/p, -2 U/p"
+        },
+        {
+          "name": "Mechanized Support Detachment",
+          "units": "Four Legion Support Squads, two Rhinos",
+          "extraUnits": [
+            "Replace two Legion Support Squads with two Legion Heavy Support Squads (1 U/p), or replace four Legion Support Squads with four Legion Heavy Support Squads (2 U/p)",
+            "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
+            "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
+            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
+          ],
+          "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "Land Raider Detachment",
+          "units": "Two Land Raiders",
+          "extraUnits": [
+            "Add one Land Raider: 2 U/p"
           ],
           "points": "1 F/p"
         },
         {
           "name": "Predator Detachment",
-          "units": "Three Predator Annihilator, and/or Predator Destructor",
+          "units": "Three Predators of any configurations",
           "extraUnits": [
             "Add one Predator of any configuration: 1 U/p"
           ],
@@ -203,62 +217,25 @@
         },
         {
           "name": "Sicarian Detachment",
-          "units": "Two Sicarian - Autocannon, Sicarian - Plasma, Sicarian Punisher, and/or Sicarian Arcus",
+          "units": "Two Sicarians of any configurations",
           "extraUnits": [
             "Add up to one Sicarian of any configuration: 1 U/p"
           ],
           "points": "1 F/p, -1 U/p"
-        }
-      ]
-    },
-    {
-      "name": "Ultramarines Special Detachments",
-      "description": "May only have one Special Detachment for each two Core Detachments",
-      "formations": [
-        {
-          "name": "Rapier Detachment",
-          "units": "Four Legion Rapiers of any configuration",
-          "extraUnits": [
-          ],
-          "points": "1 F/p, -1 U/p"
-        },
-        {
-          "name": "Cybernetica Tarantula Battery",
-          "units": "Four Tarantula of any configuration",
-          "extraUnits": [
-          ],
-          "points": "1 F/p, -2 U/p"
-        },
-        {
-          "name": "Land Raider Detachment",
-          "units": "Two Land Raider",
-          "extraUnits": [
-            "Add up to two Land Raider: 2 U/p each"
-          ],
-          "points": "1 F/p"
         },
         {
           "name": "Assault Detachment",
-          "units": "One Lieutenant character, four Legion Assault Squad",
+          "units": "One Lieutenant character, four Legion Assault Squads",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p)",
-            "Add up to two Land Speeders of any configuration, or Attack Speeders, or Legion Assault Squad: 1 U/p each"
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p)"
           ],
           "points": "1 F/p"
         },
         {
           "name": "Land Speeder Detachment",
-          "units": "Three Land Speeders of any configuration",
+          "units": "Three Land Speeders or Attack Speeders of any configuration",
           "extraUnits": [
-            "Add one Land Speeder of any configuration: 1 U/p"
-          ],
-          "points": "1 F/p"
-        },
-        {
-          "name": "Attack Speeder Detachment",
-          "units": "Three Attack Speeder",
-          "extraUnits": [
-            "Add one Attack Speeder: 1 U/p"
+            "Add one Land Speeder or Attack Speeder of any configuration: 1 U/p"
           ],
           "points": "1 F/p"
         },
@@ -266,7 +243,6 @@
           "name": "Scimitar Detachment",
           "units": "One Lieutenant character, three Scimitar Jetbikes",
           "extraUnits": [
-            "Add up to two Land Speeders or Attack Speeders of any configuration: 1 U/p each"
           ],
           "points": "1 F/p"
         },
@@ -274,7 +250,6 @@
           "name": "Outrider Detachment",
           "units": "One Lieutenant character, four Legion Outriders",
           "extraUnits": [
-            "Add up to two Legion Outriders: 1 U/p each"
           ],
           "points": "1 F/p"
         }
@@ -286,10 +261,10 @@
       "formations": [
         {
           "name": "Terminator Detachment",
-          "units": "One Lieutenant character, three Cataphractii Terminator Squad",
+          "units": "One Lieutenant character, three Cataphractii Terminator Squads",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
-            "Add one Cataphractii Terminator, or replace three Cataphractii Terminator Squad with Fulmentarus Terminator Squad: 2 U/p"
+            "Add one Cataphractii Terminator Squad, or replace three Cataphractii Terminator Squads with a Fulmentarus Terminator Squad: 2 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },
@@ -297,16 +272,16 @@
           "name": "Nemesis Destroyer Squad",
           "units": "One Lieutenant character, four Nemesis Destroyer Squads",
           "extraUnits": [
-            "Add two Rhinos to the formation: Free",
-            "Replace two Rhinos in the formation with four Support Rhino - Melta, four Support Rhino - Missile Launcher, or two of each: 2 U/p",
-            "Replace two Rhinos in the formation with two Land Raider: 3 U/p",
+            "Add two Rhinos (Free), or two Contemptor Dreadnoughts of any single configurations (2 U/p)",
+            "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
+            "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },
         {
           "name": "Leviathan Detachment",
-          "units": "Three Leviathan Dreadnought of any configuration",
+          "units": "Three Leviathan Dreadnoughts of any configuration",
           "extraUnits": [
             "Add one Leviathan Dreadnoughts of any configuration: 1 U/p"
           ],
@@ -314,30 +289,22 @@
         },
         {
           "name": "Deredeo Detachment",
-          "units": "Three Deredeo Dreadnought of any configuration",
+          "units": "Three Deredeo Dreadnoughts of any configuration",
           "extraUnits": [
             "Add one Deredeo Dreadnought of any configuration: 1 U/p"
           ],
           "points": "1 F/p"
         },
         {
-          "name": "Sabre Detachment",
-          "units": "Three Sabre - Autocannon, and/or Sabre - Neutron Blaster",
-          "extraUnits": [
-            "Add up to three Sabres of any configuration: 1 U/p each"
-          ],
-          "points": "1 F/p"
-        },
-        {
           "name": "Spartan Detachment",
-          "units": "Two Spartan - Lascannon and/or Spartan - Laser Destroyer",
+          "units": "Two Spartans of any configuration",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 U/p"
         },
         {
           "name": "Kratos Detachment",
-          "units": "Two Kratos - Battle Cannon and/or Kratos - Melta",
+          "units": "Two Kratos of any configuration",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 U/p"
@@ -460,7 +427,7 @@
       ]
     },
     {
-      "name": "Solar Auxilia Allied Tercios",
+      "name": "Solar Auxilia Allied Sections",
       "description": "The first formation selected must be an Auxilia Lasrifle Tercio",
       "formations": [
         {
@@ -472,7 +439,7 @@
           "points": "1 F/p, 1 A/p"
         },
         {
-          "name": "Auxilia Ogryn Tercio",
+          "name": "Ogryn Charonite Section",
           "units": "Three Charonite Ogryns",
           "extraUnits": [
             "Add two Auxilia Lasrifle Squads, or two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
@@ -480,7 +447,7 @@
           "points": "1 F/p, -2 U/p, 1 A/p"
         },
         {
-          "name": "Veletarii Tercio",
+          "name": "Veletaris Storm Section",
           "units": "Four Veletarii",
           "extraUnits": [
             "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"

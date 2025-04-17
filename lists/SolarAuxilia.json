@@ -137,69 +137,63 @@
           "Evasive"
         ]
       },
-      {
-        "name": "Auxilia Rapier - Quad Launcher",
+            {
+        "name": "Auxilia Rapier",
         "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "ff": 6,
-        "weapons": [
-          "Quad Launcher"
+        "variants": [
+          {
+            "name": "Laser Destroyer",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "ff": 6,
+            "weapons": [
+              "Laser Destroyer"
+            ]
+          },
+          {
+            "name": "Quad Launcher",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+             "ff": 6,
+            "weapons": [
+              "Quad Launcher"
+            ]
+          },
+          {
+            "name": "Mole Mortar",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "ff": 6,
+            "weapons": [
+              "Mole Mortar"
+            ]
+          },
+          {
+            "name": "Multi-Laser",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "ff": 5,
+            "weapons": [
+              "Quad Multi-Laser"
+            ]
+          },
+          {
+            "name": "Heavy Bolter",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "ff": 3,
+            "weapons": [
+              "Quad Heavy Bolter"
+            ]
+          }
         ],
         "specialRules": [
-        "Walker"
-        ]
-      },
-      {
-        "name": "Auxilia Rapier - Laser Destroyer",
-        "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "ff": 6,
-        "weapons": [
-          "Laser Destroyer"
-        ],
-        "specialRules": [
-        "Walker"
-        ]
-      },
-      {
-        "name": "Auxilia Rapier - Mole Mortar",
-        "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "ff": 6,
-        "weapons": [
-          "Mole Mortar"
-        ],
-        "specialRules": [
-        "Walker"
-        ]
-      },
-      {
-        "name": "Auxilia Rapier - Heavy Bolter",
-        "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "ff": 3,
-        "weapons": [
-          "Quad Heavy Bolter"
-        ],
-        "specialRules": [
-        "Walker"
-        ]
-      },
-      {
-        "name": "Auxilia Rapier - Multi-Laser",
-        "type": "LV",
-        "speed": 10,
-        "armour": 5,
-        "ff": 5,
-        "weapons": [
-          "Quad Multi-Laser"
-        ],
-        "specialRules": [
-        "Walker"
+          "Walker"
         ]
       },
       {
@@ -325,6 +319,10 @@
       {
         "name": "Leman Russ",
         "type": "AV",
+        "variants": [
+          {
+            "name": "Battle Tank",
+        "type": "AV",
         "speed": 20,
         "armour": 4,
         "cc": 6,
@@ -332,13 +330,10 @@
         "weapons": [
           "Battle Cannon",
           "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
         ]
-      },
-      {
-        "name": "Leman Russ Annihilator",
+          },
+          {
+            "name": "Annihilator",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -347,13 +342,10 @@
         "weapons": [
           "Twin Lascannon",
           "Lascannon"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
         ]
-      },
-      {
-        "name": "Leman Russ Exterminator",
+          },
+          {
+            "name": "Exterminator",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -362,13 +354,10 @@
         "weapons": [
           "Twin Autocannon",
           "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
         ]
-      },
-      {
-        "name": "Leman Russ Executioner",
+          },
+          {
+            "name": "Executioner",
         "type": "AV",
         "speed": 20,
         "armour": 4,
@@ -377,13 +366,10 @@
         "weapons": [
           "Plasma Destroyer",
           "Lascannon"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
         ]
-      },
-      {
-        "name": "Leman Russ Demolisher",
+          },
+          {
+            "name": "Demolisher",
         "type": "AV",
         "speed": 20,
         "armour": 4,
@@ -391,29 +377,23 @@
         "ff": 4,
         "weapons": [
           "Demolisher Cannon",
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
+          "Heavy Flamer "
         ]
-      },
-      {
-        "name": "Leman Russ Volkite",
+          },
+        {
+        "name": "Incinerator",
         "type": "AV",
-        "speed": 15,
+        "speed": 20,
         "armour": 4,
         "cc": 6,
-        "ff": 6,
+        "ff": 3,
         "weapons": [
-          "Laser Destroyer"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker"
+          "Volkite Demi-Culverin",
+          "Heavy Bolter"
         ]
       },
-      {
-        "name": "Leman Russ Vanquisher",
+       {
+       "name": "Vanquisher",
         "type": "AV",
         "speed": 20,
         "armour": 4,
@@ -422,14 +402,19 @@
         "weapons": [
           "Vanquisher Cannon",
           "Lascannon"
+            ]
+          }
         ],
         "specialRules": [
           "Reinforced Armour"
         ]
       },
-
-       {
-        "name": "Malcador - Battle Cannon",
+      {
+        "name": "Malcador",
+        "type": "WE",
+        "variants": [
+          {
+        "name": "Assault Tank",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -439,15 +424,10 @@
           "Battle Cannon||FwA",
           "Demolisher Cannon||FwA",
           "Heavy Bolter|2|FwA"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour",
-          "Thick Rear Armour"
         ]
-      },
-      {
-        "name": "Malcador - Vanquisher",
+          },
+          {
+        "name": "Vanquisher",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -456,50 +436,37 @@
         "weapons": [
           "Vanquisher Cannon||FwA",
           "Autocannon|3|FwA"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Walker"
         ]
-      },
-      {
-        "name": "Malcador - Lascannon",
+          },
+          {
+        "name": "Annihilator",
         "type": "WE",
-        "speed": 20,
+        "speed": 15,
         "armour": 4,
         "cc": 6,
         "ff": 4,
         "weapons": [
           "Twin Lascannon",
           "Lascannon|3|FwA"
+        ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 2",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker"
-        ]
-      },
-       {
-        "name": "Malcador Infernus",
-        "type": "WE",
-        "speed": 15,
-        "armour": 5,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Inferno Gun||FxF",
-          "Autocannon|2|FxF"
         ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour"
-        ]
+        "crit": "The Malcador is destroyed."
       },
-       {
-        "name": "Malcador Valdor",
+
+
+           {
+        "name": "Heavy Malcador",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Valdor",
         "type": "WE",
         "speed": 15,
         "armour": 5,
@@ -508,14 +475,33 @@
         "weapons": [
           "Neutron Beam Laser||FxF",
           "Lascannon|2|FxF"
+        ]
+          },
+          {
+        "name": "Infernus",
+        "type": "WE",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Inferno Gun||FxF",
+          "Autocannon|2|FxF"
+        ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 2",
           "Reinforced Armour"
-        ]
+        ],
+        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
       },
       {
-        "name": "Dracosan - Lascannon",
+        "name": "Dracosan",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Lascannon",
         "type": "WE",
         "speed": 20,
         "armour": 4,
@@ -523,16 +509,10 @@
         "ff": 5,
         "weapons": [
           "Twin Lascannon||FwA"
-        ],
-        "specialRules": [
-        "Damage Capacity 2",
-          "Reinforced Armour",
-          "Walker",
-          "Heavy Transport 4"
         ]
-      },
-       {
-        "name": "Dracosan - Demolisher",
+          },
+          {
+            "name": "Demolisher",
         "type": "WE",
         "speed": 20,
         "armour": 4,
@@ -540,16 +520,24 @@
         "ff": 5,
         "weapons": [
           "Demolisher Cannon||FwA"
+        ]
+          }
         ],
         "specialRules": [
-        "Damage Capacity 2",
+          "Damage Capacity 2",
           "Reinforced Armour",
-          "Walker",
-          "Heavy Transport 2"
-        ]
+          "Walker"
+        ],
+        "notes":  "Lascannon Variant: Heavy Transport 4 - Demolisher Variant: Heavy Transport 2",
+        "crit": "The Dracosan is destroyed."
       },
-      {
-        "name": "Baneblade Super-Heavy Tank",
+
+           {
+        "name": "Auxilia Super-Heavy Tank",
+        "type": "WE",
+        "variants": [
+          {
+        "name": "Baneblade",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -561,15 +549,10 @@
           "Demolisher Cannon||FxF",
           "Lascannon|2|FxF",
           "Heavy Bolter|3|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed."
-      },
-      {
-        "name": "Hellhammer Super-Heavy Tank",
+        ]
+          },
+          {
+        "name": "Hellhammer",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -582,15 +565,10 @@
           "Lascannon|2|FxF",
           "Heavy Bolter",
           "Heavy Flamer|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Shadowsword Super-Heavy Tank",
+        ]
+          },
+          {
+        "name": "Shadowsword",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -600,15 +578,10 @@
           "Vulcano Cannon||FxF",
           "Heavy Bolter|3|FxF",
           "Lascannon|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Stormblade Super-Heavy Tank",
+        ]
+          },
+          {
+        "name": "Stormblade",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -618,15 +591,10 @@
           "Heavy Plasma Blastgun||FxF",
           "Heavy Bolter|3|FxF",
           "Lascannon|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Stormsword Super-Heavy Tank",
+        ]
+          },
+          {
+        "name": "Stormsword",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -636,15 +604,10 @@
           "Siege Cannon||FxF",
           "Heavy Bolter|3|FxF",
           "Lascannon|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
-      },
-      {
-        "name": "Stormhammer Super-Heavy Tank",
+        ]
+          },
+          {
+        "name": "Stormhammer",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -655,9 +618,11 @@
           "Twin Battle Cannon||FxF",
           "Multi-Laser|3|FxF",
           "Lascannon|3|FxF"
+        ]
+          }
         ],
         "specialRules": [
-          "Damage Capacity 3",
+          "Damage Capacity 2",
           "Reinforced Armour"
         ],
         "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
