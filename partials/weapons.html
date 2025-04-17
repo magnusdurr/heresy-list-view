@@ -1,3 +1,4 @@
+{{#if weapons}}
 <table class="table-sm stats-table">
     <tbody>
     <tr>
@@ -18,3 +19,31 @@
     {{/each}}
     </tbody>
 </table>
+{{/if}}
+{{#unless weapons}}
+{{#each weaponMounts}}
+<p class="weapon-mount">{{mount}} ({{notes}})</p>
+{{#each types}}
+<table class="table-sm stats-table weapon-mount-type-table">
+    <tbody>
+    <tr>
+        <td>{{name}}</td>
+        <td>Range</td>
+        <td>Firepower</td>
+    </tr>
+    {{#each weapons}}
+    {{#each modes}}
+    <tr>
+        <td scope="row">{{#if join}}<i>{{join}}</i>{{else}}{{#if ../count}}{{../count}}x {{/if}}{{../name}}{{/if}}</td>
+        <td>{{appendOnNumber range 'cm'}}</td>
+        <td>
+            {{firepower}}{{#each specialRules}}, <i><small>{{name}}</small></i>{{/each}}
+        </td>
+    </tr>
+    {{/each}}
+    {{/each}}
+    </tbody>
+</table>
+{{/each}}
+{{/each}}
+{{/unless}}

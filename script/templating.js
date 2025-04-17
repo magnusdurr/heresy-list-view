@@ -49,19 +49,15 @@ var eaTemplating = {
         });
 
         Handlebars.registerHelper('appendOnNumber', function (value, suffix) {
-            if (isNaN(value))
-            {
+            if (isNaN(value)) {
                 return value;
-            }
-            else
-            {
+            } else {
                 return value + suffix;
             }
         });
 
         Handlebars.registerHelper('upgrade', function (context, options) {
-            if (options.data)
-            {
+            if (options.data) {
                 var data = Handlebars.createFrame(options.data);
                 data.options = context.options !== undefined ? context.options.length : 0;
             }
@@ -74,13 +70,11 @@ var eaTemplating = {
         });
 
         Handlebars.registerHelper('unit', function (context, options) {
-            if (options.data)
-            {
+            if (options.data) {
                 var data = Handlebars.createFrame(options.data);
 
                 var count = 0;
-                for (weapon in context.weapons)
-                {
+                for (weapon in context.weapons) {
                     count += context.weapons[weapon].modes.length;
                 }
 

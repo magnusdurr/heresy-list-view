@@ -8,8 +8,8 @@
     <tr>
         <th scope="col" class="unit-table-header">
             <div class="row">
-                <div class="col-12 col-md-5">Units</div>
-                <div class="d-none d-md-inline col-md-7">Weapons</div>
+                <div class="col-12 col-lg-4">Units</div>
+                <div class="d-none d-md-inline col-lg-8">Weapons</div>
             </div>
         </th>
     </tr>
@@ -28,7 +28,7 @@
                 <div class="col-12">
                     <span class="variant-title">Variant: {{name}}</span>
                 </div>
-                <div class="col-md-5">
+                <div class="col-lg-4">
                     <table class="table-sm stats-table">
                         <tbody>
                         <tr>
@@ -48,7 +48,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-12 col-md-7">{{> weapons}}</div>
+                <div class="col-12 col-lg-8">{{> weapons}}</div>
                 {{#unless @last}}
                 <div class="col-12"><hr class="variant-separator"/></div>
                 {{/unless}}
@@ -58,7 +58,7 @@
                 <div class="col-12">
                     <small>{{description}}</small>
                 </div>
-                <div class="col-md-5">
+                <div class="col-lg-4">
                     <table class="table-sm stats-table">
                         <tbody>
                         <tr>
@@ -79,11 +79,11 @@
                     </table>
 
                 </div>
-                <div class="col-12 col-md-7">{{> weapons}}</div>
+                <div class="col-12 col-lg-8">{{> weapons}}</div>
                 {{/unless}}
             </div>
             {{#if @hasNotes}}
-            <div class="row">
+            <div class="row notes-row">
                 <div class="col">
                     <small>
                         <span class="notes-header">Notes:</span>

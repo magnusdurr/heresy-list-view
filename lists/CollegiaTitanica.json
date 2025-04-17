@@ -232,28 +232,57 @@
         "armour": 4,
         "cc": 4,
         "ff": 4,
-        "weapons": [
-          "CARAPACE (choose one)",
-          "BATTLE WEAPONS",
-          "Turbo-Laser Destructor|0-1|FxF",
-          "Vulcan Mega-Bolter|0-1|FxF",
-          "Apocalypse Missile Launcher|0-1|FxF",
-          "SUPPORT WEAPONS",
-          "Titan Warp Missile|0-1|FxF",
-          "Volkite Eradicator|0-1|FxF",
-          "Conversion Beam Dissolutor|0-1|FxF",
-          "Graviton Eradicator|0-1|FxF",
-
-          "ARMS (choose two)",
-          "BATTLE WEAPONS",
-          "Turbo-Laser Blaster|0-2|FwA",
-          "Gatling Blaster|0-2|FwA",
-          "Titan Power Fist|0-1|",
-          "Titan Chainfist|0-1|",
-          "SUPPORT WEAPONS",
-          "Titan Melta Cannon|0-1|FwA",
-          "HEAVY SUPPORT WEAPONS",
-          "Vulcano Cannon|0-1|FwA"
+        "weaponMounts": [
+          {
+            "mount": "CARAPACE",
+            "notes": "choose one",
+            "types": [
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                  "Turbo-Laser Destructor|0-1|FxF",
+                  "Vulcan Mega-Bolter|0-1|FxF",
+                  "Apocalypse Missile Launcher|0-1|FxF"
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                  "Titan Warp Missile|0-1|FxF",
+                  "Volkite Eradicator|0-1|FxF",
+                  "Conversion Beam Dissolutor|0-1|FxF",
+                  "Graviton Eradicator|0-1|FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "choose two",
+            "types": [
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                  "Turbo-Laser Blaster|0-2|FwA",
+                  "Gatling Blaster|0-2|FwA",
+                  "Titan Power Fist|0-1|",
+                  "Titan Chainfist|0-1|"
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                  "Titan Melta Cannon|0-1|FwA"
+                ]
+              },
+              {
+                "name": "HEAVY SUPPORT WEAPONS",
+                "weapons": [
+                  "Vulcano Cannon|0-1|FwA"
+                ]
+              }
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 6",
@@ -268,7 +297,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
-       "crit": "The unit takes a point of damage."
+        "crit": "The unit takes a point of damage."
       },
  
       {

@@ -130,6 +130,18 @@ var units = {
                             unit.variants.forEach(function (variant) {
                                 variant.weapons = variant.weapons.map(weapon => replaceWeapon(weapon, weapons, unit));
                             })
+                        } else if (unit.weaponMounts !== undefined) {
+                            console.log("replacing weapon mounts");
+                            unit.weaponMounts.forEach(function (mount) {
+                                console.log("replacing mount", mount);
+                                mount.types.forEach(function (type) {
+                                    console.log("replacing type", type);
+                                    type.weapons = type.weapons.map(weapon => replaceWeapon(weapon, weapons, unit));
+                                    console.log("weapons", type.weapons);
+                                })
+                            });
+
+                            console.log("Unit after replacing weapon mounts", unit);
                         }
                     });
 
