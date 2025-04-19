@@ -93,8 +93,7 @@
         "Warhound Scout Titan",
         "Dire Wolf Heavy Scout Titan",
         "Reaver Battle Titan",
-        "Warlord Battle Titan",
-        "Warmaster Heavy Battle Titan"
+        "Warlord Battle Titan"
       ],
       "unitRules": [
         "Void Shields",
@@ -190,8 +189,9 @@
         },
         {
           "name": "Mechanized Support Detachment",
-          "units": "Four Legion Support Squads, two Rhinos",
+          "units": "One Lieutenant, four Legion Support Squads, two Rhinos",
           "extraUnits": [
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p)",
             "Replace two Legion Support Squads with two Legion Heavy Support Squads (1 U/p), or replace four Legion Support Squads with four Legion Heavy Support Squads (2 U/p)",
             "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
