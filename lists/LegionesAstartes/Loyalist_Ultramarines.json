@@ -6,7 +6,7 @@
   "intro": "Ultramarines Legion armies gain 12 formation points (F/p), 12 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
-  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica allied Banners have an initiative of 1+. Legiones Cybernetica Batteries have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Solar Auxilia allied Tercios have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
+  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legiones Cybernetica Maniples have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
   "armyRules": "The <i>Dauntless</i> special rule applies to all Ultramarines Legion Detachments and Collegia Titanica Banners.",
   "specialRules": [
     "Drop Pods",
@@ -182,7 +182,7 @@
           "points": "1 F/p, -1 U/p"
         },
         {
-          "name": "Cybernetica Tarantula Battery",
+          "name": "Tarantula Maniple",
           "units": "Four Tarantulas of any configuration",
           "extraUnits": [
           ],

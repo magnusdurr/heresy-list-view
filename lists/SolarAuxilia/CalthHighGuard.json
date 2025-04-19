@@ -6,7 +6,7 @@
     "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 12 upgrade points (U/p), 3 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
-  "Initiative": "Legiones Astartes allied Detachments and Collegia Titanica allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The Tarantula Battery have an Initiative Rating of 2+, and is subject to the 'Machine Spirit' special rule.",
+  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legiones Cybernetica Maniples have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
   "specialRules": [
   "Army of Mankind",
   "Tunnelers"
@@ -195,7 +195,7 @@
           "points": "1 F/p"
         },
         {
-          "name": "Cybernetica Tarantula Battery",
+          "name": "Tarantula Maniple",
           "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
           "extraUnits": [
              ],

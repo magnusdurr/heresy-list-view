@@ -410,6 +410,7 @@
         "variants": [
           {
             "name": "Plasma",
+            "type": "INF",
             "speed": 35,
             "armour": 4,
             "cc": 3,
@@ -1177,49 +1178,51 @@
         ]
       },
       {
-        "name": "Sabre",
-        "type": "LV",
+        "name": "Sabre Strike Tank",
+        "type": "AV",
         "variants": [
           {
-            "name": "Autocannon",
-            "type": "LV",
-            "speed": 25,
-            "armour": 3,
+            "name": "Anvilus",
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
             "cc": 6,
-            "ff": 3,
+            "ff": 2,
             "weapons": [
-              "Sabre Autocannon",
-              "Heavy Bolter"
+              "Anvilus Snub Autocannon",
+              "Heavy Bolter",
+              "Sabre Missiles"
             ]
           },
           {
             "name": "Neutron Blaster",
-            "type": "LV",
-            "speed": 25,
-            "armour": 3,
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
             "cc": 6,
             "ff": 5,
             "weapons": [
               "Neutron Blaster",
-              "Multi-Melta"
+              "Multi-Melta",
+              "Sabre Missiles"
             ]
           },
           {
             "name": "Volkite",
-            "type": "LV",
-            "speed": 25,
-            "armour": 3,
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
             "cc": 6,
             "ff": 5,
             "weapons": [
               "Volkite Saker",
-              "Volkite Culvertin"
+              "Volkite Culvertin",
+              "Sabre Missiles"
             ]
           }
         ],
         "specialRules": [
           "Blitz",
-          "Evasive",
           "Vanguard"
         ]
       },

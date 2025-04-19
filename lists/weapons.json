@@ -600,10 +600,10 @@
       ]
     },
             {
-      "name": "Sabre Autocannon",
+      "name": "Anvilus Snub Autocannon",
       "modes": [
         {
-          "firepower": "2x AP5+/AT6+",
+          "firepower": "2x AP4+/AT6+",
           "range": 30
         }
       ]
@@ -929,7 +929,6 @@
           "range": 15,
           "specialRules": [
             "IC",
-            "Disrupt",
             "Siege"
           ]
         }
@@ -1481,10 +1480,9 @@
       "name": "Sabre Missiles",
       "modes": [
         {
-          "firepower": "AT5+",
-          "range": 30,
+          "firepower": "AP6+/AT6+",
+          "range": 45,
           "specialRules": [
-          "SS"
           ]
         }
       ]
@@ -1973,8 +1971,8 @@
       "name": "Neutron Blaster",
       "modes": [
         {
-          "firepower": "2x AP6+/AT4+",
-          "range": 30,
+          "firepower": "AP6+/AT4+",
+          "range": 45,
           "specialRules": [
             "Shield Disruptor",
             "Disrupt",
