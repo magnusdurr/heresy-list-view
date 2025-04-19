@@ -1279,7 +1279,7 @@
       "name": "Hyperios Missile Launcher",
       "modes": [
         {
-          "firepower": "AT6+/AA5+",
+          "firepower": "AT6+/AA6+",
           "range": 45,
           "specialRules": [
           ]
@@ -1971,7 +1971,7 @@
       "name": "Neutron Blaster",
       "modes": [
         {
-          "firepower": "AP6+/AT4+",
+          "firepower": "AP6+/AT5+",
           "range": 45,
           "specialRules": [
             "Shield Disruptor",
@@ -1985,7 +1985,7 @@
       "name": "Neutron Beam Laser",
       "modes": [
         {
-          "firepower": "3x AP6+/AT4+",
+          "firepower": "3x AP6+/AT5+",
           "range": 45,
           "specialRules": [
             "Shield Disruptor",
@@ -1999,7 +1999,7 @@
       "name": "Neutron Laser Battery",
       "modes": [
         {
-          "firepower": "3x AP6+/AT4+",
+          "firepower": "3x AP6+/AT5+",
           "range": 60,
           "specialRules": [
             "Shield Disruptor",
@@ -2014,7 +2014,7 @@
       "name": "Titan Neutron Laser",
       "modes": [
         {
-          "firepower": "4x AP6+/AT4+",
+          "firepower": "4x AP6+/AT5+",
           "range": 60,
           "specialRules": [
             "Shield Disruptor",
@@ -2028,7 +2028,7 @@
       "name": "Neutron-Wave Cannon",
       "modes": [
         {
-          "firepower": "5x AP6+/AT4+",
+          "firepower": "5x AP6+/AT5+",
           "range": 75,
           "specialRules": [
             "Shield Disruptor",
@@ -2179,7 +2179,7 @@
       "modes": [
         {
           "firepower": "2x AP5+/AT4+",
-          "range": 60,
+          "range": 90,
           "specialRules": [
            "Energetic",
            "Beam Projector",
@@ -2194,7 +2194,7 @@
       "modes": [
         {
           "firepower": "3x AP5+/AT4+",
-          "range": 60,
+          "range": 90,
           "specialRules": [
            "Energetic",
            "Beam Projector",
@@ -2209,7 +2209,7 @@
       "modes": [
         {
           "firepower": "4x AP5+/AT4+",
-          "range": 60,
+          "range": 90,
           "specialRules": [
            "Energetic",
            "Beam Projector",

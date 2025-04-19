@@ -17,7 +17,7 @@
         "ff": 5,
         "weapons": [
           "Twin Lascannon"
-        ],
+        ]
           },
           {
             "name": "Hyperios",
@@ -31,7 +31,8 @@
         ],
         "specialRules": [
         "Machine Spirit",
-        "Expendable"
+        "Expendable",
+        "Fearless"
         ]
       },
              {
@@ -61,6 +62,7 @@
         ],
         "specialRules": [
         "Machine Spirit",
+        "Fearless",
         "Blitz"
         ]
       }

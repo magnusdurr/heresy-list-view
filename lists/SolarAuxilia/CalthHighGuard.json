@@ -3,7 +3,7 @@
   "army": "Calth High Guard (CCLVth Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-    "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 12 upgrade points (U/p), 3 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+    "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legiones Cybernetica Maniples have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
@@ -133,7 +133,6 @@
   "sections": [
     {
       "name": "Calth High Guard Core Sections",
-      "description": "Calth High Guard armies must contain one Section Command Tercio, and at least one Auxilia Lasrifle Tercio",
       "formations": [
         {
           "name": "1 Section Command Tercio",
@@ -143,48 +142,23 @@
             "Add two Cyclops of any single configuration: 1 U/p",
             "Add up to two Malcadors of any single configuration: 2 U/p each"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, 1 U/p"
         },
                {
-          "name": "1+ Auxilia Lasrifle Tercio",
+          "name": "Auxilia Lasrifle Tercio",
           "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
             "Add two Cyclops of any single configuration: 1 U/p",
-            "Add one Malcadors of any configuration: 2 U/p"
+            "Add one Malcador of any configuration: 2 U/p"
           ],
           "points": "1 F/p"
-        },
-        {
-          "name": "Veletaris Storm Section",
-          "units": "Four Veletarii",
-          "extraUnits": [
-           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
-          ],
-          "points": "1 F/p, -1 U/p"
-        },
-        {
-          "name": "Ogryn Charonite Section",
-          "units": "Three Charonite Ogryns",
-          "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
-          ],
-          "points": "1 F/p, -1 U/p"
-        },
-        {
-          "name": "Auxilia Rapier Battery",
-          "units": "Four Rapiers of any configuration",
-          "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
-          ],
-          "points": "1 F/p, -1 U/p"
         }
-
       ]
     },
     {
       "name": "Calth High Guard Special Sections",
-      "description": "May only have one Special Section for each two Core Sections",
+      "description": "May only have one Special Section for each Core Section",
       "formations": [
         {
           "name": "Auxilia Heavy Sentinel Patrol",
@@ -195,11 +169,36 @@
           "points": "1 F/p"
         },
         {
+          "name": "Veletaris Storm Section",
+          "units": "Four Veletarii",
+          "extraUnits": [
+          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
+          ],
+          "points": "1 F/p, -1 U/p"
+        },
+        {
+          "name": "Ogryn Charonite Section",
+          "units": "Three Charonite Ogryns",
+          "extraUnits": [
+          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
+          ],
+          "points": "1 F/p, -1 U/p"
+        },
+        {
+          "name": "Auxilia Rapier Battery",
+          "units": "Four Auxilia Rapier Laser Destroyers",
+          "extraUnits": [
+          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers or four Rapier Mole Mortars: 1 U/p",
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+          ],
+          "points": "1 F/p, -2 U/p"
+        },
+        {
           "name": "Tarantula Maniple",
           "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
           "extraUnits": [
              ],
-          "points": "1 F/p, -2 U/p"
+          "points": "1 F/p, -3 U/p"
         },
         {
           "name": "Auxilia Leman Russ Squadron",
@@ -222,7 +221,7 @@
     },
     {
       "name": "Calth High Guard Elite Sections",
-      "description": "May only have one Elite Section for each three Core Sections",
+      "description": "May only have one Elite Section for each two Core Sections",
       "formations": [
          {
           "name": "Auxilia Malcador Squadron",
@@ -240,35 +239,33 @@
         },
         {
           "name": "Super-Heavy Tank Squadron",
-          "units": "One Super-Heavy Tank of any configuration",
+          "units": "One Baneblade Super-Heavy Tank",
           "extraUnits": [
-          "Add one Super-Heavy Tank of any configuration: 3 U/p",
+          "Replace the Baneblade with a Hellhammer, Stormblade, or Stormsword (Free), or a Shadowsword (1 U/p)",
           "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
           "points": "1 F/p"
         },
                 {
           "name": "Auxilia Leman Russ Company",
-          "units": "Eight Leman Russ of any configuration",
+          "units": "One Auxilia Adjutant character, eight Leman Russ of any configuration",
           "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
-          "points": "2 F/p, 2 U/p"
+          "points": "2 F/p, 3 U/p"
         },
         {
           "name": "Auxilia Artillery Company",
-          "units": "Eight Basilisk and/or Medusa",
+          "units": "One Auxilia Adjutant character, eight Basilisk and/or Medusa",
           "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
-          "points": "2 F/p, 2 U/p"
+          "points": "2 F/p, 3 U/p"
         }
       
       ]
     },
         {
       "name": "Imperial Navy Squadrons",
-      "description": "May only have one Navy Squadron for each three Core or Special Sections",
+      "description": "May only have one Navy Squadron for each two Core or Special Sections",
       "formations": [
         {
           "name": "Thunderbolt Squadron",
@@ -276,7 +273,7 @@
          "extraUnits": [
          "Add up to two Thunderbolt Fighters: 1 U/p each"
           ],
-          "points": "1 F/p, -2 U/p"
+          "points": "1 F/p, -3 U/p"
         },
         {
           "name": "Marauder Squadron",
@@ -326,14 +323,6 @@
           "Replace one Battle Weapon with a Support Weapon: 2 U/p"
           ],
           "points": "1 F/p, 1 U/p, 2 T/p, 1 A/p"
-        },
-        {
-          "name": "Dire Wolf",
-          "units": "One Dire Wolf Heavy Scout Titan",
-          "extraUnits": [
-          "Replace one Support Weapon with a Heavy Support Weapon (1 U/p)"
-          ],
-          "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
         },
         {
           "name": "Reaver",

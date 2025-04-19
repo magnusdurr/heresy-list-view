@@ -310,8 +310,9 @@
         "weapons": [
           "Ardex Mega-Bolter|2|FxF",
           "CARAPACE (choose one)",
-          "SUPPORT WEAPONS",
+          "BATTLE WEAPONS",
           "Titan Neutron Laser|0-1|FxF",
+          "SUPPORT WEAPONS",
           "Conversion Beam Dissipator|0-1|FxF",
           "HEAVY SUPPORT WEAPONS",
           "Vulcano Cannon|0-1|FxF"
@@ -337,10 +338,10 @@
         "weapons": [
           "ARMS (choose two)",
           "BATTLE WEAPONS",
-          "Vulcan Mega-Bolter|0-2|FwA",
-          "Inferno Gun|0-2|FwA",
-          "Scout Shudder Missile Launcher|0-2|FwA",
-          "Scout Swarmer Missile Launcher|0-2|FwA",
+          "Vulcan Mega-Bolter|0-1|FwA",
+          "Inferno Gun|0-1|FwA",
+          "Scout Shudder Missile Launcher|0-1|FwA",
+          "Scout Swarmer Missile Launcher|0-1|FwA",
           "SUPPORT WEAPONS",
           "Ursus Claw|0-1",
           "Natrix Shock Lance|0-1",

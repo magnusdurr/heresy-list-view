@@ -3,7 +3,7 @@
   "army": "Ultramarines (XIII) Legion",
   "version": "1.0.Alpha",
   "release": "2025-00-00",
-  "intro": "Ultramarines Legion armies gain 12 formation points (F/p), 12 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "intro": "Ultramarines Legion armies gain 12 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
   "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legiones Cybernetica Maniples have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
@@ -149,7 +149,7 @@
           "name": "Tactical Detachment",
           "units": "One Lieutenant character, four Legion Tactical Squads",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 0 U/p)",
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Replace two Tactical Legionaries with two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
             "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminator Squads (3 U/p)"
           ],
@@ -159,7 +159,7 @@
           "name": "Mechanized Tactical Detachment",
           "units": "One Lieutenant character, four Legion Tactical Squads, two Rhinos",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 0 U/p)",
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Replace two Rhinos in the formation with two Support Rhino of any single configuration: 1 U/p",
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
@@ -174,8 +174,9 @@
       "formations": [
         {
           "name": "Rapier Detachment",
-          "units": "Four Legion Rapiers of any configuration",
+          "units": "Four Legion Rapier Laser Destroyer",
           "extraUnits": [
+          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers: 1 U/p",
           "Add up to two Contemptor Dreadnoughts of any configurations: 1 U/p each"
           ],
           "points": "1 F/p, -1 U/p"
@@ -185,7 +186,7 @@
           "units": "Four Tarantulas of any configuration",
           "extraUnits": [
           ],
-          "points": "1 F/p, -2 U/p"
+          "points": "1 F/p, -3 U/p"
         },
         {
           "name": "Mechanized Support Detachment",
@@ -397,7 +398,7 @@
           "name": "Dire Wolf",
           "units": "One Dire Wolf Heavy Scout Titan",
           "extraUnits": [
-            "Replace one Support Weapon with a Heavy Support Weapon (1 U/p)"
+            "Replace the Battle Weapon with a Support Weapon (1 U/p) or with a Heavy Support Weapon (2 U/p)"
           ],
           "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
         },
