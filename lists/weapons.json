@@ -2708,22 +2708,153 @@
         }
       ]
     },
-      {
+         {
       "name": "Aetheric Lightning",
       "modes": [
         {
-          "firepower": "Assault Weapons",
+          "firepower": "Small Arms",
           "specialRules": [
             "EA(+1)",
+            "Lance"
+
+          ]
+        }
+      ]
+    },
+      {
+      "name": "Psychic Blast",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 15,
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+          {
+      "name": "Piercing the Aether",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+",
+          "range": 15,
+          "specialRules": [
+            "Lance",
             "Shield Piercer"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Psychic Dart",
+      "modes": [
         {
-          "firepower": "Small Arms",
-          "join": "and",
+          "firepower": "AP5+",
+          "range": 15,
           "specialRules": [
-            "EA(+1)",
-            "Shield Piercer"
+            "IC",
+            "Sniper"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Biomantic Hammer",
+      "modes": [
+        {
+          "firepower": "AT5+",
+          "range": 15,
+          "specialRules": [
+            "MW",
+            "TK(1)"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Telepathic Terror",
+      "modes": [
+        {
+          "firepower": "AP2+",
+          "range": 15,
+          "specialRules": [
+            "Rad"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Breach the Veil",
+      "modes": [
+        {
+          "firepower": "4x AP6+/AT6+",
+          "range": 15,
+          "specialRules": [
+          "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Firestorm",
+      "modes": [
+        {
+          "firepower": "AP3+",
+          "range": 15,
+          "specialRules": [
+          "IC",
+          "Siege"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Hellfire",
+      "modes": [
+        {
+          "firepower": "AP4+",
+          "range": 15,
+          "specialRules": [
+          "IC",
+          "Disrupt",
+          "Siege"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Vortex of Chaos",
+      "modes": [
+        {
+          "firepower": "1BP",
+          "range": 15,
+          "specialRules": [
+          "IC"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Storm's Fury",
+      "modes": [
+        {
+          "firepower": "1BP",
+          "range": 15,
+          "specialRules": [
+          "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Winds of Fenris",
+      "modes": [
+        {
+          "firepower": "3BP",
+          "range": 15,
+          "specialRules": [
+          "Rad"
           ]
         }
       ]

@@ -240,7 +240,7 @@
     {
       "title": "Shield Piercer",
       "description": [
-        "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Saves, Ion Shields, Powerfields, Construct Shields and Void Shields."
+        "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Save (but not Regeneration), Ion Shields, Powerfields, Construct Shields and Void Shields."
       ]
     },
     {
@@ -304,12 +304,7 @@
         "Weapons with the 'Æther-Fire' special rule gains an additional +1 to hit when the unit's formation conducts an Advance action."
       ]
     },
-             {
-      "title": "Force",
-      "description": [
-        "A weapon with the 'Force' special rule counts as having the 'Sniper' special rule against units with the 'Daemonic' or 'Psyker' special rules. Weapons with 'Force' may only be used if the unit is unbroken."
-      ]
-    },
+
     {
       "title": "Lightning Charge",
       "description": [
@@ -346,79 +341,19 @@
         "Weapons with the <i>Psybolts</i> special rule ignores Invulnerable Save and Regenerate."
       ]
     },
-        {
-      "title": "Psyker - Prosperine Arcana",
+    {
+      "title": "Force",
       "description": [
-        "If there is at least one unit with the 'Psyker - Prosperine Arcana' special rule in a formation, and it is unbroken, one unit in the formation gains the 'Invulnerable Save' special rule if it fails an armour save during an assault.."
+        "A weapon with the 'Force' special rule counts as having the 'Sniper' special rule against units with the 'Daemonic' or 'Psyker' special rules. Weapons with 'Force' may only be used if the unit is unbroken."
       ]
     },
-        {
-      "title": "Psyker - Telepathy",
+    {
+      "title": "Psyker",
       "description": [
-        "If there is at least one unit with the 'Psyker - Telepathy' special rule in a formation, and it is unbroken, it counts as having one less BM during assaults. A formation cannot have less than zero BMs."
+        "Roll two dice before shooting with any weapon the 'Psyker' character is equipped with (does not apply to 'Small Arms' or 'Assault Weapons'). On a roll of 5+, the weapon can be used as normal. On a roll of 3-4, the weapon cannot be used. On a roll of 2 or less, the unit takes one point of damage with no saves of any kind allowed. This roll suffers a -1 modifier if there are any enemy units with the 'Psyker' or 'Daemonic' special rules within 15cm."
       ]
     },
-        {
-      "title": "Psyker - Thaumaturgy",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Thaumaturgy' special rule in a formation, and it is unbroken, the formation may re-roll one failed armour, Invulnerable Save, or Regeneration roll during assaults. Remember that any dice can only be re-rolled once."
-      ]
-    },
-        {
-      "title": "Psyker - Telekinesis",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Telekinesis' special rule in a formation, and it is unbroken, one enemy unit is prevented from counter charging during assaults the psyker is directly involved in."
-      ]
-    },
-        {
-      "title": "Psyker - Pyromancy",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Pyromancy' special rule in a formation, and it is unbroken, the formation may re-roll one failed FF attack when directly involved in an assault."
-      ]
-    },
-        {
-      "title": "Psyker - Divination",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Divination' special rule in a formation, it does not suffer a -1 to the initiative when attempting to retain the initiative. May not be used if there are any unbroken enemy units with the 'Psyker' or 'Daemonic' special rules within 30 cm of the unit."
-      ]
-    },
-        {
-      "title": "Psyker - Biomancy",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Biomancy' special rule in a formation, and it is unbroken, the formation may re-roll one failed CC attack during assaults."
-      ]
-    },
-        {
-      "title": "Psyker - Anathemata",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Anathemata' special rule in a formation, and it is unbroken, one enemy formation that loses an assault against it count as having lost roll-off by an additional D3 for determining the number of hackdowns suffered."
-      ]
-    },
-            {
-      "title": "Psyker - Aetherbane",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Aetherbane' special rule in a formation, and it is unbroken, enemy teleporting units suffer teleport mishap on 1 and 2 within 30 cm instead of the usual 15 cm."
-      ]
-    },
-            {
-      "title": "Psyker - Diabolism",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Diabolism' special rule in a formation, and it is unbroken, the formation counts as having D3 more units when determining outnumber during an assault."
-      ]
-    },
-            {
-      "title": "Psyker - Storm's Fury",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Storm's Fury' special rule in a formation, and it is unbroken, one unit in the formation may move an additional 5 cm when assaulting or counter charging."
-      ]
-    },
-            {
-      "title": "Psyker - Winds of Fenris",
-      "description": [
-        "If there is at least one unit with the 'Psyker - Winds of Fenris' special rule in a formation, and it is unbroken, one additional unit in the formation counts as being in Cover when targeted by shooting."
-      ]
-    },
-
+ 
     {
       "title": "Fortified Positions",
       "description": [
@@ -477,13 +412,19 @@
     {
       "title": "Bionics",
       "description": [
-        "The extensive bionic modifications undergone by the Iron Hands and the Iron Warriors increases their resistance to physical trauma. Characters with the Bionics special rule increases the Armour of their unit to 3+ when added to a unit of INF."
+        "Characters with the Bionics special rule increases the Armour of their unit to 3+ when added to a unit of INF."
       ]
     },
     {
-      "title": "Battlefield Repairs",
+      "title": "Machine Empathy",
       "description": [
-        "As long as a formation contains a unit with the 'Battlefield Repairs' special ability, all Armoured Vehicle units in the formation gains Invulnerable Save."
+        "As long as a formation contains a unit with the 'Machine Empathy' special ability, all AV units in the formation gains Invulnerable Save."
+      ]
+    },
+    {
+      "title": "Psychic Succour",
+      "description": [
+        "As long as a formation contains a unit with the 'Psychic Succour' special ability, all INF units in the formation gains Invulnerable Save."
       ]
     },
     {

@@ -43,6 +43,7 @@
         ],
         "specialRules": [
           "Commander",
+          "Teleport Homer",
           "Invulnerable Save",
           "Leader",
           "Blitz",
@@ -70,7 +71,7 @@
           "Servo Arm"
         ],
         "specialRules": [
-          "Battlefield Repairs",
+          "Machine Empathy",
           "Invulnerable Save",
           "Leader",
           "Vox-Caster"
@@ -80,10 +81,11 @@
         "name": "Librarian - Telepathy",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Telepathic Terror",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Telepathy",
+          "Psyker",
           "Invulnerable Save",
           "Leader",
           "Teleport Homer",
@@ -94,13 +96,13 @@
         "name": "Librarian - Thaumaturgy",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+        "Aetheric Lightning",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Thaumaturgy",
-          "Invulnerable Save",
+          "Psyker",
+          "Psychic Succour",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -108,13 +110,14 @@
         "name": "Librarian - Telekinesis",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Psychic Blast",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Telekinesis",
+          "Psyker",
           "Invulnerable Save",
+          "Machine Empathy",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -122,13 +125,13 @@
         "name": "Librarian - Pyromancy",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Firestorm",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Pyromancy",
+          "Psyker",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -136,13 +139,13 @@
         "name": "Librarian - Divination",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Psychic Dart",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Divination",
+          "Psyker",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -150,13 +153,13 @@
         "name": "Librarian - Biomancy",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Biomantic Hammer",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Biomancy",
-          "Invulnerable Save",
+          "Psyker",
+          "Regeneration",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -166,7 +169,8 @@
         "weapons": [
         ],
         "specialRules": [
-          "Psyker - Prosperine Arcana",
+          "Blitz",
+          "Psyker",
           "Leader",
           "Vox-Caster"
         ]
@@ -175,13 +179,13 @@
         "name": "Librarian - Anathemata",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Breach the Veil",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Anathemata",
+          "Psyker",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -189,13 +193,13 @@
         "name": "Librarian - Aetherbane",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Piercing the Aether",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Anathemata",
+          "Psyker",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -203,41 +207,43 @@
         "name": "Librarian - Diabolism",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Vortex of Chaos",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Diabolism",
+          "Psyker",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
       {
-        "name": "Librarian - Storm's Fury",
+        "name": "Librarian - Stormseer",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Storm's Fury",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Storm's Fury",
+          "Blitz",
+          "Psyker",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer",
+          "Evasive",
           "Vox-Caster"
         ]
       },
       {
-        "name": "Librarian - Winds of Fenris",
+        "name": "Librarian - Rune Priest",
         "type": "CH",
         "weapons": [
-          "Aetheric Lightning"
+          "Winds of Fenris",
+          "Power Weapon"
         ],
         "specialRules": [
-          "Psyker - Diabolism",
+          "Psyker",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
