@@ -85,6 +85,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Prescience",
           "Psyker",
           "Invulnerable Save",
           "Leader",
@@ -100,6 +101,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Blitz",
           "Psyker",
           "Psychic Succour",
           "Leader",
@@ -114,6 +116,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Blitz",
           "Psyker",
           "Invulnerable Save",
           "Machine Empathy",
@@ -129,6 +132,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Blitz",
           "Psyker",
           "Invulnerable Save",
           "Leader",
@@ -143,6 +147,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Prescience",
           "Psyker",
           "Invulnerable Save",
           "Leader",
@@ -157,6 +162,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Blitz",
           "Psyker",
           "Regeneration",
           "Leader",
@@ -169,7 +175,7 @@
         "weapons": [
         ],
         "specialRules": [
-          "Blitz",
+          "Prescience",
           "Psyker",
           "Leader",
           "Vox-Caster"
@@ -183,6 +189,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Prescience",
           "Psyker",
           "Invulnerable Save",
           "Leader",
@@ -197,6 +204,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Prescience",
           "Psyker",
           "Invulnerable Save",
           "Leader",
@@ -211,6 +219,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Blitz",
           "Psyker",
           "Invulnerable Save",
           "Leader",
@@ -241,6 +250,7 @@
           "Power Weapon"
         ],
         "specialRules": [
+        "Blitz",
           "Psyker",
           "Invulnerable Save",
           "Leader",
@@ -680,10 +690,11 @@
         "type": "INF",
         "speed": 15,
         "armour": 4,
-        "cc": 2,
+        "cc": 3,
         "ff": 4,
         "weapons": [
           "Combi-Bolters",
+          "Thunder Hammer",
           "Lightning Claws"
         ],
         "specialRules": [

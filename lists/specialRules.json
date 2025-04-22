@@ -258,13 +258,13 @@
          {
       "title": "Titan Hunter",
       "description": [
-        "Weapons with the 'Titan Hunter' special rule gains an additional +1 to hit against War Engines, but suffers an additional -1 to hit against INF."
+        "Weapons with the 'Titan Hunter' special rule gains an additional +1 to hit against War Engines, but suffers an additional -1 to hit against INF, LV, and AV."
       ]
     },
     {
       "title": "Siege",
       "description": [
-        "Weapons with the 'Siege' special rule special rule gains an additional +1 to hit against Strongholds and Immobile War Engines (weapons without an AT value may use AP instead). In addition, it gains the 'Crippling' special rule against such targets."
+        "Weapons with the 'Siege' special rule special rule gains an additional +1 to hit and the 'Crippling' special rule against Strongholds and Immobile War Engines, and may use AP instead of AT against such targets."
       ]
     },
          {
@@ -330,9 +330,9 @@
       ]
     },
     {
-      "title": "Psi",
+      "title": "Prescience",
       "description": [
-        "Each model may only fire with a single weapon with the Psi trait per round. Psi weapons cannot be fired as part of an Overwatch."
+        "Formations that include a unit with the 'Prescience' special rule may ignore the -1 penalty to Action test rolls when attempting to retain the Initiative."
       ]
     },
     {
@@ -424,7 +424,7 @@
     {
       "title": "Psychic Succour",
       "description": [
-        "As long as a formation contains a unit with the 'Psychic Succour' special ability, all INF units in the formation gains Invulnerable Save."
+        "As long as a formation contains a unit with the 'Psychic Succour' special ability, all INF units in it gains Invulnerable Save."
       ]
     },
     {
@@ -901,7 +901,7 @@
     {
       "title": "Teleport Homer",
       "description": [
-        "Units that Teleport within 15 cm from a friendly, unbroken unit with Teleport Homer already on the battlefield may re-roll 1:s when testing for Teleport Mishap. May not be used if there are any unbroken enemy units with the 'Psyker' or 'Daemonic' special rules within 15 cm of the unit."
+        "Units that Teleport within 15 cm from a friendly, unbroken unit with Teleport Homer already on the battlefield may re-roll 1:s when testing for Teleport Mishap. May not be used if there are any unbroken enemy units with the 'Psyker', 'Daemonic', or 'Prescience' special rules within 15 cm of the unit."
       ]
     },
             {
@@ -915,7 +915,7 @@
       "title": "Teleport",
       "description": [
         "A formation consisting completely of units with the 'Teleport' special rule must be placed in the reserves before deployment. They may only enter the battlefield through an Offboard Support action. Immediately place the formation with all units completely within 15 cm of the unit with the 'Vox-Caster' special rule, and roll a D6 for each, to test if any teleport mishaps occured. For each roll of 1, the teleporting formation suffers a BM.",
-        "Teleporting units placed within 15 cm of any enemy units with the 'Psyker' or 'Daemonic' special rules suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1.",
+        "Teleporting units placed within 15 cm of any enemy units with the 'Psyker', 'Daemonic' or 'Prescience' special rules suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1.",
         "Unlike other Offboard Support actions, Teleporting grants immediately grants the controlling player the chance to retain the initiative twice, meaning that the formation that just arrived may attempt carry out an action."
       ]
     },

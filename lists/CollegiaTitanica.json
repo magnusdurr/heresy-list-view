@@ -23,29 +23,175 @@
           "Leader"
         ]
       },
-            {
+
+
+      {
+        "name": "Imperator Emperor Battle Titan",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 5,
+        "ff": 5,
+        "weaponMounts": [
+           {
+            "mount": "CARAPACE",
+            "notes": "fixed",
+            "types": [
+              {
+                "name": "POINT DEFENSE",
+                "weapons": [
+                  "Battle Cannon|4"  
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                 "Defense Laser||FxF",
+                 "Mori Quake Cannon||FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "fixed",
+            "types": [
+              {
+                "name": "IMPERATOR WEAPONS",
+                "weapons": [
+                  "Imperator Hellstorm Cannon||FwA",
+                  "Imperator Plasma Annihilator||FwA"
+                ]
+              }
+            ]
+          }
+        ],
+        "specialRules": [
+          "Damage Capacity 14",
+          "Void Shields 12",
+          "Ripple Fire",
+          "Dauntless",
+          "Reinforced Armour",
+          "Vox-Caster",
+          "Walker",
+          "Towering",
+          "Ponderous",
+          "Steadfast",
+          "Vanguard",
+          "Transport(10)"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
+        "crit": "The unit takes d3+1 points of damage, and loses D6+1 Void Shields"
+      },
+
+       {
+        "name": "Warmonger Emperor Battle Titan",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 5,
+        "ff": 5,
+        "weaponMounts": [
+           {
+            "mount": "CARAPACE",
+            "notes": "fixed",
+            "types": [
+              {
+                "name": "POINT DEFENSE",
+                "weapons": [
+                  "Hydra Autocannons|4",
+                  "Battle Cannon||FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "fixed",
+            "types": [
+              {
+                "name": "WARMONGER WEAPONS",
+                "weapons": [
+                  "Warmonger Vengeance Cannon||FwA",
+                  "Warmonger Doomstrike Missile|8|FwA"
+                ]
+              }
+            ]
+          }
+        ],
+        "specialRules": [
+          "Damage Capacity 14",
+          "Void Shields 12",
+          "Ripple Fire",
+          "Dauntless",
+          "Reinforced Armour",
+          "Commander",
+          "Vox-Caster",
+          "Walker",
+          "Towering",
+          "Ponderous",
+          "Steadfast",
+          "Vanguard",
+          "Transport(10)"
+        ],
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
+        "crit": "The unit takes d3+1 points of damage, and loses D6+1 Void Shields"
+      },
+
+      {
         "name": "Warmaster Iconoclast Heavy Battle Titan",
         "type": "WE",
         "speed": 15,
         "armour": 4,
-        "cc": 5,
+        "cc": 4,
         "ff": 5,
-        "weapons": [
-          "Ardex-Defensor Turret|4",
-          "Anvillus Defence Batteries|2",
-          "Desolator Chainsword",
-          "Cruciator Gatling Array|FxF",
-          "ARMS (choose one)",
-          "Kirus Siege Drill|0-1",
-          "Kirus Grav Imploder|0-1|FwA",
-          "CARAPACE (choose one)",
-          "BATTLE WEAPONS",
-          "2x Apocalypse Missile Launcher|0-1|FwA",
-          "2x Inferno Gun|0-1|FwA",
-          "2x Vulcan Mega-Bolter|0-1|FwA",
-          "2x Turbo-Laser Destructor|0-1|FwA",
-          "2x Titan Melta Cannon|0-1|FwA",
-          "2x Plasma Blastgun|0-1|FwA"
+        "weaponMounts": [
+           {
+            "mount": "CARAPACE",
+            "notes": "choose one",
+            "types": [
+              {
+                "name": "POINT DEFENSE",
+                "weapons": [
+                  "Ardex-Defensor Turret|4",
+                  "Anvillus Defence Batteries|2"
+                ]
+              },
+
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                 "2x Apocalypse Missile Launcher|0-1|FwA",
+                 "2x Inferno Gun|0-1|FwA",
+                 "2x Vulcan Mega-Bolter|0-1|FwA",
+                 "2x Turbo-Laser Destructor|0-1|FwA",
+                 "2x Titan Melta Cannon|0-1|FwA",
+                 "2x Plasma Blastgun|0-1|FwA"
+                ]
+              },
+
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                 "Cruciator Gatling Array|FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "choose one",
+            "types": [
+              {
+                "name": "WARMASTER WEAPONS",
+                "weapons": [
+                  "Kirus Siege Drill|0-1",
+                  "Kirus Grav Imploder|0-1|FwA",
+                  "Desolator Chainsword"
+                ]
+              }
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 10",
@@ -59,29 +205,62 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
-        "crit": "The unit takes a point of damage."
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
+        "crit": "The unit takes d3 points of damage, and loses D6 Void Shields"
       },
-       {
+
+      {
         "name": "Warmaster Heavy Battle Titan",
         "type": "WE",
         "speed": 15,
         "armour": 4,
-        "cc": 5,
+        "cc": 4,
         "ff": 5,
-        "weapons": [
-          "Ardex-Defensor Turret|4",
-          "Anvillus Defence Batteries|2",
-          "Suzerain Plasma Destructor|2|FwA",
-          "Revelator Missile Launcher|1|FxF",
-          "CARAPACE (choose one)",
-          "BATTLE WEAPONS",
-          "2x Apocalypse Missile Launcher|0-1|FwA",
-          "2x Inferno Gun|0-1|FwA",
-          "2x Vulcan Mega-Bolter|0-1|FwA",
-          "2x Turbo-Laser Destructor|0-1|FwA",
-          "2x Titan Melta Cannon|0-1|FwA",
-          "2x Plasma Blastgun|0-1|FwA"
+        "weaponMounts": [
+           {
+            "mount": "CARAPACE",
+            "notes": "choose one",
+            "types": [
+              {
+                "name": "POINT DEFENSE",
+                "weapons": [
+                  "Ardex-Defensor Turret|4",
+                  "Anvillus Defence Batteries|2"
+                ]
+              },
+
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                 "2x Apocalypse Missile Launcher|0-1|FwA",
+                 "2x Inferno Gun|0-1|FwA",
+                 "2x Vulcan Mega-Bolter|0-1|FwA",
+                 "2x Turbo-Laser Destructor|0-1|FwA",
+                 "2x Titan Melta Cannon|0-1|FwA",
+                 "2x Plasma Blastgun|0-1|FwA"
+                ]
+              },
+
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                 "Revelator Missile Launcher||FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "fixed",
+            "types": [
+              {
+                "name": "WARMASTER WEAPONS",
+                "weapons": [
+                  "Suzerain Plasma Destructor|2|FwA"
+                ]
+              }
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 10",
@@ -95,39 +274,78 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
-        "crit": "The unit takes a point of damage."
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
+        "crit": "The unit takes d3 points of damage, and loses D6 Void Shields"
       },
-           {
+
+
+
+
+       {
         "name": "Warlord-Sinister Battle Titan",
         "type": "WE",
         "speed": 15,
         "armour": 4,
         "cc": 4,
         "ff": 4,
-        "weapons": [
-        "Ardex-Defensor Turret|2",
-        "Sinistramanus Tenebrae||FwA",
-        "Death Pulse||FwA",
-        "Antipathic Tempest||FwA",
-        "CARAPACE (choose one)",
-        "Paired Turbo-Laser Destructors||FxF",
-        "Paired Apocalypse Missile Launchers||FxF",
-        "Paired Turbo-Laser Blasters||FxF",
-        "Paired Gatling Blasters||FxF",
-        "Paired Vulcan Mega-Bolters||FxF",
-        "ARMS (choose one)",
-        "BATTLE WEAPONS",
-        "Macro-Gatling Blaster|0-1|FwA",
-        "Mori Quake Cannon|0-1|FwA",
-        "Arioch Power Claw|0-1|",
-        "SUPPORT WEAPONS",
-        "Volkite Destructor|0-1|FwA",
-        "Conversion Beam Extripator|0-1|FwA",
-        "Graviton Ruinator|0-1|FwA",
-        "HEAVY SUPPORT WEAPONS",
-        "Sunfury Plasma Annihilator|0-1|FwA",
-        "Belicosa Vulcano Cannon|0-1|FwA"
+        "weaponMounts": [
+           {
+            "mount": "CARAPACE",
+            "notes": "choose one",
+            "types": [
+              {
+                "name": "POINT DEFENSE",
+                "weapons": [
+                  "Ardex-Defensor Turret|2"  
+                ]
+              },
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                 "Paired Turbo-Laser Destructors|0-1|FxF",
+                 "Paired Apocalypse Missile Launchers|0-1|FxF",
+                 "Paired Turbo-Laser Blasters|0-1|FxF",
+                 "Paired Gatling Blasters|0-1|FxF",
+                 "Paired Vulcan Mega-Bolters|0-1|FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "choose one",
+            "types": [
+            {
+                "name": "SINISTER WEAPONS",
+                "weapons": [
+                  "Sinistramanus Tenebrae||FwA"
+                ]
+              },
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                  "Macro-Gatling Blaster|0-1|FwA",
+                  "Mori Quake Cannon|0-1|FwA",
+                  "Arioch Power Claw|0-1|"
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                  "Volkite Destructor|0-1|FwA",
+                  "Conversion Beam Extripator|0-1|FwA",
+                  "Graviton Ruinator|0-1|FwA"
+                ]
+              },
+              {
+                "name": "HEAVY SUPPORT WEAPONS",
+                "weapons": [
+                  "Sunfury Plasma Annihilator|0-1|FwA",
+                  "Belicosa Vulcano Cannon|0-1|FwA"
+                ]
+              }
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 8",
@@ -140,10 +358,10 @@
           "Ponderous",
           "Steadfast",
           "Vanguard",
-          "Psyker - Divination"
+          "Precience"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
-        "crit": "The unit takes a point of damage."
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
+        "crit": "The unit takes D2 points of damage, and loses D3+1 Void Shields"
       },
       {
         "name": "Warlord Battle Titan",
@@ -152,26 +370,54 @@
         "armour": 4,
         "cc": 4,
         "ff": 4,
-        "weapons": [
-        "Ardex-Defensor Turret|2",
-        "CARAPACE (choose one)",
-        "Paired Turbo-Laser Destructors||FxF",
-        "Paired Apocalypse Missile Launchers||FxF",
-        "Paired Turbo-Laser Blasters||FxF",
-        "Paired Gatling Blasters||FxF",
-        "Paired Vulcan Mega-Bolters||FxF",
-        "ARMS (choose two)",
-        "BATTLE WEAPONS",
-        "Macro-Gatling Blaster|0-2|FwA",
-        "Mori Quake Cannon|0-2|FwA",
-        "Arioch Power Claw|0-1|",
-        "SUPPORT WEAPONS",
-        "Volkite Destructor|0-1|FwA",
-        "Conversion Beam Extripator|0-1|FwA",
-        "Graviton Ruinator|0-1|FwA",
-        "HEAVY SUPPORT WEAPONS",
-        "Sunfury Plasma Annihilator|0-1|FwA",
-        "Belicosa Vulcano Cannon|0-1|FwA"
+        "weaponMounts": [
+           {
+            "mount": "CARAPACE",
+            "notes": "choose one",
+            "types": [
+              {
+                "name": "POINT DEFENSE",
+                "weapons": [
+                  "Ardex-Defensor Turret|2"  
+                ]
+              },
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                 "Paired Turbo-Laser Destructors|0-1|FxF",
+                 "Paired Apocalypse Missile Launchers|0-1|FxF",
+                 "Paired Turbo-Laser Blasters|0-1|FxF",
+                 "Paired Gatling Blasters|0-1|FxF",
+                 "Paired Vulcan Mega-Bolters|0-1|FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "choose two",
+            "types": [
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                  "Turbo-Laser Blaster|0-2|FwA",
+                  "Gatling Blaster|0-2|FwA"
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                  "Titan Melta Cannon|0-1|FwA"
+                ]
+              },
+              {
+                "name": "HEAVY SUPPORT WEAPONS",
+                "weapons": [
+                  "Vulcano Cannon|0-1|FwA"
+                ]
+              }
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 8",
@@ -185,32 +431,70 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
-        "crit": "The unit takes a point of damage."
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
+        "crit": "The unit takes D2 points of damage, and loses D3+1 Void Shields"
       },
+
+
+
       {
-        "name": "Warbringer Nemesis Titan",
+        "name": "Warbringer Nemesis Battle Titan",
         "type": "WE",
         "speed": 15,
         "armour": 5,
         "cc": 5,
         "ff": 5,
-        "weapons": [
-          "Ardex-Defensor Turret",
-          "Anvillus Defence Batteries",
-          "CARAPACE (choose one)",
-          "BATTLE WEAPONS",
-          "Mori Quake Cannon|0-1|FxF",
-          "SUPPORT WEAPONS",
-          "Belicosa Vulcano Cannon|0-1|FxF",
-          "ARMS (choose two)",
-          "BATTLE WEAPONS",
-          "Turbo-Laser Blaster|0-2|FwA",
-          "Gatling Blaster|0-2|FwA",
-          "SUPPORT WEAPONS",
-          "Titan Melta Cannon|0-1|FwA",
-          "HEAVY SUPPORT WEAPONS",
-          "Vulcano Cannon|0-1|FwA"
+        "weaponMounts": [
+          {
+            "mount": "CARAPACE",
+            "notes": "choose one",
+            "types": [
+              {
+                "name": "POINT DEFENSE",
+                "weapons": [
+                  "Ardex-Defensor Turret",
+                  "Anvillus Defence Batteries"   
+                ]
+              },
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                  "Mori Quake Cannon|0-1|FxF"
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                  "Belicosa Vulcano Cannon|0-1|FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "choose two",
+            "types": [
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                  "Turbo-Laser Blaster|0-2|FwA",
+                  "Gatling Blaster|0-2|FwA"
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                  "Titan Melta Cannon|0-1|FwA"
+                ]
+              },
+              {
+                "name": "HEAVY SUPPORT WEAPONS",
+                "weapons": [
+                  "Vulcano Cannon|0-1|FwA"
+                ]
+              }
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 6",
@@ -222,9 +506,10 @@
           "Ponderous",
           "Steadfast"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
-       "crit": "The unit takes a point of damage."
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
+       "crit": "The unit takes a point of damage, and loses D3+1 Void Shields"
       },
+
       {
         "name": "Reaver Battle Titan",
         "type": "WE",
@@ -296,27 +581,54 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide.",
-        "crit": "The unit takes a point of damage."
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
+        "crit": "The unit takes a point of damage, and loses D3 Void Shields"
       },
  
-      {
+  {
         "name": "Dire Wolf Heavy Scout Titan",
         "type": "WE",
         "speed": 20,
         "armour": 5,
         "cc": 5,
         "ff": 5,
-        "weapons": [
-          "Ardex Mega-Bolter|2|FxF",
-          "CARAPACE (choose one)",
-          "BATTLE WEAPONS",
-          "Titan Neutron Laser|0-1|FxF",
-          "SUPPORT WEAPONS",
-          "Conversion Beam Dissipator|0-1|FxF",
-          "HEAVY SUPPORT WEAPONS",
-          "Vulcano Cannon|0-1|FxF"
-          
+        "weaponMounts": [
+          {
+            "mount": "CARAPACE",
+            "notes": "choose one",
+            "types": [
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                  "Titan Neutron Laser|0-1|FxF"
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
+                  "Conversion Beam Dissipator|0-1|FxF"
+                ]
+              },
+              {
+                "name": "HEAVY SUPPORT WEAPONS",
+                "weapons": [
+                  "Vulcano Cannon|0-1|FxF"
+                ]
+              }
+            ]
+          },
+          {
+            "mount": "ARMS",
+            "notes": "fixed",
+            "types": [
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
+                  "Ardex Mega-Bolter|2|FxF"
+                ]
+              }
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 3",
@@ -325,24 +637,35 @@
           "Reinforced Armour",
           "Walker"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide",
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
         "crit": "The unit is destroyed. All units within 5cm takes a MW hit on a 6+."
       },
-      {
+
+
+       {
         "name": "Warhound Scout Titan",
         "type": "WE",
         "speed": 25,
         "armour": 5,
         "cc": 4,
         "ff": 5,
-        "weapons": [
-          "ARMS (choose two)",
-          "BATTLE WEAPONS",
+        "weaponMounts": [
+          {
+            "mount": "ARMS",
+            "notes": "choose two",
+            "types": [
+              {
+                "name": "BATTLE WEAPONS",
+                "weapons": [
           "Vulcan Mega-Bolter|0-1|FwA",
           "Inferno Gun|0-1|FwA",
           "Scout Shudder Missile Launcher|0-1|FwA",
-          "Scout Swarmer Missile Launcher|0-1|FwA",
-          "SUPPORT WEAPONS",
+          "Scout Swarmer Missile Launcher|0-1|FwA"
+                ]
+              },
+              {
+                "name": "SUPPORT WEAPONS",
+                "weapons": [
           "Ursus Claw|0-1",
           "Natrix Shock Lance|0-1",
           "Plasma Blastgun|0-1|FwA",
@@ -350,6 +673,10 @@
           "Incisor Melta Lance|0-1|FwA",
           "Graviton Eradicator|0-1|FwA",
           "Conversion Beam Dissolutor|0-1|FwA"
+                ]
+              }
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 3",
@@ -359,8 +686,8 @@
           "Walker",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 2cm wide",
-        "crit": "The unit takes a point of damage."
+        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
+        "crit": "The unit takes a point of damage, and loses D3 Void Shields"
       }
     ]
   }

@@ -9,7 +9,6 @@
   "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legiones Cybernetica Maniples have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
   "armyRules": "The <i>Dauntless</i> special rule applies to all Ultramarines Legion Detachments and Collegia Titanica Banners.",
   "specialRules": [
-    "Drop Pods",
     "Dauntless"
   ],
   "units": [
@@ -126,18 +125,14 @@
     {
       "from": "QuestorisFamilia.json",
       "units": [
-        "Armiger Knight-Warglaive",
-        "Armiger Knight-Helverin",
-        "Questoris Knight-Paladin",
-        "Questoris Knight-Errant",
-        "Questoris Knight-Crusader",
-        "Questoris Knight-Gallant",
-        "Questoris Knight-Warden",
+        "Armiger Knight|Warglaive|Helverin|Moirax",
+        "Questoris Knight|Paladin|Errant|Crusader|Gallant|Warden",
         "Questoris Rocket Pod"
       ],
       "unitRules": [
         "Chivalry",
-        "Ion Shield (x)"
+        "Ion Shield (x)",
+        "Ionic Flare Shield"
       ]
     }
   ],
@@ -479,16 +474,18 @@
       "formations": [
         {
           "name": "Armiger Lance",
-          "units": "Three Knight-Warglaives and/or Knight-Helverins",
+          "units": "Three Armiger Warglaives and/or Armiger Helverins",
           "extraUnits": [
+          "Replace up to three Armiger Warglaives with Armiger Moirax: 1 U/p each"
+
           ],
-          "points": "1 F/p, -1 U/p, 1 A/p"
+         "points": "1 F/p, 1 A/p"
         },
         {
           "name": "Questoris Lance",
           "units": "Two Questoris Knight-Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
           "extraUnits": [
-            "Add one Questoris Rocket Pod to each Knight in the formation: 1 U/p"
+            "Add one Questoris Rocket Pod to each unit in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 A/p"
         }

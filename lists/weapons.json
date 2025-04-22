@@ -240,6 +240,17 @@
         }
       ]
     },
+               {
+      "name": "Hydra Autocannons",
+      "modes": [
+        {
+          "firepower": "AP5+/AT6+/AA5+",
+          "range": 45,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
 
                 {
       "name": "AC Heavy Bolter",
@@ -681,6 +692,17 @@
           "specialRules": [
             "MW",
             "Siege"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Imperator Hellstorm Cannon",
+      "modes": [
+        {
+          "firepower": "10BP",
+          "range": 75,
+          "specialRules": [
           ]
         }
       ]
@@ -1330,7 +1352,6 @@
           "firepower": "3BP",
           "range": 45,
           "specialRules": [
-          "Disrupt"
           ]
         }
       ]
@@ -1430,6 +1451,20 @@
           "Shield Piercer",
           "Crippling",
           "Single Shot"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Warmonger Doomstrike Missile",
+      "modes": [
+        {
+          "firepower": "3BP",
+          "range": "∞",
+          "specialRules": [
+          "Disrupt",
+          "Ind",
+          "SS"
           ]
         }
       ]
@@ -1786,6 +1821,19 @@
         }
       ]
     },
+    {
+      "name": "Lightning Locks",
+      "modes": [
+        {
+          "firepower": "AP5+/AT4+",
+          "range": 30,
+          "specialRules": [
+          "Shield Disruptor",
+          "Crippling"
+          ]
+        }
+      ]
+    },
                             {
       "name": "Magna Laser Destroyer",
       "modes": [
@@ -1971,8 +2019,8 @@
       "name": "Neutron Blaster",
       "modes": [
         {
-          "firepower": "AP6+/AT5+",
-          "range": 45,
+          "firepower": "2x AP6+/AT5+",
+          "range": 30,
           "specialRules": [
             "Shield Disruptor",
             "Disrupt",
@@ -1986,7 +2034,7 @@
       "modes": [
         {
           "firepower": "3x AP6+/AT5+",
-          "range": 45,
+          "range": 30,
           "specialRules": [
             "Shield Disruptor",
             "Disrupt",
@@ -2000,7 +2048,7 @@
       "modes": [
         {
           "firepower": "3x AP6+/AT5+",
-          "range": 60,
+          "range": 45,
           "specialRules": [
             "Shield Disruptor",
             "Disrupt",
@@ -2015,7 +2063,7 @@
       "modes": [
         {
           "firepower": "4x AP6+/AT5+",
-          "range": 60,
+          "range": 45,
           "specialRules": [
             "Shield Disruptor",
             "Disrupt",
@@ -2054,6 +2102,20 @@
     },
          {
       "name": "Suzerain Plasma Destructor",
+      "modes": [
+        {
+          "firepower": "4x AP5+/AT3+",
+          "range": 90,
+          "specialRules": [
+            "MW",
+            "Slow",
+            "Energetic"
+          ]
+        }
+      ]
+    },
+             {
+      "name": "Imperator Plasma Annihilator",
       "modes": [
         {
           "firepower": "5x AP5+/AT3+",
@@ -2175,30 +2237,28 @@
       ]
     },
     {
-      "name": "Conversion Beam Dissolutor",
+      "name": "Conversion Beam Dissipator",
       "modes": [
         {
-          "firepower": "2x AP5+/AT4+",
-          "range": 90,
+          "firepower": "3x AP5+/AT3+",
+          "range": 60,
           "specialRules": [
-           "Energetic",
            "Beam Projector",
-           "Shield Disruptor",
+           "Lance",
            "Titan Hunter"
           ]
         }
       ]
     },
         {
-      "name": "Conversion Beam Dissipator",
+      "name": "Conversion Beam Dissolutor",
       "modes": [
         {
-          "firepower": "3x AP5+/AT4+",
-          "range": 90,
+          "firepower": "4x AP5+/AT3+",
+          "range": 60,
           "specialRules": [
-           "Energetic",
            "Beam Projector",
-           "Shield Disruptor",
+           "Lance",
            "Titan Hunter"
           ]
         }
@@ -2208,12 +2268,11 @@
       "name": "Conversion Beam Extripator",
       "modes": [
         {
-          "firepower": "4x AP5+/AT4+",
+          "firepower": "5x AP5+/AT3+",
           "range": 90,
           "specialRules": [
-           "Energetic",
            "Beam Projector",
-           "Shield Disruptor",
+           "Lance",
            "Titan Hunter"
           ]
         }
@@ -2284,6 +2343,21 @@
         {
           "firepower": "AP6+/AT4+",
           "range": 30,
+          "specialRules": [
+          "IC",
+           "Disrupt",
+           "Crippling",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Volkite Veuglaire",
+      "modes": [
+        {
+          "firepower": "AP5+/AT3+",
+          "range": 15,
           "specialRules": [
           "IC",
            "Disrupt",
@@ -2440,7 +2514,72 @@
       ]
     },
         {
+      "name": "Warmonger Vengeance Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT2+",
+          "range": 120,
+          "specialRules": [
+           "MW",
+           "TK(D3+1)",
+           "Shield Disruptor",
+           "Crippling"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Defense Laser",
+      "modes": [
+        {
+          "firepower": "AT3+/AA5+",
+          "range": 60,
+          "specialRules": [
+           "MW"
+          ]
+        }
+      ]
+    },
+
+          {
       "name": "Sinistramanus Tenebrae",
+      "modes": [
+        {
+          "firepower": "AP3+/AT3+",
+          "range": 60,
+          "specialRules": [
+           "MW",
+           "TK(1)",
+           "IC",
+           "Shield Piercer",
+           "Shock Pulse"
+          ]
+        },
+        {
+          "firepower": "3x AP2+/AT2+",
+          "range": 15,
+          "specialRules": [
+           "IC",
+           "Shield Piercer",
+           "Shock Pulse"
+          ]
+        },
+        {
+          "firepower": "3BP",
+          "range": 45,
+          "specialRules": [
+           "Disrupt",
+           "IC",
+           "Shield Piercer",
+           "Shock Pulse"
+          ]
+        }
+      ]
+    },
+
+
+        {
+      "name": "",
       "modes": [
         {
           "firepower": "AP3+/AT3+",
@@ -2579,13 +2718,24 @@
       ]
     },
     {
-      "name": "Lightning Claws",
+      "name": "Thunder Hammer",
       "modes": [
         {
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
             "MW"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lightning Claws",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+             "MW"
           ]
         }
       ]
@@ -2863,9 +3013,22 @@
       "name": "Siege Claw",
       "modes": [
         {
-          "firepower": "Assault Weapons",
+          "firepower": "Assault Weapon",
           "specialRules": [
             "MW",
+            "Siege"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Gyges Siege Claw",
+      "modes": [
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+            "MW",
+            "TK(1)",
             "Siege"
           ]
         }

@@ -88,14 +88,15 @@
         "Sicarian|Accelerator|Omega"
       ],
       "unitRules": [
-      "Psyker - Thaumaturgy"
+      "Psyker",
+        "Psychic Succour"
       ]
     },
     {
       "from": "CollegiaTitanica.json",
       "units": [
         "Warhound Scout Titan",
-        "Reaver Battle Titan",
+        "Warbringer Nemesis Battle Titan",
         "Warlord Battle Titan",
         "Warmaster Heavy Battle Titan"
       ],
@@ -115,18 +116,14 @@
     {
       "from": "QuestorisFamilia.json",
       "units": [
-        "Armiger Knight-Warglaive",
-        "Armiger Knight-Helverin",
-        "Questoris Knight-Paladin",
-        "Questoris Knight-Errant",
-        "Questoris Knight-Crusader",
-        "Questoris Knight-Gallant",
-        "Questoris Knight-Warden",
+        "Armiger Knight|Warglaive|Helverin|Moirax",
+        "Questoris Knight|Paladin|Errant|Crusader|Gallant|Warden",
         "Questoris Rocket Pod"
       ],
       "unitRules": [
       "Chivalry",
-      "Ion Shield (x)"
+       "Ion Shield (x)",
+       "Ionic Flare Shield"
       ]
     }
   ],
@@ -393,17 +390,18 @@
       "formations": [
          {
           "name": "Armiger Lance",
-          "units": "Three Knight-Warglaives and/or Knight-Helverins",
+          "units": "Three Armiger Warglaives and/or Armiger Helverins",
           "extraUnits": [
+          "Replace up to three Armiger Warglaives with Armiger Moirax: 1 U/p each"
 
           ],
          "points": "1 F/p, 1 A/p"
         },
                 {
           "name": "Questoris Lance",
-          "units": "Two Questoris Knight-Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
+          "units": "Two Questoris Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
           "extraUnits": [
-            "Add one Questoris Rocket Pod to each Knight in the formation: 1 U/p"
+            "Add one Questoris Rocket Pod to each unit in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 A/p"
         }
