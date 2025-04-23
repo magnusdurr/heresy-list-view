@@ -35,7 +35,7 @@
           {
             "name": "Warglaive",
             "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 4,
         "ff": 5,
@@ -47,7 +47,7 @@
           {
             "name": "Helverin",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 5,
         "ff": 4,
@@ -57,6 +57,7 @@
           }
         ],
         "specialRules": [
+        "Blitz",
         "Walker",
           "Reinforced Armour",
           "Skirmisher",
@@ -72,7 +73,7 @@
           {
             "name": "Lightning",
             "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 5,
         "ff": 3,
@@ -83,7 +84,7 @@
           {
             "name": "Volkite",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 3,
         "ff": 5,
@@ -95,7 +96,7 @@
           {
             "name": "Conversion Beamer",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 5,
         "ff": 6,
@@ -106,7 +107,7 @@
           {
             "name": "Graviton Cannon",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 3,
         "ff": 5,
@@ -117,6 +118,7 @@
           }
         ],
         "specialRules": [
+        "Blitz",
           "Walker",
           "Reinforced Armour",
           "Skirmisher",
@@ -135,8 +137,8 @@
             "type": "WE",
         "speed": 20,
         "armour": 5,
-        "cc": 4,
-        "ff": 3,
+        "cc": 3,
+        "ff": 4,
             "weapons": [
              "Rapid Fire Battle Cannon",
           "Reaper Chainsword",
@@ -148,7 +150,7 @@
         "type": "WE",
         "speed": 20,
         "armour": 5,
-        "cc": 4,
+        "cc": 3,
         "ff": 4,
             "weapons": [
               "Thermal Cannon",
@@ -174,7 +176,7 @@
         "type": "WE",
         "speed": 25,
         "armour": 5,
-        "cc": 4,
+        "cc": 2,
         "ff": 6,
             "weapons": [
          "Thunderstrike Gauntlet",
@@ -187,8 +189,8 @@
         "type": "WE",
         "speed": 20,
         "armour": 5,
-        "cc": 4,
-        "ff": 3,
+        "cc": 3,
+        "ff": 4,
             "weapons": [
          "Avenger Gatling Cannon",
           "Reaper Chainsword",

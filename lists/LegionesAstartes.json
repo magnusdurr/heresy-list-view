@@ -424,13 +424,24 @@
         "name": "Legion Outriders",
         "type": "INF",
         "variants": [
+        {
+            "name": "Bolters",
+            "type": "INF",
+            "speed": 35,
+            "armour": 4,
+            "cc": 3,
+            "ff": 4,
+            "weapons": [
+              "Bolters"
+            ]
+          },
           {
             "name": "Plasma",
             "type": "INF",
             "speed": 35,
             "armour": 4,
             "cc": 3,
-            "ff": 6,
+            "ff": 5,
             "weapons": [
               "Plasma Guns"
             ]
@@ -443,7 +454,7 @@
             "cc": 3,
             "ff": 6,
             "weapons": [
-              "Meltaguns"
+              "Meltaguns "
             ]
           },
           {
@@ -452,9 +463,9 @@
             "speed": 35,
             "armour": 4,
             "cc": 3,
-            "ff": 6,
+            "ff": 5,
             "weapons": [
-              "Flamers"
+              "Flamers "
             ]
           }
         ],
@@ -462,6 +473,7 @@
           "Mounted",
           "Vanguard",
           "Walker",
+          "Skirmisher",
           "Bulky"
         ]
       },
@@ -593,8 +605,8 @@
         "type": "INF",
         "speed": 15,
         "armour": 4,
-        "cc": 4,
-        "ff": 4,
+        "cc": 3,
+        "ff": 3,
         "weapons": [
           "Mortifier Bolters",
           "Destroyer Missile Launcher"
@@ -674,7 +686,7 @@
         "ff": 2,
         "weapons": [
           "Combi-Bolters",
-          "Combi-Melta|2",
+          "Combi-Melta",
           "Power Weapons"
         ],
         "specialRules": [
@@ -763,7 +775,8 @@
         ],
         "specialRules": [
           "Skimmer",
-          "Mounted"
+          "Mounted",
+          "Vanguard"
         ]
       },
       {
@@ -942,7 +955,7 @@
         "ff": 3,
         "weapons": [
           "Storm Cannon",
-          "Siege Claw"
+          "Leviathan Siege Claw"
             ]
           },
           {
@@ -954,7 +967,7 @@
         "ff": 5,
             "weapons": [
           "Dreadnought Melta Lance",
-          "Siege Claw"
+          "Leviathan Siege Claw"
             ]
           },
           {

@@ -1570,6 +1570,25 @@
       ]
     },
     {
+      "name": "Melta Guns ",
+      "modes": [
+        {
+          "firepower": "AT6+",
+          "range": 15,
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Combi-Melta",
       "modes": [
         {
