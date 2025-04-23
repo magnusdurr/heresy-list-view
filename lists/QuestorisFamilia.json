@@ -30,7 +30,7 @@
 
       {
         "name": "Armiger Knight",
-        "type": "LV",
+        "type": "AV",
         "variants": [
           {
             "name": "Warglaive",
@@ -54,34 +54,80 @@
             "weapons": [
               "Twin Autocannon"
             ]
-          },
-          {
-        "name": "Moirax",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 5,
-        "ff": 3,
-            "weapons": [
-          "Lightning Locks|0-1|",
-          "Volkite Veuglaire|0-1|",
-          "Gyges Siege Claw|0-1|"
-            ]
           }
         ],
         "specialRules": [
         "Walker",
           "Reinforced Armour",
           "Skirmisher",
-          "Evasive",
           "Vanguard",
           "Ion Shield (5+)"
+        ]
+      },
+
+            {
+        "name": "Armiger Moirax",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Lightning",
+            "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 5,
+        "ff": 3,
+            "weapons": [
+             "Lightning Locks"
+            ]
+          },
+          {
+            "name": "Volkite",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+              "Volkite Veuglaire",
+              "Gyges Siege Claw"
+            ]
+          },
+          {
+            "name": "Conversion Beamer",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 5,
+        "ff": 6,
+            "weapons": [
+              "Twin Conversion Beam Cannon"
+             ]
+          },
+          {
+            "name": "Graviton Cannon",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+              "Graviton Cannon",
+              "Gyges Siege Claw"
+             ]
+          }
         ],
-        "notes": "Armiger Moirax has the 'Ionic Flare Shield' special rule, and is armed with either Lightning Locks, or Volkite Veuglaire and Gyges Siege Claw."
+        "specialRules": [
+          "Walker",
+          "Reinforced Armour",
+          "Skirmisher",
+          "Vanguard",
+          "Ion Shield (4+)",
+          "Ionic Flare Shield"
+        ]
       },
 
           {
-        "name": "Questoris Knight",
+        "name": "Questoris Knight", 
         "type": "LV",
         "variants": [
           {
@@ -171,7 +217,7 @@
       },
 
            {
-        "name": "Questoris Taghmata",
+        "name": "Questoris",
         "type": "LV",
         "variants": [
           {
@@ -182,8 +228,7 @@
         "cc": 3,
         "ff": 4,
             "weapons": [
-              "Volkite Chierovile",
-          "Twin Rad Cleanser",
+          "Volkite Chierovile",
           "Graviton Crusher",
           "Hekaton Siege Claw"
             ]
@@ -196,7 +241,7 @@
         "cc": 3,
         "ff": 4,
             "weapons": [
-              "Lightning Cannon",
+          "Lightning Cannon",
           "Twin Phased Plasma Fusil",
           "Reaper Chainsword"
             ]
@@ -211,46 +256,7 @@
           "Ionic Flare Shield"
         ]
       },
-      {
-        "name": "Dominus Knight-Castellan",
-        "type": "H-AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Shieldbreaker Missiles|4|",
-          "Volcano Lance||FwA",
-          "Twin Siegebreaker Cannon||",
-          "Plasma Decimator||FwA"
-        ],
-        "specialRules": [
-          "Stubborn",
-          "Reinforced Armour",
-          "Walker",
-          "Ion Shield (3+)"
-        ]
-      },
-      {
-        "name": "Dominus Knight-Valiant",
-        "type": "H-AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 3,
-        "ff": 3,
-        "weapons": [
-          "Shieldbreaker Missiles|2|",
-          "Twin Siegebreaker Cannon|2|",
-          "Conflagration Cannon",
-          "Thundercoil Harpoon"
-        ],
-        "specialRules": [
-          "Stubborn",
-          "Reinforced Armour",
-          "Walker",
-          "Ion Shield (3+)"
-        ]
-      },
+
       {
         "name": "Cerastus Knight-Acheron",
         "type": "H-AV",

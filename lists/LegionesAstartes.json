@@ -863,6 +863,66 @@
           "Twin Lascannon",
           "Power Fist"
             ]
+          },
+          {
+            "name": "Melta Cannon",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+          "Dreadnought Melta Cannon",
+          "Power Fist"
+            ]
+          },
+          {
+            "name": "Autocannon",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 4,
+            "weapons": [
+          "Twin Autocannon",
+          "Power Fist"
+            ]
+          },
+          {
+            "name": "Plasma Cannon",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+          "Dreadnought Plasma Cannon",
+          "Power Fist"
+            ]
+          },
+          {
+            "name": "Conversion Beamer",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+          "Conversion Beam Cannon",
+          "Power Fist"
+            ]
+          },
+          {
+            "name": "Volkite",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+          "Volkite Dual-Culverin",
+          "Power Fist"
+            ]
           }
         ],
         "specialRules": [
@@ -876,7 +936,7 @@
           {
             "name": "Storm",
         "type": "AV",
-        "speed": 10,
+        "speed": 15,
         "armour": 4,
         "cc": 3,
         "ff": 3,
@@ -888,7 +948,7 @@
           {
             "name": "Melta",
         "type": "AV",
-        "speed": 10,
+        "speed": 15,
         "armour": 4,
         "cc": 3,
         "ff": 5,
@@ -900,7 +960,7 @@
           {
             "name": "Grav-Flux",
         "type": "AV",
-        "speed": 10,
+        "speed": 15,
         "armour": 4,
         "cc": 3,
         "ff": 5,
@@ -913,7 +973,6 @@
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Infiltrators",
           "Vanguard"
         ]
       },
@@ -924,7 +983,7 @@
           {
             "name": "Hellfire",
         "type": "AV",
-        "speed": 10,
+        "speed": 15,
         "armour": 3,
         "cc": 5,
         "ff": 4,
@@ -936,7 +995,7 @@
           {
             "name": "Anvilus",
         "type": "AV",
-        "speed": 10,
+        "speed": 15,
         "armour": 3,
         "cc": 5,
         "ff": 3,
@@ -975,10 +1034,32 @@
             "weapons": [
             "Missile Launcher"
             ]
+          },
+          {
+            "name": "Bolter",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+            "weapons": [
+            "Heavy Bolter"
+            ]
+          },
+          {
+            "name": "Flamer",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+            "weapons": [
+            "Heavy Flamer"
+            ]
           }
         ],
         "specialRules": [
-        "Transport (1)"
+        "Transport (2)"
         ]
       },
       {
@@ -989,10 +1070,25 @@
         "cc": 6,
         "ff": 6,
         "weapons": [
-          "Bolters"
+          "Combi-Bolter"
         ],
         "specialRules": [
         "Blitz",
+          "Transport (2)"
+        ]
+      },
+      {
+        "name": "Siege Rhino",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Combi-Bolter"
+        ],
+        "specialRules": [
+        "Walker",
           "Transport (2)"
         ]
       },
@@ -1004,7 +1100,7 @@
         "cc": 6,
         "ff": 6,
         "weapons": [
-          "Bolters"
+          "Combi-Bolter"
         ],
         "specialRules": [
           "Leader",

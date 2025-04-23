@@ -116,7 +116,7 @@
     {
       "from": "QuestorisFamilia.json",
       "units": [
-        "Armiger Knight|Warglaive|Helverin|Moirax",
+        "Armiger Knight|Warglaive|Helverin",
         "Questoris Knight|Paladin|Errant|Crusader|Gallant|Warden",
         "Questoris Rocket Pod"
       ],
@@ -390,16 +390,15 @@
       "formations": [
          {
           "name": "Armiger Lance",
-          "units": "Three Armiger Warglaives and/or Armiger Helverins",
+          "units": "Three Armiger Knight Warglaives and/or Helverins",
           "extraUnits": [
-          "Replace up to three Armiger Warglaives with Armiger Moirax: 1 U/p each"
-
+          
           ],
          "points": "1 F/p, 1 A/p"
         },
-                {
+        {
           "name": "Questoris Lance",
-          "units": "Two Questoris Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
+          "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
           "extraUnits": [
             "Add one Questoris Rocket Pod to each unit in the formation: 1 U/p"
           ],

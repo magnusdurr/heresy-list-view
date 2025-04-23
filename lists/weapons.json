@@ -836,6 +836,15 @@
         }
       ]
     },
+    {
+      "name": "Combi-Bolter",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 30
+        }
+      ]
+    },
         {
       "name": "Combi-Bolters",
       "modes": [
@@ -1280,7 +1289,7 @@
       "modes": [
         {
           "firepower": "2x AP6+/AT6+/AA6+",
-          "range": 60
+          "range": 45
         }
       ]
     },
@@ -1630,6 +1639,25 @@
       ]
     },
         {
+      "name": "Dreadnought Melta Cannon",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
+          "range": 15,
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+        {
       "name": "Dreadnought Melta Lance",
       "modes": [
         {
@@ -1896,6 +1924,30 @@
       ]
     },
     {
+      "name": "Dreadnought Plasma Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT5+",
+          "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hellfire Plasma Cannonade",
+      "modes": [
+        {
+          "firepower": "AP5+/AT4+",
+          "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Omega Plasma Array",
       "modes": [
         {
@@ -1908,23 +1960,10 @@
       ]
     },
     {
-      "name": "Hellfire Plasma Cannonade",
-      "modes": [
-        {
-          "firepower": "AP5+/AT4+",
-          "range": 45,
-          "specialRules": [
-            "Energetic"
-          ]
-        }
-      ]
-    },
-     
-    {
       "name": "Plasma Destroyer",
       "modes": [
         {
-          "firepower": "AP4+/AT3+",
+          "firepower": "AP5+/AT3+",
           "range": 45,
           "specialRules": [
             "Energetic"
@@ -2237,6 +2276,34 @@
       ]
     },
     {
+      "name": "Conversion Beam Cannon",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
+          "range": 60,
+          "specialRules": [
+           "Beam Projector",
+           "Lance",
+           "Titan Hunter"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Twin Conversion Beam Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT3+",
+          "range": 60,
+          "specialRules": [
+           "Beam Projector",
+           "Lance",
+           "Titan Hunter"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Conversion Beam Dissipator",
       "modes": [
         {
@@ -2342,6 +2409,21 @@
       "modes": [
         {
           "firepower": "AP6+/AT4+",
+          "range": 30,
+          "specialRules": [
+          "IC",
+           "Disrupt",
+           "Crippling",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+            {
+      "name": "Volkite Dual-Culverin",
+      "modes": [
+        {
+          "firepower": "AP5+/AT4+",
           "range": 30,
           "specialRules": [
           "IC",
@@ -3009,24 +3091,61 @@
         }
       ]
     },
-        {
-      "name": "Siege Claw",
+    {
+      "name": "Leviathan Siege Claw",
       "modes": [
+        {
+          "firepower": "AT6+",
+          "range": 15,
+          "specialRules": [
+           "MW"
+          ]
+        },
         {
           "firepower": "Assault Weapon",
           "specialRules": [
             "MW",
+            "TK(1)",
+            "Siege"
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Gyges Siege Claw",
+      "modes": [
+        {
+          "firepower": "AP2+",
+          "range": 15,
+          "specialRules": [
+           "Rad"
+          ]
+        },
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+            "EA(+1)",
+            "MW",
+            "TK(1)",
             "Siege"
           ]
         }
       ]
     },
             {
-      "name": "Gyges Siege Claw",
+      "name": "Hekaton Siege Claw",
       "modes": [
+        {
+          "firepower": "AP2+",
+          "range": 15,
+          "specialRules": [
+           "Rad"
+          ]
+        },
         {
           "firepower": "Assault Weapon",
           "specialRules": [
+            "EA(+1)",
             "MW",
             "TK(1)",
             "Siege"
