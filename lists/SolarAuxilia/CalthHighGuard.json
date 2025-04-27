@@ -81,7 +81,7 @@
         "Legion Support Squad|Plasma",
         "Legion Tactical Squad",
         "Legion Heavy Support Squad|Missile Launcher",
-        "Contemptor Dreadnought|Assault Cannon|Lascannon",
+        "Contemptor Dreadnought|Assault|Gravis",
         "Proteus Land Speeder|Melta|Plasma",
         "Javelin Attack Speeder|Cyclone|Lascannon",
         "Predator|Annihilator|Destructor",
@@ -139,7 +139,7 @@
             "Add two Cyclops of any single configuration: 1 U/p",
             "Add up to two Malcadors of any single configuration: 2 U/p each"
           ],
-          "points": "1 F/p, 1 U/p"
+          "points": "1 F/p, 2 U/p"
         },
                {
           "name": "Auxilia Lasrifle Tercio",

@@ -32,7 +32,7 @@
         "Proteus Land Speeder|Melta|Plasma",
         "Javelin Attack Speeder|Cyclone|Lascannon",
         "Scimitar Jetbikes|Bolter",
-        "Contemptor Dreadnought|Assault Cannon|Lascannon",
+        "Contemptor Dreadnought|Assault|Gravis",
         "Leviathan Dreadnought|Storm|Melta",
         "Deredeo Dreadnought|Hellfire|Anvilus",
         "Predator|Annihilator|Destructor",
@@ -40,7 +40,8 @@
         "Support Rhino|Havoc|Melta",
         "Sicarian|Accelerator|Omega|Punisher|Arcus",
         "Land Raider",
-        "Spartan|Lascannon|Destroyer",
+        "Sabre Strike Tank|Anvilus|Neutron",
+        "Spartan|Gravis|Destroyer",
         "Kratos|Battle Tank|Melta",
         "Fellblade Super-Heavy Tank"
       ],
@@ -290,6 +291,14 @@
             "Add one Deredeo Dreadnought of any configuration: 1 U/p"
           ],
           "points": "1 F/p"
+        },
+        {
+          "name": "Sabre Detachment",
+          "units": "Three Sabre Strike Tanks of any configuration",
+          "extraUnits": [
+          "Add up to three Sabre Strike Tanks of any configuration: 1 U/p each"
+          ],
+          "points": "1 F/p, -1 U/p"
         },
         {
           "name": "Spartan Detachment",

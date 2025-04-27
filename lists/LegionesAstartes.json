@@ -854,7 +854,7 @@
         "type": "AV",
         "variants": [
           {
-            "name": "Assault Cannon",
+            "name": "Assault",
         "type": "AV",
         "speed": 15,
         "armour": 3,
@@ -866,7 +866,7 @@
             ]
           },
           {
-            "name": "Lascannon",
+            "name": "Gravis",
         "type": "AV",
         "speed": 15,
         "armour": 3,
@@ -1123,15 +1123,45 @@
         ]
       },
       {
-        "name": "Scorpius",
+        "name": "Whirlwind",
         "type": "AV",
-        "speed": 25,
-        "armour": 4,
+        "variants": [
+          {
+            "name": "Castellan",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
         "cc": 6,
         "ff": 6,
-        "weapons": [
-          "Bolters",
-          "Scorpius Missile Launcher"
+            "weapons": [
+          "Whirlwind Missile Launcher",
+          "Combi-Bolter"
+            ]
+          },
+          {
+            "name": "Scorpius",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+            "weapons": [
+          "Scorpius Missile Launcher",
+          "Combi-Bolter"
+            ]
+          },
+          {
+            "name": "Hyperios",
+        "type": "AV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+            "weapons": [
+          "Hyperios Missile Launcher",
+          "Combi-Bolter"
+            ]
+          }
         ],
         "specialRules": [
         ]
@@ -1244,6 +1274,23 @@
         ]
       },
       {
+        "name": "Land Raider Achilles",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Multi-Melta|2",
+          "Quad Launcher"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Heavy Transport (1)"
+        ]
+      },
+      {
         "name": "Sicarian",
         "type": "AV",
         "variants": [
@@ -1287,7 +1334,7 @@
           {
             "name": "Arcus",
             "type": "AV",
-            "speed": 20,
+            "speed": 25,
             "armour": 5,
             "cc": 6,
             "ff": 5,
@@ -1300,6 +1347,135 @@
         ],
         "specialRules": [
           "Reinforced Armour"
+        ],
+        "notes": "The Sicarian Punisher has the 'Blitz' special rule"
+      },
+       {
+        "name": "Predator",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Annihilator",
+            "type": "AV",
+            "speed": 30,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Twin Lascannon",
+              "Lascannon|2"
+            ]
+          },
+          {
+            "name": "Destructor",
+            "type": "AV",
+            "speed": 30,
+            "armour": 4,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+              "Predator Cannon",
+              "Heavy Bolter|2"
+            ]
+          },
+          {
+            "name": "Incinerator",
+            "type": "AV",
+            "speed": 30,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Volkite Macro-Saker",
+              "Volkite Culvertin|2"
+            ]
+          },
+          {
+            "name": "Executioner",
+            "type": "AV",
+            "speed": 30,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Plasma Destroyer",
+              "Lascannon|2"
+            ]
+          },
+          {
+            "name": "Projector",
+            "type": "AV",
+            "speed": 30,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Heavy Conversion Beam Cannon",
+              "Lascannon|2"
+            ]
+          },
+          {
+            "name": "Infernus",
+            "type": "AV",
+            "speed": 30,
+            "armour": 4,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+              "Flamestorm Cannon",
+              "Heavy Flamer |2"
+            ]
+          },
+          {
+            "name": "Magna",
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Magna-Melta Cannon",
+              "Heavy Bolter|2"
+            ]
+          },
+          {
+            "name": "Breaker",
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Neutron Blaster",
+              "Volkite Culvertin|2"
+            ]
+          },
+          {
+            "name": "Gravitor",
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Graviton Cannon",
+              "Lascannon|2"
+            ]
+          },
+          {
+            "name": "Gravitor",
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+              "Graviton Cannon",
+              "Lascannon|2"
+            ]
+          }
+        ],
+        "specialRules": [
         ]
       },
       {
@@ -1312,7 +1488,7 @@
             "speed": 30,
             "armour": 5,
             "cc": 6,
-            "ff": 2,
+            "ff": 3,
             "weapons": [
               "Anvilus Snub Autocannon",
               "Heavy Bolter",
@@ -1320,7 +1496,7 @@
             ]
           },
           {
-            "name": "Neutron Blaster",
+            "name": "Neutron",
             "type": "AV",
             "speed": 30,
             "armour": 5,
@@ -1338,7 +1514,7 @@
             "speed": 30,
             "armour": 5,
             "cc": 6,
-            "ff": 5,
+            "ff": 4,
             "weapons": [
               "Volkite Saker",
               "Volkite Culvertin",
@@ -1356,7 +1532,7 @@
         "type": "WE",
         "variants": [
           {
-            "name": "Lascannon",
+            "name": "Gravis",
             "type": "WE",
             "speed": "20",
             "armour": 4,
@@ -1373,10 +1549,22 @@
             "speed": "20",
             "armour": 4,
             "cc": 6,
-            "ff": 3,
+            "ff": 5,
             "weapons": [
               "Laser Destroyer|2|FwA",
-              "Twin Heavy Bolter||FwA"
+              "Twin Lascannon||FwA"
+            ]
+          },
+          {
+            "name": "Conveyer",
+            "type": "WE",
+            "speed": "20",
+            "armour": 4,
+            "cc": 6,
+            "ff": 2,
+            "weapons": [
+              "Quad Heavy Bolters|2|FwA",
+              "Twin Heavy Flamers ||FwA"
             ]
           }
         ],
@@ -1385,7 +1573,7 @@
           "Reinforced Armour",
           "Thick Rear Armour",
           "Heavy Transport (4)",
-          "Ion Shield (6+)"
+          "Ion Shield (5+)"
         ],
         "crit": "The Spartan is destroyed."
       },
@@ -1404,7 +1592,7 @@
           "Damage Capacity: 2",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Ion Shield (6+)"
+          "Ion Shield (5+)"
         ],
         "crit": "The Cerberus is destroyed."
       },
@@ -1423,7 +1611,7 @@
           "Damage Capacity: 2",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Ion Shield (6+)"
+          "Ion Shield (5+)"
         ],
         "crit": "The Typhon is destroyed."
       },
@@ -1474,7 +1662,7 @@
         "specialRules": [
           "Damage Capacity: 2",
           "Thick Rear Armour",
-          "Ion Shield (6+)"
+          "Ion Shield (5+)"
         ],
         "crit": "The Kratos is destroyed."
       },

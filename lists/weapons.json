@@ -755,6 +755,15 @@
         }
       ]
     },
+            {
+      "name": "Las-Locks",
+      "modes": [
+        {
+          "firepower": "AP6+",
+          "range": 15
+        }
+      ]
+    },
         {
       "name": "Lasrifles",
       "modes": [
@@ -770,6 +779,17 @@
         {
           "firepower": "AT5+",
           "range": 15
+        }
+      ]
+    },
+        {
+      "name": "Lightning Guns",
+      "modes": [
+        {
+          "firepower": "AP5+/AT6+",
+          "range": 15,
+          "specialRules": [
+          ]
         }
       ]
     },
@@ -824,6 +844,20 @@
         }
       ]
     },
+     {
+      "name": "Irad-Cleanser",
+      "modes": [
+        {
+          "firepower": "AP2+/AT6+",
+          "range": 15,
+          "specialRules": [
+          "Rad"
+          ]
+        }
+      ]
+    },
+
+
     {
       "name": "Nemesis Bolters",
       "modes": [
@@ -847,6 +881,15 @@
     },
         {
       "name": "Combi-Bolters",
+      "modes": [
+        {
+          "firepower": "2x AP5+",
+          "range": 30
+        }
+      ]
+    },
+        {
+      "name": "Maxim Bolters",
       "modes": [
         {
           "firepower": "2x AP5+",
@@ -1049,6 +1092,19 @@
           "join": "and",
           "specialRules": [
            "IC",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flamestorm Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+",
+          "range": 15,
+          "specialRules": [
+            "IC",
             "Siege"
           ]
         }
@@ -1288,8 +1344,8 @@
       "name": "Arcus Missile Launcher",
       "modes": [
         {
-          "firepower": "2x AP6+/AT6+/AA6+",
-          "range": 45
+          "firepower": "AP6+/AT5+/AA5+",
+          "range": 60
         }
       ]
     },
@@ -1310,8 +1366,8 @@
       "name": "Hyperios Missile Launcher",
       "modes": [
         {
-          "firepower": "AT6+/AA6+",
-          "range": 45,
+          "firepower": "AT6+/AA5+",
+          "range": 60,
           "specialRules": [
           ]
         }
@@ -1319,6 +1375,19 @@
     },
             {
       "name": "Scorpius Missile Launcher",
+      "modes": [
+        {
+          "firepower": "AP5+/AT5+",
+          "range": 45,
+          "specialRules": [
+          "Ind",
+          "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Whirlwind Missile Launcher",
       "modes": [
         {
           "firepower": "1BP",
@@ -1524,9 +1593,9 @@
       "name": "Sabre Missiles",
       "modes": [
         {
-          "firepower": "AP6+/AT6+",
-          "range": 45,
+          "firepower": "Small Arms",
           "specialRules": [
+          "EA(+1)"
           ]
         }
       ]
@@ -1538,7 +1607,8 @@
           "firepower": "AP4+/AT6+",
           "range": 45,
           "specialRules": [
-          "Ind"
+          "Ind",
+          "Siege"
           ]
         }
       ]
@@ -1698,6 +1768,27 @@
       ]
     },
             {
+      "name": "Magna-Melta Cannon",
+      "modes": [
+        {
+          "firepower": "AP6+/AT3+",
+          "range": 15,
+          "specialRules": [
+           "MW",
+           "Crippling"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "MW",
+           "Crippling"
+          ]
+        }
+      ]
+    },
+            {
       "name": "Incisor Melta Lance",
       "modes": [
         {
@@ -1729,14 +1820,15 @@
           "range": 15,
           "specialRules": [
            "MW",
-           "IC"
+           "Siege"
           ]
         },
         {
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-           "MW"
+           "MW",
+           "Siege"
           ]
         }
       ]
@@ -1859,8 +1951,8 @@
       "name": "Laser Destroyer",
       "modes": [
         {
-          "firepower": "AT4+",
-          "range": 45,
+          "firepower": "AT5+",
+          "range": 60,
           "specialRules": [
           "Shield Disruptor",
           "Crippling"
@@ -1918,11 +2010,24 @@
         }
       ]
     },
+     
                 {
       "name": "Plasma Guns",
       "modes": [
         {
           "firepower": "AP6+/AT6+",
+          "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Phased Plasma-Fusil",
+      "modes": [
+        {
+          "firepower": "AP6+/AT5+",
           "range": 30,
           "specialRules": [
             "Energetic"
@@ -2073,6 +2178,33 @@
         }
       ]
     },
+     {
+      "name": "Photon Thruster",
+      "modes": [
+        {
+          "firepower": "AP6+/AT5+",
+          "range": 15,
+          "specialRules": [
+            "MW",
+            "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Darkfire Cannon",
+      "modes": [
+        {
+          "firepower": "AP6+/AT5+",
+          "range": 30,
+          "specialRules": [
+            "MW",
+            "TK(1)"
+          ]
+        }
+      ]
+    },
+
          {
       "name": "Neutron Blaster",
       "modes": [
@@ -2221,6 +2353,19 @@
       ]
     },
     {
+      "name": "Graviton Imploder",
+      "modes": [
+        {
+          "firepower": "AP5+/AT5+",
+          "range": 15,
+          "specialRules": [
+           "Graviton(1)",
+           "Shield Piercer"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Graviton Cannon",
       "modes": [
         {
@@ -2295,6 +2440,20 @@
       ]
     },
     {
+      "name": "Conversion Beamer",
+      "modes": [
+        {
+          "firepower": "AP6+/AT5+",
+          "range": 60,
+          "specialRules": [
+           "Beam Projector",
+           "Lance",
+           "Titan Hunter"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Conversion Beam Cannon",
       "modes": [
         {
@@ -2310,6 +2469,20 @@
     },
         {
       "name": "Twin Conversion Beam Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT3+",
+          "range": 60,
+          "specialRules": [
+           "Beam Projector",
+           "Lance",
+           "Titan Hunter"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heavy Conversion Beam Cannon",
       "modes": [
         {
           "firepower": "AP5+/AT3+",
@@ -2364,7 +2537,17 @@
         }
       ]
     },
-
+    {
+      "name": "Volkite Incinerator",
+      "modes": [
+        {
+          "firepower": "Small Arms",
+          "specialRules": [
+          "IC"
+          ]
+        }
+      ]
+    },
      {
       "name": "Volkite Serpenta",
       "modes": [
@@ -2378,7 +2561,7 @@
         }
       ]
     },
-     {
+    {
       "name": "Volkite Charger",
       "modes": [
         {

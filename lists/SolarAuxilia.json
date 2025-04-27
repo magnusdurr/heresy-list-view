@@ -301,6 +301,22 @@
          "Assault Transport 8"
         ]
       },
+       {
+        "name": "Gorgon Assault Transport",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Ardex-Defensor Turret|2"
+        ],
+        "specialRules": [
+         "Damage Capacity 3",
+         "Reinforced Armour",
+         "Heavy Transport 10"
+        ]
+      },
       {
         "name": "Aurox",
         "type": "AV",
