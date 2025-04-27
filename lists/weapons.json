@@ -251,6 +251,15 @@
         }
       ]
     },
+    {
+      "name": "AC Combi-Bolter",
+      "modes": [
+        {
+          "firepower": "AP5+/AA6+",
+          "range": 15
+        }
+      ]
+    },
 
                 {
       "name": "AC Heavy Bolter",
@@ -473,6 +482,15 @@
       ]
     },
         {
+      "name": "Ragnarök Battle Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT4+",
+          "range": 60
+        }
+      ]
+    },
+    {
       "name": "Battle Cannon",
       "modes": [
         {
@@ -697,12 +715,14 @@
       ]
     },
         {
-      "name": "Imperator Hellstorm Cannon",
+      "name": "Hellstorm Cannon",
       "modes": [
         {
           "firepower": "10BP",
           "range": 75,
           "specialRules": [
+          "Siege",
+          "Slow"
           ]
         }
       ]
@@ -777,8 +797,51 @@
       "name": "Lascutter",
       "modes": [
         {
-          "firepower": "AT5+",
-          "range": 15
+          "firepower": "AP6+/AT6+",
+          "range": 15,
+          "specialRules": [
+           "Lance"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "Lance"
+          ]
+        },
+        {
+          "firepower": "Assault Weapon",
+          "join": "and",
+          "specialRules": [
+           "Lance"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Atrapos Lascutter",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
+          "range": 15,
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Assault Weapon",
+          "join": "and",
+          "specialRules": [
+           "MW"
+          ]
         }
       ]
     },
@@ -856,6 +919,18 @@
         }
       ]
     },
+    {
+      "name": "Irad-Scourer",
+      "modes": [
+        {
+          "firepower": "AP2+/AT6+",
+          "range": 30,
+          "specialRules": [
+          "Rad"
+          ]
+        }
+      ]
+    },
 
 
     {
@@ -893,6 +968,24 @@
       "modes": [
         {
           "firepower": "2x AP5+",
+          "range": 30
+        }
+      ]
+    },
+     {
+      "name": "Mauler Bolt Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+",
+          "range": 30
+        }
+      ]
+    },
+    {
+      "name": "Twin Mauler Bolt Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+",
           "range": 30
         }
       ]
@@ -942,6 +1035,17 @@
           "range": 45,
           "specialRules": [
             "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Castigator Cannon",
+      "modes": [
+        {
+          "firepower": "3x AP3+/AT5+",
+          "range": 45,
+          "specialRules": [
           ]
         }
       ]
@@ -1110,6 +1214,19 @@
         }
       ]
     },
+     {
+      "name": "Cerastus Flame Cannon",
+      "modes": [
+        {
+          "firepower": "2BP",
+          "range": 30,
+          "specialRules": [
+            "IC",
+            "Siege"
+          ]
+        }
+      ]
+    },
     {
       "name": "Malcador Inferno Gun",
       "modes": [
@@ -1181,6 +1298,15 @@
         }
       ]
     },
+    {
+      "name": "Sollex Heavy-Las",
+      "modes": [
+        {
+          "firepower": "AP6+/AT5+",
+          "range": 60
+        }
+      ]
+    },
         {
       "name": "Twin Lascannon",
       "modes": [
@@ -1197,6 +1323,20 @@
         {
           "firepower": "AP6+/AT3+",
           "range": 45
+        }
+      ]
+    },
+
+    {
+      "name": "Twin Magna Lascannon",
+      "modes": [
+        {
+          "firepower": "AP6+/AT3+",
+          "range": 60,
+          "specialRules": [
+          "Shield Disruptor",
+          "Crippling"
+          ]
         }
       ]
     },
@@ -1323,6 +1463,15 @@
       ]
     },
     {
+      "name": "Vultarax Havoc Launcher",
+      "modes": [
+        {
+          "firepower": "2x AP6+/AT6+",
+          "range": 45
+        }
+      ]
+    },
+    {
       "name": "Cyclone Missile Launchers",
       "modes": [
         {
@@ -1362,6 +1511,66 @@
         }
       ]
     },
+    {
+      "name": "Helios Defense Missiles",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT6+/AA6+",
+          "range": 30,
+          "specialRules": [
+          "Disrupt"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+1)",
+            "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Helias Defense Array",
+      "modes": [
+        {
+          "firepower": "6x AP5+/AT6+/AA6+",
+          "range": 45,
+          "specialRules": [
+          "Disrupt"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+3)",
+            "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Helicon Defense Array",
+      "modes": [
+        {
+          "firepower": "8x AP5+/AT6+/AA6+",
+          "range": 60,
+          "specialRules": [
+          "Disrupt"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+4)",
+            "Disrupt"
+          ]
+        }
+      ]
+    },
             {
       "name": "Hyperios Missile Launcher",
       "modes": [
@@ -1373,6 +1582,7 @@
         }
       ]
     },
+    
             {
       "name": "Scorpius Missile Launcher",
       "modes": [
@@ -1394,6 +1604,19 @@
           "range": 45,
           "specialRules": [
           "Ind"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Karacnos Mortar Battery",
+      "modes": [
+        {
+          "firepower": "1BP",
+          "range": 30,
+          "specialRules": [
+          "Ind",
+          "IC"
           ]
         }
       ]
@@ -1517,8 +1740,57 @@
         }
       ]
     },
+    {
+      "name": "Terrebrax Phospex Battery",
+      "modes": [
         {
-      "name": "Titan Warp Missile",
+          "firepower": "6BP",
+          "range": 60,
+          "specialRules": [
+          "Ind",
+          "IC",
+          "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonic Destructor",
+      "modes": [
+        {
+          "firepower": "6BP",
+          "range": 60,
+          "specialRules": [
+          "IC",
+          "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonic Disruptor",
+      "modes": [
+        {
+          "firepower": "10BP",
+          "range": 100,
+          "specialRules": [
+          "IC",
+          "Disrupt"
+          ]
+        }
+      ]
+    },
+     {
+      "name": "Lysander Landing Pad",
+      "modes": [
+        {
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+        {
+      "name": "Warp Missile",
       "modes": [
         {
           "firepower": "AT3+",
@@ -1533,16 +1805,42 @@
         }
       ]
     },
+     {
+      "name": "Warp Missiles",
+      "modes": [
+        {
+          "firepower": "AT3+",
+          "range": "∞",
+          "specialRules": [
+          "MW",
+          "TK(D3)",
+          "Shield Piercer",
+          "Crippling"
+          ]
+        }
+      ]
+    },
     {
-      "name": "Warmonger Doomstrike Missile",
+      "name": "Hellfire Missiles",
+      "modes": [
+        {
+          "firepower": "3BP",
+          "range": "∞",
+          "specialRules": [
+          "MW"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doomstrike Missiles",
       "modes": [
         {
           "firepower": "3BP",
           "range": "∞",
           "specialRules": [
           "Disrupt",
-          "Ind",
-          "SS"
+          "Ind"
           ]
         }
       ]
@@ -1857,7 +2155,52 @@
       ]
     },
       {
-      "name": "Titan Melta Cannon",
+      "name": "Heavy Melta Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT2+",
+          "range": 30,
+          "specialRules": [
+           "MW",
+           "TK(D3)",
+           "IC"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+1)",
+           "MW",
+           "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anfernati Melta Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT2+",
+          "range": 45,
+          "specialRules": [
+           "MW",
+           "TK(D3)",
+           "IC"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "MW",
+           "TK(1)"
+          ]
+        }
+      ]
+    },
+          {
+      "name": "2x Heavy Melta Cannon",
       "modes": [
         {
           "firepower": "AP4+/AT2+",
@@ -1880,30 +2223,7 @@
       ]
     },
           {
-      "name": "2x Titan Melta Cannon",
-      "modes": [
-        {
-          "firepower": "AP4+/AT2+",
-          "range": 30,
-          "specialRules": [
-           "MW",
-           "TK(D3)",
-           "IC"
-          ]
-        },
-        {
-          "firepower": "Small Arms",
-          "join": "and",
-          "specialRules": [
-           "EA(+1)",
-           "MW",
-           "TK(1)"
-          ]
-        }
-      ]
-    },
-          {
-      "name": "Paired Titan Melta Cannons",
+      "name": "Paired Heavy Melta Cannons",
       "modes": [
         {
           "firepower": "2x AP3+/AT2+",
@@ -1973,12 +2293,51 @@
         }
       ]
     },
-                            {
+    {
+      "name": "Lightning Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT4+",
+          "range": 45,
+          "specialRules": [
+          "Shield Disruptor",
+          "Crippling"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arc Blaster",
+      "modes": [
+        {
+          "firepower": "2x AT6+",
+          "range": 30,
+          "specialRules": [
+          "Shield Disruptor",
+          "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Magna Laser Destroyer",
       "modes": [
         {
-          "firepower": "2x AT4+",
+          "firepower": "2x AP6+/AT4+",
           "range": 60,
+          "specialRules": [
+          "Shield Disruptor",
+          "Crippling"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Magna Laser Annihilator",
+      "modes": [
+        {
+          "firepower": "6x AP6+/AT4+",
+          "range": 75,
           "specialRules": [
           "Shield Disruptor",
           "Crippling"
@@ -2043,6 +2402,19 @@
           "range": 30,
           "specialRules": [
             "Energetic"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plasma Mortar",
+      "modes": [
+        {
+          "firepower": "AP5+/AT6+",
+          "range": 30,
+          "specialRules": [
+            "IC",
+            "Siege"
           ]
         }
       ]
@@ -2220,6 +2592,20 @@
       ]
     },
     {
+      "name": "Pulsar-Fusil",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT4+",
+          "range": 30,
+          "specialRules": [
+            "Shield Disruptor",
+            "Disrupt",
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Neutron Beam Laser",
       "modes": [
         {
@@ -2249,7 +2635,7 @@
     },
 
     {
-      "name": "Titan Neutron Laser",
+      "name": "Heavy Neutron Laser",
       "modes": [
         {
           "firepower": "4x AP6+/AT5+",
@@ -2379,6 +2765,19 @@
       ]
     },
     {
+      "name": "Graviton Singularity Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT5+",
+          "range": 15,
+          "specialRules": [
+           "Graviton(D3)",
+           "Shield Piercer"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Graviton-Charge Cannon",
       "modes": [
         {
@@ -2417,6 +2816,19 @@
         }
       ]
     },
+    {
+      "name": "Graviton Devastator",
+      "modes": [
+        {
+          "firepower": "AP3+/AT3+",
+          "range": 60,
+          "specialRules": [
+           "Graviton(D3+1)",
+           "Shield Piercer"
+          ]
+        }
+      ]
+    },
          {
       "name": "Kirus Grav Imploder",
       "modes": [
@@ -2435,6 +2847,106 @@
             "EA(+1)",
             "MW",
             "TK(D3)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eradication Ray",
+      "modes": [
+        {
+          "firepower": "AP5+/AT6+",
+          "range": 15,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+             "MW"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eradication Beamer",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+             "EA(+1)",
+             "MW"
+          ]
+        }
+      ]
+    },
+     {
+      "name": "Eradication Pulsar",
+      "modes": [
+        {
+          "firepower": "2x AP3+/AT4+",
+          "range": 30,
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+2)",
+            "MW",
+            "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heavy Eradication Pulsar",
+      "modes": [
+        {
+          "firepower": "3x AP3+/AT4+",
+          "range": 45,
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+3)",
+            "MW",
+            "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eradication Quasar",
+      "modes": [
+        {
+          "firepower": "4x AP3+/AT4+",
+          "range": 60,
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+4)",
+            "MW",
+            "TK(1)"
           ]
         }
       ]
@@ -2596,6 +3108,21 @@
       "modes": [
         {
           "firepower": "AP6+/AT5+",
+          "range": 15,
+          "specialRules": [
+          "IC",
+           "Disrupt",
+           "Crippling",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Twin Volkite Calvier",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
           "range": 15,
           "specialRules": [
           "IC",
@@ -2798,16 +3325,30 @@
       ]
     },
         {
-      "name": "Warmonger Vengeance Cannon",
+      "name": "Vengeance Cannon",
       "modes": [
         {
           "firepower": "AP4+/AT2+",
           "range": 120,
           "specialRules": [
            "MW",
-           "TK(D3+1)",
+           "TK(D6)",
            "Shield Disruptor",
            "Crippling"
+          ]
+        }
+      ]
+    },
+     {
+      "name": "Nova Cannon",
+      "modes": [
+        {
+          "firepower": "4x AP5+/AT3+",
+          "range": 100,
+          "specialRules": [
+           "MW",
+           "TK(1)",
+           "Shield Disruptor"
           ]
         }
       ]
@@ -2860,57 +3401,6 @@
         }
       ]
     },
-
-
-        {
-      "name": "",
-      "modes": [
-        {
-          "firepower": "AP3+/AT3+",
-          "range": 60,
-          "specialRules": [
-           "MW",
-           "TK(1)",
-           "IC",
-           "Shield Piercer",
-           "Shock Pulse",
-           "Psi"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Death Pulse",
-      "modes": [
-        {
-          "firepower": "3x AP2+/AT2+",
-          "range": 15,
-          "specialRules": [
-           "IC",
-           "Shield Piercer",
-           "Shock Pulse",
-           "Psi"
-          ]
-        }
-      ]
-    },
-            {
-      "name": "Antipathic Tempest",
-      "modes": [
-        {
-          "firepower": "3BP",
-          "range": 45,
-          "specialRules": [
-           "Disrupt",
-           "IC",
-           "Shield Piercer",
-           "Shock Pulse",
-           "Psi"
-          ]
-        }
-      ]
-    },
-
         {
       "name": "Chainswords",
       "modes": [
@@ -2984,7 +3474,20 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "Lightning Charge"
+            "Devastating Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cerastus Shock Lance",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "Lance",
+            "Shock Pulse",
+            "Devastating Charge"
           ]
         }
       ]
@@ -3059,6 +3562,17 @@
         }
       ]
     },
+    {
+      "name": "Tempest Warblade",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
             {
       "name": "Thunderstrike Gauntlet",
       "modes": [
@@ -3079,6 +3593,7 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
+            "Devastating Charge",
             "MW",
             "TK(D3+1)"
 
@@ -3093,6 +3608,7 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
+            "Devastating Charge",
             "MW",
             "TK(D3+3)"
 
@@ -3107,6 +3623,7 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
+            "Devastating Charge",
             "MW",
             "TK(D6)",
             "Siege"
@@ -3121,7 +3638,8 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+3)",
+            "EA(+2)",
+            "Devastating Charge",
             "MW",
             "TK(1)"
 
@@ -3294,6 +3812,60 @@
       ]
     },
     {
+      "name": "Power Blade Array",
+      "modes": [
+        {
+          "firepower": "AP5+/AT6+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Graviton Hammer",
+      "modes": [
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+            "MW",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Graviton Ram",
+      "modes": [
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+            "MW",
+            "Devastating Charge",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shock Ram",
+      "modes": [
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+          "Devastating Charge",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Leviathan Siege Claw",
       "modes": [
         {
@@ -3309,6 +3881,24 @@
             "MW",
             "TK(1)",
             "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reaper Chainfist",
+      "modes": [
+        {
+          "firepower": "AP3+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+            "EA(+1)",
+            "MW"
           ]
         }
       ]
@@ -3438,7 +4028,7 @@
     },
     {
       "name": "EA(+4)",
-      "description": "Extra Attack +3"
+      "description": "Extra Attack +4"
     },
     {
       "name": "EA(+D3)",
@@ -3473,8 +4063,8 @@
       "description": "Indirect Fire"
     },
     {
-      "name": "Lightning Charge",
-      "description": "Lightning Charge"
+      "name": "Devastating Charge",
+      "description": "Devastating Charge"
     },
     {
       "name": "Left",

@@ -10,7 +10,8 @@
         "weapons": [
         ],
         "specialRules": [
-          "Supreme Commander"
+          "Supreme Commander",
+          "Vox-Caster"
         ]
       },
       {
@@ -20,7 +21,17 @@
         ],
         "specialRules": [
           "Commander",
-          "Leader"
+          "Leader",
+          "Vox-Caster"
+        ]
+      },
+      {
+        "name": "Devotional Bell",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+          "Inspiring"
         ]
       },
 
@@ -59,7 +70,7 @@
               {
                 "name": "IMPERATOR WEAPONS",
                 "weapons": [
-                  "Imperator Hellstorm Cannon||FwA",
+                  "Hellstorm Cannon||FwA",
                   "Imperator Plasma Annihilator||FwA"
                 ]
               }
@@ -72,7 +83,6 @@
           "Ripple Fire",
           "Dauntless",
           "Reinforced Armour",
-          "Vox-Caster",
           "Walker",
           "Towering",
           "Ponderous",
@@ -100,7 +110,7 @@
                 "name": "POINT DEFENSE",
                 "weapons": [
                   "Hydra Autocannons|4",
-                  "Battle Cannon||FxF"
+                  "Vanquisher Cannon||FxF"
                 ]
               }
             ]
@@ -112,8 +122,8 @@
               {
                 "name": "WARMONGER WEAPONS",
                 "weapons": [
-                  "Warmonger Vengeance Cannon||FwA",
-                  "Warmonger Doomstrike Missile|8|FwA"
+                  "Vengeance Cannon||FwA",
+                  "Doomstrike Missiles||FwA"
                 ]
               }
             ]
@@ -122,11 +132,12 @@
         "specialRules": [
           "Damage Capacity 14",
           "Void Shields 12",
-          "Ripple Fire",
+          "Split Fire",
           "Dauntless",
           "Reinforced Armour",
           "Commander",
           "Vox-Caster",
+          "Leader",
           "Walker",
           "Towering",
           "Ponderous",
@@ -137,7 +148,18 @@
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
         "crit": "The unit takes d3+1 points of damage, and loses D6+1 Void Shields"
       },
-
+      {
+        "name": "Lysander Fighter",
+        "type": "AC",
+        "speed": "Fighter",
+        "armour": 6,
+        "weapons": [
+          "Multi-Laser||FxF",
+          "AC Combi-Bolters||FxF"
+        ],
+        "specialRules": [
+        ]
+      },
       {
         "name": "Warmaster Iconoclast Heavy Battle Titan",
         "type": "WE",
@@ -165,7 +187,7 @@
                  "2x Inferno Gun|0-1|FwA",
                  "2x Vulcan Mega-Bolter|0-1|FwA",
                  "2x Turbo-Laser Destructor|0-1|FwA",
-                 "2x Titan Melta Cannon|0-1|FwA",
+                 "2x Heavy Melta Cannon|0-1|FwA",
                  "2x Plasma Blastgun|0-1|FwA"
                 ]
               },
@@ -236,7 +258,7 @@
                  "2x Inferno Gun|0-1|FwA",
                  "2x Vulcan Mega-Bolter|0-1|FwA",
                  "2x Turbo-Laser Destructor|0-1|FwA",
-                 "2x Titan Melta Cannon|0-1|FwA",
+                 "2x Heavy Melta Cannon|0-1|FwA",
                  "2x Plasma Blastgun|0-1|FwA"
                 ]
               },
@@ -407,7 +429,7 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Titan Melta Cannon|0-1|FwA"
+                  "Heavy Melta Cannon|0-1|FwA"
                 ]
               },
               {
@@ -484,7 +506,7 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Titan Melta Cannon|0-1|FwA"
+                  "Heavy Melta Cannon|0-1|FwA"
                 ]
               },
               {
@@ -533,7 +555,7 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Titan Warp Missile|0-1|FxF",
+                  "Warp Missile|0-1|FxF",
                   "Volkite Eradicator|0-1|FxF",
                   "Conversion Beam Dissolutor|0-1|FxF",
                   "Graviton Eradicator|0-1|FxF"
@@ -557,7 +579,7 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Titan Melta Cannon|0-1|FwA"
+                  "Heavy Melta Cannon|0-1|FwA"
                 ]
               },
               {
@@ -600,7 +622,7 @@
               {
                 "name": "BATTLE WEAPONS",
                 "weapons": [
-                  "Titan Neutron Laser|0-1|FxF"
+                  "Heavy Neutron Laser|0-1|FxF"
                 ]
               },
               {

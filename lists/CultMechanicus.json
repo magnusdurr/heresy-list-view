@@ -1,6 +1,6 @@
 [
   {
-    "name": "Mechanicum Taghmata",
+    "name": "Cult Mechanicus",
     "specialRules": [
 
     ],
@@ -570,83 +570,342 @@
       {
         "name": "Ordinatus Minoris",
         "type": "WE",
-        "speed": 20,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Heavy Stubber|2|",
-          ">Battle Weapons<",
-          "Turbo-Laser Destructor|0-1|FxF",
-          "Apocalypse Missile Launcher|0-1|FxF",
-          "Heavy Icarus Array|0-1|",
-          "Titan Plasma Cannon|0-1|FxF",
-          "Titan Melta Cannon |0-1|",
-          "Gatling Blaster|0-1|FxF",
-          ">Support Weapons<",
-          "Plasma Destructor|0-1|FxF",
-          "Quake Cannon|0-1|FxF",
-          "Volcano Cannon|0-1|FxF"
+        "variants": [
+          {
+            "name": "Ulator",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Sonic Destructor||FxF",
+              "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Sagittar",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Belicosa Vulcano Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Hellion",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Heavy Eradication Pulsar||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Urkallac",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Conversion Beam Extripator||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Diamat",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Mori Quake Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Gaenna",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Sunfury Plasma Annihilator||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Anfernati",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+            "Anfernati Melta Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Fusilac",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Doomstrike Missiles||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Ybalinex",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Warp Missile||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Imcinerati",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Volkite Carronade||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Jimeria",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Turbo-Laser Blaster||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Mygezi",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Macro-Gatling Blaster||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Xterpi",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Graviton Ruinator||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Helias",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+            "Helias Defense Array",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Metrangas",
+            "type": "WE",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Neutron-Wave Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 2",
-          "Void Shields 2",
+          "Dispersion Field (3+)",
           "Reinforced Armour",
-          "Fearless"
+          "Dauntless",
+          "Steadfast",
+          "Ponderous"
         ],
-        "notes": "Armed with a single Battle Weapon. May be upgraded to a Support Weapon.",
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 5+"
-      },
-      {
-        "name": "Ordinatus Minoris ",
-        "type": "WE",
-        "speed": 20,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Heavy Stubber|2|",
-          ">Battle Weapons<",
-          "Turbo-Laser Destructor|0-1|FxF",
-          "Apocalypse Missile Launcher|0-1|FxF",
-          "Heavy Icarus Array|0-1|",
-          "Titan Plasma Cannon|0-1|FxF",
-          "Titan Melta Cannon |0-1|",
-          "Gatling Blaster|0-1|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Void Shields 2",
-          "Reinforced Armour",
-          "Fearless"
-        ],
-        "notes": "Armed with a single Battle Weapon.",
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 5+"
+        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
       },
       {
         "name": "Ordinatus Majoris",
         "type": "WE",
-        "speed": 10,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Heavy Stubber|2|",
-          "Lascannon|2|",
-          ">Ordinatus Armageddon<",
-          "Nova Cannon||FxF",
-          ">Ordinatus Mars<",
-          "Sonic Disruptor||FxF",
-          ">Ordinatus Golgotha<",
-          "Hellfire Missile|6|FxF"
+        "variants": [
+          {
+            "name": "Armageddon",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Nova Cannon||FxF",
+              "Sollex Heavy-Las|2|FxF",
+              "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Mars",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Sonic Disruptor||FxF",
+              "Sollex Heavy-Las|2|FxF",
+              "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Golgotha",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Hellfire Missiles||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Endymion",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Magna Laser Annihilator||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Cyclothrathe",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Terrebrax Phospex Battery||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Malamuria",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Graviton Devastator||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Helicon",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+            "Helicon Defense Array",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Karros",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Eradication Quasar||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Rakenheim",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Warp Missiles||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Incus",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Vengeance Cannon||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 4",
-          "Void Shields 4",
+          "Dispersion Field (2+)",
           "Reinforced Armour",
-          "Fearless"
+          "Dauntless",
+          "Steadfast",
+          "Ponderous"
         ],
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
+        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 3+"
       },
       {
         "name": "Gorgon",
@@ -683,77 +942,6 @@
           "Transport"
         ],
         "notes": "May transport six infantry units without Jump Packs or Mounted."
-      },
-      {
-        "name": "Lysander Fighter",
-        "type": "AC",
-        "speed": "Fighter",
-        "armour": 6,
-        "weapons": [
-          "AC Multilaser||FxF",
-          "AC Storm Bolters||FxF"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Avenger Strike Fighter",
-        "type": "AC",
-        "speed": "Fighter-Bomber",
-        "armour": 5,
-        "weapons": [
-          "AC Avenger Bolt Cannon||FxF",
-          "AC Twin Autocannon||FxF",
-          "AC Heavy Stubber Turret"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Stratoraptor Archaeopter",
-        "type": "Bomber",
-        "armour": 5,
-        "weapons": [
-          "AC Phosphor Blaster|FxF",
-          "AC Twin Lascannon|FxF",
-          "AC Twin Heavy Stubber Turret"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Lunar Class Cruiser",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "3BP, MW"
-              }
-            ]
-          },
-          "Pin Point"
-        ]
-      },
-      {
-        "name": "Ark Mechanicus Battleship",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "0-1x Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "6BP, MW"
-              }
-            ]
-          },
-          "Pin Point|0-1 2|"
-        ],
-        "specialRules": [
-          "Slow to Arrive (may only arrive on the battlefield from turn 2 onwards)"
-        ],
-        "notes": "Is equipped with either Orbital Bombardment or two Pin Point attacks (may be chosen at the start of battle)"
       }
     ]
   }

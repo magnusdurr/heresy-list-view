@@ -9,7 +9,51 @@
     {
       "title": "Machine Spirit",
       "description": [
-        "A formation that exclusively consists of units with <i>Machine Spirit</i> may only perform the Hold, Engage, Marshal, Sustained Fire and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
+        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with <i>Machine Spirit</i> may only perform the Hold, Engage, Marshal, Sustained Fire and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
+      ]
+    },
+    {
+      "title": "Cybernetica Cortex (Sentry)",
+      "description": [
+        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with 'Cybernetica Cortex (Sentry)' special rule may only perform the Hold, Marshal, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
+      ]
+    },
+    {
+      "title": "Cybernetica Cortex (Conqueror)",
+      "description": [
+        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with 'Cybernetica Cortex (Conqueror)' special rule may only perform the Hold, Marshal, Engage, and Advance actions. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
+      ]
+    },
+    {
+      "title": "Silica Animus Ligatus",
+      "description": [
+        "A unit with the 'Silica Animus Ligatus' special rule is not considered to have the 'Cybernetica Cortex' special rule. In addition, if a formation that contains a unit with this special rule fails to activate, the formation suffers D3 BMs instead of one."
+      ]
+    },
+    {
+      "title": "Animus Malefica Soluta",
+      "description": [
+        "A formation with the 'Animus Malefica Soluta' special rule is not considered to have the 'Cybernetica Cortex' special rule, and gains the 'Invulnerable Save' and 'Daemonic' special rules. In addition, if a formation that contains at least one unit with this special rule fails to activate, the formation suffers D3 BMs instead of one."
+      ]
+    },
+    {
+      "title": "Construct Shields",
+      "description": [
+        "Construct Shields work in exactly the same manner as Void Shields (see Void Shields), with the sole exception that they may not be repaired once they have been knocked down by a hit, and will instead remain down for the remainder of the battle."
+      ]
+    },
+    {
+      "title": "Atomantic Shielding",
+      "description": [
+        "Atomantic Shields work exactly like an Invulnerable Save, except if a 1 is rolled when using the save, the shield explodes. All units within 5cm takes a hit on 6+."
+      ]
+    },
+    {
+      "title": "Dispersion Field (x)",
+      "description": [
+        "A Dispersion Field provide a saving throw to the value of <i>x</i>, which is reduced by 2 (e.g. 3+ to 5+) at the start of each subsequent turn. When the Dispersion Field reaches 7+ or higher it is no longer considered to be operable and thus confers no save.",
+        "This save may always be taken even against weapons with the Macro Weapon or Titan Killer abilities. If a unit has Reinforced Armour it may use its re-roll unless hit by a Lance, Macro Weapon or Titan Killer attack but the re-roll uses the units armour value. Hits saved by the Dispersion Field do not generate Blast Markers, even if they have the Disrupt ability.",
+        "Against Titan Killer attacks that cause extra damage make one Dispersion Field save roll, if this is successful the unit takes no damage, if the roll fails it suffers all the damage."
       ]
     },
     {
@@ -75,7 +119,7 @@
     {
       "title": "Shield Disruptor",
       "description": [
-        "Each point of damage from a hit with <i>Shield Disruptor</i> will knock down two <i>Powerfields</i>, <i>Shadowfields</i> or <i>Void Shields</i>. If a unit with only one field remaining is hit the field knocked down, but the hit does not carry over. In addition, <i>Shield Disruptor</i> hits ignores <i>Deflector Shields</i> and <i>Ion Shields</i>."
+        "Each point of damage from a hit with <i>Shield Disruptor</i> will knock down two <i>Powerfields</i>, <i>Shadowfields</i> or <i>Void Shields</i>. If a unit with only one field remaining is hit the field knocked down, but the hit does not carry over. In addition, <i>Shield Disruptor</i> hits ignores <i>Deflector Shields</i>, <i>Ion Shields</i>, and <i>Dispersion Shields</i>."
       ]
     },
     {
@@ -240,7 +284,7 @@
     {
       "title": "Shield Piercer",
       "description": [
-        "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Save (but not Regeneration), Ion Shields, Powerfields, Construct Shields and Void Shields."
+        "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Save (but not Regeneration), Ion Shields, Dispersion Shields, Powerfields, Construct Shields and Void Shields."
       ]
     },
     {
@@ -306,9 +350,9 @@
     },
 
     {
-      "title": "Lightning Charge",
+      "title": "Devastating Charge",
       "description": [
-        "Weapon or Unit gains <i>First Strike</i> during engages initiated by the formation."
+        "Weapon or Unit gains an additional +1 to hit with CC weapons during assaults initiated by the formation."
       ]
     },
     {
@@ -418,7 +462,7 @@
     {
       "title": "Machine Empathy",
       "description": [
-        "As long as a formation contains a unit with the 'Machine Empathy' special ability, all AV units in the formation gains Invulnerable Save."
+        "As long as a formation contains a unit with the 'Machine Empathy' special ability, all LV and AV units in the formation gains Invulnerable Save. Units that already have Invulnerable Save gains Regeneration instead."
       ]
     },
     {
@@ -599,12 +643,7 @@
         "Formations containing Thousands Sons Daemon Princes and Scarab Occult Terminators may only contain units of INF and AV units with Walker, and must be held in the reserves at the start of the game. Such formations may only enter the Battlefield through a Warp Rift."
       ]
     },
-    {
-      "title": "Construct Shields",
-      "description": [
-        "Construct Shields work in exactly the same manner as Void Shields (see Void Shields), with the sole exception that they may not be repaired once they have been knocked down by a hit, and will instead remain down for the remainder of the battle."
-      ]
-    },
+    
     {
       "title": "Daemon Engine (x)",
       "description": [
@@ -702,45 +741,15 @@
       ]
     },
     {
-      "title": "Claws Forever Red",
-      "description": [
-        "In addition to being counted for suppression, Night Lords units may also use Small Arms to shoot. While incapable of doing direct damage, this will still inflict a Blast Marker on enemy formations that come under fire."
-      ]
-    },
-    {
-      "title": "Necron Reserves",
-      "description": [
-        "Any Necron formation that can enter the battlefield by Teleport or via a Necron Portal can be held back in reserve. Any Necron formation located in the reserves during the End Phase of the third turn and onwards is considered destroyed for the purpose of tiebreak and the Break Their Spirit tournament scenario objective."
-      ]
-    },
-    {
-      "title": "Necron Garrisons",
-      "description": [
-        "Only Necron Phalanx and Canoptek Swarm formations may garrison in Epic Tournament scenarios. Necron Phalanx formations may only garrison from a Tomb Complex objective."
-      ]
-    },
-    {
-      "title": "The Unbidden",
-      "description": [
-        "Necron armies must contain at least one 'The Unbidden' formation. Flayed Ones may only contest objectives, must start the game in the reserves, and may not use Necron Portals."
-      ]
-    },
-    {
-      "title": "Extradimensional Conduit",
-      "description": [
-        "Necron units may re-roll 1:s when testing for Teleport Mishap."
-      ]
-    },
-    {
       "title": "Regeneration",
       "description": [
-        "Regeneration functions exactly like an Invulnerable Save except that it is a 5+ save rather than 6+. Against Titan Killer attacks, WE and H-AV must make one Invulnerable Save against each point of damage."
+        "The 'Regeneration' special rule functions exactly like an Invulnerable Save except that it is a 5+ save rather than 6+. Against Titan Killer attacks, WE must make one Regeneration save against each point of damage."
       ]
     },
     {
-      "title": "Living Metal",
+      "title": "Invincibility",
       "description": [
-        "Living Metal functions exactly like an Invulnerable Save except that it is a 4+ save rather than 6+. Against Titan Killer attacks, WE and H-AV must make one Invulnerable Save against each point of damage."
+        "The 'Invincibility' special rule functions exactly like an Invulnerable Save except that it is a 4+ save rather than 6+. Against Titan Killer attacks, WE must make one Invincibility save against each point of damage."
       ]
     },
     {
@@ -870,12 +879,6 @@
         "A formation that contains at least one unit with Coordinated Fire can order up to two other un-broken formations within 15cm that have not taken an action this turn to follow their own formation when they take an Advance, Double or Sustained Fire action.",
         "Make a single Initiative roll for all foarmations, counting a single -1 modifier if any have Blast Markers. If the test is failed then the original formation (containing the unit calling for Coordinated Fire) receives a Blast Marker and must take a hold action. The other formations are unaffected (and may take an action later in the turn). If the test is passed then all formations concerned are allowed to take either an Advance, Double or Sustained Fire action.",
         "There is no obligation for all formations to take the same action, and these actions may be resolved in any order, but they must all fire at the same target formation. If the formation being activated is unable or unwilling to fire at the selected formation, it cannot fire at all that turn. The formations don’t have to stay within a given distance of each other and will complete their actions one after the other. Each formations action is declared and resolved (including testing to see if the target formation breaks) before moving on to the next Tau formation."
-      ]
-    },
-    {
-      "title": "Deflector Shield",
-      "description": [
-        "Tau Deflector Shields work like an Invulnerable Save in all respects, except it is 5+ instead of 6+. Against Titan Killer attacks, WE and H-AV must make one Invulnerable Save against each point of damage."
       ]
     },
     {

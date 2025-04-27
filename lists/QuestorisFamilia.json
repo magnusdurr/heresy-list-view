@@ -219,8 +219,8 @@
       },
 
            {
-        "name": "Questoris",
-        "type": "LV",
+        "name": "Mechanicum Questoris",
+        "type": "WE",
         "variants": [
           {
             "name": "Styrix",
@@ -250,6 +250,7 @@
           }
         ],
         "specialRules": [
+        "Damage Capacity 2",
         "Walker",
           "Reinforced Armour",
           "Thick Rear Armour",
@@ -260,271 +261,108 @@
       },
 
       {
-        "name": "Cerastus Knight-Acheron",
-        "type": "H-AV",
+        "name": "Cerastus Knight",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Acheron",
+        "type": "WE",
         "speed": 30,
         "armour": 5,
         "cc": 2,
         "ff": 4,
-        "weapons": [
+            "weapons": [
           "Cerastus Flame Cannon",
           "Reaper Chainfist"
-        ],
-        "specialRules": [
-          "Stubborn",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Walker",
-          "Scout",
-          "Ion Shield (3+)"
-        ]
-      },
-      {
-        "name": "Cerastus Knight-Castigator",
-        "type": "H-AV",
+            ]
+          },
+          {
+            "name": "Castigator",
+        "type": "WE",
         "speed": 30,
         "armour": 5,
         "cc": 2,
         "ff": 4,
-        "weapons": [
+            "weapons": [
           "Castigator Cannon",
           "Tempest Warblade"
-        ],
-        "specialRules": [
-          "Stubborn",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Walker",
-          "Scout",
-          "Ion Shield (3+)"
-        ]
-      },
-      {
-        "name": "Cerastus Knight-Lancer",
-        "type": "H-AV",
+            ]
+          },
+          {
+            "name": "Lancer",
+        "type": "WE",
         "speed": 30,
         "armour": 5,
         "cc": 2,
         "ff": 4,
-        "weapons": [
+            "weapons": [
           "Cerastus Shock Lance"
-        ],
-        "specialRules": [
-          "Stubborn",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Walker",
-          "Scout",
-          "Ion Shield (3+)",
-          "Ionic Flare Shield"
-        ]
-      },
-      {
-        "name": "Cerastus Relic Knight-Atrapos",
-        "type": "H-AV",
+            ]
+          },
+          {
+            "name": "Atrapos",
+        "type": "WE",
         "speed": 30,
         "armour": 5,
         "cc": 2,
         "ff": 4,
-        "weapons": [
+            "weapons": [
           "Graviton Singularity Cannon",
           "Atrapos Lascutter"
+            ]
+          }
         ],
         "specialRules": [
-          "Stubborn",
-          "Reinforced Armour",
+        "Damage Capacity 2",
+        "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
           "Scout",
-          "Ion Shield (3+)",
-          "Ionic Flare Shield"
-        ]
-      },
-      {
-        "name": "Acastus Relic Knight-Porphyrion",
-        "type": "WE",
-        "speed": 20,
-        "armour": 4,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Quad Magna Lascannon||FxF",
-          "Autocannon|2|FxF",
-          "Helios Defense Missiles"
-        ],
-        "specialRules": [
-          "Damage Capacity: 3",
-          "Stubborn",
-          "Reinforced Armour",
-          "Walker",
           "Ion Shield (3+)"
         ],
-        "crit": "The Acastus Knight takes 1 additional damage."
+        "notes": "The Cerastus Knight Lancer and Atrapos have the 'Ionic Flare Shield' special rule.",
+        "crit": "The Cerastus Knight is destroyed."
       },
+
       {
-        "name": "Acastus Relic Knight-Asterius",
+        "name": "Mechanicum Acastus",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Porphyrion",
         "type": "WE",
         "speed": 20,
         "armour": 4,
         "cc": 4,
         "ff": 4,
-        "weapons": [
+            "weapons": [
+          "Twin Magna Lascannon|2|FxF",
+          "Autocannon|2|FxF",
+          "Helios Defense Missiles"
+            ]
+          },
+          {
+            "name": "Asterius",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 4,
+        "ff": 4,
+            "weapons": [
           "Conversion Beam Cannon|2|FxF",
           "Volkite Culvertin|2|FxF",
           "Karacnos Mortar Battery||FxF"
+            ]
+          }
         ],
         "specialRules": [
-          "Damage Capacity: 3",
-          "Stubborn",
+        "Damage Capacity 3",
+        "Walker",
           "Reinforced Armour",
           "Walker",
           "Ion Shield (3+)"
         ],
         "crit": "The Acastus Knight takes 1 additional damage."
-      },
-      {
-        "name": "Knight-Baron",
-        "type": "H-AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Rapid Fire Battle Cannon",
-          "Shock Lance",
-          "Knight Power Gauntlet"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Fearless",
-          "Walker",
-          "Inspiring",
-          "Ion Shield (4+)"
-        ]
-      },
-      {
-        "name": "Knight-Paladin",
-        "type": "H-AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Battle Cannon",
-          "Shock Lance",
-          "Knight Chainsword"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker",
-          "Ion Shield (4+)"
-        ]
-      },
-      {
-        "name": "Knight-Castellan",
-        "type": "H-AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Long Cannon",
-          "Multi-Barreled Autocannon|0-1|",
-          "Twin Lascannon|0-1|"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker",
-          "Ion Shield (4+)"
-        ]
-      },
-      {
-        "name": "Knight-Lancer",
-        "type": "H-AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Battle Cannon",
-          "Knight Power Lance"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker",
-          "Scout",
-          "Ion Shield (4+)"
-        ]
-      },
-      {
-        "name": "Knight-Errant",
-        "type": "H-AV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Thermal Cannon",
-          "Shock Lance",
-          "Knight Power Gauntlet"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker",
-          "Ion Shield (4+)"
-        ]
-      },
-      {
-        "name": "Knight-Warden Demolisher",
-        "type": "H-AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 5,
-        "ff": 3,
-        "weapons": [
-          "Demolisher",
-          "Heavy Bolter|2|"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker",
-          "Ion Shield (4+)"
-        ]
-      },
-      {
-        "name": "Knight-Warden Vanquisher",
-        "type": "H-AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Vanquisher Cannon"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker",
-          "Ion Shield (4+)"
-        ]
-      },
-      {
-        "name": "Knight-Warden Skysweeper",
-        "type": "H-AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Skysweeper Missile Launcher",
-          "Multilaser|2|"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker",
-          "Ion Shield (4+)"
-        ]
       }
     ]
   }

@@ -7,21 +7,24 @@
     "unit": [
       {
         "name": "Archmagos Prime",
-        "type": "INF",
+        "type": "LV",
         "speed": 15,
-        "armour": 3,
+        "armour": 5,
         "cc": 4,
         "ff": 4,
         "weapons": [
           "Volkite Serpenta",
+          "Meltagun",
           "Omnissian Axe"
         ],
         "specialRules": [
           "Supreme Commander",
           "Inspiring",
           "Fearless",
+          "Reinforced Armour",
           "Invulnerable Save",
           "Machine Empathy",
+          "Ponderous",
           "Vox-Caster"
         ]
       },
@@ -40,7 +43,8 @@
           "Commander",
           "Leader",
           "Invulnerable Save",
-          "Machine Empathy",
+          "Ponderous",
+          "Steadfast",
           "Vox-Caster"
         ]
       },
@@ -50,28 +54,30 @@
         "speed": 15,
         "armour": 4,
         "cc": 5,
-        "ff": 5,
         "weapons": [
           "Omnissian Axe"
         ],
-        "specialRules": []
-      },
-      {
-        "name": "Adsecularis Las Covenant",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Las-Locks"
-        ],
         "specialRules": [
-          "Machine Spirit",
-          "Expendable"
+        "Invulnerable Save",
+        "Leader",
+        "Vox-Caster",
+          "Ponderous",
+          "Steadfast"
         ]
       },
-       {
+      {
+        "name": "Paragon of Metal",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+        "Silica Animus Ligatus",
+        "Blitz",
+        "Leader",
+        "Invulnerable Save"
+        ]
+      },
+      {
         "name": "Thallax Cohort",
         "type": "INF",
         "variants": [
@@ -138,7 +144,9 @@
         ],
         "specialRules": [
           "Bulky",
-          "Jump Packs"
+          "Jump Packs",
+          "Ponderous",
+          "Steadfast"
         ]
       },
       {
@@ -154,7 +162,9 @@
         ],
         "specialRules": [
           "Bulky",
-          "Jump Packs"
+          "Jump Packs",
+          "Ponderous",
+          "Steadfast"
         ]
       },
       {
@@ -216,7 +226,9 @@
         ],
         "specialRules": [
         "Walker",
-          "Invulnerable Save"
+          "Invulnerable Save",
+          "Ponderous",
+          "Steadfast"
         ]
       },
       {
@@ -278,7 +290,101 @@
         ],
         "specialRules": [
           "Walker",
-          "Invulnerable Save"
+          "Invulnerable Save",
+          "Ponderous",
+          "Steadfast"
+        ]
+      },
+      {
+        "name": "Adsecularis Las Covenant",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Las-Locks"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex (Conqueror)",
+          "Expendable",
+          "Ponderous",
+          "Steadfast"
+        ]
+      },
+      {
+        "name": "Scyllax Guardian Maniple",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 5,
+        "ff": 6,
+        "weapons": [
+          "Bolters"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex (Sentry)",
+          "Skirmishers",
+          "Fearless",
+          "Expendable",
+          "Ponderous"
+        ]
+      },
+      {
+        "name": "Vorax Battle-Automata",
+        "type": "INF",
+        "speed": 20,
+        "armour": 5,
+        "cc": 3,
+        "ff": 5,
+        "weapons": [
+          "Rotor Cannon",
+          "Lightning Guns"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex (Conqueror)",
+          "Skirmisher",
+          "Bulky",
+          "Fearless",
+          "Expendable",
+          "Ponderous"
+        ]
+      },
+      {
+        "name": "Arlatax Battle-Automata",
+        "type": "LV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Power Blade Array",
+          "Plasma Cannon"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex (Conqueror)",
+          "Jump Packs",
+          "Fearless",
+          "Expendable",
+          "Ponderous"
+        ]
+      },
+      {
+        "name": "Domitar Battle-Automata",
+        "type": "LV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 6,
+        "weapons": [
+          "Missile Launcher|2",
+          "Graviton Hammer"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex (Conqueror)",
+          "Fearless",
+          "Expendable",
+          "Ponderous"
         ]
       },
       {
@@ -293,304 +399,170 @@
           "Power Fist"
         ],
         "specialRules": [
-          "Machine Spirit",
+          "Cybernetica Cortex (Conqueror)",
           "Fearless",
           "Expendable",
           "Ponderous"
         ]
       },
       {
-        "name": "Castellax Battle-Automata",
+        "name": "Castellax Battle-Automata Maniple",
         "type": "LV",
-        "speed": 10,
-        "armour": 4,
+        "speed": 15,
+        "armour": 3,
         "cc": 5,
         "ff": 4,
         "weapons": [
-          "Autocannon",
-          "Heavy Bolter",
+          "Mauler Bolt Cannon",
+          "Bolters",
           "Power Fist"
         ],
         "specialRules": [
-          "Machine Spirit",
+          "Cybernetica Cortex (Conqueror)",
           "Fearless",
           "Expendable",
           "Ponderous"
         ]
       },
       {
-        "name": "Vultarax Robot",
+        "name": "Vultarax Stratos-Automata",
         "type": "LV",
-        "speed": 25,
-        "armour": 5,
+        "speed": 20,
+        "armour": 3,
         "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Missile Launcher"
-        ],
-        "specialRules": [
-          "Machine Spirit",
-          "Fearless",
-          "Expendable",
-          "Skimmer",
-          "Ponderous"
-        ]
-      },
-      {
-        "name": "Kataphron Breacher Battle Servitors",
-        "type": "LV",
-        "speed": 10,
-        "armour": 3,
-        "cc": 4,
-        "ff": 4,
-        "weapons": [
-          "Heavy Arc Rifles",
-          "Arc Claws"
-        ],
-        "specialRules": [
-          "Machine Spirit",
-          "Fearless",
-          "Expendable",
-          "Ponderous",
-          "Thick Rear Armour"
-        ]
-      },
-      {
-        "name": "Kataphron Destroyer Battle Servitors",
-        "type": "LV",
-        "speed": 10,
-        "armour": 3,
-        "cc": 5,
         "ff": 5,
         "weapons": [
-          "Plasma Culverins"
+          "Arc Blaster",
+          "Vultarax Havoc Launcher"
         ],
         "specialRules": [
-          "Machine Spirit",
+          "Cybernetica Cortex (Conqueror)",
           "Fearless",
+          "Skimmer",
           "Expendable",
           "Ponderous"
         ]
       },
       {
-        "name": "Tarantula",
+        "name": "Thanatar Siege-Automata",
         "type": "LV",
-        "speed": "Immobile",
-        "armour": 5,
-        "ff": "5+/4",
-        "weapons": [
+        "variants": [
           {
-            "name": "0-1x Twin Lascannon",
-            "modes": [
-              {
-                "firepower": "AT4+",
-                "range": 45
-              }
+            "name": "Cavas",
+            "type": "LV",
+            "speed": 10,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Mauler Bolt Cannon",
+              "Plasma Mortar"
             ]
           },
           {
-            "name": "0-1x Twin Heavy Bolter",
-            "modes": [
-              {
-                "firepower": "AP4+",
-                "range": 30
-              }
+            "name": "Calix",
+            "type": "LV",
+            "speed": 10,
+            "armour": 4,
+            "cc": 5,
+            "ff": 5,
+            "weapons": [
+            "Mauler Bolt Cannon",
+            "Sollex Heavy-Las",
+            "Graviton Ram"
             ]
           }
         ],
         "specialRules": [
-          "Machine Spirit",
+          "Cybernetica Cortex (Sentry)",
+          "Reinforced Armour",
           "Fearless",
-          "Expendable"
-        ],
-        "notes": "Armed with either Twin Lascannon or Twin Heavy Bolter. Tarantulas armed with Twin Heavy Bolter have their firefight value increased to 4+."
-      },
-      {
-        "name": "Hyperios Sentry",
-        "type": "LV",
-        "speed": "Immobile",
-        "armour": 6,
-        "ff": 6,
-        "weapons": [
-          "Hyperios Launcher"
-        ],
-        "specialRules": [
-          "Machine Spirit",
-          "Fearless",
-          "Expendable"
+          "Expendable",
+          "Ponderous"
         ]
       },
       {
-        "name": "Rapier",
-        "type": "INF",
-        "speed": 10,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Rapier Laser Destroyer"
-        ],
-        "specialRules": []
-      },
-      {
-        "name": "Mole Mortar",
-        "type": "INF",
-        "speed": 10,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Mole Mortar"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Termite",
+        "name": "Taghmata Triaros Armoured Conveyor",
         "type": "AV",
-        "speed": 15,
-        "armour": 5,
+        "speed": 25,
+        "armour": 3,
         "cc": 6,
-        "ff": 6,
+        "ff": 5,
         "weapons": [
-          "Bolters"
+          "Twin Volkite Caliver",
+          "Twin Mauler Bolt Cannon"
         ],
         "specialRules": [
-          "Thick Rear Armour",
-          "Tunneler",
-          "Transport"
-        ],
-        "notes": "May transport two infantry units without Jump Packs or Mounted. Must start the game in the reserves, and may only enter the battlefield through Tunneling."
-      },
-      {
-        "name": "Leman Russ",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Battle Cannon",
-          "Lascannon",
-          "Heavy Bolter|2|"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
+          "Transport (4)",
+          "Ponderous",
+          "Steadfast"
         ]
       },
       {
-        "name": "Leman Russ Demolisher",
+        "name": "Taghmata Karacnos Assault Tank",
         "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
+        "speed": 25,
+        "armour": 3,
+        "cc": 5,
+        "ff": 5,
         "weapons": [
-          "Demolisher",
-          "Lascannon",
-          "Plasma Cannon|2|"
+          "Lightning Locks",
+          "Karacnos Mortar Battery",
+          "Shock Ram"
         ],
         "specialRules": [
-          "Reinforced Armour"
+        "Ponderous",
+        "Steadfast"
         ]
       },
       {
-        "name": "Leman Russ Executioner",
+        "name": "Taghmata Krios Battle Tank",
         "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Plasma Destroyer",
-          "Lascannon",
-          "Plasma Cannon|2|"
+        "variants": [
+          {
+            "name": "Lightning",
+            "type": "AV",
+            "speed": 25,
+            "armour": 3,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Lightning Cannon",
+              "Volkite Caliver|2"
+            ]
+          },
+          {
+            "name": "Irad",
+            "type": "AV",
+            "speed": 25,
+            "armour": 3,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Irad-Scourer",
+            "Volkite Caliver|2"
+            ]
+          },
+          {
+            "name": "Venator",
+            "type": "AV",
+            "speed": 25,
+            "armour": 3,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Pulsar-Fusil",
+            "Volkite Caliver|2"
+            ]
+          }
         ],
         "specialRules": [
-          "Reinforced Armour"
+          "Ponderous",
+          "Steadfast"
         ]
       },
       {
-        "name": "Ordinatus Minoris",
-        "type": "WE",
-        "speed": 20,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Heavy Stubber|2|",
-          ">Battle Weapons<",
-          "Turbo-Laser Destructor|0-1|FxF",
-          "Apocalypse Missile Launcher|0-1|FxF",
-          "Heavy Icarus Array|0-1|",
-          "Titan Plasma Cannon|0-1|FxF",
-          "Titan Melta Cannon |0-1|",
-          "Gatling Blaster|0-1|FxF",
-          ">Support Weapons<",
-          "Plasma Destructor|0-1|FxF",
-          "Quake Cannon|0-1|FxF",
-          "Volcano Cannon|0-1|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Void Shields 2",
-          "Reinforced Armour",
-          "Fearless"
-        ],
-        "notes": "Armed with a single Battle Weapon. May be upgraded to a Support Weapon.",
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 5+"
-      },
-      {
-        "name": "Ordinatus Minoris ",
-        "type": "WE",
-        "speed": 20,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Heavy Stubber|2|",
-          ">Battle Weapons<",
-          "Turbo-Laser Destructor|0-1|FxF",
-          "Apocalypse Missile Launcher|0-1|FxF",
-          "Heavy Icarus Array|0-1|",
-          "Titan Plasma Cannon|0-1|FxF",
-          "Titan Melta Cannon |0-1|",
-          "Gatling Blaster|0-1|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Void Shields 2",
-          "Reinforced Armour",
-          "Fearless"
-        ],
-        "notes": "Armed with a single Battle Weapon.",
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 5+"
-      },
-      {
-        "name": "Ordinatus Majoris",
-        "type": "WE",
-        "speed": 10,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Heavy Stubber|2|",
-          "Lascannon|2|",
-          ">Ordinatus Armageddon<",
-          "Nova Cannon||FxF",
-          ">Ordinatus Mars<",
-          "Sonic Disruptor||FxF",
-          ">Ordinatus Golgotha<",
-          "Hellfire Missile|6|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 4",
-          "Void Shields 4",
-          "Reinforced Armour",
-          "Fearless"
-        ],
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
-      },
-      {
-        "name": "Gorgon",
+        "name": "Taghmata Gorgon",
         "type": "WE",
         "speed": 20,
         "armour": 4,
@@ -600,101 +572,14 @@
           "Twin Heavy Stubber|4|"
         ],
         "specialRules": [
-          "Damage Capacity 3",
+          "Damage Capacity (3)",
           "Reinforced Armour",
           "Walker",
-          "Transport"
+          "Heavy Transport (10)",
+          "Ponderous",
+          "Steadfast"
         ],
-        "notes": "May carry 10 infantry units without Jump Pack or Mounted. Praetorian Combat Servitor counts as two units each.",
         "crit": "The Gorgon is Immobilized, and may not move for the rest of the game. 1D3 random units inside takes a hit. Any subsequent criticals destroys the Gorgon."
-      },
-      {
-        "name": "Mole",
-        "type": "WE",
-        "speed": "Immobile",
-        "armour": 5,
-        "ff": 5,
-        "weapons": [
-          "Storm Bolter Array"
-        ],
-        "specialRules": [
-          "Damage capacity: 2",
-          "Reinforced Armour",
-          "Tunneler",
-          "Transport"
-        ],
-        "notes": "May transport six infantry units without Jump Packs or Mounted."
-      },
-      {
-        "name": "Lysander Fighter",
-        "type": "AC",
-        "speed": "Fighter",
-        "armour": 6,
-        "weapons": [
-          "AC Multilaser||FxF",
-          "AC Storm Bolters||FxF"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Avenger Strike Fighter",
-        "type": "AC",
-        "speed": "Fighter-Bomber",
-        "armour": 5,
-        "weapons": [
-          "AC Avenger Bolt Cannon||FxF",
-          "AC Twin Autocannon||FxF",
-          "AC Heavy Stubber Turret"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Stratoraptor Archaeopter",
-        "type": "Bomber",
-        "armour": 5,
-        "weapons": [
-          "AC Phosphor Blaster|FxF",
-          "AC Twin Lascannon|FxF",
-          "AC Twin Heavy Stubber Turret"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Lunar Class Cruiser",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "3BP, MW"
-              }
-            ]
-          },
-          "Pin Point"
-        ]
-      },
-      {
-        "name": "Ark Mechanicus Battleship",
-        "type": "SC",
-        "weapons": [
-          {
-            "name": "0-1x Orbital Bombardment",
-            "modes": [
-              {
-                "firepower": "6BP, MW"
-              }
-            ]
-          },
-          "Pin Point|0-1 2|"
-        ],
-        "specialRules": [
-          "Slow to Arrive (may only arrive on the battlefield from turn 2 onwards)"
-        ],
-        "notes": "Is equipped with either Orbital Bombardment or two Pin Point attacks (may be chosen at the start of battle)"
       }
     ]
   }
