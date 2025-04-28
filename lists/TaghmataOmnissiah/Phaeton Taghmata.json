@@ -1,37 +1,33 @@
 {
-  "fraction": "Solar Auxilia",
-  "army": "Calth High Guard (CCLVth Cohort)",
+  "fraction": "Taghmata Omnissiah",
+  "army": "Phaeton Taghmata",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-    "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
-  "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
-  "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
-  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legiones Cybernetica Maniples have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
+    "intro": "The Phaeton Taghmata operates out the Orthodox Forge World Phaeton in the Segmentum Solar, with an emphasis on Armoured formations. Its armies gain 12 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "armyforge": "EAH_TaghmataOmnissiah_PhaetonTaghmata",
+  "strategy": "Taghmata Omnissiah armies have a Strategy Rating of 2.",
+  "Initiative": "Legiones Astartes Allied Detachments, Collegia Titanica Allied Banners, and Centurio Ordinatus Maniples have an Initiative Rating of 1+. Phaeton Taghmata Maniples have an Initiative Rating of 2+, and are subject to the 'The Logic of Victory' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rules. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
   "specialRules": [
-  "Army of Mankind",
+  "The Logic of Victory",
   "Tunnelers"
   ],
   "units": [
     {
-      "from": "SolarAuxilia.json",
+      "from": "TaghmataOmnissiah.json",
       "units": [
-        "Auxilia Legate Marshal",
-        "Auxilia Captain",
-        "Auxilia Adjutant",
-        "Auxilia Command Squad",
-        "Auxilia Lasrifle Squad",
-        "Auxilia Flamer Squad",
-        "Veletarii",
-        "Charonite Ogryns",
-        "Aethon Heavy Sentinel",
-        "Auxilia Rapier|Quad Launcher|Laser Destroyer|Mole Mortar",
-        "Basilisk",
-        "Medusa",
-        "Termite Assault Drill",
-        "Leman Russ|Battle Tank|Demolisher|Vanquisher|Executioner|Annihilator|Exterminator|Incinerator",
-        "Malcador|Assault Tank|Annihilator|Vanquisher",
-        "Heavy Malcador|Infernus|Valdor",
-        "Auxilia Super-Heavy Tank|Baneblade|Hellhammer|Stormsword|Stormblade|Shadowsword"
+        "Archmagos Prime",
+        "Archmagos",
+        "Magos",
+        "Tech-Priest Auxilia",
+        "Thallax Cohort|Multi-Laser",
+        "Ursarax Cohort",
+        "Myridon Secutor Host|Plasma-Fusil",
+        "Myridon Destructor Host|Beamer",
+        "Taghmata Termite Assault Drill",
+        "Taghmata Leman Russ|Battle Tank|Demolisher|Executioner|Incinerator",
+        "Taghmata Triaros Armoured Conveyor",
+        "Taghmata Karacnos Assault Tank",
+        "Taghmata Krios Battle Tank|Lightning|Irad|Venator"
       ],
       "unitRules": [
       "Energetic",
@@ -48,19 +44,25 @@
     {
       "from": "LegioCybernetica.json",
       "units": [
-        "Tarantula|Lascannon|Hyperios",
-        "Cyclops|Demolitor|Incinerator"
+        "Adsecularis Las Covenant",
+        "Vorax Battle-Automata",
+        "Arlatax Battle-Automata",
+        "Domitar Battle-Automata",
+        "Castellax Battle-Automata Maniple",
+        "Vultarax Stratos-Automata",
+        "Thanatar Siege-Automata|Cavas|Calix"
       ],
       "unitRules": [
-      "Machine Spirit",
-      "Self-Destruct"
+      "Cybernetica Cortex (Overwatch)",
+      "Cybernetica Cortex (Advance)",
+      "Cybernetica Cortex (Engage)",
+      "Cybernetica Cortex (Sustain Fire)"
       ]
     },
     {
       "from": "ImperialNavy.json",
       "units": [
-        "Thunderbolt Fighter",
-        "Marauder Bomber"
+        "Avenger Strike Fighter"
       ],
       "unitRules": [
       "Offboard Support",
@@ -93,12 +95,25 @@
       ]
     },
     {
+      "from": "SolarAuxilia.json",
+      "units": [
+        "Solar Auxilia Command Squad",
+        "Auxilia Lasrifle Squad",
+        "Auxilia Flamer Squad",
+        "Veletarii",
+        "Charonite Ogryns",
+        "Aethon Heavy Sentinel",
+        "Leman Russ|Battle Tank|Vanquisher"
+      ],
+      "unitRules": [
+        "Army of Mankind"
+      ]
+    },
+    {
       "from": "CollegiaTitanica.json",
       "units": [
         "Warhound Scout Titan",
-        "Warbringer Nemesis Battle Titan",
-        "Warlord Battle Titan",
-        "Warmaster Heavy Battle Titan"
+        "Reaver Battle Titan"
       ],
       "unitRules": [
         "Void Shields",
@@ -114,11 +129,22 @@
       ]
     },
     {
+      "from": "CenturioOrdinatus.json",
+      "units": [
+        "Ordinatus Minoris|Ulator|Helias|Xterpos|Mygezi|Jimeria|Imcinerati",
+        "Ordinatus Majoris|Endymion|Karros|Incus",
+      ],
+      "unitRules": [
+        "Dispersion Field (x)"
+      ]
+    },
+    {
       "from": "QuestorisFamilia.json",
       "units": [
-        "Armiger Knight|Warglaive|Helverin",
-        "Questoris Knight|Paladin|Errant|Crusader|Gallant|Warden",
-        "Questoris Rocket Pod"
+        "Armiger Moirax|Lightning|Volkite|Beamer|Graviton",
+        "Mechanicum Questoris|Styrix|Magaera",
+        "Cerastus Knight|Atrapos",
+        "Mechanicum Acastus|Porphyrion|Asterius"
       ],
       "unitRules": [
       "Chivalry",
@@ -129,52 +155,54 @@
   ],
   "sections": [
     {
-      "name": "Calth High Guard Core Sections",
+      "name": "Phaeton Taghmata Core Maniple",
       "formations": [
         {
-          "name": "1 Section Command Tercio",
-          "units": "One Auxilia Legate Marshal character in an Auxilia Command Squad, four Auxilia Lasrifle Squads, and one Auxilia Flamer Squad",
+          "name": "Adsecularis Tech-thrall Maniple",
+          "units": "One Tech-Priest Auxilia, five Adsecularis Tech-Thrall Cohorts",
           "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
-            "Add two Cyclops of any single configuration: 1 U/p",
-            "Add up to two Malcadors of any single configuration: 2 U/p each"
+            "Add two : 1 U/p",
+            "Add two : 1 U/p",
+            "Add : 2 U/p each"
           ],
-          "points": "1 F/p, 2 U/p"
+          "points": "1 F/p"
         },
                {
-          "name": "Auxilia Lasrifle Tercio",
-          "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
+          "name": "Mechanized Adsecularis Tech-thrall Maniple",
+          "units": "Four Adsecularis Tech-Thrall Cohorts, one Taghmata Triaros Armoured Conveyor",
           "extraUnits": [
-           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
-            "Add two Cyclops of any single configuration: 1 U/p",
-            "Add one Malcador of any configuration: 2 U/p"
+           "Add two : 1 U/p",
+            "Add two : 1 U/p",
+            "Add : 2 U/p each"
+          ],
+          "points": "1 F/p"
+        },
+         {
+          "name": "Thallax Maniple",
+          "units": "Four Thallax Cohorts",
+          "extraUnits": [
+           "Add two : 1 U/p",
+            "Add two : 1 U/p",
+            "Add : 2 U/p each"
           ],
           "points": "1 F/p"
         }
       ]
     },
     {
-      "name": "Calth High Guard Special Sections",
-      "description": "May only have one Special Section for each Core Section",
+      "name": "Phaeton Taghmata Special Maniples",
+      "description": "May only have one Special Cohort for each Core Cohort",
       "formations": [
         {
-          "name": "Auxilia Heavy Sentinel Patrol",
-          "units": "Four Aethon Heavy Sentinels",
+          "name": "Leman Russ Maniple",
+          "units": "Three Taghmata Leman Russ of any configuration",
           "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+          "Add one Cortex Controller character to one unit in the formation: 1 U/p"
           ],
           "points": "1 F/p"
         },
         {
-          "name": "Veletaris Storm Section",
-          "units": "Four Veletarii",
-          "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
-          ],
-          "points": "1 F/p, -1 U/p"
-        },
-        {
-          "name": "Ogryn Charonite Section",
+          "name": "Castellax Assault Maniple",
           "units": "Three Charonite Ogryns",
           "extraUnits": [
           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
@@ -182,8 +210,8 @@
           "points": "1 F/p, -1 U/p"
         },
         {
-          "name": "Auxilia Rapier Battery",
-          "units": "Four Auxilia Rapier Laser Destroyers",
+          "name": "Thanatar Siege Maniple",
+          "units": "Four Thanatar Siege-Automata",
           "extraUnits": [
           "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers or four Rapier Mole Mortars: 1 U/p",
           "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
@@ -191,14 +219,14 @@
           "points": "1 F/p, -2 U/p"
         },
         {
-          "name": "Tarantula Maniple",
+          "name": "Domitar Maniple",
           "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
           "extraUnits": [
              ],
           "points": "1 F/p, -3 U/p"
         },
         {
-          "name": "Auxilia Leman Russ Squadron",
+          "name": "Castellax",
           "units": "Three Leman Russ of any configuration",
           "extraUnits": [
           "Add one Leman Russ of any configuration: 1 U/p"
@@ -217,12 +245,12 @@
        ]
     },
     {
-      "name": "Calth High Guard Elite Sections",
+      "name": "Phaeton Taghmata Elite Maniple",
       "description": "May only have one Elite Section for each two Core Sections",
       "formations": [
          {
-          "name": "Auxilia Malcador Squadron",
-          "units": "Two Malcadors of any single configuration",
+          "name": "Myridon Maniple",
+          "units": "Two Myridon Secutors, and two Myridon Destructors",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 U/p"

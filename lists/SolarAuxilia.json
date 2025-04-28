@@ -281,12 +281,12 @@
         ],
         "specialRules": [
         "Tunneler",
-         "Transport 2",
+         "Transport (2)",
          "Walker"
         ]
       },
        {
-        "name": "Hellbore Burrowing Transport",
+        "name": "Hellbore Super-Heavy Burrowing Transport",
         "type": "WE",
         "speed": "Immobile",
         "armour": 5,
@@ -295,14 +295,16 @@
           "Ardex-Defensor Turret|2"
         ],
         "specialRules": [
-         "Damage Capacity 3",
+         "Damage Capacity (3)",
          "Reinforced Armour",
          "Thick Rear Armour",
-         "Assault Transport 8"
+         "Assault Transport (8)",
+         "Dauntless",
+         "Tunneler"
         ]
       },
        {
-        "name": "Gorgon Assault Transport",
+        "name": "Auxilia Gorgon Assault Transport",
         "type": "WE",
         "speed": 20,
         "armour": 4,
@@ -312,9 +314,9 @@
           "Ardex-Defensor Turret|2"
         ],
         "specialRules": [
-         "Damage Capacity 3",
+         "Damage Capacity (3)",
          "Reinforced Armour",
-         "Heavy Transport 10"
+         "Heavy Transport (10)"
         ]
       },
       {
@@ -328,7 +330,7 @@
           "Heavy Stubber"
         ],
         "specialRules": [
-         "Transport 2"
+         "Transport (2)"
         ]
       },
       {

@@ -1741,6 +1741,19 @@
       ]
     },
     {
+      "name": "Terrebrax Phospex Launcher",
+      "modes": [
+        {
+          "firepower": "3BP",
+          "range": 30,
+          "specialRules": [
+          "IC",
+          "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Terrebrax Phospex Battery",
       "modes": [
         {

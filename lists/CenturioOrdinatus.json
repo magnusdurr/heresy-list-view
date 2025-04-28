@@ -1,0 +1,373 @@
+[
+  {
+    "name": "Centurio Ordinatus Forces",
+    "specialRules": [
+
+    ],
+    "unit": [
+      {
+        "name": "Ordinatus Minoris",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Ulator",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Sonic Destructor||FxF",
+              "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Sagittar",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Belicosa Vulcano Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Hellion",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Heavy Eradication Pulsar||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Urkallac",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Conversion Beam Extripator||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Diamat",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Mori Quake Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Gaenna",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Sunfury Plasma Annihilator||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Anfernati",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+            "Anfernati Melta Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Fusilac",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Doomstrike Missiles||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Ybalinex",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Warp Missile||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Imcinerati",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Volkite Carronade||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Jimeria",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Turbo-Laser Blaster||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Mygezi",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Macro-Gatling Blaster||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Xterpos",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Graviton Ruinator||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Helias",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+            "Helias Defense Array",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Metrangas",
+            "type": "WE",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Neutron-Wave Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          }
+        ],
+        "specialRules": [
+          "Damage Capacity 2",
+          "Dispersion Field (3+)",
+          "Reinforced Armour",
+          "Dauntless",
+          "Steadfast",
+          "Ponderous"
+        ],
+        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
+      },
+      {
+        "name": "Ordinatus Aktaeus Super-Heavy Burrowing Transport",
+        "type": "WE",
+        "speed": "Immobile",
+        "armour": 5,
+        "ff": 5,
+        "weapons": [
+          "Ardex-Defensor Turret|2",
+          "Terrebrax Phospex Launcher"
+        ],
+        "specialRules": [
+         "Damage Capacity (3)",
+         "Reinforced Armour",
+         "Thick Rear Armour",
+         "Tunneler",
+         "Dispersion Field (3+)",
+         "Assault Transport (8)",
+         "Dauntless",
+         "Steadfast",
+         "Vanguard"
+        ],
+        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 5+"
+      },
+      {
+        "name": "Ordinatus Majoris",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Armageddon",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Nova Cannon||FxF",
+              "Sollex Heavy-Las|2|FxF",
+              "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Mars",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Sonic Disruptor||FxF",
+              "Sollex Heavy-Las|2|FxF",
+              "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Golgotha",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Hellfire Missiles||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Endymion",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Magna Laser Annihilator||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Cyclothrathe",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Terrebrax Phospex Battery||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Malamuria",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Graviton Devastator||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Helicon",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+            "Helicon Defense Array",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Karros",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Eradication Quasar||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Rakenheim",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Warp Missiles||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Incus",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Vengeance Cannon||FxF",
+            "Sollex Heavy-Las|2|FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          }
+        ],
+        "specialRules": [
+          "Damage Capacity 4",
+          "Dispersion Field (2+)",
+          "Reinforced Armour",
+          "Dauntless",
+          "Steadfast",
+          "Ponderous"
+        ],
+        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 3+"
+      }
+    ]
+  }
+]

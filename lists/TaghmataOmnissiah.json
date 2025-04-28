@@ -1,10 +1,20 @@
 [
   {
-    "name": "Mechanicum Taghmata",
+    "name": "Taghmata Omnissiah Forces",
     "specialRules": [
 
     ],
     "unit": [
+    {
+        "name": "Cortex Controller",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+        "Vox-Caster",
+        "Leader"
+        ]
+      },
       {
         "name": "Archmagos Prime",
         "type": "LV",
@@ -20,6 +30,29 @@
         "specialRules": [
           "Supreme Commander",
           "Inspiring",
+          "Fearless",
+          "Reinforced Armour",
+          "Invulnerable Save",
+          "Machine Empathy",
+          "Ponderous",
+          "Vox-Caster"
+        ]
+      },
+      {
+        "name": "Archmagos",
+        "type": "LV",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
+        "ff": 4,
+        "weapons": [
+          "Volkite Serpenta",
+          "Meltagun",
+          "Omnissian Axe"
+        ],
+        "specialRules": [
+          "Commander",
+          "Leader",
           "Fearless",
           "Reinforced Armour",
           "Invulnerable Save",
@@ -63,18 +96,6 @@
         "Vox-Caster",
           "Ponderous",
           "Steadfast"
-        ]
-      },
-      {
-        "name": "Paragon of Metal",
-        "type": "CH",
-        "weapons": [
-        ],
-        "specialRules": [
-        "Silica Animus Ligatus",
-        "Blitz",
-        "Leader",
-        "Invulnerable Save"
         ]
       },
       {
@@ -296,189 +317,116 @@
         ]
       },
       {
-        "name": "Adsecularis Las Covenant",
-        "type": "INF",
+        "name": "Taghmata Termite Assault Drill",
+        "type": "AV",
         "speed": 15,
         "armour": 5,
         "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Las-Locks"
-        ],
-        "specialRules": [
-          "Cybernetica Cortex (Conqueror)",
-          "Expendable",
-          "Ponderous",
-          "Steadfast"
-        ]
-      },
-      {
-        "name": "Scyllax Guardian Maniple",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 5,
         "ff": 6,
         "weapons": [
           "Bolters"
         ],
         "specialRules": [
-          "Cybernetica Cortex (Sentry)",
-          "Skirmishers",
-          "Fearless",
-          "Expendable",
-          "Ponderous"
+        "Tunneler",
+         "Transport (2)",
+         "Walker",
+          "Ponderous",
+          "Steadfast"
         ]
       },
       {
-        "name": "Vorax Battle-Automata",
-        "type": "INF",
-        "speed": 20,
-        "armour": 5,
-        "cc": 3,
-        "ff": 5,
-        "weapons": [
-          "Rotor Cannon",
-          "Lightning Guns"
-        ],
-        "specialRules": [
-          "Cybernetica Cortex (Conqueror)",
-          "Skirmisher",
-          "Bulky",
-          "Fearless",
-          "Expendable",
-          "Ponderous"
-        ]
-      },
-      {
-        "name": "Arlatax Battle-Automata",
-        "type": "LV",
+        "name": "Taghmata Leman Russ",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Battle Tank",
+        "type": "AV",
         "speed": 20,
         "armour": 4,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Power Blade Array",
-          "Plasma Cannon"
-        ],
-        "specialRules": [
-          "Cybernetica Cortex (Conqueror)",
-          "Jump Packs",
-          "Fearless",
-          "Expendable",
-          "Ponderous"
-        ]
-      },
-      {
-        "name": "Domitar Battle-Automata",
-        "type": "LV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 3,
-        "ff": 6,
-        "weapons": [
-          "Missile Launcher|2",
-          "Graviton Hammer"
-        ],
-        "specialRules": [
-          "Cybernetica Cortex (Conqueror)",
-          "Fearless",
-          "Expendable",
-          "Ponderous"
-        ]
-      },
-      {
-        "name": "Kastelan Robot",
-        "type": "LV",
-        "speed": 15,
-        "armour": 5,
-        "cc": 5,
-        "ff": 5,
-        "weapons": [
-          "Phosphor Blaster",
-          "Power Fist"
-        ],
-        "specialRules": [
-          "Cybernetica Cortex (Conqueror)",
-          "Fearless",
-          "Expendable",
-          "Ponderous"
-        ]
-      },
-      {
-        "name": "Castellax Battle-Automata Maniple",
-        "type": "LV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 5,
+        "cc": 6,
         "ff": 4,
         "weapons": [
-          "Mauler Bolt Cannon",
-          "Bolters",
-          "Power Fist"
-        ],
-        "specialRules": [
-          "Cybernetica Cortex (Conqueror)",
-          "Fearless",
-          "Expendable",
-          "Ponderous"
+          "Battle Cannon",
+          "Heavy Bolter"
         ]
-      },
-      {
-        "name": "Vultarax Stratos-Automata",
-        "type": "LV",
-        "speed": 20,
-        "armour": 3,
+          },
+          {
+            "name": "Annihilator",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Arc Blaster",
-          "Vultarax Havoc Launcher"
-        ],
-        "specialRules": [
-          "Cybernetica Cortex (Conqueror)",
-          "Fearless",
-          "Skimmer",
-          "Expendable",
-          "Ponderous"
+          "Twin Lascannon",
+          "Lascannon"
         ]
-      },
-      {
-        "name": "Thanatar Siege-Automata",
-        "type": "LV",
-        "variants": [
-          {
-            "name": "Cavas",
-            "type": "LV",
-            "speed": 10,
-            "armour": 4,
-            "cc": 6,
-            "ff": 5,
-            "weapons": [
-              "Mauler Bolt Cannon",
-              "Plasma Mortar"
-            ]
           },
           {
-            "name": "Calix",
-            "type": "LV",
-            "speed": 10,
-            "armour": 4,
-            "cc": 5,
-            "ff": 5,
-            "weapons": [
-            "Mauler Bolt Cannon",
-            "Sollex Heavy-Las",
-            "Graviton Ram"
+            "name": "Exterminator",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Twin Autocannon",
+          "Heavy Bolter"
+        ]
+          },
+          {
+            "name": "Executioner",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Plasma Destroyer",
+          "Lascannon"
+        ]
+          },
+          {
+            "name": "Demolisher",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Demolisher Cannon",
+          "Heavy Flamer "
+        ]
+          },
+        {
+        "name": "Incinerator",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Volkite Demi-Culverin",
+          "Heavy Bolter"
+        ]
+      },
+       {
+       "name": "Vanquisher",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Vanquisher Cannon",
+          "Lascannon"
             ]
           }
         ],
         "specialRules": [
-          "Cybernetica Cortex (Sentry)",
           "Reinforced Armour",
-          "Fearless",
-          "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Steadfast"
         ]
       },
       {
@@ -493,6 +441,7 @@
           "Twin Mauler Bolt Cannon"
         ],
         "specialRules": [
+          "Ion Shield (5+)",
           "Transport (4)",
           "Ponderous",
           "Steadfast"
@@ -511,6 +460,7 @@
           "Shock Ram"
         ],
         "specialRules": [
+        "Ion Shield (5+)",
         "Ponderous",
         "Steadfast"
         ]

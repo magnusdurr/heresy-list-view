@@ -94,7 +94,7 @@
             ]
           },
           {
-            "name": "Conversion Beamer",
+            "name": "Beamer",
         "type": "AV",
         "speed": 25,
         "armour": 5,
@@ -105,7 +105,7 @@
              ]
           },
           {
-            "name": "Graviton Cannon",
+            "name": "Graviton",
         "type": "AV",
         "speed": 25,
         "armour": 5,
