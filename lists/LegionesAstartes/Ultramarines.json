@@ -67,7 +67,7 @@
         "Tarantula|Lascannon|Hyperios"
       ],
       "unitRules": [
-        "Machine Spirit"
+        "Cybernetica Cortex"
       ]
     },
     {
@@ -111,7 +111,8 @@
     {
       "from": "SolarAuxilia.json",
       "units": [
-        "Solar Auxilia Command Squad",
+        "Auxilia Captain",
+        "Auxilia Command Squad",
         "Auxilia Lasrifle Squad",
         "Auxilia Flamer Squad",
         "Veletarii",
@@ -128,7 +129,8 @@
       "units": [
         "Armiger Knight|Warglaive|Helverin",
         "Questoris Knight|Paladin|Errant|Crusader|Gallant|Warden",
-        "Questoris Rocket Pod"
+        "Questoris Rocket Pod",
+        "Twin Icarus Autocannon"
       ],
       "unitRules": [
         "Chivalry",
@@ -492,7 +494,7 @@
           "name": "Questoris Lance",
           "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
           "extraUnits": [
-            "Add one Questoris Rocket Pod to each unit in the formation: 1 U/p"
+            "Add one Questoris Rocket Pod (1 U/p) or Twin Icarus Autocannon (1 U/p) to each unit in the formation"
           ],
           "points": "1 F/p, 1 A/p"
         }

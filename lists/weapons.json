@@ -481,8 +481,17 @@
         }
       ]
     },
+    {
+      "name": "Twin Icarus Autocannon",
+      "modes": [
         {
-      "name": "Ragnarök Battle Cannon",
+          "firepower": "AP5+/AT6+/AA6+",
+          "range": 45
+        }
+      ]
+    },
+        {
+      "name": "Ragnarök Battle Cannon", 	 	
       "modes": [
         {
           "firepower": "AP4+/AT4+",
@@ -660,7 +669,7 @@
       "modes": [
         {
           "firepower": "4x AP4+/AT4+",
-          "range": 75
+          "range": 60
         }
       ]
     },
@@ -1525,7 +1534,7 @@
       "name": "Arcus Missile Launcher",
       "modes": [
         {
-          "firepower": "AP6+/AT5+/AA5+",
+          "firepower": "AP6+/AT5+/AA6+",
           "range": 60
         }
       ]
@@ -1607,7 +1616,7 @@
       "name": "Hyperios Missile Launcher",
       "modes": [
         {
-          "firepower": "AT6+/AA5+",
+          "firepower": "AT6+/AA6+",
           "range": 60,
           "specialRules": [
           ]
@@ -3533,8 +3542,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "MW",
-            "Devastating Charge"
+            "MW"
           ]
         }
       ]
@@ -3605,8 +3613,7 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
-            "MW",
-            "Devastating Charge"
+            "MW"
           ]
         }
       ]
@@ -3665,7 +3672,6 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
-            "Devastating Charge",
             "MW",
             "TK(D3+1)"
 
@@ -3680,7 +3686,6 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
-            "Devastating Charge",
             "MW",
             "TK(D3+3)"
 
@@ -3695,7 +3700,6 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
-            "Devastating Charge",
             "MW",
             "TK(D6)",
             "Siege"
@@ -3982,8 +3986,7 @@
           "firepower": "Assault Weapon",
           "specialRules": [
             "EA(+1)",
-            "MW",
-            "Devastating Charge"
+            "MW"
           ]
         }
       ]

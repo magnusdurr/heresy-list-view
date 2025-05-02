@@ -14,14 +14,11 @@
           "Avenger Bolt Cannon||FwA",
           "Tempest Rockets||FwA",
           ">Heavy Bolter Configuration<",
-          "AC Twin Heavy Bolter||Left",
-          "AC Twin Heavy Bolter||Right",
+          "AC Twin Heavy Bolter|2|FwA",
           ">Autocannon Configuration<",
-          "Twin Autocannon||Left",
-          "Twin Autocannon||Right",
+          "Twin Autocannon|2|FwA",
           ">Lascannon Configuration<",
-          "Twin Lascannon||Left",
-          "Twin Lascannon||Right"
+          "Twin Lascannon|2|FwA"
         ],
         "specialRules": [
           "Damage Capacity 2",
@@ -76,8 +73,8 @@
         "armour": 5,
         "ff": 5,
         "weapons": [
-        "Turbo-Laser||FwA",
-        "Lascannon|2|FwA",
+        "AC Turbo-Laser||FwA",
+        "Twin Lascannon|2|FwA",
         "AC Twin Heavy Bolter|2"
         
         ],

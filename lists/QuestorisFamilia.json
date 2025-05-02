@@ -155,6 +155,15 @@
         ]
       },
       {
+        "name": "Twin Icarus Autocannon",
+        "type": "CH",
+        "weapons": [
+          "Twin Icarus Autocannon"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
         "name": "Cerastus Knight",
         "type": "WE",
         "variants": [
