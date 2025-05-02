@@ -1075,7 +1075,6 @@
           "firepower": "2x AP3+/AT5+",
           "range": 45,
           "specialRules": [
-            "Shield Disruptor"
           ]
         }
       ]
@@ -1098,7 +1097,6 @@
           "firepower": "4x AP3+/AT5+",
           "range": 45,
           "specialRules": [
-            "Shield Disruptor"
           ]
         }
       ]
@@ -1110,7 +1108,6 @@
           "firepower": "4x AP3+/AT5+",
           "range": 45,
           "specialRules": [
-            "Shield Disruptor"
           ]
         }
       ]
@@ -1122,7 +1119,6 @@
           "firepower": "8x AP3+/AT5+",
           "range": 45,
           "specialRules": [
-            "Shield Disruptor"
           ]
         }
       ]
@@ -2705,7 +2701,7 @@
       "modes": [
         {
           "firepower": "4x AP6+/AT5+",
-          "range": 45,
+          "range": 60,
           "specialRules": [
             "Shield Disruptor",
             "Disrupt",
@@ -2874,7 +2870,7 @@
       "modes": [
         {
           "firepower": "AP4+/AT4+",
-          "range": 45,
+          "range": 30,
           "specialRules": [
             "Graviton(D3)",
            "Shield Piercer"
@@ -2886,7 +2882,7 @@
       "name": "Graviton Ruinator",
       "modes": [
         {
-          "firepower": "AP3+/AT3+",
+          "firepower": "AP4+/AT4+",
           "range": 45,
           "specialRules": [
            "Graviton(D3+1)",
@@ -2899,7 +2895,7 @@
       "name": "Graviton Devastator",
       "modes": [
         {
-          "firepower": "AP3+/AT3+",
+          "firepower": "AP4+/AT4+",
           "range": 60,
           "specialRules": [
            "Graviton(D3+1)",
@@ -3090,7 +3086,7 @@
       "name": "Conversion Beam Dissipator",
       "modes": [
         {
-          "firepower": "3x AP5+/AT3+",
+          "firepower": "2x AP5+/AT3+",
           "range": 60,
           "specialRules": [
            "Beam Projector",
@@ -3104,7 +3100,7 @@
       "name": "Conversion Beam Dissolutor",
       "modes": [
         {
-          "firepower": "4x AP5+/AT3+",
+          "firepower": "3x AP5+/AT3+",
           "range": 60,
           "specialRules": [
            "Beam Projector",
@@ -3118,7 +3114,7 @@
       "name": "Conversion Beam Extripator",
       "modes": [
         {
-          "firepower": "5x AP5+/AT3+",
+          "firepower": "4x AP5+/AT3+",
           "range": 90,
           "specialRules": [
            "Beam Projector",

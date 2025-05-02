@@ -91,6 +91,7 @@
     {
       "from": "CollegiaTitanica.json",
       "units": [
+        "Veteran Princeps",
         "Warhound Scout Titan",
         "Dire Wolf Heavy Scout Titan",
         "Reaver Battle Titan",
@@ -412,7 +413,8 @@
           "name": "Reaver",
           "units": "One Reaver Battle Titan",
           "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
+            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
+            "Add one Veteran Princeps character to the formation: 2 U/p"
           ],
           "points": "2 F/p, 1 T/p, 1 A/p"
         },
@@ -420,16 +422,10 @@
           "name": "Warlord",
           "units": "One Warlord Battle Titan",
           "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
+            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
+            "Add one Veteran Princeps character to the formation: 2 U/p"
           ],
           "points": "2 F/p, 1 U/p, 2 T/p, 1 A/p"
-        },
-        {
-          "name": "Warmaster",
-          "units": "One Warmaster Heavy Battle Titan",
-          "extraUnits": [
-          ],
-          "points": "3 F/p, 2 U/p, 3 T/p, 1 A/p"
         }
       ]
     },
@@ -439,7 +435,7 @@
       "formations": [
         {
           "name": "Auxilia Lasrifle Tercio",
-          "units": "One Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
+          "units": "One Auxilia Command Squad with an Auxilia Captain, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
             "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii, or one Charonite Ogryns: 1 U/p"
           ],

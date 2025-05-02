@@ -15,7 +15,7 @@
      {
       "title": "Cybernetica Cortex",
       "description": [
-        "Unless within 15cm of an unbroken friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex' special rule may only perform the Hold, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 15cm of an enemy formation when rallying."
+        "Unless within 30cm of an unbroken friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex' special rule may only perform the Hold, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 15cm of an enemy formation when rallying."
       ]
     },
     {
@@ -357,7 +357,7 @@
              {
       "title": "Beam Projector",
       "description": [
-        "Weapons with the 'Beam Projector' special rule suffers an additional -1 to hit when shooting at a target that at least partially within half range of the weapon, or an additional -2 to hit within 15 cm. Weapons with this special rule may not be fired as part of a Double action."
+        "Weapons with the 'Beam Projector' special rule suffers an additional -1 to hit when shooting at a target that at least partially within half range of the weapon, or an additional -2 to hit within 15 cm."
       ]
     },
              {
