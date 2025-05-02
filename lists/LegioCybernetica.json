@@ -11,9 +11,19 @@
         ],
         "specialRules": [
         "Ghost in the Machine",
+        "Invulnerable Save"
+        ]
+      },
+      {
+        "name": "Apotheosis of Iron",
+        "type": "CH",
+        "weapons": [
+        ],
+        "specialRules": [
+        "Silica Animus",
         "Blitz",
         "Leader",
-        "Invulnerable Save"
+        "Regeneration"
         ]
       },
          {
@@ -41,9 +51,10 @@
           }
         ],
         "specialRules": [
-        "Cybernetica Cortex (Overwatch)",
+        "Cybernetica Cortex",
         "Expendable",
-        "Fearless"
+        "Fearless",
+          "Vanguard"
         ]
       },
              {
@@ -72,9 +83,10 @@
           }
         ],
         "specialRules": [
-        "Cybernetica Cortex (Engage)",
+        "Cybernetica Cortex",
         "Fearless",
-        "Blitz"
+        "Blitz",
+          "Vanguard"
         ]
       },
       {
@@ -88,28 +100,61 @@
           "Las-Locks"
         ],
         "specialRules": [
-          "Cybernetica Cortex (Advance)",
+          "Cybernetica Cortex",
           "Expendable",
           "Ponderous",
-          "Steadfast"
+          "Steadfast",
+          "Vanguard"
         ]
       },
       {
-        "name": "Scyllax Guardian Maniple",
+        "name": "Scyllax Guardian Cohort",
         "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 5,
-        "ff": 6,
-        "weapons": [
-          "Bolters"
+        "variants": [
+          {
+            "name": "Graviton",
+            "type": "INF",
+            "speed": 15,
+            "armour": 5,
+            "cc": 5,
+            "ff": 6,
+            "weapons": [
+              "Bolters",
+              "Graviton Gun"
+            ]
+          },
+          {
+            "name": "Plasma",
+            "type": "INF",
+            "speed": 15,
+            "armour": 5,
+            "cc": 5,
+            "ff": 6,
+            "weapons": [
+            "Bolters",
+              "Plasma Gun"
+            ]
+          },
+          {
+            "name": "Melta",
+            "type": "INF",
+            "speed": 15,
+            "armour": 5,
+            "cc": 5,
+            "ff": 6,
+            "weapons": [
+            "Bolters",
+              "Melta Gun"
+            ]
+          }
         ],
         "specialRules": [
-          "Cybernetica Cortex (Overwatch)",
+          "Cybernetica Cortex",
           "Skirmishers",
           "Fearless",
           "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Vanguard"
         ]
       },
       {
@@ -124,31 +169,34 @@
           "Lightning Guns"
         ],
         "specialRules": [
-          "Cybernetica Cortex (Engage)",
+          "Cybernetica Cortex",
           "Skirmisher",
           "Bulky",
           "Fearless",
           "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Vanguard"
         ]
       },
       {
         "name": "Vultarax Stratos-Automata",
         "type": "LV",
-        "speed": 20,
+        "speed": 15,
         "armour": 3,
         "cc": 6,
-        "ff": 5,
+        "ff": 4,
         "weapons": [
           "Arc Blaster",
           "Vultarax Havoc Launcher"
         ],
         "specialRules": [
-          "Cybernetica Cortex (Engage)",
+          "Cybernetica Cortex",
+          "Infiltrators",
           "Fearless",
           "Skimmer",
           "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Vanguard"
         ]
       },
       {
@@ -163,10 +211,11 @@
           "Graviton Hammer"
         ],
         "specialRules": [
-          "Cybernetica Cortex (Engage)",
+          "Cybernetica Cortex",
           "Fearless",
           "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Vanguard"
         ]
       },
       {
@@ -181,15 +230,16 @@
           "Plasma Cannon"
         ],
         "specialRules": [
-          "Cybernetica Cortex (Advance)",
+          "Cybernetica Cortex",
           "Jump Packs",
           "Fearless",
           "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Vanguard"
         ]
       },
       {
-        "name": "Castellax Battle-Automata Maniple",
+        "name": "Castellax Battle-Automata",
         "type": "LV",
         "speed": 15,
         "armour": 3,
@@ -201,10 +251,11 @@
           "Power Fist"
         ],
         "specialRules": [
-          "Cybernetica Cortex (Advance)",
+          "Cybernetica Cortex",
           "Fearless",
           "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Vanguard"
         ]
       },
       
@@ -239,15 +290,16 @@
           }
         ],
         "specialRules": [
-          "Cybernetica Cortex (Sustain Fire)",
+          "Cybernetica Cortex",
           "Reinforced Armour",
           "Fearless",
           "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Vanguard"
         ]
       },
       {
-        "name": "Kastelan Robot",
+        "name": "Kastelan Sentry Automata",
         "type": "LV",
         "speed": 15,
         "armour": 5,
@@ -258,10 +310,50 @@
           "Power Fist"
         ],
         "specialRules": [
-          "Cybernetica Cortex (Advance)",
+          "Cybernetica Cortex",
           "Fearless",
           "Expendable",
-          "Ponderous"
+          "Ponderous",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Colossus Siege Automata",
+        "type": "LV",
+        "speed": 15,
+        "armour": 5,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Bolter",
+          "Melta Gun",
+          "Siege Hammer"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex",
+          "Fearless",
+          "Expendable",
+          "Ponderous",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Conqueror Battle Automata",
+        "type": "LV",
+        "speed": 20,
+        "armour": 5,
+        "cc": 5,
+        "ff": 5,
+        "weapons": [
+          "Autocannon",
+          "Power Fist"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex",
+          "Fearless",
+          "Expendable",
+          "Ponderous",
+          "Vanguard"
         ]
       }
     ]

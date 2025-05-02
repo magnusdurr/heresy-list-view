@@ -16,7 +16,7 @@
         ]
       },
       {
-        "name": "Archmagos Prime",
+        "name": "Archmagos Prime on Abeyant",
         "type": "LV",
         "speed": 15,
         "armour": 5,
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "name": "Archmagos",
+        "name": "Archmagos on Abeyant",
         "type": "LV",
         "speed": 15,
         "armour": 5,
@@ -173,7 +173,7 @@
       {
         "name": "Ursarax Cohort",
         "type": "INF",
-        "speed": 15,
+        "speed": 25,
         "armour": 3,
         "cc": 4,
         "ff": 5,
@@ -183,6 +183,7 @@
         ],
         "specialRules": [
           "Bulky",
+          "Skirmishers",
           "Jump Packs",
           "Ponderous",
           "Steadfast"
@@ -432,7 +433,7 @@
       {
         "name": "Taghmata Triaros Armoured Conveyor",
         "type": "AV",
-        "speed": 25,
+        "speed": 20,
         "armour": 3,
         "cc": 6,
         "ff": 5,
@@ -442,7 +443,9 @@
         ],
         "specialRules": [
           "Ion Shield (5+)",
-          "Transport (4)",
+          "Walker",
+          "Vox-Caster",
+          "Heavy Transport (4)",
           "Ponderous",
           "Steadfast"
         ]
@@ -472,7 +475,7 @@
           {
             "name": "Lightning",
             "type": "AV",
-            "speed": 25,
+            "speed": 20,
             "armour": 3,
             "cc": 6,
             "ff": 5,
@@ -484,7 +487,7 @@
           {
             "name": "Irad",
             "type": "AV",
-            "speed": 25,
+            "speed": 20,
             "armour": 3,
             "cc": 6,
             "ff": 3,
@@ -496,7 +499,7 @@
           {
             "name": "Venator",
             "type": "AV",
-            "speed": 25,
+            "speed": 20,
             "armour": 3,
             "cc": 6,
             "ff": 5,
@@ -507,6 +510,39 @@
           }
         ],
         "specialRules": [
+          "Walker",
+          "Ponderous",
+          "Steadfast"
+        ]
+      },
+      {
+        "name": "Taghmata Basilisk",
+        "type": "AV",
+        "speed": 20,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Earthshaker Cannon"
+        ],
+        "specialRules": [
+        "Reinforced Armour",
+          "Ponderous",
+          "Steadfast"
+        ]
+      },
+      {
+        "name": "Taghmata Medusa",
+        "type": "AV",
+        "speed": "20",
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Medusa Siege Gun"
+        ],
+        "specialRules": [
+         "Reinforced Armour",
           "Ponderous",
           "Steadfast"
         ]

@@ -820,7 +820,7 @@
       ]
     },
     {
-      "name": "Atrapos Lascutter",
+      "name": "Atrapos Phasecutter",
       "modes": [
         {
           "firepower": "AP6+/AT4+",
@@ -911,10 +911,17 @@
       "name": "Irad-Cleanser",
       "modes": [
         {
-          "firepower": "AP2+/AT6+",
+          "firepower": "AP2+/AT5+",
           "range": 15,
           "specialRules": [
           "Rad"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "Disrupt"
           ]
         }
       ]
@@ -923,15 +930,40 @@
       "name": "Irad-Scourer",
       "modes": [
         {
-          "firepower": "AP2+/AT6+",
+          "firepower": "AP2+/AT5+",
           "range": 30,
           "specialRules": [
           "Rad"
           ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "Disrupt"
+          ]
         }
       ]
     },
-
+    {
+      "name": "Irad-Desolator",
+      "modes": [
+        {
+          "firepower": "4x AP2+/AT5+",
+          "range": 45,
+          "specialRules": [
+          "Rad"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "Disrupt"
+          ]
+        }
+      ]
+    },
 
     {
       "name": "Nemesis Bolters",
@@ -2552,10 +2584,22 @@
       ]
     },
              {
-      "name": "Fellblade Accelerator Cannon",
+      "name": "Accelerator Cannon",
       "modes": [
         {
           "firepower": "2x AP5+/AT3+",
+          "range": 75,
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Macro-Accelerator Cannon",
+      "modes": [
+        {
+          "firepower": "4x AP5+/AT3+",
           "range": 75,
           "specialRules": [
             "MW"
@@ -2744,6 +2788,19 @@
         {
           "firepower": "Small Arms",
           "join": "and",
+          "specialRules": [
+           "Graviton(1)",
+           "Shield Piercer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Graviton Gun",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+",
+          "range": 15,
           "specialRules": [
            "Graviton(1)",
            "Shield Piercer"
@@ -3476,7 +3533,8 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "MW"
+            "MW",
+            "Devastating Charge"
           ]
         }
       ]
@@ -3547,7 +3605,8 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)",
-            "MW"
+            "MW",
+            "Devastating Charge"
           ]
         }
       ]
@@ -3848,6 +3907,18 @@
           "firepower": "Assault Weapon",
           "specialRules": [
             "MW",
+            "Devastating Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Siege Hammer",
+      "modes": [
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+            "MW",
             "Siege"
           ]
         }
@@ -3911,7 +3982,8 @@
           "firepower": "Assault Weapon",
           "specialRules": [
             "EA(+1)",
-            "MW"
+            "MW",
+            "Devastating Charge"
           ]
         }
       ]
@@ -3934,6 +4006,13 @@
             "TK(1)",
             "Siege"
           ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "Disrupt"
+          ]
         }
       ]
     },
@@ -3955,6 +4034,13 @@
             "TK(1)",
             "Siege"
           ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "Disrupt"
+          ]
         }
       ]
     },
@@ -3969,7 +4055,8 @@
             "MW",
             "TK(1)",
             "Shield Piercer",
-            "Crippling"
+            "Crippling",
+            "Devastating Charge"
           ]
         }
       ]
@@ -3984,7 +4071,8 @@
             "Lance",
             "Shock Pulse",
             "Titan Hunter",
-            "Shield Piercer"
+            "Shield Piercer",
+            "Devastating Charge"
           ]
         }
       ]

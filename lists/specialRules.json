@@ -12,40 +12,40 @@
         "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with <i>Machine Spirit</i> may only perform the Hold, Engage, Marshal, Sustained Fire and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
       ]
     },
-    {
-      "title": "Cybernetica Cortex (Overwatch)",
+     {
+      "title": "Cybernetica Cortex",
       "description": [
-        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with 'Cybernetica Cortex (Overwatch)' special rule may only perform the Hold and Overwatch actions, and attempts to conduct an Overwatch action gain an additional +1 modifier. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
+        "Unless within 15cm of an unbroken friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex' special rule may only perform the Hold, Marshal, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 15cm of an enemy formation when rallying."
       ]
     },
     {
-      "title": "Cybernetica Cortex (Sustain Fire)",
+      "title": "Cybernetica Cortex (Defensive)",
       "description": [
-        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with 'Cybernetica Cortex (Sustain Fire)' special rule may only perform the Hold and Sustain Fire actions, and attempts to conduct a Sustain Fire action gain an additional +1 modifier. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
+        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex (Defensive)' special rule may only perform the Hold, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives."
       ]
     },
     {
-      "title": "Cybernetica Cortex (Advance)",
+      "title": "Cybernetica Cortex (Offensive)",
       "description": [
-        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with 'Cybernetica Cortex (Advance)' special rule may only perform the Hold and Advance actions, and attempts to conduct an Advance action gain an additional +1 modifier. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
-      ]
-    },
-    {
-      "title": "Cybernetica Cortex (Engage)",
-      "description": [
-        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with 'Cybernetica Cortex (Engage)' special rule may only perform the Hold and Engage actions, and attempts to conduct an Engage action gain an additional +1 modifier. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
+        "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex (Offensive)' special rule may only perform the Hold, Engage, and Advance actions. In addition, such formations may only contest objectives."
       ]
     },
     {
       "title": "Ghost in the Machine",
       "description": [
-        "A unit with the 'Ghost in the Machine' special rule removes its 'Cybernetica Cortex' special rule."
+        "A unit with the 'Ghost in the Machine' special rule removes its 'Cybernetica Cortex' special rule, and the formation it is part of gains an additional +1 to activate and to rally."
       ]
     },
     {
       "title": "Animus Malefica",
       "description": [
-        "A unit with the 'Animus Malefica' special rule removes its 'Cybernetica Cortex' special rule. In addition, if a formation that contains a unit with this special rule fails to activate, the formation suffers D3 BMs instead of one."
+        "A unit with the 'Animus Malefica' special rule removes its 'Cybernetica Cortex' special rule. However, if a formation that contains a unit with this special rule fails to activate, the formation suffers D3 BMs instead of one."
+      ]
+    },
+    {
+      "title": "Silica Animus",
+      "description": [
+        "A unit with the 'Silica Animus' special rule removes its 'Cybernetica Cortex' special rule, and the formation it is part of gains an additional +1 to activate and to rally. However, if a formation that contains a unit with this special rule fails to activate, the formation suffers D6 BMs instead of one."
       ]
     },
     {
@@ -171,7 +171,7 @@
       ]
     },
          {
-      "title": "The Logic of Victory",
+      "title": "Logic of Victory",
       "description": [
         "All Mechanicum Taghmata Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Sustain Fire or Marshal action, and a +1 modifier to their Rally Tests."
       ]
@@ -370,7 +370,7 @@
     {
       "title": "Devastating Charge",
       "description": [
-        "Weapon or Unit gains an additional +1 to hit with CC weapons during assaults initiated by the formation."
+        "Weapon or Unit gains an additional +1 to hit with CC and FF attacks during the first round of any assaults initiated by the formation, but suffers a -1 penalty to hit with CC and FF during the first round of any assaults initiated by enemy formations."
       ]
     },
     {

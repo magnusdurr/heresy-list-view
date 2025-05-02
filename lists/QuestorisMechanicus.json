@@ -1,0 +1,205 @@
+[
+  {
+    "name": "Questoris Mechanicus Forces",
+    "specialRules": [
+    ],
+    "unit": [
+      {
+        "name": "Lord Seneschal",
+        "type": "CH",
+        "weapons": [
+          "n/a"
+        ],
+        "specialRules": [
+          "Supreme Commander",
+          "Inspiring",
+          "Fearless"
+        ]
+      },
+      {
+        "name": "Seneschal",
+        "type": "CH",
+        "weapons": [
+          "n/a"
+        ],
+        "specialRules": [
+          "Commander",
+          "Leader"
+        ]
+      },
+
+      {
+        "name": "Armiger Moirax",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Lightning",
+            "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 5,
+        "ff": 3,
+            "weapons": [
+             "Lightning Locks"
+            ]
+          },
+          {
+            "name": "Volkite",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+              "Volkite Veuglaire",
+              "Gyges Siege Claw"
+            ]
+          },
+          {
+            "name": "Beamer",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 5,
+        "ff": 6,
+            "weapons": [
+              "Twin Conversion Beam Cannon"
+             ]
+          },
+          {
+            "name": "Graviton",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+              "Graviton Cannon",
+              "Gyges Siege Claw"
+             ]
+          }
+        ],
+        "specialRules": [
+        "Blitz",
+          "Walker",
+          "Reinforced Armour",
+          "Skirmisher",
+          "Vanguard",
+          "Ion Shield (4+)",
+          "Ionic Flare Shield"
+        ]
+      },
+      {
+        "name": "Mechanicum Questoris",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Styrix",
+            "type": "WE",
+        "speed": 25,
+        "armour": 5,
+        "cc": 3,
+        "ff": 4,
+            "weapons": [
+          "Volkite Chierovile",
+          "Graviton Crusher",
+          "Hekaton Siege Claw"
+            ]
+          },
+          {
+            "name": "Magaera",
+        "type": "WE",
+        "speed": 25,
+        "armour": 5,
+        "cc": 3,
+        "ff": 4,
+            "weapons": [
+          "Lightning Cannon",
+          "Twin Phased Plasma Fusil",
+          "Reaper Chainsword"
+            ]
+          }
+        ],
+        "specialRules": [
+        "Damage Capacity 2",
+        "Walker",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Walker",
+          "Ion Shield (3+)",
+          "Ionic Flare Shield"
+        ]
+      },
+
+      {
+        "name": "Cerastus Knight",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Atrapos",
+        "type": "WE",
+        "speed": 30,
+        "armour": 5,
+        "cc": 2,
+        "ff": 4,
+            "weapons": [
+          "Graviton Singularity Cannon",
+          "Atrapos Phasecutter"
+            ]
+          }
+        ],
+        "specialRules": [
+        "Damage Capacity 2",
+        "Reinforced Armour",
+          "Thick Rear Armour",
+          "Walker",
+          "Scout",
+          "Ion Shield (3+)",
+          "Ionic Flare Shield"
+        ],
+        "crit": "The Cerastus Knight is destroyed."
+      },
+
+      {
+        "name": "Mechanicum Acastus",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Porphyrion",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 4,
+        "ff": 4,
+            "weapons": [
+          "Twin Magna Lascannon|2|FxF",
+          "Autocannon|2|FxF",
+          "Helios Defense Missiles"
+            ]
+          },
+          {
+            "name": "Asterius",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 4,
+        "ff": 4,
+            "weapons": [
+          "Conversion Beam Cannon|2|FxF",
+          "Volkite Culvertin|2|FxF",
+          "Karacnos Mortar Battery||FxF"
+            ]
+          }
+        ],
+        "specialRules": [
+        "Damage Capacity 3",
+        "Walker",
+          "Reinforced Armour",
+          "Walker",
+          "Ion Shield (3+)"
+        ],
+        "crit": "The Acastus Knight takes 1 additional damage."
+      }
+    ]
+  }
+]

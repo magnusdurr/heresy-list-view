@@ -6,9 +6,9 @@
     "intro": "The Phaeton Taghmata operates out the Orthodox Forge World Phaeton in the Segmentum Solar, with an emphasis on Armoured formations. Its armies gain 12 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_TaghmataOmnissiah_PhaetonTaghmata",
   "strategy": "Taghmata Omnissiah armies have a Strategy Rating of 2.",
-  "Initiative": "Legiones Astartes Allied Detachments, Collegia Titanica Allied Banners, and Centurio Ordinatus Maniples have an Initiative Rating of 1+. Phaeton Taghmata Maniples have an Initiative Rating of 2+, and are subject to the 'The Logic of Victory' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rules. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
+  "Initiative": "Legiones Astartes Allied Detachments, Collegia Titanica Allied Banners, and Centurio Ordinatus Constructs have an Initiative Rating of 1+. Phaeton Taghmata Maniples have an Initiative Rating of 2+, and are subject to the 'Logic of Victory' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
   "specialRules": [
-  "The Logic of Victory",
+  "Logic of Victory",
   "Tunnelers"
   ],
   "units": [
@@ -44,7 +44,8 @@
     {
       "from": "LegioCybernetica.json",
       "units": [
-        "Adsecularis Las Covenant",
+        "Paragon of Metal",
+        "Adsecularis Tech-Thrall Cohort",
         "Vorax Battle-Automata",
         "Arlatax Battle-Automata",
         "Domitar Battle-Automata",
@@ -53,16 +54,14 @@
         "Thanatar Siege-Automata|Cavas|Calix"
       ],
       "unitRules": [
-      "Cybernetica Cortex (Overwatch)",
-      "Cybernetica Cortex (Advance)",
-      "Cybernetica Cortex (Engage)",
-      "Cybernetica Cortex (Sustain Fire)"
+      "Cybernetica Cortex"
       ]
     },
     {
       "from": "ImperialNavy.json",
       "units": [
-        "Avenger Strike Fighter"
+        "Avenger Strike Fighter",
+        "Lightning Interceptor"
       ],
       "unitRules": [
       "Offboard Support",
@@ -77,9 +76,6 @@
       "from": "LegionesAstartes.json",
       "units": [
         "Lieutenant",
-        "Chaplain",
-        "Captain",
-        "Librarian - Thaumaturgy",
         "Legion Support Squad|Plasma",
         "Legion Tactical Squad",
         "Legion Heavy Support Squad|Missile Launcher",
@@ -102,44 +98,25 @@
         "Auxilia Flamer Squad",
         "Veletarii",
         "Charonite Ogryns",
-        "Aethon Heavy Sentinel",
-        "Leman Russ|Battle Tank|Vanquisher"
+        "Malcador|Assault Tank|Annihilator|Vanquisher"
       ],
       "unitRules": [
         "Army of Mankind"
       ]
     },
     {
-      "from": "CollegiaTitanica.json",
-      "units": [
-        "Warhound Scout Titan",
-        "Reaver Battle Titan"
-      ],
-      "unitRules": [
-        "Void Shields",
-        "Towering",
-        "Beam Projector",
-        "Graviton",
-        "Titan Hunter",
-        "Shield Piercer",
-        "Shield Disruptor",
-        "Ponderous",
-        "Steadfast",
-        "Shock Pulse"
-      ]
-    },
-    {
       "from": "CenturioOrdinatus.json",
       "units": [
-        "Ordinatus Minoris|Ulator|Helias|Xterpos|Mygezi|Jimeria|Imcinerati",
-        "Ordinatus Majoris|Endymion|Karros|Incus",
+        "Ordinatus Minoris Battle Construct|Stygia|Necromunda|Jerulas|Phaeton|Mpandex|Diamat|Omnicron|Helias|Tigrus",
+        "Ordinatus Minoris Support Construct|Hellion|Haddrack|Barnassus|Antioc|Vaznagrod|Gorgonum|Ulator|Sagittar",
+        "Ordinatus Majoris Heavy Siege Construct|Armageddon|Mars|Golgotha|Incaladion|Cyclothrathe|Metalica|Helicon|Straxos|Rakenheim|Vindalex"
       ],
       "unitRules": [
         "Dispersion Field (x)"
       ]
     },
     {
-      "from": "QuestorisFamilia.json",
+      "from": "QuestorisMechanicus.json",
       "units": [
         "Armiger Moirax|Lightning|Volkite|Beamer|Graviton",
         "Mechanicum Questoris|Styrix|Magaera",
@@ -155,25 +132,29 @@
   ],
   "sections": [
     {
-      "name": "Phaeton Taghmata Core Maniple",
+      "name": "Phaeton Taghmata Core Maniples",
+      "description": "May only have one Thallax or Castellax Maniple for each Adsecularis or Mechanized Adsecularis Maniple",
       "formations": [
         {
-          "name": "Adsecularis Tech-thrall Maniple",
+          "name": "Adsecularis Maniple",
           "units": "One Tech-Priest Auxilia, five Adsecularis Tech-Thrall Cohorts",
           "extraUnits": [
-            "Add two : 1 U/p",
-            "Add two : 1 U/p",
-            "Add : 2 U/p each"
+            "Replace the Tech-Priest Auxilia with an Archmagos on Abeyant: 1 U/p",
+            "Replace the Tech-Priest Auxilia with an Archmagos Prime on Abeyant: 2 U/p (0-1 in army)",
+            "Add five Adsecularis Tech-Thrall Cohorts: 3 U/p",
+            "Add two Castellax Battle-Automata Cohorts: 2 U/p",
+            "Add two Myrmidon Secutor Hosts: 2 U/p"
           ],
           "points": "1 F/p"
         },
                {
-          "name": "Mechanized Adsecularis Tech-thrall Maniple",
+          "name": "Mechanized Adsecularis Maniple",
           "units": "Four Adsecularis Tech-Thrall Cohorts, one Taghmata Triaros Armoured Conveyor",
           "extraUnits": [
-           "Add two : 1 U/p",
-            "Add two : 1 U/p",
-            "Add : 2 U/p each"
+           "Add up to two Thallax Cohorts: 1 U/p each",
+           "Add up to two Ursarax Cohorts: 1 U/p each",
+           "Add up to two Vorax Battle-Automata: 1 U/p each",
+           "Add up to two Thagmata Leman Russ of any configuration: 1 U/p each"
           ],
           "points": "1 F/p"
         },
@@ -181,9 +162,16 @@
           "name": "Thallax Maniple",
           "units": "Four Thallax Cohorts",
           "extraUnits": [
-           "Add two : 1 U/p",
-            "Add two : 1 U/p",
-            "Add : 2 U/p each"
+           "Add up to two Ursarax Cohorts: 1 U/p each",
+            "Add up to two Vorax Battle-Automata: 1 U/p each",
+            "Add up to two Ursarax Cohorts: 1 U/p each"
+          ],
+          "points": "1 F/p"
+        },
+        {
+          "name": "Castellax Sentry Maniple",
+          "units": "Four Castellax Battle-Automata Cohorts",
+          "extraUnits": [
           ],
           "points": "1 F/p"
         }
@@ -191,21 +179,12 @@
     },
     {
       "name": "Phaeton Taghmata Special Maniples",
-      "description": "May only have one Special Cohort for each Core Cohort",
+      "description": "May only have one Special Maniple for each Core Maniple",
       "formations": [
         {
-          "name": "Leman Russ Maniple",
-          "units": "Three Taghmata Leman Russ of any configuration",
+          "name": "Vultarax Stratos Maniple",
+          "units": "Four Vultarax Stratos-Automata",
           "extraUnits": [
-          "Add one Cortex Controller character to one unit in the formation: 1 U/p"
-          ],
-          "points": "1 F/p"
-        },
-        {
-          "name": "Castellax Assault Maniple",
-          "units": "Three Charonite Ogryns",
-          "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -213,35 +192,48 @@
           "name": "Thanatar Siege Maniple",
           "units": "Four Thanatar Siege-Automata",
           "extraUnits": [
-          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers or four Rapier Mole Mortars: 1 U/p",
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
-          "points": "1 F/p, -2 U/p"
+          "points": "1 F/p, -1 U/p"
         },
         {
-          "name": "Domitar Maniple",
-          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
+          "name": "Domitar Battle Maniple",
+          "units": "Four Domitar Battle-Automata",
           "extraUnits": [
              ],
-          "points": "1 F/p, -3 U/p"
+          "points": "1 F/p, -1 U/p"
         },
         {
-          "name": "Castellax",
-          "units": "Three Leman Russ of any configuration",
+          "name": "Myridon Maniple",
+          "units": "Four Myridon Destructors",
           "extraUnits": [
-          "Add one Leman Russ of any configuration: 1 U/p"
+          "Add up to two Arlatax Battle-Automata: 1 U/p each"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "Auxilia Artillery Battery",
-          "units": "Three Basilisk and/or Medusa",
+          "name": "Karacnos Maniple",
+          "units": "One Cortex Controller character, three Karacnos Assault Tanks",
           "extraUnits": [
-          "Add Basilisk and/or Medusa: 1 U/p"
+          "Add one Karacnos Assault Tank: 1 U/p"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "Taghmata Leman Russ Squadron",
+          "units": "One Cortex Controller character, three Taghmata Leman Russ of any configuration",
+          "extraUnits": [
+          "Add one Taghmata Leman Russ of any configuration: 1 U/p"
+          ],
+          "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "Krios Maniple",
+          "units": "One Cortex Controller character, three Krios Battle Tanks of any configuration",
+          "extraUnits": [
+          "Add one Krios Battle Tank of any configuration: 1 U/p"
+          ],
+          "points": "1 F/p, 1 U/p"
         }
-
        ]
     },
     {
@@ -249,41 +241,39 @@
       "description": "May only have one Elite Section for each two Core Sections",
       "formations": [
          {
-          "name": "Myridon Maniple",
-          "units": "Two Myridon Secutors, and two Myridon Destructors",
+          "name": "Armiger Moirax Lance",
+          "units": "Three Armiger Moirax of any configuration",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "Heavy Malcador Squadron",
-          "units": "Two Heavy Malcador Infernus, or two Heavy Malcador Valdor",
+          "name": "Mechanicum Cerastus Lance",
+          "units": "Two Cerastus Atrapos",
           "extraUnits": [
           ],
           "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "Super-Heavy Tank Squadron",
-          "units": "One Baneblade Super-Heavy Tank",
+          "name": "Mechanicum Questoris Lance",
+          "units": "Two Mechanicum Questoris of any configuration",
           "extraUnits": [
-          "Replace the Baneblade with a Hellhammer, Stormblade, or Stormsword (Free), or a Shadowsword (1 U/p)",
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
           "points": "1 F/p"
         },
                 {
-          "name": "Auxilia Leman Russ Company",
-          "units": "One Auxilia Adjutant character, eight Leman Russ of any configuration",
+          "name": "Taghmata Leman Russ Company",
+          "units": "One Cortex Controller, eight Taghmata Leman Russ of any configuration",
           "extraUnits": [
           ],
           "points": "2 F/p, 3 U/p"
         },
         {
-          "name": "Auxilia Artillery Company",
-          "units": "One Auxilia Adjutant character, eight Basilisk and/or Medusa",
+          "name": "Mechanicum Acastus Lance",
+          "units": "One Mechanicum Acastus of any configuration",
           "extraUnits": [
           ],
-          "points": "2 F/p, 3 U/p"
+          "points": "1 F/p, 1 U/p"
         }
       
       ]
@@ -293,22 +283,25 @@
       "description": "May only have one Navy Squadron for each two Core or Special Sections",
       "formations": [
         {
-          "name": "Thunderbolt Squadron",
-          "units": "Two Thunderbolt Fighters",
+          "name": "Avenger Squadron",
+          "units": "Two Avenger Strike Fighters",
          "extraUnits": [
-         "Add up to two Thunderbolt Fighters: 1 U/p each"
           ],
-          "points": "1 F/p, -3 U/p"
+          "points": "1 F/p, -2 U/p"
         },
         {
-          "name": "Marauder Squadron",
-          "units": "Two Marauder Bombers",
+          "name": "Lightning Squadron",
+          "units": "Two Lightning Interceptors",
+          "extraUnits": [
+          "Add one Lightning Interceptor: 1 U/p"
+          ],
+
           "points": "1 F/p"
         }
       ]
     },
-          {
-      "name": "Calth High Guard Offboard Support Assets",
+    {
+      "name": "Phaeton Taghmata Offboard Support Assets",
       "description": "",
       "formations": [
         {
@@ -329,49 +322,75 @@
         }
       ]
     },
-      {
-      "name": "Collegia Titanica Allied Banners",
-      "description": "",
+    {
+      "name": "Solar Auxilia Allied Sections",
+      "description": "The first formation selected must be an Auxilia Lasrifle Tercio",
       "formations": [
         {
-          "name": "Warhound",
-          "units": "One Warhound Scout Titan",
+          "name": "Auxilia Lasrifle Tercio",
+          "units": "One Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon: 1 U/p"
+            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii, or one Charonite Ogryns: 1 U/p"
+          ],
+          "points": "1 F/p, 1 A/p"
+        },
+        {
+          "name": "Ogryn Charonite Section",
+          "units": "Three Charonite Ogryns",
+          "extraUnits": [
+            "Add two Auxilia Lasrifle Squads, or two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
+          ],
+          "points": "1 F/p, -2 U/p, 1 A/p"
+        },
+        {
+          "name": "Veletaris Storm Section",
+          "units": "Four Veletarii",
+          "extraUnits": [
+            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
+          ],
+          "points": "1 F/p, -2 U/p, 1 A/p"
+        },
+        {
+          "name": "Auxilia Heavy Sentinel Patrol",
+          "units": "Four Aethon Heavy Sentinels",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, 1 A/p"
+        },
+        {
+          "name": "Auxilia Artillery Battery",
+          "units": "Three Basilisk and/or Medusa",
+          "extraUnits": [
+          "Add one Basilisk and/or Medusa: 1 U/p"
+          ],
+          "points": "1 F/p"
+        }
+      ]
+    },
+    {
+      "name": "Centurio Ordinatus Allied Constructs",
+      "description": "May not have more than one of each configuration of Ordinatus Construct in the army",
+      "formations": [
+        {
+          "name": "Minoris Battle Construct",
+          "units": "One Ordinatus Minoris Battle Construct of any configuration. Each configuration is 0-1 in the army.",
+          "extraUnits": [
           ],
           "points": "1 F/p, 1 T/p, 1 A/p"
         },
         {
-          "name": "Warhound Pack",
-          "units": "Two Warhound Scout Titans (must have the same armament)",
+          "name": "Minoris Support Construct",
+          "units": "One Ordinatus Minoris Support Construct of any configuration. Each configuration is 0-1 in the army.",
           "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon: 2 U/p"
           ],
-          "points": "1 F/p, 1 U/p, 2 T/p, 1 A/p"
+          "points": "1 F/p, 2 U/p, 1 T/p, 1 A/p"
         },
         {
-          "name": "Reaver",
-          "units": "One Reaver Battle Titan",
+          "name": "Majoris Construct",
+          "units": "One Ordinatus Majoris Heavy Siege Construct of any configuration. Each configuration is 0-1 in the army.",
           "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
           ],
-          "points": "2 F/p, 1 T/p, 1 A/p"
-        },
-        {
-          "name": "Warlord",
-          "units": "One Warlord Battle Titan",
-          "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
-          ],
-          "points": "2 F/p, 1 U/p, 2 T/p, 1 A/p"
-        },
-        {
-          "name": "Warmaster",
-          "units": "One Warmaster Heavy Battle Titan",
-          "extraUnits": [
-          "Replace two Battle Weapons with two Support Weapons of the same type (1 U/p)"
-          ],
-          "points": "3 F/p, 2 U/p, 3 T/p, 1 A/p"
+          "points": "1 F/p, 2 U/p, 3 T/p, 1 A/p"
         }
       ]
     },
@@ -383,7 +402,6 @@
           "name": "Tactical Detachment",
           "units": "One Lieutenant character, four Tactical Legionaries",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
             "Replace up to two Legion Tactical Squads with two Legion Support Squads (1 U/p), two Legion Heavy Support Squads (2 U/p), or two Contemptor Dreadnoughts of any single configuration (2 U/p)"
           ],
           "points": "1 F/p, 1 A/p"
@@ -409,28 +427,6 @@
           "extraUnits": [
              ],
           "points": "1 F/p, -1 U/p, 1 A/p"
-        }
-      ]
-    },
-    {
-      "name": "Questoris Familia Allied Lances",
-      "description": "",
-      "formations": [
-         {
-          "name": "Armiger Lance",
-          "units": "Three Armiger Knight Warglaives and/or Helverins",
-          "extraUnits": [
-          
-          ],
-         "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Questoris Lance",
-          "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
-          "extraUnits": [
-            "Add one Questoris Rocket Pod to each unit in the formation: 1 U/p"
-          ],
-          "points": "1 F/p, 1 A/p"
         }
       ]
     }

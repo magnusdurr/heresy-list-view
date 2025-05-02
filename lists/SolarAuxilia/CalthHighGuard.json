@@ -6,7 +6,7 @@
     "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
-  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legiones Cybernetica Maniples have an initiative of 2+ and are subject to the 'Machine Spirit' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
+  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
   "specialRules": [
   "Army of Mankind",
   "Tunnelers"
@@ -75,9 +75,6 @@
       "from": "LegionesAstartes.json",
       "units": [
         "Lieutenant",
-        "Chaplain",
-        "Captain",
-        "Librarian - Thaumaturgy",
         "Legion Support Squad|Plasma",
         "Legion Tactical Squad",
         "Legion Heavy Support Squad|Missile Launcher",
@@ -209,7 +206,7 @@
           "name": "Auxilia Artillery Battery",
           "units": "Three Basilisk and/or Medusa",
           "extraUnits": [
-          "Add Basilisk and/or Medusa: 1 U/p"
+          "Add one Basilisk and/or Medusa: 1 U/p"
           ],
           "points": "1 F/p"
         }
@@ -355,7 +352,6 @@
           "name": "Tactical Detachment",
           "units": "One Lieutenant character, four Tactical Legionaries",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
             "Replace up to two Legion Tactical Squads with two Legion Support Squads (1 U/p), two Legion Heavy Support Squads (2 U/p), or two Contemptor Dreadnoughts of any single configuration (2 U/p)"
           ],
           "points": "1 F/p, 1 A/p"

@@ -6,54 +6,67 @@
     ],
     "unit": [
       {
-        "name": "Ordinatus Minoris",
+        "name": "Ordinatus Minoris Battle Construct",
         "type": "WE",
         "variants": [
+          
           {
-            "name": "Ulator",
+            "name": "Stygia",
             "type": "WE",
-            "speed": 15,
+            "speed": 20,
             "armour": 5,
             "cc": 6,
             "ff": 5,
             "weapons": [
-              "Sonic Destructor||FxF",
-              "Volkite Culvertin|2|FxF"
-            ]
-          },
-          {
-            "name": "Sagittar",
-            "type": "WE",
-            "speed": 15,
-            "armour": 5,
-            "cc": 6,
-            "ff": 5,
-            "weapons": [
-            "Belicosa Vulcano Cannon||FxF",
+            "Neutron-Wave Cannon||FxF",
             "Volkite Culvertin|2|FxF"
             ]
           },
           {
-            "name": "Hellion",
+            "name": "Necromunda",
             "type": "WE",
-            "speed": 15,
+            "speed": 20,
             "armour": 5,
             "cc": 6,
-            "ff": 5,
+            "ff": 3,
             "weapons": [
-            "Heavy Eradication Pulsar||FxF",
-            "Volkite Culvertin|2|FxF"
+            "Irad-Desolator||FxF",
+            "Irad-Scourer|2|FxF"
             ]
           },
           {
-            "name": "Urkallac",
+            "name": "Jerulas",
+            "type": "WE",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Turbo-Laser Blaster||FxF",
+            "Sollex Heavy-Las|2|FxF"
+            ]
+          },
+          {
+            "name": "Phaeton",
+            "type": "WE",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+            "Macro-Gatling Blaster||FxF",
+            "Autocannon|2|FxF"
+            ]
+          },
+          {
+            "name": "Mpandex",
             "type": "WE",
             "speed": 15,
             "armour": 5,
             "cc": 6,
-            "ff": 5,
+            "ff": 3,
             "weapons": [
-            "Conversion Beam Extripator||FxF",
+            "Volkite Carronade||FxF",
             "Volkite Culvertin|2|FxF"
             ]
           },
@@ -66,95 +79,11 @@
             "ff": 5,
             "weapons": [
             "Mori Quake Cannon||FxF",
-            "Volkite Culvertin|2|FxF"
+            "Multi-Laser|2|FxF"
             ]
           },
           {
-            "name": "Gaenna",
-            "type": "WE",
-            "speed": 15,
-            "armour": 5,
-            "cc": 6,
-            "ff": 5,
-            "weapons": [
-            "Sunfury Plasma Annihilator||FxF",
-            "Volkite Culvertin|2|FxF"
-            ]
-          },
-          {
-            "name": "Anfernati",
-            "type": "WE",
-            "speed": 15,
-            "armour": 5,
-            "cc": 6,
-            "ff": 4,
-            "weapons": [
-            "Anfernati Melta Cannon||FxF",
-            "Volkite Culvertin|2|FxF"
-            ]
-          },
-          {
-            "name": "Fusilac",
-            "type": "WE",
-            "speed": 15,
-            "armour": 5,
-            "cc": 6,
-            "ff": 5,
-            "weapons": [
-            "Doomstrike Missiles||FxF",
-            "Volkite Culvertin|2|FxF"
-            ]
-          },
-          {
-            "name": "Ybalinex",
-            "type": "WE",
-            "speed": 15,
-            "armour": 5,
-            "cc": 6,
-            "ff": 5,
-            "weapons": [
-            "Warp Missile||FxF",
-            "Volkite Culvertin|2|FxF"
-            ]
-          },
-          {
-            "name": "Imcinerati",
-            "type": "WE",
-            "speed": 15,
-            "armour": 5,
-            "cc": 6,
-            "ff": 3,
-            "weapons": [
-            "Volkite Carronade||FxF",
-            "Volkite Culvertin|2|FxF"
-            ]
-          },
-          {
-            "name": "Jimeria",
-            "type": "WE",
-            "speed": 15,
-            "armour": 5,
-            "cc": 6,
-            "ff": 3,
-            "weapons": [
-            "Turbo-Laser Blaster||FxF",
-            "Volkite Culvertin|2|FxF"
-            ]
-          },
-          {
-            "name": "Mygezi",
-            "type": "WE",
-            "speed": 15,
-            "armour": 5,
-            "cc": 6,
-            "ff": 3,
-            "weapons": [
-            "Macro-Gatling Blaster||FxF",
-            "Volkite Culvertin|2|FxF"
-            ]
-          },
-          {
-            "name": "Xterpos",
+            "name": "Omnicron",
             "type": "WE",
             "speed": 15,
             "armour": 5,
@@ -162,7 +91,7 @@
             "ff": 5,
             "weapons": [
             "Graviton Ruinator||FxF",
-            "Volkite Culvertin|2|FxF"
+            "Plasma Cannon|2|FxF"
             ]
           },
           {
@@ -171,27 +100,27 @@
             "speed": 15,
             "armour": 5,
             "cc": 6,
-            "ff": 4,
+            "ff": 3,
             "weapons": [
             "Helias Defense Array",
-            "Volkite Culvertin|2|FxF"
+            "Heavy Bolter|2|FxF"
             ]
           },
           {
-            "name": "Metrangas",
+            "name": "Tigrus",
             "type": "WE",
-            "speed": 20,
+            "speed": 15,
             "armour": 5,
             "cc": 6,
             "ff": 5,
             "weapons": [
-            "Neutron-Wave Cannon||FxF",
-            "Volkite Culvertin|2|FxF"
+            "Accelerator Cannon||FxF",
+            "Sollex Heavy-Las|2|FxF"
             ]
           }
         ],
         "specialRules": [
-          "Damage Capacity 2",
+          "Damage Capacity 3",
           "Dispersion Field (3+)",
           "Reinforced Armour",
           "Dauntless",
@@ -201,7 +130,118 @@
         "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
       },
       {
-        "name": "Ordinatus Aktaeus Super-Heavy Burrowing Transport",
+        "name": "Ordinatus Minoris Support Construct", 
+        "type": "WE",
+        "variants": [
+        {
+            "name": "Hellion",
+            "type": "WE",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+            "Heavy Eradication Pulsar||FxF",
+            "Heavy Bolter|2|FxF"
+            ]
+          },
+        {
+            "name": "Haddrack",
+            "type": "WE",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Warp Missile||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+         {
+            "name": "Barnassus",
+            "type": "WE",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+            "Anfernati Melta Cannon||FxF",
+            "Multi-Melta|2|FxF"
+            ]
+          },
+          {
+            "name": "Antioc",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Sunfury Plasma Annihilator||FxF",
+            "Plasma Cannon|2|FxF"
+            ]
+          },
+          {
+            "name": "Vaznagrod",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Conversion Beam Extripator||FxF",
+            "Conversion Beamer|2|FxF"
+            ]
+          },
+          {
+            "name": "Gorgonum",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Doomstrike Missiles||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Ulator",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Sonic Destructor||FxF",
+              "Volkite Culvertin|2|FxF"
+            ]
+          },
+          {
+            "name": "Sagittar",
+            "type": "WE",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+            "Belicosa Vulcano Cannon||FxF",
+            "Volkite Culvertin|2|FxF"
+            ]
+          }
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Dispersion Field (3+)",
+          "Reinforced Armour",
+          "Dauntless",
+          "Steadfast",
+          "Ponderous"
+        ],
+        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
+      },
+      {
+        "name": "Ordinatus Aktaeus Burrowing Transport",
         "type": "WE",
         "speed": "Immobile",
         "armour": 5,
@@ -211,9 +251,10 @@
           "Terrebrax Phospex Launcher"
         ],
         "specialRules": [
-         "Damage Capacity (3)",
+         "Damage Capacity (4)",
          "Reinforced Armour",
          "Thick Rear Armour",
+         "Vox Caster",
          "Tunneler",
          "Dispersion Field (3+)",
          "Assault Transport (8)",
@@ -224,7 +265,7 @@
         "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 5+"
       },
       {
-        "name": "Ordinatus Majoris",
+        "name": "Ordinatus Majoris Heavy Siege Construct",
         "type": "WE",
         "variants": [
           {
@@ -267,7 +308,7 @@
             ]
           },
           {
-            "name": "Endymion",
+            "name": "Incaladion",
             "type": "WE",
             "speed": 10,
             "armour": 5,
@@ -293,7 +334,7 @@
             ]
           },
           {
-            "name": "Malamuria",
+            "name": "Metalica",
             "type": "WE",
             "speed": 10,
             "armour": 5,
@@ -319,7 +360,7 @@
             ]
           },
           {
-            "name": "Karros",
+            "name": "Straxos",
             "type": "WE",
             "speed": 10,
             "armour": 5,
@@ -345,7 +386,7 @@
             ]
           },
           {
-            "name": "Incus",
+            "name": "Vindalex",
             "type": "WE",
             "speed": 10,
             "armour": 5,
@@ -359,9 +400,11 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 4",
+          "Damage Capacity 6", 
           "Dispersion Field (2+)",
           "Reinforced Armour",
+          "Vox-Caster",
+          "Leader",
           "Dauntless",
           "Steadfast",
           "Ponderous"
