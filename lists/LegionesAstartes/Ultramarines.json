@@ -15,6 +15,7 @@
     {
       "from": "LegionesAstartes.json",
       "units": [
+        "Roboute Guilliman, Primarch of the Ultramarines",
         "Lieutenant",
         "Chaplain",
         "Captain",
@@ -24,6 +25,8 @@
         "Legion Support Squad|Plasma",
         "Legion Tactical Squad",
         "Legion Heavy Support Squad|Missile Launcher",
+        "Invictarus Suzerain Squad",
+        "Locutarus Storm Squad",
         "Nemesis Destroyer Squad",
         "Cataphractii Terminator Squad",
         "Fulmentarus Terminator Squad",
@@ -49,6 +52,7 @@
         "Energetic",
         "Crippling",
         "Psyker",
+        "Force",
         "Psychic Succour",
         "Skirmisher",
         "Siege",
@@ -58,7 +62,8 @@
         "Blitz",
         "Transport (x)",
         "Heavy Transport (x)",
-        "Assault Transport (x)"
+        "Assault Transport (x)",
+        "Primarch"
       ]
     },
     {
@@ -73,10 +78,9 @@
     {
       "from": "LegionesAstartesNavy.json",
       "units": [
-        "Thunderhawk Gunship - Battle Cannon",
-        "Thunderhawk Gunship - Turbo-Laser",
+        "Thunderhawk Gunship|Battle Cannon|Turbo-Laser",
         "Xiphon Interceptor",
-        "Fire Raptor",
+        "Fire Raptor|Heavy Bolter|Autocannon|Lascannon",
         "Storm Eagle"
       ],
       "unitRules": [
@@ -119,7 +123,7 @@
         "Veletarii",
         "Charonite Ogryns",
         "Aethon Heavy Sentinel",
-        "Leman Russ|Battle Tank|Vanquisher"
+        "Leman Russ|Battle Tank|Vanquisher|Annihilator|Exterminator"
       ],
       "unitRules": [
         "Army of Mankind"
@@ -129,9 +133,10 @@
       "from": "QuestorisFamilia.json",
       "units": [
         "Armiger Knight|Warglaive|Helverin",
-        "Questoris Knight|Paladin|Errant|Crusader|Gallant|Warden",
-        "Questoris Rocket Pod",
-        "Twin Icarus Autocannon"
+        "Questoris Knight|Paladin|Errant|Crusader (Battle Cannon)|Crusader (Thermal Cannon)|Gallant|Warden",
+        "Questoris Stormspear Pod",
+        "Questoris Ironstorm Pod",
+        "Questoris Icarus Autocannon"
       ],
       "unitRules": [
         "Chivalry",
@@ -257,7 +262,7 @@
     },
     {
       "name": "Ultramarines Elite Detachments",
-      "description": "May only have one Elite Detachment for each three Core Detachments",
+      "description": "May only have one Elite Detachment for each two Core or Special Detachments",
       "formations": [
         {
           "name": "Terminator Detachment",
@@ -269,7 +274,7 @@
           "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "Nemesis Destroyer Squad",
+          "name": "0-1 Nemesis Destroyer Detachment",
           "units": "One Lieutenant character, four Nemesis Destroyer Squads",
           "extraUnits": [
             "Add two Rhinos (Free), or two Contemptor Dreadnoughts of any single configurations (2 U/p)",
@@ -278,6 +283,22 @@
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
           ],
           "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "0-1 Locutarus Storm Detachment",
+          "units": "One Lieutenant character, four Locutarus Storm Squads",
+          "extraUnits": [
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p)"
+          ],
+          "points": "1 F/p, 2 U/p"
+        },
+        {
+          "name": "0-1 Primarch Detachment",
+          "units": "Roboute Guilliman, Primarch of the Ultramarines, three Invictarus Suzerain Squads",
+          "extraUnits": [
+            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p), two Cataphractii Terminator Squads (3 U/p), two Land Raiders (3 U/p), or one Spartan of any configuration (3 U/p)"
+          ],
+          "points": "1 F/p, 4 U/p"
         },
         {
           "name": "Leviathan Detachment",
@@ -304,13 +325,6 @@
           "points": "1 F/p, -1 U/p"
         },
         {
-          "name": "Spartan Detachment",
-          "units": "Two Spartans of any configuration",
-          "extraUnits": [
-          ],
-          "points": "1 F/p, 1 U/p"
-        },
-        {
           "name": "Kratos Detachment",
           "units": "Two Kratos of any configuration",
           "extraUnits": [
@@ -328,7 +342,7 @@
     },
     {
       "name": "Ultramarines Navy Detachments",
-      "description": "May only have one Navy Detachment for each three Core or Special Detachments",
+      "description": "May only have one Navy Detachment for each two Core or Special Detachments",
       "formations": [
         {
           "name": "Storm Eagle",
@@ -360,23 +374,23 @@
       "description": "",
       "formations": [
         {
-          "name": "Drop Pods",
+          "name": "Drop Pod",
           "points": "2 U/p"
         },
         {
           "name": "Orbital Pin-Point Attack",
-          "points": "2 U/p"
+          "points": "1 U/p"
         },
         {
           "name": "Orbital Barrage",
-          "points": "2 U/p"
+          "points": "1 U/p"
         },
         {
           "name": "Artillery Barrage Strike",
-          "points": "2 U/p"
+          "points": "1 U/p"
         },
         {
-          "name": "Artillery Blind Strike",
+          "name": "2x Artillery Blind Strikes",
           "points": "1 U/p"
         }
       ]
@@ -416,7 +430,7 @@
             "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
             "Add one Veteran Princeps character to the formation: 2 U/p"
           ],
-          "points": "2 F/p, 1 T/p, 1 A/p"
+          "points": "2 F/p, 2 T/p, 1 A/p"
         },
         {
           "name": "Warlord",
@@ -425,7 +439,7 @@
             "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
             "Add one Veteran Princeps character to the formation: 2 U/p"
           ],
-          "points": "2 F/p, 1 U/p, 2 T/p, 1 A/p"
+          "points": "2 F/p, 1 U/p, 3 T/p, 1 A/p"
         }
       ]
     },
@@ -490,7 +504,7 @@
           "name": "Questoris Lance",
           "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
           "extraUnits": [
-            "Add one Questoris Rocket Pod (1 U/p) or Twin Icarus Autocannon (1 U/p) to each unit in the formation"
+            "Add one Questoris Ironstorm Pod, Questoris Stormspear Pod, or Icarus Autocannon to each unit in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 A/p"
         }

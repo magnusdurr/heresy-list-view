@@ -4,21 +4,46 @@
     "specialRules": [
     ],
     "unit": [
-       {
+        {
         "name": "Fire Raptor",
         "type": "AC/WE",
-         "speed": "35cm/Hover",
-        "armour": 5,
-        "ff": 5,
-        "weapons": [
-          "Avenger Bolt Cannon||FwA",
-          "Tempest Rockets||FwA",
-          ">Heavy Bolter Configuration<",
-          "AC Twin Heavy Bolter|2|FwA",
-          ">Autocannon Configuration<",
-          "Twin Autocannon|2|FwA",
-          ">Lascannon Configuration<",
-          "Twin Lascannon|2|FwA"
+        "variants": [
+          {
+            "name": "Heavy Bolter",
+            "type": "AC/WE",
+            "speed": "35cm/Hover",
+            "armour": 5,
+            "ff": 3,
+            "weapons": [
+              "Avenger Bolt Cannon||FwA",
+              "Tempest Rockets||FwA",
+              "AC Twin Heavy Bolter|2|FwA"
+            ]
+          },
+          {
+            "name": "Autocannon",
+            "type": "AC/WE",
+            "speed": "35cm/Hover",
+            "armour": 5,
+            "ff": 4,
+            "weapons": [
+              "Avenger Bolt Cannon||FwA",
+              "Tempest Rockets||FwA",
+              "Twin Autocannon|2|FwA"
+            ]
+          },
+          {
+            "name": "Lascannon",
+            "type": "AC/WE",
+            "speed": "35cm/Hover",
+            "armour": 5,
+            "ff": 5,
+            "weapons": [
+              "Avenger Bolt Cannon||FwA",
+              "Tempest Rockets||FwA",
+              "Twin Lascannon|2|FwA"
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 2",
@@ -46,44 +71,41 @@
         ],
         "crit": "The Storm Eagle and all units being carried are destroyed."
       },
-      {
-        "name": "Thunderhawk Gunship - Battle Cannon",
+       {
+        "name": "Thunderhawk Gunship",
         "type": "AC/WE",
-        "speed": "30cm/Hover",
-        "armour": 5,
-        "ff": 3,
-        "weapons": [
-        "Battle Cannon||FwA",
-        "Twin Heavy Bolter|2|FwA",
-        "AC Twin Heavy Bolter|2"
+        "variants": [
+          {
+            "name": "Battle Cannon",
+            "type": "AC/WE",
+            "speed": "30cm/Hover",
+            "armour": 5,
+            "ff": 3,
+            "weapons": [
+              "Battle Cannon||FwA",
+              "Twin Heavy Bolter|2|FwA",
+              "AC Twin Heavy Bolter|2"
+            ]
+          },
+          {
+            "name": "Turbo-Laser",
+            "type": "AC/WE",
+            "speed": "30cm/Hover",
+            "armour": 5,
+            "ff": 5,
+            "weapons": [
+              "AC Turbo-Laser||FwA",
+              "Twin Lascannon|2|FwA",
+              "AC Twin Heavy Bolter|2"
+            ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 3",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Assault Transport (8)",
-          "Ion Shield (5+)"
-        ],
-        "crit": "The Thunderhawk and all units being carried are destroyed."
-      },
-            {
-        "name": "Thunderhawk Gunship - Turbo-Laser",
-        "type": "AC/WE",
-        "speed": "30cm/Hover",
-        "armour": 5,
-        "ff": 5,
-        "weapons": [
-        "AC Turbo-Laser||FwA",
-        "Twin Lascannon|2|FwA",
-        "AC Twin Heavy Bolter|2"
-        
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Assault Transport (8)",
-          "Ion Shield (5+)"
+          "Ion Shield (4+)"
         ],
         "crit": "The Thunderhawk and all units being carried are destroyed."
       },

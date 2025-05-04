@@ -85,8 +85,7 @@
         "Sicarian|Accelerator|Omega"
       ],
       "unitRules": [
-      "Psyker",
-        "Psychic Succour"
+      "Dauntless"
       ]
     },
     {
@@ -114,13 +113,14 @@
       "from": "QuestorisFamilia.json",
       "units": [
         "Armiger Knight|Warglaive|Helverin",
-        "Questoris Knight|Paladin|Errant|Crusader|Gallant|Warden",
-        "Questoris Rocket Pod"
+        "Questoris Knight|Paladin|Errant|Crusader (Battle Cannon)|Crusader (Thermal Cannon)|Gallant|Warden",
+        "Questoris Stormspear Pod",
+        "Questoris Ironstorm Pod",
+        "Questoris Icarus Autocannon"
       ],
       "unitRules": [
       "Chivalry",
-       "Ion Shield (x)",
-       "Ionic Flare Shield"
+       "Ion Shield (x)"
       ]
     }
   ],
@@ -215,7 +215,7 @@
     },
     {
       "name": "Calth High Guard Elite Sections",
-      "description": "May only have one Elite Section for each two Core Sections",
+      "description": "May only have one Elite Section for each two Core or Special Sections",
       "formations": [
          {
           "name": "Auxilia Malcador Squadron",
@@ -281,20 +281,24 @@
       "description": "",
       "formations": [
         {
-          "name": "Deathstrike Warp Missile Attack",
+          "name": "Termite Subterranean Assault",
           "points": "2 U/p"
+        }
+        {
+          "name": "Deathstrike Warp Missile Attack",
+          "points": "1 U/p"
         },
         {
           "name": "Deathstrike Plasma Missile Attack",
-          "points": "2 U/p"
+          "points": "1 U/p"
         },
         {
           "name": "Artillery Barrage Strike",
-          "points": "2 U/p"
+          "points": "1 U/p"
         },
         {
-          "name": "Termite Subterranean Assault",
-          "points": "2 U/p"
+          "name": "2x Artillery Blind Strikes",
+          "points": "1 U/p"
         }
       ]
     },
@@ -324,7 +328,7 @@
           "extraUnits": [
           "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
           ],
-          "points": "2 F/p, 1 T/p, 1 A/p"
+          "points": "2 F/p, 2 T/p, 1 A/p"
         },
         {
           "name": "Warlord",
@@ -332,7 +336,7 @@
           "extraUnits": [
           "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
           ],
-          "points": "2 F/p, 1 U/p, 2 T/p, 1 A/p"
+          "points": "2 F/p, 1 U/p, 3 T/p, 1 A/p"
         },
         {
           "name": "Warmaster",
@@ -340,7 +344,7 @@
           "extraUnits": [
           "Replace two Battle Weapons with two Support Weapons of the same type (1 U/p)"
           ],
-          "points": "3 F/p, 2 U/p, 3 T/p, 1 A/p"
+          "points": "3 F/p, 2 U/p, 4 T/p, 1 A/p"
         }
       ]
     },
@@ -396,7 +400,7 @@
           "name": "Questoris Lance",
           "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
           "extraUnits": [
-            "Add one Questoris Rocket Pod to each unit in the formation: 1 U/p"
+            "Add one Questoris Ironstorm Pod, Questoris Stormspear Pod, or Icarus Autocannon to each unit in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 A/p"
         }

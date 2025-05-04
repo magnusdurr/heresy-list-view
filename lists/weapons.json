@@ -23,6 +23,13 @@
             ]
         },
         {
+            "name": "OR",
+            "modes": [
+                {
+                }
+            ]
+        },
+        {
             "name": "ARMS (choose one)",
             "modes": [
                 {
@@ -482,11 +489,11 @@
       ]
     },
     {
-      "name": "Twin Icarus Autocannon",
+      "name": "Icarus Autocannon",
       "modes": [
         {
           "firepower": "AP5+/AT6+/AA6+",
-          "range": 45
+          "range": 30
         }
       ]
     },
@@ -874,6 +881,15 @@
         }
       ]
     },
+    {
+      "name": "Questoris Stubber",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 30
+        }
+      ]
+    },
      {
       "name": "Ripper Guns",
       "modes": [
@@ -888,6 +904,15 @@
       "modes": [
         {
           "firepower": "AP5+",
+          "range": 30
+        }
+      ]
+    },
+    {
+      "name": "The Arbitrator",
+      "modes": [
+        {
+          "firepower": "2x AP5+",
           "range": 30
         }
       ]
@@ -1087,6 +1112,13 @@
           "range": 45,
           "specialRules": [
           ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+1)"
+          ]
         }
       ]
     },
@@ -1097,6 +1129,13 @@
           "firepower": "4x AP3+/AT5+",
           "range": 45,
           "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+1)"
           ]
         }
       ]
@@ -1109,6 +1148,13 @@
           "range": 45,
           "specialRules": [
           ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+2)"
+          ]
         }
       ]
     },
@@ -1119,6 +1165,13 @@
           "firepower": "8x AP3+/AT5+",
           "range": 45,
           "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+2)"
           ]
         }
       ]
@@ -1927,10 +1980,21 @@
     },
 
          {
-      "name": "Questoris Rocket Pod",
+      "name": "Ironstorm Pod",
       "modes": [
         {
-          "firepower": "AP6+/AT6+",
+          "firepower": "AP4+",
+          "range": 60,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stormspear Pod",
+      "modes": [
+        {
+          "firepower": "AT5+",
           "range": 60,
           "specialRules": [
           ]
@@ -3461,7 +3525,7 @@
           "specialRules": [
            "IC",
            "Shield Piercer",
-           "Shock Pulse"
+           "Disrupt"
           ]
         },
         {
@@ -3471,7 +3535,7 @@
            "Disrupt",
            "IC",
            "Shield Piercer",
-           "Shock Pulse"
+           "Disrupt"
           ]
         }
       ]
@@ -3515,7 +3579,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "MW"
+            "EA(+1)"
           ]
         }
       ]
@@ -3561,8 +3625,7 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "Lance",
-            "Shock Pulse",
-            "Devastating Charge"
+            "Shock Pulse"
           ]
         }
       ]
@@ -3580,6 +3643,24 @@
       ]
     },
     {
+      "name": "Hand of Dominion",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "MW",
+            "TK(D2)"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Thunder Hammer",
       "modes": [
         {
@@ -3587,6 +3668,17 @@
           "specialRules": [
             "EA(+1)",
             "MW"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Power Swords",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+             "MW"
           ]
         }
       ]
@@ -3626,6 +3718,18 @@
         }
       ]
     },
+    {
+      "name": "Force Weapon",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)",
+            "Force"
+          ]
+        }
+      ]
+    },
         {
       "name": "Power Fist",
       "modes": [
@@ -3656,7 +3760,7 @@
           "specialRules": [
             "EA(+1)",
             "MW",
-            "TK(D3)"
+            "TK(D2)"
           ]
         }
       ]
@@ -3738,8 +3842,7 @@
         {
           "firepower": "Small Arms",
           "specialRules": [
-            "EA(+1)",
-            "Lance"
+            "EA(+1)"
 
           ]
         }
@@ -4055,21 +4158,31 @@
             "TK(1)",
             "Shield Piercer",
             "Crippling",
-            "Devastating Charge"
+            "Titan Hunter"
           ]
         }
       ]
     },
+
     {
       "name": "Natrix Shock Lance",
       "modes": [
         {
-          "firepower": "Small Arms",
+          "firepower": "AT5+",
+          "range": 15,
           "specialRules": [
-            "EA(+1)",
             "Lance",
             "Shock Pulse",
-            "Titan Hunter",
+            "Shield Piercer"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+1)",
+            "Lance",
+            "Shock Pulse",
             "Shield Piercer",
             "Devastating Charge"
           ]

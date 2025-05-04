@@ -80,7 +80,9 @@
         "specialRules": [
           "Damage Capacity 14",
           "Void Shields 12",
+          "God Machine",
           "Ripple Fire",
+          "Inspiring",
           "Dauntless",
           "Reinforced Armour",
           "Walker",
@@ -132,6 +134,8 @@
         "specialRules": [
           "Damage Capacity 14",
           "Void Shields 12",
+          "God Machine",
+          "Inspiring",
           "Split Fire",
           "Dauntless",
           "Reinforced Armour",
@@ -218,6 +222,7 @@
         "specialRules": [
           "Damage Capacity 10",
           "Void Shields 8",
+          "God Machine",
           "Ripple Fire",
           "Dauntless",
           "Reinforced Armour",
@@ -287,6 +292,7 @@
         "specialRules": [
           "Damage Capacity 10",
           "Void Shields 8",
+          "God Machine",
           "Ripple Fire",
           "Dauntless",
           "Reinforced Armour",
@@ -372,6 +378,7 @@
         "specialRules": [
           "Damage Capacity 8",
           "Void Shields 6",
+          "God Machine",
           "Split Fire",
           "Dauntless",
           "Reinforced Armour",
@@ -612,7 +619,7 @@
         "type": "WE",
         "speed": 20,
         "armour": 5,
-        "cc": 5,
+        "cc": 6,
         "ff": 5,
         "weaponMounts": [
           {
@@ -660,7 +667,7 @@
           "Walker"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
-        "crit": "The unit is destroyed. All units within 5cm takes a MW hit on a 6+."
+        "crit": "The unit takes a point of damage, and loses D3 Void Shields"
       },
 
 

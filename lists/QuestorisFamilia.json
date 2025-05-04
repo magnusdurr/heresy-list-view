@@ -29,6 +29,34 @@
       },
 
       {
+        "name": "Questoris Ironstorm Pod",
+        "type": "CH",
+        "weapons": [
+          "Ironstorm Pod"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Questoris Stormspear Pod",
+        "type": "CH",
+        "weapons": [
+          "Stormspear Pod"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Questoris Icarus Autocannon",
+        "type": "CH",
+        "weapons": [
+          "Icarus Autocannon"
+        ],
+        "specialRules": [
+        ]
+      },
+
+      {
         "name": "Armiger Knight",
         "type": "AV",
         "variants": [
@@ -41,6 +69,7 @@
         "ff": 5,
             "weapons": [
               "Thermal Spear",
+              "Melta Gun",
           "Reaper Chain-Cleaver"
             ]
           },
@@ -52,7 +81,8 @@
         "cc": 5,
         "ff": 4,
             "weapons": [
-              "Twin Autocannon"
+              "Twin Autocannon",
+              "Melta Gun"
             ]
           }
         ],
@@ -67,7 +97,7 @@
       },
       {
         "name": "Questoris Knight", 
-        "type": "LV",
+        "type": "WE",
         "variants": [
           {
             "name": "Paladin",
@@ -78,8 +108,8 @@
         "ff": 4,
             "weapons": [
              "Rapid Fire Battle Cannon",
-          "Reaper Chainsword",
-          "Heavy Stubber"
+          "Questoris Stubber|2",
+          "Reaper Chainsword"
             ]
           },
           {
@@ -90,22 +120,35 @@
         "cc": 3,
         "ff": 4,
             "weapons": [
-              "Thermal Cannon",
-          "Reaper Chainsword",
-          "Heavy Stubber"
+          "Thermal Cannon",
+          "Heavy Stubber",
+          "Reaper Chainsword"
             ]
           },
           {
-        "name": "Crusader",
+        "name": "Crusader (Battle Cannon)",
         "type": "WE",
         "speed": 20,
         "armour": 5,
         "cc": 5,
         "ff": 4,
             "weapons": [
-         "Thermal Cannon",
           "Avenger Gatling Cannon",
-          "Heavy Stubber"
+          "Questoris Stubber|2",
+          "Rapid Fire Battle Cannon"
+            ]
+          },
+          {
+        "name": "Crusader (Thermal Cannon)",
+        "type": "WE",
+        "speed": 20,
+        "armour": 5,
+        "cc": 5,
+        "ff": 4,
+         "weapons": [
+          "Avenger Gatling Cannon",
+          "Melta Gun",
+          "Thermal Cannon"
             ]
           },
           {
@@ -113,7 +156,7 @@
         "type": "WE",
         "speed": 25,
         "armour": 5,
-        "cc": 2,
+        "cc": 3,
         "ff": 6,
             "weapons": [
          "Thunderstrike Gauntlet",
@@ -130,38 +173,21 @@
         "ff": 4,
             "weapons": [
          "Avenger Gatling Cannon",
-          "Reaper Chainsword",
-          "Melta Gun"
+         "Melta Gun",
+          "Reaper Chainsword"
+          
             ]
           }
         ],
         "specialRules": [
         "Damage Capacity 2",
-          "Blitz",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
           "Ion Shield (4+)"
         ],
+        "notes": "Questoris Gallants, Paladins, Errants, and Wardens have the 'Blitz' special rule.",
         "crit": "The unit is destroyed."
-      },
-      {
-        "name": "Questoris Rocket Pod",
-        "type": "CH",
-        "weapons": [
-          "Questoris Rocket Pod"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Twin Icarus Autocannon",
-        "type": "CH",
-        "weapons": [
-          "Twin Icarus Autocannon"
-        ],
-        "specialRules": [
-        ]
       },
       {
         "name": "Cerastus Knight",

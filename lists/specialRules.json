@@ -15,7 +15,7 @@
      {
       "title": "Cybernetica Cortex",
       "description": [
-        "Unless within 30cm of an unbroken friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex' special rule may only perform the Hold, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 15cm of an enemy formation when rallying."
+        "Unless within 30cm of an unbroken friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex' special rule may only perform the Hold, Engage, Marshal, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 15cm of an enemy formation when rallying."
       ]
     },
     {
@@ -71,19 +71,17 @@
     {
       "title": "Void Shields",
       "description": [
-        "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by Void Shields, but allocate one Blast Marker for each that goes down. If the formation in broken, its Void Shields are considered to have the 'Expendable' special rule. Downed Void Shields does not count as kills during assaults (but will still cause BMs on the winning formation).",
+        "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by Void Shields, but allocate one Blast Marker for each that goes down. If the formation is broken, its Void Shields are considered to have the 'Expendable' special rule. Downed Void Shields does not count as kills during assaults (but will still cause BMs on the winning formation).",
         "Once all of the shields have been knocked down, the War Engine may be damaged normally and you may make saving throws against any hits that are scored. Hits from close combat ignore void shields but units using their firefight values must first knock down any shields before they can damage the Titan.",
         "Void shields that have been knocked down can be repaired. Each War Engine can repair one downed Void Shield in the End Phase of each turn.",
-        "In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it can use the dice roll both to repair Void Shields and remove Blast Markers. However, only half the points generated (fractions rounded up) may be spent on restoring Void Shields (e.g. if you rolled a 3 you could remove three Blast Markers, or repair two Void Shields and remove one Blast Marker)."
+        "In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it may use the dice roll both to repair Void Shields and remove Blast Markers."
       ]
     },
     {
       "title": "God Machine",
       "description": [
-        "War Engines with 8 or more DC are subject to the God Machine and Split Fire special rules.",
-        "The magnificence of these awe-inspiring constructs comes at a price, for if such an incarnation of power were to falter or be destroyed, the forces that are there to aid them would become greatly disturbed.",
-        "For this reason, whenever a unit with God Machine special rule is broken (including if it is already broken but loses an Engage), all friendly formations suffer one Blast Marker. Whenever a unit with God Machine special rule is destroyed, all friendly formations on the battlefield suffer D3 Blast Markers.",
-        "Units with the God Machine special rule are themselves immune to this effect."
+        "Whenever a unit with God Machine special rule is destroyed, all friendly formations on the battlefield suffer one Blast Marker (Units with the God Machine special rule are themselves immune to this effect).",
+        "In addition, if the God Machine unit was not the army BTS, the opponent scores one additional Victory Point."
       ]
     },
     {
@@ -191,7 +189,7 @@
     {
       "title": "Tide of Madness",
       "description": [
-        "All Ruinstorm formations receive a +1 modifier to their Action Test when carrying out an Engage action, and a +1 modifier to their Rally Tests as long as the formation contains a unit with the 'Daemonic' or 'Psyker - Anathemata' special rules."
+        "All Ruinstorm formations receive a +1 modifier to their Action Test when carrying out an Engage action, and a +1 modifier to their Rally Tests as long as the formation contains a unit with the 'Daemonic' or 'Psyker' special rules."
       ]
     },
     {
@@ -275,7 +273,7 @@
     {
       "title": "Towering",
       "description": [
-        "Units with the 'Towering' special rule counts as Support Craft for Line of Sight purposes, and do not benefit from cover when inside terrain."
+        "Units with the 'Towering' special rule counts as Support Craft for Line of Sight purposes."
       ]
     },
     {
@@ -302,7 +300,7 @@
     {
       "title": "Shield Piercer",
       "description": [
-        "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Save (but not Regeneration), Ion Shields, Dispersion Shields, Powerfields, Construct Shields and Void Shields."
+        "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Save, Ion Shields, Dispersion Fields, Powerfields, Construct Shields and Void Shields."
       ]
     },
     {
@@ -344,7 +342,7 @@
     {
       "title": "Shock Pulse",
       "description": [
-        "Formations that suffers at least one hit from a weapon with the 'Shock Pulse' special rule suffers D6 BMs for coming under fire, instead of just one."
+        "War Engines that suffers at least one hit from a weapon with the 'Shock Pulse' special rule suffers D6 BMs for coming under fire, instead of just one."
       ]
     },
 
@@ -357,7 +355,7 @@
              {
       "title": "Beam Projector",
       "description": [
-        "Weapons with the 'Beam Projector' special rule suffers an additional -1 to hit when shooting at a target that at least partially within half range of the weapon, or an additional -2 to hit within 15 cm."
+        "Weapons with the 'Beam Projector' special rule suffers an additional -1 to hit when shooting at a target that at least partially within half range, or an additional -2 to hit within 15 cm."
       ]
     },
              {
@@ -370,7 +368,7 @@
     {
       "title": "Devastating Charge",
       "description": [
-        "Weapon or Unit gains an additional +1 to hit with CC and FF attacks during the first round of any assaults initiated by the formation, but suffers a -1 penalty to hit with CC and FF during the first round of any assaults initiated by enemy formations."
+        "Weapon or Unit gains an additional +1 to hit with CC of FF attacks during the first round of any assaults initiated by the formation, but suffers a -1 penalty to hit with CC or FF attacks during the first round of any assaults initiated by enemy formations."
       ]
     },
     {
@@ -391,12 +389,7 @@
         "When rolling to hit with a Singularity weapon, any unmodified to hit roll of six (6) generates an additional attack die. Successive rolls of a natural six can generate additional dice."
       ]
     },
-    {
-      "title": "Prescience",
-      "description": [
-        "Formations that include a unit with the 'Prescience' special rule may ignore the -1 penalty to Action test rolls when attempting to retain the Initiative."
-      ]
-    },
+    
     {
       "title": "Psybolts",
       "description": [
@@ -404,18 +397,37 @@
       ]
     },
     {
+      "title": "Primarch",
+      "description": [
+        "Units with the 'Primarch' unit type have Damage Capacity like WE but act as INF in all other aspects. The Primarch also counts as being Supreme Commander, which means that the army may have two Supreme Commander re-rolls per turn. The Primarch unit counts as an additional BTS in the army, which means that this objective can be lost twice."
+      ]
+    },
+    {
       "title": "Force",
       "description": [
-        "A weapon with the 'Force' special rule counts as having the 'Sniper' special rule against units with the 'Daemonic' or 'Psyker' special rules. Weapons with 'Force' may only be used if the unit is unbroken."
+        "A weapon with the 'Force' special rule counts as having the 'Sniper' special rule against units with the 'Daemonic' or 'Psyker' special rules."
       ]
     },
     {
       "title": "Psyker",
       "description": [
-        "Roll two dice before shooting with any weapon the 'Psyker' character is equipped with (does not apply to 'Small Arms' or 'Assault Weapons'). On a roll of 5+, the weapon can be used as normal. On a roll of 3-4, the weapon cannot be used. On a roll of 2 or less, the unit takes one point of damage with no saves of any kind allowed. This roll suffers a -1 modifier if there are any enemy units with the 'Psyker' or 'Daemonic' special rules within 15cm."
+        "Teleporting units placed within 15 cm of any enemy units with the 'Psyker' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
       ]
     },
- 
+
+    {
+      "title": "Daemonic",
+      "description": [
+        "Units with the 'Daemonic' special rule counts as being twice as many (or having twice as many DC) for determining 'outnumber' during assault. Units with the 'Daemonic' special rule are automatically destroyed if it is part of a formation that loses an assault.",
+        "Enemy Teleporting units placed within 15 cm of any enemy units with the 'Daemonic' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
+      ]
+    },
+ {
+      "title": "Prescience",
+      "description": [
+        "Formations that include a unit with the 'Prescience' special rule may ignore the -1 penalty to Action test rolls when attempting to retain the Initiative."
+      ]
+    },
     {
       "title": "Fortified Positions",
       "description": [
@@ -669,12 +681,7 @@
         "<ul><li>Chaos Undivided: Formation ignores the -1 modifier for enemy formations within 30cm when rallying.</li><li>Khorne: Formation gains +1 to activate when attempting to Engage.</li><li>Nurgle: Formation gains +1 to activate when attempting to Marshal.</li><li>Slaanesh: Formation gains +1 to activate when attempting to Double.</li><li>Tzeentch: Formation gains +1 to activate when attempting to Advance.</li></ul>"
       ]
     },
-        {
-      "title": "Daemonic",
-      "description": [
-        "Units with the 'Daemonic' special rule counts as being twice as many (or having twice as many DC) for determining 'outnumber' during assault. Units with the 'Daemonic' special rule are automatically destroyed if it is part of a formation that loses an assault."
-      ]
-    },
+        
     {
       "title": "Reign of Chaos",
       "description": [
@@ -936,8 +943,7 @@
       "title": "Teleport",
       "description": [
         "A formation consisting completely of units with the 'Teleport' special rule must be placed in the reserves before deployment. They may only enter the battlefield through an Offboard Support action. Immediately place the formation with all units completely within 15 cm of the unit with the 'Vox-Caster' special rule, and roll a D6 for each, to test if any teleport mishaps occured. For each roll of 1, the teleporting formation suffers a BM.",
-        "Teleporting units placed within 15 cm of any enemy units with the 'Psyker', 'Daemonic' or 'Prescience' special rules suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1.",
-        "Unlike other Offboard Support actions, Teleporting grants immediately grants the controlling player the chance to retain the initiative twice, meaning that the formation that just arrived may attempt carry out an action."
+        "Unlike some other Offboard Support actions, Teleporting grants immediately grants the controlling player the chance to retain the initiative twice, meaning that the formation that just arrived may attempt carry out an action."
       ]
     },
     {

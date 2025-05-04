@@ -397,6 +397,17 @@
           "Heavy Flamer "
         ]
           },
+          {
+            "name": "Thunderer",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Demolisher Cannon"
+        ]
+          },
         {
         "name": "Incinerator",
         "type": "AV",

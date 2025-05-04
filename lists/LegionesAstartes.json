@@ -82,7 +82,7 @@
         "type": "CH",
         "weapons": [
           "Telepathic Terror",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Prescience",
@@ -98,7 +98,7 @@
         "type": "CH",
         "weapons": [
         "Aetheric Lightning",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Blitz",
@@ -113,7 +113,7 @@
         "type": "CH",
         "weapons": [
           "Psychic Blast",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Blitz",
@@ -129,7 +129,7 @@
         "type": "CH",
         "weapons": [
           "Firestorm",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Blitz",
@@ -144,7 +144,7 @@
         "type": "CH",
         "weapons": [
           "Psychic Dart",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Prescience",
@@ -159,7 +159,7 @@
         "type": "CH",
         "weapons": [
           "Biomantic Hammer",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Blitz",
@@ -186,7 +186,7 @@
         "type": "CH",
         "weapons": [
           "Breach the Veil",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Prescience",
@@ -201,7 +201,7 @@
         "type": "CH",
         "weapons": [
           "Piercing the Aether",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Prescience",
@@ -216,7 +216,7 @@
         "type": "CH",
         "weapons": [
           "Vortex of Chaos",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Blitz",
@@ -231,7 +231,7 @@
         "type": "CH",
         "weapons": [
           "Storm's Fury",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
           "Blitz",
@@ -247,7 +247,7 @@
         "type": "CH",
         "weapons": [
           "Winds of Fenris",
-          "Power Weapon"
+          "Force Weapon"
         ],
         "specialRules": [
         "Blitz",
@@ -270,6 +270,29 @@
           "Blitz"
         ]
       },
+      {
+        "name": "Roboute Guilliman, Primarch of the Ultramarines",
+        "type": "Primarch",
+        "speed": 15,
+        "armour": 3,
+        "cc": 2,
+        "ff": 3,
+        "weapons": [
+          "The Arbitrator",
+          "Hand of Dominion"
+        ],
+        "specialRules": [
+          "Damage Capacity (2)",
+          "Blitz",
+          "Vox-Caster",
+          "Inspiring",
+          "Fearless",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Invulnerable Save"
+        ]
+      },
+
       {
         "name": "Legion Tactical Squad",
         "type": "INF",
@@ -295,7 +318,20 @@
         ]
       },
       {
-        "name": "Legion Breacher Squad - Lascutter",
+        "name": "Invictarus Suzerain Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 3,
+        "cc": 2,
+        "weapons": [
+          "Power Swords"
+        ],
+        "specialRules": [
+          "Invulnerable Save"
+        ]
+      },
+      {
+        "name": "Legion Breacher Squad",
         "type": "INF",
         "speed": 15,
         "armour": 3,
@@ -304,6 +340,9 @@
         "weapons": [
           "Volkite Chargers",
           "Lascutter"
+        ],
+        "specialRules": [
+          "Invulnerable Save"
         ]
       },
       {
@@ -312,7 +351,7 @@
         "speed": 30,
         "armour": 4,
         "cc": 3,
-        "ff": 6,
+        "ff": 5,
         "weapons": [
           "Bolt Pistols",
           "Chainswords"
@@ -320,6 +359,22 @@
         "specialRules": [
           "Jump Packs",
           "Evasive",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Locutarus Storm Squad",
+        "type": "INF",
+        "speed": 30,
+        "armour": 4,
+        "cc": 3,
+        "ff": 4,
+        "weapons": [
+          "Plasma Pistols",
+          "Power Swords"
+        ],
+        "specialRules": [
+          "Jump Packs",
           "Vanguard"
         ]
       },
