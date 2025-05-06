@@ -6,25 +6,76 @@
     "unit": [
 
         {
-        "name": "Expeditionary Navigator - Loyalist",
+        "name": "Force Commander",
+        "type": "CH",
+        "weapons": [
+        "Power Weapon"
+        ],
+        "specialRules": [
+          "Supreme Commander",
+          "Blitz",
+          "Vox-Caster",
+          "Invulnerable Save",
+          "Inspiring"
+        ]
+      },
+      {
+        "name": "Militia Captain",
+        "type": "CH",
+        "weapons": [
+        "Power Weapon"
+        ],
+        "specialRules": [
+          "Commander",
+          "Leader",
+          "Blitz",
+          "Vox-Caster",
+          "Invulnerable Save"
+        ]
+      },
+      {
+        "name": "Expeditionary Navigator - Divination",
         "type": "CH",
         "weapons": [
         ],
         "specialRules": [
-          "Psyker"
+          "Prescience",
+          "Psyker",
+          "Invulnerable Save"
         ]
       },
-              {
-        "name": "Rouge Psyker - Traitor",
+      {
+        "name": "Rouge Psyker - Diabolism",
         "type": "CH",
         "weapons": [
+            "Aetheric Lightning",
+            "Vortex of Chaos"
         ],
         "specialRules": [
-          "Psyker"
+          "Psyker",
+          "Invulnerable Save"
         ]
       },
-                  {
+      {
         "name": "Force Commander Cadre - Legacy of the Great Crusade (Balanced, Loyalist allies only)",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
+        "ff": 5,
+        "weapons": [
+          "Plasma Guns",
+          "Power Weapon"
+        ],
+        "specialRules": [
+          "Supreme Commander",
+          "Vox-Caster",
+          "Invulnerable Save",
+          "Inspiring"
+        ]
+      },
+      {
+        "name": "Force Commander Cadre - Feral Warriors (Large CC formations)",
         "type": "INF",
         "speed": 15,
         "armour": 5,
@@ -96,10 +147,10 @@
         ]
       },
             {
-        "name": "Imperial Militia Command Cadre",
+        "name": "Militia Command Cadre",
         "type": "INF",
         "speed": 15,
-        "armour": 5,
+        "armour": 6,
         "cc": 4,
         "ff": 5,
         "weapons": [
@@ -107,18 +158,18 @@
           "Power Weapon"
         ],
         "specialRules": [
-          "Supreme Commander",
+          "Commander",
           "Vox-Caster",
-          "Invulnerable Save",
-          "Inspiring"
+          "Invulnerable Save"
         ]
       },
       {
         "name": "Militia Infantry Squad",
         "type": "INF",
         "speed": 15,
-        "cc": 6,
-        "ff": 5,
+        "armour": 6,
+        "cc": 5,
+        "ff": 6,
         "weapons": [
           "Autorifles"
         ],
@@ -129,31 +180,51 @@
         "name": "Militia Levy Squad",
         "type": "INF",
         "speed": 15,
-        "cc": 6,
-        "ff": 5,
+        "armour": 6,
+        "cc": 4,
+        "ff": 6,
         "weapons": [
-          "Stubcarbines"
+          "Stubcarbines",
+          "Combat Knives"
         ],
         "specialRules": [
         ]
       },
       {
-        "name": "Militia Mutant Squad",
+        "name": "Militia Feral Squad",
         "type": "INF",
-        "armour": 6,
         "speed": 15,
+        "armour": 6,
         "cc": 4,
         "weapons": [
-          "Claws"
+          "Chainaxes"
         ],
         "specialRules": [
+            "Blitz"
         ]
       },
+      {
+        "name": "Militia Beastmen Squad",
+        "type": "INF",
+        "armour": 5,
+        "speed": 15,
+        "cc": 3,
+        "ff": 6,
+        "weapons": [
+          "Autopistols",
+          "Combat Knives"
+        ],
+        "specialRules": [
+            "Blitz",
+            "Expendable"
+        ]
+      },
+      
       {
         "name": "Militia Grenadier Squad",
         "type": "INF",
         "speed": 15,
-        "armour": 6,
+        "armour": 5,
         "cc": 6,
         "ff": 5,
         "weapons": [
@@ -163,21 +234,24 @@
         ]
       },
       {
-        "name": "Fire Support Squad",
+        "name": "Militia Support Squad",
         "type": "INF",
         "speed": 15,
+        "armour": 6,
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Autocannon|2"
+          "Autorifles",
+          "Autocannon"
         ],
         "specialRules": [
         ]
       },
       {
-        "name": "Reconnaissance Squad",
+        "name": "Militia Sniper Squad",
         "type": "INF",
         "speed": 15,
+        "armour": 6,
         "cc": 6,
         "ff": 6,
         "weapons": [
@@ -188,23 +262,24 @@
         ]
       },
       {
-        "name": "Militia Cavalry",
+        "name": "Militia Cavalry Squadron",
         "type": "INF",
-        "speed": 20,
-        "armour": 6,
-        "cc": 4,
+        "speed": 15,
+        "armour": 5,
+        "cc": 3,
         "ff": 6,
         "weapons": [
           "Laspistols",
           "Hunting Lances"
         ],
         "specialRules": [
+        "Mounted",
         "Skirmishers",
         "Infiltrators"
         ]
       },
       {
-        "name": "Ogryn Brutes",
+        "name": "Militia Ogryn Brute Squad",
         "type": "INF",
         "speed": 15,
         "armour": 5,
@@ -382,6 +457,10 @@
       {
         "name": "Leman Russ",
         "type": "AV",
+        "variants": [
+          {
+            "name": "Battle Tank",
+        "type": "AV",
         "speed": 20,
         "armour": 4,
         "cc": 6,
@@ -389,13 +468,10 @@
         "weapons": [
           "Battle Cannon",
           "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
         ]
-      },
-      {
-        "name": "Leman Russ Annihilator",
+          },
+          {
+            "name": "Annihilator",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -404,13 +480,10 @@
         "weapons": [
           "Twin Lascannon",
           "Lascannon"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
         ]
-      },
-      {
-        "name": "Leman Russ Exterminator",
+          },
+          {
+            "name": "Exterminator",
         "type": "AV",
         "speed": 25,
         "armour": 4,
@@ -419,13 +492,10 @@
         "weapons": [
           "Twin Autocannon",
           "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
         ]
-      },
-      {
-        "name": "Leman Russ Executioner",
+          },
+          {
+            "name": "Executioner",
         "type": "AV",
         "speed": 20,
         "armour": 4,
@@ -434,13 +504,10 @@
         "weapons": [
           "Plasma Destroyer",
           "Lascannon"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
         ]
-      },
-      {
-        "name": "Leman Russ Demolisher",
+          },
+          {
+            "name": "Demolisher",
         "type": "AV",
         "speed": 20,
         "armour": 4,
@@ -448,29 +515,34 @@
         "ff": 4,
         "weapons": [
           "Demolisher Cannon",
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-          "Reinforced Armour"
+          "Heavy Flamer "
         ]
-      },
-      {
-        "name": "Leman Russ Volkite",
+          },
+          {
+            "name": "Thunderer",
         "type": "AV",
-        "speed": 15,
+        "speed": 25,
         "armour": 4,
         "cc": 6,
-        "ff": 6,
+        "ff": 5,
         "weapons": [
-          "Laser Destroyer"
-        ],
-        "specialRules": [
-          "Reinforced Armour",
-          "Walker"
+          "Demolisher Cannon"
+        ]
+          },
+        {
+        "name": "Incinerator",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Volkite Demi-Culverin",
+          "Heavy Bolter"
         ]
       },
-      {
-        "name": "Leman Russ Vanquisher",
+       {
+       "name": "Vanquisher",
         "type": "AV",
         "speed": 20,
         "armour": 4,
@@ -479,13 +551,19 @@
         "weapons": [
           "Vanquisher Cannon",
           "Lascannon"
+            ]
+          }
         ],
         "specialRules": [
           "Reinforced Armour"
         ]
       },
-       {
-        "name": "Malcador - Battle Cannon",
+      {
+        "name": "Malcador",
+        "type": "WE",
+        "variants": [
+          {
+        "name": "Assault Tank",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -495,15 +573,10 @@
           "Battle Cannon||FwA",
           "Demolisher Cannon||FwA",
           "Heavy Bolter|2|FwA"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour",
-          "Thick Rear Armour"
         ]
-      },
-      {
-        "name": "Malcador - Vanquisher",
+          },
+          {
+        "name": "Vanquisher",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -512,31 +585,28 @@
         "weapons": [
           "Vanquisher Cannon||FwA",
           "Autocannon|3|FwA"
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Walker"
         ]
-      },
-      {
-        "name": "Malcador - Lascannon",
+          },
+          {
+        "name": "Annihilator",
         "type": "WE",
-        "speed": 20,
+        "speed": 15,
         "armour": 4,
         "cc": 6,
         "ff": 4,
         "weapons": [
           "Twin Lascannon",
           "Lascannon|3|FwA"
+        ]
+          }
         ],
         "specialRules": [
           "Damage Capacity 2",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker"
-        ]
+        ],
+        "crit": "The Malcador is destroyed."
       },
        {
         "name": "Gorgon Heavy Transporter",

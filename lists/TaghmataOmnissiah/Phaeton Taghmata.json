@@ -46,10 +46,10 @@
       "units": [
         "Paragon of Metal",
         "Adsecularis Tech-Thrall Cohort",
-        "Vorax Battle-Automata",
+        "Vorax Battle-Automata Cohort",
         "Arlatax Battle-Automata",
-        "Domitar Battle-Automata",
-        "Castellax Battle-Automata Maniple",
+        "Domitar Battle-Automata Cohort",
+        "Castellax Battle-Automata Cohort",
         "Vultarax Stratos-Automata",
         "Thanatar Siege-Automata|Cavas|Calix"
       ],
@@ -145,7 +145,7 @@
             "Add two Castellax Battle-Automata Cohorts: 2 U/p",
             "Add two Myrmidon Secutor Hosts: 2 U/p"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, -1 U/p"
         },
                {
           "name": "Mechanized Adsecularis Maniple",
@@ -163,13 +163,12 @@
           "units": "Four Thallax Cohorts",
           "extraUnits": [
            "Add up to two Ursarax Cohorts: 1 U/p each",
-            "Add up to two Vorax Battle-Automata: 1 U/p each",
-            "Add up to two Ursarax Cohorts: 1 U/p each"
+            "Add up to two Vorax Battle-Automata: 1 U/p each"
           ],
           "points": "1 F/p"
         },
         {
-          "name": "Castellax Sentry Maniple",
+          "name": "Castellax Maniple",
           "units": "Four Castellax Battle-Automata Cohorts",
           "extraUnits": [
           ],

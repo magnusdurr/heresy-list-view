@@ -81,6 +81,21 @@
         ]
       },
       {
+        "name": "Auxilia Feral Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
+        "ff": 6,
+        "weapons": [
+          "Laspistols",
+          "Chainswords"
+        ],
+        "specialRules": [
+            "Blitz"
+        ]
+      },
+      {
         "name": "Auxilia Flamer Squad",
         "type": "INF",
         "speed": 15,
@@ -552,11 +567,11 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 2",
+          "Damage Capacity (2)",
           "Reinforced Armour",
           "Walker"
         ],
-        "notes":  "Lascannon Variant: Heavy Transport 4 - Demolisher Variant: Heavy Transport 2",
+        "notes":  "Lascannon Variant: Heavy Transport (4) - Demolisher Variant: Heavy Transport (2)",
         "crit": "The Dracosan is destroyed."
       },
 

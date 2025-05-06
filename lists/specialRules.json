@@ -78,10 +78,9 @@
       ]
     },
     {
-      "title": "God Machine",
+      "title": "God Machine (x)",
       "description": [
-        "Whenever a unit with God Machine special rule is destroyed, all friendly formations on the battlefield suffer one Blast Marker (Units with the God Machine special rule are themselves immune to this effect).",
-        "In addition, if the God Machine unit was not the army BTS, the opponent scores one additional Victory Point."
+        "Whenever a unit with the 'God Machine' special rule is destroyed that isn't an army BTS, the opponent scores x additional Victory Points."
       ]
     },
     {
@@ -162,10 +161,40 @@
         "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Engage or Double action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
+    {
+      "title": "A Lean Race of Killers",
+      "description": [
+        "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Engage or Sustain Fire action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+      ]
+    },
         {
       "title": "The Muster of Worlds",
       "description": [
         "All Imperialis Militia formations receive a +1 modifier to their Action Test when carrying out an Overwatch action, does not suffer a BM when forced to take a 'Hold' action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+      ]
+    },
+    {
+      "title": "Feral Warriors",
+      "description": [
+        "All Imperialis Militia formations receive a +1 modifier to their Action Test when carrying out an Engage action, does not suffer a BM when forced to take a 'Hold' action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+      ]
+    },
+    {
+      "title": "Abhuman Muster",
+      "description": [
+        "All Imperialis Militia formations receive a +1 modifier to their Action Test when carrying out an Double action, does not suffer a BM when forced to take a 'Hold' action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+      ]
+    },
+    {
+      "title": "Armoury of Old Night",
+      "description": [
+        "All Imperialis Militia formations receive a +1 modifier to their Action Test when carrying out an Sustain Fire action, does not suffer a BM when forced to take a 'Hold' action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
+      ]
+    },
+    {
+      "title": "Tainted Flesh",
+      "description": [
+        "All Imperialis Militia formations receive a +1 modifier to their Action Test when carrying out an Marshal action, does not suffer a BM when forced to take a 'Hold' action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
          {
@@ -414,12 +443,17 @@
         "Teleporting units placed within 15 cm of any enemy units with the 'Psyker' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
       ]
     },
-
+    {
+      "title": "Perils of the Warp",
+      "description": [
+        "Roll two dice whenever attempting to use a weapon with this special rule. On a roll of a 3-5, it cannot be used this turn. On a roll of 2, the unit wielding the weapon suffers a hit, and its formation suffers a BM for having come under fire."
+      ]
+    },
     {
       "title": "Daemonic",
       "description": [
-        "Units with the 'Daemonic' special rule counts as being twice as many (or having twice as many DC) for determining 'outnumber' during assault. Units with the 'Daemonic' special rule are automatically destroyed if it is part of a formation that loses an assault.",
-        "Enemy Teleporting units placed within 15 cm of any enemy units with the 'Daemonic' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
+        "Units with the 'Daemonic' special rule counts as being twice as many (or having twice as many DC) for determining 'outnumber' during assault. Units with the 'Daemonic' special rule are automatically destroyed if it is part of a formation that loses an assault, unless they also have the 'Fearless' special rule.",
+        "Enemy Teleporting units placed within 30 cm of any enemy units with the 'Daemonic' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
       ]
     },
  {
@@ -563,7 +597,7 @@
     {
       "title": "Honour Guard",
       "description": [
-        "Units with the Honour Guard special rule are Fearless as long as their formation contains a character with the Supreme Commander special rule. If they are in the same formation, the Supreme Commander may be added to a unit with this special rule."
+        "Units with the Honour Guard special rule gain the 'Fearless' and 'Blitz' special rules as long as their formation contains a character with the 'Primarch' unit type."
       ]
     },
     {
@@ -954,7 +988,7 @@
       ]
     },
     {
-      "title": "Dreadclaw",
+      "title": "Dreadclaws",
       "description": [
         "A formation consisting completely of units of INF (without the 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Walker' special rules may be placed in Dreadclaws. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action. Place the Dreadclaw with its center within 15 cm of the unit with the 'Vox-Caster' special rule. Calling down a Dreadclaw counts as an additional action, so the player using it may not retain the initiative afterwards.",
         "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 15 cm in any direction that does not place it in an enemy zone of control. Then place the Dreadclaw contents fully within 10 cm of the centre of the Dreadclaw."
@@ -1003,7 +1037,7 @@
       ]
     },
     {
-      "title": "Orbital Phospex Strike",
+      "title": "Orbital Phospex Barrage",
       "description": [
         "A Phospex Strike has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT6+ (Disrupt, Ignore Cover) attack."
       ]
@@ -1021,19 +1055,19 @@
       ]
     },
      {
-      "title": "Artillery Barrage Strike",
+      "title": "Artillery Barrage",
       "description": [
         "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (Disrupt, Siege) attack."
       ]
     },
     {
-      "title": "Artillery Minefield Strike",
+      "title": "2x Artillery Minefield Strike",
       "description": [
         "A Minefield Submunitions attack has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place two Minefield templates (same size as a small barrage template) with its centre over the marker. No part of the template may be placed over any terrain or model. For the rest of the battle, this area is now considered to be dangerous terrain."
       ]
     },
     {
-      "title": "Artillery Blind Strike",
+      "title": "2x Artillery Blind Strike",
       "description": [
         "A Blind Burst has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place two Blind templates (same size as a small barrage template) with its centre over the marker. No part of the template may be placed over any terrain (other than roads, water, or open ground) or on top of any model. For the rest of the battle, this area blocks line of sight and gives Cover just like terrain (it is in all other ways considered to be open ground, and does not give a cover save)."
       ]

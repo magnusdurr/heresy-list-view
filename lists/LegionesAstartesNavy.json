@@ -46,7 +46,7 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 2",
+          "Damage Capacity (2)",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -64,7 +64,7 @@
           "Vengeance Launcher||"
         ],
         "specialRules": [
-          "Damage Capacity 2",
+          "Damage Capacity (2)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Heavy Transport (4)"
@@ -101,7 +101,7 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 3",
+          "Damage Capacity (3)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Assault Transport (8)",
@@ -114,44 +114,60 @@
         "type": "AC/WE",
          "speed": "30cm/Hover",
         "armour": 4,
-        "cc": 6,
         "ff": 5,
         "weapons": [
           "AC Quad Heavy Bolter||Left",
           "AC Quad Heavy Bolter||Right"
         ],
         "specialRules": [
-          "Damage Capacity 3",
+          "Damage Capacity (3)",
           "Planetfall",
           "Reinforced Armour",
           "Transport",
-          "Ion Shield (5+)"
+          "Ion Shield (4+)"
         ],
         "notes": "May carry up to two of the following units: Stalkers, Hunters, Predators, Razorbacks, Rhinos and Vindicators. Land Raiders counts as two units each. In addition it may also carry any infantry transported in these vehicles, which counts as being located in the vehicles when disembarking.",
         "crit": "The Thunderhawk Transporter and all units being carried are destroyed."
       },
-            {
+      {
         "name": "Sokar Stormbird",
         "type": "AC/WE",
-         "speed": "20cm/Hover",
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-        "Twin Lascannon|2|Left",
-        "Twin Lascannon|2|Right",
+        "variants": [
+          {
+            "name": "Hellstrike",
+            "type": "AC/WE",
+            "speed": "20cm/Hover",
+            "armour": 5,
+            "ff": 5,
+            "weapons": [
+              "Twin Lascannon|4|FxF",
           "AC Twin Heavy Bolter|3|",
-          "AC Hellstrike Missiles|2|FwA"
+          "AC Hellstrike Missiles||FxF"
+            ]
+          },
+          {
+            "name": "Macro-Bomb",
+            "type": "AC/WE",
+            "speed": "20cm/Hover",
+            "armour": 5,
+            "ff": 3,
+            "weapons": [
+             "Twin Heavy Bolter|4|FxF",
+          "AC Twin Heavy Bolter|3|",
+          "AC Macro-Bomb Cluster||FxF"
+            ]
+          }
         ],
         "specialRules": [
-          "Damage Capacity 6",
+          "Damage Capacity (6)",
+          "Void Shields (2)",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Assault Transport (16)",
-          "Ion Shield (5+)"
+          "Assault Transport (16)"
         ],
         "crit": "The Sokar Stormbird and all units being carried are destroyed."
       },
+
             {
         "name": "Xiphon Interceptor",
         "type": "AC",

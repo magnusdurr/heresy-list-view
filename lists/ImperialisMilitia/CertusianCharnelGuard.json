@@ -151,67 +151,47 @@
       ]
     },
     {
-      "name": "Calth High Guard Special Sections",
-      "description": "May only have one Special Section for each Core Section",
+      "name": "Imperial Militia Allied Platoons",
+      "description": "The first formation selected must be an Militia Infantry Platoon",
       "formations": [
         {
-          "name": "Auxilia Heavy Sentinel Patrol",
-          "units": "Four Aethon Heavy Sentinels",
+          "name": "Militia Infantry Platoon",
+          "units": "One Imperial Militia Command Cadre, seven Militia Infantry Squads",
           "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+            "Add one Rouge Psyker to the Imperial Milita Command Cadre unit: 1 U/p",
+            "Replace up to seven Militia Infantry Squads with Militia Levy Squads: Free",
+            "Add two Cargo-8 Haulers: Free",
+            "Replace up to two Militia Infantry Squads with Fire Support Squads: 1 U/p each",
+            "Add two Militia Beastmen Squads: 1 U/p"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, 1 A/p"
         },
         {
-          "name": "Veletaris Storm Section",
-          "units": "Four Veletarii",
+          "name": "Militia Ogryn Platoon",
+          "units": "Four Ogryn Brute Squads",
           "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
+            "Add two Militia Beastmen Squads: 1 U/p"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p, -1 U/p, 1 A/p"
         },
         {
-          "name": "Ogryn Charonite Section",
-          "units": "Three Charonite Ogryns",
+          "name": "Militia Cavalry Platoon",
+          "units": "Six Militia Cavalry Squadrons",
           "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
+              "Add two Militia Beastmen Squads: 1 U/p"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p, -1 U/p, 1 A/p"
         },
         {
-          "name": "Auxilia Rapier Battery",
-          "units": "Four Auxilia Rapier Laser Destroyers",
-          "extraUnits": [
-          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers or four Rapier Mole Mortars: 1 U/p",
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
-          ],
-          "points": "1 F/p, -2 U/p"
-        },
-        {
-          "name": "Tarantula Maniple",
-          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
-          "extraUnits": [
-             ],
-          "points": "1 F/p, -3 U/p"
-        },
-        {
-          "name": "Auxilia Leman Russ Squadron",
+          "name": "Militia Leman Russ Squadron",
           "units": "Three Leman Russ of any configuration",
           "extraUnits": [
-          "Add one Leman Russ of any configuration: 1 U/p"
+            "Add one Leman Russ of any configuration: 1 U/p",
+            "Add two Militia Beastmen Squads: 1 U/p"
           ],
-          "points": "1 F/p"
-        },
-        {
-          "name": "Auxilia Artillery Battery",
-          "units": "Three Basilisk and/or Medusa",
-          "extraUnits": [
-          "Add one Basilisk and/or Medusa: 1 U/p"
-          ],
-          "points": "1 F/p"
+          "points": "1 F/p, 1 A/p"
         }
-
-       ]
+      ]
     },
     {
       "name": "Calth High Guard Elite Sections",
@@ -303,7 +283,7 @@
       ]
     },
       {
-      "name": "Allies: Collegia Titanica Banners",
+      "name": "Collegia Titanica Allied Banners",
       "description": "",
       "formations": [
         {
@@ -349,7 +329,7 @@
       ]
     },
     {
-      "name": "Allies: Legiones Astartes Detachments",
+      "name": "Legiones Astartes Allied Detachments",
       "description": "The first formation selected must be a Tactical Detachment",
       "formations": [
         {
@@ -385,7 +365,7 @@
       ]
     },
     {
-      "name": "Allies: Questoris Familia Lances",
+      "name": "Questoris Familia Allied Lances",
       "description": "",
       "formations": [
          {

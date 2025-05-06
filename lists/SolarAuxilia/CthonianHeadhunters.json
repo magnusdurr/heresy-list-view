@@ -1,14 +1,14 @@
 {
   "fraction": "Solar Auxilia",
-  "army": "Calth High Guard (CCLVth Cohort)",
+  "army": "Cthonian Headhunters (CXLII Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-    "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
-  "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
+    "intro": "The Cthonian Headhunters (CXLII CoH) follow the Feral Doctrine, with an emphasis on large close combat formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "armyforge": "EAH_SolarAuxilia_CthonianHeadhunters",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
-  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
+  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Cthonian Headhunter Sections have an Initiative Rating of 2+, and are subject to the 'A Lean Race of Killers' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Imperial Militia Platoons have an initiative of 2+ and are subject to the 'Feral Warriors' special rule.",
   "specialRules": [
-  "Army of Mankind",
+  "A Lean Race of Killers",
   "Tunnelers"
   ],
   "units": [
@@ -110,17 +110,21 @@
       ]
     },
     {
-      "from": "QuestorisFamilia.json",
+      "from": "ImperialisMilitia.json",
       "units": [
-        "Armiger Knight|Warglaive|Helverin",
-        "Questoris Knight|Paladin|Errant|Crusader (Battle Cannon)|Crusader (Thermal Cannon)|Gallant|Warden",
-        "Questoris Stormspear Pod",
-        "Questoris Ironstorm Pod",
-        "Questoris Icarus Autocannon"
+        "Rouge Psyker - Diabolism",
+        "Militia Captain",
+        "Militia Command Cadre",
+        "Militia Infantry Squad",
+        "Militia Feral Squad",
+        "Militia Support Squad",
+        "Militia Cavalry Squadron",
+        "Militia Ogryn Brute Squad",
+        "Cargo-8 Hauler"
       ],
       "unitRules": [
-      "Chivalry",
-       "Ion Shield (x)"
+        "Feral Warriors",
+        "Perils of the Warp"
       ]
     }
   ],
@@ -147,6 +151,15 @@
             "Add one Malcador of any configuration: 2 U/p"
           ],
           "points": "1 F/p"
+        },
+        {
+          "name": "Auxilia Dracosan Tercio",
+          "units": "One Auxilia Command Squad with an Auxilia Captain, five Auxilia Lasrifle Squads, two Auxilia Flamer Squads, two Dracosan - Lascannon",
+          "extraUnits": [
+            "Replace five Auxilia Lasrifle Squads with five Auxilia Feral Squads (Free)",
+            "Replace one Dracosan Lascannon with two Dracosan - Demolisher (3 U/p)"
+          ],
+          "points": "1 F/p, 2 U/p, 1 A/p"
         }
       ]
     },
@@ -385,7 +398,7 @@
       ]
     },
     {
-      "name": "Allies: Questoris Familia Lances",
+      "name": "Questoris Familia Allied Lances",
       "description": "",
       "formations": [
          {

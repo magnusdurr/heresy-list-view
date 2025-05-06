@@ -1,12 +1,12 @@
 {
-  "fraction": "Loyalist Legiones Astartes",
-  "army": "Ultramarines (XIII) Legion",
+  "fraction": "Traitor Legiones Astartes",
+  "army": "Sons of Horus (XVI) Legion",
   "version": "1.0.Alpha",
   "release": "2025-00-00",
-  "intro": "Ultramarines Legion armies gain 12 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
-  "armyforge": "EAH_LegionesAstartes_Ultramarines",
+  "intro": "Sons of Horus Legion armies gain 12 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "armyforge": "EAH_LegionesAstartes_SonsofHorus",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
-  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
+  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Cthonian Headhunter Sections have an Initiative Rating of 2+, and are subject to the 'A Lean Race of Killers' special rule. Taghmata Omnissah Allied Maniples have an initiative of 2+ and are subject to the 'Malefica Mechanica' special rule.",
   "armyRules": "The <i>Dauntless</i> special rule applies to all Ultramarines Legion Detachments and Collegia Titanica Banners.",
   "specialRules": [
     "Dauntless"
@@ -15,45 +15,46 @@
     {
       "from": "LegionesAstartes.json",
       "units": [
-        "Roboute Guilliman, Master of Ultramar",
+        "Horus Lupercal, Breaker of Tyrants",
         "Lieutenant",
         "Chaplain",
         "Captain",
-        "Librarian - Thaumaturgy",
+        "Librarian - Anathemata",
         "Praetor",
         "Legion Assault Squad",
-        "Legion Support Squad|Plasma",
+        "Legion Support Squad|Rotor",
         "Legion Tactical Squad",
-        "Legion Heavy Support Squad|Missile Launcher",
-        "Invictarus Suzerain Squad",
-        "Locutarus Storm Squad",
-        "Nemesis Destroyer Squad",
+        "Legion Heavy Support Squad|Heavy Bolter",
+        "Legion Despoiler Squad",
+        "Catulan Reaver Squad",
+        "Legion Destroyer Squad",
         "Cataphractii Terminator Squad",
-        "Fulmentarus Terminator Squad",
-        "Legion Outriders|Plasma",
+        "Justaerin Terminator Squad",
+        "Legion Outriders|Bolter",
         "Legion Rapier|Laser Destroyer|Quad Launcher",
         "Proteus Land Speeder|Melta|Plasma",
         "Javelin Attack Speeder|Cyclone|Lascannon",
         "Sky-Hunter Squadron|Bolter",
-        "Contemptor Dreadnought|Assault|Lascannon|Autocannon",
+        "Contemptor Dreadnought|Assault|Lascannon|Volkite",
         "Leviathan Dreadnought|Storm|Melta",
         "Deredeo Dreadnought|Hellfire|Anvilus",
-        "Predator|Annihilator|Destructor|Gravitor",
+        "Predator|Annihilator|Destructor|Projector",
         "Rhino",
-        "Support Rhino|Havoc|Melta",
-        "Sicarian|Accelerator|Omega|Punisher|Arcus",
+        "Support Rhino|Bolter|Melta",
+        "Vindicator Demolisher",
+        "Vindicator Destroyer",
         "Land Raider",
         "Sabre Strike Tank|Anvilus|Neutron",
         "Spartan|Lascannon|Destroyer",
         "Kratos|Battle Tank|Melta",
-        "Fellblade Super-Heavy Tank"
+        "Falchion Super-Heavy Tank|Vulcano Cannon|Neutron-Wave"
       ],
       "unitRules": [
         "Energetic",
         "Crippling",
         "Psyker",
+        "Prescience",
         "Force",
-        "Psychic Succour",
         "Skirmisher",
         "Siege",
         "Vox-Caster",
@@ -68,18 +69,9 @@
       ]
     },
     {
-      "from": "LegioCybernetica.json",
-      "units": [
-        "Tarantula|Lascannon|Bolter|Hyperios"
-      ],
-      "unitRules": [
-        "Cybernetica Cortex"
-      ]
-    },
-    {
       "from": "LegionesAstartesNavy.json",
       "units": [
-        "Thunderhawk Gunship|Battle Cannon|Turbo-Laser",
+        "Sokar Stormbird|Hellstrike|Macro-Bomb",
         "Xiphon Interceptor",
         "Fire Raptor|Heavy Bolter|Autocannon|Lascannon",
         "Storm Eagle"
@@ -110,7 +102,6 @@
         "Titan Hunter",
         "Shield Piercer",
         "Shield Disruptor",
-        "God Machine",
         "Ponderous",
         "Steadfast"
       ]
@@ -124,31 +115,57 @@
         "Auxilia Flamer Squad",
         "Veletarii",
         "Charonite Ogryns",
-        "Aethon Heavy Sentinel",
-        "Leman Russ|Battle Tank|Vanquisher|Annihilator|Exterminator"
+        "Basilisk",
+        "Medusa"
       ],
       "unitRules": [
-        "Army of Mankind"
+        "A Lean Race of Killers"
       ]
     },
     {
-      "from": "QuestorisFamilia.json",
+      "from": "ImperialisMilitia.json",
       "units": [
-        "Armiger Knight|Warglaive|Helverin",
-        "Questoris Knight|Paladin|Errant|Crusader (Battle Cannon)|Crusader (Thermal Cannon)|Gallant|Warden",
-        "Questoris Stormspear Pod",
-        "Questoris Ironstorm Pod",
-        "Questoris Icarus Autocannon"
+        "Rouge Psyker - Diabolism",
+        "Militia Captain",
+        "Militia Command Cadre",
+        "Militia Feral Squad",
+        "Cargo-8 Hauler"
       ],
       "unitRules": [
-        "Chivalry",
-        "Ion Shield (x)"
+        "Feral Warriors",
+        "Perils of the Warp"
+      ]
+    },
+    {
+      "from": "TaghmataOmnissah.json",
+      "units": [
+        "Tech-Priest Auxilia",
+        "Thallax Cohort|Multi-Laser",
+        "Ursarax Cohort",
+        "Myridon Secutor Host|Plasma-Fusil",
+        "Myridon Destructor Host|Beamer"
+      ],
+      "unitRules": [
+        "Malefica Mechanica"
+      ]
+    },
+    {
+      "from": "LegioCybernetica.json",
+      "units": [
+        "Tarantula|Lascannon|Bolter|Hyperios",
+        "Adsecularis Tech-Thrall Cohort",
+        "Vorax Battle-Automata Cohort",
+        "Arlatax Battle-Automata",
+        "Castellax Battle-Automata Cohort"
+      ],
+      "unitRules": [
+        "Cybernetica Cortex"
       ]
     }
   ],
   "sections": [
     {
-      "name": "Ultramarines Core Detachments",
+      "name": "Sons of Horus Core Detachments",
       "description": "",
       "formations": [
         {
@@ -156,7 +173,16 @@
           "units": "One Lieutenant character, four Legion Tactical Squads",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
-            "Replace two Legion Tactical Squads with two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
+            "Replace two Legion Tactical Squads with two Legion Despoiler Squads (Free), two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
+            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminator Squads (3 U/p)"
+          ],
+          "points": "1 F/p"
+        },
+        {
+          "name": "Despoiler Detachment",
+          "units": "One Lieutenant character, four Legion Despoiler Squads",
+          "extraUnits": [
+            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminator Squads (3 U/p)"
           ],
           "points": "1 F/p"
@@ -175,7 +201,7 @@
       ]
     },
     {
-      "name": "Ultramarines Special Detachments",
+      "name": "Sons of Horus Special Detachments",
       "description": "May have one Special Detachment for each Core Detachment",
       "formations": [
         {
@@ -183,16 +209,9 @@
           "units": "Four Legion Rapier Laser Destroyer",
           "extraUnits": [
           "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers: 1 U/p",
-          "Add up to two Contemptor Dreadnoughts of any configurations: 1 U/p each"
+          "Add up to two Tarantulas of any configurations: 1 U/p each"
           ],
           "points": "1 F/p, -1 U/p"
-        },
-        {
-          "name": "Tarantula Maniple",
-          "units": "Four Tarantulas of any configuration",
-          "extraUnits": [
-          ],
-          "points": "1 F/p, -3 U/p"
         },
         {
           "name": "Mechanized Support Detachment",
@@ -223,12 +242,12 @@
           "points": "1 F/p"
         },
         {
-          "name": "Sicarian Detachment",
-          "units": "Two Sicarians of any configurations",
+          "name": "Vindicator Detachment",
+          "units": "Three Vindicators of any configuration",
           "extraUnits": [
-            "Add up to one Sicarian of any configuration: 1 U/p"
+            "Add up to one Vindicator of any configuration: 1 U/p"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p"
         },
         {
           "name": "Assault Detachment",
@@ -263,7 +282,7 @@
       ]
     },
     {
-      "name": "Ultramarines Elite Detachments",
+      "name": "Sons of Horus Elite Detachments",
       "description": "May only have one Elite Detachment for each two Core or Special Detachments",
       "formations": [
         {
@@ -271,24 +290,20 @@
           "units": "One Lieutenant character, three Cataphractii Terminator Squads",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
-            "Add one Cataphractii Terminator Squad, or replace three Cataphractii Terminator Squads with a Fulmentarus Terminator Squad: 2 U/p"
+            "Add one Cataphractii Terminator Squad: 2 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "0-1 Nemesis Destroyer Detachment",
-          "units": "One Lieutenant character, four Nemesis Destroyer Squads",
+          "name": "Destroyer Detachment",
+          "units": "One Lieutenant character, four Legion Destroyer Squads",
           "extraUnits": [
-            "Add two Rhinos (Free), or two Contemptor Dreadnoughts of any single configurations (2 U/p)",
-            "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
-            "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
-            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "0-1 Locutarus Storm Detachment",
-          "units": "One Lieutenant character, four Locutarus Storm Squads",
+          "name": "0-1 Catulan Reaver Detachment",
+          "units": "One Lieutenant character, four Catulan Reaver Squads",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p"
           ],
@@ -296,11 +311,10 @@
         },
         {
           "name": "0-1 Primarch Detachment",
-          "units": "Roboute Guilliman, Master of Ultramar, three Invictarus Suzerain Squads",
+          "units": "Horus Lupercal, Breaker of Tyrants, three Justaerin Terminator Squads",
           "extraUnits": [
-            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p), two Cataphractii Terminator Squads (3 U/p), two Land Raiders (3 U/p), or one Spartan of any configuration (3 U/p)"
           ],
-          "points": "1 F/p, 4 U/p"
+          "points": "1 F/p, 6 U/p"
         },
         {
           "name": "Leviathan Detachment",
@@ -334,16 +348,16 @@
           "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "Fellblade Detachment",
-          "units": "One Fellblade Super-Heavy Tank",
+          "name": "Falchion Detachment",
+          "units": "One Falchion Super-Heavy Tank of any configuration",
           "extraUnits": [
           ],
-          "points": "1 F/p, 1 T/p"
+          "points": "1 F/p, 1 U/p, 1 T/p"
         }
       ]
     },
     {
-      "name": "Ultramarines Navy Detachments",
+      "name": "Sons of Horus Navy Detachments",
       "description": "May only have one Navy Detachment for each two Core or Special Detachments",
       "formations": [
         {
@@ -352,9 +366,9 @@
           "points": "1 F/p"
         },
         {
-          "name": "Thunderhawk Gunship",
-          "units": "One Thunderhawk of any configuration",
-          "points": "1 F/p, 2 U/p"
+          "name": "Sokar Stormbird",
+          "units": "One Sokar Stormbird of any configuration",
+          "points": "1 F/p, 2 U/p, 1 T/p"
         },
         {
           "name": "Fire Raptor",
@@ -372,11 +386,11 @@
       ]
     },
     {
-      "name": "Ultramarines Offboard Support Assets",
+      "name": "Sons of Horus Offboard Support Assets",
       "description": "",
       "formations": [
         {
-          "name": "Drop Pods",
+          "name": "Dreadclaws",
           "points": "2 U/p"
         },
         {
@@ -384,7 +398,7 @@
           "points": "1 U/p"
         },
         {
-          "name": "Orbital Barrage",
+          "name": "Orbital Phospex Barrage",
           "points": "1 U/p"
         },
         {
@@ -447,21 +461,22 @@
     },
     {
       "name": "Allies: Solar Auxilia Sections",
-      "description": "The first formation selected must be an Auxilia Lasrifle Tercio",
+      "description":  "",
       "formations": [
-        {
+          {
           "name": "Auxilia Lasrifle Tercio",
-          "units": "One Auxilia Command Squad with an Auxilia Captain, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
+          "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii, or one Charonite Ogryns: 1 U/p"
+           "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads: Free",
+            "Add two Cyclops of any single configuration: 1 U/p"
           ],
-          "points": "1 F/p, 1 A/p"
+          "points": "1 F/p"
         },
         {
           "name": "Ogryn Charonite Section",
           "units": "Three Charonite Ogryns",
           "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, or two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
+            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Auxilia Feral Squads: 1 U/p"
           ],
           "points": "1 F/p, -2 U/p, 1 A/p"
         },
@@ -469,46 +484,63 @@
           "name": "Veletaris Storm Section",
           "units": "Four Veletarii",
           "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
+            "Add two Veletarii: 2 U/p"
           ],
           "points": "1 F/p, -2 U/p, 1 A/p"
         },
         {
-          "name": "Auxilia Heavy Sentinel Patrol",
-          "units": "Four Aethon Heavy Sentinels",
+          "name": "Auxilia Artillery Battery",
+          "units": "Three Basilisk and/or Medusa",
           "extraUnits": [
+          "Add one Basilisk and/or Medusa: 1 U/p"
           ],
-          "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Auxilia Leman Russ Squadron",
-          "units": "Three Leman Russ of any configuration",
-          "extraUnits": [
-            "Add one Leman Russ of any configuration: 1 U/p"
-          ],
-          "points": "1 F/p, 1 A/p"
+          "points": "1 F/p"
         }
       ]
     },
     {
-      "name": "Allies: Questoris Familia Lances",
-      "description": "",
+      "name": "Allies: Taghmata Omnissah Maniples",
+      "description": "The first formation selected must be an Adsecularis Maniple",
       "formations": [
         {
-          "name": "Armiger Lance",
-          "units": "Three Armiger Knight Warglaives and/or Helverins",
+          "name": "Adsecularis Maniple",
+          "units": "One Tech-Priest Auxilia, five Adsecularis Tech-Thrall Cohorts",
           "extraUnits": [
-          
+            "Add up to two Vorax Battle-Automata Cohorts: 1 U/p each",
+            "Add two Myrmidon Secutor Hosts: 2 U/p"
           ],
-         "points": "1 F/p, 1 A/p"
+          "points": "1 F/p, -1 U/p, 1 A/p"
         },
-        {
-          "name": "Questoris Lance",
-          "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
+         {
+          "name": "Thallax Maniple",
+          "units": "Four Thallax Cohorts",
           "extraUnits": [
-            "Add one Questoris Ironstorm Pod, Questoris Stormspear Pod, or Icarus Autocannon to each unit in the formation: 1 U/p"
+           "Add up to two Ursarax Cohorts: 1 U/p each",
+            "Add up to two Vorax Battle-Automata Cohorts: 1 U/p each"
           ],
           "points": "1 F/p, 1 A/p"
+        },
+        {
+          "name": "Castellax Maniple",
+          "units": "Four Castellax Battle-Automata Cohorts",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, -1 U/p, 1 A/p"
+        },
+        {
+          "name": "Myridon Maniple",
+          "units": "Four Myridon Destructors",
+          "extraUnits": [
+          "Add up to two Arlatax Battle-Automata: 1 U/p each"
+          ],
+          "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "Arlatax Maniple",
+          "units": "Four Arlatax Battle-Automata",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, -1 U/p, 1 A/p"
         }
       ]
     }

@@ -120,7 +120,7 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 3",
+          "Damage Capacity (4)",
           "Dispersion Field (3+)",
           "Reinforced Armour",
           "Dauntless",
@@ -231,7 +231,7 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 3",
+          "Damage Capacity (4)",
           "Dispersion Field (3+)",
           "Reinforced Armour",
           "Dauntless",
@@ -400,8 +400,9 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 6", 
+          "Damage Capacity (8)", 
           "Dispersion Field (2+)",
+          "God Machine (1)",
           "Reinforced Armour",
           "Vox-Caster",
           "Leader",

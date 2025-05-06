@@ -343,8 +343,8 @@
       "name": "AC Hellstrike Missiles",
       "modes": [
         {
-          "firepower": "AT5+",
-          "range": 30,
+          "firepower": "2x AP6+/AT4+",
+          "range": 60,
          "specialRules": [
           ]
         }
@@ -368,6 +368,18 @@
           "firepower": "3BP",
           "range": 15,
          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AC Macro-Bomb Cluster",
+      "modes": [
+        {
+          "firepower": "1BP",
+          "range": 15,
+         "specialRules": [
+             "MW"
           ]
         }
       ]
@@ -914,6 +926,13 @@
         {
           "firepower": "2x AP5+",
           "range": 30
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+1)"
+          ]
         }
       ]
     },
@@ -2082,6 +2101,32 @@
         }
       ]
     },
+    {
+      "name": "Combi-Meltas",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 15,
+          "specialRules": [
+           "MW"
+          ]
+        },
+        {
+          "firepower": "AT6+",
+          "join": "and",
+          "specialRules": [
+            "MW"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
         {
       "name": "Thermal Spear",
       "modes": [
@@ -2395,6 +2440,19 @@
       ]
     },
     {
+      "name": "Magna Laser Destroyer",
+      "modes": [
+        {
+          "firepower": "2x AT5+",
+          "range": 60,
+          "specialRules": [
+          "Shield Disruptor",
+          "Crippling"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Lightning Locks",
       "modes": [
         {
@@ -2433,19 +2491,7 @@
         }
       ]
     },
-    {
-      "name": "Magna Laser Destroyer",
-      "modes": [
-        {
-          "firepower": "2x AP6+/AT4+",
-          "range": 60,
-          "specialRules": [
-          "Shield Disruptor",
-          "Crippling"
-          ]
-        }
-      ]
-    },
+    
     {
       "name": "Magna Laser Annihilator",
       "modes": [
@@ -3521,6 +3567,7 @@
         },
         {
           "firepower": "3x AP2+/AT2+",
+          "join": "or",
           "range": 15,
           "specialRules": [
            "IC",
@@ -3530,6 +3577,7 @@
         },
         {
           "firepower": "3BP",
+          "join": "or",
           "range": 45,
           "specialRules": [
            "Disrupt",
@@ -3631,6 +3679,16 @@
       ]
     },
     {
+      "name": "Combat Knives",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
       "name": "Power Weapons",
       "modes": [
         {
@@ -3643,7 +3701,7 @@
       ]
     },
     {
-      "name": "Hand of Dominion",
+      "name": "The Gladius Incandor and the Hand of Dominion",
       "modes": [
         {
           "firepower": "AP5+",
@@ -3652,10 +3710,57 @@
           ]
         },
         {
-          "firepower": "Assault Weapons",
+          "firepower": "Assault Weapon",
+          "specialRules": [
+           "EA(+1)",
+           "MW"
+          ]
+        },
+        {
+          "firepower": "Assault Weapon",
+          "join": "or",
           "specialRules": [
             "MW",
-            "TK(D2)"
+            "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Warmaster’s Talon",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+1)"
+          ]
+        },
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)",
+            "MW",
+            "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Worldbreaker",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)",
+            "MW",
+            "Disrupt"
           ]
         }
       ]
@@ -3733,6 +3838,23 @@
         {
       "name": "Power Fist",
       "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "MW"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gravis Power Fist",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
         {
           "firepower": "Assault Weapons",
           "specialRules": [
@@ -3855,6 +3977,7 @@
           "firepower": "AP5+",
           "range": 15,
           "specialRules": [
+            "Perils of the Warp",
             "MW"
           ]
         }
@@ -3867,6 +3990,7 @@
           "firepower": "AP6+/AT6+",
           "range": 15,
           "specialRules": [
+            "Perils of the Warp",
             "Lance",
             "Shield Piercer"
           ]
@@ -3880,6 +4004,7 @@
           "firepower": "AP5+",
           "range": 15,
           "specialRules": [
+            "Perils of the Warp",
             "IC",
             "Sniper"
           ]
@@ -3893,6 +4018,7 @@
           "firepower": "AT5+",
           "range": 15,
           "specialRules": [
+            "Perils of the Warp",
             "MW",
             "TK(1)"
           ]
@@ -3906,6 +4032,7 @@
           "firepower": "AP2+",
           "range": 15,
           "specialRules": [
+            "Perils of the Warp",
             "Rad"
           ]
         }
@@ -3918,6 +4045,7 @@
           "firepower": "4x AP6+/AT6+",
           "range": 15,
           "specialRules": [
+          "Perils of the Warp",
           "Disrupt"
           ]
         }
@@ -3930,6 +4058,7 @@
           "firepower": "AP3+",
           "range": 15,
           "specialRules": [
+          "Perils of the Warp",
           "IC",
           "Siege"
           ]
@@ -3943,6 +4072,7 @@
           "firepower": "AP4+",
           "range": 15,
           "specialRules": [
+          "Perils of the Warp",
           "IC",
           "Disrupt",
           "Siege"
@@ -3957,6 +4087,7 @@
           "firepower": "1BP",
           "range": 15,
           "specialRules": [
+          "Perils of the Warp",
           "IC"
           ]
         }
@@ -3969,6 +4100,7 @@
           "firepower": "1BP",
           "range": 15,
           "specialRules": [
+          "Perils of the Warp",
           "Disrupt"
           ]
         }
@@ -3981,6 +4113,7 @@
           "firepower": "3BP",
           "range": 15,
           "specialRules": [
+          "Perils of the Warp",
           "Rad"
           ]
         }
@@ -4318,6 +4451,10 @@
     {
       "name": "S",
       "description": "Sniper"
+    },
+     {
+      "name": "Perils of the Warp",
+      "description": "Perils of the Warp"
     },
         {
       "name": "Sniper",

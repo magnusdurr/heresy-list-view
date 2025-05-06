@@ -81,6 +81,7 @@
         "name": "Librarian - Telepathy",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Telepathic Terror",
           "Force Weapon"
         ],
@@ -112,6 +113,7 @@
         "name": "Librarian - Telekinesis",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Psychic Blast",
           "Force Weapon"
         ],
@@ -128,6 +130,7 @@
         "name": "Librarian - Pyromancy",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Firestorm",
           "Force Weapon"
         ],
@@ -143,6 +146,7 @@
         "name": "Librarian - Divination",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Psychic Dart",
           "Force Weapon"
         ],
@@ -158,6 +162,7 @@
         "name": "Librarian - Biomancy",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Biomantic Hammer",
           "Force Weapon"
         ],
@@ -185,6 +190,7 @@
         "name": "Librarian - Anathemata",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Breach the Veil",
           "Force Weapon"
         ],
@@ -200,6 +206,7 @@
         "name": "Librarian - Aetherbane",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Piercing the Aether",
           "Force Weapon"
         ],
@@ -215,6 +222,7 @@
         "name": "Librarian - Diabolism",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Vortex of Chaos",
           "Force Weapon"
         ],
@@ -230,6 +238,7 @@
         "name": "Librarian - Stormseer",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Storm's Fury",
           "Force Weapon"
         ],
@@ -246,6 +255,7 @@
         "name": "Librarian - Rune Priest",
         "type": "CH",
         "weapons": [
+          "Aetheric Lightning",
           "Winds of Fenris",
           "Force Weapon"
         ],
@@ -271,15 +281,15 @@
         ]
       },
       {
-        "name": "Roboute Guilliman, Primarch of the Ultramarines",
+        "name": "Roboute Guilliman, Master of Ultramar", 
         "type": "Primarch",
         "speed": 15,
         "armour": 3,
-        "cc": 2,
-        "ff": 3,
+        "cc": 3,
+        "ff": 2,
         "weapons": [
           "The Arbitrator",
-          "Hand of Dominion"
+          "The Gladius Incandor and the Hand of Dominion"
         ],
         "specialRules": [
           "Damage Capacity (2)",
@@ -290,6 +300,30 @@
           "Reinforced Armour",
           "Thick Rear Armour",
           "Invulnerable Save"
+        ]
+      },
+      {
+        "name": "Horus Lupercal, Breaker of Tyrants",
+        "type": "Primarch",
+        "speed": 15,
+        "armour": 3,
+        "cc": 2,
+        "ff": 4,
+        "weapons": [
+          "The Warmaster’s Talon",
+          "Worldbreaker"
+        ],
+        "specialRules": [
+          "Damage Capacity (2)",
+          "Prescience",
+          "Blitz",
+          "Vox-Caster",
+          "Inspiring",
+          "Fearless",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Teleport",
+          "Regeneration"
         ]
       },
 
@@ -327,6 +361,7 @@
           "Power Swords"
         ],
         "specialRules": [
+          "Honour Guard",
           "Invulnerable Save"
         ]
       },
@@ -384,14 +419,30 @@
         "speed": 15,
         "armour": 4,
         "cc": 3,
-        "ff": 6,
+        "ff": 5,
         "weapons": [
           "Bolt Pistols",
-          "Chainswords"
+          "Chainswords",
+          "Melta Gun"
+        ],
+        "specialRules": [
+          "Blitz"
+        ]
+      },
+      {
+        "name": "Catulan Reaver Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 2,
+        "ff": 4,
+        "weapons": [
+          "Plasma Pistols",
+          "Chainswords",
+          "Plasma Gun"
         ],
         "specialRules": [
           "Blitz",
-          "Evasive",
           "Vanguard"
         ]
       },
@@ -438,7 +489,7 @@
             ]
           },
           {
-            "name": "Legion Support Squad - Rotor Cannon",
+            "name": "Rotor",
             "type": "INF",
             "speed": 15,
             "armour": 4,
@@ -449,7 +500,7 @@
             ]
           },
           {
-            "name": "Legion Support Squad - Volkite Calvier",
+            "name": "Volkite",
             "type": "INF",
             "speed": 15,
             "armour": 4,
@@ -457,6 +508,28 @@
             "ff": 5,
             "weapons": [
               "Volkite Calvier|2"
+            ]
+          },
+          {
+            "name": "Melta",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 5,
+            "weapons": [
+              "Melta Guns |2"
+            ]
+          },
+          {
+            "name": "Graviton",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 5,
+            "weapons": [
+              "Graviton Gun|2"
             ]
           }
         ]
@@ -480,7 +553,7 @@
         "type": "INF",
         "variants": [
         {
-            "name": "Bolters",
+            "name": "Bolter",
             "type": "INF",
             "speed": 35,
             "armour": 4,
@@ -502,7 +575,7 @@
             ]
           },
           {
-            "name": "Meltagun",
+            "name": "Melta",
             "type": "INF",
             "speed": 35,
             "armour": 4,
@@ -772,6 +845,27 @@
         ]
       },
       {
+        "name": "Justaerin Terminator Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 4,
+        "cc": 3,
+        "ff": 5,
+        "weapons": [
+          "Combi-Meltas",
+          "Thunder Hammer",
+          "Power Axes"
+        ],
+        "specialRules": [
+          "Honour Guard",
+          "Reinforced Armour",
+          "Teleport",
+          "Thick Rear Armour",
+          "Bulky",
+          "Vanguard"
+        ]
+      },
+      {
         "name": "Fulmentarus Terminator Squad",
         "type": "INF",
         "speed": 15,
@@ -812,7 +906,7 @@
         ]
       },
             {
-        "name": "Scimitar Jetbikes",
+        "name": "Sky-Hunter Squadron",
         "type": "INF",
         "variants": [
           {
@@ -824,6 +918,39 @@
         "ff": 3,
             "weapons": [
         "Heavy Bolter|2"
+            ]
+          },
+          {
+            "name": "Volkite",
+        "type": "INF",
+        "speed": 35,
+        "armour": 4,
+        "cc": 5,
+        "ff": 5,
+            "weapons": [
+        "Volkite Culvertin|2"
+            ]
+          },
+          {
+            "name": "Melta",
+        "type": "INF",
+        "speed": 35,
+        "armour": 4,
+        "cc": 5,
+        "ff": 5,
+            "weapons": [
+        "Multi-Melta|2"
+            ]
+          },
+          {
+            "name": "Plasma",
+        "type": "INF",
+        "speed": 35,
+        "armour": 4,
+        "cc": 5,
+        "ff": 5,
+            "weapons": [
+        "Plasma Cannon|2"
             ]
           }
         ],
@@ -916,11 +1043,11 @@
         "ff": 3,
             "weapons": [
           "Kheres Assault Cannon",
-          "Power Fist"
+          "Gravis Power Fist"
             ]
           },
           {
-            "name": "Gravis",
+            "name": "Lascannon",
         "type": "AV",
         "speed": 15,
         "armour": 3,
@@ -928,11 +1055,11 @@
         "ff": 5,
             "weapons": [
           "Twin Lascannon",
-          "Power Fist"
+          "Gravis Power Fist"
             ]
           },
           {
-            "name": "Melta Cannon",
+            "name": "Melta",
         "type": "AV",
         "speed": 15,
         "armour": 3,
@@ -940,7 +1067,7 @@
         "ff": 5,
             "weapons": [
           "Dreadnought Melta Cannon",
-          "Power Fist"
+          "Gravis Power Fist"
             ]
           },
           {
@@ -952,11 +1079,11 @@
         "ff": 4,
             "weapons": [
           "Twin Autocannon",
-          "Power Fist"
+          "Gravis Power Fist"
             ]
           },
           {
-            "name": "Plasma Cannon",
+            "name": "Plasma",
         "type": "AV",
         "speed": 15,
         "armour": 3,
@@ -964,11 +1091,11 @@
         "ff": 5,
             "weapons": [
           "Dreadnought Plasma Cannon",
-          "Power Fist"
+          "Gravis Power Fist"
             ]
           },
           {
-            "name": "Conversion Beamer",
+            "name": "Beamer",
         "type": "AV",
         "speed": 15,
         "armour": 3,
@@ -976,7 +1103,7 @@
         "ff": 5,
             "weapons": [
           "Conversion Beam Cannon",
-          "Power Fist"
+          "Gravis Power Fist"
             ]
           },
           {
@@ -988,7 +1115,7 @@
         "ff": 5,
             "weapons": [
           "Volkite Dual-Culverin",
-          "Power Fist"
+          "Gravis Power Fist"
             ]
           }
         ],
@@ -1273,7 +1400,8 @@
         "cc": 6,
         "ff": 4,
         "weapons": [
-          "Demolisher Cannon"
+          "Demolisher Cannon",
+          "Combi-Bolter"
         ],
         "specialRules": [
           "Walker"
@@ -1515,18 +1643,6 @@
               "Graviton Cannon",
               "Lascannon|2"
             ]
-          },
-          {
-            "name": "Gravitor",
-            "type": "AV",
-            "speed": 30,
-            "armour": 5,
-            "cc": 6,
-            "ff": 4,
-            "weapons": [
-              "Graviton Cannon",
-              "Lascannon|2"
-            ]
           }
         ],
         "specialRules": [
@@ -1586,7 +1702,7 @@
         "type": "WE",
         "variants": [
           {
-            "name": "Gravis",
+            "name": "Lascannon",
             "type": "WE",
             "speed": "20",
             "armour": 4,

@@ -48,6 +48,26 @@
             "weapons": [
           "Hyperios Missile Launcher"
             ]
+          },
+          {
+            "name": "Bolter",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 5,
+        "ff": 3,
+            "weapons": [
+          "Twin Heavy Bolter"
+            ]
+          },
+          {
+            "name": "Multi-Laser",
+        "type": "LV",
+        "speed": "Immobile",
+        "armour": 5,
+        "ff": 5,
+            "weapons": [
+          "Multi-Laser"
+            ]
           }
         ],
         "specialRules": [
@@ -158,9 +178,9 @@
         ]
       },
       {
-        "name": "Vorax Battle-Automata",
-        "type": "INF",
-        "speed": 20,
+        "name": "Vorax Battle-Automata Cohort",
+        "type": "LV",
+        "speed": 15,
         "armour": 5,
         "cc": 3,
         "ff": 5,
@@ -170,8 +190,9 @@
         ],
         "specialRules": [
           "Cybernetica Cortex",
+          "Walker",
           "Skirmisher",
-          "Bulky",
+          "Blitz",
           "Fearless",
           "Expendable",
           "Ponderous",
@@ -200,7 +221,7 @@
         ]
       },
       {
-        "name": "Domitar Battle-Automata",
+        "name": "Domitar Battle-Automata Cohort",
         "type": "LV",
         "speed": 15,
         "armour": 3,
@@ -221,9 +242,9 @@
       {
         "name": "Arlatax Battle-Automata",
         "type": "LV",
-        "speed": 20,
+        "speed": 25,
         "armour": 4,
-        "cc": 5,
+        "cc": 4,
         "ff": 5,
         "weapons": [
           "Power Blade Array",
@@ -239,7 +260,7 @@
         ]
       },
       {
-        "name": "Castellax Battle-Automata",
+        "name": "Castellax Battle-Automata Cohort",
         "type": "LV",
         "speed": 15,
         "armour": 3,

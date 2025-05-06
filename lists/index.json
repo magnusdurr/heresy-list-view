@@ -22,13 +22,13 @@
       "index": [
         {
           "name": "Traitor Legions",
-          "abbreviation": "Chaos",
+          "abbreviation": "LegionesAstartes",
           "lists": [
             {
-              "name": "Iron Warriors",
-              "file": "ironwarriors",
+              "name": "Sons of Horus",
+              "file": "SonsofHorus",
               "status": "approved",
-              "img": "images/Chaos_Iron.jpg"
+              "img": "images/Chaos_Legion.jpg"
             }
           ]
         }
