@@ -3,7 +3,7 @@
   "army": "Cthonian Headhunters (CXLII Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-    "intro": "The Cthonian Headhunters (CXLII CoH) follow the Feral Doctrine, with an emphasis on large close combat formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+    "intro": "The Cthonian Headhunters (CXLII CoH) follow the Feral Pattern Doctrine, with an emphasis on fierce close combat. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CthonianHeadhunters",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Cthonian Headhunter Sections have an Initiative Rating of 2+, and are subject to the 'A Lean Race of Killers' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Imperial Militia Platoons have an initiative of 2+ and are subject to the 'Feral Warriors' special rule.",
@@ -20,6 +20,7 @@
         "Auxilia Adjutant",
         "Auxilia Command Squad",
         "Auxilia Lasrifle Squad",
+        "Auxilia Feral Squad",
         "Auxilia Flamer Squad",
         "Veletarii",
         "Charonite Ogryns",
@@ -130,83 +131,74 @@
   ],
   "sections": [
     {
-      "name": "Calth High Guard Core Sections",
+      "name": "Cthonian Headhunters Core Sections",
       "formations": [
         {
           "name": "1 Section Command Tercio",
           "units": "One Auxilia Legate Marshal character in an Auxilia Command Squad, four Auxilia Lasrifle Squads, and one Auxilia Flamer Squad",
           "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
-            "Add two Cyclops of any single configuration: 1 U/p",
-            "Add up to two Malcadors of any single configuration: 2 U/p each"
+            "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads (Free)",
+            "Add three Aurox: 1 U/p",
+            "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p, 2 U/p"
         },
-               {
-          "name": "Auxilia Lasrifle Tercio",
+        {
+          "name": "1+ Auxilia Lasrifle Tercio",
           "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
-           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
-            "Add two Cyclops of any single configuration: 1 U/p",
-            "Add one Malcador of any configuration: 2 U/p"
+            "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads (Free)",
+            "Add three Aurox: 1 U/p",
+            "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p"
         },
+        
         {
-          "name": "Auxilia Dracosan Tercio",
-          "units": "One Auxilia Command Squad with an Auxilia Captain, five Auxilia Lasrifle Squads, two Auxilia Flamer Squads, two Dracosan - Lascannon",
+          "name": "Veletaris Storm Section",
+          "units": "Six Veletarii",
           "extraUnits": [
-            "Replace five Auxilia Lasrifle Squads with five Auxilia Feral Squads (Free)",
-            "Replace one Dracosan Lascannon with two Dracosan - Demolisher (3 U/p)"
           ],
-          "points": "1 F/p, 2 U/p, 1 A/p"
+          "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "Ogryn Charonite Section",
+          "units": "Six Charonite Ogryns",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, 1 U/p"
         }
       ]
     },
     {
-      "name": "Calth High Guard Special Sections",
+      "name": "Cthonian Headhunters Special Sections",
       "description": "May only have one Special Section for each Core Section",
       "formations": [
         {
-          "name": "Auxilia Heavy Sentinel Patrol",
-          "units": "Four Aethon Heavy Sentinels",
+          "name": "Auxilia Dracosan Section",
+          "units": "One Auxilia Command Squad with an Auxilia Captain, three Auxilia Lasrifle Squads, one Dracosan - Lascannon",
           "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+            "Replace three Auxilia Lasrifle Squads with three Auxilia Feral Squads (Free)",
+            "Replace one Dracosan Lascannon with two Dracosan - Demolisher (2 U/p)"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, 1 A/p"
         },
         {
-          "name": "Veletaris Storm Section",
-          "units": "Four Veletarii",
+          "name": "Auxilia Malcador Squadron",
+          "units": "Two Malcadors of any single configuration",
           "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p, 1 U/p"
         },
         {
-          "name": "Ogryn Charonite Section",
-          "units": "Three Charonite Ogryns",
+          "name": "Heavy Malcador Squadron",
+          "units": "Two Heavy Malcador Infernus, or two Heavy Malcador Valdor",
           "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p, 1 U/p"
         },
-        {
-          "name": "Auxilia Rapier Battery",
-          "units": "Four Auxilia Rapier Laser Destroyers",
-          "extraUnits": [
-          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers or four Rapier Mole Mortars: 1 U/p",
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
-          ],
-          "points": "1 F/p, -2 U/p"
-        },
-        {
-          "name": "Tarantula Maniple",
-          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
-          "extraUnits": [
-             ],
-          "points": "1 F/p, -3 U/p"
-        },
+        
+        
         {
           "name": "Auxilia Leman Russ Squadron",
           "units": "Three Leman Russ of any configuration",
@@ -227,22 +219,26 @@
        ]
     },
     {
-      "name": "Calth High Guard Elite Sections",
+      "name": "Cthonian Headhunters Elite Sections",
       "description": "May only have one Elite Section for each two Core or Special Sections",
       "formations": [
-         {
-          "name": "Auxilia Malcador Squadron",
-          "units": "Two Malcadors of any single configuration",
+        {
+          "name": "Auxilia Heavy Sentinel Patrol",
+          "units": "Four Aethon Heavy Sentinels",
           "extraUnits": [
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
-          "points": "1 F/p, 1 U/p"
+          "points": "1 F/p"
         },
         {
-          "name": "Heavy Malcador Squadron",
-          "units": "Two Heavy Malcador Infernus, or two Heavy Malcador Valdor",
+          "name": "Auxilia Rapier Battery",
+          "units": "Four Auxilia Rapier Laser Destroyers",
           "extraUnits": [
+          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers or four Rapier Mole Mortars: 1 U/p",
+          "Add up to two Tarantulas of any configuration: 1 U/p each",
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
-          "points": "1 F/p, 1 U/p"
+          "points": "1 F/p, -2 U/p"
         },
         {
           "name": "Super-Heavy Tank Squadron",
@@ -290,7 +286,7 @@
       ]
     },
           {
-      "name": "Calth High Guard Offboard Support Assets",
+      "name": "Cthonian Headhunters Offboard Support Assets",
       "description": "",
       "formations": [
         {
@@ -398,24 +394,48 @@
       ]
     },
     {
-      "name": "Questoris Familia Allied Lances",
-      "description": "",
+      "name": "Allies: Taghmata Omnissah Maniples",
+      "description": "The first formation selected must be an Adsecularis Maniple",
       "formations": [
-         {
-          "name": "Armiger Lance",
-          "units": "Three Armiger Knight Warglaives and/or Helverins",
-          "extraUnits": [
-          
-          ],
-         "points": "1 F/p, 1 A/p"
-        },
         {
-          "name": "Questoris Lance",
-          "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
+          "name": "Adsecularis Maniple",
+          "units": "One Tech-Priest Auxilia, five Adsecularis Tech-Thrall Cohorts",
           "extraUnits": [
-            "Add one Questoris Ironstorm Pod, Questoris Stormspear Pod, or Icarus Autocannon to each unit in the formation: 1 U/p"
+            "Add up to two Vorax Battle-Automata Cohorts: 1 U/p each",
+            "Add two Myrmidon Secutor Hosts: 2 U/p"
+          ],
+          "points": "1 F/p, -1 U/p, 1 A/p"
+        },
+         {
+          "name": "Thallax Maniple",
+          "units": "Four Thallax Cohorts",
+          "extraUnits": [
+           "Add up to two Ursarax Cohorts: 1 U/p each",
+            "Add up to two Vorax Battle-Automata Cohorts: 1 U/p each"
           ],
           "points": "1 F/p, 1 A/p"
+        },
+        {
+          "name": "Castellax Maniple",
+          "units": "Four Castellax Battle-Automata Cohorts",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, -1 U/p, 1 A/p"
+        },
+        {
+          "name": "Myridon Maniple",
+          "units": "Four Myridon Destructors",
+          "extraUnits": [
+          "Add up to two Arlatax Battle-Automata: 1 U/p each"
+          ],
+          "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "Arlatax Maniple",
+          "units": "Four Arlatax Battle-Automata",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, -1 U/p, 1 A/p"
         }
       ]
     }

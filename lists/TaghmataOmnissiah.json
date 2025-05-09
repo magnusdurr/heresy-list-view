@@ -31,6 +31,8 @@
           "Supreme Commander",
           "Inspiring",
           "Fearless",
+          "Walker",
+          "Nimble",
           "Reinforced Armour",
           "Invulnerable Save",
           "Machine Empathy",
@@ -54,6 +56,8 @@
           "Commander",
           "Leader",
           "Fearless",
+          "Walker",
+          "Nimble",
           "Reinforced Armour",
           "Invulnerable Save",
           "Machine Empathy",
@@ -248,6 +252,7 @@
         ],
         "specialRules": [
         "Walker",
+          "Nimble",
           "Invulnerable Save",
           "Ponderous",
           "Steadfast"
@@ -312,6 +317,7 @@
         ],
         "specialRules": [
           "Walker",
+          "Nimble",
           "Invulnerable Save",
           "Ponderous",
           "Steadfast"
@@ -325,7 +331,7 @@
         "cc": 6,
         "ff": 6,
         "weapons": [
-          "Bolters"
+          "Combi-Bolter"
         ],
         "specialRules": [
         "Tunneler",

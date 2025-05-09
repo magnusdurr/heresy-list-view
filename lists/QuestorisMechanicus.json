@@ -121,14 +121,15 @@
           }
         ],
         "specialRules": [
-        "Damage Capacity 2",
+        "Damage Capacity (2)",
         "Walker",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
           "Ion Shield (3+)",
           "Ionic Flare Shield"
-        ]
+        ],
+        "crit": "The Questoris Knight is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
 
       {
@@ -149,7 +150,7 @@
           }
         ],
         "specialRules": [
-        "Damage Capacity 2",
+        "Damage Capacity (2)",
         "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
@@ -157,7 +158,7 @@
           "Ion Shield (3+)",
           "Ionic Flare Shield"
         ],
-        "crit": "The Cerastus Knight is destroyed."
+        "crit": "The Cerastus Knight is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
 
       {
@@ -192,13 +193,13 @@
           }
         ],
         "specialRules": [
-        "Damage Capacity 3",
+        "Damage Capacity (3)",
         "Walker",
           "Reinforced Armour",
           "Walker",
           "Ion Shield (3+)"
         ],
-        "crit": "The Acastus Knight takes 1 additional damage."
+        "crit": "The Acastus Knight takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       }
     ]
   }

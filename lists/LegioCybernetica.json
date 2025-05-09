@@ -10,7 +10,7 @@
         "weapons": [
         ],
         "specialRules": [
-        "Ghost in the Machine",
+        "Cybertheurgy",
         "Invulnerable Save"
         ]
       },
@@ -106,6 +106,8 @@
         "Cybernetica Cortex",
         "Fearless",
         "Blitz",
+        "Walker",
+        "Nimble",
           "Vanguard"
         ]
       },
@@ -191,6 +193,7 @@
         "specialRules": [
           "Cybernetica Cortex",
           "Walker",
+          "Nimble",
           "Skirmisher",
           "Blitz",
           "Fearless",
@@ -233,6 +236,8 @@
         ],
         "specialRules": [
           "Cybernetica Cortex",
+          "Walker",
+          "Nimble",
           "Fearless",
           "Expendable",
           "Ponderous",
@@ -253,6 +258,8 @@
         "specialRules": [
           "Cybernetica Cortex",
           "Jump Packs",
+          "Walker",
+          "Nimble",
           "Fearless",
           "Expendable",
           "Ponderous",
@@ -274,6 +281,8 @@
         "specialRules": [
           "Cybernetica Cortex",
           "Fearless",
+          "Walker",
+          "Nimble",
           "Expendable",
           "Ponderous",
           "Vanguard"

@@ -127,7 +127,7 @@
           "Steadfast",
           "Ponderous"
         ],
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
+        "crit": "The Ordinatus is destroyed, all formations within 15 cm suffers a Blast Marker."
       },
       {
         "name": "Ordinatus Minoris Support Construct", 
@@ -238,7 +238,7 @@
           "Steadfast",
           "Ponderous"
         ],
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 4+"
+        "crit": "The Ordinatus is destroyed, all formations within 15 cm suffers a Blast Marker."
       },
       {
         "name": "Ordinatus Aktaeus Burrowing Transport",
@@ -262,7 +262,7 @@
          "Steadfast",
          "Vanguard"
         ],
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 5+"
+        "crit": "The Ordinatus is destroyed, all formations within 15 cm suffers a Blast Marker."
       },
       {
         "name": "Ordinatus Majoris Heavy Siege Construct",
@@ -402,7 +402,6 @@
         "specialRules": [
           "Damage Capacity (8)", 
           "Dispersion Field (2+)",
-          "God Machine (1)",
           "Reinforced Armour",
           "Vox-Caster",
           "Leader",
@@ -410,7 +409,7 @@
           "Steadfast",
           "Ponderous"
         ],
-        "crit": "The Ordinatus is destroyed, and any units within 5cm suffers a hit on 3+"
+        "crit": "The Ordinatus Majoris is destroyed, all formations within 30 cm suffers a Blast Marker."
       }
     ]
   }

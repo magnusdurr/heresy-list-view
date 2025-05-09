@@ -310,7 +310,7 @@
         "cc": 2,
         "ff": 4,
         "weapons": [
-          "The Warmaster’s Talon",
+          "The Warmaster's Talon",
           "Worldbreaker"
         ],
         "specialRules": [
@@ -1120,7 +1120,8 @@
           }
         ],
         "specialRules": [
-          "Walker"
+          "Walker",
+          "Nimble"
         ]
       },
        {
@@ -1167,6 +1168,7 @@
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
+          "Walker",
           "Vanguard"
         ]
       },
@@ -1200,6 +1202,7 @@
           }
         ],
         "specialRules": [
+            "Walker"
         ]
       },
  
@@ -1739,13 +1742,13 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity: 2",
+          "Damage Capacity (2)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Heavy Transport (4)",
           "Ion Shield (5+)"
         ],
-        "crit": "The Spartan is destroyed."
+        "crit": "The Spartan is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
       {
         "name": "Cerberus",
@@ -1759,12 +1762,12 @@
           "Lascannon|2|FxF"
         ],
         "specialRules": [
-          "Damage Capacity: 2",
+          "Damage Capacity (2)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Ion Shield (5+)"
         ],
-        "crit": "The Cerberus is destroyed."
+        "crit": "The Cerberus is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
       {
         "name": "Typhon",
@@ -1778,12 +1781,12 @@
           "Heavy Bolter|2|FxF"
         ],
         "specialRules": [
-          "Damage Capacity: 2",
+          "Damage Capacity (2)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Ion Shield (5+)"
         ],
-        "crit": "The Typhon is destroyed."
+        "crit": "The Typhon is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
            {
         "name": "Kratos",
@@ -1830,11 +1833,11 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity: 2",
+          "Damage Capacity (2)",
           "Thick Rear Armour",
           "Ion Shield (5+)"
         ],
-        "crit": "The Kratos is destroyed."
+        "crit":  "The Kratos is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
        {
         "name": "Bastion",
@@ -1850,12 +1853,13 @@
           "Thunderfire Cannon|0-2|"
         ],
         "specialRules": [
-          "Damage Capacity 4",
+          "Damage Capacity (6)",
+          "Void Shields (2)",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
         "notes": "Must take either two Rapier Laser Destroyers or two Thunderfire Cannons. A Bastion counts as a ruins terrain piece once destroyed.",
-        "crit": "The Bastion takes an extra point of damage."
+        "crit": "The unit takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
       },
       {
         "name": "Fellblade Super-Heavy Tank",
@@ -1871,10 +1875,10 @@
           "Twin Heavy Bolter||FxF"
         ],
         "specialRules": [
-          "Damage Capacity: 4",
+          "Damage Capacity (4)",
           "Reinforced Armour"
         ],
-        "crit": "The Fellblade is destroyed. All units within 5cm suffer a hit on a 5+."
+        "crit": "The Fellblade is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
             {
         "name": "Falchion Super-Heavy Tank",
@@ -1911,7 +1915,7 @@
           "Damage Capacity: 4",
           "Reinforced Armour"
         ],
-        "crit": "The Falchion is destroyed. All units within 5cm suffer a hit on a 5+."
+        "crit": "The Falchion is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
        {
         "name": "Glaive Super-Heavy Tank",
@@ -1926,10 +1930,10 @@
           "Twin Heavy Bolter||FxF"
         ],
         "specialRules": [
-          "Damage Capacity: 4",
+          "Damage Capacity (4)",
           "Reinforced Armour"
         ],
-        "crit": "The Glaive is destroyed. All units within 5cm suffer a hit on a 5+."
+        "crit": "The Glaive is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
       {
         "name": "Legion Mastodon",
@@ -1945,9 +1949,9 @@
           "Skyreaper Battery"
         ],
         "specialRules": [
-          "Damage Capacity: 6",
-          "Void Shields 2",
-          "Assault Transport 8",
+          "Damage Capacity (6)",
+          "Void Shields (2)",
+          "Assault Transport (8)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",
@@ -1955,7 +1959,7 @@
           "Ponderous",
           "Steadfast"
         ],
-        "crit": "The Mastodon is Immobilized. Further critical hits cause one additional point of damage."
+        "crit": "The unit takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       }
     ]
   }

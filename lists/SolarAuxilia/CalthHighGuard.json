@@ -3,7 +3,7 @@
   "army": "Calth High Guard (CCLVth Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-    "intro": "Calth High Guard (CCLVth COH) follow the Ultramar Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+    "intro": "Calth High Guard (CCLVth CoH) follow the Ultramar Pattern Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
@@ -23,7 +23,9 @@
         "Auxilia Flamer Squad",
         "Veletarii",
         "Charonite Ogryns",
-        "Aethon Heavy Sentinel",
+        "Aethon Heavy Sentinel|Laser|Flamer|Autocannon",
+        "Hermes Incursus Sentinel|Volkite|Flamer",
+        "Hermes Light Sentinel|Laser|Grenarier",
         "Auxilia Rapier|Quad Launcher|Laser Destroyer|Mole Mortar",
         "Basilisk",
         "Medusa",
@@ -134,12 +136,12 @@
           "extraUnits": [
             "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
             "Add two Cyclops of any single configuration: 1 U/p",
-            "Add up to two Malcadors of any single configuration: 2 U/p each"
+            "Add one Malcador of any configuration: 2 U/p"
           ],
           "points": "1 F/p, 2 U/p"
         },
                {
-          "name": "Auxilia Lasrifle Tercio",
+          "name": "1+ Auxilia Lasrifle Tercio",
           "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
@@ -147,6 +149,20 @@
             "Add one Malcador of any configuration: 2 U/p"
           ],
           "points": "1 F/p"
+        },
+        {
+          "name": "Auxilia Malcador Company",
+          "units": "One Auxilia Adjutant, three Malcadors of any single configuration",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, 3 U/p"
+        },
+        {
+          "name": "Auxilia Light Sentinel Patrol",
+          "units": "One Auxilia Adjutant, six Hermes Light Sentinels of any single configuration",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, 1 U/p"
         }
       ]
     },
@@ -155,12 +171,12 @@
       "description": "May only have one Special Section for each Core Section",
       "formations": [
         {
-          "name": "Auxilia Heavy Sentinel Patrol",
-          "units": "Four Aethon Heavy Sentinels",
+          "name": "Auxilia Medium Sentinel Patrol",
+          "units": "Four Hermes Incursus Sentinels of any single configuration",
           "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+              "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, -1 U/p"
         },
         {
           "name": "Veletaris Storm Section",
@@ -218,9 +234,10 @@
       "description": "May only have one Elite Section for each two Core or Special Sections",
       "formations": [
          {
-          "name": "Auxilia Malcador Squadron",
-          "units": "Two Malcadors of any single configuration",
+          "name": "Auxilia Heavy Sentinel Patrol",
+          "units": "Four Aethon Heavy Sentinels of any single configuration",
           "extraUnits": [
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },
@@ -283,7 +300,7 @@
         {
           "name": "Termite Subterranean Assault",
           "points": "2 U/p"
-        }
+        },
         {
           "name": "Deathstrike Warp Missile Attack",
           "points": "1 U/p"

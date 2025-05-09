@@ -1,7 +1,7 @@
 {
   "index": [
     {
-      "section": "Legiones Astartes - Loyalists",
+      "section": "Legiones Astartes - Loyalist",
       "index": [
         {
           "name": "Loyalist Legions",
@@ -11,14 +11,14 @@
               "name": "Ultramarines",
               "file": "Ultramarines",
               "status": "approved",
-              "img": "images/AdeptusAstartes_Codex.jpg"
+              "img": "images/Legions_Ultramarines.jpg"
             }
           ]
         }
       ]
     },
     {
-      "section": "Legiones Astartes - Traitors",
+      "section": "Legiones Astartes - Traitor",
       "index": [
         {
           "name": "Traitor Legions",
@@ -28,42 +28,71 @@
               "name": "Sons of Horus",
               "file": "SonsofHorus",
               "status": "approved",
-              "img": "images/Chaos_Legion.jpg"
+              "img": "images/Legions_SonsOfHorus.jpg"
             }
           ]
         }
       ]
     },
+    
     {
       "section": "Imperialis Auxilia",
       "index": [
+          {
+          "name": "Solar Auxilia",
+          "abbreviation": "SolarAuxilia",
+          "lists": [
+            {
+              "name": "Saturnyne Rams (I-Xth CoH)",
+              "file": "SaturnyneRams",
+              "status": "approved",
+              "img": "images/Auxilia_SaturnyneRams.png"
+            }
+          ]
+        },
         {
           "name": "Solar Auxilia",
           "abbreviation": "SolarAuxilia",
           "lists": [
             {
-              "name": "Saturnyne Rams (I-Xth COH)",
-              "file": "SaturnyneRams",
+              "name": "Cthonian Headhunters (CXLII CoH)",
+              "file": "CthonianHeadhunters",
               "status": "approved",
-              "img": "images/AstraMilitarum_Cadian.jpg"
+              "img": "images/Auxilia_CthonianHeadHunters.png"
             }
           ]
         },
-       {
-          "name": "Calth High Guard (CCLVth COH)",
+        {
+          "name": "Calth High Guard (CCLVth CoH)",
           "abbreviation": "SolarAuxilia",
           "lists": [
             {
               "name": "Calth High Guard",
               "file": "CalthHighGuard",
               "status": "approved",
-              "img": "images/AstraMilitarum_Cadian.jpg"
+              "img": "images/Auxilia_CalthHighGuard.png"
             }
          ]
         }
       ]
     },
-
+    {
+      "section": "Imperialis Militia",
+      "index": [
+        {
+          "name": "Imperialis Militia",
+          "abbreviation": "Imperialis Militia",
+          "lists": [
+            {
+              "name": "Slaves to the Void",
+              "file": "SlavestotheVoid",
+              "status": "approved",
+              "img": "images/Militia_SlavesToTheVoid.jpg"
+            }
+          ]
+        }
+      ]
+    },
     {
       "section": "Mechanicus",
       "index": [

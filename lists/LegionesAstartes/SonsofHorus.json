@@ -113,27 +113,17 @@
         "Auxilia Command Squad",
         "Auxilia Lasrifle Squad",
         "Auxilia Flamer Squad",
+        "Auxilia Feral Squad",
+        "Dracosan|Lascannon|Demolisher",
+        "Aurox",
         "Veletarii",
         "Charonite Ogryns",
         "Basilisk",
         "Medusa"
       ],
       "unitRules": [
-        "A Lean Race of Killers"
-      ]
-    },
-    {
-      "from": "ImperialisMilitia.json",
-      "units": [
-        "Rouge Psyker - Diabolism",
-        "Militia Captain",
-        "Militia Command Cadre",
-        "Militia Feral Squad",
-        "Cargo-8 Hauler"
-      ],
-      "unitRules": [
-        "Feral Warriors",
-        "Perils of the Warp"
+        "A Lean Race of Killers",
+        "Ion Shield (x)"
       ]
     },
     {
@@ -153,6 +143,7 @@
       "from": "LegioCybernetica.json",
       "units": [
         "Tarantula|Lascannon|Bolter|Hyperios",
+        "Cyclops|Demolitor|Incinerator",
         "Adsecularis Tech-Thrall Cohort",
         "Vorax Battle-Automata Cohort",
         "Arlatax Battle-Automata",
@@ -461,16 +452,25 @@
     },
     {
       "name": "Allies: Solar Auxilia Sections",
-      "description":  "",
+      "description":  "The first formation selected must be an Auxilia Lasrifle Tercio",
       "formations": [
           {
           "name": "Auxilia Lasrifle Tercio",
           "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
            "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads: Free",
-            "Add two Cyclops of any single configuration: 1 U/p"
+            "Add three Aurox: 1 U/p"
           ],
           "points": "1 F/p"
+        },
+        {
+          "name": "Auxilia Dracosan Section",
+          "units": "One Auxilia Command Squad with an Auxilia Captain, three Auxilia Lasrifle Squads, one Dracosan - Lascannon",
+          "extraUnits": [
+            "Replace three Auxilia Lasrifle Squads with three Auxilia Feral Squads: Free",
+            "Replace one Dracosan Lascannon with two Dracosan - Demolisher: 2 U/p"
+          ],
+          "points": "1 F/p, 1 A/p"
         },
         {
           "name": "Ogryn Charonite Section",

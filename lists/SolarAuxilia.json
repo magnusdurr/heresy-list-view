@@ -210,52 +210,144 @@
         "specialRules": [
         ]
       },
-      {
+
+
+       {
         "name": "Hermes Light Sentinel",
         "type": "LV",
-        "speed": 25,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Multi-Laser"
+        "variants": [
+          {
+            "name": "Laser",
+            "type": "LV",
+            "speed": 25,
+            "armour": 6,
+            "cc": 6,
+             "ff": 6,
+            "weapons": [
+              "Multi-Laser"
+            ]
+          },
+          {
+            "name": "Grenadier",
+            "type": "LV",
+            "speed": 25,
+            "armour": 6,
+            "cc": 6,
+             "ff": 6,
+            "weapons": [
+              "Hermes Grenade Launcher"
+            ]
+          }
         ],
         "specialRules": [
           "Skirmisher",
-          "Walker"
+          "Walker",
+          "Nimble"
         ]
       },
       {
-        "name": "Hermes Veletaris Sentinel",
+        "name": "Hermes Incursus Sentinel",
         "type": "LV",
-        "speed": 20,
-        "armour": 5,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Volkite Caliver"
+        "variants": [
+          {
+            "name": "Volkite",
+            "type": "LV",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+             "ff": 6,
+            "weapons": [
+              "Volkite Caliver"
+            ]
+          },
+          {
+            "name": "Flamer",
+            "type": "LV",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+             "ff": 4,
+            "weapons": [
+              "Heavy Flamer "
+            ]
+          }
         ],
         "specialRules": [
-          "Scout",
-          "Walker"
+            "Skirmisher",
+            "Walker"
         ]
       },
       {
         "name": "Aethon Heavy Sentinel",
         "type": "LV",
+        "variants": [
+          {
+            "name": "Laser",
+            "type": "LV",
         "speed": 15,
         "armour": 4,
         "cc": 6,
         "ff": 4,
-        "weapons": [
-          "Multi-Laser",
-          "Missile Launcher"
+            "weapons": [
+              "Multi-Laser",
+          "Missile Launcher|2"
+            ]
+          },
+          {
+            "name": "Flamer",
+            "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+            "weapons": [
+              "Heavy Flamer ",
+          "Missile Launcher|2"
+            ]
+          },
+          {
+            "name": "Volkite",
+            "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+            "weapons": [
+              "Volkite Caliver",
+          "Missile Launcher|2"
+            ]
+          },
+          {
+            "name": "Autocannon",
+            "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+            "weapons": [
+              "Autocannon",
+          "Missile Launcher|2"
+            ]
+          },
+          {
+            "name": "Melta",
+            "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+            "weapons": [
+              "Melta Lance",
+          "Missile Launcher|2"
+            ]
+          }
+
         ],
         "specialRules": [
-          "Skirmisher"
+            "Skirmisher",
+            "Walker"
         ]
       },
-
       {
         "name": "Basilisk",
         "type": "AV",
@@ -316,7 +408,8 @@
          "Assault Transport (8)",
          "Dauntless",
          "Tunneler"
-        ]
+        ],
+        "crit": "The Hellbore takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker, and all units in base contact suffers a hit."
       },
        {
         "name": "Auxilia Gorgon Assault Transport",
@@ -332,7 +425,8 @@
          "Damage Capacity (3)",
          "Reinforced Armour",
          "Heavy Transport (10)"
-        ]
+        ],
+        "crit": "The unit takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker, and all units in base contact suffers a hit."
       },
       {
         "name": "Aurox",
@@ -349,7 +443,22 @@
         ]
       },
       {
-        "name": "Leman Russ",
+        "name": "Aurox (Saturnyne Pattern)",
+        "type": "AV",
+        "speed": 20,
+        "armour": 3,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Flamer "
+        ],
+        "specialRules": [
+         "Transport (2)",
+         "Walker"
+        ]
+      },
+      {
+        "name": "Leman Russ", 
         "type": "AV",
         "variants": [
           {
@@ -500,7 +609,7 @@
           "Thick Rear Armour",
           "Walker"
         ],
-        "crit": "The Malcador is destroyed."
+        "crit": "The Malcador is destroyed, all formations within 5 cm suffers a Blast Marker."
       },
 
 
@@ -534,10 +643,10 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 2",
+          "Damage Capacity (2)",
           "Reinforced Armour"
         ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+        "crit": "The unit is destroyed, all formations within 5 cm suffers a Blast Marker."
       },
       {
         "name": "Dracosan",
@@ -549,9 +658,10 @@
         "speed": 20,
         "armour": 4,
         "cc": 6,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
-          "Twin Lascannon||FwA"
+          "Heavy Stubber",
+          "Twin Lascannon||FxF"
         ]
           },
           {
@@ -562,17 +672,19 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Demolisher Cannon||FwA"
+          "Heavy Flamer ",
+          "Demolisher Cannon||FxF"
         ]
           }
         ],
         "specialRules": [
           "Damage Capacity (2)",
           "Reinforced Armour",
+          "Ion Shield (5+)",
           "Walker"
         ],
         "notes":  "Lascannon Variant: Heavy Transport (4) - Demolisher Variant: Heavy Transport (2)",
-        "crit": "The Dracosan is destroyed."
+        "crit": "The Dracosan is destroyed, all formations within 5 cm suffers a Blast Marker."
       },
 
            {
@@ -665,10 +777,10 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity 2",
+          "Damage Capacity (3)",
           "Reinforced Armour"
         ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+        "crit": "The Super-Heavy Tank is destroyed, all formations within 10 cm suffers a Blast Marker, and all units in base contact suffers a hit."
       }
     ]
   }

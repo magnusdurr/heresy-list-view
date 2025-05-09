@@ -124,7 +124,7 @@
         "Auxilia Flamer Squad",
         "Veletarii",
         "Charonite Ogryns",
-        "Aethon Heavy Sentinel",
+        "Aethon Heavy Sentinel|Laser|Flamer|Autocannon",
         "Leman Russ|Battle Tank|Vanquisher|Annihilator|Exterminator"
       ],
       "unitRules": [
@@ -475,10 +475,10 @@
         },
         {
           "name": "Auxilia Heavy Sentinel Patrol",
-          "units": "Four Aethon Heavy Sentinels",
+          "units": "Four Aethon Heavy Sentinels of any configuration",
           "extraUnits": [
           ],
-          "points": "1 F/p, 1 A/p"
+          "points": "1 F/p, 1 U/p, 1 A/p"
         },
         {
           "name": "Auxilia Leman Russ Squadron",

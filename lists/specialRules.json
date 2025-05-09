@@ -31,9 +31,9 @@
       ]
     },
     {
-      "title": "Ghost in the Machine",
+      "title": "Cybertheurgy",
       "description": [
-        "A unit with the 'Ghost in the Machine' special rule removes its 'Cybernetica Cortex' special rule, and the formation it is part of gains an additional +1 to activate and to rally."
+        "A unit with the 'Cybertheurgy' special rule removes its 'Cybernetica Cortex' special rule, and the formation it is part of gains an additional +1 to activate and to rally."
       ]
     },
     {
@@ -80,7 +80,7 @@
     {
       "title": "God Machine (x)",
       "description": [
-        "Whenever a unit with the 'God Machine' special rule is destroyed that isn't an army BTS, the opponent scores x additional Victory Points."
+        "Whenever a unit with the 'God Machine' special rule is destroyed that isn't an army BTS, the opponent scores (x) additional Victory Points. In addition, whenever a unit with this special rule is destroyed, all friendly formations within 45 cm suffers (x) Blast Markers."
       ]
     },
     {
@@ -128,7 +128,7 @@
     {
       "title": "Shield Disruptor",
       "description": [
-        "Each point of damage from a hit with <i>Shield Disruptor</i> will knock down two <i>Powerfields</i>, <i>Shadowfields</i> or <i>Void Shields</i>. If a unit with only one field remaining is hit the field knocked down, but the hit does not carry over. In addition, <i>Shield Disruptor</i> hits ignores <i>Deflector Shields</i>, <i>Ion Shields</i>, and <i>Dispersion Shields</i>."
+        "Each point of damage from a hit with <i>Shield Disruptor</i> will knock down two <i>Powerfields</i>, <i>Shadowfields</i> or <i>Void Shields</i>. If a unit with only one field remaining is hit the field knocked down, but the hit does not carry over. In addition, <i>Shield Disruptor</i> hits ignores <i>Ion Shields</i> and <i>Dispersion Fields</i>."
       ]
     },
     {
@@ -294,6 +294,12 @@
       ]
     },
     {
+      "title": "Nimble",
+      "description": [
+        "AV and LV with the 'Nimble' special rule may enter Strongholds like INF, taking two spaces each."
+      ]
+    },
+    {
       "title": "Self-Destruct",
       "description": [
         "A weapon with this special rule can only be used once. Once used, remove the entire model from the battlefield."
@@ -308,8 +314,9 @@
     {
       "title": "Dauntless",
       "description": [
-        "Units with Dauntless can take 2 Blast Markers before they are suppressed, or to kill a unit in a broken formation (ignore any leftover Blast Markers). Dauntless formations are only broken if they have more than 2 Blast Markers per unit in the formation. Dauntless formations only count half their number of Blaster markers in assault resolution (rounding down to a minimum of one).",
-        "Halve the number of extra hits suffered by a Dauntless formation that loses an assault, rounding down in favour of the Dauntless formation. When a broken formation with Dauntless rallies, it receives a number of Blast Markers equal to the number of units, rather than half this number."
+        "Units with Dauntless can take 2 Blast Markers before they are suppressed, or to kill a unit in a broken formation (ignore any leftover Blast Markers). Dauntless formations are only broken if they have more than 2 Blast Markers per unit in the formation.",
+        "Once the number of Blast Markers on a Dauntless formation exceeds the number of units / DC in the formation, they suffer an additional -1 to activate, and their enemies gain an additional +1 during assault resolution (this is counted before halving).",
+        "Dauntless formations only count half their number of Blaster markers in assault resolution (rounding down to a minimum of one). Halve the number of extra hits suffered by a Dauntless formation that loses an assault, rounding down in favour of the Dauntless formation. When a broken formation with Dauntless rallies, it receives a number of Blast Markers equal to the number of units, rather than half this number."
       ]
     },
     {

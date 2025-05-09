@@ -2203,6 +2203,27 @@
         }
       ]
     },
+    {
+      "name": "Melta Lance",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
+          "range": 15,
+          "specialRules": [
+           "MW",
+           "Crippling"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "MW",
+           "Crippling"
+          ]
+        }
+      ]
+    },
         {
       "name": "Dreadnought Melta Lance",
       "modes": [
@@ -2404,12 +2425,23 @@
         }
       ]
     },
-                    {
+    {
+      "name": "Hermes Grenade Launcher",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 15,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
       "name": "Multi-Laser",
       "modes": [
         {
-          "firepower": "2x AP5+/AT6+",
-          "range": 45,
+          "firepower": "AP4+/AT6+",
+          "range": 30,
           "specialRules": [
           ]
         }
@@ -2419,8 +2451,8 @@
       "name": "Quad Multi-Laser",
       "modes": [
         {
-          "firepower": "2x AP4+/AT5+",
-          "range": 45,
+          "firepower": "AP3+/AT5+",
+          "range": 30,
           "specialRules": [
           ]
         }
@@ -3727,7 +3759,7 @@
       ]
     },
     {
-      "name": "The Warmaster’s Talon",
+      "name": "The Warmaster's Talon",
       "modes": [
         {
           "firepower": "AP5+",
