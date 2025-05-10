@@ -11,6 +11,7 @@
         ],
         "specialRules": [
         "Cybertheurgy",
+        "Leader",
         "Invulnerable Save"
         ]
       },
@@ -23,7 +24,7 @@
         "Silica Animus",
         "Blitz",
         "Leader",
-        "Regeneration"
+        "Invulnerable Save"
         ]
       },
          {
@@ -86,7 +87,7 @@
         "type": "LV",
         "speed": 15,
         "armour": 5,
-        "cc": 4,
+        "cc": 3,
         "weapons": [
           "Cyclops Demolition Charge"
         ]
@@ -96,7 +97,7 @@
         "type": "LV",
         "speed": 15,
         "armour": 5,
-        "cc": 4,
+        "cc": 3,
         "weapons": [
           "Cyclops Incineration Charge"
         ]

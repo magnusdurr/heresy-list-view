@@ -7,7 +7,7 @@
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
   "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
-  "armyRules": "The <i>Dauntless</i> special rule applies to all Ultramarines Legion Detachments and Collegia Titanica Banners.",
+  "armyRules": "The <i>And They Shall Know No Fear (ATSKNF)</i> special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
     "Dauntless"
   ],
@@ -157,7 +157,7 @@
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Replace two Legion Tactical Squads with two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
-            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminator Squads (3 U/p)"
+            "Add two Legion Tactical Squads (2 U/p), two Contemptor Dreadnoughts of any single configuration (2 U/p), or two Cataphractii Terminator Squads (3 U/p)"
           ],
           "points": "1 F/p"
         },
@@ -166,6 +166,7 @@
           "units": "One Lieutenant character, four Legion Tactical Squads, two Rhinos",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
+            "Replace four Legion Tactical Squads with four Legion Veteran Squads (0-1 in the army): 1 U/p",
             "Replace two Rhinos in the formation with two Support Rhino of any single configuration: 1 U/p",
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"

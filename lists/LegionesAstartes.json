@@ -344,11 +344,14 @@
         "type": "INF",
         "speed": 15,
         "armour": 4,
-        "cc": 3,
-        "ff": 3,
+        "cc": 2,
+        "ff": 4,
         "weapons": [
           "Bolters",
           "Melta Gun"
+        ],
+        "specialRules": [
+          "Blitz"
         ]
       },
       {
@@ -370,10 +373,11 @@
         "type": "INF",
         "speed": 15,
         "armour": 3,
-        "cc": 5,
+        "cc": 3,
         "ff": 5,
         "weapons": [
-          "Volkite Chargers",
+          "Chainswords",
+          "Boltpistols",
           "Lascutter"
         ],
         "specialRules": [
@@ -1528,6 +1532,19 @@
               "Heavy Bolter",
               "Lascannon|2"
             ]
+          },
+          {
+            "name": "Venator",
+            "type": "AV",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+              "Neutron Beam Laser",
+              "Heavy Bolter",
+              "Lascannon|2"
+            ]
           }
         ],
         "specialRules": [
@@ -1806,6 +1823,18 @@
             ]
           },
           {
+            "name": "Fenris",
+        "type": "WE",
+        "speed": "20",
+        "armour": 3,
+        "cc": 6,
+        "ff": 4,
+            "weapons": [
+          "Fenris Twin Battle Cannon",
+          "Twin Heavy Bolter|2|FwA"
+            ]
+          },
+          {
             "name": "Melta",
         "type": "WE",
         "speed": "20",
@@ -1847,19 +1876,20 @@
         "cc": 6,
         "ff": 4,
         "weapons": [
-          "Hyperios Launcher",
+          "Hyperios Missile Launcher",
           "Twin Heavy Bolter|2|",
-          "Rapier Laser Destroyer|0-2|",
-          "Thunderfire Cannon|0-2|"
+          "2x Laser Destroyer|0-1",
+          "OR",
+          "2x Quad Launcher|0-1"
         ],
         "specialRules": [
-          "Damage Capacity (6)",
+          "Damage Capacity (4)",
           "Void Shields (2)",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
-        "notes": "Must take either two Rapier Laser Destroyers or two Thunderfire Cannons. A Bastion counts as a ruins terrain piece once destroyed.",
-        "crit": "The unit takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
+        "notes": "A Bastion counts as Impassible Terrain once destroyed, unless it was destroyed while taking damage from a critical hit.",
+        "crit": "The Bastion takes a point of damage. If this unit is destroyed while taking damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       },
       {
         "name": "Fellblade Super-Heavy Tank",
@@ -1949,7 +1979,7 @@
           "Skyreaper Battery"
         ],
         "specialRules": [
-          "Damage Capacity (6)",
+          "Damage Capacity (4)",
           "Void Shields (2)",
           "Assault Transport (8)",
           "Reinforced Armour",
@@ -1959,7 +1989,7 @@
           "Ponderous",
           "Steadfast"
         ],
-        "crit": "The unit takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The unit takes a point of damage. If this unit is destroyed while taking damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       }
     ]
   }

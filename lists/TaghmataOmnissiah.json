@@ -25,7 +25,7 @@
         "weapons": [
           "Volkite Serpenta",
           "Meltagun",
-          "Omnissian Axe"
+          "Power Weapon"
         ],
         "specialRules": [
           "Supreme Commander",
@@ -50,7 +50,7 @@
         "weapons": [
           "Volkite Serpenta",
           "Meltagun",
-          "Omnissian Axe"
+          "Power Weapon"
         ],
         "specialRules": [
           "Commander",
@@ -74,7 +74,7 @@
         "ff": 4,
         "weapons": [
           "Volkite Serpenta",
-          "Omnissian Axe"
+          "Power Weapon"
         ],
         "specialRules": [
           "Commander",
@@ -92,7 +92,7 @@
         "armour": 4,
         "cc": 5,
         "weapons": [
-          "Omnissian Axe"
+          "Power Weapon"
         ],
         "specialRules": [
         "Invulnerable Save",
@@ -444,7 +444,7 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Twin Volkite Caliver",
+          "Twin Volkite Calvier",
           "Twin Mauler Bolt Cannon"
         ],
         "specialRules": [
@@ -487,7 +487,7 @@
             "ff": 5,
             "weapons": [
               "Lightning Cannon",
-              "Volkite Caliver|2"
+              "Volkite Calvier|2"
             ]
           },
           {
@@ -499,7 +499,7 @@
             "ff": 3,
             "weapons": [
             "Irad-Scourer",
-            "Volkite Caliver|2"
+            "Volkite Calvier|2"
             ]
           },
           {
@@ -511,7 +511,7 @@
             "ff": 5,
             "weapons": [
             "Pulsar-Fusil",
-            "Volkite Caliver|2"
+            "Volkite Calvier|2"
             ]
           }
         ],

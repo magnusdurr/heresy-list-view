@@ -94,17 +94,17 @@
       ]
     },
     {
-      "section": "Mechanicus",
+      "section": "Mechanicum",
       "index": [
               {
-          "name": "Mechanicum",
-          "abbreviation": "AM",
+          "name": "Taghmata Omnissiah",
+          "abbreviation": "TaghmataOmnissiah",
           "lists": [
             {
-              "name": "Collegia Titanica",
-              "file": "legionesskitariimetalica",
+              "name": "Phaeton Taghmata",
+              "file": "PhaetonTaghmata",
               "status": "approved",
-              "img": "images/AdeptusMechanicus_LegionesMetalica.jpg"
+              "img": "images/TaghmataOmnissah_Phaeton_2.jpg"
             },
             {
               "name": "Mechanicus",

@@ -267,6 +267,15 @@
         }
       ]
     },
+    {
+      "name": "AC Autocannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT6+/AA6+",
+          "range": 30
+        }
+      ]
+    },
 
                 {
       "name": "AC Heavy Bolter",
@@ -594,6 +603,15 @@
         }
       ]
     },
+    {
+      "name": "Fenris Twin Battle Cannon",
+      "modes": [
+        {
+          "firepower": "2x AP4+/AT4+",
+          "range": 75
+        }
+      ]
+    },
         {
       "name": "Baneblade Battle Cannon",
       "modes": [
@@ -737,6 +755,20 @@
           "range": 90,
           "specialRules": [
             "MW",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Behemoth Cannon",
+      "modes": [
+        {
+          "firepower": "3BP",
+          "range": 120,
+          "specialRules": [
+            "MW",
+            "Disrupt",
             "Siege"
           ]
         }
@@ -1785,9 +1817,9 @@
         {
           "firepower": "Assault Weapon",
           "specialRules": [
-          "EA(+2)",
+          "FS",
           "Self-Destruct",
-          "Siege"
+          "MW"
           ]
         }
       ]
@@ -1798,9 +1830,11 @@
         {
           "firepower": "Assault Weapon",
           "specialRules": [
-          "EA(+2)",
+          "EA(+1)",
+          "FS",
           "Self-Destruct",
-          "IC"
+          "IC",
+          "Siege"
           ]
         }
       ]
@@ -2440,7 +2474,18 @@
       "name": "Multi-Laser",
       "modes": [
         {
-          "firepower": "AP4+/AT6+",
+          "firepower": "2x AP6+/AT6+",
+          "range": 30,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Twin Multi-Laser",
+      "modes": [
+        {
+          "firepower": "2x AP5+/AT6+",
           "range": 30,
           "specialRules": [
           ]
@@ -2451,18 +2496,31 @@
       "name": "Quad Multi-Laser",
       "modes": [
         {
-          "firepower": "AP3+/AT5+",
+          "firepower": "2x AP4+/AT6+",
           "range": 30,
           "specialRules": [
           ]
         }
       ]
     },
-                        {
+    {
       "name": "Laser Destroyer",
       "modes": [
         {
           "firepower": "AT5+",
+          "range": 60,
+          "specialRules": [
+          "Shield Disruptor",
+          "Crippling"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2x Laser Destroyer",
+      "modes": [
+        {
+          "firepower": "2x AT5+",
           "range": 60,
           "specialRules": [
           "Shield Disruptor",
@@ -2579,6 +2637,18 @@
       "modes": [
         {
           "firepower": "AP6+/AT5+",
+          "range": 30,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Twin Phased Plasma-Fusil",
+      "modes": [
+        {
+          "firepower": "AP6+/AT4+",
           "range": 30,
           "specialRules": [
             "Energetic"
@@ -2909,11 +2979,23 @@
       ]
     },
 
-            {
+    {
       "name": "Quad Launcher",
       "modes": [
         {
           "firepower": "AP4+/AT6+",
+          "range": 45,
+          "specialRules": [
+            "Ind"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2x Quad Launcher",
+      "modes": [
+        {
+          "firepower": "2x AP4+/AT6+",
           "range": 45,
           "specialRules": [
             "Ind"
@@ -2982,6 +3064,20 @@
       ]
     },
     {
+      "name": "Graviton Crusher",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+",
+          "range": 15,
+          "specialRules": [
+           "Graviton(1)",
+           "Energetic",
+           "Shield Piercer"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Graviton Singularity Cannon",
       "modes": [
         {
@@ -2989,6 +3085,7 @@
           "range": 15,
           "specialRules": [
            "Graviton(D3)",
+           "Energetic",
            "Shield Piercer"
           ]
         }
@@ -3002,6 +3099,7 @@
           "range": 45,
           "specialRules": [
            "Graviton(1)",
+           "Slow",
            "Shield Piercer"
           ]
         }
@@ -3015,6 +3113,7 @@
           "range": 30,
           "specialRules": [
             "Graviton(D3)",
+           "Slow",
            "Shield Piercer"
           ]
         }
@@ -3028,6 +3127,7 @@
           "range": 45,
           "specialRules": [
            "Graviton(D3+1)",
+           "Slow",
            "Shield Piercer"
           ]
         }
@@ -3041,6 +3141,7 @@
           "range": 60,
           "specialRules": [
            "Graviton(D3+1)",
+           "Slow",
            "Shield Piercer"
           ]
         }
@@ -3050,10 +3151,11 @@
       "name": "Kirus Grav Imploder",
       "modes": [
         {
-          "firepower": "AP4+/AT3+",
+          "firepower": "AP4+/AT4+",
           "range": 15,
           "specialRules": [
            "Graviton(1)",
+           "Energetic",
            "Shield Piercer"
           ]
         },
@@ -3380,12 +3482,28 @@
         }
       ]
     },
+
             {
       "name": "Volkite Veuglaire",
       "modes": [
         {
           "firepower": "AP5+/AT3+",
           "range": 15,
+          "specialRules": [
+          "IC",
+           "Disrupt",
+           "Crippling",
+           "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Volkite Chierovile",
+      "modes": [
+        {
+          "firepower": "AP5+/AT3+",
+          "range": 30,
           "specialRules": [
           "IC",
            "Disrupt",
@@ -4168,6 +4286,7 @@
         }
       ]
     },
+
     {
       "name": "Graviton Hammer",
       "modes": [

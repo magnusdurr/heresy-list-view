@@ -213,29 +213,29 @@
 
 
        {
-        "name": "Hermes Light Sentinel",
+        "name": "Hermes Light Sentinel Squadron",
         "type": "LV",
         "variants": [
           {
             "name": "Laser",
             "type": "LV",
-            "speed": 25,
-            "armour": 6,
+            "speed": 20,
+            "armour": 5,
             "cc": 6,
-             "ff": 6,
+             "ff": 5,
             "weapons": [
-              "Multi-Laser"
+              "Multi-Laser|2"
             ]
           },
           {
             "name": "Grenadier",
             "type": "LV",
-            "speed": 25,
-            "armour": 6,
+            "speed": 20,
+            "armour": 5,
             "cc": 6,
-             "ff": 6,
+             "ff": 5,
             "weapons": [
-              "Hermes Grenade Launcher"
+              "Hermes Grenade Launcher|2"
             ]
           }
         ],
@@ -246,35 +246,36 @@
         ]
       },
       {
-        "name": "Hermes Incursus Sentinel",
+        "name": "Hermes Incursus Sentinel Squadron",
         "type": "LV",
         "variants": [
           {
             "name": "Volkite",
             "type": "LV",
-            "speed": 20,
-            "armour": 5,
+            "speed": 15,
+            "armour": 4,
             "cc": 6,
-             "ff": 6,
+             "ff": 4,
             "weapons": [
-              "Volkite Caliver"
+              "Volkite Calvier|2"
             ]
           },
           {
             "name": "Flamer",
             "type": "LV",
-            "speed": 20,
-            "armour": 5,
+            "speed": 15,
+            "armour": 4,
             "cc": 6,
              "ff": 4,
             "weapons": [
-              "Heavy Flamer "
+              "Heavy Flamer |2"
             ]
           }
         ],
         "specialRules": [
             "Skirmisher",
-            "Walker"
+            "Walker",
+            "Nimble"
         ]
       },
       {
@@ -409,7 +410,7 @@
          "Dauntless",
          "Tunneler"
         ],
-        "crit": "The Hellbore takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker, and all units in base contact suffers a hit."
+        "crit": "The Hellbore takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       },
        {
         "name": "Auxilia Gorgon Assault Transport",
@@ -426,7 +427,7 @@
          "Reinforced Armour",
          "Heavy Transport (10)"
         ],
-        "crit": "The unit takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker, and all units in base contact suffers a hit."
+        "crit": "The unit takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       },
       {
         "name": "Aurox",
@@ -780,7 +781,34 @@
           "Damage Capacity (3)",
           "Reinforced Armour"
         ],
-        "crit": "The Super-Heavy Tank is destroyed, all formations within 10 cm suffers a Blast Marker, and all units in base contact suffers a hit."
+        "crit": "The Super-Heavy Tank is destroyed, all formations within 10 cm suffers a Blast Marker."
+      },
+      {
+        "name": "Capitol Imperialis",
+        "type": "WE",
+        "speed": "15",
+        "armour": 4,
+        "cc": 5,
+        "ff": 4,
+        "weapons": [
+          "Behemoth Cannon|FxF",
+          "Twin Heavy Bolter|3|Left",
+          "Twin Heavy Bolter|3|Right"
+        ],
+        "specialRules": [
+          "Damage Capacity (12)",
+          "Void Shields (6)",
+          "Assault Transport (20)",
+          "Reinforced Armour",
+          "Thick Rear Armour",
+          "Walker",
+          "Dauntless",
+          "Vanguard",
+          "Ponderous",
+          "Steadfast"
+        ],
+        "notes": "Unless destroyed by a critical hit, leave the model on the battlefield as Impassable Terrain.",
+        "crit": "The unit takes D3 points of damage. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
       }
     ]
   }

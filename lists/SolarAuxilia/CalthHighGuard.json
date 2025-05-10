@@ -24,8 +24,8 @@
         "Veletarii",
         "Charonite Ogryns",
         "Aethon Heavy Sentinel|Laser|Flamer|Autocannon",
-        "Hermes Incursus Sentinel|Volkite|Flamer",
-        "Hermes Light Sentinel|Laser|Grenarier",
+        "Hermes Incursus Sentinel Squadron|Volkite|Flamer",
+        "Hermes Light Sentinel Squadron|Laser|Grenarier",
         "Auxilia Rapier|Quad Launcher|Laser Destroyer|Mole Mortar",
         "Basilisk",
         "Medusa",
@@ -154,13 +154,15 @@
           "name": "Auxilia Malcador Company",
           "units": "One Auxilia Adjutant, three Malcadors of any single configuration",
           "extraUnits": [
+              "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p, 3 U/p"
         },
         {
           "name": "Auxilia Light Sentinel Patrol",
-          "units": "One Auxilia Adjutant, six Hermes Light Sentinels of any single configuration",
+          "units": "One Auxilia Adjutant, four Hermes Light Sentinel Squadrons of any single configuration",
           "extraUnits": [
+              "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         }
@@ -172,11 +174,12 @@
       "formations": [
         {
           "name": "Auxilia Medium Sentinel Patrol",
-          "units": "Four Hermes Incursus Sentinels of any single configuration",
+          "units": "Four Hermes Incursus Sentinel Squadrons of any single configuration",
           "extraUnits": [
-              "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+              "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p",
+              "Add two Cyclops of any single configuration: 1 U/p"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p"
         },
         {
           "name": "Veletaris Storm Section",
@@ -199,6 +202,7 @@
           "units": "Four Auxilia Rapier Laser Destroyers",
           "extraUnits": [
           "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers or four Rapier Mole Mortars: 1 U/p",
+          "Add two Cyclops of any single configuration: 1 U/p",
           "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
           "points": "1 F/p, -2 U/p"
@@ -237,7 +241,8 @@
           "name": "Auxilia Heavy Sentinel Patrol",
           "units": "Four Aethon Heavy Sentinels of any single configuration",
           "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p",
+          "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },

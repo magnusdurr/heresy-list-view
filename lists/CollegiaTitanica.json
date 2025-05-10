@@ -93,7 +93,7 @@
           "Transport(10)"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Imperator Titan takes D3 points of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 30 cm suffers a Blast Marker."
+        "crit": "The Imperator Titan takes D3 points of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
 
        {
@@ -150,7 +150,7 @@
           "Transport(10)"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmonger Titan takes D3 points of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 30 cm suffers a Blast Marker."
+        "crit": "The Warmonger Titan takes D3 points of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
       {
         "name": "Lysander Fighter",
@@ -233,7 +233,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmaster Titan takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 30 cm suffers a Blast Marker."
+        "crit": "The Warmaster Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
 
       {
@@ -303,7 +303,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmaster Titan takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 30 cm suffers a Blast Marker."
+        "crit": "The Warmaster Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
       {
         "name": "Warlord-Sinister Battle Titan",
@@ -374,8 +374,8 @@
         "specialRules": [
           "Damage Capacity (8)",
           "Void Shields (6)",
-          "God Machine (2)",
-          "Ripple Fire",
+          "God Machine (1)",
+          "Split Fire",
           "Dauntless",
           "Reinforced Armour",
           "Walker",
@@ -386,7 +386,7 @@
           "Precience"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warlord-Sinister Titan takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
+        "crit": "The Warlord-Sinister Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D3 Blast Markers (roll separately for each), while all other formations within 15 cm suffers one Blast Marker."
       },
       {
         "name": "Warlord Battle Titan",
@@ -458,7 +458,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warlord Titan takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
+        "crit": "The Warlord Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D3 Blast Markers (roll separately for each), while all other formations within 15 cm suffers one Blast Marker."
       },
       {
         "name": "Warbringer Nemesis Battle Titan",
@@ -530,7 +530,7 @@
           "Steadfast"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-       "crit": "The Warbringer Titan takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+       "crit": "The Warbringer Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
       },
 
       {
@@ -605,7 +605,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Reaver Titan takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Reaver Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
       },
  
   {
@@ -661,7 +661,7 @@
           "Walker"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
-        "crit": "The Dire Wolf is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Dire Wolf is destroyed, all formations within 15 cm suffers a Blast Marker."
       },
 
 
@@ -710,7 +710,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
-        "crit": "The Warhound takes a point of damage, and suffers D6 additional Blast Markers. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Warhound takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       }
     ]
   }

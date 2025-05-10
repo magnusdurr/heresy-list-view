@@ -79,15 +79,14 @@
         "Legion Support Squad|Plasma",
         "Legion Tactical Squad",
         "Legion Heavy Support Squad|Missile Launcher",
-        "Contemptor Dreadnought|Assault|Gravis",
+        "Contemptor Dreadnought|Assault|Lascannon",
         "Proteus Land Speeder|Melta|Plasma",
         "Javelin Attack Speeder|Cyclone|Lascannon",
         "Predator|Annihilator|Destructor",
         "Sicarian|Accelerator|Omega"
       ],
       "unitRules": [
-      "Psyker",
-        "Psychic Succour"
+      "And They Shall Know No Fear (ATSKNF)"
       ]
     },
     {
@@ -107,9 +106,9 @@
     {
       "from": "CenturioOrdinatus.json",
       "units": [
-        "Ordinatus Minoris Battle Construct|Stygia|Necromunda|Jerulas|Phaeton|Mpandex|Diamat|Omnicron|Helias|Tigrus",
-        "Ordinatus Minoris Support Construct|Hellion|Haddrack|Barnassus|Antioc|Vaznagrod|Gorgonum|Ulator|Sagittar",
-        "Ordinatus Majoris Heavy Siege Construct|Armageddon|Mars|Golgotha|Incaladion|Cyclothrathe|Metalica|Helicon|Straxos|Rakenheim|Vindalex"
+        "Ordinatus Minoris Battle Construct|Jerulas|Phaeton|Mpandex|Omnicron|Helias",
+        "Ordinatus Minoris Support Construct|Gorgonum|Ulator|Sagittar",
+        "Ordinatus Majoris Heavy Siege Construct|Incaladion|Helicon|Straxos"
       ],
       "unitRules": [
         "Dispersion Field (x)"
@@ -140,9 +139,9 @@
           "units": "One Tech-Priest Auxilia, five Adsecularis Tech-Thrall Cohorts",
           "extraUnits": [
             "Replace the Tech-Priest Auxilia with an Archmagos on Abeyant: 1 U/p",
-            "Replace the Tech-Priest Auxilia with an Archmagos Prime on Abeyant: 2 U/p (0-1 in army)",
+            "Replace the Tech-Priest Auxilia with an Archmagos Prime on Abeyant: 2 U/p (0-1 in the army)",
             "Add five Adsecularis Tech-Thrall Cohorts: 3 U/p",
-            "Add two Castellax Battle-Automata Cohorts: 2 U/p",
+            "Add up to two Castellax Battle-Automata Cohorts: 1 U/p each",
             "Add two Myrmidon Secutor Hosts: 2 U/p"
           ],
           "points": "1 F/p, -1 U/p"
@@ -162,6 +161,7 @@
           "name": "Thallax Maniple",
           "units": "Four Thallax Cohorts",
           "extraUnits": [
+           "Add two Taghmata Triaros Armoured Conveyors: 3 U/p",
            "Add up to two Ursarax Cohorts: 1 U/p each",
             "Add up to two Vorax Battle-Automata: 1 U/p each"
           ],
@@ -171,8 +171,10 @@
           "name": "Castellax Maniple",
           "units": "Four Castellax Battle-Automata Cohorts",
           "extraUnits": [
+              "Add one Paragon of Metal character to the formation (0-1 in the army): 2 U/p",
+              "Add up to two Castellax Battle-Automata Cohorts: 1 U/p each"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, -1 U/p"
         }
       ]
     },
@@ -184,6 +186,8 @@
           "name": "Vultarax Stratos Maniple",
           "units": "Four Vultarax Stratos-Automata",
           "extraUnits": [
+              "Add one Paragon of Metal character to the formation (0-1 in the army): 2 U/p",
+              "Add up to two Vultarax Stratos-Automata: 1 U/p each"
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -191,6 +195,8 @@
           "name": "Thanatar Siege Maniple",
           "units": "Four Thanatar Siege-Automata",
           "extraUnits": [
+              "Add one Paragon of Metal character to the formation (0-1 in the army): 2 U/p",
+              "Add up to two Thanatar Siege-Automata: 1 U/p each"
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -198,6 +204,8 @@
           "name": "Domitar Battle Maniple",
           "units": "Four Domitar Battle-Automata",
           "extraUnits": [
+              "Add one Paragon of Metal character to the formation (0-1 in the army): 2 U/p",
+              "Add up to two Domitar Battle-Automata: 1 U/p each"
              ],
           "points": "1 F/p, -1 U/p"
         },
@@ -205,6 +213,7 @@
           "name": "Myridon Maniple",
           "units": "Four Myridon Destructors",
           "extraUnits": [
+          "Add one Paragon of Metal character to the formation (0-1 in the army): 2 U/p",
           "Add up to two Arlatax Battle-Automata: 1 U/p each"
           ],
           "points": "1 F/p, 1 U/p"
@@ -219,11 +228,11 @@
         },
         {
           "name": "Taghmata Leman Russ Squadron",
-          "units": "One Cortex Controller character, three Taghmata Leman Russ of any configuration",
+          "units": "Three Taghmata Leman Russ of any configuration",
           "extraUnits": [
           "Add one Taghmata Leman Russ of any configuration: 1 U/p"
           ],
-          "points": "1 F/p, 1 U/p"
+          "points": "1 F/p"
         },
         {
           "name": "Krios Maniple",
@@ -243,6 +252,7 @@
           "name": "Armiger Moirax Lance",
           "units": "Three Armiger Moirax of any configuration",
           "extraUnits": [
+              
           ],
           "points": "1 F/p, 1 U/p"
         },
@@ -262,17 +272,17 @@
         },
                 {
           "name": "Taghmata Leman Russ Company",
-          "units": "One Cortex Controller, eight Taghmata Leman Russ of any configuration",
+          "units": "Eight Taghmata Leman Russ of any configuration",
           "extraUnits": [
           ],
-          "points": "2 F/p, 3 U/p"
+          "points": "2 F/p, 2 U/p"
         },
         {
           "name": "Mechanicum Acastus Lance",
-          "units": "One Mechanicum Acastus of any configuration",
+          "units": "One Cortex Controller character, one Mechanicum Acastus of any configuration",
           "extraUnits": [
           ],
-          "points": "1 F/p, 1 U/p"
+          "points": "1 F/p, 2 U/p, 1 T/p"
         }
       
       ]

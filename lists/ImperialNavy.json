@@ -83,13 +83,26 @@
         ]
       },
       {
+        "name": "Aquila Lander",
+        "type": "AC/LV",
+        "speed": "35/Hover",
+        "armour": 3,
+        "ff": 5,
+        "weapons": [
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        "Transport (1)"
+        ]
+      },
+      {
         "name": "Arvus Lighter",
-        "type": "AC/AV",
+        "type": "AC/LV",
         "speed": "30/Hover",
         "armour": 4,
+        "ff": 6,
         "weapons": [
-          "Vanquisher Cannon",
-          "Lascannon"
+          "Twin Multi-Laser"
         ],
         "specialRules": [
         "Transport (2)"
