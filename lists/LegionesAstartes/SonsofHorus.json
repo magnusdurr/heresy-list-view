@@ -7,9 +7,9 @@
   "armyforge": "EAH_LegionesAstartes_SonsofHorus",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
   "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Cthonian Headhunter Sections have an Initiative Rating of 2+, and are subject to the 'A Lean Race of Killers' special rule. Taghmata Omnissah Allied Maniples have an initiative of 2+ and are subject to the 'Malefica Mechanica' special rule.",
-  "armyRules": "The <i>Dauntless</i> special rule applies to all Ultramarines Legion Detachments and Collegia Titanica Banners.",
+  "armyRules": "The <i>And They Shall Know No Fear (ATSKNF)</i> special rule applies to all Sons of Horus Legion Detachments.",
   "specialRules": [
-    "Dauntless"
+    "And They Shall Know No Fear (ATSKNF)"
   ],
   "units": [
     {
@@ -165,7 +165,7 @@
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Replace two Legion Tactical Squads with two Legion Despoiler Squads (Free), two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
-            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminator Squads (3 U/p)"
+            "Add two Legion Tactical Squads (2 U/p), two Contemptor Dreadnoughts of any single configuration (2 U/p), or two Cataphractii Terminator Squads (3 U/p)"
           ],
           "points": "1 F/p"
         },

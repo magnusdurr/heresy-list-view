@@ -236,6 +236,24 @@
         }
       ]
     },
+    {
+      "name": "Arcane Technology",
+      "modes": [
+        {
+          "firepower": "D3x AP4+/AT4+/AA4+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "EA(+D3)"
+          ]
+        }
+      ]
+    },
            {
       "name": "Anvillus Defence Batteries",
       "modes": [
@@ -248,7 +266,7 @@
       ]
     },
                {
-      "name": "Hydra Autocannons",
+      "name": "Hydra Autocannon",
       "modes": [
         {
           "firepower": "AP5+/AT6+/AA5+",
@@ -554,6 +572,24 @@
         }
       ]
     },
+    {
+      "name": "Twin Earthshaker Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+/AT4+",
+          "range": 90,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "2BP",
+          "range": 60,
+          "specialRules": [
+          "Ind"
+           ]
+        }
+      ]
+    },
         {
       "name": "Medusa Siege Gun",
       "modes": [
@@ -567,6 +603,20 @@
         },
         {
           "firepower": "1BP",
+          "range": 30,
+          "specialRules": [
+              "Ind",
+              "IC",
+              "Siege"
+           ]
+        }
+      ]
+    },
+    {
+      "name": "Colossus Siege Mortar",
+      "modes": [
+        {
+          "firepower": "3BP",
           "range": 30,
           "specialRules": [
               "Ind",
@@ -926,6 +976,15 @@
       ]
     },
     {
+      "name": "Twin Heavy Stubber",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 30
+        }
+      ]
+    },
+    {
       "name": "Questoris Stubber",
       "modes": [
         {
@@ -949,6 +1008,15 @@
         {
           "firepower": "AP5+",
           "range": 30
+        }
+      ]
+    },
+    {
+      "name": "Astartes Assault Shotguns",
+      "modes": [
+        {
+          "firepower": "2x AP5+",
+          "range": 15
         }
       ]
     },
@@ -1180,6 +1248,26 @@
           "firepower": "4x AP3+/AT5+",
           "range": 45,
           "specialRules": [
+              "FwA"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vulcan Mega-Bolter",
+      "modes": [
+        {
+          "firepower": "4x AP3+/AT5+",
+          "range": 45,
+          "specialRules": [
+              "FxF"
           ]
         },
         {
@@ -1198,6 +1286,7 @@
           "firepower": "4x AP3+/AT5+",
           "range": 45,
           "specialRules": [
+              "FxF"
           ]
         },
         {
@@ -1216,6 +1305,7 @@
           "firepower": "8x AP3+/AT5+",
           "range": 45,
           "specialRules": [
+              "FxF"
           ]
         },
         {
@@ -1236,6 +1326,26 @@
           "specialRules": [
             "Siege",
             "IC"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hand Flamers",
+      "modes": [
+        {
+          "firepower": "Small Arms",
+          "specialRules": [
+            "IC",
+            "Siege"
+          ]
+        },
+        {
+          "firepower": "Assault Weapons",
+          "join": "and",
+          "specialRules": [
+           "IC",
+            "Siege"
           ]
         }
       ]
@@ -1865,7 +1975,7 @@
       "name": "Paired Apocalypse Missile Launchers",
       "modes": [
         {
-          "firepower": "3BP",
+          "firepower": "6BP",
           "range": 120,
           "specialRules": [
           ]
@@ -2092,6 +2202,19 @@
         }
       ]
     },
+    {
+      "name": "Melta Bombs",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+           "MW",
+           "Devastating Charge",
+           "Titan Hunter"
+          ]
+        }
+      ]
+    },
             {
       "name": "Melta Gun",
       "modes": [
@@ -2309,7 +2432,8 @@
           "specialRules": [
            "MW",
            "TK(1)",
-            "Titan Hunter"
+            "Titan Hunter",
+            "FwA"
           ]
         },
         {
@@ -2377,7 +2501,32 @@
           "specialRules": [
            "MW",
            "TK(D3)",
-           "IC"
+           "IC",
+           "FwA"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+1)",
+           "MW",
+           "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heavy Melta Cannon ",
+      "modes": [
+        {
+          "firepower": "AP4+/AT2+",
+          "range": 30,
+          "specialRules": [
+           "MW",
+           "TK(D3)",
+           "IC",
+           "FxF"
           ]
         },
         {
@@ -2422,7 +2571,8 @@
           "specialRules": [
            "MW",
            "TK(D3)",
-           "IC"
+           "IC",
+           "FxF"
           ]
         },
         {
@@ -2445,7 +2595,8 @@
           "specialRules": [
            "MW",
            "TK(D3)",
-           "IC"
+           "IC",
+           "FxF"
           ]
         },
         {
@@ -2661,7 +2812,7 @@
       "modes": [
         {
           "firepower": "AP6+/AT5+",
-          "range": 30,
+          "range": 45,
           "specialRules": [
             "Energetic"
           ]
@@ -2686,7 +2837,7 @@
       "modes": [
         {
           "firepower": "AP5+/AT5+",
-          "range": 30,
+          "range": 45,
           "specialRules": [
             "Energetic"
           ]
@@ -2697,8 +2848,8 @@
       "name": "Hellfire Plasma Cannonade",
       "modes": [
         {
-          "firepower": "AP5+/AT4+",
-          "range": 30,
+          "firepower": "AP6+/AT5+",
+          "range": 45,
           "specialRules": [
             "Energetic"
           ]
@@ -3017,6 +3168,18 @@
         {
           "firepower": "Small Arms",
           "join": "and",
+          "specialRules": [
+           "Graviton(1)",
+           "Shield Piercer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Graviton Pistols",
+      "modes": [
+        {
+          "firepower": "Small Arms",
           "specialRules": [
            "Graviton(1)",
            "Shield Piercer"
@@ -3700,6 +3863,19 @@
         }
       ]
     },
+     {
+      "name": "Planetary Defense Laser",
+      "modes": [
+        {
+          "firepower": "AT4+",
+          "range": 90,
+          "specialRules": [
+           "MW",
+           "TK(D6)"
+          ]
+        }
+      ]
+    },
 
           {
       "name": "Sinistramanus Tenebrae",
@@ -3745,6 +3921,39 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "EA(+1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Charnabal Sabres",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Horrific Mutations",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+D3)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Claws and Fangs",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+              "EA(+1)"
           ]
         }
       ]
@@ -3949,6 +4158,19 @@
         }
       ]
     },
+    {
+      "name": "Heavy Chainswords",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)",
+            "MW",
+            "Devastating Charge"
+          ]
+        }
+      ]
+    },
         {
       "name": "Reaper Chainsword",
       "modes": [
@@ -4033,6 +4255,18 @@
             "EA(+1)",
             "MW",
             "TK(D2)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Excavator Power Arms",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "MW",
+            "TK(D3)"
           ]
         }
       ]
@@ -4457,7 +4691,8 @@
           "specialRules": [
             "Lance",
             "Shock Pulse",
-            "Shield Piercer"
+            "Shield Piercer",
+            "FwA"
           ]
         },
         {

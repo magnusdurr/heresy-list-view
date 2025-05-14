@@ -134,9 +134,7 @@
           "name": "1 Section Command Tercio",
           "units": "One Auxilia Legate Marshal character in an Auxilia Command Squad, four Auxilia Lasrifle Squads, and one Auxilia Flamer Squad",
           "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
-            "Add two Cyclops of any single configuration: 1 U/p",
-            "Add one Malcador of any configuration: 2 U/p"
+            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, or add three Termite Assault Drills (2 U/p)."
           ],
           "points": "1 F/p, 2 U/p"
         },
@@ -144,9 +142,7 @@
           "name": "1+ Auxilia Lasrifle Tercio",
           "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
-           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p",
-            "Add two Cyclops of any single configuration: 1 U/p",
-            "Add one Malcador of any configuration: 2 U/p"
+           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, or add three Termite Assault Drills (2 U/p)."
           ],
           "points": "1 F/p"
         },
@@ -185,7 +181,7 @@
           "name": "Veletaris Storm Section",
           "units": "Four Veletarii",
           "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
+          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add three Termite Assault Drills (2 U/p)."
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -193,7 +189,7 @@
           "name": "Ogryn Charonite Section",
           "units": "Three Charonite Ogryns",
           "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
+          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, two Veletarii, or two Cyclops of any single configuration (1 U/p), or add three Termite Assault Drills (2 U/p)."
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -303,10 +299,6 @@
       "description": "",
       "formations": [
         {
-          "name": "Termite Subterranean Assault",
-          "points": "2 U/p"
-        },
-        {
           "name": "Deathstrike Warp Missile Attack",
           "points": "1 U/p"
         },
@@ -316,6 +308,10 @@
         },
         {
           "name": "Artillery Barrage Strike",
+          "points": "1 U/p"
+        },
+        {
+          "name": "Artillery Phospex Strike",
           "points": "1 U/p"
         },
         {

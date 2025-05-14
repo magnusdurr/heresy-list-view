@@ -9,7 +9,7 @@
   "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
   "armyRules": "The <i>And They Shall Know No Fear (ATSKNF)</i> special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
-    "Dauntless"
+    "And They Shall Know No Fear (ATSKNF)"
   ],
   "units": [
     {
@@ -24,6 +24,7 @@
         "Legion Assault Squad",
         "Legion Support Squad|Plasma",
         "Legion Tactical Squad",
+        "Legion Veteran Squad|Magna",
         "Legion Heavy Support Squad|Missile Launcher",
         "Invictarus Suzerain Squad",
         "Locutarus Storm Squad",
@@ -100,7 +101,8 @@
         "Warhound Scout Titan",
         "Dire Wolf Heavy Scout Titan",
         "Reaver Battle Titan",
-        "Warlord Battle Titan"
+        "Warlord Battle Titan",
+        "Warlord-Sinister Psi-Titan"
       ],
       "unitRules": [
         "Void Shields",
@@ -153,9 +155,10 @@
       "formations": [
         {
           "name": "Tactical Detachment",
-          "units": "One Lieutenant character, four Legion Tactical Squads",
+          "units": "One Lieutenant character in a Tactical Squad, three Legion Tactical Squads",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
+            "Replace three Legion Tactical Squads with three Legion Veteran Squads (0-1 in the army): 1 U/p",
             "Replace two Legion Tactical Squads with two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
             "Add two Legion Tactical Squads (2 U/p), two Contemptor Dreadnoughts of any single configuration (2 U/p), or two Cataphractii Terminator Squads (3 U/p)"
           ],
@@ -163,11 +166,11 @@
         },
         {
           "name": "Mechanized Tactical Detachment",
-          "units": "One Lieutenant character, four Legion Tactical Squads, two Rhinos",
+          "units": "One Lieutenant character in a Tactical Squad, three Legion Tactical Squads, two Rhinos",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
-            "Replace four Legion Tactical Squads with four Legion Veteran Squads (0-1 in the army): 1 U/p",
-            "Replace two Rhinos in the formation with two Support Rhino of any single configuration: 1 U/p",
+            "Replace three Legion Tactical Squads with three Legion Veteran Squads (0-1 in the army): 1 U/p",
+            "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
           ],
@@ -199,7 +202,6 @@
           "name": "Mechanized Support Detachment",
           "units": "One Lieutenant, four Legion Support Squads, two Rhinos",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
             "Replace two Legion Support Squads with two Legion Heavy Support Squads (1 U/p), or replace four Legion Support Squads with four Legion Heavy Support Squads (2 U/p)",
             "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
@@ -291,7 +293,6 @@
           "name": "0-1 Locutarus Storm Detachment",
           "units": "One Lieutenant character, four Locutarus Storm Squads",
           "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p"
           ],
           "points": "1 F/p, 2 U/p"
         },
@@ -443,6 +444,15 @@
             "Add one Veteran Princeps character to the formation: 2 U/p"
           ],
           "points": "2 F/p, 1 U/p, 3 T/p, 1 A/p"
+        },
+        {
+          "name": "0-1 Warlord-Sinister",
+          "units": "One Veteran Princeps character, one Warlord-Sinister Psi-Titan",
+          "extraUnits": [
+            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
+            "Add one Veteran Princeps character to the formation: 2 U/p"
+          ],
+          "points": "2 F/p, 4 U/p, 3 T/p, 1 A/p"
         }
       ]
     },

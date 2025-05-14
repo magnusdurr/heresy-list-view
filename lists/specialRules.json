@@ -257,7 +257,13 @@
     {
       "title": "Steadfast",
       "description": [
-        "When broken or otherwise forced to take a withdrawal move, a unit with the 'Steadfast' special rule will only be destroyed if it ends its move within 5cm of the enemy rather than 15 cm. In addition, any formation consisting completely of units with this special rule only suffers a -1 modifier to rally if within 15 cm of an unbroken enemy formation instead of the usual 30 cm."
+        "When broken or otherwise forced to take a withdrawal move, a unit with the 'Steadfast' special rule is not destroyed if it ends its movement within 15 cm of the enemy."
+      ]
+    },
+    {
+      "title": "Ponderous",
+      "description": [
+        "Units with the Ponderous special rule may only make a single withdrawal move instead of two when becoming broken or failing to rally."
       ]
     },
     {
@@ -377,6 +383,12 @@
       "title": "Siege",
       "description": [
         "Weapons with the 'Siege' special rule special rule gains an additional +1 to hit and the 'Crippling' special rule against Strongholds and Immobile War Engines, and may use AP instead of AT against such targets."
+      ]
+    },
+    {
+      "title": "Siege Engine",
+      "description": [
+        "Units with the 'Siege Engine' special rule may not garrison."
       ]
     },
          {
@@ -718,24 +730,12 @@
         "Units with Daemonic focus may keep any or all summoned units that belong to the formation in play. Summoned units do not vanish back into the warp after the formation has attempted to rally. Daemonic Focus may not be used to keep summoned units in play if the formation is broken. Multiples of Daemonic Focus have no additional effect."
       ]
     },
+   
     {
-      "title": "Fickle Masters",
+      "title": "Ætheric Dominion (x)",
       "description": [
-        "In the Strategy Phase of each turn if the Chaos player rolls a 6, they are rewarded with 1 summoning point to add to the Lesser Daemon Pool. However, if a 1 is rolled, 1 summoning points is lost from the Lesser Daemon Pool. In the latter case, if no Lesser Daemon Pool has been purchased, or if it is empty, then there is no effect."
-      ]
-    },
-    {
-      "title": "Changer of Ways",
-      "description": [
-        "Formations containing Thousands Sons Daemon Princes and Scarab Occult Terminators may only contain units of INF and AV units with Walker, and must be held in the reserves at the start of the game. Such formations may only enter the Battlefield through a Warp Rift."
-      ]
-    },
-    
-    {
-      "title": "Daemon Engine (x)",
-      "description": [
-        "Formations where at least one unit has the Daemon Engine (x) special rule gain the bonus associated with that faction:",
-        "<ul><li>Chaos Undivided: Formation ignores the -1 modifier for enemy formations within 30cm when rallying.</li><li>Khorne: Formation gains +1 to activate when attempting to Engage.</li><li>Nurgle: Formation gains +1 to activate when attempting to Marshal.</li><li>Slaanesh: Formation gains +1 to activate when attempting to Double.</li><li>Tzeentch: Formation gains +1 to activate when attempting to Advance.</li></ul>"
+        "Formations where at least one unit has the Ætheric Dominion (x) special rule gain the bonus associated with that Dominion:",
+        "<ul><li>Encroaching Ruin: Formation ignores the -1 modifier for enemy formations within 30cm when rallying.</li><li>Heedless Slaughter: Formation gains +1 to activate when attempting to Engage.</li><li>Putrid Corruption: Formation gains +1 to activate when attempting to Marshal.</li><li>Rapturous Sensation: Formation gains +1 to activate when attempting to Double.</li><li>Malevolent Artifice: Formation gains +1 to activate when attempting to Advance.</li><li>Infernal Tempest: Formation gains +1 to activate when attempting to Sustain Fire.</li><li>Formless Distortion: Formation gains +1 to activate when attempting to Overwatch.</li><li>Ravenous Dissolution: Formation gains +1 to activate when attempting to March.</li></ul>"
       ]
     },
         
@@ -856,12 +856,7 @@
         "Necron formations receive a +1 bonus when attempting to perform a Marshal action, but suffer a -1 penalty when attempting to perform a March action."
       ]
     },
-    {
-      "title": "Ponderous",
-      "description": [
-        "Units with the Ponderous special rule may only make a single withdrawal move instead of two when becoming broken or failing to rally."
-      ]
-    },
+    
     {
       "title": "Phase Out",
       "description": [
@@ -993,7 +988,7 @@
       "title": "Offboard Support",
       "description": [
         "Calling for Offboard Support is a new action that a player can take after having completed an Advance, Overwatch, Marshal, or Sustain Fire action with an unbroken formation that contains a unit with the Vox-Caster special rule. This counts as retaining the initiative, and thus cannot be done if the initiative has already been retained once. The Offboard Support action automatically succeeds.",
-        "Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (depending on the type of Offboard Support) within Line of Sight of the unit with the Vox-Caster special rule to indicate where the Offboard Support asset will come down. The Offboard Support is then carried out according to its special rules before the start of the next friendly action, or before the end phase, depending on which comes first."
+        "Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (depending on the type of Offboard Support) within Line of Sight of the unit with the Vox-Caster special rule to indicate where the Offboard Support asset will come down/up. The Offboard Support is then carried out according to its special rules before the start of the next friendly action, or before the end phase, depending on which comes first."
       ]
     },
         {
@@ -1014,7 +1009,7 @@
       "title": "Dreadclaws",
       "description": [
         "A formation consisting completely of units of INF (without the 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Walker' special rules may be placed in Dreadclaws. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action. Place the Dreadclaw with its center within 15 cm of the unit with the 'Vox-Caster' special rule. Calling down a Dreadclaw counts as an additional action, so the player using it may not retain the initiative afterwards.",
-        "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 15 cm in any direction that does not place it in an enemy zone of control. Then place the Dreadclaw contents fully within 10 cm of the centre of the Dreadclaw."
+        "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 20 cm in any direction that does not place it in an enemy zone of control. Then place the Dreadclaw contents fully within 10 cm of the centre of the Dreadclaw."
       ]
     },
         {
@@ -1029,22 +1024,30 @@
         "A Palisade Drop Pod may only be used alongside other Drop Pods, and is added to a formation in Drop Pods or Dreadclaws during deployment. All models in the formation counts as being in Cover and gains the Invulnerable Save special rule for the purposes of Overwatch when they exit their Drop Pods."
       ]
     },
-        {
-      "title": "Termite Subterranean Assault",
+    {
+      "title": "Subterranean Assault",
       "description": [
-        "Any non-allied formation consisting completely of units of INF (without the 'Bulky', 'Jump Packs' or 'Mounted' special rules) and is between four and eight units large may be mounted in Termite Assault Drills. Add enough Termite Assault Drills to transport the entire formation, which must then be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule."
+        "A Subterranean Assault may only enter the battlefield through an Offboard Support action. Place a tunneling marker with its center within 5 cm of the unit with the 'Vox-Caster' special rule.",
+        "The tunneling marker may only be placed on the friendly half of the battlefield during the first turn but can be anywhere on the battlefield from the second turn onwards. Calling for a Subterranean Assault counts as an additional action, so the player using it may not retain the initiative afterwards.",
+        "Once the Subterranean Assault arrives at the battlefield, move the tunneling marker up to 15 cm in any direction that does not place it in an enemy zone of control or inside terrain that is impassable for AV and/or WE. Then place the unit(s) transporting the Subterranean Assault fully within 10 cm of the centre of the tunneling marker with the transported units inside. The surfacing of a Subterranean Assault transport is not considered to be movement for the purposes of Overwatch, and does not count as an action for the formation."
       ]
     },
-        {
-      "title": "Mole Subterranean Assault",
+    {
+      "title": "Ordinatus Aktaeus Subterranean Assault",
       "description": [
-        "Any non-allied formation consisting completely of units of INF (without the 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Walker' special rules and is no more than eight units large may be mounted in a Mole Burrowing Transport. The formation must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Mole model is only considered to be a marker, and can be removed after the units being transported in it has exited."
+        "An Ordinatus Aktaeus Burrowing Transport has the 'Assault Transport (8)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
       ]
     },
         {
       "title": "Hellbore Subterranean Assault",
       "description": [
-        "Any non-allied formation consisting completely of units of INF, and/or LV & AV with the 'Walker' special rules and is no more than twelve units large may be mounted in a Hellbore Burrowing Transport. These must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
+        "A Hellbore Burrowing Transport has the 'Assault Transport (12)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
+      ]
+    },
+    {
+      "title": "Ordinatus Aktaeus Subterranean Assault",
+      "description": [
+        "Any non-allied formation consisting completely of units of INF, and/or LV & AV with the 'Walker' special rules and is no more than eight units large may be mounted in an Ordinatus Aktaeus Burrowing Transport. These must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
       ]
     },
         {
@@ -1080,7 +1083,13 @@
      {
       "title": "Artillery Barrage",
       "description": [
-        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (Disrupt, Siege) attack."
+        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP3+/AT6+ (Disrupt, Siege) attack."
+      ]
+    },
+    {
+      "title": "Artillery Phospex Barrage",
+      "description": [
+        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP5+/AT6+ (Disrupt, IC) attack."
       ]
     },
     {

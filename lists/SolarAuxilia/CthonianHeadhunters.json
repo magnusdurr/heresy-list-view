@@ -26,6 +26,7 @@
         "Charonite Ogryns",
         "Aethon Heavy Sentinel",
         "Auxilia Rapier|Quad Launcher|Laser Destroyer|Mole Mortar",
+        "Auxilia Rhino",
         "Basilisk",
         "Medusa",
         "Termite Assault Drill",
@@ -138,7 +139,7 @@
           "units": "One Auxilia Legate Marshal character in an Auxilia Command Squad, four Auxilia Lasrifle Squads, and one Auxilia Flamer Squad",
           "extraUnits": [
             "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads (Free)",
-            "Add three Aurox: 1 U/p",
+            "Add three Auxilia Rhinos: 1 U/p",
             "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p, 2 U/p"
@@ -148,7 +149,7 @@
           "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
             "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads (Free)",
-            "Add three Aurox: 1 U/p",
+            "Add three Auxilia Rhinos: 1 U/p",
             "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p"

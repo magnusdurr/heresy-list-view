@@ -340,18 +340,142 @@
         ]
       },
       {
-        "name": "Legion Veteran Squad",
+        "name": "",
         "type": "INF",
         "speed": 15,
         "armour": 4,
-        "cc": 2,
-        "ff": 4,
+        "cc": 4,
+        "ff": 3,
         "weapons": [
-          "Bolters",
+          "Combi-Bolters",
           "Melta Gun"
         ],
         "specialRules": [
-          "Blitz"
+        ]
+      },
+      {
+        "name": "Legion Veteran Squad",
+        "type": "INF",
+        "variants": [
+          {
+            "name": "Magna",
+            "type": "INF",
+            "speed": 15,
+        "armour": 4,
+        "cc": 5,
+        "ff": 2,
+            "weapons": [
+          "Combi-Bolters",
+          "Combi-Melta"
+            ]
+          },
+          {
+            "name": "Assault",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 3,
+            "ff": 3,
+            "weapons": [
+              "Astartes Assault Shotguns",
+              "Flamer "
+            ]
+          },
+          {
+            "name": "Charnabal",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 2,
+            "ff": 5,
+            "weapons": [
+              "Charnabal Sabres",
+              "Bolt Pistols"
+            ]
+          },
+          {
+            "name": "Ignition",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 3,
+            "ff": 4,
+            "weapons": [
+              "Hand Flamers",
+              "Chainswords"
+            ]
+          },
+          {
+            "name": "Lightning",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 3,
+            "weapons": [
+              "Thunder Hammer",
+              "Lightning Claws"
+            ]
+          },
+          {
+            "name": "Graviton",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 5,
+            "weapons": [
+              "Graviton Pistols",
+              "Graviton Gun"
+            ]
+          },
+          {
+            "name": "Reaper",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 3,
+            "ff": 5,
+            "weapons": [
+              "Heavy Chainswords",
+              "Bolt Pistols"
+            ]
+          },
+          {
+            "name": "Nemesis",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 3,
+            "ff": 5,
+            "weapons": [
+              "Nemesis Bolters",
+              "Melta Bombs"
+            ]
+          },
+          {
+            "name": "Bolter",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 3,
+            "ff": 2,
+            "weapons": [
+              "Bolters",
+              "Heavy Bolter"
+            ]
+          },
+          {
+            "name": "Incinerator",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 3,
+            "ff": 4,
+            "weapons": [
+              "Volkite Serpenta",
+              "Volkite Charger"
+            ]
+          }
         ]
       },
       {
@@ -401,6 +525,7 @@
           "Vanguard"
         ]
       },
+
       {
         "name": "Locutarus Storm Squad",
         "type": "INF",
@@ -476,9 +601,9 @@
             "speed": 15,
             "armour": 4,
             "cc": 4,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
-              "Plasma Guns|2"
+              "Plasma Guns|3"
             ]
           },
           {
@@ -489,7 +614,7 @@
             "cc": 4,
             "ff": 3,
             "weapons": [
-              "Flamers |2"
+              "Flamers |3"
             ]
           },
           {
@@ -500,7 +625,7 @@
             "cc": 4,
             "ff": 2,
             "weapons": [
-              "Rotor Cannon|2"
+              "Rotor Cannon|3"
             ]
           },
           {
@@ -511,7 +636,7 @@
             "cc": 4,
             "ff": 5,
             "weapons": [
-              "Volkite Calvier|2"
+              "Volkite Calvier|3"
             ]
           },
           {
@@ -522,7 +647,7 @@
             "cc": 4,
             "ff": 5,
             "weapons": [
-              "Melta Guns |2"
+              "Melta Guns |3"
             ]
           },
           {
@@ -533,7 +658,7 @@
             "cc": 4,
             "ff": 5,
             "weapons": [
-              "Graviton Gun|2"
+              "Graviton Gun|3"
             ]
           }
         ]
@@ -617,7 +742,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 6,
+            "cc": 5,
             "ff": 4,
             "weapons": [
               "Missile Launcher|3"
@@ -628,7 +753,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 6,
+            "cc": 5,
             "ff": 4,
             "weapons": [
               "Plasma Cannon|3"
@@ -639,7 +764,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 6,
+            "cc": 5,
             "ff": 4,
             "weapons": [
               "Lascannon|3"
@@ -650,7 +775,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 6,
+            "cc": 5,
             "ff": 2,
             "weapons": [
               "Heavy Bolter|3"
@@ -661,7 +786,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 6,
+            "cc": 5,
             "ff": 4,
             "weapons": [
               "Multi-Melta|3"
@@ -672,7 +797,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 6,
+            "cc": 5,
             "ff": 4,
             "weapons": [
               "Autocannon|3"
@@ -683,7 +808,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 6,
+            "cc": 5,
             "ff": 4,
             "weapons": [
               "Volkite Culvertin|3"
@@ -694,7 +819,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 6,
+            "cc": 5,
             "ff": 3,
             "weapons": [
               "Heavy Flamer |3"
@@ -806,6 +931,28 @@
           }
         ],
         "specialRules": [
+        ]
+      },
+      {
+        "name": "Saturnine Terminator Squad",
+        "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "ff": 2,
+        "weapons": [
+          "Combi-Bolters",
+          "Combi-Melta",
+          "Power Weapons"
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Teleport",
+          "Thick Rear Armour",
+          "Vanguard",
+          "Walker",
+          "Nimble",
+          "Ion Shield (3+)"
         ]
       },
       {
@@ -1186,7 +1333,7 @@
         "speed": 15,
         "armour": 3,
         "cc": 5,
-        "ff": 4,
+        "ff": 5,
             "weapons": [
            "Aiolos Missile Launcher",
           "Hellfire Plasma Cannonade"
@@ -1658,9 +1805,9 @@
             "speed": 30,
             "armour": 5,
             "cc": 6,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
-              "Graviton Cannon",
+              "Graviton Imploder",
               "Lascannon|2"
             ]
           }

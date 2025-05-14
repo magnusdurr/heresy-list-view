@@ -4,33 +4,50 @@
     "specialRules": [
     ],
     "unit": [
-      {
-        "name": "Exalted Keeper of Secrets",
+        {
+        "name": "Cor'bax Utterblight, The Corruption of Hope, The Ever-hungry",
         "type": "WE",
         "speed": 20,
         "armour": 4,
         "cc": 3,
         "ff": 4,
         "weapons": [
-          "Slicing Shards",
-          "Lash of Torment"
+          "Noxious Maw"
         ],
         "specialRules": [
-          "Damage Capacity 4",
+          "Damage Capacity 3",
           "Reinforced Armour",
           "Invulnerable Save",
-          "Leader",
-          "Commander",
           "Inspiring",
           "Daemonic Focus",
-          "Warp Rift",
           "Walker",
-          "Augment Summoning (+D3)"
+          "Augment Summoning (+1)"
         ],
-        "crit": "The Exalted Greater Daemon is destroyed. All summoned daemons within 5cm are destroyed."
+        "crit": "The Greater Daemon is destroyed. Any summoned Daemon units within 5cm are destroyed on 5+"
       },
       {
-        "name": "Keeper of Secrets",
+        "name": "Ka’bandha, Skulking Terror, Skull Keeper",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 3,
+        "ff": 4,
+        "weapons": [
+          "Scythe of Hatred"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Invulnerable Save",
+          "Inspiring",
+          "Daemonic Focus",
+          "Walker",
+          "Augment Summoning (+1)"
+        ],
+        "crit": "The Greater Daemon is destroyed. Any summoned Daemon units within 5cm are destroyed on 5+"
+      },
+      {
+        "name": "Samus Unbound, The End and the Death",
         "type": "WE",
         "speed": 20,
         "armour": 4,
@@ -52,7 +69,71 @@
         "crit": "The Greater Daemon is destroyed. Any summoned Daemon units within 5cm are destroyed on 5+"
       },
       {
-        "name": "Herald of Slaanesh",
+        "name": "Arch-Daemon",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 3,
+        "ff": 4,
+        "weapons": [
+          "Slicing Shards",
+          "Lash of Torment"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Invulnerable Save",
+          "Inspiring",
+          "Daemonic Focus",
+          "Walker",
+          "Augment Summoning (+1)"
+        ],
+        "crit": "The Greater Daemon is destroyed. Any summoned Daemon units within 5cm are destroyed on 5+"
+      },
+      {
+        "name": "Daemon Sovereign",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 3,
+        "ff": 4,
+        "weapons": [
+          "Slicing Shards",
+          "Lash of Torment"
+        ],
+        "specialRules": [
+          "Damage Capacity 3",
+          "Reinforced Armour",
+          "Invulnerable Save",
+          "Inspiring",
+          "Daemonic Focus",
+          "Walker",
+          "Augment Summoning (+1)"
+        ],
+        "crit": "The Greater Daemon is destroyed. Any summoned Daemon units within 5cm are destroyed on 5+"Arch-Daemon
+      },
+      {
+        "name": "Daemon Hierarch",
+        "type": "INF",
+        "speed": 30,
+        "armour": 4,
+        "cc": 3,
+        "ff": 3,
+        "weapons": [
+          "Warp Bolt",
+          "Æther Blade"
+        ],
+        "specialRules": [
+          "Supreme Commander",
+          "Reinforced Armour",
+          "Jump Pack",
+          "Fearless",
+          "Daemonic Focus",
+          "Invulnerable Save"
+        ]
+      },
+      {
+        "name": "Daemon Harbinger",
         "type": "INF",
         "speed": 20,
         "armour": 4,
@@ -69,24 +150,7 @@
         ]
       },
       {
-        "name": "Herald of Slaanesh on Seeker Chariot",
-        "type": "LV",
-        "speed": 35,
-        "armour": 4,
-        "cc": 2,
-        "ff": 4,
-        "weapons": [
-          "Barbed Claws",
-          "Cacophonic Blast"
-        ],
-        "specialRules": [
-          "Daemonic Focus",
-          "Invulnerable Save",
-          "Augment Summoning (+1)"
-        ]
-      },
-      {
-        "name": "Daemonettes of Slaanesh",
+        "name": "Lesser Daemons",
         "type": "INF",
         "speed": 20,
         "armour": 4,
@@ -100,7 +164,7 @@
         ]
       },
       {
-        "name": "Fiends of Slaanesh",
+        "name": "Daemon Brutes",
         "type": "INF",
         "speed": 35,
         "armour": 5,
@@ -114,7 +178,7 @@
         ]
       },
       {
-        "name": "Seekers of Slaanesh",
+        "name": "Daemon Cavalry",
         "type": "INF",
         "speed": 35,
         "armour": 5,
@@ -130,7 +194,55 @@
         ]
       },
       {
-        "name": "Exalted Great Unclean One",
+        "name": "Daemon Beasts",
+        "type": "INF",
+        "speed": 30,
+        "armour": 5,
+        "cc": 3,
+        "weapons": [
+          "Claws"
+        ],
+        "specialRules": [
+          "Expendable",
+          "Invulnerable Save"
+        ]
+      },
+      {
+        "name": "Daemon Harriers",
+        "type": "INF",
+        "speed": 30,
+        "armour": 5,
+        "cc": 4,
+        "weapons": [
+          "Claws"
+        ],
+        "specialRules": [
+          "In Midnight Clad",
+          "Expendable",
+          "Jump Packs",
+          "Invulnerable Save"
+        ]
+      },
+      {
+        "name": "Greater Daemon Beast",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 3,
+        "ff": 5,
+        "weapons": [
+          "Harvester Cannon",
+          "Warpsword"
+        ],
+        "specialRules": [
+          "Daemonic Focus",
+          "Infiltrators",
+          "Walker",
+          "Invulnerable Save"
+        ]
+      }
+      {
+        "name": "Daemon Behemoth",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -512,55 +624,9 @@
           "Jump Packs",
           "Invulnerable Save"
         ]
-      },
-      {
-        "name": "Daemonic Beasts of Chaos Undivided",
-        "type": "INF",
-        "speed": 30,
-        "armour": 5,
-        "cc": 3,
-        "weapons": [
-          "Claws"
-        ],
-        "specialRules": [
-          "Expendable",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Furies of Chaos Undivided",
-        "type": "INF",
-        "speed": 30,
-        "armour": 5,
-        "cc": 4,
-        "weapons": [
-          "Claws"
-        ],
-        "specialRules": [
-          "In Midnight Clad",
-          "Expendable",
-          "Jump Packs",
-          "Invulnerable Save"
-        ]
-      },
-      {
-        "name": "Soul Grinder",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 3,
-        "ff": 5,
-        "weapons": [
-          "Harvester Cannon",
-          "Warpsword"
-        ],
-        "specialRules": [
-          "Daemonic Focus",
-          "Infiltrators",
-          "Walker",
-          "Invulnerable Save"
-        ]
       }
+      
+      
     ]
   }
 ]

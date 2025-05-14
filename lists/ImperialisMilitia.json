@@ -57,96 +57,15 @@
         ]
       },
       {
-        "name": "Force Commander Cadre - Legacy of the Great Crusade (Balanced, Loyalist allies only)",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
+        "name": "Ruinstorm Icon Bearer",
+        "type": "CH",
         "weapons": [
-          "Plasma Guns",
-          "Power Weapon"
         ],
         "specialRules": [
-          "Supreme Commander",
-          "Vox-Caster",
-          "Invulnerable Save",
-          "Inspiring"
+          "Leader"
         ]
       },
       {
-        "name": "Force Commander Cadre - Feral Warriors (Large CC formations)",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Plasma Guns",
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Vox-Caster",
-          "Invulnerable Save",
-          "Inspiring"
-        ]
-      },
-     {
-        "name": "Force Commander Cadre - Forge World Remnant (access to mechanicus)",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Plasma Guns",
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Vox-Caster",
-          "Invulnerable Save",
-          "Inspiring"
-        ]
-      },
-           {
-        "name": "Force Commander Cadre - Debased Rabble (Traitor, lots of levy, abhuman, traitor allies only)",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Plasma Guns",
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Vox-Caster",
-          "Invulnerable Save",
-          "Inspiring"
-        ]
-      },
-      {
-        "name": "Force Commander Cadre - Survivors of the Dark Age (lots of high tech)",
-        "type": "INF",
-        "speed": 15,
-        "armour": 5,
-        "cc": 4,
-        "ff": 5,
-        "weapons": [
-          "Plasma Guns",
-          "Power Weapon"
-        ],
-        "specialRules": [
-          "Supreme Commander",
-          "Vox-Caster",
-          "Invulnerable Save",
-          "Inspiring"
-        ]
-      },
-            {
         "name": "Militia Command Cadre",
         "type": "INF",
         "speed": 15,
@@ -264,7 +183,7 @@
       {
         "name": "Militia Cavalry Squadron",
         "type": "INF",
-        "speed": 15,
+        "speed": 20,
         "armour": 5,
         "cc": 3,
         "ff": 6,
@@ -274,7 +193,7 @@
         ],
         "specialRules": [
         "Mounted",
-        "Skirmishers",
+        "Evasive",
         "Infiltrators"
         ]
       },
@@ -290,63 +209,6 @@
         ],
         "specialRules": [
         "Bulky"
-        ]
-      },
-      
-      {
-        "name": "Rhino - Legacy of the Great Crusade",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Bolters"
-        ],
-        "specialRules": [
-          "Transport (2)"
-        ]
-      },
-      {
-        "name": "Land Raider Proteus",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Bolters"
-        ],
-        "specialRules": [
-          "Transport (2)"
-        ]
-      },
-      {
-        "name": "Termite Assault Drill - ",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Bolters"
-        ],
-        "specialRules": [
-          "Transport (2)"
-        ]
-      },
-            {
-        "name": "Triaros Armoured Conveyor - Forge World Remnant",
-        "type": "AV",
-        "speed": 30,
-        "armour": 5,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Bolters"
-        ],
-        "specialRules": [
-          "Transport (2)"
         ]
       },
       {
@@ -410,6 +272,20 @@
         ]
       },
       {
+        "name": "Land Transporter",
+        "type": "LV",
+        "speed": 30,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Heavy Stubber"
+        ],
+        "specialRules": [
+            "Transport (2)"
+        ]
+      },
+      {
         "name": "Sentinel",
         "type": "LV",
         "speed": 20,
@@ -424,247 +300,172 @@
           "Walker"
         ]
       },
-
       {
-        "name": "Termite Assault Drill",
+        "name": "Aurox",
         "type": "AV",
+        "variants": [
+          {
+            "name": "Bulwark",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Heavy Stubber"
+        ]
+          },
+          {
+            "name": "Hydra",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Hydra Autocannon"
+        ]
+          },
+          {
+            "name": "Dragon",
+        "type": "AV",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Multi-Melta"
+        ]
+          }
+        ],
+        "specialRules": [
+        ],
+        "notes": "The Aurox Bulwark has 'Transport (2)'"
+      },
+      {
+        "name": "Gorgon",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Twin Heavy Stubber|4|"
+        ],
+        "specialRules": [
+          "Damage Capacity (3)",
+          "Reinforced Armour",
+          "Walker",
+          "Heavy Transport (10)"
+        ],
+        "crit": "The Gorgon takes a point of damage. If this unit is destroyed while taking damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+      },
+      {
+        "name": "Ruinstorm Altar",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 5,
+        "ff": 6,
+        "weapons": [
+          "Arcane Technology"       
+        ],
+        "specialRules": [
+          "Damage Capacity (3)",
+          "Reinforced Armour",
+          "Inspiring",
+          "Invulnerable Save",
+          "Chaos Gate",
+          "Walker"
+        ],
+        "crit": "The unit is destroyed. All friendly formations within 10 cm suffers a Blast Marker."
+      },
+      {
+        "name": "Chaos Spawn",
+        "type": "LV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "weapons": [
+          "Horrific Mutations"
+        ],
+        "specialRules": [
+          "Inspiring",
+          "Fearless",
+          "Blitz",
+          "Nimble"
+        ]
+      },
+      {
+        "name": "Mutant Beasts",
+        "type": "LV",
+        "speed": 25,
+        "armour": 6,
+        "cc": 4,
+        "weapons": [
+          "Claws and Fangs"
+        ],
+        "specialRules": [
+          "Expendable",
+          "Blitz",
+          "Nimble"
+        ]
+      },
+      {
+        "name": "Imperial Altar",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 5,
+        "ff": 6,
+        "weapons": [
+          "Ragnarök Battle Cannon||FxF",
+          "Anvillus Defence Batteries|2"       
+        ],
+        "specialRules": [
+          "Damage Capacity (3)",
+          "Void Shield (1)",
+          "Reinforced Armour",
+          "Inspiring",
+          "Invulnerable Save",
+          "Walker"
+        ],
+        "crit": "The unit is destroyed. All friendly formations within 10 cm suffers a Blast Marker."
+      },
+      {
+        "name": "Assault Excavator",
+        "type": "WE",
+        "speed": 20,
+        "armour": 5,
+        "cc": 4,
+        "ff": 6,
+        "weapons": [
+          "Twin Heavy Stubber|2|FxF",
+          "Excavator Power Arms"
+        ],
+        "specialRules": [
+          "Damage Capacity (4)",
+          "Reinforced Armour",
+          "Blitz",
+          "Walker"
+        ],
+        "crit": "The unit is destroyed. All formations within 10 cm suffers a Blast Marker."
+      },
+      {
+        "name": "Haul Truck Cannon",
+        "type": "WE",
         "speed": 15,
         "armour": 5,
         "cc": 6,
         "ff": 6,
         "weapons": [
-          "Bolters"
+          "Twin Heavy Stubber|2|FxF",
+          "Planetary Defense Laser||FxF"
         ],
         "specialRules": [
-         "Transport 2"
-        ]
-      },
-      {
-        "name": "Krios - Forge World Remnants",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Battle Cannon",
-          "Heavy Bolter"
+          "Damage Capacity (4)"
         ],
-        "specialRules": [
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Leman Russ",
-        "type": "AV",
-        "variants": [
-          {
-            "name": "Battle Tank",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Battle Cannon",
-          "Heavy Bolter"
-        ]
-          },
-          {
-            "name": "Annihilator",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Twin Lascannon",
-          "Lascannon"
-        ]
-          },
-          {
-            "name": "Exterminator",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Twin Autocannon",
-          "Heavy Bolter"
-        ]
-          },
-          {
-            "name": "Executioner",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Plasma Destroyer",
-          "Lascannon"
-        ]
-          },
-          {
-            "name": "Demolisher",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Demolisher Cannon",
-          "Heavy Flamer "
-        ]
-          },
-          {
-            "name": "Thunderer",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Demolisher Cannon"
-        ]
-          },
-        {
-        "name": "Incinerator",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Volkite Demi-Culverin",
-          "Heavy Bolter"
-        ]
-      },
-       {
-       "name": "Vanquisher",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Vanquisher Cannon",
-          "Lascannon"
-            ]
-          }
-        ],
-        "specialRules": [
-          "Reinforced Armour"
-        ]
-      },
-      {
-        "name": "Malcador",
-        "type": "WE",
-        "variants": [
-          {
-        "name": "Assault Tank",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 2,
-        "weapons": [
-          "Battle Cannon||FwA",
-          "Demolisher Cannon||FwA",
-          "Heavy Bolter|2|FwA"
-        ]
-          },
-          {
-        "name": "Vanquisher",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 3,
-        "weapons": [
-          "Vanquisher Cannon||FwA",
-          "Autocannon|3|FwA"
-        ]
-          },
-          {
-        "name": "Annihilator",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Twin Lascannon",
-          "Lascannon|3|FwA"
-        ]
-          }
-        ],
-        "specialRules": [
-          "Damage Capacity 2",
-          "Reinforced Armour",
-          "Thick Rear Armour",
-          "Walker"
-        ],
-        "crit": "The Malcador is destroyed."
-      },
-       {
-        "name": "Gorgon Heavy Transporter",
-        "type": "WE",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Inferno Gun||FxF",
-          "Autocannon|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour",
-          "Walker"
-        ]
-      },
-       {
-        "name": "Baneblade Super-Heavy Tank",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Baneblade Battle Cannon",
-          "Autocannon",
-          "Demolisher Cannon||FxF",
-          "Lascannon|2|FxF",
-          "Heavy Bolter|3|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed."
-      },
-      {
-        "name": "Hellhammer Super-Heavy Tank",
-        "type": "WE",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 4,
-        "weapons": [
-          "Hellhammer Cannon",
-          "Autocannon",
-          "Demolisher Cannon||FxF",
-          "Lascannon|2|FxF",
-          "Heavy Bolter",
-          "Heavy Flamer|2|FxF"
-        ],
-        "specialRules": [
-          "Damage Capacity 3",
-          "Reinforced Armour"
-        ],
-        "crit": "The unit is destroyed. All units within 5cm suffers a hit on 6+."
+        "crit": "The unit is destroyed. All formations within 15 cm suffers a Blast Marker."
       }
     ]
   }

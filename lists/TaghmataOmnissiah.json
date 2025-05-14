@@ -571,7 +571,7 @@
           "Ponderous",
           "Steadfast"
         ],
-        "crit": "The Gorgon is Immobilized, and may not move for the rest of the game. 1D3 random units inside takes a hit. Any subsequent criticals destroys the Gorgon."
+        "crit": "The Gorgon takes a point of damage. If this unit is destroyed while taking damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       }
     ]
   }

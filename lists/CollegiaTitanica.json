@@ -111,7 +111,7 @@
               {
                 "name": "POINT DEFENSE",
                 "weapons": [
-                  "Hydra Autocannons|4",
+                  "Hydra Autocannon|4",
                   "Vanquisher Cannon||FxF"
                 ]
               }
@@ -189,9 +189,9 @@
                 "weapons": [
                  "2x Apocalypse Missile Launcher|0-1|FwA",
                  "2x Inferno Gun|0-1|FwA",
-                 "2x Vulcan Mega-Bolter|0-1|FwA",
+                 "2x Vulcan Mega-Bolter |0-1",
                  "2x Turbo-Laser Destructor|0-1|FwA",
-                 "2x Heavy Melta Cannon|0-1|FwA",
+                 "2x Heavy Melta Cannon|0-1",
                  "2x Plasma Blastgun|0-1|FwA"
                 ]
               },
@@ -259,12 +259,12 @@
               {
                 "name": "BATTLE WEAPONS",
                 "weapons": [
-                 "2x Apocalypse Missile Launcher|0-1|FwA",
-                 "2x Inferno Gun|0-1|FwA",
-                 "2x Vulcan Mega-Bolter|0-1|FwA",
-                 "2x Turbo-Laser Destructor|0-1|FwA",
-                 "2x Heavy Melta Cannon|0-1|FwA",
-                 "2x Plasma Blastgun|0-1|FwA"
+                 "2x Apocalypse Missile Launcher|0-1|FxF",
+                 "2x Inferno Gun|0-1|FxF",
+                 "2x Vulcan Mega-Bolter |0-1",
+                 "2x Turbo-Laser Destructor|0-1|FxF",
+                 "2x Heavy Melta Cannon |0-1",
+                 "2x Plasma Blastgun|0-1|FxF"
                 ]
               },
 
@@ -306,7 +306,7 @@
         "crit": "The Warmaster Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
       {
-        "name": "Warlord-Sinister Battle Titan",
+        "name": "Warlord-Sinister Psi-Titan",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -330,7 +330,7 @@
                  "Paired Apocalypse Missile Launchers|0-1|FxF",
                  "Paired Turbo-Laser Blasters|0-1|FxF",
                  "Paired Gatling Blasters|0-1|FxF",
-                 "Paired Vulcan Mega-Bolters|0-1|FxF"
+                 "Paired Vulcan Mega-Bolters|0-1"
                 ]
               }
             ]
@@ -383,6 +383,7 @@
           "Ponderous",
           "Steadfast",
           "Vanguard",
+          "Psyker",
           "Precience"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
@@ -413,7 +414,7 @@
                  "Paired Apocalypse Missile Launchers|0-1|FxF",
                  "Paired Turbo-Laser Blasters|0-1|FxF",
                  "Paired Gatling Blasters|0-1|FxF",
-                 "Paired Vulcan Mega-Bolters|0-1|FxF"
+                 "Paired Vulcan Mega-Bolters|0-1"
                 ]
               }
             ]
@@ -425,20 +426,24 @@
               {
                 "name": "BATTLE WEAPONS",
                 "weapons": [
-                  "Turbo-Laser Blaster|0-2|FwA",
-                  "Gatling Blaster|0-2|FwA"
+                  "Macro-Gatling Blaster|0-1|FwA",
+                  "Mori Quake Cannon|0-1|FwA",
+                  "Arioch Power Claw|0-1|"
                 ]
               },
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Heavy Melta Cannon|0-1|FwA"
+                  "Volkite Destructor|0-1|FwA",
+                  "Conversion Beam Extripator|0-1|FwA",
+                  "Graviton Ruinator|0-1|FwA"
                 ]
               },
               {
                 "name": "HEAVY SUPPORT WEAPONS",
                 "weapons": [
-                  "Vulcano Cannon|0-1|FwA"
+                  "Sunfury Plasma Annihilator|0-1|FwA",
+                  "Belicosa Vulcano Cannon|0-1|FwA"
                 ]
               }
             ]
@@ -507,7 +512,7 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Heavy Melta Cannon|0-1|FwA"
+                  "Heavy Melta Cannon|0-1"
                 ]
               },
               {
@@ -549,7 +554,7 @@
                 "name": "BATTLE WEAPONS",
                 "weapons": [
                   "Turbo-Laser Destructor|0-1|FxF",
-                  "Vulcan Mega-Bolter|0-1|FxF",
+                  "Vulcan Mega-Bolter |0-1",
                   "Apocalypse Missile Launcher|0-1|FxF"
                 ]
               },
@@ -558,7 +563,7 @@
                 "weapons": [
                   "Warp Missile|0-1|FxF",
                   "Volkite Eradicator|0-1|FxF",
-                  "Conversion Beam Dissolutor|0-1|FxF",
+                  "Conversion Beam Dissipator|0-1|FxF",
                   "Graviton Eradicator|0-1|FxF"
                 ]
               }
@@ -580,7 +585,7 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Heavy Melta Cannon|0-1|FwA"
+                  "Heavy Melta Cannon|0-1"
                 ]
               },
               {
@@ -629,7 +634,7 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Conversion Beam Dissipator|0-1|FxF"
+                  "Conversion Beam Dissolutor|0-1|FxF"
                 ]
               },
               {
@@ -680,7 +685,7 @@
               {
                 "name": "BATTLE WEAPONS",
                 "weapons": [
-          "Vulcan Mega-Bolter|0-1|FwA",
+          "Vulcan Mega-Bolter|0-1",
           "Inferno Gun|0-1|FwA",
           "Scout Shudder Missile Launcher|0-1|FwA",
           "Scout Swarmer Missile Launcher|0-1|FwA"
@@ -693,9 +698,9 @@
           "Natrix Shock Lance|0-1",
           "Plasma Blastgun|0-1|FwA",
           "Turbo-Laser|0-1|FwA",
-          "Incisor Melta Lance|0-1|FwA",
+          "Incisor Melta Lance|0-1",
           "Graviton Eradicator|0-1|FwA",
-          "Conversion Beam Dissolutor|0-1|FwA"
+          "Conversion Beam Dissipator|0-1|FwA"
                 ]
               }
             ]
