@@ -142,17 +142,75 @@
       "formations": [
         {
           "name": "Tactical Detachment",
-          "units": "One Lieutenant character, four Legion Tactical Squads",
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Legion Tactical Squad": 4
+          },
+          "upgrades": [
+            {
+              "options": [
+                {
+                  "name": "Replace the Lieutenant character with a Captain, Chaplain, or Librarian",
+                  "upgradePoints": 1
+                },
+                {
+                  "name": "or replace the Lieutenant with a Praetor (0-1 in the army)",
+                  "upgradePoints": 2
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "name": "Replace three Legion Tactical Squads with three Legion Veteran Squads (0-1 in the army)",
+                  "upgradePoints": 1
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "name": "Replace two Legion Tactical Squads with two Legion Support Squads",
+                  "upgradePoints": 1
+                },
+                {
+                  "name": "or two Legion Heavy Support Squads",
+                  "upgradePoints": 2
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "name": "Add two Legion Tactical Squads",
+                  "upgradePoints": 2
+                },
+                {
+                  "name": "or two Contemptor Dreadnoughts of any single configuration",
+                  "upgradePoints": 2
+                },
+                {
+                  "name": "or two Cataphractii Terminator Squads",
+                  "upgradePoints": 3
+                }
+              ]
+            }
+          ],
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Replace two Legion Tactical Squads with two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
             "Add two Legion Tactical Squads (2 U/p), two Legion Support Squads (2 U/p), two Contemptor Dreadnoughts of any single configuration (2 U/p), two Cataphractii Terminator Squads (3 U/p), or two Legion Heavy Support Squads (3 U/p)"
           ],
-          "points": "1 F/p"
+          "formationPoints": 1,
+          "points": "1 FP"
         },
         {
           "name": "Mechanized Tactical Detachment",
-          "units": "One Lieutenant character, four Legion Tactical Squads, two Rhinos",
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Legion Tactical Squad": 4,
+            "Rhino": 2
+          },
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
@@ -182,8 +240,8 @@
           "name": "Rapier Detachment",
           "units": "Four Legion Rapier Laser Destroyer",
           "extraUnits": [
-          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers: 1 U/p",
-          "Add up to two Contemptor Dreadnoughts of any configurations: 1 U/p each"
+            "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers: 1 U/p",
+            "Add up to two Contemptor Dreadnoughts of any configurations: 1 U/p each"
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -309,7 +367,7 @@
           "name": "Sabre Detachment",
           "units": "Three Sabre Strike Tanks of any configuration",
           "extraUnits": [
-          "Add up to three Sabre Strike Tanks of any configuration: 1 U/p each"
+            "Add up to three Sabre Strike Tanks of any configuration: 1 U/p each"
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -480,6 +538,28 @@
           "units": "Three Leman Russ of any configuration",
           "extraUnits": [
             "Add one Leman Russ of any configuration: 1 U/p"
+          ],
+          "points": "1 F/p, 1 A/p"
+        }
+      ]
+    },
+    {
+      "name": "Allies: Questoris Familia Lances",
+      "description": "",
+      "formations": [
+        {
+          "name": "Armiger Lance",
+          "units": "Three Armiger Knight Warglaives and/or Helverins",
+          "extraUnits": [
+          
+          ],
+         "points": "1 F/p, 1 A/p"
+        },
+        {
+          "name": "Questoris Lance",
+          "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
+          "extraUnits": [
+            "Add one Questoris Ironstorm Pod, Questoris Stormspear Pod, or Icarus Autocannon to each unit in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 A/p"
         }

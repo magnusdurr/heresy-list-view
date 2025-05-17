@@ -106,7 +106,7 @@
             $(this).addClass('active');
         });
 
-        $(document).on('click', 'a:not(.external,.page-link,.dropdown-toggle)', eaNav.linkHandler);
+        $(document).on('click', 'a:not(.external,.page-link,.dropdown-toggle,.local)', eaNav.linkHandler);
         $(window).on('popstate', eaNav.historyBackHandler);
 
         var url = eaNav.urlFromParams();

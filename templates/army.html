@@ -28,30 +28,39 @@
         <tr>
             <td>
                 <div class="row">
-                    <div class="col-9 col-lg-4">
+                    <div class="col-12 col-lg-4">
+                        <span class="badge badge-primary">{{appendOnNumber formationPoints ' FP'}}</span>
                         <span style="font-weight: 550">{{name}}</span><br>
+                        {{#each unitSpec}}
+                            {{#if @first}}
+                                {{numberAsText this true}} {{@key}}{{appendPlural this~}}
+                            {{else if @last}}
+                                and {{numberAsText this false}} {{@key}}{{appendPlural this}}
+                            {{else}}, {{numberAsText this false}} {{@key}}{{appendPlural this}}
+                            {{/if}}
+                        {{/each}}
+
                         {{units}}
                         {{#if notes}}
                         <br>
                         <small><b>Note:</b> {{{notes}}}</small>
                         {{/if}}
                     </div>
-                    <div class="col-3 order-lg-9" style="text-align: right">
-                        {{#if points}}{{appendOnNumber points ' points'}}{{/if}}
-                        {{#if pointsOptions}}
-                        {{#each pointsOptions}}{{this.name}} - {{appendOnNumber points ' points'}}{{#unless @last}}<br>{{/unless}}{{/each}}
-                        {{/if}}
-                    </div>
-                    <div class="col-12 col-lg-5">
+                    <div class="col-12 col-lg-8">
                         {{#if upgrades}}<span class="d-inline"><i>Upgrades</i></span>{{/if}}
                         {{#if upgrades}}
                         <ul style="padding-left: 1rem">
                             {{#each upgrades}}
-                            <li>{{this}}</li>
+                            <li>
+                                {{#each options}}
+                                <small><span class="badge badge-success">{{appendOnNumber this.upgradePoints ' UP'}}</span> {{this.name}}{{#unless @last}}<br>{{/unless}}</small>
+                                {{/each}}
+                            </li>
                             {{/each}}
                         </ul>
                         {{/if}}
 
+                        {{#unless upgrades}}
                         {{#if extraUnits}}<span class="d-inline"><i>Upgrades</i></span>{{/if}}
                         {{#if extraUnits}}
                         <ul style="padding-left: 1rem">
@@ -60,6 +69,7 @@
                             {{/each}}
                         </ul>
                         {{/if}}
+                        {{/unless}}
                     </div>
                 </div>
             </td>
@@ -71,13 +81,14 @@
 </div>
 {{/each}}
 
+<!--
 {{#with upgrades}}
 {{> card-with-margin}}
 <div class="card-header"><b>{{title}}</b><br>
     <small>{{description}}</small>
 </div>
 <div>
-    <table  class="table table-striped">
+    <table class="table table-striped">
         <tbody>
         {{#each items}}
         {{#upgrade this}}
@@ -131,3 +142,4 @@
 </div>
 </div>
 {{/with}}
+-->
