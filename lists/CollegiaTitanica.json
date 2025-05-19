@@ -93,7 +93,7 @@
           "Transport(10)"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Imperator Titan takes D3 points of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
+        "crit": "The Imperator Titan takes a point of damage and D3 Void Shields goes down. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
 
        {
@@ -150,7 +150,7 @@
           "Transport(10)"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmonger Titan takes D3 points of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
+        "crit": "The Warmonger Titan takes a point of damage and D3 Void Shields goes down. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
       {
         "name": "Lysander Fighter",
@@ -187,12 +187,12 @@
               {
                 "name": "BATTLE WEAPONS",
                 "weapons": [
-                 "2x Apocalypse Missile Launcher|0-1|FwA",
-                 "2x Inferno Gun|0-1|FwA",
-                 "2x Vulcan Mega-Bolter |0-1",
-                 "2x Turbo-Laser Destructor|0-1|FwA",
-                 "2x Heavy Melta Cannon|0-1",
-                 "2x Plasma Blastgun|0-1|FwA"
+                 "2x Shudder Missile Launcher|0-1|FxF",
+                 "2x Swarmer Missile Launcher|0-1|FxF",
+                 "2x Inferno Gun|0-1|FxF",
+                 "2x Vulcan Mega-Bolter|0-1",
+                 "2x Turbo-Laser|0-1|FxF",
+                 "2x Plasma Blastgun|0-1|FxF"
                 ]
               },
 
@@ -233,7 +233,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmaster Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
+        "crit": "The Warmaster Titan takes a point of damage and D3 Void Shields goes down. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
 
       {
@@ -241,7 +241,7 @@
         "type": "WE",
         "speed": 15,
         "armour": 4,
-        "cc": 4,
+        "cc": 5,
         "ff": 5,
         "weaponMounts": [
            {
@@ -259,11 +259,11 @@
               {
                 "name": "BATTLE WEAPONS",
                 "weapons": [
-                 "2x Apocalypse Missile Launcher|0-1|FxF",
+                 "2x Shudder Missile Launcher|0-1|FxF",
+                 "2x Swarmer Missile Launcher|0-1|FxF",
                  "2x Inferno Gun|0-1|FxF",
-                 "2x Vulcan Mega-Bolter |0-1",
-                 "2x Turbo-Laser Destructor|0-1|FxF",
-                 "2x Heavy Melta Cannon |0-1",
+                 "2x Vulcan Mega-Bolter|0-1",
+                 "2x Turbo-Laser|0-1|FxF",
                  "2x Plasma Blastgun|0-1|FxF"
                 ]
               },
@@ -303,14 +303,14 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmaster Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
+        "crit": "The Warmaster Titan takes a point of damage and D3 Void Shields goes down. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D6 Blast Markers (roll separately for each), while all other formations within 30 cm suffers one Blast Marker."
       },
       {
         "name": "Warlord-Sinister Psi-Titan",
         "type": "WE",
         "speed": 15,
         "armour": 4,
-        "cc": 4,
+        "cc": 3,
         "ff": 4,
         "weaponMounts": [
            {
@@ -330,7 +330,8 @@
                  "Paired Apocalypse Missile Launchers|0-1|FxF",
                  "Paired Turbo-Laser Blasters|0-1|FxF",
                  "Paired Gatling Blasters|0-1|FxF",
-                 "Paired Vulcan Mega-Bolters|0-1"
+                 "Paired Vulcan Mega-Bolters|0-1",
+                 "Paired Light Plasma Blastguns"
                 ]
               }
             ]
@@ -387,7 +388,7 @@
           "Precience"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warlord-Sinister Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D3 Blast Markers (roll separately for each), while all other formations within 15 cm suffers one Blast Marker."
+        "crit": "The Warlord-Sinister Titan takes a point of damage and a Void Shield goes down. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D3+1 Blast Markers (roll separately for each), while all other formations within 20 cm suffers one Blast Marker."
       },
       {
         "name": "Warlord Battle Titan",
@@ -414,7 +415,8 @@
                  "Paired Apocalypse Missile Launchers|0-1|FxF",
                  "Paired Turbo-Laser Blasters|0-1|FxF",
                  "Paired Gatling Blasters|0-1|FxF",
-                 "Paired Vulcan Mega-Bolters|0-1"
+                 "Paired Vulcan Mega-Bolters|0-1",
+                 "Paired Plasma Blastguns"
                 ]
               }
             ]
@@ -426,8 +428,8 @@
               {
                 "name": "BATTLE WEAPONS",
                 "weapons": [
-                  "Macro-Gatling Blaster|0-1|FwA",
-                  "Mori Quake Cannon|0-1|FwA",
+                  "Macro-Gatling Blaster|0-2|FwA",
+                  "Mori Quake Cannon|0-2|FwA",
                   "Arioch Power Claw|0-1|"
                 ]
               },
@@ -463,7 +465,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warlord Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D3 Blast Markers (roll separately for each), while all other formations within 15 cm suffers one Blast Marker."
+        "crit": "The Warlord Titan takes a point of damage and a Void Shield goes down. If this unit is destroyed by damage from a critical hit, formations in base contact suffers D3 Blast Markers (roll separately for each), while all other formations within 15 cm suffers one Blast Marker."
       },
       {
         "name": "Warbringer Nemesis Battle Titan",
@@ -512,7 +514,8 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Heavy Melta Cannon|0-1"
+                  "Heavy Melta Cannon|0-1",
+                  "Plasma Blastgun|0-1|FwA"
                 ]
               },
               {
@@ -535,7 +538,7 @@
           "Steadfast"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-       "crit": "The Warbringer Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
+       "crit": "The Warbringer Titan takes a point of damage and a Void Shield goes down. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
       },
 
       {
@@ -555,6 +558,7 @@
                 "weapons": [
                   "Turbo-Laser Destructor|0-1|FxF",
                   "Vulcan Mega-Bolter |0-1",
+                  "Plasma Blastgun|0-1|FxF",
                   "Apocalypse Missile Launcher|0-1|FxF"
                 ]
               },
@@ -585,7 +589,8 @@
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-                  "Heavy Melta Cannon|0-1"
+                  "Heavy Melta Cannon|0-1",
+                  "Plasma Destructor|0-1|FwA"
                 ]
               },
               {
@@ -610,7 +615,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Reaver Titan takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
+        "crit": "The Reaver Titan takes a point of damage and a Void Shield goes down. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
       },
  
   {
@@ -687,8 +692,8 @@
                 "weapons": [
           "Vulcan Mega-Bolter|0-1",
           "Inferno Gun|0-1|FwA",
-          "Scout Shudder Missile Launcher|0-1|FwA",
-          "Scout Swarmer Missile Launcher|0-1|FwA"
+          "Shudder Missile Launcher|0-1|FwA",
+          "Swarmer Missile Launcher|0-1|FwA"
                 ]
               },
               {
@@ -715,7 +720,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
-        "crit": "The Warhound takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Warhound takes a point of damage and a Void Shield goes down. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
       }
     ]
   }

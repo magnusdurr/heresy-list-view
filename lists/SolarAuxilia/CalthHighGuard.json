@@ -6,10 +6,9 @@
     "intro": "Calth High Guard (CCLVth CoH) follow the Ultramar Pattern Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
-  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule.",
+  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The 'And They Shall Know No Fear (ATSKNF)' special rule applies to all Legiones Astartes Allied Detachments.",
   "specialRules": [
-  "Army of Mankind",
-  "Tunnelers"
+  "Army of Mankind"
   ],
   "units": [
     {
@@ -18,13 +17,13 @@
         "Auxilia Legate Marshal",
         "Auxilia Captain",
         "Auxilia Adjutant",
-        "Auxilia Command Squad",
+        "Auxilia Command Squad|Calth",
         "Auxilia Lasrifle Squad",
         "Auxilia Flamer Squad",
         "Veletarii",
         "Charonite Ogryns",
-        "Aethon Heavy Sentinel|Laser|Flamer|Autocannon",
-        "Hermes Incursus Sentinel Squadron|Volkite|Flamer",
+        "Aethon Heavy Sentinel|Multi-Laser|Flamer|Lascannon",
+        "Hermes Veltaris Sentinel Squadron|Volkite|Flamer",
         "Hermes Light Sentinel Squadron|Laser|Grenarier",
         "Auxilia Rapier|Quad Launcher|Laser Destroyer|Mole Mortar",
         "Basilisk",
@@ -33,7 +32,7 @@
         "Leman Russ|Battle Tank|Demolisher|Vanquisher|Executioner|Annihilator|Exterminator|Incinerator",
         "Malcador|Assault Tank|Annihilator|Vanquisher",
         "Heavy Malcador|Infernus|Valdor",
-        "Auxilia Super-Heavy Tank|Baneblade|Hellhammer|Stormsword|Stormblade|Shadowsword"
+        "Auxilia Super-Heavy Tank|Baneblade|Hellhammer|Stormsword|Stormblade|Shadowsword|Stormhammer"
       ],
       "unitRules": [
       "Energetic",
@@ -44,7 +43,8 @@
       "Evasive",
       "Blitz",
       "Transport (x)",
-      "Siege"
+      "Siege",
+      "Siege Engine"
       ]
     },
     {
@@ -70,7 +70,7 @@
       "Deathstrike Warp Missile Attack",
       "Deathstrike Plasma Missile Attack",
       "Artillery Barrage Strike",
-      "Termite Subterranean Assault"
+      "Subterranean Assault"
       ]
     },
        {
@@ -243,6 +243,20 @@
           "points": "1 F/p, 1 U/p"
         },
         {
+          "name": "Auxilia Siege Artillery Battery",
+          "units": "Three Colossus Bombards",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, 1 U/p"
+        },
+        {
+          "name": "Auxilia Siege Tank Squadron",
+          "units": "Three Siege Leman Russ of any configuration",
+          "extraUnits": [
+          ],
+          "points": "1 F/p, 1 U/p"
+        },
+        {
           "name": "Heavy Malcador Squadron",
           "units": "Two Heavy Malcador Infernus, or two Heavy Malcador Valdor",
           "extraUnits": [
@@ -253,25 +267,19 @@
           "name": "Super-Heavy Tank Squadron",
           "units": "One Baneblade Super-Heavy Tank",
           "extraUnits": [
-          "Replace the Baneblade with a Hellhammer, Stormblade, or Stormsword (Free), or a Shadowsword (1 U/p)",
+          "Replace the Baneblade with a Hellhammer, Stormblade, or Stormsword (Free), or a Shadowsword or a Stormhammer (1 U/p)",
           "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
           ],
           "points": "1 F/p"
         },
-                {
+        {
           "name": "Auxilia Leman Russ Company",
           "units": "One Auxilia Adjutant character, eight Leman Russ of any configuration",
           "extraUnits": [
           ],
           "points": "2 F/p, 3 U/p"
-        },
-        {
-          "name": "Auxilia Artillery Company",
-          "units": "One Auxilia Adjutant character, eight Basilisk and/or Medusa",
-          "extraUnits": [
-          ],
-          "points": "2 F/p, 3 U/p"
         }
+        
       
       ]
     },

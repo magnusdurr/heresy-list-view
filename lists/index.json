@@ -4,7 +4,7 @@
       "section": "Legiones Astartes - Loyalist",
       "index": [
         {
-          "name": "Loyalist Legions",
+          "name": "",
           "abbreviation": "LegionesAstartes",
           "lists": [
             {
@@ -12,6 +12,12 @@
               "file": "Ultramarines",
               "status": "approved",
               "img": "images/Legions_Ultramarines.jpg"
+            },
+            {
+              "name": "Imperial Fists",
+              "file": "ImperialFists",
+              "status": "beta",
+              "img": "images/Legions_ImperialFists.JPG"
             }
           ]
         }
@@ -21,7 +27,7 @@
       "section": "Legiones Astartes - Traitor",
       "index": [
         {
-          "name": "Traitor Legions",
+          "name": "",
           "abbreviation": "LegionesAstartes",
           "lists": [
             {
@@ -29,6 +35,12 @@
               "file": "SonsofHorus",
               "status": "approved",
               "img": "images/Legions_SonsOfHorus.jpg"
+            },
+            {
+              "name": "Emperor's Children",
+              "file": "EmperorsChildren",
+              "status": "beta",
+              "img": "images/Legions_EmperorsChildren.jpg"
             }
           ]
         }
@@ -45,7 +57,7 @@
             {
               "name": "Saturnyne Rams (I-Xth CoH)",
               "file": "SaturnyneRams",
-              "status": "approved",
+              "status": "beta",
               "img": "images/Auxilia_SaturnyneRams.png"
             }
           ]
@@ -63,11 +75,11 @@
           ]
         },
         {
-          "name": "Calth High Guard (CCLVth CoH)",
+          "name": "Solar Auxilia",
           "abbreviation": "SolarAuxilia",
           "lists": [
             {
-              "name": "Calth High Guard",
+              "name": "Calth High Guard (CCLVth CoH)",
               "file": "CalthHighGuard",
               "status": "approved",
               "img": "images/Auxilia_CalthHighGuard.png"
@@ -83,10 +95,16 @@
           "name": "Imperialis Militia",
           "abbreviation": "Imperialis Militia",
           "lists": [
+              {
+              "name": "Aquila Asterius",
+              "file": "AquilaAsterius",
+              "status": "approved",
+              "img": "images/Militia_Imp_3.JPG"
+            },
             {
               "name": "Slaves to the Void",
               "file": "SlavestotheVoid",
-              "status": "approved",
+              "status": "beta",
               "img": "images/Militia_SlavesToTheVoid.jpg"
             }
           ]
@@ -104,31 +122,72 @@
               "name": "Phaeton Taghmata",
               "file": "PhaetonTaghmata",
               "status": "approved",
-              "img": "images/TaghmataOmnissah_Phaeton_2.jpg"
+              "img": "images/Taghmata_Phae_3.JPG"
             },
             {
-              "name": "Mechanicus",
-              "file": "legionesskitariimetalica",
-              "status": "approved",
-              "img": "images/AdeptusMechanicus_LegionesMetalica.jpg"
-            },
-            {
-              "name": "Questoris Familia",
-              "file": "questorismechanicus",
-              "status": "approved",
-              "img": "images/AdeptusMechanicus_Questoris.jpg"
+              "name": "Triplex Phall Taghmata",
+              "file": "PhaetonTaghmata",
+              "status": "beta",
+              "img": "images/Taghmata_TriplexPhall.JPG"
             }
           ]
         },
         {
-          "name": "Dark Mechanicus",
+          "name": "Skitarii",
+          "abbreviation": "Skitarii",
+          "lists": [
+            {
+              "name": "Synod of Mars",
+              "file": "legionesskitariimetalica",
+              "status": "beta",
+              "img": "images/Skitarii_Mars.jpg"
+            },
+            {
+              "name": "Ordo Reductor",
+              "file": "legionesskitariimetalica",
+              "status": "beta",
+              "img": "images/Skitarii_OrdoReductor.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Questoris",
+          "abbreviation": "Questoris",
+          "lists": [
+            {
+              "name": "House Orhlacc",
+              "file": "questorismechanicus",
+              "status": "beta",
+              "img": "images/Questoris_House_Orhlacc.JPG"
+            },
+            {
+              "name": "House Raven",
+              "file": "questorismechanicus",
+              "status": "beta",
+              "img": "images/Questoris_House_Raven.JPG"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Dark Mechanicus",
+      "index": [
+        {
+          "name": "",
           "abbreviation": "DM",
           "lists": [
             {
-              "name": "Questor Traitoris",
-              "file": "QT",
+              "name": "House Korvax",
+              "file": "HouseKorvax",
+              "status": "beta",
+              "img": "images/Questoris_House_Korvax_2.JPG"
+            },
+            {
+              "name": "Forge Urdesh",
+              "file": "ForgeUrdesh",
               "status": "approved",
-              "img": "images/DarkMech_QT.jpg"
+              "img": "images/DarkMechanicus_Urdesh.JPG"
             }
           ]
         }

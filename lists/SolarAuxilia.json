@@ -44,12 +44,43 @@
       {
         "name": "Auxilia Command Squad",
         "type": "INF",
+        "variants": [
+          {
+            "name": "Calth",
+        "type": "INF",
         "speed": 15,
         "armour": 5,
         "cc": 4,
         "ff": 5,
-        "weapons": [
-          "Plasma Guns"
+            "weapons": [
+              "Lasrifles",
+              "Plasma Gun"
+            ]
+          },
+          {
+            "name": "Saturnyne",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
+        "ff": 4,
+            "weapons": [
+              "Volkite Chargers"
+            ]
+          },
+          {
+            "name": "Cthonia",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 4,
+        "ff": 6,
+            "weapons": [
+              "Laspistols",
+              "Melta Gun",
+              "Chainswords"
+            ]
+          }
         ],
         "specialRules": [
         ]
@@ -76,6 +107,19 @@
         "ff": 5,
         "weapons": [
           "Lasrifles"
+        ],
+        "specialRules": [
+        ]
+      },
+      {
+        "name": "Auxilia Charger Squad",
+        "type": "INF",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Volkite Chargers"
         ],
         "specialRules": [
         ]
@@ -132,7 +176,8 @@
         ],
         "specialRules": [
         "Walker",
-        "Blitz"
+        "Blitz",
+        "Nimble"
         ]
       },
       {
@@ -217,10 +262,10 @@
         "type": "LV",
         "variants": [
           {
-            "name": "Laser",
+            "name": "Multi-Laser",
             "type": "LV",
             "speed": 20,
-            "armour": 5,
+            "armour": 6,
             "cc": 6,
              "ff": 5,
             "weapons": [
@@ -231,7 +276,7 @@
             "name": "Grenadier",
             "type": "LV",
             "speed": 20,
-            "armour": 5,
+            "armour": 6,
             "cc": 6,
              "ff": 5,
             "weapons": [
@@ -242,18 +287,19 @@
         "specialRules": [
           "Skirmisher",
           "Walker",
-          "Nimble"
+          "Nimble",
+          "Blitz"
         ]
       },
       {
-        "name": "Hermes Incursus Sentinel Squadron",
+        "name": "Hermes Veltaris Sentinel Squadron",
         "type": "LV",
         "variants": [
           {
             "name": "Volkite",
             "type": "LV",
             "speed": 15,
-            "armour": 4,
+            "armour": 5,
             "cc": 6,
              "ff": 4,
             "weapons": [
@@ -264,7 +310,7 @@
             "name": "Flamer",
             "type": "LV",
             "speed": 15,
-            "armour": 4,
+            "armour": 5,
             "cc": 6,
              "ff": 4,
             "weapons": [
@@ -283,7 +329,7 @@
         "type": "LV",
         "variants": [
           {
-            "name": "Laser",
+            "name": "Multi-Laser",
             "type": "LV",
         "speed": 15,
         "armour": 4,
@@ -291,7 +337,7 @@
         "ff": 4,
             "weapons": [
               "Multi-Laser",
-          "Missile Launcher|2"
+          "Aethon Missile Battery"
             ]
           },
           {
@@ -303,19 +349,7 @@
         "ff": 4,
             "weapons": [
               "Heavy Flamer ",
-          "Missile Launcher|2"
-            ]
-          },
-          {
-            "name": "Volkite",
-            "type": "LV",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-            "weapons": [
-              "Volkite Caliver",
-          "Missile Launcher|2"
+          "Aethon Missile Battery"
             ]
           },
           {
@@ -327,7 +361,31 @@
         "ff": 4,
             "weapons": [
               "Autocannon",
-          "Missile Launcher|2"
+          "Aethon Missile Battery"
+            ]
+          },
+          {
+            "name": "Volkite",
+            "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+            "weapons": [
+              "Volkite Calvier",
+          "Hunter-Killer Missile"
+            ]
+          },
+          {
+            "name": "Lascannon",
+            "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+            "weapons": [
+              "Lascannon",
+          "Hunter-Killer Missile"
             ]
           },
           {
@@ -339,7 +397,7 @@
         "ff": 5,
             "weapons": [
               "Melta Lance",
-          "Missile Launcher|2"
+          "Hunter-Killer Missile"
             ]
           }
 
@@ -353,30 +411,30 @@
         "name": "Basilisk",
         "type": "AV",
         "speed": 15,
-        "armour": 5,
+        "armour": 4,
         "cc": 6,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
           "Earthshaker Cannon",
           "Heavy Stubber"
         ],
         "specialRules": [
-        "Reinforced Armour"
+            "Siege Engine"
         ]
       },
       {
         "name": "Medusa",
         "type": "AV",
         "speed": 15,
-        "armour": 5,
+        "armour": 4,
         "cc": 6,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
           "Medusa Siege Gun",
           "Heavy Stubber"
         ],
         "specialRules": [
-         "Reinforced Armour"
+            "Siege Engine"
         ]
       },
       {
@@ -391,7 +449,106 @@
           "Heavy Stubber"
         ],
         "specialRules": [
-         "Reinforced Armour"
+            "Siege Engine",
+            "Walker"
+        ]
+      },
+      {
+        "name": "Aurox",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Transport",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Heavy Stubber"
+        ]
+          },
+          {
+            "name": "Melta",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Multi-Melta"
+        ]
+          },
+          {
+            "name": "Flamer",
+        "type": "AV",
+        "speed": 25,
+        "armour": 5,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Flamer "
+        ]
+          }
+
+        ],
+        "specialRules": [
+            "Transport (2)"
+        ]
+      },
+       {
+        "name": "Carnodon",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Ardeaq",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Volkite Culvertin|3"
+        ]
+          },
+          {
+            "name": "Supprix",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Twin Multi-Laser",
+          "Multi-Laser|2"
+        ]
+          },
+          {
+            "name": "Mezsor",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Twin Autocannon",
+          "Autocannon|2"
+        ]
+          },
+          {
+       "name": "Gilentex",
+        "type": "AV",
+        "speed": 25,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Twin Lascannon",
+          "Heavy Bolter|2"
+        ]
+          }
+        ],
+        "specialRules": [
         ]
       },
       {
@@ -420,7 +577,7 @@
           "Bolters"
         ],
         "specialRules": [
-         "Assault Transport (2)",
+         "Transport (2)",
          "Subterranean Assault",
          "Walker"
         ]
@@ -483,32 +640,10 @@
         "speed": 20,
         "armour": 4,
         "cc": 6,
-        "ff": 4,
+        "ff": 3,
         "weapons": [
           "Demolisher Cannon",
-          "Heavy Flamer "
-        ]
-          },
-          {
-            "name": "Destroyer",
-        "type": "AV",
-        "speed": 15,
-        "armour": 4,
-        "cc": 6,
-        "ff": 6,
-        "weapons": [
-          "Magna Laser Destroyer"
-        ]
-          },
-          {
-            "name": "Thunderer",
-        "type": "AV",
-        "speed": 25,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Demolisher Cannon"
+          "Heavy Bolter"
         ]
           },
         {
@@ -517,10 +652,10 @@
         "speed": 20,
         "armour": 4,
         "cc": 6,
-        "ff": 3,
+        "ff": 5,
         "weapons": [
           "Volkite Demi-Culverin",
-          "Heavy Bolter"
+          "Lascannon"
         ]
       },
        {
@@ -541,11 +676,43 @@
         ]
       },
       {
+        "name": "Siege Leman Russ",
+        "type": "AV",
+        "variants": [
+          {
+            "name": "Thunderer",
+        "type": "AV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Demolisher Cannon"
+        ]
+          },
+          {
+            "name": "Destroyer",
+        "type": "AV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Magna Laser Destroyer"
+        ]
+          }
+        ],
+        "specialRules": [
+          "Reinforced Armour",
+          "Walker"
+        ]
+      },
+      {
         "name": "Malcador",
         "type": "WE",
         "variants": [
           {
-        "name": "Assault Tank",
+        "name": "Defender",
         "type": "WE",
         "speed": 15,
         "armour": 4,
@@ -638,7 +805,7 @@
           "Damage Capacity (2)",
           "Reinforced Armour"
         ],
-        "crit": "The unit is destroyed, all formations within 5 cm suffers a Blast Marker."
+        "crit": "The unit is destroyed, all formations within 10 cm suffers a Blast Marker."
       },
       {
         "name": "Dracosan",
@@ -692,10 +859,10 @@
         "ff": 4,
         "weapons": [
           "Baneblade Battle Cannon",
-          "Autocannon",
+          "Autocannon|3|FxF",
           "Demolisher Cannon||FxF",
           "Lascannon|2|FxF",
-          "Heavy Bolter|3|FxF"
+          "Twin Heavy Bolter||FxF"
         ]
           },
           {
@@ -707,11 +874,11 @@
         "ff": 4,
         "weapons": [
           "Hellhammer Cannon",
-          "Autocannon",
+          "Autocannon||FwA",
           "Demolisher Cannon||FxF",
           "Lascannon|2|FxF",
-          "Heavy Bolter",
-          "Heavy Flamer|2|FxF"
+          "Twin Heavy Bolter||FxF",
+          "Heavy Flamer |2"
         ]
           },
           {
@@ -723,7 +890,8 @@
         "ff": 5,
         "weapons": [
           "Vulcano Cannon||FxF",
-          "Heavy Bolter|3|FxF",
+          "Twin Heavy Bolter||FxF",
+          "Autocannon|2|FxF",
           "Lascannon|2|FxF"
         ]
           },
@@ -735,8 +903,9 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Heavy Plasma Blastgun||FxF",
-          "Heavy Bolter|3|FxF",
+          "Plasma Destructor||FxF",
+          "Twin Heavy Bolter||FxF",
+          "Autocannon|2|FxF",
           "Lascannon|2|FxF"
         ]
           },
@@ -749,7 +918,8 @@
         "ff": 4,
         "weapons": [
           "Siege Cannon||FxF",
-          "Heavy Bolter|3|FxF",
+          "Heavy Flamer |2|FxF",
+          "Twin Heavy Bolter||FxF",
           "Lascannon|2|FxF"
         ]
           },
@@ -762,9 +932,9 @@
         "ff": 3,
         "weapons": [
           "Stormhammer Cannon",
-          "Twin Battle Cannon||FxF",
-          "Multi-Laser|3|FxF",
-          "Lascannon|3|FxF"
+          "Twin Ragnarok Battle Cannon||FxF",
+          "Twin Multi-Laser|3|FxF",
+          "Autocannon||FxF"
         ]
           }
         ],

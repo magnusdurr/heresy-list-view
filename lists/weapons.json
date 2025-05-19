@@ -266,7 +266,7 @@
       ]
     },
                {
-      "name": "Hydra Autocannon",
+      "name": "Wyvern Twin Autocannon",
       "modes": [
         {
           "firepower": "AP5+/AT6+/AA5+",
@@ -537,10 +537,19 @@
       ]
     },
         {
-      "name": "Ragnarök Battle Cannon", 	 	
+      "name": "Ragnarok Battle Cannon", 	 	
       "modes": [
         {
           "firepower": "AP4+/AT4+",
+          "range": 60
+        }
+      ]
+    },
+    {
+      "name": "Twin Ragnarok Battle Cannon", 	 	
+      "modes": [
+        {
+          "firepower": "AP3+/AT3+",
           "range": 60
         }
       ]
@@ -555,20 +564,72 @@
       ]
     },
     {
+      "name": "Thunderblast Cannon",
+      "modes": [
+        {
+          "firepower": "AP2+/AT6+",
+          "range": 60,
+          "specialRules": [
+          "Disrupt",
+          "Siege"
+           ]
+        }
+      ]
+    },
+     {
+      "name": "Kalliope Heavy Mortar",
+      "modes": [
+        {
+          "firepower": "1BP",
+          "range": 30,
+          "specialRules": [
+          "Ind",
+          "IC"
+           ]
+        }
+      ]
+    },
+    {
+      "name": "Howitzer Cannon",
+      "modes": [
+        {
+          "firepower": "1BP",
+          "range": 45,
+          "specialRules": [
+          "Ind"
+           ]
+        }
+      ]
+    },
+    {
       "name": "Earthshaker Cannon",
       "modes": [
         {
           "firepower": "AP4+/AT5+",
           "range": 90,
           "specialRules": [
+              "Siege"
           ]
         },
         {
           "firepower": "1BP",
+          "join": "or",
           "range": 60,
           "specialRules": [
           "Ind"
            ]
+        }
+      ]
+    },
+    {
+      "name": "Earthshaker Cannon ",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 90,
+          "specialRules": [
+              "Siege"
+          ]
         }
       ]
     },
@@ -576,13 +637,15 @@
       "name": "Twin Earthshaker Cannon",
       "modes": [
         {
-          "firepower": "AP3+/AT4+",
+          "firepower": "AP3+/AT5+",
           "range": 90,
           "specialRules": [
+              "Siege"
           ]
         },
         {
           "firepower": "2BP",
+          "join": "or",
           "range": 60,
           "specialRules": [
           "Ind"
@@ -590,12 +653,24 @@
         }
       ]
     },
+    {
+      "name": "Twin Earthshaker Cannon ",
+      "modes": [
+        {
+          "firepower": "AP3+/AT5+",
+          "range": 90,
+          "specialRules": [
+              "Siege"
+          ]
+        }
+      ]
+    },
         {
       "name": "Medusa Siege Gun",
       "modes": [
         {
-          "firepower": "AP4+/AT6+",
-          "range": 45,
+          "firepower": "AP3+/AT5+",
+          "range": 60,
           "specialRules": [
               "IC",
               "Siege"
@@ -603,7 +678,8 @@
         },
         {
           "firepower": "1BP",
-          "range": 30,
+          "join": "or",
+          "range": 45,
           "specialRules": [
               "Ind",
               "IC",
@@ -613,15 +689,29 @@
       ]
     },
     {
+      "name": "Medusa Siege Gun ",
+      "modes": [
+        {
+          "firepower": "AP3+/AT5+",
+          "range": 45,
+          "specialRules": [
+              "IC",
+              "Siege"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Colossus Siege Mortar",
       "modes": [
         {
-          "firepower": "3BP",
-          "range": 30,
+          "firepower": "2BP",
+          "range": 45,
           "specialRules": [
               "Ind",
               "IC",
-              "Siege"
+              "Siege",
+              "Slow"
            ]
         }
       ]
@@ -676,7 +766,7 @@
       "modes": [
         {
           "firepower": "AP3+/AT3+",
-          "range": 75
+          "range": 60
         }
       ]
     },
@@ -685,7 +775,7 @@
             "modes": [
                 {
                     "firepower": "AP3+/AT4+",
-                    "range": 60,
+                    "range": 45,
                     "specialRules": [
                         "IC",
                         "Siege"
@@ -711,6 +801,15 @@
       "modes": [
         {
           "firepower": "AP5+/AT3+",
+          "range": 75
+        }
+      ]
+    },
+     {
+      "name": "Twin Vanquisher Cannon",
+      "modes": [
+        {
+          "firepower": "AP5+/AT2+",
           "range": 75
         }
       ]
@@ -878,6 +977,15 @@
     },
     {
       "name": "Autoguns",
+      "modes": [
+        {
+          "firepower": "AP6+",
+          "range": 15
+        }
+      ]
+    },
+    {
+      "name": "Autorifles",
       "modes": [
         {
           "firepower": "AP6+",
@@ -1057,6 +1165,13 @@
           "specialRules": [
             "Disrupt"
           ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "Disrupt"
+          ]
         }
       ]
     },
@@ -1175,6 +1290,15 @@
         }
       ]
     },
+    {
+      "name": "Olympia Bolt Cannon",
+      "modes": [
+        {
+          "firepower": "AP3+",
+          "range": 30
+        }
+      ]
+    },
 
         {
       "name": "Heavy Bolter",
@@ -1227,8 +1351,8 @@
       "name": "Castigator Cannon",
       "modes": [
         {
-          "firepower": "3x AP3+/AT5+",
-          "range": 45,
+          "firepower": "2x AP3+/AT5+",
+          "range": 30,
           "specialRules": [
           ]
         },
@@ -1237,6 +1361,24 @@
           "join": "and",
           "specialRules": [
            "EA(+1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Twin Castigator Cannon",
+      "modes": [
+        {
+          "firepower": "3x AP3+/AT5+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "EA(+2)"
           ]
         }
       ]
@@ -1261,7 +1403,7 @@
       ]
     },
     {
-      "name": "Vulcan Mega-Bolter",
+      "name": "Vulcan Mega-Bolter ",
       "modes": [
         {
           "firepower": "4x AP3+/AT5+",
@@ -1298,7 +1440,7 @@
         }
       ]
     },
-                {
+    {
       "name": "Paired Vulcan Mega-Bolters",
       "modes": [
         {
@@ -1350,6 +1492,19 @@
         }
       ]
     },
+     {
+      "name": "Flamer",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 15,
+          "specialRules": [
+            "IC",
+            "Siege"
+          ]
+        }
+      ]
+    },
             {
       "name": "Flamers",
       "modes": [
@@ -1358,6 +1513,27 @@
           "range": 15,
           "specialRules": [
             "IC",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flamer ",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 15,
+          "specialRules": [
+            "IC",
+            "Siege"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC",
             "Siege"
           ]
         }
@@ -1465,6 +1641,27 @@
         }
       ]
     },
+    {
+      "name": "Flamestorm Cannon ",
+      "modes": [
+        {
+          "firepower": "AP3+",
+          "range": 15,
+          "specialRules": [
+            "IC",
+            "Siege"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC",
+            "Siege"
+          ]
+        }
+      ]
+    },
      {
       "name": "Cerastus Flame Cannon",
       "modes": [
@@ -1508,7 +1705,7 @@
       "name": "2x Inferno Gun",
       "modes": [
         {
-          "firepower": "3BP",
+          "firepower": "6BP",
           "range": 30,
           "specialRules": [
             "IC",
@@ -1613,6 +1810,17 @@
         }
       ]
     },
+    {
+      "name": "2x Turbo-Laser",
+      "modes": [
+        {
+          "firepower": "6x AP5+/AT3+",
+          "range": 60,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
      {
       "name": "Turbo-Laser Destructor",
       "modes": [
@@ -1710,6 +1918,15 @@
         {
           "firepower": "AP6+/AT6+",
           "range": 60
+        }
+      ]
+    },
+    {
+      "name": "Aethon Missile Battery",
+      "modes": [
+        {
+          "firepower": "2x AP6+/AT6+",
+          "range": 45
         }
       ]
     },
@@ -1898,7 +2115,7 @@
       ]
     },
         {
-      "name": "Scout Shudder Missile Launcher",
+      "name": "Shudder Missile Launcher",
       "modes": [
         {
           "firepower": "3BP",
@@ -1908,11 +2125,35 @@
         }
       ]
     },
+    {
+      "name": "2x Shudder Missile Launcher",
+      "modes": [
+        {
+          "firepower": "6BP",
+          "range": 45,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
             {
-      "name": "Scout Swarmer Missile Launcher",
+      "name": "Swarmer Missile Launcher",
       "modes": [
         {
           "firepower": "3BP",
+          "range": 60,
+          "specialRules": [
+          "Shield Disruptor",
+          "Titan Hunter"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2x Swarmer Missile Launcher",
+      "modes": [
+        {
+          "firepower": "6BP",
           "range": 60,
           "specialRules": [
           "Shield Disruptor",
@@ -1927,7 +2168,6 @@
         {
           "firepower": "Assault Weapon",
           "specialRules": [
-          "FS",
           "Self-Destruct",
           "MW"
           ]
@@ -1941,7 +2181,6 @@
           "firepower": "Assault Weapon",
           "specialRules": [
           "EA(+1)",
-          "FS",
           "Self-Destruct",
           "IC",
           "Siege"
@@ -2148,6 +2387,17 @@
         {
           "firepower": "AP4+",
           "range": 60,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hunter-Killer Missile",
+      "modes": [
+        {
+          "firepower": "AT5+",
+          "range": 45,
           "specialRules": [
           ]
         }
@@ -2541,28 +2791,6 @@
       ]
     },
     {
-      "name": "Anfernati Melta Cannon",
-      "modes": [
-        {
-          "firepower": "AP4+/AT2+",
-          "range": 45,
-          "specialRules": [
-           "MW",
-           "TK(D3)",
-           "IC"
-          ]
-        },
-        {
-          "firepower": "Small Arms",
-          "join": "and",
-          "specialRules": [
-           "MW",
-           "TK(1)"
-          ]
-        }
-      ]
-    },
-          {
       "name": "2x Heavy Melta Cannon",
       "modes": [
         {
@@ -2580,6 +2808,28 @@
           "join": "and",
           "specialRules": [
            "EA(+1)",
+           "MW",
+           "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anfernati Melta Cannon",
+      "modes": [
+        {
+          "firepower": "AP4+/AT2+",
+          "range": 45,
+          "specialRules": [
+           "MW",
+           "TK(D3)",
+           "IC"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
            "MW",
            "TK(1)"
           ]
@@ -2614,8 +2864,8 @@
       "name": "Hermes Grenade Launcher",
       "modes": [
         {
-          "firepower": "AP4+/AT5+",
-          "range": 15,
+          "firepower": "AP6+/AT6+",
+          "range": 45,
           "specialRules": [
           ]
         }
@@ -2684,8 +2934,8 @@
       "name": "Magna Laser Destroyer",
       "modes": [
         {
-          "firepower": "2x AT5+",
-          "range": 60,
+          "firepower": "AT4+",
+          "range": 75,
           "specialRules": [
           "Shield Disruptor",
           "Crippling"
@@ -2750,7 +3000,7 @@
       "name": "Plasma Pistols",
       "modes": [
         {
-          "firepower": "AP6+/AT6+",
+          "firepower": "2x AP6+/AT6+",
           "range": 15,
           "specialRules": [
             "Energetic"
@@ -2775,7 +3025,7 @@
       "name": "Plasma Guns",
       "modes": [
         {
-          "firepower": "AP6+/AT6+",
+          "firepower": "4x AP6+/AT6+",
           "range": 30,
           "specialRules": [
             "Energetic"
@@ -2811,8 +3061,8 @@
       "name": "Plasma Cannon",
       "modes": [
         {
-          "firepower": "AP6+/AT5+",
-          "range": 45,
+          "firepower": "2x AP6+/AT6+",
+          "range": 30,
           "specialRules": [
             "Energetic"
           ]
@@ -2836,8 +3086,8 @@
       "name": "Dreadnought Plasma Cannon",
       "modes": [
         {
-          "firepower": "AP5+/AT5+",
-          "range": 45,
+          "firepower": "3x AP6+/AT6+",
+          "range": 30,
           "specialRules": [
             "Energetic"
           ]
@@ -2848,8 +3098,8 @@
       "name": "Hellfire Plasma Cannonade",
       "modes": [
         {
-          "firepower": "AP6+/AT5+",
-          "range": 45,
+          "firepower": "2x AP6+/AT5+",
+          "range": 30,
           "specialRules": [
             "Energetic"
           ]
@@ -2860,7 +3110,7 @@
       "name": "Omega Plasma Array",
       "modes": [
         {
-          "firepower": "AP5+/AT4+",
+          "firepower": "2x AP6+/AT5+",
           "range": 45,
           "specialRules": [
             "Energetic"
@@ -2872,7 +3122,7 @@
       "name": "Plasma Destroyer",
       "modes": [
         {
-          "firepower": "AP5+/AT3+",
+          "firepower": "2x AP5+/AT5+",
           "range": 45,
           "specialRules": [
             "Energetic"
@@ -2882,10 +3132,38 @@
     },
 
          {
-      "name": "Scout Plasma Blastgun",
+      "name": "Plasma Blastgun",
       "modes": [
         {
           "firepower": "2x AP5+/AT3+",
+          "range": 45,
+          "specialRules": [
+            "MW",
+            "Energetic",
+            "Slow"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2x Plasma Blastgun",
+      "modes": [
+        {
+          "firepower": "4x AP5+/AT3+",
+          "range": 45,
+          "specialRules": [
+            "MW",
+            "Energetic",
+            "Slow"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paired Plasma Blastguns",
+      "modes": [
+        {
+          "firepower": "4x AP5+/AT3+",
           "range": 45,
           "specialRules": [
             "MW",
@@ -2896,10 +3174,24 @@
       ]
     },
      {
-      "name": "Plasma Blastgun",
+      "name": "Plasma Destructor",
       "modes": [
         {
-          "firepower": "2x AP5+/AT3+",
+          "firepower": "3x AP5+/AT3+",
+          "range": 60,
+          "specialRules": [
+            "MW",
+            "Energetic",
+            "Slow"
+          ]
+        }
+      ]
+    },
+      {
+      "name": "2x Plasma Destructor",
+      "modes": [
+        {
+          "firepower": "6x AP5+/AT3+",
           "range": 60,
           "specialRules": [
             "MW",
@@ -2910,48 +3202,76 @@
       ]
     },
          {
-      "name": "Heavy Plasma Blastgun",
+      "name": "Paired Plasma Destructors",
       "modes": [
         {
-          "firepower": "2x AP5+/AT3+",
+          "firepower": "6x AP5+/AT3+",
           "range": 60,
           "specialRules": [
             "MW",
+            "Energetic",
+            "Slow"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plasma Destructor",
+      "modes": [
+        {
+          "firepower": "3x AP5+/AT3+",
+          "range": 60,
+          "specialRules": [
+            "MW",
+            "Energetic",
+            "Slow"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sunfury Plasma Annihilator",
+      "modes": [
+        {
+          "firepower": "5x AP5+/AT3+",
+          "range": 75,
+          "specialRules": [
+            "MW",
+            "Slow",
             "Energetic"
           ]
         }
       ]
     },
-
          {
-      "name": "2x Plasma Blastgun",
-      "modes": [
-        {
-          "firepower": "2x AP5+/AT3+",
-          "range": 60,
-          "specialRules": [
-            "MW",
-            "Energetic",
-            "Slow"
-          ]
-        }
-      ]
-    },
-         {
-      "name": "Paired Plasma Blastguns",
+      "name": "Suzerain Plasma Destructor",
       "modes": [
         {
           "firepower": "4x AP5+/AT3+",
-          "range": 60,
+          "range": 90,
           "specialRules": [
             "MW",
-            "Energetic",
-            "Slow"
+            "Slow",
+            "Energetic"
           ]
         }
       ]
     },
              {
+      "name": "Imperator Plasma Annihilator",
+      "modes": [
+        {
+          "firepower": "5x AP5+/AT3+",
+          "range": 90,
+          "specialRules": [
+            "MW",
+            "Slow",
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Accelerator Cannon",
       "modes": [
         {
@@ -3087,48 +3407,7 @@
         }
       ]
     },
-             {
-      "name": "Sunfury Plasma Annihilator",
-      "modes": [
-        {
-          "firepower": "5x AP5+/AT3+",
-          "range": 75,
-          "specialRules": [
-            "MW",
-            "Slow",
-            "Energetic"
-          ]
-        }
-      ]
-    },
-         {
-      "name": "Suzerain Plasma Destructor",
-      "modes": [
-        {
-          "firepower": "4x AP5+/AT3+",
-          "range": 90,
-          "specialRules": [
-            "MW",
-            "Slow",
-            "Energetic"
-          ]
-        }
-      ]
-    },
-             {
-      "name": "Imperator Plasma Annihilator",
-      "modes": [
-        {
-          "firepower": "5x AP5+/AT3+",
-          "range": 90,
-          "specialRules": [
-            "MW",
-            "Slow",
-            "Energetic"
-          ]
-        }
-      ]
-    },
+             
 
     {
       "name": "Quad Launcher",
@@ -3549,7 +3828,6 @@
           "firepower": "Small Arms",
           "specialRules": [
           "IC",
-           "Crippling",
            "Shield Disruptor"
           ]
         }
@@ -3567,6 +3845,14 @@
            "Crippling",
            "Shield Disruptor"
           ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC",
+           "Shield Disruptor"
+          ]
         }
       ]
     },
@@ -3580,6 +3866,14 @@
           "IC",
            "Disrupt",
            "Crippling",
+           "Shield Disruptor"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC",
            "Shield Disruptor"
           ]
         }
@@ -3597,6 +3891,14 @@
            "Crippling",
            "Shield Disruptor"
           ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC",
+           "Shield Disruptor"
+          ]
         }
       ]
     },
@@ -3610,6 +3912,14 @@
           "IC",
            "Disrupt",
            "Crippling",
+           "Shield Disruptor"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+           "IC",
            "Shield Disruptor"
           ]
         }
@@ -4236,6 +4546,24 @@
       ]
     },
     {
+      "name": "Gravis Power Fists",
+      "modes": [
+        {
+          "firepower": "2x AP5+",
+          "range": 30,
+          "specialRules": [
+          ]
+        },
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "EA(+1)",
+            "MW"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Tempest Warblade",
       "modes": [
         {
@@ -4522,13 +4850,24 @@
     },
 
     {
-      "name": "Graviton Hammer",
+      "name": "Graviton Hammers",
       "modes": [
         {
           "firepower": "Assault Weapon",
           "specialRules": [
             "MW",
             "Devastating Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Graviton Maul",
+      "modes": [
+        {
+          "firepower": "Assault Weapon",
+          "specialRules": [
+            "MW"
           ]
         }
       ]

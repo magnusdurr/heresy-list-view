@@ -36,7 +36,7 @@
         "Proteus Land Speeder|Melta|Plasma",
         "Javelin Attack Speeder|Cyclone|Lascannon",
         "Sky-Hunter Squadron|Bolter",
-        "Contemptor Dreadnought|Assault|Lascannon|Autocannon",
+        "Contemptor Dreadnought|Assault|Lascannon|Plasma",
         "Leviathan Dreadnought|Storm|Melta",
         "Deredeo Dreadnought|Hellfire|Anvilus",
         "Predator|Annihilator|Destructor|Gravitor",
@@ -90,7 +90,7 @@
         "Drop Pods",
         "Orbital Pin-Point Attack",
         "Orbital Barrage",
-        "Artillery Barrage Strike",
+        "Artillery Barrage",
         "Artillery Blind Strike"
       ]
     },
@@ -155,7 +155,7 @@
       "formations": [
         {
           "name": "Tactical Detachment",
-          "units": "One Lieutenant character in a Tactical Squad, three Legion Tactical Squads",
+          "units": "One Lieutenant character, four Legion Tactical Squads",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Replace three Legion Tactical Squads with three Legion Veteran Squads (0-1 in the army): 1 U/p",
@@ -166,15 +166,24 @@
         },
         {
           "name": "Mechanized Tactical Detachment",
-          "units": "One Lieutenant character in a Tactical Squad, three Legion Tactical Squads, two Rhinos",
+          "units": "One Lieutenant character, four Legion Tactical Squads, two Rhinos",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
-            "Replace three Legion Tactical Squads with three Legion Veteran Squads (0-1 in the army): 1 U/p",
             "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
           ],
           "points": "1 F/p"
+        },
+        {
+          "name": "0-1 Veteran Detachment",
+          "units": "One Lieutenant character, four Legion Veteran Squads, two Rhinos",
+          "extraUnits": [
+            "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
+            "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
+            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
+          ],
+          "points": "1 F/p, 2 U/p"
         }
       ]
     },
@@ -287,7 +296,7 @@
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
           ],
-          "points": "1 F/p, 1 U/p"
+          "points": "1 F/p, 2 U/p"
         },
         {
           "name": "0-1 Locutarus Storm Detachment",
@@ -432,7 +441,7 @@
           "units": "One Reaver Battle Titan",
           "extraUnits": [
             "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 2 U/p"
+            "Add one Veteran Princeps character to the formation: 1 U/p"
           ],
           "points": "2 F/p, 2 T/p, 1 A/p"
         },
@@ -441,7 +450,7 @@
           "units": "One Warlord Battle Titan",
           "extraUnits": [
             "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 2 U/p"
+            "Add one Veteran Princeps character to the formation: 1 U/p"
           ],
           "points": "2 F/p, 1 U/p, 3 T/p, 1 A/p"
         },
@@ -449,8 +458,7 @@
           "name": "0-1 Warlord-Sinister",
           "units": "One Veteran Princeps character, one Warlord-Sinister Psi-Titan",
           "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 2 U/p"
+            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
           ],
           "points": "2 F/p, 4 U/p, 3 T/p, 1 A/p"
         }

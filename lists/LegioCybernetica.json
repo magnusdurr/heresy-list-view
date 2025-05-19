@@ -105,10 +105,10 @@
         ],
         "specialRules": [
         "Cybernetica Cortex",
+        "First Strike",
         "Fearless",
         "Blitz",
         "Walker",
-        "Nimble",
           "Vanguard"
         ]
       },
@@ -225,27 +225,6 @@
         ]
       },
       {
-        "name": "Domitar Battle-Automata Cohort",
-        "type": "LV",
-        "speed": 15,
-        "armour": 3,
-        "cc": 3,
-        "ff": 6,
-        "weapons": [
-          "Missile Launcher|2",
-          "Graviton Hammer"
-        ],
-        "specialRules": [
-          "Cybernetica Cortex",
-          "Walker",
-          "Nimble",
-          "Fearless",
-          "Expendable",
-          "Ponderous",
-          "Vanguard"
-        ]
-      },
-      {
         "name": "Arlatax Battle-Automata",
         "type": "LV",
         "speed": 25,
@@ -289,7 +268,49 @@
           "Vanguard"
         ]
       },
-      
+       {
+        "name": "Domitar Battle-Automata",
+        "type": "LV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 6,
+        "weapons": [
+          "Missile Launcher|2",
+          "Graviton Hammers"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex",
+          "Walker",
+          "Nimble",
+          "Blitz",
+          "Fearless",
+          "Expendable",
+          "Ponderous",
+          "Vanguard"
+        ]
+      },
+      {
+        "name": "Domitar Ferrum Battle-Automata",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 4,
+        "ff": 4,
+        "weapons": [
+          "Olympia Bolt Cannon",
+          "Graviton Maul"
+        ],
+        "specialRules": [
+          "Cybernetica Cortex",
+          "Walker",
+          "Nimble",
+          "Fearless",
+          "Expendable",
+          "Ponderous",
+          "Vanguard"
+        ]
+      },
       {
         "name": "Thanatar Siege-Automata",
         "type": "LV",

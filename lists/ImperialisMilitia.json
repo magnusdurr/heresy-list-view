@@ -73,7 +73,7 @@
         "cc": 4,
         "ff": 5,
         "weapons": [
-          "Plasma Guns",
+          "Plasma Gun",
           "Power Weapon"
         ],
         "specialRules": [
@@ -212,49 +212,50 @@
         ]
       },
       {
-        "name": "Thunderblast Field Gun",
+        "name": "Field Gun",
+        "type": "LV",
+        "variants": [
+          {
+            "name": "Thunderblast",
         "type": "LV",
         "speed": "Immobile",
         "armour": 6,
         "ff": 6,
         "weapons": [
           "Thunderblast Cannon"
-        ],
-        "specialRules": [
         ]
-      },
-      {
-        "name": "Heavy Lascannon Field Gun",
+          },
+          {
+            "name": "Beamer",
         "type": "LV",
         "speed": "Immobile",
         "armour": 6,
         "ff": 6,
         "weapons": [
-          "Heavy Lascannon"
-        ],
-        "specialRules": [
+          "Conversion Beam Cannon"
         ]
-      },
-      {
-        "name": "Kalliope Mortar Field Gun",
+          },
+          {
+            "name": "Kalliope",
         "type": "LV",
         "speed": "Immobile",
         "armour": 6,
         "ff": 6,
         "weapons": [
-          "Kalliope Mortar"
-        ],
-        "specialRules": [
+          "Kalliope Heavy Mortar"
         ]
-      },
-      {
-        "name": "Earthshaker Gun",
+          },
+          {
+            "name": "Howitzer",
         "type": "LV",
         "speed": "Immobile",
         "armour": 6,
         "ff": 6,
         "weapons": [
-          "Earthshaker Cannon"
+          "Howitzer Cannon"
+        ]
+          }
+
         ],
         "specialRules": [
         ]
@@ -265,7 +266,7 @@
         "speed": 25,
         "armour": 5,
         "weapons": [
-          "Heavy Stubber"
+          "Heavy Stubber|2"
         ],
         "specialRules": [
           "Transport (4)"
@@ -288,59 +289,178 @@
       {
         "name": "Sentinel",
         "type": "LV",
+        "variants": [
+          {
+            "name": "Multi-Laser",
+        "type": "LV",
         "speed": 20,
         "armour": 6,
         "cc": 6,
         "ff": 5,
         "weapons": [
           "Multi-Laser"
-        ],
-        "specialRules": [
-          "Skirmisher",
-          "Walker"
         ]
-      },
-      {
-        "name": "Aurox",
-        "type": "AV",
-        "variants": [
+          },
           {
-            "name": "Bulwark",
-        "type": "AV",
+            "name": "Flamer",
+        "type": "LV",
         "speed": 20,
-        "armour": 4,
+        "armour": 6,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Heavy Flamer "
+        ]
+          },
+          {
+            "name": "Melta",
+        "type": "LV",
+        "speed": 20,
+        "armour": 6,
         "cc": 6,
         "ff": 6,
-        "weapons": [
-          "Heavy Stubber"
-        ]
-          },
-          {
-            "name": "Hydra",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
-        "weapons": [
-          "Hydra Autocannon"
-        ]
-          },
-          {
-            "name": "Dragon",
-        "type": "AV",
-        "speed": 20,
-        "armour": 4,
-        "cc": 6,
-        "ff": 5,
         "weapons": [
           "Multi-Melta"
         ]
           }
+
         ],
         "specialRules": [
+            "Skirmisher",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Armoured Sentinel",
+        "type": "LV",
+        "variants": [
+          {
+            "name": "Autocannon",
+        "type": "LV",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Autocannon"
+        ]
+          },
+          {
+            "name": "Lascannon",
+        "type": "LV",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Lascannon"
+        ]
+          },
+          {
+            "name": "Missile Launcher",
+        "type": "LV",
+        "speed": 15,
+        "armour": 5,
+        "cc": 6,
+        "ff": 6,
+        "weapons": [
+          "Missile Launcher"
+        ]
+          }
         ],
-        "notes": "The Aurox Bulwark has 'Transport (2)'"
+        "specialRules": [
+            "Skirmisher",
+          "Walker"
+        ]
+      },
+      {
+        "name": "Macharius",
+        "type": "WE",
+        "variants": [
+          {
+            "name": "Assault Tank",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Twin Battle Cannon",
+          "Twin Heavy Stubber",
+          "Heavy Bolter|2|"
+        ]
+          },
+          {
+            "name": "Vulcan",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Vulcan Mega Bolter||FxF",
+          "Twin Heavy Stubber||FwA",
+          "Heavy Bolter|2|"
+        ]
+          },
+          {
+            "name": "Vanquisher",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Twin Vanquisher Cannon",
+          "Twin Heavy Stubber||FwA",
+          "Lascannon|2|"
+        ]
+          },
+          {
+            "name": "Earthshaker",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Earthshaker Cannon ||FxF",
+          "Twin Heavy Stubber||FwA",
+          "Heavy Bolter|2|"
+        ]
+          },
+          {
+            "name": "Medusa",
+        "type": "WE",
+        "speed": 20,
+        "armour": 4,
+        "cc": 6,
+        "ff": 4,
+        "weapons": [
+          "Medusa Siege Gun ||FxF",
+          "Twin Heavy Stubber||FwA",
+          "Heavy Flamer |2|"
+        ]
+          },
+          {
+            "name": "Omega",
+        "type": "WE",
+        "speed": 15,
+        "armour": 4,
+        "cc": 6,
+        "ff": 5,
+        "weapons": [
+          "Plasma Blastgun||FxF",
+          "Twin Heavy Stubber||FwA",
+          "Plasma Cannon|2|"
+        ]
+          }
+        ],
+        "specialRules": [
+            "Damage Capacity (2)",
+            "Reinforced Armour"
+        ],
+        "crit": "The Macharius is destroyed. All formations within 10 cm suffers a Blast Marker."
       },
       {
         "name": "Gorgon",

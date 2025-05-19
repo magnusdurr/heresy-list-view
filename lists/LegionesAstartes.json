@@ -285,7 +285,7 @@
         "type": "Primarch",
         "speed": 15,
         "armour": 3,
-        "cc": 3,
+        "cc": 2,
         "ff": 2,
         "weapons": [
           "The Arbitrator",
@@ -293,6 +293,7 @@
         ],
         "specialRules": [
           "Damage Capacity (2)",
+          "Supreme Commander",
           "Blitz",
           "Vox-Caster",
           "Inspiring",
@@ -362,7 +363,7 @@
             "type": "INF",
             "speed": 15,
         "armour": 4,
-        "cc": 5,
+        "cc": 3,
         "ff": 2,
             "weapons": [
           "Combi-Bolters",
@@ -374,7 +375,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 3,
+            "cc": 2,
             "ff": 3,
             "weapons": [
               "Astartes Assault Shotguns",
@@ -387,10 +388,10 @@
             "speed": 15,
             "armour": 4,
             "cc": 2,
-            "ff": 5,
+            "ff": 4,
             "weapons": [
               "Charnabal Sabres",
-              "Bolt Pistols"
+              "Plasma Pistols"
             ]
           },
           {
@@ -398,7 +399,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 3,
+            "cc": 2,
             "ff": 4,
             "weapons": [
               "Hand Flamers",
@@ -433,11 +434,11 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 3,
-            "ff": 5,
+            "cc": 2,
+            "ff": 4,
             "weapons": [
               "Heavy Chainswords",
-              "Bolt Pistols"
+              "Plasma Pistols"
             ]
           },
           {
@@ -461,7 +462,7 @@
             "ff": 2,
             "weapons": [
               "Bolters",
-              "Heavy Bolter"
+              "Heavy Bolter|2"
             ]
           },
           {
@@ -531,10 +532,10 @@
         "type": "INF",
         "speed": 30,
         "armour": 4,
-        "cc": 3,
-        "ff": 4,
+        "cc": 2,
+        "ff": 5,
         "weapons": [
-          "Plasma Pistols",
+          "Bolt Pistols",
           "Power Swords"
         ],
         "specialRules": [
@@ -601,9 +602,9 @@
             "speed": 15,
             "armour": 4,
             "cc": 4,
-            "ff": 5,
+            "ff": 4,
             "weapons": [
-              "Plasma Guns|3"
+              "Plasma Gun|3"
             ]
           },
           {
@@ -614,7 +615,7 @@
             "cc": 4,
             "ff": 3,
             "weapons": [
-              "Flamers |3"
+              "Flamer |3"
             ]
           },
           {
@@ -647,7 +648,7 @@
             "cc": 4,
             "ff": 5,
             "weapons": [
-              "Melta Guns |3"
+              "Melta Gun |3"
             ]
           },
           {
@@ -700,7 +701,7 @@
             "cc": 3,
             "ff": 5,
             "weapons": [
-              "Plasma Guns"
+              "Plasma Gun"
             ]
           },
           {
@@ -1195,6 +1196,17 @@
             "weapons": [
           "Kheres Assault Cannon",
           "Gravis Power Fist"
+            ]
+          },
+          {
+            "name": "Gravis",
+        "type": "AV",
+        "speed": 15,
+        "armour": 3,
+        "cc": 3,
+        "ff": 5,
+            "weapons": [
+          "Gravis Power Fists"
             ]
           },
           {

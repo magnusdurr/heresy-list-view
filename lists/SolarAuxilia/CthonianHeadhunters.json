@@ -8,8 +8,7 @@
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Cthonian Headhunter Sections have an Initiative Rating of 2+, and are subject to the 'A Lean Race of Killers' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Imperial Militia Platoons have an initiative of 2+ and are subject to the 'Feral Warriors' special rule.",
   "specialRules": [
-  "A Lean Race of Killers",
-  "Tunnelers"
+  "A Lean Race of Killers"
   ],
   "units": [
     {
@@ -18,7 +17,7 @@
         "Auxilia Legate Marshal",
         "Auxilia Captain",
         "Auxilia Adjutant",
-        "Auxilia Command Squad",
+        "Auxilia Command Squad|Cthonia",
         "Auxilia Lasrifle Squad",
         "Auxilia Feral Squad",
         "Auxilia Flamer Squad",
@@ -26,7 +25,8 @@
         "Charonite Ogryns",
         "Aethon Heavy Sentinel",
         "Auxilia Rapier|Quad Launcher|Laser Destroyer|Mole Mortar",
-        "Auxilia Rhino",
+        "Aurox|Transport|Melta|Flamer",
+        "Carnodon|Ardeaq|Supprix|Mezsor|Gilentex",
         "Basilisk",
         "Medusa",
         "Termite Assault Drill",
@@ -139,7 +139,7 @@
           "units": "One Auxilia Legate Marshal character in an Auxilia Command Squad, four Auxilia Lasrifle Squads, and one Auxilia Flamer Squad",
           "extraUnits": [
             "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads (Free)",
-            "Add three Auxilia Rhinos: 1 U/p",
+            "Add three Aurox of any single configuration: 1 U/p",
             "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p, 2 U/p"
@@ -149,7 +149,7 @@
           "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
             "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads (Free)",
-            "Add three Auxilia Rhinos: 1 U/p",
+            "Add three Aurox of any single configuration: 1 U/p",
             "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p"
@@ -201,10 +201,9 @@
         
         
         {
-          "name": "Auxilia Leman Russ Squadron",
-          "units": "Three Leman Russ of any configuration",
+          "name": "Auxilia Carnodon Squadron",
+          "units": "Four Carnodon of any configuration",
           "extraUnits": [
-          "Add one Leman Russ of any configuration: 1 U/p"
           ],
           "points": "1 F/p"
         },
@@ -293,7 +292,7 @@
         {
           "name": "Termite Subterranean Assault",
           "points": "2 U/p"
-        }
+        },
         {
           "name": "Deathstrike Warp Missile Attack",
           "points": "1 U/p"
