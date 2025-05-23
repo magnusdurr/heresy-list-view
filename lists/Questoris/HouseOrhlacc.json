@@ -1,0 +1,193 @@
+{
+  "fraction": "Questoris",
+  "army": "House Orhlacc",
+  "version": "1.0.alpha",
+  "release": "2025-01-01",
+  "armyforge": "EAH_Questoris_HouseOrhlacc",
+  "strategy": "Questoris armies have a Strategy Rating of 2.",
+  "Initiative": "All formations have an Initiative Rating of 2+. In addition, all Knight Banner formations are subject to the 'Chivalry' special rule.",
+  "specialRules": [
+    "Chivalry"
+  ],
+  "usage": [
+    "The following army list allows you to field an army based on the Questoris Mechanicus of the Adeptus Mechancius"
+  ],
+  "units": [
+    {
+      "from": "QuestorisFamilia.json",
+      "units": [
+        "Lord Seneschal",
+        "Seneschal",
+        "Armiger Knight|Warglaive|Helverin",
+        "Questoris Knight|Paladin|Errant|Crusader (Battle Cannon)|Crusader (Thermal Cannon)|Gallant|Warden",
+        "Questoris Stormspear Pod",
+        "Questoris Ironstorm Pod",
+        "Questoris Icarus Autocannon"
+        "Cerastus Knight|Lancer|Acheron|Castigator",
+        "Armiger Knight|Warglaive|Helverin"
+      ],
+      "unitRules": [
+        "Stubborn",
+        "Ion Shield (x)",
+        "Shield Piercer",
+        "Shield Disruptor",
+        "Devastating Charge",
+        "Lance"
+      ]
+    },
+    {
+      "from": "LegionesAstartes.json",
+      "units": [
+        "Lieutenant",
+        "Legion Support Squad|Plasma",
+        "Legion Tactical Squad",
+        "Legion Heavy Support Squad|Missile Launcher",
+        "Contemptor Dreadnought|Assault|Gravis",
+        "Proteus Land Speeder|Melta|Plasma",
+        "Javelin Attack Speeder|Cyclone|Lascannon",
+        "Predator|Annihilator|Destructor",
+        "Sicarian|Accelerator|Omega"
+      ],
+      "unitRules": [
+      "And They Shall Know No Fear (ATSKNF)"
+      ]
+    },
+    {
+      "from": "ImperialisMilitia.json",
+      "units": [
+        "Militia Captain",
+        "Militia Command Cadre",
+        "Militia Levy Squad",
+        "Militia Support Squad",
+        "Militia Cavalry Squadron",
+        "Field Gun|Thunderblast|Kalliope|Howitzer",
+        "Sentinel Squadron|Multi-Laser|Flamer|Melta",
+        "Gorgon"
+      ],
+      "unitRules": [
+          "The Muster of Worlds",
+          "Fortified Positions"
+      ]
+    },
+    {
+      "from": "CollegiaTitanica.json",
+      "units": [
+        "Veteran Princeps",
+        "Warhound Scout Titan",
+        "Dire Wolf Heavy Scout Titan",
+        "Reaver Battle Titan",
+        "Warlord Battle Titan"
+      ],
+      "unitRules": [
+        "Void Shields",
+        "Towering",
+        "Beam Projector",
+        "Graviton",
+        "Titan Hunter",
+        "Shield Piercer",
+        "Shield Disruptor",
+        "Ponderous",
+        "Steadfast",
+        "Shock Pulse"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "name": "Core Banners",
+      "description": "Up to one Dominus Banner for each Questoris Banner",
+      "formations": [
+        {
+          "name": "Questoris",
+          "units": "Two Questoris Knight-Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
+          "extraUnits": [
+            "Add one Questoris Knight of the same configuration: 125 points",
+            "Add one Twin Icarus Autocannon to each Questoris Knight in a formation with Knight-Paladins, Crusaders or Errants: 25 points",
+            "Seneschal",
+            "Lord Seneschal"
+          ],
+          "points": 325
+        }
+      ]
+    },
+    {
+      "name": "Recon Banners",
+      "description": "Up to one Recon Banner for each Core Banner",
+      "formations": [
+        {
+          "name": "Cerastus",
+          "units": "One Cerastus Knight",
+          "extraUnits": [
+            "Add one Cerastus Knight of the same configuration: 175 points",
+            "Seneschal"
+          ],
+          "points": 225
+        },
+        {
+          "name": "Armiger",
+          "units": "Four Knight-Warglaives or three Knight-Helverins",
+          "extraUnits": [
+            "Add one Armiger Knight of the same configuration: 50 points",
+            "Add one Knight-Preceptor with a Seneschal: 175 points"
+          ],
+          "points": 200
+        }
+      ]
+    }
+      ]
+    },
+    {
+      "name": "Mechanicus Allies",
+      "description": "Up to a third of the points available may be spent on Forge World allies.",
+      "formations": [
+        {
+          "name": "Skitarii Maniple",
+          "units": "Magos, nine Hypaspists, one Gorgon",
+          "extraUnits": [
+            "Replace the Gorgon with five Skorpius Duneriders: Free"
+          ],
+          "points": 325
+        },
+        {
+          "name": "Onager Maniple",
+          "units": "One Onager Dunecrawler with Icarus Array, three Onager Dunecrawlers with another single configuration",
+          "points": 225
+        },
+        {
+          "name": "Skorpius Maniple",
+          "units": "Four Skorpius Disintegrators",
+          "extraUnits": [
+            "Add up to two Skorpius Disintegrators: 50 points each"
+          ],
+          "points": 225
+        },
+        {
+          "name": "Avenger Squadron",
+          "units": "Two Avenger Strike Fighters",
+          "points": 175
+        },
+        {
+          "name": "0-1 Mechanicus Battleship",
+          "units": "One Ark Mechanicus Battleship",
+          "points": 225
+        }
+      ]
+    }
+  ],
+  "upgrades": {
+    "title": "Questoris Mechanicus Upgrades",
+    "description": "Each upgrade may be taken once per formation",
+    "items": [
+      {
+        "name": "Seneschal",
+        "description": "Add one Seneschal to the formation",
+        "points": "25 points"
+      },
+      {
+        "name": "Lord Seneschal (0-1 per Army)",
+        "description": "Replace the Seneschal with a Lord Seneschal",
+        "points": "50 points"
+      }
+    ]
+  }
+}

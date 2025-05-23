@@ -1129,6 +1129,31 @@
       ]
     },
     {
+      "name": "Arbites Combat Shotguns",
+      "modes": [
+        {
+          "firepower": "2x AP5+",
+          "range": 15
+        }
+      ]
+    },
+    {
+      "name": "Enforcer Bolters",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 30
+        }
+      ]
+    },
+    {
+      "name": "Arbites Shotpistols",
+      "modes": [
+        {
+          "firepower": "Small Arms"        }
+      ]
+    },
+    {
       "name": "The Arbitrator",
       "modes": [
         {
@@ -2861,6 +2886,41 @@
       ]
     },
     {
+      "name": "Grenade Launcher",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+",
+          "range": 30,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Subjugator Grenade Launcher",
+      "modes": [
+        {
+          "firepower": "AP6+/AT6+",
+          "range": 30,
+          "specialRules": [
+              "Disrupt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Concussion Carbine",
+      "modes": [
+        {
+          "firepower": "AP5+",
+          "range": 15,
+          "specialRules": [
+              "Rad"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Hermes Grenade Launcher",
       "modes": [
         {
@@ -4353,6 +4413,17 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shock Mauls",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+              "Disrupt"
           ]
         }
       ]

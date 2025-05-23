@@ -88,9 +88,10 @@
         "speed": 15,
         "armour": 6,
         "cc": 5,
-        "ff": 6,
+        "ff": 5,
         "weapons": [
-          "Autorifles"
+          "Autorifles",
+          "Heavy Stubber"
         ],
         "specialRules": [
         ]
@@ -99,12 +100,10 @@
         "name": "Militia Levy Squad",
         "type": "INF",
         "speed": 15,
-        "armour": 6,
-        "cc": 4,
+        "cc": 5,
         "ff": 6,
         "weapons": [
-          "Stubcarbines",
-          "Combat Knives"
+          "Autorifles"
         ],
         "specialRules": [
         ]
@@ -287,7 +286,7 @@
         ]
       },
       {
-        "name": "Sentinel",
+        "name": "Sentinel Squadron",
         "type": "LV",
         "variants": [
           {
@@ -298,7 +297,7 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Multi-Laser"
+          "Multi-Laser|2"
         ]
           },
           {
@@ -309,7 +308,7 @@
         "cc": 6,
         "ff": 5,
         "weapons": [
-          "Heavy Flamer "
+          "Heavy Flamer |2"
         ]
           },
           {
@@ -320,7 +319,7 @@
         "cc": 6,
         "ff": 6,
         "weapons": [
-          "Multi-Melta"
+          "Multi-Melta|2"
         ]
           }
 

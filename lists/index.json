@@ -156,8 +156,8 @@
           "lists": [
             {
               "name": "House Orhlacc",
-              "file": "questorismechanicus",
-              "status": "beta",
+              "file": "HouseOrhlacc",
+              "status": "approved",
               "img": "images/Questoris_House_Orhlacc.JPG"
             },
             {

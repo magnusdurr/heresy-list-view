@@ -87,12 +87,13 @@
         "Sicarian|Accelerator|Omega"
       ],
       "unitRules": [
-      "Dauntless"
+      "And They Shall Know No Fear (ATSKNF)"
       ]
     },
     {
       "from": "CollegiaTitanica.json",
       "units": [
+        "Veteran Princeps",
         "Warhound Scout Titan",
         "Warbringer Nemesis Battle Titan",
         "Warlord Battle Titan",
@@ -129,6 +130,7 @@
   "sections": [
     {
       "name": "Calth High Guard Core Sections",
+      "description": "May not have more Malcador Companies or Light Sentinel Patrols than Command Tercios and Lasrifle Tercios",
       "formations": [
         {
           "name": "1 Section Command Tercio",
@@ -291,9 +293,9 @@
           "name": "Thunderbolt Squadron",
           "units": "Two Thunderbolt Fighters",
          "extraUnits": [
-         "Add up to two Thunderbolt Fighters: 1 U/p each"
+         "Add one Thunderbolt Fighter: 1 U/p"
           ],
-          "points": "1 F/p, -3 U/p"
+          "points": "1 F/p, -2 U/p"
         },
         {
           "name": "Marauder Squadron",
@@ -352,7 +354,8 @@
           "name": "Reaver",
           "units": "One Reaver Battle Titan",
           "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
+          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
+            "Add one Veteran Princeps character to the formation: 1 U/p"
           ],
           "points": "2 F/p, 2 T/p, 1 A/p"
         },
@@ -360,17 +363,18 @@
           "name": "Warlord",
           "units": "One Warlord Battle Titan",
           "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
+          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
+            "Add one Veteran Princeps character to the formation: 1 U/p"
           ],
           "points": "2 F/p, 1 U/p, 3 T/p, 1 A/p"
         },
         {
           "name": "Warmaster",
-          "units": "One Warmaster Heavy Battle Titan",
+          "units": "One Veteran Princeps, one Warmaster Heavy Battle Titan",
           "extraUnits": [
           "Replace two Battle Weapons with two Support Weapons of the same type (1 U/p)"
           ],
-          "points": "3 F/p, 2 U/p, 4 T/p, 1 A/p"
+          "points": "3 F/p, 3 U/p, 4 T/p, 1 A/p"
         }
       ]
     },
