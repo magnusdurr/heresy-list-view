@@ -3,7 +3,7 @@
   "army": "Calth High Guard (CCLVth Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-    "intro": "Calth High Guard (CCLVth CoH) follow the Ultramar Pattern Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+    "intro": "Calth High Guard (CCLVth CoH) follow the Ultramar Pattern Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 5 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The 'And They Shall Know No Fear (ATSKNF)' special rule applies to all Legiones Astartes Allied Detachments.",
@@ -26,6 +26,7 @@
         "Hermes Veltaris Sentinel Squadron|Volkite|Flamer",
         "Hermes Light Sentinel Squadron|Laser|Grenarier",
         "Auxilia Rapier|Quad Launcher|Laser Destroyer|Mole Mortar",
+        "Dracosan|Lascannon|Demolisher",
         "Basilisk",
         "Medusa",
         "Termite Assault Drill",
@@ -136,7 +137,7 @@
           "name": "1 Section Command Tercio",
           "units": "One Auxilia Legate Marshal character in an Auxilia Command Squad, four Auxilia Lasrifle Squads, and one Auxilia Flamer Squad",
           "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, or add three Termite Assault Drills (2 U/p)."
+            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, four Auxilia Lasrifle Squads, or add three Termite Assault Drills (2 U/p)"
           ],
           "points": "1 F/p, 2 U/p"
         },
@@ -144,7 +145,7 @@
           "name": "1+ Auxilia Lasrifle Tercio",
           "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
           "extraUnits": [
-           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, or add three Termite Assault Drills (2 U/p)."
+           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, four Auxilia Lasrifle Squads, or add three Termite Assault Drills (2 U/p)"
           ],
           "points": "1 F/p"
         },
@@ -183,7 +184,7 @@
           "name": "Veletaris Storm Section",
           "units": "Four Veletarii",
           "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add three Termite Assault Drills (2 U/p)."
+          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, two Cyclops of any single configuration (1 U/p), or two Termite Assault Drills (2 U/p)"
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -191,7 +192,7 @@
           "name": "Ogryn Charonite Section",
           "units": "Three Charonite Ogryns",
           "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, two Veletarii, or two Cyclops of any single configuration (1 U/p), or add three Termite Assault Drills (2 U/p)."
+          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, two Veletarii, or two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p, -1 U/p"
         },
@@ -235,12 +236,22 @@
       "name": "Calth High Guard Elite Sections",
       "description": "May only have one Elite Section for each two Core or Special Sections",
       "formations": [
-         {
+          {
           "name": "Auxilia Heavy Sentinel Patrol",
           "units": "Four Aethon Heavy Sentinels of any single configuration",
           "extraUnits": [
           "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p",
           "Add two Cyclops of any single configuration: 1 U/p"
+          ],
+          "points": "1 F/p"
+        },
+          {
+          "name": "Auxilia Dracosan Section",
+          "units": "One Auxilia Command Squad with an Auxilia Captain, three Auxilia Lasrifle Squads, one Dracosan - Lascannon",
+          "extraUnits": [
+            "Replace the Dracosan - Lascannon with two Dracosan - Demolisher: 3 U/p",
+            "Replace up to two Auxilia Lasrifle Squads with Auxilia Flamer Squads: Free",
+            "Add two Cyclops of any single configuration: 1 U/p"
           ],
           "points": "1 F/p, 1 U/p"
         },
@@ -348,7 +359,7 @@
           "extraUnits": [
           "Replace one Battle Weapon with a Support Weapon: 2 U/p"
           ],
-          "points": "1 F/p, 1 U/p, 2 T/p, 1 A/p"
+          "points": "1 F/p, 2 U/p, 2 T/p, 1 A/p"
         },
         {
           "name": "Reaver",

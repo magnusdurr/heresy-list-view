@@ -132,20 +132,6 @@
       "unitRules": [
         "Army of Mankind"
       ]
-    },
-    {
-      "from": "QuestorisFamilia.json",
-      "units": [
-        "Armiger Knight|Warglaive|Helverin",
-        "Questoris Knight|Paladin|Errant|Crusader (Battle Cannon)|Crusader (Thermal Cannon)|Gallant|Warden",
-        "Questoris Stormspear Pod",
-        "Questoris Ironstorm Pod",
-        "Questoris Icarus Autocannon"
-      ],
-      "unitRules": [
-        "Chivalry",
-        "Ion Shield (x)"
-      ]
     }
   ],
   "sections": [
@@ -159,7 +145,7 @@
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
             "Replace two Legion Tactical Squads with two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
-            "Add two Legion Tactical Squads (2 U/p), two Contemptor Dreadnoughts of any single configuration (2 U/p), or two Cataphractii Terminator Squads (3 U/p)"
+            "Add two Legion Tactical Squads (2 U/p), two Legion Support Squads (2 U/p), two Contemptor Dreadnoughts of any single configuration (2 U/p), two Cataphractii Terminator Squads (3 U/p), or two Legion Heavy Support Squads (3 U/p)"
           ],
           "points": "1 F/p"
         },
@@ -205,17 +191,6 @@
           "extraUnits": [
           ],
           "points": "1 F/p, -3 U/p"
-        },
-        {
-          "name": "Mechanized Support Detachment",
-          "units": "One Lieutenant, four Legion Support Squads, two Rhinos",
-          "extraUnits": [
-            "Replace two Legion Support Squads with two Legion Heavy Support Squads (1 U/p), or replace four Legion Support Squads with four Legion Heavy Support Squads (2 U/p)",
-            "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
-            "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
-            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
-          ],
-          "points": "1 F/p, 1 U/p"
         },
         {
           "name": "Land Raider Detachment",
@@ -417,7 +392,7 @@
           "extraUnits": [
             "Replace one Battle Weapon with a Support Weapon: 1 U/p"
           ],
-          "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
+          "points": "1 F/p, 1 T/p, 1 A/p"
         },
         {
           "name": "Warhound Pack",
@@ -503,28 +478,6 @@
           "units": "Three Leman Russ of any configuration",
           "extraUnits": [
             "Add one Leman Russ of any configuration: 1 U/p"
-          ],
-          "points": "1 F/p, 1 A/p"
-        }
-      ]
-    },
-    {
-      "name": "Allies: Questoris Familia Lances",
-      "description": "",
-      "formations": [
-        {
-          "name": "Armiger Lance",
-          "units": "Three Armiger Knight Warglaives and/or Helverins",
-          "extraUnits": [
-          
-          ],
-         "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Questoris Lance",
-          "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
-          "extraUnits": [
-            "Add one Questoris Ironstorm Pod, Questoris Stormspear Pod, or Icarus Autocannon to each unit in the formation: 1 U/p"
           ],
           "points": "1 F/p, 1 A/p"
         }

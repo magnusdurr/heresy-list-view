@@ -602,7 +602,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 4,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
               "Plasma Gun|3"
             ]
@@ -1297,7 +1297,7 @@
         "speed": 15,
         "armour": 4,
         "cc": 3,
-        "ff": 3,
+        "ff": 2,
         "weapons": [
           "Storm Cannon",
           "Leviathan Siege Claw"
@@ -1309,7 +1309,7 @@
         "speed": 15,
         "armour": 4,
         "cc": 3,
-        "ff": 5,
+        "ff": 4,
             "weapons": [
           "Dreadnought Melta Lance",
           "Leviathan Siege Claw"
@@ -1924,7 +1924,7 @@
           "Heavy Transport (4)",
           "Ion Shield (5+)"
         ],
-        "crit": "The Spartan is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Spartan is destroyed."
       },
       {
         "name": "Cerberus",
@@ -1943,7 +1943,7 @@
           "Thick Rear Armour",
           "Ion Shield (5+)"
         ],
-        "crit": "The Cerberus is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Cerberus is destroyed."
       },
       {
         "name": "Typhon",
@@ -1962,7 +1962,7 @@
           "Thick Rear Armour",
           "Ion Shield (5+)"
         ],
-        "crit": "The Typhon is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Typhon is destroyed."
       },
            {
         "name": "Kratos",
@@ -2025,7 +2025,7 @@
           "Thick Rear Armour",
           "Ion Shield (5+)"
         ],
-        "crit":  "The Kratos is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit":  "The Kratos is destroyed."
       },
        {
         "name": "Bastion",
@@ -2048,7 +2048,7 @@
           "Thick Rear Armour"
         ],
         "notes": "A Bastion counts as Impassible Terrain once destroyed, unless it was destroyed while taking damage from a critical hit.",
-        "crit": "The Bastion takes a point of damage. If this unit is destroyed while taking damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Bastion takes a point of damage."
       },
       {
         "name": "Fellblade Super-Heavy Tank",
@@ -2067,7 +2067,7 @@
           "Damage Capacity (4)",
           "Reinforced Armour"
         ],
-        "crit": "The Fellblade is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Fellblade is destroyed."
       },
             {
         "name": "Falchion Super-Heavy Tank",
@@ -2104,7 +2104,7 @@
           "Damage Capacity: 4",
           "Reinforced Armour"
         ],
-        "crit": "The Falchion is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Falchion is destroyed."
       },
        {
         "name": "Glaive Super-Heavy Tank",
@@ -2122,7 +2122,7 @@
           "Damage Capacity (4)",
           "Reinforced Armour"
         ],
-        "crit": "The Glaive is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Glaive is destroyed."
       },
       {
         "name": "Legion Mastodon",
@@ -2148,7 +2148,7 @@
           "Ponderous",
           "Steadfast"
         ],
-        "crit": "The unit takes a point of damage. If this unit is destroyed while taking damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The unit takes a point of damage."
       }
     ]
   }

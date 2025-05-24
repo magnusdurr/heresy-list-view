@@ -129,7 +129,7 @@
           "Ion Shield (3+)",
           "Ionic Flare Shield"
         ],
-        "crit": "The Questoris Knight is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Questoris Knight is destroyed."
       },
 
       {
@@ -158,7 +158,7 @@
           "Ion Shield (3+)",
           "Ionic Flare Shield"
         ],
-        "crit": "The Cerastus Knight is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Cerastus Knight is destroyed."
       },
 
       {
@@ -199,7 +199,7 @@
           "Walker",
           "Ion Shield (3+)"
         ],
-        "crit": "The Acastus Knight takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Acastus Knight takes a point of damage."
       }
     ]
   }

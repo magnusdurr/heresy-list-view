@@ -187,7 +187,7 @@
           "Ion Shield (4+)"
         ],
         "notes": "Questoris Gallants, Paladins, Errants, and Wardens have the 'Blitz' special rule.",
-        "crit": "The Questoris Knight is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Questoris Knight is destroyed."
       },
       {
         "name": "Cerastus Knight",
@@ -238,7 +238,7 @@
           "Ion Shield (3+)"
         ],
         "notes": "The Cerastus Knight Lancer have the 'Ionic Flare Shield' special rule.",
-        "crit": "The Cerastus Knight is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Cerastus Knight is destroyed."
       }
     ]
   }

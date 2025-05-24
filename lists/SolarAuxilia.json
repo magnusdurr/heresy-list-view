@@ -752,10 +752,9 @@
         "specialRules": [
           "Damage Capacity (2)",
           "Reinforced Armour",
-          "Thick Rear Armour",
           "Walker"
         ],
-        "crit": "The Malcador is destroyed, all formations within 5 cm suffers a Blast Marker."
+        "crit": "The Malcador is destroyed."
       },
       {
         "name": "Malcador Minotaur",
@@ -805,7 +804,7 @@
           "Damage Capacity (2)",
           "Reinforced Armour"
         ],
-        "crit": "The unit is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The unit is destroyed."
       },
       {
         "name": "Dracosan",
@@ -843,7 +842,7 @@
           "Walker"
         ],
         "notes":  "Lascannon Variant: Heavy Transport (4) - Demolisher Variant: Heavy Transport (2)",
-        "crit": "The Dracosan is destroyed, all formations within 5 cm suffers a Blast Marker."
+        "crit": "The Dracosan is destroyed."
       },
 
            {
@@ -942,7 +941,7 @@
           "Damage Capacity (3)",
           "Reinforced Armour"
         ],
-        "crit": "The Super-Heavy Tank is destroyed, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Super-Heavy Tank is destroyed. All formations within 5 cm takes one Blast Marker at the end of the current action."
       },
       {
         "name": "Hellbore Super-Heavy Burrowing Transport",
@@ -961,7 +960,7 @@
          "Dauntless",
          "Tunneler"
         ],
-        "crit": "The Hellbore takes a point of damage. If this unit is destroyed by damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Hellbore takes a point of damage. If the unit is destroyed by this damage, all formations within 5 cm takes one Blast Marker at the end of the current action."
       },
       {
         "name": "Capitol Imperialis",
@@ -988,7 +987,7 @@
           "Steadfast"
         ],
         "notes": "Unless destroyed by a critical hit, leave the model on the battlefield as Impassable Terrain.",
-        "crit": "The unit takes D3 points of damage. If this unit is destroyed by damage from a critical hit, all formations within 15 cm suffers a Blast Marker."
+        "crit": "The unit takes a point of damage. If the unit is destroyed by this damage, all formations within 15 cm takes one Blast Marker at the end of the current action."
       }
     ]
   }

@@ -571,7 +571,7 @@
           "Ponderous",
           "Steadfast"
         ],
-        "crit": "The Gorgon takes a point of damage. If this unit is destroyed while taking damage from a critical hit, all formations within 10 cm suffers a Blast Marker."
+        "crit": "The Gorgon takes a point of damage."
       }
     ]
   }

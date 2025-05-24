@@ -488,7 +488,7 @@
       "title": "Daemonic",
       "description": [
         "Units with the 'Daemonic' special rule counts as being twice as many (or having twice as many DC) for determining 'outnumber' during assault. Units with the 'Daemonic' special rule are automatically destroyed if it is part of a formation that loses an assault, unless they also have the 'Fearless' special rule.",
-        "Enemy Teleporting units placed within 30 cm of any enemy units with the 'Daemonic' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
+        "Enemy Teleporting units placed within 15 cm of any enemy units with the 'Daemonic' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
       ]
     },
  {
@@ -1101,7 +1101,7 @@
     {
       "title": "Artillery Blind Strike",
       "description": [
-        "A Blind Burst has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place a Blind template (same size as a small barrage template) with its centre over the marker. No part of the template may be placed over any terrain (other than roads, water, or open ground) or on top of any model. For the rest of the battle, this area blocks line of sight and gives Cover just like terrain (it is in all other aspects considered to be open ground, and does not give a cover save)."
+        "A Blind Burst is targeted at any friendly formation within 30 cm. Place a Blind marker next to the targeted formation. For the rest of the turn, the entire formation counts as being in Cover. Unlike other Offboard Support assets, Artillery strikes arrive immediately."
       ]
     },
      {

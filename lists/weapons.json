@@ -1991,19 +1991,6 @@
         }
       ]
     },
-        {
-      "name": "Destroyer Missile Launcher",
-      "modes": [
-        {
-          "firepower": "AP6+",
-          "range": 45,
-          "specialRules": [
-           "IC",
-           "Disrupt"
-          ]
-        }
-      ]
-    },
     {
       "name": "Helios Defense Missiles",
       "modes": [
