@@ -7,9 +7,9 @@
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
   "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
-  "armyRules": "The <i>And They Shall Know No Fear (ATSKNF)</i> special rule applies to all Ultramarines Legion Detachments.",
+  "armyRules": "The <i>And They Shall Know No Fear</i> special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
-    "And They Shall Know No Fear (ATSKNF)"
+    "And They Shall Know No Fear"
   ],
   "units": [
     {
@@ -114,7 +114,8 @@
         "Shield Disruptor",
         "God Machine",
         "Ponderous",
-        "Steadfast"
+        "Steadfast",
+        "System Breakdown"
       ]
     },
     {
@@ -162,8 +163,9 @@
         },
         {
           "name": "0-1 Veteran Detachment",
-          "units": "One Lieutenant character, four Legion Veteran Squads, two Rhinos",
+          "units": "One Lieutenant character, four Legion Veteran Squads",
           "extraUnits": [
+            "Add two Rhinos (Free), or two Contemptor Dreadnoughts of any single configurations (2 U/p)",
             "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
             "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
             "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
@@ -257,7 +259,7 @@
           "units": "One Lieutenant character, three Cataphractii Terminator Squads",
           "extraUnits": [
             "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
-            "Add one Cataphractii Terminator Squad, or replace three Cataphractii Terminator Squads with a Fulmentarus Terminator Squad: 2 U/p"
+            "Replace three Cataphractii Terminator Squads with three Fulmentarus Terminator Squads (1 U/p), or add one Cataphractii Terminator Squad (2 U/p)"
           ],
           "points": "1 F/p, 1 U/p"
         },
@@ -358,7 +360,7 @@
     },
     {
       "name": "Ultramarines Offboard Support Assets",
-      "description": "",
+      "description": "May only have one Offboard Support Asset for each Core Detachment",
       "formations": [
         {
           "name": "Drop Pods",

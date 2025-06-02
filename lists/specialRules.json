@@ -31,9 +31,9 @@
       ]
     },
     {
-      "title": "Cybertheurgy",
+      "title": "Artificia Cybernetica",
       "description": [
-        "A unit with the 'Cybertheurgy' special rule removes its 'Cybernetica Cortex' special rule, and the formation it is part of gains an additional +1 to rally."
+        "A unit with the 'Artificia Cybernetica' special rule removes its 'Cybernetica Cortex' special rule, and the formation it is part of gains an additional +1 to rally."
       ]
     },
     {
@@ -102,6 +102,12 @@
       "title": "Ripple Fire",
       "description": [
         "A War Engine with this special rule may declare that it will Ripple Fire when shooting with any action. The WE may fire at up to three enemy formations with an additional -1 modifier to hit, but may not target more than one formation per individual weapon."
+      ]
+    },
+    {
+      "title": "System Breakdown",
+      "description": [
+        "A War Engine with the 'System Breakdown' special rule that have less than half of their remaining DC left suffer an additional -1 to activate, and may no longer use the 'Split Fire' or 'Ripple Fire' special rules."
       ]
     },
     {
@@ -209,19 +215,19 @@
          {
       "title": "Logic of Victory",
       "description": [
-        "All Mechanicum Taghmata Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Sustain Fire or Marshal action, and a +1 modifier to their Rally Tests."
+        "All Mechanicum Taghmata Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Sustain Fire or Marshal action, but suffer a -1 modifier when attempting a March action. In addition, they gain a +1 modifier to their Rally Tests."
       ]
     },
     {
       "title": "A Soul of Cold Iron",
       "description": [
-        "All Mechanicum Taghmata Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Overwatch or Marshal action, and a +1 modifier to their Rally Tests."
+        "All Mechanicum Taghmata Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Overwatch or Marshal action, but suffer a -1 modifier when attempting a March action. In addition, they gain a +1 modifier to their Rally Tests."
       ]
     },
          {
       "title": "Malefica Mechanica",
       "description": [
-        "All Dark Mechanicum Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Sustain Fire, or Engage action, and a +1 modifier to their Rally Tests."
+        "All Dark Mechanicum Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Sustain Fire, or Engage action, but suffer a -1 modifier when attempting a March action. In addition, they gain a +1 modifier to their Rally Tests."
       ]
     },
     {
@@ -257,7 +263,7 @@
     {
       "title": "Steadfast",
       "description": [
-        "When broken or otherwise forced to take a withdrawal move, a unit with the 'Steadfast' special rule is not destroyed if it ends its movement within 15 cm of the enemy."
+        "When broken or otherwise forced to take a withdrawal move, a unit with the 'Steadfast' special rule is not destroyed if it ends its movement within 15 cm of the enemy. In addition, it only suffers a -1 to rally if within 15 cm of an enemy unbroken formation instead of the usual 30 cm."
       ]
     },
     {
@@ -323,14 +329,13 @@
     {
       "title": "Towering",
       "description": [
-        "Units with the 'Towering' special rule counts as Support Craft for Line of Sight purposes."
+        "Units with the 'Towering' special rule counts as Support Craft for Line of Sight purposes. In addition, a unit with this special rule may only claim cover from area terrain if completely within the terrain feature."
       ]
     },
     {
-      "title": "And They Shall Know No Fear (ATSKNF)",
+      "title": "And They Shall Know No Fear",
       "description": [
-        "Units with ATSKNF can take 2 Blast Markers before they are suppressed, or to kill a unit in a broken formation (ignore any leftover Blast Markers). ATSKNF formations are only broken if they have more than 2 Blast Markers per unit in the formation.",
-        "Once the number of Blast Markers on a ATSKNF formation exceeds the number of units / DC, they suffer an additional -1 to activate, and their enemies gain an additional +1 during assault resolution (this is counted before halving).",
+        "Units with the 'And They Shall Know No Fear' (ATSKNF) special rule can take 2 Blast Markers before they are suppressed, or to kill a unit in a broken formation (ignore any leftover Blast Markers). ATSKNF formations are only broken if they have more than 2 Blast Markers per unit in the formation.",
         "ATSKNF formations only count half their number of Blaster markers in assault resolution (rounding down to a minimum of one). Halve the number of extra hits suffered by a ATSKNF formation that loses an assault, rounding down in favour of the ATSKNF formation. When a broken formation with ATSKNF rallies, it receives a number of Blast Markers equal to the number of units, rather than half this number."
       ]
     },
@@ -382,7 +387,7 @@
     {
       "title": "Siege",
       "description": [
-        "Weapons with the 'Siege' special rule gains an additional +1 to hit and the 'Crippling' special rule against Strongholds, and may use AP instead of AT against such targets."
+        "Weapons with the 'Siege' special rule gains the 'Crippling' special rule against Strongholds, and may use AP instead of AT against such targets."
       ]
     },
     {
@@ -559,9 +564,9 @@
       ]
     },
     {
-      "title": "Machine Empathy",
+      "title": "Artificia Machina",
       "description": [
-        "As long as a formation contains a unit with the 'Machine Empathy' special ability, all LV and AV units in the formation gains Invulnerable Save. Units that already have Invulnerable Save gains Regeneration instead."
+        "As long as a formation contains a unit with the 'Artificia Machina' special ability, all LV and AV units in the formation gains Invulnerable Save. Units that already have Invulnerable Save gains Regeneration instead."
       ]
     },
     {

@@ -10,7 +10,7 @@
         "weapons": [
         ],
         "specialRules": [
-        "Cybertheurgy",
+        "Artificia Cybernetica",
         "Leader",
         "Invulnerable Save"
         ]
@@ -24,7 +24,7 @@
         "Silica Animus",
         "Blitz",
         "Leader",
-        "Invulnerable Save"
+        "Artificia Machina"
         ]
       },
       {
@@ -183,7 +183,7 @@
       {
         "name": "Vorax Battle-Automata Cohort",
         "type": "LV",
-        "speed": 15,
+        "speed": 20,
         "armour": 5,
         "cc": 3,
         "ff": 5,
@@ -196,7 +196,6 @@
           "Walker",
           "Nimble",
           "Skirmisher",
-          "Blitz",
           "Fearless",
           "Expendable",
           "Ponderous",

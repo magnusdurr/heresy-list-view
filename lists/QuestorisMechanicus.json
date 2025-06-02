@@ -13,7 +13,8 @@
         "specialRules": [
           "Supreme Commander",
           "Inspiring",
-          "Fearless"
+          "Fearless",
+          "Vox-Caster"
         ]
       },
       {
@@ -24,12 +25,13 @@
         ],
         "specialRules": [
           "Commander",
-          "Leader"
+          "Leader",
+          "Vox-Caster"
         ]
       },
 
       {
-        "name": "Armiger Moirax",
+        "name": "Armiger Moirax Knight",
         "type": "AV",
         "variants": [
           {
@@ -90,7 +92,7 @@
         ]
       },
       {
-        "name": "Mechanicum Questoris",
+        "name": "Mechanicum Questoris Knight",
         "type": "WE",
         "variants": [
           {
@@ -133,7 +135,7 @@
       },
 
       {
-        "name": "Cerastus Knight",
+        "name": "Mechanicum Cerastus Knight",
         "type": "WE",
         "variants": [
           {
@@ -153,8 +155,8 @@
         "Damage Capacity (2)",
         "Reinforced Armour",
           "Thick Rear Armour",
+          "Blitz",
           "Walker",
-          "Scout",
           "Ion Shield (3+)",
           "Ionic Flare Shield"
         ],
@@ -162,7 +164,7 @@
       },
 
       {
-        "name": "Mechanicum Acastus",
+        "name": "Mechanicum Acastus Knight",
         "type": "WE",
         "variants": [
           {

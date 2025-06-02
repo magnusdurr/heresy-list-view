@@ -253,6 +253,7 @@
           }
         ],
         "specialRules": [
+            "Walker"
         ]
       },
 
@@ -760,10 +761,11 @@
         "name": "Malcador Minotaur",
         "type": "WE",
         "speed": 15,
-        "armour": 3,
+        "armour": 5,
         "cc": 6,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
+            "Heavy Stubber",
           "Twin Earthshaker Cannon||FxF"
         ],
         "specialRules": [
@@ -841,7 +843,7 @@
           "Ion Shield (5+)",
           "Walker"
         ],
-        "notes":  "Lascannon Variant: Heavy Transport (4) - Demolisher Variant: Heavy Transport (2)",
+        "notes":  "Lascannon Variant: Assault Transport (4) - Demolisher Variant: Assault Transport (2)",
         "crit": "The Dracosan is destroyed."
       },
 
@@ -941,7 +943,7 @@
           "Damage Capacity (3)",
           "Reinforced Armour"
         ],
-        "crit": "The Super-Heavy Tank is destroyed. All formations within 5 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Super-Heavy Tank is destroyed."
       },
       {
         "name": "Hellbore Super-Heavy Burrowing Transport",
@@ -960,7 +962,7 @@
          "Dauntless",
          "Tunneler"
         ],
-        "crit": "The Hellbore takes a point of damage. If the unit is destroyed by this damage, all formations within 5 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Hellbore takes a point of damage."
       },
       {
         "name": "Capitol Imperialis",
@@ -986,8 +988,8 @@
           "Ponderous",
           "Steadfast"
         ],
-        "notes": "Unless destroyed by a critical hit, leave the model on the battlefield as Impassable Terrain.",
-        "crit": "The unit takes a point of damage. If the unit is destroyed by this damage, all formations within 15 cm takes one Blast Marker at the end of the current action."
+        "notes": "Once destroyed, leave the model on the battlefield as Impassable Terrain.",
+        "crit": "The unit takes a point of damage."
       }
     ]
   }

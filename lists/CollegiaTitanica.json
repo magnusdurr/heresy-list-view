@@ -82,6 +82,7 @@
           "Void Shields (12)",
           "God Machine (2)",
           "Ripple Fire",
+          "System Breakdown",
           "Inspiring",
           "Dauntless",
           "Reinforced Armour",
@@ -93,7 +94,7 @@
           "Transport(10)"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Imperator Titan takes a point of damage. If the titan is destroyed by this damage, all formations within 15 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Imperator Titan takes a point of damage."
       },
 
        {
@@ -135,6 +136,7 @@
           "Damage Capacity (14)",
           "Void Shields (12)",
           "God Machine (2)",
+          "System Breakdown",
           "Inspiring",
           "Split Fire",
           "Dauntless",
@@ -150,7 +152,7 @@
           "Transport(10)"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmonger Titan takes a point of damage. If the titan is destroyed by this damage, all formations within 15 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Warmonger Titan takes a point of damage."
       },
       {
         "name": "Lysander Fighter",
@@ -223,6 +225,7 @@
           "Damage Capacity (10)",
           "Void Shields (8)",
           "God Machine (2)",
+          "System Breakdown",
           "Ripple Fire",
           "Dauntless",
           "Reinforced Armour",
@@ -233,7 +236,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmaster Titan takes a point of damage. If the titan is destroyed by this damage, all formations within 15 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Warmaster Titan takes a point of damage."
       },
 
       {
@@ -293,6 +296,7 @@
           "Damage Capacity (10)",
           "Void Shields (8)",
           "God Machine (2)",
+          "System Breakdown",
           "Ripple Fire",
           "Dauntless",
           "Reinforced Armour",
@@ -303,7 +307,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warmaster Titan takes a point of damage. If the titan is destroyed by this damage, all formations within 15 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Warmaster Titan takes a point of damage."
       },
       {
         "name": "Warlord-Sinister Psi-Titan",
@@ -376,6 +380,7 @@
           "Damage Capacity (8)",
           "Void Shields (6)",
           "God Machine (1)",
+          "System Breakdown",
           "Split Fire",
           "Dauntless",
           "Reinforced Armour",
@@ -388,7 +393,7 @@
           "Precience"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warlord-Sinister Titan takes a point of damage. If the titan is destroyed by this damage, all formations within 10 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Warlord-Sinister Titan takes a point of damage."
       },
       {
         "name": "Warlord Battle Titan",
@@ -455,6 +460,7 @@
           "Damage Capacity (8)",
           "Void Shields (6)",
           "God Machine (1)",
+          "System Breakdown",
           "Split Fire",
           "Dauntless",
           "Reinforced Armour",
@@ -465,7 +471,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Warlord Titan takes a point of damage. If the titan is destroyed by this damage, all formations within 10 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Warlord Titan takes a point of damage."
       },
       {
         "name": "Warbringer Nemesis Battle Titan",
@@ -530,6 +536,7 @@
         "specialRules": [
           "Damage Capacity (6)",
           "Void Shields (6)",
+          "System Breakdown",
           "Dauntless",
           "Reinforced Armour",
           "Walker",
@@ -538,7 +545,7 @@
           "Steadfast"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-       "crit": "The Warbringer Titan takes a point of damage. If the titan is destroyed by this damage, all formations within 10 cm takes one Blast Marker at the end of the current action."
+       "crit": "The Warbringer Titan takes a point of damage."
       },
 
       {
@@ -605,6 +612,7 @@
         "specialRules": [
           "Damage Capacity (6)",
           "Void Shields (4)",
+          "System Breakdown",
           "Dauntless",
           "Blitz",
           "Reinforced Armour",
@@ -615,7 +623,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
-        "crit": "The Reaver Titan takes a point of damage. If the titan is destroyed by this damage, all formations within 10 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Reaver Titan takes a point of damage."
       },
  
   {
@@ -671,7 +679,7 @@
           "Walker"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
-        "crit": "The Dire Wolf is destroyed. All formations within 5 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Dire Wolf is destroyed."
       },
 
 
@@ -720,7 +728,7 @@
           "Vanguard"
         ],
         "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
-        "crit": "The Warhound takes a point of damage. If the titan is destroyed by this damage, all formations within 5 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Warhound takes a point of damage."
       }
     ]
   }

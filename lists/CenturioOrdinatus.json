@@ -122,12 +122,13 @@
         "specialRules": [
           "Damage Capacity (4)",
           "Dispersion Field (3+)",
+          "System Breakdown",
           "Reinforced Armour",
           "Dauntless",
           "Steadfast",
           "Ponderous"
         ],
-        "crit": "The Ordinatus is destroyed. All formations within 15 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Ordinatus is destroyed."
       },
       {
         "name": "Ordinatus Minoris Support Construct", 
@@ -233,12 +234,13 @@
         "specialRules": [
           "Damage Capacity (4)",
           "Dispersion Field (3+)",
+          "System Breakdown",
           "Reinforced Armour",
           "Dauntless",
           "Steadfast",
           "Ponderous"
         ],
-        "crit": "The Ordinatus is destroyed. All formations within 15 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Ordinatus is destroyed."
       },
       {
         "name": "Ordinatus Aktaeus Burrowing Transport",
@@ -258,11 +260,12 @@
          "Tunneler",
          "Dispersion Field (3+)",
          "Assault Transport (10)",
+         "System Breakdown",
          "Dauntless",
          "Steadfast",
          "Vanguard"
         ],
-        "crit": "The Ordinatus is destroyed. All formations within 15 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Ordinatus is destroyed."
       },
       {
         "name": "Ordinatus Majoris Heavy Siege Construct",
@@ -402,6 +405,7 @@
         "specialRules": [
           "Damage Capacity (8)", 
           "Dispersion Field (2+)",
+          "System Breakdown",
           "Reinforced Armour",
           "Vox-Caster",
           "Leader",
@@ -409,7 +413,7 @@
           "Steadfast",
           "Ponderous"
         ],
-        "crit": "The Ordinatus Majoris is destroyed. All formations within 20 cm takes one Blast Marker at the end of the current action."
+        "crit": "The Ordinatus Majoris is destroyed."
       }
     ]
   }

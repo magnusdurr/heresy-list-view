@@ -35,7 +35,7 @@
           "Nimble",
           "Reinforced Armour",
           "Invulnerable Save",
-          "Machine Empathy",
+          "Artificia Machina",
           "Ponderous",
           "Vox-Caster"
         ]
@@ -60,7 +60,7 @@
           "Nimble",
           "Reinforced Armour",
           "Invulnerable Save",
-          "Machine Empathy",
+          "Artificia Machina",
           "Ponderous",
           "Vox-Caster"
         ]
@@ -77,9 +77,9 @@
           "Power Weapon"
         ],
         "specialRules": [
-          "Commander",
           "Leader",
           "Invulnerable Save",
+          "Artificia Machina",
           "Ponderous",
           "Steadfast",
           "Vox-Caster"
@@ -89,17 +89,16 @@
         "name": "Tech-Priest Auxilia",
         "type": "INF",
         "speed": 15,
-        "armour": 4,
+        "armour": 5,
         "cc": 5,
         "weapons": [
           "Power Weapon"
         ],
         "specialRules": [
         "Invulnerable Save",
-        "Leader",
-        "Vox-Caster",
-          "Ponderous",
-          "Steadfast"
+        "Ponderous",
+        "Steadfast",
+        "Vox-Caster"
         ]
       },
       {
@@ -189,6 +188,68 @@
           "Bulky",
           "Skirmishers",
           "Jump Packs",
+          "Ponderous",
+          "Steadfast"
+        ]
+      },
+          {
+        "name": "Taghmata Rapier",
+        "type": "LV",
+        "variants": [
+          {
+            "name": "Laser Destroyer",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "ff": 6,
+            "weapons": [
+              "Laser Destroyer"
+            ]
+          },
+          {
+            "name": "Quad Launcher",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+             "ff": 6,
+            "weapons": [
+              "Quad Launcher"
+            ]
+          },
+          {
+            "name": "Graviton Cannon",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "cc": 6,
+            "ff": 6,
+            "weapons": [
+              "Graviton Cannon"
+            ]
+          },
+          {
+            "name": "Multi-Laser",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "ff": 5,
+            "weapons": [
+              "Quad Multi-Laser"
+            ]
+          },
+          {
+            "name": "Heavy Bolter",
+            "type": "LV",
+            "speed": 10,
+            "armour": 5,
+            "ff": 3,
+            "weapons": [
+              "Quad Heavy Bolter"
+            ]
+          }
+        ],
+        "specialRules": [
+          "Walker",
           "Ponderous",
           "Steadfast"
         ]

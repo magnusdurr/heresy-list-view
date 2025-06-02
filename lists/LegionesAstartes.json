@@ -1615,7 +1615,6 @@
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Transport (1)",
           "Leader",
           "Vox-Caster",
           "Commander"
@@ -2047,7 +2046,7 @@
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
-        "notes": "A Bastion counts as Impassible Terrain once destroyed, unless it was destroyed while taking damage from a critical hit.",
+        "notes": "Once destroyed, leave the model on the battlefield as Impassable Terrain.",
         "crit": "The Bastion takes a point of damage."
       },
       {
