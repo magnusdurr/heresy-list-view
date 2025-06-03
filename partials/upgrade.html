@@ -2,7 +2,13 @@
 {{#with replace}}
     {{#each options}}
     <small>
-        <span class="badge badge-success">{{appendOnNumber upgradePoints ' UP'}}</span>
+        <span class="badge badge-success">
+            {{#if (eq upgradePoints 0)}}
+              FREE
+            {{else}}
+              {{appendOnNumber upgradePoints ' FP'}}
+            {{/if}}
+        </span>
         {{#if @first}}Replace{{else}}or replace{{/if}}
         {{numberAsText ../removeCount false}} {{../removeName}}
         with {{numberAsText addCount false}}
@@ -18,7 +24,13 @@
 {{#with add}}
 {{#each options}}
 <small>
-    <span class="badge badge-success">{{appendOnNumber upgradePoints ' UP'}}</span>
+    <span class="badge badge-success">
+        {{#if (eq upgradePoints 0)}}
+          FREE
+        {{else}}
+          {{appendOnNumber upgradePoints ' FP'}}
+        {{/if}}
+    </span>
     {{#if @first}}Add{{else}}or add{{/if}}
     {{numberAsText addCount false}}
     {{#each addNames}}{{#if @first}}{{else if @last}} or {{else}}, {{/if}}<a href="{{this}}" class="unit-link">{{this}}{{appendPlural ../addCount}}</a>{{/each}}

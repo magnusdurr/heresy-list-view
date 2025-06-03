@@ -30,7 +30,10 @@
                 <div class="row">
                     <div class="col-12 col-lg-4">
                         <span class="badge badge-primary">{{appendOnNumber formationPoints ' FP'}}</span>
-                        <span style="font-weight: 550">{{name}}</span><br>
+                        <span style="font-weight: 550">
+                            {{#if max}}0-{{max}}{{/if}}
+                            {{name}}
+                        </span><br>
                         {{#each unitSpec}}
                             {{#if @first}}
                                 {{numberAsText this true}} <a href="{{@key}}" class="unit-link">{{@key}}{{appendPlural this~}}</a>
