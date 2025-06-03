@@ -8,6 +8,17 @@ var eaNav = (function () {
         navigateTo($(this).attr("href"))
     };
 
+    var anchorHandler = function (event) {
+        console.log("anchorHandler", $(this).attr("href"));
+        event.preventDefault();
+        const targetElement = document.getElementById($(this).attr("href"));
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            console.error(`Anchor with ID "${$(this).attr("href")}" not found.`);
+        }
+    }
+
     // triggered by history.back
     var historyBack = function (event) {
         console.debug("[nav] pop state", event.originalEvent.state);
@@ -100,6 +111,7 @@ var eaNav = (function () {
         reload: reloadPage,
         linkHandler: internalLink,
         historyBackHandler: historyBack,
-        urlFromParams: urlFromParams
+        urlFromParams: urlFromParams,
+        anchorHandler: anchorHandler
     }
 })();

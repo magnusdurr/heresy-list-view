@@ -113,3 +113,21 @@ h6 {
 .notes-row {
     margin-top: 0.5rem;
 }
+
+.upgrade-list li:not(:first-child)::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.upgrade-list li {
+    margin-bottom: 0.5rem;
+}
+
+.unit-link {
+    color: #007bff;
+}

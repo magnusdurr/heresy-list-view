@@ -162,14 +162,6 @@
             {
               "options": [
                 {
-                  "name": "Replace three Legion Tactical Squads with three Legion Veteran Squads (0-1 in the army)",
-                  "upgradePoints": 1
-                }
-              ]
-            },
-            {
-              "options": [
-                {
                   "name": "Replace two Legion Tactical Squads with two Legion Support Squads",
                   "upgradePoints": 1
                 },
@@ -196,13 +188,7 @@
               ]
             }
           ],
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
-            "Replace two Legion Tactical Squads with two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
-            "Add two Legion Tactical Squads (2 U/p), two Legion Support Squads (2 U/p), two Contemptor Dreadnoughts of any single configuration (2 U/p), two Cataphractii Terminator Squads (3 U/p), or two Legion Heavy Support Squads (3 U/p)"
-          ],
-          "formationPoints": 1,
-          "points": "1 FP"
+          "formationPoints": 1
         },
         {
           "name": "Mechanized Tactical Detachment",
@@ -211,13 +197,37 @@
             "Legion Tactical Squad": 4,
             "Rhino": 2
           },
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
-            "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
-            "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
-            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
+          "upgrades": [
+            {
+              "options": [
+                {
+                  "name": "Replace the Lieutenant character with a Captain, Chaplain, or Librarian",
+                  "upgradePoints": 1
+                },
+                {
+                  "name": "or replace the Lieutenant with a Praetor (0-1 in the army)",
+                  "upgradePoints": 2
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "name": "Replace two Rhinos in the formation with two Support Rhinos of any single configuration",
+                  "upgradePoints": 1
+                },
+                {
+                  "name": "or replace two Rhinos in the formation with two Land Raiders",
+                  "upgradePoints": 3
+                },
+                {
+                  "name": "or replace two Rhinos in the formation with one Spartan of any configuration",
+                  "upgradePoints": 3
+                }
+              ]
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
           "name": "0-1 Veteran Detachment",

@@ -33,10 +33,10 @@
                         <span style="font-weight: 550">{{name}}</span><br>
                         {{#each unitSpec}}
                             {{#if @first}}
-                                {{numberAsText this true}} {{@key}}{{appendPlural this~}}
+                                {{numberAsText this true}} <a href="{{@key}}" class="unit-link">{{@key}}{{appendPlural this~}}</a>
                             {{else if @last}}
-                                and {{numberAsText this false}} {{@key}}{{appendPlural this}}
-                            {{else}}, {{numberAsText this false}} {{@key}}{{appendPlural this}}
+                                and {{numberAsText this false}} <a href="{{@key}}" class="unit-link">{{@key}}{{appendPlural this}}</a>
+                            {{else}}, {{numberAsText this false}} <a href="{{@key}}" class="unit-link">{{@key}}{{appendPlural this}}</a>
                             {{/if}}
                         {{/each}}
 
@@ -49,7 +49,7 @@
                     <div class="col-12 col-lg-8">
                         {{#if upgrades}}<span class="d-inline"><i>Upgrades</i></span>{{/if}}
                         {{#if upgrades}}
-                        <ul style="padding-left: 1rem">
+                        <ul style="padding-left: 1rem" class="upgrade-list">
                             {{#each upgrades}}
                             <li>
                                 {{#each options}}
