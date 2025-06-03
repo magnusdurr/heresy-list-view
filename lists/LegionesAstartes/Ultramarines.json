@@ -148,44 +148,62 @@
           },
           "upgrades": [
             {
-              "options": [
-                {
-                  "name": "Replace the Lieutenant character with a Captain, Chaplain, or Librarian",
-                  "upgradePoints": 1
-                },
-                {
-                  "name": "or replace the Lieutenant with a Praetor (0-1 in the army)",
-                  "upgradePoints": 2
-                }
-              ]
+              "replace": {
+                "removeName": "Lieutenant",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Captain", "Chaplain", "Librarian - Thaumaturgy"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Praetor"],
+                    "addCount": 1,
+                    "upgradePoints": 2,
+                    "oncePerArmy": true
+                  }
+                ]
+              }
             },
             {
-              "options": [
-                {
-                  "name": "Replace two Legion Tactical Squads with two Legion Support Squads",
-                  "upgradePoints": 1
-                },
-                {
-                  "name": "or two Legion Heavy Support Squads",
-                  "upgradePoints": 2
-                }
-              ]
+              "replace": {
+                "removeName": "Legion Tactical Squad",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Legion Support Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Legion Heavy Support Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
             },
             {
-              "options": [
-                {
-                  "name": "Add two Legion Tactical Squads",
-                  "upgradePoints": 2
-                },
-                {
-                  "name": "or two Contemptor Dreadnoughts of any single configuration",
-                  "upgradePoints": 2
-                },
-                {
-                  "name": "or two Cataphractii Terminator Squads",
-                  "upgradePoints": 3
-                }
-              ]
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Legion Tactical Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Contemptor Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Cataphractii Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
             }
           ],
           "formationPoints": 1
@@ -199,32 +217,46 @@
           },
           "upgrades": [
             {
-              "options": [
-                {
-                  "name": "Replace the Lieutenant character with a Captain, Chaplain, or Librarian",
-                  "upgradePoints": 1
-                },
-                {
-                  "name": "or replace the Lieutenant with a Praetor (0-1 in the army)",
-                  "upgradePoints": 2
-                }
-              ]
+              "replace": {
+                "removeName": "Lieutenant",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Captain", "Chaplain", "Librarian - Thaumaturgy"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Praetor"],
+                    "addCount": 1,
+                    "upgradePoints": 2,
+                    "oncePerArmy": true
+                  }
+                ]
+              }
             },
             {
-              "options": [
-                {
-                  "name": "Replace two Rhinos in the formation with two Support Rhinos of any single configuration",
-                  "upgradePoints": 1
-                },
-                {
-                  "name": "or replace two Rhinos in the formation with two Land Raiders",
-                  "upgradePoints": 3
-                },
-                {
-                  "name": "or replace two Rhinos in the formation with one Spartan of any configuration",
-                  "upgradePoints": 3
-                }
-              ]
+              "replace": {
+                "removeName": "Rhino",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Support Rhino"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Land Raider"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Spartan"],
+                    "addCount": 1,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
             }
           ],
           "formationPoints": 1

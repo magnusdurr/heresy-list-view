@@ -16,6 +16,10 @@ var eaTemplating = {
             Handlebars.registerPartial('weapons', template);
         });
 
+        $.get("partials/upgrade.html").done(function (template) {
+            Handlebars.registerPartial('upgrade', template);
+        });
+
         $.get("templates/army.html").done(function (template) {
             eaTemplating.templates['army'] = Handlebars.compile(template);
         });

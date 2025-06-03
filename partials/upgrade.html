@@ -1,0 +1,30 @@
+{{#if replace}}
+{{#with replace}}
+    {{#each options}}
+    <small>
+        <span class="badge badge-success">{{appendOnNumber upgradePoints ' UP'}}</span>
+        {{#if @first}}Replace{{else}}or replace{{/if}}
+        {{numberAsText ../removeCount false}} {{../removeName}}
+        with {{numberAsText addCount false}}
+        {{#each addNames}}{{#if @first}}{{else if @last}} or {{else}}, {{/if}}<a href="{{this}}" class="unit-link">{{this}}{{appendPlural ../addCount}}</a>{{/each}}
+        {{#if oncePerArmy}} (0-1 in the army){{/if}}
+        {{#unless @last}}<br>{{/unless}}
+    </small>
+    {{/each}}
+{{/with}}
+{{/if}}
+
+{{#if add}}
+{{#with add}}
+{{#each options}}
+<small>
+    <span class="badge badge-success">{{appendOnNumber upgradePoints ' UP'}}</span>
+    {{#if @first}}Add{{else}}or add{{/if}}
+    {{numberAsText addCount false}}
+    {{#each addNames}}{{#if @first}}{{else if @last}} or {{else}}, {{/if}}<a href="{{this}}" class="unit-link">{{this}}{{appendPlural ../addCount}}</a>{{/each}}
+    {{#if oncePerArmy}} (0-1 in the army){{/if}}
+    {{#unless @last}}<br>{{/unless}}
+</small>
+{{/each}}
+{{/with}}
+{{/if}}
