@@ -9,11 +9,17 @@ var eaNav = (function () {
     };
 
     var anchorHandler = function (event) {
-        console.log("anchorHandler", $(this).attr("href"));
         event.preventDefault();
+        const currentPos = window.scrollY;
         const targetElement = document.getElementById($(this).attr("href"));
         if (targetElement) {
+            console.debug("[nav] push state", {position: currentPos});
+            history.pushState({ position: currentPos }, null, null);
             targetElement.scrollIntoView({ behavior: 'smooth' });
+
+            const newPos = window.scrollY;
+            console.debug("[nav] push state", {position: newPos});
+            history.pushState({ position: newPos }, null, null);
         } else {
             console.error(`Anchor with ID "${$(this).attr("href")}" not found.`);
         }
@@ -26,7 +32,11 @@ var eaNav = (function () {
 
         if (state !== null)
         {
-            loadContent(state.url);
+            if (state.url) {
+                loadContent(state.url);
+            } else if (state.position) {
+                window.scrollTo(0, state.position)
+            }
         }
         else
         {

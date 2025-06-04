@@ -106,8 +106,8 @@
             $(this).addClass('active');
         });
 
-        $(document).on('click', 'a:not(.external,.page-link,.dropdown-toggle)', eaNav.linkHandler);
-        $(document).on('click', 'a.unit-link', eaNav.anchorHandler);
+        $(document).on('click', 'a:not(.external,.page-link,.dropdown-toggle,.unitlink)', eaNav.linkHandler);
+        $(document).on('click', 'a.unitlink', eaNav.anchorHandler);
         $(window).on('popstate', eaNav.historyBackHandler);
 
         var url = eaNav.urlFromParams();
