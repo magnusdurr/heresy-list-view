@@ -33,6 +33,12 @@
                         {{#if upgradePoints}}
                         <span class="badge badge-success">{{appendOnNumber upgradePoints ' UP'}}</span>
                         {{/if}}
+                        {{#if titanPoints}}
+                        <span class="badge badge-warning">{{appendOnNumber titanPoints ' TP'}}</span>
+                        {{/if}}
+                        {{#if alliedPoints}}
+                        <span class="badge badge-info">{{appendOnNumber alliedPoints ' AP'}}</span>
+                        {{/if}}
                         <span style="font-weight: 550">
                             {{#if max}}0-{{max}}{{/if}}
                             {{name}}

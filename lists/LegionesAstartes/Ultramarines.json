@@ -3,10 +3,10 @@
   "army": "Ultramarines (XIII) Legion",
   "version": "1.0.Alpha",
   "release": "2025-00-00",
-  "intro": "Ultramarines Legion armies gain 12 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "intro": "Ultramarines Legion armies gain 12 formation points <span class=\"badge badge-primary\">12 FP</span>, 14 upgrade points <span class=\"badge badge-success\">14 UP</span>, 4 Titan points <span class=\"badge badge-warning\">4 TP</span>, and 4 Ally points <span class=\"badge badge-info\">4 AP</span> for a normal sized battle. A negative UP value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
-  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
+  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the <i>Chivalry</i> special rule.",
   "armyRules": "The <i>And They Shall Know No Fear</i> special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
     "And They Shall Know No Fear"
@@ -558,6 +558,19 @@
                     "upgradePoints": 0
                   },
                   {
+                    "addNames": ["Contemptor Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Rhino",
+                "removeCount": 2,
+                "options": [
+                  {
                     "addNames": ["Support Rhino"],
                     "addCount": 2,
                     "upgradePoints": 1
@@ -571,11 +584,6 @@
                     "addNames": ["Spartan"],
                     "addCount": 1,
                     "upgradePoints": 3
-                  },
-                  {
-                    "addNames": ["Contemptor Dreadnought"],
-                    "addCount": 2,
-                    "upgradePoints": 2
                   }
                 ]
               }
@@ -774,23 +782,33 @@
       "formations": [
         {
           "name": "Drop Pods",
-          "points": "2 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 2
         },
         {
           "name": "Orbital Pin-Point Attack",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         },
         {
           "name": "Orbital Barrage",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         },
         {
           "name": "Artillery Barrage",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         },
         {
           "name": "2x Artillery Blind Strikes",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         }
       ]
     },
@@ -800,53 +818,195 @@
       "formations": [
         {
           "name": "Warhound",
-          "units": "One Warhound Scout Titan",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon: 1 U/p"
+          "unitSpec": {
+            "Warhound Scout Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 T/p, 1 A/p"
+          "formationPoints": 1,
+          "titanPoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Warhound Pack",
-          "units": "Two Warhound Scout Titans (must have the same armament)",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon: 2 U/p"
+          "unitSpec": {
+            "Warhound Scout Titan": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 2 U/p, 2 T/p, 1 A/p"
+          "formationPoints": 1,
+          "upgradePoints": 2,
+          "titanPoints": 2,
+          "alliedPoints": 1
         },
         {
           "name": "Dire Wolf",
-          "units": "One Dire Wolf Heavy Scout Titan",
-          "extraUnits": [
-            "Replace the Battle Weapon with a Support Weapon (1 U/p) or with a Heavy Support Weapon (2 U/p)"
+          "unitSpec": {
+            "Dire Wolf Heavy Scout Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
+          "formationPoints": 1,
+          "upgradePoints": 1,
+          "titanPoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Reaver",
-          "units": "One Reaver Battle Titan",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 1 U/p"
+          "unitSpec": {
+            "Reaver Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "2 F/p, 2 T/p, 1 A/p"
+          "formationPoints": 2,
+          "titanPoints": 2,
+          "alliedPoints": 1
         },
         {
           "name": "Warlord",
-          "units": "One Warlord Battle Titan",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 1 U/p"
+          "unitSpec": {
+            "Warlord Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "2 F/p, 1 U/p, 3 T/p, 1 A/p"
+          "formationPoints": 2,
+          "upgradePoints": 1,
+          "titanPoints": 3,
+          "alliedPoints": 1
         },
         {
-          "name": "0-1 Warlord-Sinister",
-          "units": "One Veteran Princeps character, one Warlord-Sinister Psi-Titan",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p)."
+          "name": "Warlord-Sinister",
+          "max": 1,
+          "unitSpec": {
+            "Warlord-Sinister Psi-Titan": 1,
+            "Veteran Princeps": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "2 F/p, 4 U/p, 3 T/p, 1 A/p"
+          "formationPoints": 2,
+          "upgradePoints": 4,
+          "titanPoints": 3,
+          "alliedPoints": 1
         }
       ]
     },
@@ -856,42 +1016,137 @@
       "formations": [
         {
           "name": "Auxilia Lasrifle Tercio",
-          "units": "One Auxilia Command Squad with an Auxilia Captain, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
-          "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Veletarii, or one Charonite Ogryns: 1 U/p"
+          "unitSpec": {
+            "Auxilia Command Squad": 1,
+            "Auxilia Captain": 1,
+            "Auxilia Lasrifle Squad": 4,
+            "Auxilia Flamer Squad": 1
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Veletarii"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 A/p"
+          "formationPoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Ogryn Charonite Section",
-          "units": "Three Charonite Ogryns",
-          "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, or two Auxilia Flamer Squads, or two Veletarii: 1 U/p"
+          "unitSpec": {
+            "Charonite Ogryns": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Veletarii"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -2 U/p, 1 A/p"
+          "formationPoints": 1,
+          "upgradePoints": -2,
+          "alliedPoints": 1
         },
         {
           "name": "Veletaris Storm Section",
-          "units": "Four Veletarii",
-          "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or one Charonite Ogryns: 1 U/p"
+          "unitSpec": {
+            "Veletarii": 4
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -2 U/p, 1 A/p"
+          "formationPoints": 1,
+          "upgradePoints": -2,
+          "alliedPoints": 1
         },
         {
           "name": "Auxilia Heavy Sentinel Patrol",
-          "units": "Four Aethon Heavy Sentinels of any configuration",
-          "extraUnits": [
-          ],
-          "points": "1 F/p, 1 U/p, 1 A/p"
+          "unitSpec": {
+            "Aethon Heavy Sentinel": 4
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "upgradePoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Auxilia Leman Russ Squadron",
-          "units": "Three Leman Russ of any configuration",
-          "extraUnits": [
-            "Add one Leman Russ of any configuration: 1 U/p"
+          "unitSpec": {
+            "Leman Russ": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Leman Russ"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 A/p"
+          "formationPoints": 1,
+          "alliedPoints": 1
         }
       ]
     },
@@ -901,19 +1156,85 @@
       "formations": [
         {
           "name": "Armiger Lance",
-          "units": "Three Armiger Knight Warglaives and/or Helverins",
-          "extraUnits": [
-          
+          "unitSpec": {
+            "Armiger Knight Warglaives": 3
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Armiger Knight Warglaives",
+                "removeCount": 3,
+                "options": [
+                  {
+                    "addNames": ["Armiger Knight Helverins"],
+                    "addCount": 3,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            }
           ],
-         "points": "1 F/p, 1 A/p"
+          "formationPoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Questoris Lance",
-          "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
-          "extraUnits": [
-            "Add one Questoris Ironstorm Pod, Questoris Stormspear Pod, or Icarus Autocannon to each unit in the formation: 1 U/p"
+          "unitSpec": {
+            "Questoris Knight Paladins": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Questoris Knight Paladins",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Questoris Knight Crusaders"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Questoris Knight Errants"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Questoris Knight Wardens"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Questoris Knight Gallants"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Questoris Ironstorm Pod"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Questoris Stormspear Pod"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Icarus Autocannon"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 A/p"
+          "formationPoints": 1,
+          "alliedPoints": 1
         }
       ]
     }
