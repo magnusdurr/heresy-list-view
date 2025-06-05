@@ -344,6 +344,17 @@
         }
       ]
     },
+        {
+      "name": "AC Autocannon Array",
+      "modes": [
+        {
+          "firepower": "4x AP4+/AT6+",
+          "range": 30,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
     {
       "name": "AC Quad Autocannon",
       "modes": [
@@ -400,6 +411,23 @@
       ]
     },
     {
+      "name": "AC Colossus Bomb",
+      "modes": [
+        {
+          "firepower": "AT5+",
+          "range": 15,
+         "specialRules": [
+             "Shield Piercer",
+             "MW",
+             "TK(1)",
+             "Crippling",
+             "Titan Hunter"
+
+          ]
+        }
+      ]
+    },
+    {
       "name": "AC Macro-Bomb Cluster",
       "modes": [
         {
@@ -412,10 +440,21 @@
       ]
     },
     {
-      "name": "AC Twin Heavy Bolter Turret",
+      "name": "AC Heavy Bolter Turret",
       "modes": [
         {
           "firepower": "AA5+",
+          "range": 15,
+         "specialRules": [
+          ]
+        }
+      ]
+    },
+        {
+      "name": "AC Assault Cannon Turret",
+      "modes": [
+        {
+          "firepower": "AA4+",
           "range": 15,
          "specialRules": [
           ]
@@ -1817,8 +1856,8 @@
       "name": "AC Turbo-Laser",
       "modes": [
         {
-          "firepower": "2x AP5+/AT3+",
-          "range": 60,
+          "firepower": "3x AP5+/AT3+",
+          "range": 45,
           "specialRules": [
           ]
         }
@@ -1829,7 +1868,7 @@
       "modes": [
         {
           "firepower": "3x AP5+/AT3+",
-          "range": 60,
+          "range": 45,
           "specialRules": [
           ]
         }
@@ -1840,7 +1879,7 @@
       "modes": [
         {
           "firepower": "6x AP5+/AT3+",
-          "range": 60,
+          "range": 45,
           "specialRules": [
           ]
         }
@@ -4249,16 +4288,6 @@
           ]
         },
         {
-          "firepower": "3x AP2+/AT2+",
-          "join": "or",
-          "range": 15,
-          "specialRules": [
-           "IC",
-           "Shield Piercer",
-           "Disrupt"
-          ]
-        },
-        {
           "firepower": "3BP",
           "join": "or",
           "range": 45,
@@ -5083,7 +5112,7 @@
       "name": "Natrix Shock Lance",
       "modes": [
         {
-          "firepower": "AT5+",
+          "firepower": "AT4+",
           "range": 15,
           "specialRules": [
             "Lance",

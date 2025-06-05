@@ -43,44 +43,54 @@
         ]
       },
       {
-        "name": "Marauder Bomber",
+        "name": "Marauder",
         "type": "AC",
-        "speed": "Bomber",
+        "variants": [
+          {
+            "name": "Bomber",
+            "type": "AC",
+            "speed": "Bomber",
         "armour": 4,
-        "weapons": [
+            "weapons": [
           "Twin Lascannon||FxF",
           "AC Bomb Bay||FxF",
-          "AC Twin Heavy Bolter Turret|2|"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Marauder Destroyer",
-        "type": "AC",
-        "speed": "Bomber",
+          "AC Heavy Bolter Turret|2|"
+            ]
+          },
+          {
+            "name": "Destroyer",
+            "type": "AC",
+            "speed": "Bomber",
         "armour": 4,
-        "weapons": [
-          "AC Twin Autocannon|3|FxF",
-          "AC Missile Array||FxF",
-          "AC Twin Assault Cannon Turret||",
-          "AC Twin Heavy Bolter Turret||"
-        ],
-        "specialRules": [
-        ]
-      },
-      {
-        "name": "Marauder Colossus",
-        "type": "AC",
-        "speed": "Bomber",
+            "weapons": [
+          "AC Autocannon Array|3|FxF",
+          "AC Hellstrike Missiles||FxF",
+          "AC Heavy Bolter Turret",
+          "AC Assault Cannon Turret"
+            ]
+          },
+          {
+            "name": "Pathfinder",
+            "type": "AC",
+            "speed": "Bomber",
         "armour": 4,
-        "weapons": [
-          "AC Twin Lascannon||FxF",
+            "weapons": [
+        "AC Hellstrike Missiles|2|FxF",
+        "AC Heavy Bolter Turret|2|"
+            ]
+          },
+          {
+            "name": "Colossus",
+            "type": "AC",
+            "speed": "Bomber",
+        "armour": 4,
+            "weapons": [
           "AC Colossus Bomb||FxF",
-          "AC Twin Heavy Bolter Turret|2|"
+          "AC Heavy Bolter Turret|2|"
+            ]
+          }
         ],
-        "specialRules": [
-        ]
+        "notes": "The Marauder Pathfinder has the 'Vox-Caster' special rule."
       },
       {
         "name": "Aquila Lander",

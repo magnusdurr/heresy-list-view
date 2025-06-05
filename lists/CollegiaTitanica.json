@@ -701,16 +701,16 @@
           "Vulcan Mega-Bolter|0-1",
           "Inferno Gun|0-1|FwA",
           "Shudder Missile Launcher|0-1|FwA",
-          "Swarmer Missile Launcher|0-1|FwA"
+          "Swarmer Missile Launcher|0-1|FwA",
+          "Ursus Claw|0-1",
+          "Natrix Shock Lance|0-1",
+          "Turbo-Laser|0-1|FwA"
                 ]
               },
               {
                 "name": "SUPPORT WEAPONS",
                 "weapons": [
-          "Ursus Claw|0-1",
-          "Natrix Shock Lance|0-1",
           "Plasma Blastgun|0-1|FwA",
-          "Turbo-Laser|0-1|FwA",
           "Incisor Melta Lance|0-1",
           "Graviton Eradicator|0-1|FwA",
           "Conversion Beam Dissipator|0-1|FwA"

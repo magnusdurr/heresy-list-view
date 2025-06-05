@@ -63,7 +63,7 @@
       "from": "ImperialNavy.json",
       "units": [
         "Thunderbolt Fighter",
-        "Marauder Bomber"
+        "Marauder|Bomber|Destroyer|Colossus|Pathfinder"
       ],
       "unitRules": [
       "Offboard Support",
@@ -302,6 +302,9 @@
         {
           "name": "Marauder Squadron",
           "units": "Two Marauder Bombers",
+          "extraUnits": [
+         "May replace two Marauder Bombers with two Marauder Pathfinders, two Marauder Destroyers, or two Marauder Colossus (Free)"
+          ],
           "points": "1 F/p"
         }
       ]

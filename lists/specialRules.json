@@ -281,7 +281,7 @@
     {
       "title": "Vox-Caster",
       "description": [
-        "A formation containing a unit with the 'Vox-Caster' special rule may be used for carrying out an Offboard Support action as detailed in the 'new actions' part of the rules."
+        "A formation containing at least one unit with the 'Vox-Caster' special rule may be used for carrying out an Offboard Support action as detailed in the 'new actions' part of the rules."
       ]
     },
     {
@@ -329,7 +329,7 @@
     {
       "title": "Towering",
       "description": [
-        "Units with the 'Towering' special rule counts as Support Craft for Line of Sight purposes. In addition, a unit with this special rule may only claim cover from area terrain if completely within the terrain feature."
+        "Units with the 'Towering' special rule counts as Support Craft for Line of Sight purposes. A unit with this special rule may not claim cover from area terrain, and may only claim cover if at least part of the unit is concealed behind a terrain feature that also have the 'Towering' special rule."
       ]
     },
     {
@@ -411,14 +411,14 @@
     {
       "title": "Shock Pulse",
       "description": [
-        "War Engines that suffers at least one hit from a weapon with the 'Shock Pulse' special rule suffers D6 BMs for coming under fire, instead of just one."
+        "Shock Pulse works exactly like the 'Disrupt' special rule, but inflicts D3 BMs instead of one for each hit."
       ]
     },
 
     {
       "title": "Graviton(x)",
       "description": [
-        "Weapons with the 'Graviton(x)' special rule gains the 'MW' and 'TK(x)' special rules against WE and/or any units with the 'Reinforced Armour' special rule."
+        "Weapons with the 'Graviton(x)' special rule gains the 'MW' and 'TK(x)' special rules against WE and/or any units with the 'Reinforced Armour' special rule. Weapon suffers an additional -1 to hit if the unit carrying it conducted a Double action."
       ]
     },
              {
@@ -430,14 +430,14 @@
              {
       "title": "Æther-Fire",
       "description": [
-        "Weapons with the 'Æther-Fire' special rule gains an additional +1 to hit when the unit's formation conducts an Advance action."
+        "Weapons with the 'Æther-Fire' special rule gains an additional +1 to hit when the unit's formation conducts an Advance action, but suffers an additional -1 to hit if the unit carrying it conducted a Double action."
       ]
     },
 
     {
       "title": "Devastating Charge",
       "description": [
-        "Weapon or Unit gains an additional +1 to hit with CC of FF attacks during the first round of any assaults initiated by the formation, but suffers a -1 penalty to hit with CC or FF attacks during the first round of any assaults initiated by enemy formations."
+        "Weapon or Unit gains an additional +1 to hit with CC of FF attacks during assaults initiated by the formation."
       ]
     },
     {
@@ -1064,7 +1064,7 @@
         {
       "title": "Orbital Barrage",
       "description": [
-        "An Orbital Barrage has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP4+/AT5+ (MW, Siege) attack."
+        "An Orbital Barrage has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an BP 3 (MW, Siege) attack."
       ]
     },
     {
