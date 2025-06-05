@@ -12,7 +12,7 @@
         <td scope="row">{{#if join}}<i>{{join}}</i>{{else}}{{#if ../count}}{{../count}}x {{/if}}{{../name}}{{/if}}</td>
         <td>{{appendOnNumber range 'cm'}}</td>
         <td>
-            {{firepower}}{{#each specialRules}}, <i><abbr title="{{description}}">{{name}}</abbr></i>{{/each}}
+            {{firepower}}{{#each specialRules}}, <i>{{specialRuleTooltip name}}</i>{{/each}}
         </td>
     </tr>
     {{/each}}
@@ -37,7 +37,7 @@
         <td scope="row">{{#if join}}<i>{{join}}</i>{{else}}{{#if ../count}}{{../count}}x {{/if}}{{../name}}{{/if}}</td>
         <td>{{appendOnNumber range 'cm'}}</td>
         <td>
-            {{firepower}}{{#each specialRules}}, <i><small>{{name}}</small></i>{{/each}}
+            {{firepower}}{{#each specialRules}}, <i><small>{{specialRuleTooltip name}}</small></i>{{/each}}
         </td>
     </tr>
     {{/each}}
