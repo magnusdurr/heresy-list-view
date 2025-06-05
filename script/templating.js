@@ -1,8 +1,20 @@
 var eaTemplating = {
     templates: [],
+    specialRulesData: {},
 
     initialize: function () {
         eaTemplating.templates['error'] = Handlebars.compile($("#error-template").html());
+        
+        // Load special rules data
+        $.get("lists/specialRules.json").done(function (data) {
+            // Create a lookup map for quick access by rule name
+            eaTemplating.specialRulesData = {};
+            if (data.rules) {
+                data.rules.forEach(function(rule) {
+                    eaTemplating.specialRulesData[rule.title] = rule;
+                });
+            }
+        });
 
         $.get("partials/special-rules.html").done(function (template) {
             Handlebars.registerPartial('special-rules', template);
@@ -122,6 +134,22 @@ var eaTemplating = {
             }
 
             return options.fn(context, {data: data})
+        });
+
+        Handlebars.registerHelper('specialRuleTooltip', function (ruleName) {
+            var rule = eaTemplating.specialRulesData[ruleName];
+            if (rule && rule.description) {
+                // Join description paragraphs with double line breaks for better formatting
+                var description = rule.description.join('\n\n');
+                // Remove HTML tags for tooltip (since we're using plain text)
+                description = description.replace(/<[^>]*>/g, '');
+                // Escape quotes for HTML attribute
+                description = description.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+                return new Handlebars.SafeString(
+                    '<span class="special-rule-tooltip" data-tooltip="' + description + '">' + ruleName + '</span>'
+                );
+            }
+            return ruleName;
         });
     }
 };

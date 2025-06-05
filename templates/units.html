@@ -88,8 +88,8 @@
                     <small>
                         <span class="notes-header">Notes:</span>
                         {{#each specialRules}}
-                        {{#unless @last}}<i>{{this}}</i>,{{/unless}}
-                        {{#if @last}}<i>{{this}}</i>.{{/if}}
+                        {{#unless @last}}<i>{{specialRuleTooltip this}}</i>,{{/unless}}
+                        {{#if @last}}<i>{{specialRuleTooltip this}}</i>.{{/if}}
                         {{/each}}
                         {{notes}}
                         {{#if crit}}<span class="notes-header">Critical hit effect:</span> {{crit}}{{/if}}
