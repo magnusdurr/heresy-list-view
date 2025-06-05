@@ -12,7 +12,7 @@
         {{#if @first}}Replace{{else}}or replace{{/if}}
         {{numberAsText ../removeCount false}} {{../removeName}}
         with {{numberAsText addCount false}}
-        {{#each addNames}}{{#if @first}}{{else if @last}} or {{else}}, {{/if}}<a href="{{this}}" class="unit-link">{{this}}{{appendPlural ../addCount}}</a>{{/each}}
+        {{#each addNames}}{{#if @first}}{{else if @last}} or {{else}}, {{/if}}<a href="{{this}}" class="unitlink">{{this}}{{appendPlural ../addCount}}</a>{{/each}}
         {{#if oncePerArmy}} (0-1 in the army){{/if}}
         {{#unless @last}}<br>{{/unless}}
     </small>
@@ -30,10 +30,12 @@
         {{else}}
           {{appendOnNumber upgradePoints ' UP'}}
         {{/if}}
+        {{#if individual}}each{{/if}}
     </span>
     {{#if @first}}Add{{else}}or add{{/if}}
+    {{#if individual}} up to {{/if}}
     {{numberAsText addCount false}}
-    {{#each addNames}}{{#if @first}}{{else if @last}} or {{else}}, {{/if}}<a href="{{this}}" class="unit-link">{{this}}{{appendPlural ../addCount}}</a>{{/each}}
+    {{#each addNames}}{{#if @first}}{{else if @last}} or {{else}}, {{/if}}<a href="{{this}}" class="unitlink">{{this}}{{appendPlural ../addCount}}</a>{{/each}}
     {{#if oncePerArmy}} (0-1 in the army){{/if}}
     {{#unless @last}}<br>{{/unless}}
 </small>

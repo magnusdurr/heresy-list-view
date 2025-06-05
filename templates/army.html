@@ -30,6 +30,9 @@
                 <div class="row">
                     <div class="col-12 col-lg-4">
                         <span class="badge badge-primary">{{appendOnNumber formationPoints ' FP'}}</span>
+                        {{#if upgradePoints}}
+                        <span class="badge badge-success">{{appendOnNumber upgradePoints ' UP'}}</span>
+                        {{/if}}
                         <span style="font-weight: 550">
                             {{#if max}}0-{{max}}{{/if}}
                             {{name}}
@@ -56,9 +59,6 @@
                             {{#each upgrades}}
                             <li>
                                 {{> upgrade}}
-<!--                                {{#each options}}-->
-<!--                                <small><span class="badge badge-success">{{appendOnNumber this.upgradePoints ' UP'}}</span> {{this.name}}{{#unless @last}}<br>{{/unless}}</small>-->
-<!--                                {{/each}}-->
                             </li>
                             {{/each}}
                         </ul>
