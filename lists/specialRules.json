@@ -12,7 +12,7 @@
         "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with <i>Machine Spirit</i> may only perform the Hold, Engage, Marshal, Sustained Fire and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
       ]
     },
-     {
+    {
       "title": "Cybernetica Cortex",
       "description": [
         "Unless within 30cm of an unbroken friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex' special rule may only perform the Hold, Engage, Marshal, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 15cm of an enemy formation when rallying."
@@ -152,25 +152,25 @@
         "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Engage or March action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
-     {
+    {
       "title": "Army of Mankind",
       "description": [
         "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Advance or Overwatch action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
-     {
+    {
       "title": "Veterans of the Great Crusade",
       "description": [
         "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out a Sustain Fire or Marshal action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
-         {
+    {
       "title": "Superior Firepower",
       "description": [
         "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Advance or Double action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character"
       ]
     },
-         {
+    {
       "title": "Tenacious in Adversity",
       "description": [
         "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Engage or Double action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
@@ -182,7 +182,7 @@
         "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Engage or Sustain Fire action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
-        {
+    {
       "title": "The Muster of Worlds",
       "description": [
         "All Imperialis Militia formations receive a +1 modifier to their Action Test when carrying out an Overwatch action, does not suffer a BM when forced to take a 'Hold' action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
@@ -212,7 +212,7 @@
         "All Imperialis Militia formations receive a +1 modifier to their Action Test when carrying out an Marshal action, does not suffer a BM when forced to take a 'Hold' action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
       ]
     },
-         {
+    {
       "title": "Logic of Victory",
       "description": [
         "All Mechanicum Taghmata Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Sustain Fire or Marshal action, but suffer a -1 modifier when attempting a March action. In addition, they gain a +1 modifier to their Rally Tests."
@@ -224,7 +224,7 @@
         "All Mechanicum Taghmata Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Overwatch or Marshal action, but suffer a -1 modifier when attempting a March action. In addition, they gain a +1 modifier to their Rally Tests."
       ]
     },
-         {
+    {
       "title": "Malefica Mechanica",
       "description": [
         "All Dark Mechanicum Cohorts receive a +1 modifier to their Action Test when carrying out an Advance, Sustain Fire, or Engage action, but suffer a -1 modifier when attempting a March action. In addition, they gain a +1 modifier to their Rally Tests."
@@ -290,25 +290,25 @@
         "Units with the 'Bulky' special rule takes two spaces to transport."
       ]
     },
-        {
+    {
       "title": "Transport (x)",
       "description": [
         "Units with the 'Transport (x)' special rule may transport 'x' number of INF, which may not have the 'Bulky' or 'Mounted' special rules."
       ]
     },
-        {
+    {
       "title": "Heavy Transport (x)",
       "description": [
         "Units with the 'Heavy Transport (x)' special rule may transport 'x' number of INF, which may have the 'Bulky' special rule. Each 'Bulky' unit takes two spaces each"
       ]
     },
-        {
+    {
       "title": "Assault Transport (x)",
       "description": [
         " Units with the 'Assault Transport (x)' special rule may transport 'x' number of INF, which may have the 'Bulky' and 'Mounted' special rules. In addition, it may treat AV or LV with the 'Nimble' special rule as INF. Any unit with these special rules take two spaces to carry."
       ]
     },
-        {
+    {
       "title": "Skirmisher",
       "description": [
         "Units with the 'Skirmisher' special rule is in coherency if they are within 10 cm from another unit instead of the usual 5 cm. Units with 'Skirmisher' may garrison according to the same rules as units with 'Scout'."
@@ -372,13 +372,13 @@
         "The MW special rule ignores armour as normal, but in EA - Heresy such weapons will always have their weapon profile split into AP/AT/AA parts."
       ]
     },
-     {
+    {
       "title": "Energetic",
       "description": [
         "Weapons with the 'Energetic' special rule gains an additional +1 to hit when the unit's formation conducts a Sustain Fire action."
       ]
     },
-         {
+    {
       "title": "Titan Hunter",
       "description": [
         "Weapons with the 'Titan Hunter' special rule gains +1 to hit against War Engines, but suffers -1 to hit against INF, LV, and AV."
@@ -402,7 +402,7 @@
         "A weapon with the 'Crippling' special rule causes critical hits on War Engines on a 5+."
       ]
     },
-         {
+    {
       "title": "Rad",
       "description": [
         "Weapons with the 'Rad' special rule causes BMs for each hit inflicted, just like weapons with the 'Disrupt' special rule. Unlike 'Disrupt', the 'Rad' special rule does not force their targets to roll armour saves, and they are not removed as casualties for failing to save."
@@ -414,26 +414,24 @@
         "Shock Pulse works exactly like the 'Disrupt' special rule, but inflicts D6 BMs instead of one for each hit."
       ]
     },
-
     {
       "title": "Graviton(x)",
       "description": [
         "Weapons with the 'Graviton(x)' special rule gains the 'MW' and 'TK(x)' special rules against WE and/or any units with the 'Reinforced Armour' special rule. Weapon suffers an additional -1 to hit if the unit carrying it conducted a Double action."
       ]
     },
-             {
+    {
       "title": "Beam Projector",
       "description": [
         "Weapons with the 'Beam Projector' special rule suffers -1 to hit when shooting at a target that at least partially within half range, or -2 to hit within 15 cm."
       ]
     },
-             {
+    {
       "title": "Æther-Fire",
       "description": [
         "Weapons with the 'Æther-Fire' special rule gains +1 to hit when the unit's formation conducts an Advance action, but suffers -1 to hit if the unit carrying it conducted a Double action."
       ]
     },
-
     {
       "title": "Devastating Charge",
       "description": [
@@ -458,7 +456,6 @@
         "When rolling to hit with a Singularity weapon, any unmodified to hit roll of six (6) generates an additional attack die. Successive rolls of a natural six can generate additional dice."
       ]
     },
-    
     {
       "title": "Psybolts",
       "description": [
@@ -496,7 +493,7 @@
         "Enemy Teleporting units placed within 15 cm of any enemy units with the 'Daemonic' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
       ]
     },
- {
+    {
       "title": "Prescience",
       "description": [
         "Formations that include a unit with the 'Prescience' special rule may ignore the -1 penalty to Action test rolls when attempting to retain the Initiative."
@@ -513,7 +510,6 @@
         "<b>Minefields</b>: Counts as Dangerous Terrain for all types of units. Minefield dangerous terrain tests may not be re-rolled using the Walker ability (units may still 'move carefully' through such terrain). Skimmers and units with 'Jump Packs' moving over Minefields must also take dangerous terrain tests. Minefields must be set up so that every piece touches another piece from the same group, with no gap in between."
       ]
     },
-
     {
       "title": "Air Superiority",
       "description": [
@@ -521,7 +517,6 @@
         "In addition, Elysian Drop Troops may instead of starting with garrisons on overwatch place aircrafts on Combat Air Patrol. Up to two formations may start on overwatch or CAP. Aircraft formation placed on CAP in this way will follow all the normal rules for CAP, but are setup during the pre-game garrisoning phase."
       ]
     },
-
     {
       "title": "Siege Specialists",
       "description": [
@@ -595,7 +590,6 @@
         "Units with <i>Wind-Swift</i> ignore the -1 to hit penalty on shooting when carrying out a double action, but do not gain the +1 to hit bonus on shooting when carrying out a sustained fire action."
       ]
     },
-
     {
       "title": "Descent of Angels",
       "description": [
@@ -633,7 +627,6 @@
         ""
       ]
     },
-
     {
       "title": "Honour Guard",
       "description": [
@@ -667,7 +660,7 @@
         "Large Webway Portals follows all the rules for a normal Webway Portals, except AV units are not required to have Walker in order to enter the battlefield through it."
       ]
     },
-     {
+    {
       "title": "Farsight",
       "description": [
         "Eldar formations that include a unit with the Farsight ability may ignore the -1 penalty to Action test rolls when attempting to retain the Initiative.",
@@ -703,7 +696,7 @@
         "In addition, Independent Twins may use the Commander ability with its Twin. In this case, the Commander ability counts as having an unlimited range instead of the normal 5cm."
       ]
     },
-     {
+    {
       "title": "Summoning",
       "description": [
         "Any formation that either has a unit with Daemonic Pact or a Daemonic Pact formation upgrade may summon Daemons. Each Daemonic Pact in the army automatically provides one point to the Lesser Daemon Pool at the start of the battle (the player may also purchase additional Lesser Daemon Pool points and/or Greater Daemon Pool points).",
@@ -717,7 +710,7 @@
         "When calculating victory points, the Lesser Daemon Pool scores half points if the pool has less than or equal to half (round up) its original number of daemons remaining. The Lesser Daemon Pool scores full points if the pool has less than or equal to a quarter (round up) its daemons remaining. Treat Greater Daemons as War Engines for the purpose of calculating victory points."
       ]
     },
-         {
+    {
       "title": "Heralds of Truth",
       "description": [
         "Any formation that contains at least one unit with the 'Heralds of Truth' special rule ignores the -1 modifier for enemy formations within 30cm when rallying."
@@ -735,7 +728,6 @@
         "Units with Daemonic focus may keep any or all summoned units that belong to the formation in play. Summoned units do not vanish back into the warp after the formation has attempted to rally. Daemonic Focus may not be used to keep summoned units in play if the formation is broken. Multiples of Daemonic Focus have no additional effect."
       ]
     },
-   
     {
       "title": "Ætheric Dominion (x)",
       "description": [
@@ -743,7 +735,6 @@
         "<ul><li>Encroaching Ruin: Formation ignores the -1 modifier for enemy formations within 30cm when rallying.</li><li>Heedless Slaughter: Formation gains +1 to activate when attempting to Engage.</li><li>Putrid Corruption: Formation gains +1 to activate when attempting to Marshal.</li><li>Rapturous Sensation: Formation gains +1 to activate when attempting to Double.</li><li>Malevolent Artifice: Formation gains +1 to activate when attempting to Advance.</li><li>Infernal Tempest: Formation gains +1 to activate when attempting to Sustain Fire.</li><li>Formless Distortion: Formation gains +1 to activate when attempting to Overwatch.</li><li>Ravenous Dissolution: Formation gains +1 to activate when attempting to March.</li></ul>"
       ]
     },
-        
     {
       "title": "Reign of Chaos",
       "description": [
@@ -861,7 +852,6 @@
         "Necron formations receive a +1 bonus when attempting to perform a Marshal action, but suffer a -1 penalty when attempting to perform a March action."
       ]
     },
-    
     {
       "title": "Phase Out",
       "description": [
@@ -892,7 +882,6 @@
         "Some Ork war engines are protected by banks of power fields. The number each war engine has is noted on its datasheet. Power fields work in exactly the same manner as Void Shields (see Void Shields), with the sole exception that they may not be repaired once they have been knocked down by a hit, and will instead remain down for the remainder of the battle. In the case of a variable amount of power fields, roll for them straight after the formation is deployed on the table or offboard."
       ]
     },
-
     {
       "title": "Super-Expendable",
       "description": [
@@ -989,14 +978,14 @@
         "Units that Teleport within 15 cm from a friendly, unbroken unit with Teleport Homer already on the battlefield may re-roll 1:s when testing for Teleport Mishap. May not be used if there are any unbroken enemy units with the 'Psyker', 'Daemonic', or 'Prescience' special rules within 15 cm of the unit."
       ]
     },
-            {
+    {
       "title": "Offboard Support",
       "description": [
         "Calling for Offboard Support is a new action that a player can take after having completed an Advance, Overwatch, Marshal, or Sustain Fire action with an unbroken formation that contains a unit with the Vox-Caster special rule. This counts as retaining the initiative, and thus cannot be done if the initiative has already been retained once. The Offboard Support action automatically succeeds.",
         "Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (depending on the type of Offboard Support) within Line of Sight of the unit with the Vox-Caster special rule to indicate where the Offboard Support asset will come down/up. The Offboard Support is then carried out according to its special rules before the start of the next friendly action, or before the end phase, depending on which comes first."
       ]
     },
-        {
+    {
       "title": "Teleport",
       "description": [
         "A formation consisting completely of units with the 'Teleport' special rule must be placed in the reserves before deployment. They may only enter the battlefield through an Offboard Support action. Immediately place the formation with all units completely within 15 cm of the unit with the 'Vox-Caster' special rule, and roll a D6 for each, to test if any teleport mishaps occured. For each roll of 1, the teleporting formation suffers a BM.",
@@ -1017,13 +1006,13 @@
         "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 20 cm in any direction that does not place it in an enemy zone of control. Then place the Dreadclaw contents fully within 10 cm of the centre of the Dreadclaw."
       ]
     },
-        {
+    {
       "title": "Deathwind",
       "description": [
         "A Deathwind attack places a marker within 15 cm of the model with 'Vox-Caster'. Once it arrives on the battlefield, it may be moved by 15 cm in any direction. Place the large barrage template with the centre hole over the marker. Any model under the template is attacked by a AP6+/AT6+ (Disrupt) attack"
       ]
     },
-        {
+    {
       "title": "Palisade Drop Pod",
       "description": [
         "A Palisade Drop Pod may only be used alongside other Drop Pods, and is added to a formation in Drop Pods or Dreadclaws during deployment. All models in the formation counts as being in Cover and gains the Invulnerable Save special rule for the purposes of Overwatch when they exit their Drop Pods."
@@ -1043,7 +1032,7 @@
         "An Ordinatus Aktaeus Burrowing Transport has the 'Assault Transport (8)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
       ]
     },
-        {
+    {
       "title": "Hellbore Subterranean Assault",
       "description": [
         "A Hellbore Burrowing Transport has the 'Assault Transport (12)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
@@ -1055,13 +1044,13 @@
         "Any non-allied formation consisting completely of units of INF, and/or LV & AV with the 'Nimble' special rules and is no more than eight units large may be mounted in an Ordinatus Aktaeus Burrowing Transport. These must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
       ]
     },
-        {
+    {
       "title": "Orbital Pin-Point Attack",
       "description": [
         "A Pin-Point attack has a range of 30 cm, and may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(D3) attack on a single War Engine under the center of the marker."
       ]
     },
-        {
+    {
       "title": "Orbital Barrage",
       "description": [
         "An Orbital Barrage has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an BP 3 (MW, Siege) attack."
@@ -1085,7 +1074,7 @@
         "A Haywire Barrage has a range of 45 cm. Once it arrives on the battlefield, place the large barrage template with its centre over the marker. All units under the template is attacked by an AP6+/AT3+ (Rad, Ignore Cover) attack."
       ]
     },
-     {
+    {
       "title": "Artillery Barrage",
       "description": [
         "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP3+/AT6+ (Disrupt, Siege) attack."
@@ -1109,7 +1098,7 @@
         "A Blind Burst is targeted at any friendly formation within 30 cm. Place a Blind marker next to the targeted formation. For the rest of the turn, the entire formation counts as being in Cover. Unlike other Offboard Support assets, Artillery strikes arrive immediately."
       ]
     },
-     {
+    {
       "title": "Divisio Assassinorum and Cults Abominatio",
       "description": [
         "Assassins may be placed in a formation with a Vox-Caster using a Offboard Support action. Place an appropriate marker next to the formation to show that the assassin is now present in that formation. The effect is automatically triggered whenever the formation is next directly involved in an assault. If the formation is broken before this happens, the marker is lost, and the asset may not be used again."

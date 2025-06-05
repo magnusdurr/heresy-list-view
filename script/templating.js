@@ -138,6 +138,16 @@ var eaTemplating = {
 
         Handlebars.registerHelper('specialRuleTooltip', function (ruleName) {
             var rule = eaTemplating.specialRulesData[ruleName];
+            
+            // If no exact match, try to find a parameterized version
+            if (!rule) {
+                // Replace any content in parentheses with (x) to match template rules
+                // Also remove any whitespace before parentheses
+                // e.g. "Graviton(2)" becomes "Graviton(x)", "Graviton (2)" becomes "Graviton(x)"
+                var templateName = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
+                rule = eaTemplating.specialRulesData[templateName];
+            }
+            
             if (rule && rule.description) {
                 // Join description paragraphs with double line breaks for better formatting
                 var description = rule.description.join('\n\n');
