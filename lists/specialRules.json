@@ -396,7 +396,7 @@
         "Units with the 'Siege Engine' special rule may not garrison."
       ]
     },
-         {
+    {
       "title": "Crippling",
       "description": [
         "A weapon with the 'Crippling' special rule causes critical hits on War Engines on a 5+."
@@ -411,7 +411,7 @@
     {
       "title": "Shock Pulse",
       "description": [
-        "Shock Pulse works exactly like the 'Disrupt' special rule, but inflicts D3 BMs instead of one for each hit."
+        "Shock Pulse works exactly like the 'Disrupt' special rule, but inflicts D6 BMs instead of one for each hit."
       ]
     },
 

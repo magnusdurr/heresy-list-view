@@ -139,7 +139,7 @@
           "extraUnits": [
             "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, four Auxilia Lasrifle Squads, or add three Termite Assault Drills (2 U/p)"
           ],
-          "points": "1 F/p, 2 U/p"
+          "points": "1 F/p, 1 U/p"
         },
                {
           "name": "1+ Auxilia Lasrifle Tercio",
@@ -147,7 +147,7 @@
           "extraUnits": [
            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, four Auxilia Lasrifle Squads, or add three Termite Assault Drills (2 U/p)"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, -1 U/p"
         },
         {
           "name": "Auxilia Malcador Company",
@@ -163,7 +163,7 @@
           "extraUnits": [
               "Add two Cyclops of any single configuration: 1 U/p"
           ],
-          "points": "1 F/p, 1 U/p"
+          "points": "1 F/p"
         }
       ]
     },
@@ -186,7 +186,7 @@
           "extraUnits": [
           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, two Cyclops of any single configuration (1 U/p), or two Termite Assault Drills (2 U/p)"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p, -2 U/p"
         },
         {
           "name": "Ogryn Charonite Section",
@@ -194,7 +194,7 @@
           "extraUnits": [
           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, two Veletarii, or two Cyclops of any single configuration: 1 U/p"
           ],
-          "points": "1 F/p, -1 U/p"
+          "points": "1 F/p, -2 U/p"
         },
         {
           "name": "Auxilia Rapier Battery",
@@ -211,7 +211,7 @@
           "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
           "extraUnits": [
              ],
-          "points": "1 F/p, -3 U/p"
+          "points": "1 F/p, -2 U/p"
         },
         {
           "name": "Auxilia Leman Russ Squadron",
@@ -243,7 +243,7 @@
           "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p",
           "Add two Cyclops of any single configuration: 1 U/p"
           ],
-          "points": "1 F/p"
+          "points": "1 F/p, 1 U/p"
         },
           {
           "name": "Auxilia Dracosan Section",
