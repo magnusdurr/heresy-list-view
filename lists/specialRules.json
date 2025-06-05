@@ -381,7 +381,7 @@
          {
       "title": "Titan Hunter",
       "description": [
-        "Weapons with the 'Titan Hunter' special rule gains an additional +1 to hit against War Engines, but suffers an additional -1 to hit against INF, LV, and AV."
+        "Weapons with the 'Titan Hunter' special rule gains +1 to hit against War Engines, but suffers -1 to hit against INF, LV, and AV."
       ]
     },
     {
@@ -424,20 +424,20 @@
              {
       "title": "Beam Projector",
       "description": [
-        "Weapons with the 'Beam Projector' special rule suffers an additional -1 to hit when shooting at a target that at least partially within half range, or an additional -2 to hit within 15 cm."
+        "Weapons with the 'Beam Projector' special rule suffers -1 to hit when shooting at a target that at least partially within half range, or -2 to hit within 15 cm."
       ]
     },
              {
       "title": "Æther-Fire",
       "description": [
-        "Weapons with the 'Æther-Fire' special rule gains an additional +1 to hit when the unit's formation conducts an Advance action, but suffers an additional -1 to hit if the unit carrying it conducted a Double action."
+        "Weapons with the 'Æther-Fire' special rule gains +1 to hit when the unit's formation conducts an Advance action, but suffers -1 to hit if the unit carrying it conducted a Double action."
       ]
     },
 
     {
       "title": "Devastating Charge",
       "description": [
-        "Weapon or Unit gains an additional +1 to hit with CC of FF attacks during assaults initiated by the formation."
+        "Weapon or Unit gains +1 to hit with CC of FF attacks during assaults initiated by the formation."
       ]
     },
     {
