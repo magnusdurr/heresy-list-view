@@ -1051,6 +1051,7 @@
             }
           ],
           "formationPoints": 1,
+          "upgradePoints": -1,
           "alliedPoints": 1
         },
         {
@@ -1139,94 +1140,6 @@
                   {
                     "addNames": ["Leman Russ"],
                     "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1,
-          "alliedPoints": 1
-        }
-      ]
-    },
-    {
-      "name": "Allies: Questoris Familia Lances",
-      "description": "",
-      "formations": [
-        {
-          "name": "Armiger Lance",
-          "unitSpec": {
-            "Armiger Knight Warglaives": 3
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Armiger Knight Warglaives",
-                "removeCount": 3,
-                "options": [
-                  {
-                    "addNames": ["Armiger Knight Helverins"],
-                    "addCount": 3,
-                    "upgradePoints": 0
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Questoris Lance",
-          "unitSpec": {
-            "Questoris Knight Paladins": 2
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Questoris Knight Paladins",
-                "removeCount": 2,
-                "options": [
-                  {
-                    "addNames": ["Questoris Knight Crusaders"],
-                    "addCount": 2,
-                    "upgradePoints": 0
-                  },
-                  {
-                    "addNames": ["Questoris Knight Errants"],
-                    "addCount": 2,
-                    "upgradePoints": 0
-                  },
-                  {
-                    "addNames": ["Questoris Knight Wardens"],
-                    "addCount": 2,
-                    "upgradePoints": 0
-                  },
-                  {
-                    "addNames": ["Questoris Knight Gallants"],
-                    "addCount": 2,
-                    "upgradePoints": 0
-                  }
-                ]
-              }
-            },
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Questoris Ironstorm Pod"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Questoris Stormspear Pod"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Icarus Autocannon"],
-                    "addCount": 2,
                     "upgradePoints": 1
                   }
                 ]

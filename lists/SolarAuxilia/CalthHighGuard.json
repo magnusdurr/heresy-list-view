@@ -423,21 +423,87 @@
       "name": "Allies: Questoris Familia Lances",
       "description": "",
       "formations": [
-         {
+        {
           "name": "Armiger Lance",
-          "units": "Three Armiger Knight Warglaives and/or Helverins",
-          "extraUnits": [
-          
+          "unitSpec": {
+            "Armiger Knight Warglaives": 3
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Armiger Knight Warglaives",
+                "removeCount": 3,
+                "options": [
+                  {
+                    "addNames": ["Armiger Knight Helverins"],
+                    "addCount": 3,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            }
           ],
-         "points": "1 F/p, 1 A/p"
+          "formationPoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Questoris Lance",
-          "units": "Two Questoris Knight Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
-          "extraUnits": [
-            "Add one Questoris Ironstorm Pod, Questoris Stormspear Pod, or Icarus Autocannon to each unit in the formation: 1 U/p"
+          "unitSpec": {
+            "Questoris Knight Paladins": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Questoris Knight Paladins",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Questoris Knight Crusaders"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Questoris Knight Errants"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Questoris Knight Wardens"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Questoris Knight Gallants"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Questoris Ironstorm Pod"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Questoris Stormspear Pod"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Icarus Autocannon"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 A/p"
+          "formationPoints": 1,
+          "alliedPoints": 1
         }
       ]
     }
