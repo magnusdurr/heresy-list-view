@@ -1,9 +1,130 @@
 {
   "rules": [
     {
-      "title": "War Engines",
+      "title": "FxF",
       "description": [
-        "Units with the unit type H-AV can take two damage before they are killed, and counts as two units for Outnumber, Blast Markers, number of attacks in an assault, hit allocation and the maximum number of units in base contact. H-AV are treated as WE when hit by weapons that do multiple points of damage (e.g. TK(D3)). In addition it is possible to critically hit H-AVs. If a Critical Hit is rolled, the unit is destroyed with no further effects. H-AVs may be targeted by Pin-Point attacks, but does not target individual models. Instead, hits are randomized in the formation. H-AVs are treated like normal Armoured Vehicles in all other respects."
+        "Attacks with the 'Fixed Forward' special rule may only be directed against targets that are at least partially within a 90 degree arc in the front of the unit."
+      ]
+    },
+    {
+      "title": "FwA",
+      "description": [
+        "Attacks with the 'Forward Arc' special rule may only be directed against targets that are at least partially within a 180 degree arc in the front of the unit."
+      ]
+    },
+    {
+      "title": "Leader",
+      "description": [
+        "A formation that includes any units with the 'Leader' special rule may remove one extra Blast Marker for each such unit whenever it Regroups (either by making a Marshal or Hold action) or successfully Rallies."
+      ]
+    },
+    {
+      "title": "Supreme Commander",
+      "description": [
+        "A unit with the 'Supreme Commander' special rule count as having the 'Commander' and 'Leader' special rules. In addition, each unit with Supreme Commander in the army allows a player to re-roll one failed action or rally test once per turn."
+      ]
+    },
+    {
+      "title": "Jump Packs",
+      "description": [
+        "Units with the 'Jump Packs' special rule ignores terrain effects and friendly units as they move. They may not end their movement on Impassable terrain or on top of friendly models, and if they land in Difficult or Dangerous terrain they must take a terrain test. Units with this special rule are affected by enemy units and Zones of Control normally, and cannot jump over enemy formations."
+      ]
+    },
+    {
+      "title": "Mounted",
+      "description": [
+        "Units with the 'Mounted' special rule count as Armoured Vehicles for terrain effects, and as Infantry for all other purposes."
+      ]
+    },
+    {
+      "title": "Walker",
+      "description": [
+        "Units with the 'Walker' special rule may re-roll any failed Dangerous terrain tests, and ignores Difficult terrain tests."
+      ]
+    },
+    {
+      "title": "First Strike",
+      "description": [
+      "Weapons and units with the 'First Strike' special rule resolve their attacks and inflict damage during assaults before other units makes their attacks. This may result in some enemy units being destroyed before they can attack, and may prevent units from using their CC attacks if the unit they were in base-to-base with was destroyed.",  
+      "If opposing units both have First Strike, then all such attacks are resolved simultaneously and their results applied to both sides before other attacks are resolved.",
+        "Note that First Strike has no effect for Supporting Attacks."
+      ]
+    },
+    {
+      "title": "Fearless",
+      "description": [
+        "Units with the 'Fearless' special rule are immune to damage from losing an Assault (both the additional hits and being wiped out if already broken) and from the damage inflicted by Blast Markers if Broken.",
+        "When Broken or otherwise forced to take a Withdrawal move, Fearless units may choose not to withdraw, and if the unit elects to withdraw it will be destroyed only if it ends its move within 5cm of the enemy rather than 15 cm. Note that other units in the formation that are not Fearless will be affected normally by additional hits for Blast Markers or losing an Assault.",
+        "Fearless units that remain stationary do not take additional damage. If units remain in base contact with a Fearless unit, then the opposing formation will automatically be drawn in to an assault on either formation."
+      ]
+    },
+    {
+      "title": "Invulnerable Save",
+      "description": [
+        "Units with the 'Invulnerable Save' special rule receive a second save of 6+ if they fail their first save for any reason. No modifiers ever apply to the second save. This save may be used against MW attacks, but may not be used against other types of damage that ignores saves completely, such as damage from terrain, extra damage from assaults or Blast Markers, or being too close to the enemy after completing a withdrawal move after becoming broken or failing to rally."
+      ]
+    },
+    {
+      "title": "Reinforced Armour",
+      "description": [
+        "Units with the 'Reinforced Armour' special rule may still take their saving throw when hit by attacks with 'Macro Weapon' special rule. In addition, they may re-roll a failed save against any non-Macro Weapon hit, including those inflicted during an assault. If the first save rolled was another type of save (e.g. a Cover Save or an Ion Shield), the re-roll must be made using the unit's normal armour."
+      ]
+    },
+    {
+      "title": "Thick Rear Armour",
+      "description": [
+        "Units with the 'Thick Rear Armour' special rule ignore the -1 save modifier when they are caught in a Crossfire, but will still suffer an additional Blast Marker if they suffer any damage."
+      ]
+    },
+    {
+      "title": "MW",
+      "description": [
+        "Only units with Reinforced Armour or Invulnerable Save receive a saving throw against hits with the 'MW' special rule. Cover Saves are also negated, although the -1 to hit modifier does apply.",
+        "If an attacking formation scores both normal and MW hits, then the opposing player must allocate and make any saves for the normal hits first, and then allocate and make any saves for the MW hits. Hits from MW must first be allocated to units that have survived normal hits, after this they may be allocated to the rest of the formation."
+      ]
+    },
+    {
+      "title": "TK(x)",
+      "description": [
+        "Hits caused by weapons with the 'TK(x)' special rule ignores the 'Reinforced Armour' special rule. In addition, if a TK(x) hit is caused on a War Engine, it suffers damage equal to 'x'. Each point of damage will reduce the War Engine damage capacity by 1. Roll for critical hits for each point of damage inflicted.",
+        "When allocating Titan killer hits that may cause multiple points of damage, roll for damage immediately after allocating the hit. For formation hit allocation purposes, the War Engine counts as having been allocated a number of hits equal to the damage rolled."
+      ]
+    },
+    {
+      "title": "EA(x)",
+      "description": [
+        "Weapons with the 'Extra Attacks(x)' special rule receive a number of extra attacks equal to 'x' during Assaults. Special Rules that are on a weapon with Extra Attacks only apply to the extra attacks. Extra Attacks from Small Arms may only be used if the unit is not in base contact with an enemy unit during the Assault, in EA-Heresy this also applies to War Engines."
+      ]
+    },
+    {
+      "title": "IC",
+      "description": [
+        "Weapons with the 'Ignore Cover' special rule ignore cover to-hit modifiers, and negate Infantry Cover Saves."
+      ]
+    },
+    {
+      "title": "Sniper",
+      "description": [
+        "Hits caused by a weapon with the 'Sniper' special rule ignores normal hit allocation rules, and may be targeted on any unit in the target formation that is within range and line of sight of the attack (FF and CC attacks have a 15 cm range). These hits are allocated at the same time as normal hits, but are completely separate from normal allocation rules. In addition, the target suffers an additional -1 save modifier to its normal, Reinforced Armour, or Cover saves."
+      ]
+    },
+    {
+      "title": "Disrupt",
+      "description": [
+        "Hits with the 'Disrupt' special rule inflict a Blast Marker on an enemy formation for each hit they inflict instead of for each kill they inflict. Note that such hits are saved for normally. Any units that fail their save are removed as casualties but do not cause a second Blast marker to be placed on the target formation."
+      ]
+    },
+    {
+      "title": "Expendable",
+      "description": [
+        "A formation does not receive a Blast Marker when a unit with Expendable is destroyed, including the extra Blast Marker from the first casualty of a crossfire and for units destroyed for being out of formation after a move. If an Expendable unit is hit by a weapon with Disrupt it does not inflict a Blast marker.",
+        "If a formation is comprised completely of units with 'Expendable' they lose the benefit of all rules above. Expendable units killed in an assault still count for the purposes of working out its result."
+      ]
+    },
+    {
+      "title": "Slow",
+      "description": [
+        "Weapons with the 'Slow Firing' special rule must take one turn to reload after they have fired, and may not fire during the next turn. All shots have to be fired at once, it is not possible to 'save' shots between turns. Place a suitable token next to the unit to mark that a weapon with 'Slow Firing' has been used, and remove it during the next turn's End Phase. Units that are reloading still counts for suppression, even though their weapons cannot fire."
       ]
     },
     {
@@ -63,27 +184,18 @@
     {
       "title": "Dispersion Field (x)",
       "description": [
-        "A Dispersion Field provide a saving throw to the value of <i>x</i>, which is reduced by 2 (e.g. 3+ to 5+) at the start of each subsequent turn. When the Dispersion Field reaches 7+ or higher it is no longer considered to be operable and thus confers no save.",
+        "A Dispersion Field provide a saving throw to the value of 'x', which is reduced by 2 (e.g. 3+ to 5+) at the start of each subsequent turn. When the Dispersion Field reaches 7+ or higher it is no longer considered to be operable and thus confers no save.",
         "This save may always be taken even against weapons with the Macro Weapon or Titan Killer abilities. If a unit has Reinforced Armour it may use its re-roll unless hit by a Lance, Macro Weapon or Titan Killer attack but the re-roll uses the units armour value. Hits saved by the Dispersion Field do not generate Blast Markers, even if they have the Disrupt ability.",
         "Against Titan Killer attacks that cause extra damage make one Dispersion Field save roll, if this is successful the unit takes no damage, if the roll fails it suffers all the damage."
       ]
     },
     {
-      "title": "Void Shields ",
-      "description": [
-        "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by Void Shields. If the formation is broken, its Void Shields are considered to have the 'Expendable' special rule. Downed Void Shields does not count as kills during assaults (but will still cause BMs on the winning formation).",
-        "Once all of the shields have been knocked down, the War Engine may be damaged normally and you may make saving throws against any hits that are scored. Hits from close combat ignore void shields but units using their firefight values must first knock down any shields before they can damage the Titan.",
-        "Void shields that have been knocked down can be repaired. Each War Engine can repair one downed Void Shield in the End Phase of each turn.",
-        "In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it may use the dice roll both to repair Void Shields and remove Blast Markers."
-      ]
-    },
-    {
       "title": "Void Shields",
       "description": [
-        "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves or allocate Blast Markers for damage stopped by Void Shields. Downed Void Shields does not count as kills during assaults (but will still cause BMs on the winning formation).",
-        "Once all of the shields have been knocked down, the War Engine may be damaged normally and you may make saving throws against any hits that are scored. Hits from close combat ignore void shields but units using their firefight values must first knock down any shields before they can damage the Titan.",
-        "Void shields that have been knocked down can be repaired. Each War Engine can repair one downed Void Shield in the End Phase of each turn.",
-        "In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it may use the dice roll both to repair Void Shields and remove Blast Markers."
+        "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by Void Shields. Hits saved by Void Shields do not generate Blast Markers, even if they have the Disrupt ability. Downed Void Shields does not count as kills during assaults.",
+        "Once all of the shields have been knocked down, the War Engine may be damaged normally and you may make saving throws against any hits that are scored. Hits from close combat ignore Void Shields but units using their firefight values must first knock down any shields before they can damage the Titan.",
+        "Void Shields that have been knocked down can be repaired. Each War Engine can repair one downed Void Shield in the End Phase of each turn.",
+        "In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it may use the dice roll to repair a combination of Void Shields and remove Blast Markers."
       ]
     },
     {
@@ -347,7 +459,7 @@
       ]
     },
     {
-      "title": "Ion Shield (x)",
+      "title": "Ion Shield(x)",
       "description": [
         "Knights make use of Ion Shields to deflect shooting and firefight attacks. This allows them to make a saving throw on the number within brackets when they are hit by ranged fire instead of using their armour value.",
         "No modifiers ever apply to this saving throw and it is unaffected by Macro-Weapon, Lance and Titan Killer hits (each point of damage from a Titan Killer hit must be saved separately. Is affected normally by hits with the Disrupt special rule). If the unit has Reinforced Armour as well then it is allowed to re-roll a failed save using its armour value unless the hit was a Macro-Weapon, Lance or Titan killer.",
@@ -364,12 +476,6 @@
       "title": "Shield Piercer",
       "description": [
         "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Save, Ion Shields, Dispersion Fields, Powerfields, Construct Shields and Void Shields."
-      ]
-    },
-    {
-      "title": "MW",
-      "description": [
-        "The MW special rule ignores armour as normal, but in EA - Heresy such weapons will always have their weapon profile split into AP/AT/AA parts."
       ]
     },
     {
