@@ -229,14 +229,19 @@ var eaTemplating = {
                     
                     return weapons.map(function(weapon) {
                         if (typeof weapon === 'string') {
-                            return weapon;
-                        } else if (weapon && weapon.name) {
-                            var weaponStr = weapon.name;
+                            // Parse the weapon string using the existing helper
+                            weapon = Handlebars.helpers.parseWeapon(weapon);
+                        }
+                        
+                        if (weapon && weapon.name) {
+                            var weaponStr = '';
                             
-                            // Add count if present
-                            if (weapon.count && weapon.count > 1) {
-                                weaponStr += ' x' + weapon.count;
+                            // Add count if present (before weapon name)
+                            if (weapon.count && weapon.count !== '1' && weapon.count > 1) {
+                                weaponStr += weapon.count + 'x ';
                             }
+                            
+                            weaponStr += weapon.name;
                             
                             // Add primary mode info if available
                             if (weapon.modes && weapon.modes.length > 0) {
@@ -247,7 +252,7 @@ var eaTemplating = {
                                 if (primaryMode.firepower) modeInfo.push(primaryMode.firepower);
                                 
                                 if (modeInfo.length > 0) {
-                                    weaponStr += ' (' + modeInfo.join(', ') + ')';
+                                    weaponStr += ' ' + modeInfo.join(' ');
                                 }
                             }
                             
