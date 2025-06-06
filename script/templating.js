@@ -2,6 +2,7 @@ var eaTemplating = {
     templates: [],
     specialRulesData: {},
     unitsData: {},
+    weaponsData: {},
 
     initialize: function () {
         eaTemplating.templates['error'] = Handlebars.compile($("#error-template").html());
@@ -13,6 +14,41 @@ var eaTemplating = {
             if (data.rules) {
                 data.rules.forEach(function(rule) {
                     eaTemplating.specialRulesData[rule.title] = rule;
+                });
+            }
+        });
+
+        // Load weapons data
+        $.get("lists/weapons.json").done(function (data) {
+            eaTemplating.weaponsData = {
+                weapons: {},
+                rules: {}
+            };
+            
+            if (data.rules) {
+                data.rules.forEach(function(rule) {
+                    eaTemplating.weaponsData.rules[rule.name] = rule;
+                });
+            }
+            
+            if (data.weapons) {
+                data.weapons.forEach(function(weapon) {
+                    // Process special rules for weapons
+                    weapon.modes.forEach(function(mode) {
+                        if (mode.specialRules) {
+                            mode.specialRules = mode.specialRules.map(function(sRule) {
+                                if (eaTemplating.weaponsData.rules[sRule]) {
+                                    return eaTemplating.weaponsData.rules[sRule];
+                                } else {
+                                    return {
+                                        "name": sRule,
+                                        "description": "Unknown special rule " + sRule
+                                    };
+                                }
+                            });
+                        }
+                    });
+                    eaTemplating.weaponsData.weapons[weapon.name] = weapon;
                 });
             }
         });
@@ -127,8 +163,13 @@ var eaTemplating = {
                 var data = Handlebars.createFrame(options.data);
 
                 var count = 0;
-                for (weapon in context.weapons) {
-                    count += context.weapons[weapon].modes.length;
+                if (context.weapons) {
+                    context.weapons.forEach(function(weaponString) {
+                        var weapon = Handlebars.helpers.parseWeapon(weaponString);
+                        if (weapon && weapon.modes) {
+                            count += weapon.modes.length;
+                        }
+                    });
                 }
 
                 data.weaponLines = count;
@@ -364,5 +405,68 @@ var eaTemplating = {
                 '<a href="' + unitName + '" class="unitlink">' + unitName + pluralSuffix + '</a>'
             );
         });
+
+        // Helper to parse weapon string and return weapon object
+        Handlebars.registerHelper('parseWeapon', function (weaponString) {
+            if (typeof weaponString !== 'string') {
+                return weaponString; // Already an object
+            }
+            
+            var values = weaponString.split('|');
+            var weaponName = values[0];
+            var count = values[1] || null;
+            var specialRule = values[2] || null;
+            
+            // Get weapon data from eaTemplating.weaponsData
+            if (eaTemplating.weaponsData.weapons && eaTemplating.weaponsData.weapons[weaponName]) {
+                var weaponObject = JSON.parse(JSON.stringify(eaTemplating.weaponsData.weapons[weaponName]));
+                
+                // Add count if specified
+                if (count) {
+                    weaponObject.count = count;
+                }
+                
+                // Add extra special rules if specified
+                if (specialRule && eaTemplating.weaponsData.rules && eaTemplating.weaponsData.rules[specialRule]) {
+                    weaponObject.modes.forEach(function (mode) {
+                        if (!mode.specialRules) {
+                            mode.specialRules = [];
+                        }
+                        mode.specialRules.push(eaTemplating.weaponsData.rules[specialRule]);
+                    });
+                }
+                
+                return weaponObject;
+            }
+            
+            // Fallback for unknown weapons
+            return {
+                "name": weaponName,
+                "modes": [{
+                    "firepower": "Unknown"
+                }]
+            };
+        });
+
+
+
+        // Helper to check if a weapon has multiple modes
+        Handlebars.registerHelper('hasMultipleModes', function (weapon) {
+            return weapon && weapon.modes && weapon.modes.length > 1;
+        });
+
+        // Helper to get weapon name with count
+        Handlebars.registerHelper('weaponDisplayName', function (weapon) {
+            if (!weapon || !weapon.name) return 'Unknown Weapon';
+            
+            var displayName = weapon.name;
+            if (weapon.count && weapon.count !== '1') {
+                displayName = weapon.count + 'x ' + displayName;
+            }
+            
+            return displayName;
+        });
+
+
     }
 };
