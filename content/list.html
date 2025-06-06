@@ -17,9 +17,30 @@
                         content.empty()
                         content.append(eaTemplating.templates['error']({"errors": units.errors}));
 
+                        // Populate unit data for tooltips
+                        eaTemplating.unitsData = {};
+                        var formattedUnits = units.formatUnits(data, specialRules, weapons);
+                        formattedUnits.forEach(function (unitSection) {
+                            unitSection.forEach(function (section) {
+                                if (section.unit) {
+                                    section.unit.forEach(function (unit) {
+                                        eaTemplating.unitsData[unit.name] = unit;
+                                        // Also add variants if they exist
+                                        if (unit.variants) {
+                                            unit.variants.forEach(function (variant) {
+                                                // Use the format "UnitName - VariantName" for variants
+                                                var variantKey = unit.name + " - " + variant.name;
+                                                eaTemplating.unitsData[variantKey] = variant;
+                                            });
+                                        }
+                                    });
+                                }
+                            });
+                        });
+
                         content.append(eaTemplating.templates['army'](units.formatSpecialRules(data, specialRules)));
 
-                        units.formatUnits(data, specialRules, weapons).forEach(function (units) {
+                        formattedUnits.forEach(function (units) {
                             content.append(eaTemplating.templates['units'](units));
                         });
 

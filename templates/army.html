@@ -45,10 +45,10 @@
                         </span><br>
                         {{#each unitSpec}}
                             {{#if @first}}
-                                {{numberAsText this true}} <a href="{{@key}}" class="unitlink">{{@key}}{{appendPlural this~}}</a>
+                                {{numberAsText this true}} {{{unitTooltip @key this}}}
                             {{else if @last}}
-                                and {{numberAsText this false}} <a href="{{@key}}" class="unitlink">{{@key}}{{appendPlural this}}</a>
-                            {{else}}, {{numberAsText this false}} <a href="{{@key}}" class="unitlink">{{@key}}{{appendPlural this}}</a>
+                                and {{numberAsText this false}} {{{unitTooltip @key this}}}
+                            {{else}}, {{numberAsText this false}} {{{unitTooltip @key this}}}
                             {{/if}}
                         {{/each}}
 

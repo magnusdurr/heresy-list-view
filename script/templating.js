@@ -1,6 +1,7 @@
 var eaTemplating = {
     templates: [],
     specialRulesData: {},
+    unitsData: {},
 
     initialize: function () {
         eaTemplating.templates['error'] = Handlebars.compile($("#error-template").html());
@@ -15,6 +16,9 @@ var eaTemplating = {
                 });
             }
         });
+
+        // Load units data - this will be populated when army data is loaded
+        eaTemplating.unitsData = {};
 
         $.get("partials/special-rules.html").done(function (template) {
             Handlebars.registerPartial('special-rules', template);
@@ -160,6 +164,139 @@ var eaTemplating = {
                 );
             }
             return ruleName;
+        });
+
+        Handlebars.registerHelper('unitTooltip', function (unitName, count) {
+            var unit = eaTemplating.unitsData[unitName];
+            
+            if (unit) {
+                var tooltip = '';
+                
+                // Function to format weapons
+                function formatWeapons(weapons) {
+                    if (!weapons || weapons.length === 0) return [];
+                    
+                    return weapons.map(function(weapon) {
+                        if (typeof weapon === 'string') {
+                            return weapon;
+                        } else if (weapon && weapon.name) {
+                            var weaponStr = weapon.name;
+                            
+                            // Add count if present
+                            if (weapon.count && weapon.count > 1) {
+                                weaponStr += ' x' + weapon.count;
+                            }
+                            
+                            // Add primary mode info if available
+                            if (weapon.modes && weapon.modes.length > 0) {
+                                var primaryMode = weapon.modes[0];
+                                var modeInfo = [];
+                                
+                                if (primaryMode.range) modeInfo.push(primaryMode.range + 'cm');
+                                if (primaryMode.firepower) modeInfo.push(primaryMode.firepower);
+                                
+                                if (modeInfo.length > 0) {
+                                    weaponStr += ' (' + modeInfo.join(', ') + ')';
+                                }
+                            }
+                            
+                            return weaponStr;
+                        } else {
+                            return 'Unknown Weapon';
+                        }
+                    });
+                }
+                
+                // Check if unit has variants
+                if (unit.variants && unit.variants.length > 0) {
+                    // Show unit name with type in parentheses
+                    tooltip += unitName;
+                    if (unit.type) {
+                        tooltip += ' (' + unit.type + ')';
+                    }
+                    tooltip += '\n\n';
+                    
+                    unit.variants.forEach(function(variant) {
+                        tooltip += 'Variant - ' + variant.name + '\n';
+                        
+                        var variantStats = [];
+                        if (variant.speed !== undefined) variantStats.push('Speed: ' + variant.speed + 'cm');
+                        if (variant.armour !== undefined) variantStats.push('Armour: ' + variant.armour + '+');
+                        if (variant.cc !== undefined) variantStats.push('CC: ' + variant.cc + '+');
+                        if (variant.ff !== undefined) variantStats.push('FF: ' + variant.ff + '+');
+                        
+                        if (variantStats.length > 0) {
+                            tooltip += variantStats.join(', ') + '\n';
+                        }
+                        
+                        // Add weapons for this variant
+                        var variantWeapons = formatWeapons(variant.weapons);
+                        if (variantWeapons.length > 0) {
+                            tooltip += variantWeapons.map(function(weapon) { return ' * ' + weapon; }).join('\n') + '\n';
+                        }
+                        
+                        // Add special rules for this variant
+                        if (variant.specialRules && variant.specialRules.length > 0) {
+                            tooltip += ' * Special Rules: ' + variant.specialRules.join(', ') + '\n';
+                        }
+                        
+                        tooltip += '\n';
+                    });
+                    
+                    // Add base unit special rules if any
+                    if (unit.specialRules && unit.specialRules.length > 0) {
+                        tooltip += '\nSpecial Rules: ' + unit.specialRules.join(', ');
+                    }
+                } else {
+                    // Standard unit without variants
+                    // Start with unit name and type in parentheses
+                    tooltip += unitName;
+                    if (unit.type) {
+                        tooltip += ' (' + unit.type + ')';
+                    }
+                    
+                    // Add stats if available
+                    var stats = [];
+                    if (unit.speed !== undefined) stats.push('Speed: ' + unit.speed + 'cm');
+                    if (unit.armour !== undefined) stats.push('Armour: ' + unit.armour + '+');
+                    if (unit.cc !== undefined) stats.push('CC: ' + unit.cc + '+');
+                    if (unit.ff !== undefined) stats.push('FF: ' + unit.ff + '+');
+                    
+                    if (stats.length > 0) {
+                        tooltip += '\n' + stats.join(', ') + '\n';
+                    } else if (unit.type) {
+                        tooltip += '\n';
+                    }
+                    
+                    // Add weapons
+                    var weaponStrings = formatWeapons(unit.weapons);
+                    if (weaponStrings.length > 0) {
+                        tooltip += weaponStrings.map(function(weapon) { return '• ' + weapon; }).join('\n') + '\n';
+                    }
+                    
+                    // Add special rules
+                    if (unit.specialRules && unit.specialRules.length > 0) {
+                        tooltip += 'Special Rules: ' + unit.specialRules.join(', ');
+                    }
+                }
+                
+                // Clean up trailing newlines
+                tooltip = tooltip.replace(/\n$/, '');
+                
+                // Escape quotes for HTML attribute
+                tooltip = tooltip.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+                
+                var pluralSuffix = count > 1 ? 's' : '';
+                return new Handlebars.SafeString(
+                    '<a href="' + unitName + '" class="unitlink unit-tooltip" data-tooltip="' + tooltip + '">' + unitName + pluralSuffix + '</a>'
+                );
+            }
+            
+            // Fallback to original display if no unit data
+            var pluralSuffix = count > 1 ? 's' : '';
+            return new Handlebars.SafeString(
+                '<a href="' + unitName + '" class="unitlink">' + unitName + pluralSuffix + '</a>'
+            );
         });
     }
 };
