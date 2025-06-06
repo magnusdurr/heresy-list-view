@@ -322,9 +322,22 @@
         {
           "name": "Rapier Detachment",
           "unitSpec": {
-            "Legion Rapier": 4
+            "Legion Rapier|Laser Destroyer": 4
           },
           "upgrades": [
+            {
+              "replace": {
+                "removeName": "Legion Rapier|Laser Destroyer",
+                "removeCount": 4,
+                "options": [
+                  {
+                    "addNames": ["Legion Rapier|Quad Launcher"],
+                    "addCount": 4,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
             {
               "add": {
                 "options": [

@@ -10,7 +10,7 @@
             {{/if}}
         </span>
         {{#if @first}}Replace{{else}}or replace{{/if}}
-        {{numberAsText ../removeCount false}} {{../removeName}}
+        {{numberAsText ../removeCount false}} {{unitDisplayName ../removeName ../removeCount}}
         with {{numberAsText addCount false}}
         {{#each addNames}}{{#if @first}}{{else if @last}} or {{else}}, {{/if}}{{{unitTooltip this ../addCount}}}{{/each}}
         {{#if oncePerArmy}} (0-1 in the army){{/if}}
