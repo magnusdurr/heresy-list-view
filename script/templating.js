@@ -448,8 +448,6 @@ var eaTemplating = {
             };
         });
 
-
-
         // Helper to check if a weapon has multiple modes
         Handlebars.registerHelper('hasMultipleModes', function (weapon) {
             return weapon && weapon.modes && weapon.modes.length > 1;
@@ -465,6 +463,34 @@ var eaTemplating = {
             }
             
             return displayName;
+        });
+
+        // Helper to parse special rule string and return rule object
+        Handlebars.registerHelper('parseSpecialRule', function (ruleName) {
+            if (typeof ruleName !== 'string') {
+                return ruleName; // Already an object
+            }
+            
+            var rule = eaTemplating.specialRulesData[ruleName];
+            
+            // If no exact match, try to find a parameterized version
+            if (!rule) {
+                // Replace any content in parentheses with (x) to match template rules
+                // Also remove any whitespace before parentheses
+                // e.g. "Graviton(2)" becomes "Graviton(x)", "Graviton (2)" becomes "Graviton(x)"
+                var templateName = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
+                rule = eaTemplating.specialRulesData[templateName];
+            }
+            
+            if (rule) {
+                return rule;
+            }
+            
+            // Fallback for unknown rules
+            return {
+                "title": ruleName,
+                "description": ["Unknown special rule: " + ruleName]
+            };
         });
 
 

@@ -1,43 +1,7 @@
 var units = {
     errors: [],
 
-    // Load army special rules
-    loadSpecialRules: function () {
-        return $.getJSON("lists/specialRules.json").then(function (data) {
-            specialRules = {};
-
-            data.rules.forEach(function (rule) {
-                specialRules[rule.title] = rule;
-            });
-
-            return specialRules;
-        });
-    },
-
-    // Load weapons data - simplified since weapon parsing is now in templates
-    loadWeapons: function () {
-        // Weapons are now loaded by eaTemplating.initialize()
-        // Just return a resolved promise for compatibility
-        return $.Deferred().resolve().promise();
-    },
-
-    formatSpecialRules: function (data, specialRules) {
-        data.specialRules = data.specialRules.map(function (rule) {
-            if (typeof rule === 'string') {
-                if (specialRules[rule]) {
-                    return specialRules[rule];
-                } else {
-                    error("Unknown army special rule '" + rule + "'");
-                }
-            } else {
-                return rule;
-            }
-        });
-
-        return data;
-    },
-
-    formatUnits: function (data, specialRules) {
+    formatUnits: function (data) {
         unitSections = [];
 
         typeSort = function (type) {
@@ -92,23 +56,6 @@ var units = {
                                 return a.name.localeCompare(b.name)
                             }
                         });
-
-                        // Weapon parsing is now handled in templates - no need to process here
-
-                        section.specialRules.forEach(function (rule) {
-                            specialRules[rule.title] = rule
-                        });
-
-                        section.specialRules = unitSection.unitRules.map(function (rule) {
-                            if (specialRules[rule] !== undefined) {
-                                return specialRules[rule]
-                            } else {
-                                return {
-                                    "name": "ERROR",
-                                    "description": "Unknown special rule: " + rule
-                                }
-                            }
-                        });
                     });
 
                     unitSections.push(units);
@@ -119,8 +66,3 @@ var units = {
         return unitSections;
     }
 };
-
-function error(message) {
-    units.errors.push(message);
-    console.error(message);
-}

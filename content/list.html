@@ -11,63 +11,59 @@
         var list = urlSearchParams.get("list");
 
         if (race && list) {
-            $.when(units.loadSpecialRules(), units.loadWeapons()).done(function (specialRules, weapons) {
-                $.getJSON("lists/" + race + "/" + list + ".json", function (data) {
+            // Simplified loading since weapon and special rule parsing is now in templates
+            $.getJSON("lists/" + race + "/" + list + ".json", function (data) {
+                content.empty()
+                content.append(eaTemplating.templates['error']({"errors": units.errors}));
 
-                        content.empty()
-                        content.append(eaTemplating.templates['error']({"errors": units.errors}));
-
-                        // Populate unit data for tooltips
-                        eaTemplating.unitsData = {};
-                        var formattedUnits = units.formatUnits(data, specialRules, weapons);
-                        formattedUnits.forEach(function (unitSection) {
-                            unitSection.forEach(function (section) {
-                                if (section.unit) {
-                                    section.unit.forEach(function (unit) {
-                                        eaTemplating.unitsData[unit.name] = unit;
-                                        // Also add variants if they exist
-                                        if (unit.variants) {
-                                            unit.variants.forEach(function (variant) {
-                                                // Use the format "UnitName - VariantName" for variants
-                                                var variantKey = unit.name + " - " + variant.name;
-                                                eaTemplating.unitsData[variantKey] = variant;
-                                            });
-                                        }
+                // Populate unit data for tooltips
+                eaTemplating.unitsData = {};
+                var formattedUnits = units.formatUnits(data);
+                formattedUnits.forEach(function (unitSection) {
+                    unitSection.forEach(function (section) {
+                        if (section.unit) {
+                            section.unit.forEach(function (unit) {
+                                eaTemplating.unitsData[unit.name] = unit;
+                                // Also add variants if they exist
+                                if (unit.variants) {
+                                    unit.variants.forEach(function (variant) {
+                                        // Use the format "UnitName - VariantName" for variants
+                                        var variantKey = unit.name + " - " + variant.name;
+                                        eaTemplating.unitsData[variantKey] = variant;
                                     });
                                 }
                             });
-                        });
-
-                        content.append(eaTemplating.templates['army'](units.formatSpecialRules(data, specialRules)));
-
-                        formattedUnits.forEach(function (units) {
-                            content.append(eaTemplating.templates['units'](units));
-                        });
-
-                        $.get("lists/" + race + "/" + list + ".log.html", function (data) {
-                            content.append("<h2>About the list</h2>")
-                            content.append(data);
-
-                            $.get("lists/" + race + "/" + race + "_race.log.html", function (data) {
-                                content.append(data);
-                            }).fail(function (jqxhr, textStatus, error) {
-                                console.log("No race log provided");
-                            });
-                        }).fail(function (jqxhr, textStatus, error) {
-                            console.log("No list log provided");
-
-                            $.get("lists/" + race + "/" + race + "_race.log.html", function (data) {
-                                content.append(data);
-                            }).fail(function (jqxhr, textStatus, error) {
-                                console.log("No race log provided");
-                            });
-                        });
-
-                    }
-                ).fail(function (jqxhr, textStatus, error) {
-                    $("#content").html('<h2 class="text-danger">These Are Not The Droids Youre Looking For</h2><p>File: lists/' + race + '/' + list + '.json missing or invalid, error: ' + textStatus);
-                    console.log("Fail!", error);
+                        }
+                    });
                 });
+
+                content.append(eaTemplating.templates['army'](data));
+
+                formattedUnits.forEach(function (units) {
+                    content.append(eaTemplating.templates['units'](units));
+                });
+
+                $.get("lists/" + race + "/" + list + ".log.html", function (data) {
+                    content.append("<h2>About the list</h2>")
+                    content.append(data);
+
+                    $.get("lists/" + race + "/" + race + "_race.log.html", function (data) {
+                        content.append(data);
+                    }).fail(function (jqxhr, textStatus, error) {
+                        console.log("No race log provided");
+                    });
+                }).fail(function (jqxhr, textStatus, error) {
+                    console.log("No list log provided");
+
+                    $.get("lists/" + race + "/" + race + "_race.log.html", function (data) {
+                        content.append(data);
+                    }).fail(function (jqxhr, textStatus, error) {
+                        console.log("No race log provided");
+                    });
+                });
+            }).fail(function (jqxhr, textStatus, error) {
+                $("#content").html('<h2 class="text-danger">These Are Not The Droids Youre Looking For</h2><p>File: lists/' + race + '/' + list + '.json missing or invalid, error: ' + textStatus);
+                console.log("Fail!", error);
             });
         } else {
             $("#content").html('<h2 class="text-danger">These Are Not The Droids Youre Looking For</h2><p>File: lists/' + race + '/' + list + '.json missing or invalid');
