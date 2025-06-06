@@ -208,7 +208,11 @@ var eaTemplating = {
         });
 
         Handlebars.registerHelper('unitTooltip', function (unitName, count) {
-            // Check if unitName contains a variant specification (e.g., "Legion Rapier|Laser Destroyer")
+            return eaTemplating.createUnitTooltip(unitName, count);
+        });
+
+        // Helper functions for unit tooltip creation
+        eaTemplating.parseUnitName = function(unitName) {
             var baseUnitName = unitName;
             var variantName = null;
             
@@ -218,276 +222,261 @@ var eaTemplating = {
                 variantName = parts[1];
             }
             
-            var unit = eaTemplating.unitsData[baseUnitName];
+            return { base: baseUnitName, variant: variantName };
+        };
+
+        eaTemplating.formatWeapons = function(weapons) {
+            if (!weapons || weapons.length === 0) return [];
             
-            if (unit) {
-                var tooltip = '';
-                
-                // Function to format weapons
-                function formatWeapons(weapons) {
-                    if (!weapons || weapons.length === 0) return [];
-                    
-                    return weapons.map(function(weapon) {
-                        if (typeof weapon === 'string') {
-                            // Parse the weapon string using the existing helper
-                            weapon = Handlebars.helpers.parseWeapon(weapon);
-                        }
-                        
-                        if (weapon && weapon.name) {
-                            var weaponStr = '';
-                            
-                            // Add count if present (before weapon name)
-                            if (weapon.count && weapon.count !== '1' && weapon.count > 1) {
-                                weaponStr += weapon.count + 'x ';
-                            }
-                            
-                            weaponStr += weapon.name;
-                            
-                            // Add primary mode info if available
-                            if (weapon.modes && weapon.modes.length > 0) {
-                                var primaryMode = weapon.modes[0];
-                                var modeInfo = [];
-                                
-                                if (primaryMode.range) modeInfo.push(primaryMode.range + 'cm');
-                                if (primaryMode.firepower) modeInfo.push(primaryMode.firepower);
-                                
-                                if (modeInfo.length > 0) {
-                                    weaponStr += ' ' + modeInfo.join(' ');
-                                }
-                            }
-                            
-                            return weaponStr;
-                        } else {
-                            return 'Unknown Weapon';
-                        }
-                    });
+            return weapons.map(function(weapon) {
+                if (typeof weapon === 'string') {
+                    weapon = Handlebars.helpers.parseWeapon(weapon);
                 }
                 
-                // Function to format titan weapon mounts
-                function formatWeaponMounts(weaponMounts) {
-                    if (!weaponMounts || weaponMounts.length === 0) return [];
+                if (weapon && weapon.name) {
+                    var weaponStr = '';
                     
-                    var mountDescriptions = [];
+                    if (weapon.count && weapon.count !== '1' && weapon.count > 1) {
+                        weaponStr += weapon.count + 'x ';
+                    }
                     
-                    weaponMounts.forEach(function(mount) {
-                        var mountDesc = mount.mount;
-                        if (mount.notes) {
-                            mountDesc += ' (' + mount.notes + ')';
-                        }
-                        mountDesc += ':';
-                        
-                        var typeDescs = [];
-                        if (mount.types) {
-                            mount.types.forEach(function(type) {
-                                var typeDesc = type.name;
-                                if (type.weapons && type.weapons.length > 0) {
-                                    // Extract weapon names from strings like "Turbo-Laser Destructor|0-1|FxF"
-                                    var weaponNames = type.weapons.map(function(weapon) {
-                                        if (typeof weapon === 'string') {
-                                            // Split by '|' and take the first part (weapon name)
-                                            return weapon.split('|')[0];
-                                        } else if (weapon && weapon.name) {
-                                            return weapon.name;
-                                        } else {
-                                            return 'Unknown Weapon';
-                                        }
-                                    });
-                                    typeDesc += ': ' + weaponNames.join(', ');
-                                }
-                                typeDescs.push(typeDesc);
-                            });
-                        }
-                        
-                        if (typeDescs.length > 0) {
-                            mountDesc += '\n  ' + typeDescs.join('\n  ');
-                        }
-                        
-                        mountDescriptions.push(mountDesc);
-                    });
+                    weaponStr += weapon.name;
                     
-                    return mountDescriptions;
-                }
-                
-                // Check if unit has variants
-                if (unit.variants && unit.variants.length > 0) {
-                    // If a specific variant is requested, show only that variant
-                    if (variantName) {
-                        var specificVariant = unit.variants.find(function(variant) {
-                            return variant.name === variantName;
-                        });
+                    if (weapon.modes && weapon.modes.length > 0) {
+                        var primaryMode = weapon.modes[0];
+                        var modeInfo = [];
                         
-                        if (specificVariant) {
-                            // Show full unit name with variant in parentheses format
-                            tooltip += baseUnitName + ' (' + variantName + ')';
-                            if (unit.type) {
-                                tooltip += ' (' + unit.type + ')';
-                            }
-                            tooltip += '\n\n';
-                            
-                            var variantStats = [];
-                            if (specificVariant.speed !== undefined) variantStats.push('Speed: ' + specificVariant.speed + 'cm');
-                            if (specificVariant.armour !== undefined) variantStats.push('Armour: ' + specificVariant.armour + '+');
-                            if (specificVariant.cc !== undefined) variantStats.push('CC: ' + specificVariant.cc + '+');
-                            if (specificVariant.ff !== undefined) variantStats.push('FF: ' + specificVariant.ff + '+');
-                            
-                            if (variantStats.length > 0) {
-                                tooltip += variantStats.join(', ') + '\n';
-                            }
-                            
-                            // Add weapons or weapon mounts for this variant
-                            if (specificVariant.weaponMounts && specificVariant.weaponMounts.length > 0) {
-                                // Handle titan variants with weapon mounts
-                                var variantMounts = formatWeaponMounts(specificVariant.weaponMounts);
-                                if (variantMounts.length > 0) {
-                                    tooltip += variantMounts.map(function(mount) { return '• ' + mount; }).join('\n');
-                                }
-                            } else if (specificVariant.weapons && specificVariant.weapons.length > 0) {
-                                // Handle regular variant weapons
-                                var variantWeapons = formatWeapons(specificVariant.weapons);
-                                if (variantWeapons.length > 0) {
-                                    tooltip += variantWeapons.map(function(weapon) { return '• ' + weapon; }).join('\n');
-                                }
-                            }
-                            
-                            // Add special rules for this variant
-                            if (specificVariant.specialRules && specificVariant.specialRules.length > 0) {
-                                tooltip += '\nSpecial Rules: ' + specificVariant.specialRules.join(', ');
-                            }
-                            
-                            // Add base unit special rules if any (but don't duplicate)
-                            if (unit.specialRules && unit.specialRules.length > 0) {
-                                tooltip += '\nBase Unit Special Rules: ' + unit.specialRules.join(', ');
-                            }
-                        } else {
-                            // Variant not found, fall back to showing all variants
-                            tooltip += baseUnitName + ' (Variant "' + variantName + '" not found)';
-                            if (unit.type) {
-                                tooltip += ' (' + unit.type + ')';
-                            }
-                            tooltip += '\n\nAvailable variants: ' + unit.variants.map(function(v) { return v.name; }).join(', ');
-                        }
-                    } else {
-                        // Show all variants (original behavior)
-                        tooltip += baseUnitName;
-                        if (unit.type) {
-                            tooltip += ' (' + unit.type + ')';
-                        }
-                        tooltip += '\n\n';
+                        if (primaryMode.range) modeInfo.push(primaryMode.range + 'cm');
+                        if (primaryMode.firepower) modeInfo.push(primaryMode.firepower);
                         
-                        unit.variants.forEach(function(variant, index) {
-                            tooltip += 'Variant - ' + variant.name + '\n';
-                            
-                            var variantStats = [];
-                            if (variant.speed !== undefined) variantStats.push('Speed: ' + variant.speed + 'cm');
-                            if (variant.armour !== undefined) variantStats.push('Armour: ' + variant.armour + '+');
-                            if (variant.cc !== undefined) variantStats.push('CC: ' + variant.cc + '+');
-                            if (variant.ff !== undefined) variantStats.push('FF: ' + variant.ff + '+');
-                            
-                            if (variantStats.length > 0) {
-                                tooltip += variantStats.join(', ') + '\n';
-                            }
-                            
-                            // Add weapons or weapon mounts for this variant
-                            if (variant.weaponMounts && variant.weaponMounts.length > 0) {
-                                // Handle titan variants with weapon mounts
-                                var variantMounts = formatWeaponMounts(variant.weaponMounts);
-                                if (variantMounts.length > 0) {
-                                    tooltip += variantMounts.map(function(mount) { return ' * ' + mount; }).join('\n');
-                                }
-                            } else if (variant.weapons && variant.weapons.length > 0) {
-                                // Handle regular variant weapons
-                                var variantWeapons = formatWeapons(variant.weapons);
-                                if (variantWeapons.length > 0) {
-                                    tooltip += variantWeapons.map(function(weapon) { return ' * ' + weapon; }).join('\n');
-                                }
-                            }
-                            
-                            // Add special rules for this variant
-                            if (variant.specialRules && variant.specialRules.length > 0) {
-                                tooltip += '\n * Special Rules: ' + variant.specialRules.join(', ');
-                            }
-                            
-                            // Add spacing between variants (but not after the last one)
-                            if (index < unit.variants.length - 1) {
-                                tooltip += '\n\n';
-                            }
-                        });
-                        
-                        // Add base unit special rules if any
-                        if (unit.specialRules && unit.specialRules.length > 0) {
-                            tooltip += '\n\nSpecial Rules: ' + unit.specialRules.join(', ');
+                        if (modeInfo.length > 0) {
+                            weaponStr += ' ' + modeInfo.join(' ');
                         }
                     }
+                    
+                    return weaponStr;
                 } else {
-                    // Standard unit without variants
-                    // Start with unit name and type in parentheses
-                    tooltip += baseUnitName;
-                    if (unit.type) {
-                        tooltip += ' (' + unit.type + ')';
-                    }
-                    
-                    // Add stats if available
-                    var stats = [];
-                    if (unit.speed !== undefined) stats.push('Speed: ' + unit.speed + 'cm');
-                    if (unit.armour !== undefined) stats.push('Armour: ' + unit.armour + '+');
-                    if (unit.cc !== undefined) stats.push('CC: ' + unit.cc + '+');
-                    if (unit.ff !== undefined) stats.push('FF: ' + unit.ff + '+');
-                    
-                    if (stats.length > 0) {
-                        tooltip += '\n' + stats.join(', ') + '\n';
-                    } else if (unit.type) {
-                        tooltip += '\n';
-                    }
-                    
-                    // Add weapons or weapon mounts
-                    if (unit.weaponMounts && unit.weaponMounts.length > 0) {
-                        // Handle titans with weapon mounts
-                        var mountStrings = formatWeaponMounts(unit.weaponMounts);
-                        if (mountStrings.length > 0) {
-                            tooltip += mountStrings.map(function(mount) { return '• ' + mount; }).join('\n') + '\n';
+                    return 'Unknown Weapon';
+                }
+            });
+        };
+
+        eaTemplating.formatWeaponMounts = function(weaponMounts) {
+            if (!weaponMounts || weaponMounts.length === 0) return [];
+            
+            var mountDescriptions = [];
+            
+            weaponMounts.forEach(function(mount) {
+                var mountDesc = mount.mount;
+                if (mount.notes) {
+                    mountDesc += ' (' + mount.notes + ')';
+                }
+                mountDesc += ':';
+                
+                var typeDescs = [];
+                if (mount.types) {
+                    mount.types.forEach(function(type) {
+                        var typeDesc = type.name;
+                        if (type.weapons && type.weapons.length > 0) {
+                            var weaponNames = type.weapons.map(function(weapon) {
+                                if (typeof weapon === 'string') {
+                                    return weapon.split('|')[0];
+                                } else if (weapon && weapon.name) {
+                                    return weapon.name;
+                                } else {
+                                    return 'Unknown Weapon';
+                                }
+                            });
+                            typeDesc += ': ' + weaponNames.join(', ');
                         }
-                    } else if (unit.weapons && unit.weapons.length > 0) {
-                        // Handle regular units with weapons
-                        var weaponStrings = formatWeapons(unit.weapons);
-                        if (weaponStrings.length > 0) {
-                            tooltip += weaponStrings.map(function(weapon) { return '• ' + weapon; }).join('\n') + '\n';
-                        }
-                    }
-                    
-                    // Add special rules
-                    if (unit.specialRules && unit.specialRules.length > 0) {
-                        tooltip += '\nSpecial Rules: ' + unit.specialRules.join(', ');
-                    }
+                        typeDescs.push(typeDesc);
+                    });
                 }
                 
-                // Clean up trailing newlines
-                tooltip = tooltip.replace(/\n+$/, '');
-                
-                // Escape quotes for HTML attribute
-                tooltip = tooltip.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-                
-                var pluralSuffix = '';
-                if (count > 1) {
-                    var nameToCheck = variantName ? baseUnitName : unitName;
-                    pluralSuffix = nameToCheck.toLowerCase().endsWith('s') ? '' : 's';
+                if (typeDescs.length > 0) {
+                    mountDesc += '\n  ' + typeDescs.join('\n  ');
                 }
-                var displayName = variantName ? baseUnitName + pluralSuffix + ' (' + variantName + ')' : unitName + pluralSuffix;
-                return new Handlebars.SafeString(
-                    '<a href="' + baseUnitName + '" class="unitlink unit-tooltip" data-tooltip="' + tooltip + '">' + displayName + '</a>'
-                );
+                
+                mountDescriptions.push(mountDesc);
+            });
+            
+            return mountDescriptions;
+        };
+
+        eaTemplating.formatUnitStats = function(unit) {
+            var stats = [];
+            if (unit.speed !== undefined) stats.push('Speed: ' + unit.speed + 'cm');
+            if (unit.armour !== undefined) stats.push('Armour: ' + unit.armour + '+');
+            if (unit.cc !== undefined) stats.push('CC: ' + unit.cc + '+');
+            if (unit.ff !== undefined) stats.push('FF: ' + unit.ff + '+');
+            return stats;
+        };
+
+        eaTemplating.addWeaponsToTooltip = function(unit, tooltip) {
+            if (unit.weaponMounts && unit.weaponMounts.length > 0) {
+                var mountStrings = eaTemplating.formatWeaponMounts(unit.weaponMounts);
+                if (mountStrings.length > 0) {
+                    tooltip += mountStrings.map(function(mount) { return '• ' + mount; }).join('\n');
+                }
+            } else if (unit.weapons && unit.weapons.length > 0) {
+                var weaponStrings = eaTemplating.formatWeapons(unit.weapons);
+                if (weaponStrings.length > 0) {
+                    tooltip += weaponStrings.map(function(weapon) { return '• ' + weapon; }).join('\n');
+                }
+            }
+            return tooltip;
+        };
+
+        eaTemplating.buildVariantTooltip = function(unit, variantName, baseUnitName) {
+            var specificVariant = unit.variants.find(function(variant) {
+                return variant.name === variantName;
+            });
+            
+            if (!specificVariant) {
+                var tooltip = baseUnitName + ' (Variant "' + variantName + '" not found)';
+                if (unit.type) {
+                    tooltip += ' (' + unit.type + ')';
+                }
+                tooltip += '\n\nAvailable variants: ' + unit.variants.map(function(v) { return v.name; }).join(', ');
+                return tooltip;
             }
             
-            // Fallback to original display if no unit data
+            var tooltip = baseUnitName + ' (' + variantName + ')';
+            if (unit.type) {
+                tooltip += ' (' + unit.type + ')';
+            }
+            tooltip += '\n\n';
+            
+            var variantStats = eaTemplating.formatUnitStats(specificVariant);
+            if (variantStats.length > 0) {
+                tooltip += variantStats.join(', ') + '\n';
+            }
+            
+            tooltip = eaTemplating.addWeaponsToTooltip(specificVariant, tooltip);
+            
+            if (specificVariant.specialRules && specificVariant.specialRules.length > 0) {
+                tooltip += '\nSpecial Rules: ' + specificVariant.specialRules.join(', ');
+            }
+            
+            if (unit.specialRules && unit.specialRules.length > 0) {
+                tooltip += '\nBase Unit Special Rules: ' + unit.specialRules.join(', ');
+            }
+            
+            return tooltip;
+        };
+
+        eaTemplating.buildAllVariantsTooltip = function(unit, baseUnitName) {
+            var tooltip = baseUnitName;
+            if (unit.type) {
+                tooltip += ' (' + unit.type + ')';
+            }
+            tooltip += '\n\n';
+            
+            unit.variants.forEach(function(variant, index) {
+                tooltip += 'Variant - ' + variant.name + '\n';
+                
+                var variantStats = eaTemplating.formatUnitStats(variant);
+                if (variantStats.length > 0) {
+                    tooltip += variantStats.join(', ') + '\n';
+                }
+                
+                if (variant.weaponMounts && variant.weaponMounts.length > 0) {
+                    var variantMounts = eaTemplating.formatWeaponMounts(variant.weaponMounts);
+                    if (variantMounts.length > 0) {
+                        tooltip += variantMounts.map(function(mount) { return ' * ' + mount; }).join('\n');
+                    }
+                } else if (variant.weapons && variant.weapons.length > 0) {
+                    var variantWeapons = eaTemplating.formatWeapons(variant.weapons);
+                    if (variantWeapons.length > 0) {
+                        tooltip += variantWeapons.map(function(weapon) { return ' * ' + weapon; }).join('\n');
+                    }
+                }
+                
+                if (variant.specialRules && variant.specialRules.length > 0) {
+                    tooltip += '\n * Special Rules: ' + variant.specialRules.join(', ');
+                }
+                
+                if (index < unit.variants.length - 1) {
+                    tooltip += '\n\n';
+                }
+            });
+            
+            if (unit.specialRules && unit.specialRules.length > 0) {
+                tooltip += '\n\nSpecial Rules: ' + unit.specialRules.join(', ');
+            }
+            
+            return tooltip;
+        };
+
+        eaTemplating.buildStandardUnitTooltip = function(unit, baseUnitName) {
+            var tooltip = baseUnitName;
+            if (unit.type) {
+                tooltip += ' (' + unit.type + ')';
+            }
+            
+            var stats = eaTemplating.formatUnitStats(unit);
+            if (stats.length > 0) {
+                tooltip += '\n' + stats.join(', ') + '\n';
+            } else if (unit.type) {
+                tooltip += '\n';
+            }
+            
+            tooltip = eaTemplating.addWeaponsToTooltip(unit, tooltip);
+            
+            if (unit.specialRules && unit.specialRules.length > 0) {
+                tooltip += '\nSpecial Rules: ' + unit.specialRules.join(', ');
+            }
+            
+            return tooltip;
+        };
+
+        eaTemplating.createDisplayName = function(unitName, count, baseUnitName, variantName) {
             var pluralSuffix = '';
             if (count > 1) {
                 var nameToCheck = variantName ? baseUnitName : unitName;
                 pluralSuffix = nameToCheck.toLowerCase().endsWith('s') ? '' : 's';
             }
-            var displayName = variantName ? baseUnitName + pluralSuffix + ' (' + variantName + ')' : unitName + pluralSuffix;
+            return variantName ? baseUnitName + pluralSuffix + ' (' + variantName + ')' : unitName + pluralSuffix;
+        };
+
+        eaTemplating.createTooltipHtml = function(displayName, tooltip, baseUnitName) {
+            var escapedTooltip = tooltip.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
             return new Handlebars.SafeString(
-                '<a href="' + baseUnitName + '" class="unitlink">' + displayName + '</a>'
+                '<a href="' + baseUnitName + '" class="unitlink unit-tooltip" data-tooltip="' + escapedTooltip + '">' + displayName + '</a>'
             );
-        });
+        };
+
+        eaTemplating.createUnitTooltip = function(unitName, count) {
+            var parsedName = eaTemplating.parseUnitName(unitName);
+            var baseUnitName = parsedName.base;
+            var variantName = parsedName.variant;
+            
+            var unit = eaTemplating.unitsData[baseUnitName];
+            
+            if (!unit) {
+                var displayName = eaTemplating.createDisplayName(unitName, count, baseUnitName, variantName);
+                return new Handlebars.SafeString(
+                    '<a href="' + baseUnitName + '" class="unitlink">' + displayName + '</a>'
+                );
+            }
+            
+            var tooltip = '';
+            
+            if (unit.variants && unit.variants.length > 0) {
+                if (variantName) {
+                    tooltip = eaTemplating.buildVariantTooltip(unit, variantName, baseUnitName);
+                } else {
+                    tooltip = eaTemplating.buildAllVariantsTooltip(unit, baseUnitName);
+                }
+            } else {
+                tooltip = eaTemplating.buildStandardUnitTooltip(unit, baseUnitName);
+            }
+            
+            tooltip = tooltip.replace(/\n+$/, '');
+            
+            var displayName = eaTemplating.createDisplayName(unitName, count, baseUnitName, variantName);
+            return eaTemplating.createTooltipHtml(displayName, tooltip, baseUnitName);
+        };
 
         // Helper to parse weapon string and return weapon object
         Handlebars.registerHelper('parseWeapon', function (weaponString) {
