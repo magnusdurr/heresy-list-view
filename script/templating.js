@@ -207,6 +207,51 @@ var eaTemplating = {
                     });
                 }
                 
+                // Function to format titan weapon mounts
+                function formatWeaponMounts(weaponMounts) {
+                    if (!weaponMounts || weaponMounts.length === 0) return [];
+                    
+                    var mountDescriptions = [];
+                    
+                    weaponMounts.forEach(function(mount) {
+                        var mountDesc = mount.mount;
+                        if (mount.notes) {
+                            mountDesc += ' (' + mount.notes + ')';
+                        }
+                        mountDesc += ':';
+                        
+                        var typeDescs = [];
+                        if (mount.types) {
+                            mount.types.forEach(function(type) {
+                                var typeDesc = type.name;
+                                if (type.weapons && type.weapons.length > 0) {
+                                    // Extract weapon names from strings like "Turbo-Laser Destructor|0-1|FxF"
+                                    var weaponNames = type.weapons.map(function(weapon) {
+                                        if (typeof weapon === 'string') {
+                                            // Split by '|' and take the first part (weapon name)
+                                            return weapon.split('|')[0];
+                                        } else if (weapon && weapon.name) {
+                                            return weapon.name;
+                                        } else {
+                                            return 'Unknown Weapon';
+                                        }
+                                    });
+                                    typeDesc += ': ' + weaponNames.join(', ');
+                                }
+                                typeDescs.push(typeDesc);
+                            });
+                        }
+                        
+                        if (typeDescs.length > 0) {
+                            mountDesc += '\n  ' + typeDescs.join('\n  ');
+                        }
+                        
+                        mountDescriptions.push(mountDesc);
+                    });
+                    
+                    return mountDescriptions;
+                }
+                
                 // Check if unit has variants
                 if (unit.variants && unit.variants.length > 0) {
                     // Show unit name with type in parentheses
@@ -216,7 +261,7 @@ var eaTemplating = {
                     }
                     tooltip += '\n\n';
                     
-                    unit.variants.forEach(function(variant) {
+                    unit.variants.forEach(function(variant, index) {
                         tooltip += 'Variant - ' + variant.name + '\n';
                         
                         var variantStats = [];
@@ -229,23 +274,35 @@ var eaTemplating = {
                             tooltip += variantStats.join(', ') + '\n';
                         }
                         
-                        // Add weapons for this variant
-                        var variantWeapons = formatWeapons(variant.weapons);
-                        if (variantWeapons.length > 0) {
-                            tooltip += variantWeapons.map(function(weapon) { return ' * ' + weapon; }).join('\n') + '\n';
+                        // Add weapons or weapon mounts for this variant
+                        if (variant.weaponMounts && variant.weaponMounts.length > 0) {
+                            // Handle titan variants with weapon mounts
+                            var variantMounts = formatWeaponMounts(variant.weaponMounts);
+                            if (variantMounts.length > 0) {
+                                tooltip += variantMounts.map(function(mount) { return ' * ' + mount; }).join('\n');
+                            }
+                        } else if (variant.weapons && variant.weapons.length > 0) {
+                            // Handle regular variant weapons
+                            var variantWeapons = formatWeapons(variant.weapons);
+                            if (variantWeapons.length > 0) {
+                                tooltip += variantWeapons.map(function(weapon) { return ' * ' + weapon; }).join('\n');
+                            }
                         }
                         
                         // Add special rules for this variant
                         if (variant.specialRules && variant.specialRules.length > 0) {
-                            tooltip += ' * Special Rules: ' + variant.specialRules.join(', ') + '\n';
+                            tooltip += '\n * Special Rules: ' + variant.specialRules.join(', ');
                         }
                         
-                        tooltip += '\n';
+                        // Add spacing between variants (but not after the last one)
+                        if (index < unit.variants.length - 1) {
+                            tooltip += '\n\n';
+                        }
                     });
                     
                     // Add base unit special rules if any
                     if (unit.specialRules && unit.specialRules.length > 0) {
-                        tooltip += '\nSpecial Rules: ' + unit.specialRules.join(', ');
+                        tooltip += '\n\nSpecial Rules: ' + unit.specialRules.join(', ');
                     }
                 } else {
                     // Standard unit without variants
@@ -268,20 +325,29 @@ var eaTemplating = {
                         tooltip += '\n';
                     }
                     
-                    // Add weapons
-                    var weaponStrings = formatWeapons(unit.weapons);
-                    if (weaponStrings.length > 0) {
-                        tooltip += weaponStrings.map(function(weapon) { return '• ' + weapon; }).join('\n') + '\n';
+                    // Add weapons or weapon mounts
+                    if (unit.weaponMounts && unit.weaponMounts.length > 0) {
+                        // Handle titans with weapon mounts
+                        var mountStrings = formatWeaponMounts(unit.weaponMounts);
+                        if (mountStrings.length > 0) {
+                            tooltip += mountStrings.map(function(mount) { return '• ' + mount; }).join('\n') + '\n';
+                        }
+                    } else if (unit.weapons && unit.weapons.length > 0) {
+                        // Handle regular units with weapons
+                        var weaponStrings = formatWeapons(unit.weapons);
+                        if (weaponStrings.length > 0) {
+                            tooltip += weaponStrings.map(function(weapon) { return '• ' + weapon; }).join('\n') + '\n';
+                        }
                     }
                     
                     // Add special rules
                     if (unit.specialRules && unit.specialRules.length > 0) {
-                        tooltip += 'Special Rules: ' + unit.specialRules.join(', ');
+                        tooltip += '\nSpecial Rules: ' + unit.specialRules.join(', ');
                     }
                 }
                 
                 // Clean up trailing newlines
-                tooltip = tooltip.replace(/\n$/, '');
+                tooltip = tooltip.replace(/\n+$/, '');
                 
                 // Escape quotes for HTML attribute
                 tooltip = tooltip.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
