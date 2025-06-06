@@ -103,14 +103,17 @@
       "unitRules": [
         "Void Shields",
         "Towering",
+        "Dauntless",
         "Beam Projector",
-        "Graviton",
+        "Graviton(x)",
+        "Shock Pulse",
         "Titan Hunter",
         "Shield Piercer",
         "Shield Disruptor",
+        "God Machine",
         "Ponderous",
         "Steadfast",
-        "Shock Pulse"
+        "System Breakdown"
       ]
     },
     {
@@ -426,7 +429,7 @@
         {
           "name": "Armiger Lance",
           "unitSpec": {
-            "Armiger Knight Warglaives": 3
+            "Armiger Knight Warglaive": 3
           },
           "upgrades": [
             {
@@ -435,7 +438,7 @@
                 "removeCount": 3,
                 "options": [
                   {
-                    "addNames": ["Armiger Knight Helverins"],
+                    "addNames": ["Armiger Knight Helverin"],
                     "addCount": 3,
                     "upgradePoints": 0
                   }
@@ -449,7 +452,7 @@
         {
           "name": "Questoris Lance",
           "unitSpec": {
-            "Questoris Knight Paladins": 2
+            "Questoris Knight Paladin": 2
           },
           "upgrades": [
             {
@@ -458,22 +461,22 @@
                 "removeCount": 2,
                 "options": [
                   {
-                    "addNames": ["Questoris Knight Crusaders"],
+                    "addNames": ["Questoris Knight Crusader"],
                     "addCount": 2,
                     "upgradePoints": 0
                   },
                   {
-                    "addNames": ["Questoris Knight Errants"],
+                    "addNames": ["Questoris Knight Errant"],
                     "addCount": 2,
                     "upgradePoints": 0
                   },
                   {
-                    "addNames": ["Questoris Knight Wardens"],
+                    "addNames": ["Questoris Knight Warden"],
                     "addCount": 2,
                     "upgradePoints": 0
                   },
                   {
-                    "addNames": ["Questoris Knight Gallants"],
+                    "addNames": ["Questoris Knight Gallant"],
                     "addCount": 2,
                     "upgradePoints": 0
                   }

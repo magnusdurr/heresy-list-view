@@ -6,8 +6,8 @@
   "intro": "Ultramarines Legion armies gain 12 formation points <span class=\"badge badge-primary\">12 FP</span>, 14 upgrade points <span class=\"badge badge-success\">14 UP</span>, 4 Titan points <span class=\"badge badge-warning\">4 TP</span>, and 4 Ally points <span class=\"badge badge-info\">4 AP</span> for a normal sized battle. A negative UP value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
-  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the <i>Chivalry</i> special rule.",
-  "armyRules": "The <i>And They Shall Know No Fear</i> special rule applies to all Ultramarines Legion Detachments.",
+  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
+  "armyRules": "The 'And They Shall Know No Fear' special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
     "And They Shall Know No Fear"
   ],
@@ -107,8 +107,10 @@
       "unitRules": [
         "Void Shields",
         "Towering",
+        "Dauntless",
         "Beam Projector",
-        "Graviton",
+        "Graviton(x)",
+        "Shock Pulse",
         "Titan Hunter",
         "Shield Piercer",
         "Shield Disruptor",
