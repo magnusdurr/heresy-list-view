@@ -252,6 +252,23 @@ var eaTemplating = {
                         if (modeInfo.length > 0) {
                             weaponStr += ' ' + modeInfo.join(' ');
                         }
+                        
+                        // Add special rules from all modes
+                        var allSpecialRules = [];
+                        weapon.modes.forEach(function(mode) {
+                            if (mode.specialRules && mode.specialRules.length > 0) {
+                                mode.specialRules.forEach(function(rule) {
+                                    var ruleName = rule.name || rule;
+                                    if (allSpecialRules.indexOf(ruleName) === -1) {
+                                        allSpecialRules.push(ruleName);
+                                    }
+                                });
+                            }
+                        });
+                        
+                        if (allSpecialRules.length > 0) {
+                            weaponStr += ' (' + allSpecialRules.join(', ') + ')';
+                        }
                     }
                     
                     return weaponStr;
