@@ -19,9 +19,21 @@
       ]
     },
     {
+      "title": "Infiltrators",
+      "description": [
+        "Units with the 'Infiltrators' special rule doubles their speed value when their formation performs an Engage action. They can also ignore Zones of Control from the formation they are charging, allowing them to sneak past enemy units when they charge. Note that this does not allow them to move over enemy units."
+      ]
+    },
+    {
+      "title": "Inspiring",
+      "description": [
+        "Each unit with the 'Inspiring' special rule that are directly involved in an assault, and survives until the combat resolution, adds +1 to the result roll."
+      ]
+    },
+    {
       "title": "Supreme Commander",
       "description": [
-        "A unit with the 'Supreme Commander' special rule count as having the 'Commander' and 'Leader' special rules. In addition, each unit with Supreme Commander in the army allows a player to re-roll one failed action or rally test once per turn."
+        "A unit with the 'Supreme Commander' special rule count as having the 'Commander' and 'Leader' special rules. In addition, each unit with Supreme Commander in the army allows a player to re-roll one failed action or rally test once per turn. If the unit with Supreme Commander is in the reserves, its re-roll may only be used on the formation it is in or transported by. If there are several units with Supreme Commander in the army, it is necessary to keep track of which re-roll belongs to which unit."
       ]
     },
     {
@@ -54,7 +66,7 @@
       "title": "Fearless",
       "description": [
         "Units with the 'Fearless' special rule are immune to damage from losing an Assault (both the additional hits and being wiped out if already broken) and from the damage inflicted by Blast Markers if Broken.",
-        "When Broken or otherwise forced to take a Withdrawal move, Fearless units may choose not to withdraw, and if the unit elects to withdraw it will be destroyed only if it ends its move within 5cm of the enemy rather than 15 cm. Note that other units in the formation that are not Fearless will be affected normally by additional hits for Blast Markers or losing an Assault.",
+        "When Broken or otherwise forced to take a Withdrawal move, Fearless units may choose not to withdraw, and if the unit elects to withdraw it will be destroyed only if it ends its move within 5 cm of the enemy rather than 15 cm. Note that other units in the formation that are not Fearless will be affected normally by additional hits for Blast Markers or losing an Assault.",
         "Fearless units that remain stationary do not take additional damage. If units remain in base contact with a Fearless unit, then the opposing formation will automatically be drawn in to an assault on either formation."
       ]
     },
@@ -65,9 +77,21 @@
       ]
     },
     {
+      "title": "Single Shot",
+      "description": [
+        "Weapons with the 'Single Shot' special rule may be only be used once per battle and may not then be fired again. To avoid confusion, this should be noted by either adding or removing a token from the unit, or recording the use on a piece of paper."
+      ]
+    },
+    {
+      "title": "Ind",
+      "description": [
+        "Weapons with the 'Indirect Fire' special rule are allowed to fire indirectly if their formation successfully conducts a Sustained Fire action. Units using Indirect Fire receive a +1 modifier for taking a Sustained Fire action as usual. No Line of Sight to the target is required for Indirect Fire, and only suffers a -1 modifier if the target is in cover, and not merely obscured. Weapons firing indirectly double their range, but the target must be at least partially within 30 cm."
+      ]
+    },
+    {
       "title": "Reinforced Armour",
       "description": [
-        "Units with the 'Reinforced Armour' special rule may still take their saving throw when hit by attacks with 'Macro Weapon' special rule. In addition, they may re-roll a failed save against any non-Macro Weapon hit, including those inflicted during an assault. If the first save rolled was another type of save (e.g. a Cover Save or an Ion Shield), the re-roll must be made using the unit's normal armour."
+        "Units with the 'Reinforced Armour' special rule may still take their saving throw when hit by attacks with 'MW' special rule. In addition, they may re-roll a failed save against any non-MW hit, including those inflicted during an assault. If the first save rolled was another type of save (e.g. a Cover Save or an Ion Shield), the re-roll must be made using the unit's normal armour."
       ]
     },
     {
@@ -79,14 +103,14 @@
     {
       "title": "MW",
       "description": [
-        "Only units with Reinforced Armour or Invulnerable Save receive a saving throw against hits with the 'MW' special rule. Cover Saves are also negated, although the -1 to hit modifier does apply.",
+        "Only units with Reinforced Armour or Invulnerable Save receive a saving throw against hits with the 'Macro Weapon' special rule. Cover Saves are also negated, although the -1 to hit modifier does apply.",
         "If an attacking formation scores both normal and MW hits, then the opposing player must allocate and make any saves for the normal hits first, and then allocate and make any saves for the MW hits. Hits from MW must first be allocated to units that have survived normal hits, after this they may be allocated to the rest of the formation."
       ]
     },
     {
       "title": "TK(x)",
       "description": [
-        "Hits caused by weapons with the 'TK(x)' special rule ignores the 'Reinforced Armour' special rule. In addition, if a TK(x) hit is caused on a War Engine, it suffers damage equal to 'x'. Each point of damage will reduce the War Engine damage capacity by 1. Roll for critical hits for each point of damage inflicted.",
+        "Hits caused by weapons with the 'Titan Killer(x)' special rule ignores the 'Reinforced Armour' special rule. In addition, if a TK(x) hit is caused on a War Engine, it suffers damage equal to 'x'. Each point of damage will reduce the War Engine damage capacity by 1. Roll for critical hits for each point of damage inflicted.",
         "When allocating Titan killer hits that may cause multiple points of damage, roll for damage immediately after allocating the hit. For formation hit allocation purposes, the War Engine counts as having been allocated a number of hits equal to the damage rolled."
       ]
     },
@@ -172,7 +196,7 @@
     {
       "title": "Construct Shields",
       "description": [
-        "Construct Shields work in exactly the same manner as Void Shields (see Void Shields), except that they may not be repaired once they have been knocked down by a hit, and will instead remain down for the remainder of the battle."
+        "Construct Shields work in exactly the same manner as Void Shields, except that they may not be repaired once they have been knocked down by a hit, and will instead remain down for the remainder of the battle."
       ]
     },
     {
@@ -190,16 +214,16 @@
       ]
     },
     {
-      "title": "Void Shields",
+      "title": "Void Shields(x)",
       "description": [
-        "Each void shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by Void Shields. Hits saved by Void Shields do not generate Blast Markers, even if they have the Disrupt ability. Downed Void Shields does not count as kills during assaults.",
+        "The number in brackets indicates the number of Void Shields a unit has at the start of the battle. Each Void Shield will automatically stop one point of damage and then go down. Do not make armour saves for damage stopped by Void Shields. Hits saved by Void Shields do not generate Blast Markers, even if they have the Disrupt ability. Downed Void Shields does not count as kills during assaults.",
         "Once all of the shields have been knocked down, the War Engine may be damaged normally and you may make saving throws against any hits that are scored. Hits from close combat ignore Void Shields but units using their firefight values must first knock down any shields before they can damage the Titan.",
-        "Void Shields that have been knocked down can be repaired. Each War Engine can repair one downed Void Shield in the End Phase of each turn.",
-        "In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it may use the dice roll to repair a combination of Void Shields and remove Blast Markers."
+        "Void Shields that have been knocked down can be repaired. Each War Engine can repair one downed Void Shield in the End Phase of each turn for free.",
+        "In addition, if a War Engine regroups (either by performing a Hold or a Marshal action) it may use the dice roll to repair Void Shields and remove Blast Markers, in any combination."
       ]
     },
     {
-      "title": "God Machine (x)",
+      "title": "God Machine(x)",
       "description": [
         "Whenever a unit with the 'God Machine' special rule is destroyed that isn't an army BTS, the opponent scores (x) additional Victory Points. In addition, whenever a unit with this special rule is destroyed, all friendly formations within 45 cm suffers (x) Blast Markers."
       ]
@@ -255,7 +279,7 @@
     {
       "title": "Shield Disruptor",
       "description": [
-        "Each point of damage from a hit with <i>Shield Disruptor</i> will knock down two <i>Powerfields</i>, <i>Shadowfields</i> or <i>Void Shields</i>. If a unit with only one field remaining is hit the field knocked down, but the hit does not carry over. In addition, <i>Shield Disruptor</i> hits ignores <i>Ion Shields</i> and <i>Dispersion Fields</i>."
+        "Each point of damage from a hit with the 'Shield Disruptor' special rule will knock down two Construct Shields or Void Shields(x). If a unit with only one field remaining is hit the field knocked down, but the hit does not carry over. In addition, Shield Disruptor hits ignores Ion Shields and Dispersion Fields."
       ]
     },
     {
@@ -375,7 +399,8 @@
     {
       "title": "Steadfast",
       "description": [
-        "When broken or otherwise forced to take a withdrawal move, a unit with the 'Steadfast' special rule is not destroyed if it ends its movement within 15 cm of the enemy. In addition, it only suffers a -1 to rally if within 15 cm of an enemy unbroken formation instead of the usual 30 cm."
+        "When Broken or otherwise forced to take a Withdrawal move, Steadfast units may choose not to withdraw, and if the unit elects to withdraw it will be destroyed only if it ends its move within 5 cm of the enemy rather than 15 cm.",
+        "Steadfast units that remain stationary do not take additional damage. If units remain in base contact with a Steadfast unit, then the opposing formation will automatically be drawn in to an assault on either formation."
       ]
     },
     {
@@ -403,21 +428,21 @@
       ]
     },
     {
-      "title": "Transport (x)",
+      "title": "Transport(x)",
       "description": [
-        "Units with the 'Transport (x)' special rule may transport 'x' number of INF, which may not have the 'Bulky' or 'Mounted' special rules."
+        "Units with the 'transport(x)' special rule may transport 'x' number of INF, which may not have the 'Bulky' or 'Mounted' special rules."
       ]
     },
     {
-      "title": "Heavy Transport (x)",
+      "title": "Heavy Transport(x)",
       "description": [
-        "Units with the 'Heavy Transport (x)' special rule may transport 'x' number of INF, which may have the 'Bulky' special rule. Each 'Bulky' unit takes two spaces each"
+        "Units with the 'Heavy transport(x)' special rule may transport 'x' number of INF, which may have the 'Bulky' special rule. Each 'Bulky' unit takes two spaces each"
       ]
     },
     {
-      "title": "Assault Transport (x)",
+      "title": "Assault Transport(x)",
       "description": [
-        " Units with the 'Assault Transport (x)' special rule may transport 'x' number of INF, which may have the 'Bulky' and 'Mounted' special rules. In addition, it may treat AV or LV with the 'Nimble' special rule as INF. Any unit with these special rules take two spaces to carry."
+        " Units with the 'Assault transport(x)' special rule may transport 'x' number of INF, which may have the 'Bulky' and 'Mounted' special rules. In addition, it may treat AV or LV with the 'Nimble' special rule as INF. Any unit with these special rules take two spaces to carry."
       ]
     },
     {
@@ -461,21 +486,21 @@
     {
       "title": "Ion Shield(x)",
       "description": [
-        "Knights make use of Ion Shields to deflect shooting and firefight attacks. This allows them to make a saving throw on the number within brackets when they are hit by ranged fire instead of using their armour value.",
-        "No modifiers ever apply to this saving throw and it is unaffected by Macro-Weapon, Lance and Titan Killer hits (each point of damage from a Titan Killer hit must be saved separately. Is affected normally by hits with the Disrupt special rule). If the unit has Reinforced Armour as well then it is allowed to re-roll a failed save using its armour value unless the hit was a Macro-Weapon, Lance or Titan killer.",
-        "Ion Shields may only be used against shooting unless the unit is in a Crossfire, and against FF unless the hit is caused by a unit in support. They may not be used against CC attacks. If relevant, roll CC and FF dice separately when attacking units equipped with Ion Shields."
+        "Units with the 'Ion Shield(x)' special rule may make a saving throw on the number within brackets when they are hit by ranged fire instead of using their armour value.",
+        "No modifiers ever apply to this saving throw and it is unaffected by MW, Lance and TK hits (each point of damage from a TK hit must be saved separately. Is affected normally by hits with the Disrupt special rule). If the unit has Reinforced Armour as well then it is allowed to re-roll a failed save using its armour value unless the hit was caused by a weapon with MW, Lance or TK.",
+        "Ion Shields may only be used against shooting if the unit's formation is not in a Crossfire, and against FF the hit is not caused by a unit firing in support. Ion Shields may not be used against CC attacks. If relevant, roll CC and FF dice separately when attacking units equipped with Ion Shields."
       ]
     },
     {
       "title": "Ionic Flare Shield",
       "description": [
-        "Knights with <i>Ionic Flare Shield</i> may also use their Ion Shield against CC attacks."
+        "Knights with the 'Ionic Flare Shield' special rule may also use their Ion Shield against CC attacks."
       ]
     },
     {
       "title": "Shield Piercer",
       "description": [
-        "Weapons with the <i>Shield Piercer</i> special rule ignores Invulnerable Save, Ion Shields, Dispersion Fields, Powerfields, Construct Shields and Void Shields."
+        "Weapons with the 'Shield Piercer' special rule ignores Invulnerable Save, Ion Shields, Dispersion Fields, Powerfields, Construct Shields and Void Shields(x)."
       ]
     },
     {
@@ -487,7 +512,7 @@
     {
       "title": "Titan Hunter",
       "description": [
-        "Weapons with the 'Titan Hunter' special rule gains +1 to hit against War Engines, but suffers -1 to hit against INF, LV, and AV."
+        "Weapons with the 'Titan Hunter' special rule gains an additional +1 to hit against War Engines, but suffers an additional -1 to hit against INF, LV, and AV."
       ]
     },
     {
@@ -571,7 +596,7 @@
     {
       "title": "Primarch",
       "description": [
-        "Units with the 'Primarch' unit type have Damage Capacity like WE but act as INF in all other aspects. The Primarch also counts as being Supreme Commander, which means that the army may have two Supreme Commander re-rolls per turn. The Primarch unit counts as an additional BTS in the army, which means that this objective can be lost twice."
+        "Units with the 'Primarch' special rule have Damage Capacity like WE but acts and takes damage as INF in all other aspects. The Primarch also counts having the 'Supreme Commander' special rule, which means that the army may have two Supreme Commander re-rolls per turn. The Primarch unit counts as an additional BTS in the army, which means that this objective can be lost twice."
       ]
     },
     {
@@ -680,8 +705,8 @@
       "title": "Commander",
       "description": [
         "A unit with the Commander special rule can order another unactivated formation to follow them when they make an assault, as long as the formation have at least one unit within 15 cm of the unit with the Commander special rule. Make a single initiative roll for both formations, counting a -1 modifier if any have Blast markers. If the test is failed then both formations receives a Blast marker. The formation with the Commander must take a hold action, but the other formation may take an action later in the turn.",
-        "If the test is passed then both formations may take an engage action. Treat the two formations as if they were a single formation for all rules purposes for the duration of the assault. A 2D6 roll is used to resolve a combined assault. If the attackers lose then each formation is broken. If they win then each formation receives a number of Blast markers equal to the casualties it suffered in the combat.",
-        "The Commander rule can also be used to defend against enemy assaults, by declaring that one friendly formation within 5 cm of the formation where the Commander is located becomes intermingled in the assault, in the same manner as if the opponent had done this declaration. Defensive and Offensive use of the Commander special rule may only be done once for each side in an assault, no matter how many units with Commander are involved."
+        "If the test is passed then both formations takes an Engage action. Treat the two formations as if they were a single formation for all rules purposes for the duration of the assault. A 2D6 roll is used to resolve a combined assault. If the attackers lose then each formation is broken. If they win then each formation receives a number of Blast markers equal to the casualties it suffered during the assault.",
+        "The Commander rule can also be used to defend against enemy assaults, by declaring that one friendly formation within 15 cm of the unit with the Commander special rule becomes intermingled in the assault, in the same manner as if the opponent had done this declaration. Defensive or Offensive use of the Commander special rule may only be done once for each side in an assault, no matter how many units with Commander are involved."
       ]
     },
     {
@@ -736,7 +761,7 @@
     {
       "title": "Honour Guard",
       "description": [
-        "Units with the Honour Guard special rule gain the 'Fearless' and 'Blitz' special rules as long as their formation contains a character with the 'Primarch' unit type."
+        "Units with the Honour Guard special rule gain the 'Fearless' and 'Blitz' special rules as long as their formation contains a unit with the 'Primarch' special rule."
       ]
     },
     {
@@ -1135,13 +1160,13 @@
     {
       "title": "Ordinatus Aktaeus Subterranean Assault",
       "description": [
-        "An Ordinatus Aktaeus Burrowing Transport has the 'Assault Transport (8)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
+        "An Ordinatus Aktaeus Burrowing Transport has the 'Assault transport(8)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
       ]
     },
     {
       "title": "Hellbore Subterranean Assault",
       "description": [
-        "A Hellbore Burrowing Transport has the 'Assault Transport (12)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
+        "A Hellbore Burrowing Transport has the 'Assault transport(12)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
       ]
     },
     {

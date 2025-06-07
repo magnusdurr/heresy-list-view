@@ -282,7 +282,7 @@
       },
       {
         "name": "Roboute Guilliman, Master of Ultramar", 
-        "type": "Primarch",
+        "type": "INF",
         "speed": 15,
         "armour": 3,
         "cc": 2,
@@ -293,7 +293,7 @@
         ],
         "specialRules": [
           "Damage Capacity (2)",
-          "Supreme Commander",
+          "Primarch",
           "Blitz",
           "Vox-Caster",
           "Inspiring",
@@ -304,7 +304,7 @@
       },
       {
         "name": "Horus Lupercal, Breaker of Tyrants",
-        "type": "Primarch",
+        "type": "INF",
         "speed": 15,
         "armour": 3,
         "cc": 2,
@@ -315,6 +315,7 @@
         ],
         "specialRules": [
           "Damage Capacity (2)",
+          "Primarch",
           "Prescience",
           "Blitz",
           "Vox-Caster",
@@ -673,7 +674,7 @@
           "Nemesis Bolters"
         ],
         "specialRules": [
-          "Skirmishers"
+          "Skirmisher"
         ]
       },
       {
@@ -1417,7 +1418,7 @@
           }
         ],
         "specialRules": [
-        "Transport (2)"
+        "Transport(2)"
         ]
       },
       {
@@ -1432,7 +1433,7 @@
         ],
         "specialRules": [
         "Blitz",
-          "Transport (2)"
+          "Transport(2)"
         ]
       },
       {
@@ -1447,7 +1448,7 @@
         ],
         "specialRules": [
         "Walker",
-          "Transport (2)"
+          "Transport(2)"
         ]
       },
       {
@@ -1596,7 +1597,7 @@
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Heavy Transport (2)"
+          "Heavy transport(2)"
         ]
       },
       {
@@ -1632,7 +1633,7 @@
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Heavy Transport (1)"
+          "Heavy transport(1)"
         ]
       },
       {
@@ -1918,7 +1919,7 @@
           "Damage Capacity (2)",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Heavy Transport (4)",
+          "Heavy transport(4)",
           "Ion Shield (5+)"
         ],
         "crit": "The Spartan is destroyed."
@@ -2040,7 +2041,7 @@
         ],
         "specialRules": [
           "Damage Capacity (4)",
-          "Void Shields (2)",
+          "Void Shields(2)",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -2136,8 +2137,8 @@
         ],
         "specialRules": [
           "Damage Capacity (4)",
-          "Void Shields (2)",
-          "Assault Transport (8)",
+          "Void Shields(2)",
+          "Assault transport(8)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",

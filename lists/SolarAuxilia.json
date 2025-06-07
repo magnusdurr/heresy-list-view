@@ -193,7 +193,7 @@
         ],
         "specialRules": [
           "Infiltrators",
-          "Skirmishers",
+          "Skirmisher",
           "Evasive"
         ]
       },
@@ -494,7 +494,7 @@
 
         ],
         "specialRules": [
-            "Transport (2)"
+            "transport(2)"
         ]
       },
        {
@@ -564,7 +564,7 @@
         ],
         "specialRules": [
         "Blitz",
-          "Transport (2)"
+          "transport(2)"
         ]
       },
       {
@@ -578,7 +578,7 @@
           "Bolters"
         ],
         "specialRules": [
-         "Transport (2)",
+         "transport(2)",
          "Subterranean Assault",
          "Walker"
         ]
@@ -843,7 +843,7 @@
           "Ion Shield (5+)",
           "Walker"
         ],
-        "notes":  "Lascannon Variant: Assault Transport (4) - Demolisher Variant: Assault Transport (2)",
+        "notes":  "Lascannon Variant: Assault transport(4) - Demolisher Variant: Assault transport(2)",
         "crit": "The Dracosan is destroyed."
       },
 
@@ -958,7 +958,7 @@
          "Damage Capacity (3)",
          "Reinforced Armour",
          "Thick Rear Armour",
-         "Assault Transport (8)",
+         "Assault transport(8)",
          "Dauntless",
          "Tunneler"
         ],
@@ -979,7 +979,7 @@
         "specialRules": [
           "Damage Capacity (12)",
           "Void Shields (6)",
-          "Assault Transport (20)",
+          "Assault transport(20)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",

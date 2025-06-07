@@ -4286,7 +4286,6 @@
           "join": "or",
           "range": 45,
           "specialRules": [
-           "Disrupt",
            "IC",
            "Shield Piercer",
            "Disrupt"
