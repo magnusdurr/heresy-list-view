@@ -102,7 +102,7 @@
           "Heavy Bolter"
         ],
         "specialRules": [
-        "transport(1)"
+        "Transport(1)"
         ]
       },
       {
@@ -115,7 +115,7 @@
           "Twin Multi-Laser"
         ],
         "specialRules": [
-        "transport(2)"
+        "Transport(2)"
         ]
       },
       {

@@ -494,7 +494,7 @@
 
         ],
         "specialRules": [
-            "transport(2)"
+            "Transport(2)"
         ]
       },
        {
@@ -564,7 +564,7 @@
         ],
         "specialRules": [
         "Blitz",
-          "transport(2)"
+          "Transport(2)"
         ]
       },
       {
@@ -578,7 +578,7 @@
           "Bolters"
         ],
         "specialRules": [
-         "transport(2)",
+         "Transport(2)",
          "Subterranean Assault",
          "Walker"
         ]
@@ -751,7 +751,7 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity (2)",
+          "Damage Capacity(2)",
           "Reinforced Armour",
           "Walker"
         ],
@@ -769,7 +769,7 @@
           "Twin Earthshaker Cannon||FxF"
         ],
         "specialRules": [
-          "Damage Capacity (2)",
+          "Damage Capacity(2)",
           "Reinforced Armour"
         ]
       },
@@ -803,7 +803,7 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity (2)",
+          "Damage Capacity(2)",
           "Reinforced Armour"
         ],
         "crit": "The unit is destroyed."
@@ -838,12 +838,12 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity (2)",
+          "Damage Capacity(2)",
           "Reinforced Armour",
           "Ion Shield (5+)",
           "Walker"
         ],
-        "notes":  "Lascannon Variant: Assault transport(4) - Demolisher Variant: Assault transport(2)",
+        "notes":  "Lascannon Variant: Assault Transport(4) - Demolisher Variant: Assault Transport(2)",
         "crit": "The Dracosan is destroyed."
       },
 
@@ -940,7 +940,7 @@
           }
         ],
         "specialRules": [
-          "Damage Capacity (3)",
+          "Damage Capacity(3)",
           "Reinforced Armour"
         ],
         "crit": "The Super-Heavy Tank is destroyed."
@@ -955,10 +955,10 @@
           "Ardex-Defensor Turret|2"
         ],
         "specialRules": [
-         "Damage Capacity (3)",
+         "Damage Capacity(3)",
          "Reinforced Armour",
          "Thick Rear Armour",
-         "Assault transport(8)",
+         "Assault Transport(8)",
          "Dauntless",
          "Tunneler"
         ],
@@ -977,9 +977,9 @@
           "Twin Heavy Bolter|3|Right"
         ],
         "specialRules": [
-          "Damage Capacity (12)",
+          "Damage Capacity(12)",
           "Void Shields (6)",
-          "Assault transport(20)",
+          "Assault Transport(20)",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Walker",

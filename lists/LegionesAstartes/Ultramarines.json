@@ -6,10 +6,17 @@
   "intro": "Ultramarines Legion armies gain 12 formation points <span class=\"badge badge-primary\">12 FP</span>, 14 upgrade points <span class=\"badge badge-success\">14 UP</span>, 4 Titan points <span class=\"badge badge-warning\">4 TP</span>, and 4 Ally points <span class=\"badge badge-info\">4 AP</span> for a normal sized battle. A negative UP value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
-  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
+  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule. Questoris Familia Allied Lances have an initiative of 2+ and are subject to the 'Chivalry' special rule.",
   "armyRules": "The 'And They Shall Know No Fear' special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
-    "And They Shall Know No Fear"
+    "And They Shall Know No Fear",
+    "Army of Mankind",
+            "Offboard Support",
+        "Drop Pods",
+        "Orbital Pin-Point Attack",
+        "Orbital Barrage",
+        "Artillery Barrage",
+        "Artillery Blind Strike"
   ],
   "units": [
     {
@@ -50,22 +57,6 @@
         "Fellblade Super-Heavy Tank"
       ],
       "unitRules": [
-        "Energetic",
-        "Crippling",
-        "Psyker",
-        "Force",
-        "Psychic Succour",
-        "Skirmisher",
-        "Siege",
-        "Vox-Caster",
-        "Vanguard",
-        "Evasive",
-        "Blitz",
-        "transport(x)",
-        "Heavy transport(x)",
-        "Assault transport(x)",
-        "Primarch",
-        "Honour Guard"
       ]
     },
     {
@@ -74,7 +65,6 @@
         "Tarantula|Lascannon|Bolter|Hyperios"
       ],
       "unitRules": [
-        "Cybernetica Cortex"
       ]
     },
     {
@@ -86,12 +76,7 @@
         "Storm Eagle"
       ],
       "unitRules": [
-        "Offboard Support",
-        "Drop Pods",
-        "Orbital Pin-Point Attack",
-        "Orbital Barrage",
-        "Artillery Barrage",
-        "Artillery Blind Strike"
+
       ]
     },
     {
@@ -105,19 +90,6 @@
         "Warlord-Sinister Psi-Titan"
       ],
       "unitRules": [
-        "Void Shields",
-        "Towering",
-        "Dauntless",
-        "Beam Projector",
-        "Graviton(x)",
-        "Shock Pulse",
-        "Titan Hunter",
-        "Shield Piercer",
-        "Shield Disruptor",
-        "God Machine",
-        "Ponderous",
-        "Steadfast",
-        "System Breakdown"
       ]
     },
     {
@@ -129,7 +101,7 @@
         "Auxilia Flamer Squad",
         "Veletarii",
         "Charonite Ogryns",
-        "Aethon Heavy Sentinel|Laser|Flamer|Autocannon",
+        "Aethon Heavy Sentinel|Multi-Laser|Flamer|Autocannon",
         "Leman Russ|Battle Tank|Vanquisher|Annihilator|Exterminator"
       ],
       "unitRules": [

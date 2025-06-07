@@ -8,7 +8,15 @@
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The 'And They Shall Know No Fear' special rule applies to all Legiones Astartes Allied Detachments.",
   "specialRules": [
-  "Army of Mankind"
+  "Army of Mankind",
+        "Chivalry",
+        "And They Shall Know No Fear",
+              "Offboard Support",
+      "Deathstrike Attacks",
+      "Deathstrike Warp Missile Attack",
+      "Deathstrike Plasma Missile Attack",
+      "Artillery Barrage",
+      "Subterranean Assault"
   ],
   "units": [
     {
@@ -36,16 +44,6 @@
         "Auxilia Super-Heavy Tank|Baneblade|Hellhammer|Stormsword|Stormblade|Shadowsword|Stormhammer"
       ],
       "unitRules": [
-      "Energetic",
-      "Crippling",
-      "Skirmisher",
-      "Vox-Caster",
-      "Vanguard",
-      "Evasive",
-      "Blitz",
-      "transport(x)",
-      "Siege",
-      "Siege Engine"
       ]
     },
     {
@@ -55,8 +53,6 @@
         "Cyclops|Demolitor|Incinerator"
       ],
       "unitRules": [
-      "Machine Spirit",
-      "Self-Destruct"
       ]
     },
     {
@@ -66,12 +62,6 @@
         "Marauder|Bomber|Destroyer|Colossus|Pathfinder"
       ],
       "unitRules": [
-      "Offboard Support",
-      "Deathstrike Attacks",
-      "Deathstrike Warp Missile Attack",
-      "Deathstrike Plasma Missile Attack",
-      "Artillery Barrage Strike",
-      "Subterranean Assault"
       ]
     },
        {
@@ -88,7 +78,6 @@
         "Sicarian|Accelerator|Omega"
       ],
       "unitRules": [
-      "And They Shall Know No Fear"
       ]
     },
     {
@@ -101,19 +90,6 @@
         "Warmaster Heavy Battle Titan"
       ],
       "unitRules": [
-        "Void Shields",
-        "Towering",
-        "Dauntless",
-        "Beam Projector",
-        "Graviton(x)",
-        "Shock Pulse",
-        "Titan Hunter",
-        "Shield Piercer",
-        "Shield Disruptor",
-        "God Machine",
-        "Ponderous",
-        "Steadfast",
-        "System Breakdown"
       ]
     },
     {
@@ -126,8 +102,6 @@
         "Questoris Icarus Autocannon"
       ],
       "unitRules": [
-      "Chivalry",
-       "Ion Shield (x)"
       ]
     }
   ],

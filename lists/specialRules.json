@@ -430,19 +430,19 @@
     {
       "title": "Transport(x)",
       "description": [
-        "Units with the 'transport(x)' special rule may transport 'x' number of INF, which may not have the 'Bulky' or 'Mounted' special rules."
+        "Units with the 'Transport(x)' special rule may transport 'x' number of INF, which may not have the 'Bulky' or 'Mounted' special rules."
       ]
     },
     {
       "title": "Heavy Transport(x)",
       "description": [
-        "Units with the 'Heavy transport(x)' special rule may transport 'x' number of INF, which may have the 'Bulky' special rule. Each 'Bulky' unit takes two spaces each"
+        "Units with the 'Heavy Transport(x)' special rule may transport 'x' number of INF, which may have the 'Bulky' special rule. Each 'Bulky' unit takes two spaces each"
       ]
     },
     {
       "title": "Assault Transport(x)",
       "description": [
-        " Units with the 'Assault transport(x)' special rule may transport 'x' number of INF, which may have the 'Bulky' and 'Mounted' special rules. In addition, it may treat AV or LV with the 'Nimble' special rule as INF. Any unit with these special rules take two spaces to carry."
+        " Units with the 'Assault Transport(x)' special rule may transport 'x' number of INF, which may have the 'Bulky' and 'Mounted' special rules. In addition, it may treat AV or LV with the 'Nimble' special rule as INF. Any unit with these special rules take two spaces to carry."
       ]
     },
     {
@@ -466,7 +466,7 @@
     {
       "title": "Towering",
       "description": [
-        "Units with the 'Towering' special rule counts as Support Craft for Line of Sight purposes. A unit with this special rule may not claim cover from area terrain, and may only claim cover if at least part of the unit is concealed behind a terrain feature that also have the 'Towering' special rule."
+        "Units with the 'Towering' special rule counts as Support Craft for Line of Sight purposes. A unit with this special rule may not claim cover from area terrain, and may only claim cover from 'Hull Down' if at least part of the unit is concealed behind a terrain feature that also have the 'Towering' special rule."
       ]
     },
     {
@@ -1160,13 +1160,13 @@
     {
       "title": "Ordinatus Aktaeus Subterranean Assault",
       "description": [
-        "An Ordinatus Aktaeus Burrowing Transport has the 'Assault transport(8)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
+        "An Ordinatus Aktaeus Burrowing Transport has the 'Assault Transport(8)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
       ]
     },
     {
       "title": "Hellbore Subterranean Assault",
       "description": [
-        "A Hellbore Burrowing Transport has the 'Assault transport(12)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
+        "A Hellbore Burrowing Transport has the 'Assault Transport(12)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
       ]
     },
     {
