@@ -206,7 +206,7 @@
       ]
     },
     {
-      "title": "Dispersion Field (x)",
+      "title": "Dispersion Field(x)",
       "description": [
         "A Dispersion Field provide a saving throw to the value of 'x', which is reduced by 2 (e.g. 3+ to 5+) at the start of each subsequent turn. When the Dispersion Field reaches 7+ or higher it is no longer considered to be operable and thus confers no save.",
         "This save may always be taken even against weapons with the Macro Weapon or Titan Killer abilities. If a unit has Reinforced Armour it may use its re-roll unless hit by a Lance, Macro Weapon or Titan Killer attack but the re-roll uses the units armour value. Hits saved by the Dispersion Field do not generate Blast Markers, even if they have the Disrupt ability.",
@@ -806,7 +806,7 @@
       ]
     },
     {
-      "title": "Holofields (x)",
+      "title": "Holofields(x)",
       "description": [
         "Holofields provide a saving throw to the value of <i>x</i>. This save may always be taken even against weapons with the Macro Weapon or Titan Killer abilities.",
         "If a unit has Reinforced Armour it may use its re-roll unless hit by a Lance, Macro Weapon or Titan Killer attack but the re-roll uses the units armour value. Hits saved by the Holofield do not generate Blast Markers, even if they have the Disrupt ability.",
@@ -860,9 +860,9 @@
       ]
     },
     {
-      "title": "Ætheric Dominion (x)",
+      "title": "Ætheric Dominion(x)",
       "description": [
-        "Formations where at least one unit has the Ætheric Dominion (x) special rule gain the bonus associated with that Dominion:",
+        "Formations where at least one unit has the Ætheric Dominion(x) special rule gain the bonus associated with that Dominion:",
         "<ul><li>Encroaching Ruin: Formation ignores the -1 modifier for enemy formations within 30cm when rallying.</li><li>Heedless Slaughter: Formation gains +1 to activate when attempting to Engage.</li><li>Putrid Corruption: Formation gains +1 to activate when attempting to Marshal.</li><li>Rapturous Sensation: Formation gains +1 to activate when attempting to Double.</li><li>Malevolent Artifice: Formation gains +1 to activate when attempting to Advance.</li><li>Infernal Tempest: Formation gains +1 to activate when attempting to Sustain Fire.</li><li>Formless Distortion: Formation gains +1 to activate when attempting to Overwatch.</li><li>Ravenous Dissolution: Formation gains +1 to activate when attempting to March.</li></ul>"
       ]
     },
