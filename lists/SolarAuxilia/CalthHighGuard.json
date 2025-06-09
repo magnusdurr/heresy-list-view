@@ -112,35 +112,154 @@
       "formations": [
         {
           "name": "1 Section Command Tercio",
-          "units": "One Auxilia Legate Marshal character in an Auxilia Command Squad, four Auxilia Lasrifle Squads, and one Auxilia Flamer Squad",
-          "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, four Auxilia Lasrifle Squads, or add three Termite Assault Drills (2 U/p)"
+          "unitSpec": {
+            "Auxilia Legate Marshal": 1,
+            "Auxilia Command Squad|Calth": 1,
+            "Auxilia Lasrifle Squad": 4,
+            "Auxilia Flamer Squad": 1
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Malcador"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Termite Assault Drill"],
+                    "addCount": 3,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
-               {
+        {
           "name": "1+ Auxilia Lasrifle Tercio",
-          "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
-          "extraUnits": [
-           "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, or two Cyclops of any single configuration (1 U/p), or add one Malcador of any configuration, four Auxilia Lasrifle Squads, or add three Termite Assault Drills (2 U/p)"
+          "unitSpec": {
+            "Auxilia Captain": 1,
+            "Auxilia Command Squad|Calth": 1,
+            "Auxilia Lasrifle Squad": 4,
+            "Auxilia Flamer Squad": 1
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Malcador"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Termite Assault Drill"],
+                    "addCount": 3,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Auxilia Malcador Company",
-          "units": "One Auxilia Adjutant, three Malcadors of any single configuration",
-          "extraUnits": [
-              "Add two Cyclops of any single configuration: 1 U/p"
+          "unitSpec": {
+            "Auxilia Adjutant": 1,
+            "Malcador": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 3 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 3
         },
         {
           "name": "Auxilia Light Sentinel Patrol",
-          "units": "One Auxilia Adjutant, four Hermes Light Sentinel Squadrons of any single configuration",
-          "extraUnits": [
-              "Add two Cyclops of any single configuration: 1 U/p"
+          "unitSpec": {
+            "Auxilia Adjutant": 1,
+            "Hermes Light Sentinel Squadron": 4
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         }
       ]
     },
@@ -150,61 +269,216 @@
       "formations": [
         {
           "name": "Auxilia Medium Sentinel Patrol",
-          "units": "Four Hermes Incursus Sentinel Squadrons of any single configuration",
-          "extraUnits": [
-              "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p",
-              "Add two Cyclops of any single configuration: 1 U/p"
+          "unitSpec": {
+            "Hermes Veltaris Sentinel Squadron": 4
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Adjutant"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
           "name": "Veletaris Storm Section",
-          "units": "Four Veletarii",
-          "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, one Charonite Ogryns, two Cyclops of any single configuration (1 U/p), or two Termite Assault Drills (2 U/p)"
+          "unitSpec": {
+            "Veletarii": 4
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Termite Assault Drill"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -2 U/p"
+          "formationPoints": 1,
+          "upgradePoints": -2
         },
         {
           "name": "Ogryn Charonite Section",
-          "units": "Three Charonite Ogryns",
-          "extraUnits": [
-          "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, two Veletarii, or two Cyclops of any single configuration: 1 U/p"
+          "unitSpec": {
+            "Charonite Ogryns": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Veletarii"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -2 U/p"
+          "formationPoints": 1,
+          "upgradePoints": -2
         },
         {
           "name": "Auxilia Rapier Battery",
-          "units": "Four Auxilia Rapier Laser Destroyers",
-          "extraUnits": [
-          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers or four Rapier Mole Mortars: 1 U/p",
-          "Add two Cyclops of any single configuration: 1 U/p",
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+          "unitSpec": {
+            "Auxilia Rapier|Laser Destroyer": 4
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Auxilia Rapier|Laser Destroyer",
+                "removeCount": 4,
+                "options": [
+                  {
+                    "addNames": ["Auxilia Rapier|Quad Launcher"],
+                    "addCount": 4,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Rapier|Mole Mortar"],
+                    "addCount": 4,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Adjutant"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -2 U/p"
+          "formationPoints": 1,
+          "upgradePoints": -2
         },
         {
           "name": "Tarantula Maniple",
-          "units": "Four Tarantula - Lascannon, and/or Tarantula - Hyperios",
-          "extraUnits": [
-             ],
-          "points": "1 F/p, -2 U/p"
+          "unitSpec": {
+            "Tarantula": 4
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "upgradePoints": -2
         },
         {
           "name": "Auxilia Leman Russ Squadron",
-          "units": "Three Leman Russ of any configuration",
-          "extraUnits": [
-          "Add one Leman Russ of any configuration: 1 U/p"
+          "unitSpec": {
+            "Leman Russ": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Leman Russ"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
           "name": "Auxilia Artillery Battery",
-          "units": "Three Basilisk and/or Medusa",
-          "extraUnits": [
-          "Add one Basilisk and/or Medusa: 1 U/p"
+          "unitSpec": {
+            "Basilisk": 3
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Basilisk",
+                "removeCount": 3,
+                "options": [
+                  {
+                    "addNames": ["Medusa"],
+                    "addCount": 3,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Basilisk"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Medusa"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         }
 
        ]
@@ -213,54 +487,176 @@
       "name": "Calth High Guard Elite Sections",
       "description": "May only have one Elite Section for each two Core or Special Sections",
       "formations": [
-          {
+        {
           "name": "Auxilia Heavy Sentinel Patrol",
-          "units": "Four Aethon Heavy Sentinels of any single configuration",
-          "extraUnits": [
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p",
-          "Add two Cyclops of any single configuration: 1 U/p"
+          "unitSpec": {
+            "Aethon Heavy Sentinel": 4
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Adjutant"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
-          {
+        {
           "name": "Auxilia Dracosan Section",
-          "units": "One Auxilia Command Squad with an Auxilia Captain, three Auxilia Lasrifle Squads, one Dracosan - Lascannon",
-          "extraUnits": [
-            "Replace the Dracosan - Lascannon with two Dracosan - Demolisher: 3 U/p",
-            "Replace up to three Auxilia Lasrifle Squads with Auxilia Flamer Squads: Free",
-            "Add two Cyclops of any single configuration: 1 U/p"
+          "unitSpec": {
+            "Auxilia Command Squad|Calth": 1,
+            "Auxilia Captain": 1,
+            "Auxilia Lasrifle Squad": 3,
+            "Dracosan|Lascannon": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Dracosan|Lascannon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Dracosan|Demolisher"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Auxilia Lasrifle Squad",
+                "removeCount": 3,
+                "options": [
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 3,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
         {
           "name": "Auxilia Siege Artillery Battery",
-          "units": "Three Colossus Bombards",
-          "extraUnits": [
-          ],
-          "points": "1 F/p, 1 U/p"
+          "unitSpec": {
+            "Colossus Bombard": 3
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
         {
           "name": "Heavy Malcador Squadron",
-          "units": "Two Heavy Malcador Infernus, or two Heavy Malcador Valdor",
-          "extraUnits": [
+          "unitSpec": {
+            "Heavy Malcador|Infernus": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Heavy Malcador|Infernus",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Heavy Malcador|Valdor"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
         {
           "name": "Super-Heavy Tank Squadron",
-          "units": "One Baneblade Super-Heavy Tank",
-          "extraUnits": [
-          "Replace the Baneblade with a Hellhammer, Stormblade, or Stormsword (Free), or a Shadowsword or a Stormhammer (1 U/p)",
-          "Add one Auxilia Adjutant character to one unit in the formation: 1 U/p"
+          "unitSpec": {
+            "Auxilia Super-Heavy Tank|Baneblade": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Auxilia Super-Heavy Tank|Baneblade",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Auxilia Super-Heavy Tank|Hellhammer"],
+                    "addCount": 1,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Auxilia Super-Heavy Tank|Stormblade"],
+                    "addCount": 1,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Auxilia Super-Heavy Tank|Stormsword"],
+                    "addCount": 1,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Auxilia Super-Heavy Tank|Shadowsword"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Super-Heavy Tank|Stormhammer"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Adjutant"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
           "name": "Auxilia Leman Russ Company",
-          "units": "One Auxilia Adjutant character, eight Leman Russ of any configuration",
-          "extraUnits": [
-          ],
-          "points": "2 F/p, 3 U/p"
+          "unitSpec": {
+            "Auxilia Adjutant": 1,
+            "Leman Russ": 8
+          },
+          "upgrades": [],
+          "formationPoints": 2,
+          "upgradePoints": 3
         }
       ]
     },
@@ -270,19 +666,56 @@
       "formations": [
         {
           "name": "Thunderbolt Squadron",
-          "units": "Two Thunderbolt Fighters",
-         "extraUnits": [
-         "Add one Thunderbolt Fighter: 1 U/p"
+          "unitSpec": {
+            "Thunderbolt Fighter": 2
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Thunderbolt Fighter"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -2 U/p"
+          "formationPoints": 1,
+          "upgradePoints": -2
         },
         {
           "name": "Marauder Squadron",
-          "units": "Two Marauder Bombers",
-          "extraUnits": [
-         "May replace two Marauder Bombers with two Marauder Pathfinders, two Marauder Destroyers, or two Marauder Colossus (Free)"
+          "unitSpec": {
+            "Marauder|Bomber": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Marauder|Bomber",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Marauder|Pathfinder"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Marauder|Destroyer"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Marauder|Colossus"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         }
       ]
     },
@@ -292,23 +725,33 @@
       "formations": [
         {
           "name": "Deathstrike Warp Missile Attack",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         },
         {
           "name": "Deathstrike Plasma Missile Attack",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         },
         {
           "name": "Artillery Barrage Strike",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         },
         {
           "name": "Artillery Phospex Strike",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         },
         {
           "name": "2x Artillery Blind Strikes",
-          "points": "1 U/p"
+          "unitSpec": {},
+          "upgrades": [],
+          "upgradePoints": 1
         }
       ]
     },
@@ -318,45 +761,159 @@
       "formations": [
         {
           "name": "Warhound",
-          "units": "One Warhound Scout Titan",
-          "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon: 1 U/p"
+          "unitSpec": {
+            "Warhound Scout Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 T/p, 1 A/p"
+          "formationPoints": 1,
+          "titanPoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Warhound Pack",
-          "units": "Two Warhound Scout Titans (must have the same armament)",
-          "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon: 2 U/p"
+          "unitSpec": {
+            "Warhound Scout Titan": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 2 U/p, 2 T/p, 1 A/p"
+          "formationPoints": 1,
+          "upgradePoints": 2,
+          "titanPoints": 2,
+          "alliedPoints": 1
         },
         {
           "name": "Reaver",
-          "units": "One Reaver Battle Titan",
-          "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 1 U/p"
+          "unitSpec": {
+            "Reaver Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "2 F/p, 2 T/p, 1 A/p"
+          "formationPoints": 2,
+          "titanPoints": 2,
+          "alliedPoints": 1
         },
         {
           "name": "Warlord",
-          "units": "One Warlord Battle Titan",
-          "extraUnits": [
-          "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 1 U/p"
+          "unitSpec": {
+            "Warlord Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "2 F/p, 1 U/p, 3 T/p, 1 A/p"
+          "formationPoints": 2,
+          "upgradePoints": 1,
+          "titanPoints": 3,
+          "alliedPoints": 1
         },
         {
           "name": "Warmaster",
-          "units": "One Veteran Princeps, one Warmaster Heavy Battle Titan",
-          "extraUnits": [
-          "Replace two Battle Weapons with two Support Weapons of the same type (1 U/p)"
+          "unitSpec": {
+            "Veteran Princeps": 1,
+            "Warmaster Heavy Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "3 F/p, 3 U/p, 4 T/p, 1 A/p"
+          "formationPoints": 3,
+          "upgradePoints": 3,
+          "titanPoints": 4,
+          "alliedPoints": 1
         }
       ]
     },
@@ -366,33 +923,95 @@
       "formations": [
         {
           "name": "Tactical Detachment",
-          "units": "One Lieutenant character, four Tactical Legionaries",
-          "extraUnits": [
-            "Replace up to two Legion Tactical Squads with two Legion Support Squads (1 U/p), two Legion Heavy Support Squads (2 U/p), or two Contemptor Dreadnoughts of any single configuration (2 U/p)"
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Legion Tactical Squad": 4
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Legion Tactical Squad",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Legion Support Squad|Plasma"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Legion Heavy Support Squad|Missile Launcher"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Contemptor Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 A/p"
+          "formationPoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Land Speeder Detachment",
-          "units": "Three Proteus Land Speeders or Javelin Attack Speeders of any configuration",
-          "extraUnits": [
-          "Add one Proteus Land Speeder or Javelin Attack Speeder of any configuration: 1 U/p"
-            ],
-          "points": "1 F/p, 1 A/p"
+          "unitSpec": {
+            "Proteus Land Speeder": 3
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Proteus Land Speeder",
+                "removeCount": 3,
+                "options": [
+                  {
+                    "addNames": ["Javelin Attack Speeder"],
+                    "addCount": 3,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Proteus Land Speeder"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Javelin Attack Speeder"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 1,
+          "alliedPoints": 1
         },
         {
           "name": "Predator Detachment",
-          "units": "Three Predators of any configuration",
-          "extraUnits": [
-             ],
-          "points": "1 F/p, 1 A/p"
+          "unitSpec": {
+            "Predator": 3
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "alliedPoints": 1
         },
-       {
+        {
           "name": "Sicarian Detachment",
-          "units": "Two Sicarians of any configuration",
-          "extraUnits": [
-             ],
-          "points": "1 F/p, -1 U/p, 1 A/p"
+          "unitSpec": {
+            "Sicarian": 2
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "upgradePoints": -1,
+          "alliedPoints": 1
         }
       ]
     },
@@ -408,7 +1027,7 @@
           "upgrades": [
             {
               "replace": {
-                "removeName": "Armiger Knight Warglaives",
+                "removeName": "Armiger Knight Warglaive",
                 "removeCount": 3,
                 "options": [
                   {
@@ -431,7 +1050,7 @@
           "upgrades": [
             {
               "replace": {
-                "removeName": "Questoris Knight Paladins",
+                "removeName": "Questoris Knight Paladin",
                 "removeCount": 2,
                 "options": [
                   {
@@ -471,7 +1090,7 @@
                     "upgradePoints": 1
                   },
                   {
-                    "addNames": ["Icarus Autocannon"],
+                    "addNames": ["Questoris Icarus Autocannon"],
                     "addCount": 2,
                     "upgradePoints": 1
                   }
