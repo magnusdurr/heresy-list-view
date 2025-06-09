@@ -3,20 +3,20 @@
   "army": "Calth High Guard (CCLVth Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-    "intro": "Calth High Guard (CCLVth CoH) follow the Ultramar Pattern Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 5 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "intro": "Calth High Guard (CCLVth CoH) follow the Ultramar Pattern Doctrine, with an emphasis on large infantry formations. Its armies gain 13 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 5 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The 'And They Shall Know No Fear' special rule applies to all Legiones Astartes Allied Detachments.",
   "specialRules": [
-  "Army of Mankind",
-        "Chivalry",
-        "And They Shall Know No Fear",
-              "Offboard Support",
-      "Deathstrike Attacks",
-      "Deathstrike Warp Missile Attack",
-      "Deathstrike Plasma Missile Attack",
-      "Artillery Barrage",
-      "Subterranean Assault"
+    "Army of Mankind",
+    "Chivalry",
+    "And They Shall Know No Fear",
+    "Offboard Support",
+    "Deathstrike Attacks",
+    "Deathstrike Warp Missile Attack",
+    "Deathstrike Plasma Missile Attack",
+    "Artillery Barrage",
+    "Subterranean Assault"
   ],
   "units": [
     {
@@ -59,7 +59,12 @@
       "from": "ImperialNavy.json",
       "units": [
         "Thunderbolt Fighter",
-        "Marauder|Bomber|Destroyer|Colossus|Pathfinder"
+        "Marauder|Bomber|Destroyer|Colossus|Pathfinder",
+        "Deathstrike Warp Missile",
+        "Deathstrike Plasma Missile",
+        "Artillery Barrage",
+        "Artillery Phospex Strike",
+        "Artillery Blind Strike"
       ],
       "unitRules": [
       ]
@@ -724,8 +729,83 @@
       "description": "May only have one Offboard Support Asset for each Core Section",
       "formations": [
         {
+          "name": "Offboard support",
+          "unitSpec": {
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Artillery Barrage"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Artillery Blind Strike"
+                    ],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Artillery Phospex Strike"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Deathstrike Warp Missile"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Deathstrike Plasma Missile"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 0
+        },
+        {
           "name": "Deathstrike Warp Missile Attack",
-          "unitSpec": {},
+          "unitSpec": {
+            "Deathstrike Warp Missile": 1
+          },
           "upgrades": [],
           "upgradePoints": 1
         },

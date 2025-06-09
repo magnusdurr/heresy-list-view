@@ -576,7 +576,7 @@
       ]
     },
         {
-      "name": "Ragnarok Battle Cannon", 	 	
+      "name": "Ragnarok Battle Cannon",
       "modes": [
         {
           "firepower": "AP4+/AT4+",
@@ -585,7 +585,7 @@
       ]
     },
     {
-      "name": "Twin Ragnarok Battle Cannon", 	 	
+      "name": "Twin Ragnarok Battle Cannon",
       "modes": [
         {
           "firepower": "AP3+/AT3+",
@@ -2101,7 +2101,7 @@
         }
       ]
     },
-    
+
             {
       "name": "Scorpius Missile Launcher",
       "modes": [
@@ -3068,7 +3068,7 @@
         }
       ]
     },
-    
+
     {
       "name": "Magna Laser Annihilator",
       "modes": [
@@ -3106,7 +3106,7 @@
         }
       ]
     },
-     
+
                 {
       "name": "Plasma Guns",
       "modes": [
@@ -3493,7 +3493,7 @@
         }
       ]
     },
-             
+
 
     {
       "name": "Quad Launcher",
@@ -4679,7 +4679,7 @@
         }
       ]
     },
-            { 
+            {
       "name": "Titan Power Fist",
       "modes": [
         {
@@ -5127,15 +5127,74 @@
         }
       ]
     },
-
-
-
     {
       "name": "Twin Typhoon Missile",
       "modes": [
         {
           "firepower": "AP3+/AT5+",
           "range": 45
+        }
+      ]
+    },
+    {
+      "name": "Deathstrike Warp Missile",
+      "modes": [
+        {
+          "range": "∞",
+          "specialRules": [
+            "MW",
+            "TK(D3)",
+            "Shield Piercer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deathstrike Plasma Missile",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": "∞",
+          "specialRules": [
+            "Barrage(large)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Artillery Barrage",
+      "modes": [
+        {
+          "firepower": "AP3+/AT6+",
+          "range": 30,
+          "specialRules": [
+            "Barrage(small)",
+            "Disrupt",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Artillery Phospex Strike",
+      "modes": [
+        {
+          "firepower": "AP4+/AT6+",
+          "range": 45,
+          "specialRules": [
+            "Barrage(small)",
+            "Disrupt",
+            "IC"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Artillery Blind Strike",
+      "modes": [
+        {
+          "firepower": "Special",
+          "range": 30
         }
       ]
     }

@@ -1176,6 +1176,12 @@
       ]
     },
     {
+      "title": "Barrage(x)",
+      "description": [
+        "A weapon with the Barrage(x) special rule uses the barrage rules, with the template size indicated within parenthesis. It works exactly like a normal barrage weapon, except that the to hit, special rules, etc. is specified by the weapon entry."
+      ]
+    },
+    {
       "title": "Orbital Pin-Point Attack",
       "description": [
         "A Pin-Point attack has a range of 30 cm, and may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(D3) attack on a single War Engine under the center of the marker."

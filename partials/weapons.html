@@ -19,7 +19,15 @@
                             </td>
                             <td>{{appendOnNumber range 'cm'}}</td>
                             <td>
-                                {{firepower}}{{#each specialRules}}, <i>{{specialRuleTooltip name}}</i>{{/each}}
+                                {{#if firepower}}
+                                    {{firepower}}{{#each specialRules}}, <i>{{specialRuleTooltip name}}</i>{{/each}}
+                                {{else}}
+                                    {{#each specialRules}}
+                                        {{#if @first}}
+                                            <i>{{specialRuleTooltip name}}</i>
+                                        {{else}}, <i>{{specialRuleTooltip name}}</i>{{/if}}
+                                    {{/each}}
+                                {{/if}}
                             </td>
                         </tr>
                     {{/each}}

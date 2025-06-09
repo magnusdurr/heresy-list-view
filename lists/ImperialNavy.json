@@ -5,6 +5,58 @@
     ],
     "unit": [
       {
+        "name": "Deathstrike Warp Missile",
+        "type": "CH",
+        "weapons": [
+          "Deathstrike Warp Missile"
+        ],
+        "specialRules": [
+          "Deathstrike Attacks"
+        ],
+        "notes": "A Deathstrike Warp Missile attack may only be targeted at War Engines, and always hit the target."
+      },
+      {
+        "name": "Deathstrike Plasma Missile",
+        "type": "CH",
+        "weapons": [
+          "Deathstrike Plasma Missile"
+        ],
+        "specialRules": [
+          "Deathstrike Attacks"
+        ]
+      },
+      {
+        "name": "Artillery Barrage",
+        "type": "CH",
+        "weapons": [
+          "Artillery Barrage"
+        ],
+        "specialRules": [
+          "Offboard Support"
+        ]
+      },
+      {
+        "name": "Artillery Phospex Strike",
+        "type": "CH",
+        "weapons": [
+          "Artillery Phospex Strike"
+        ],
+        "specialRules": [
+          "Offboard Support"
+        ]
+      },
+      {
+        "name": "Artillery Blind Strike",
+        "type": "CH",
+        "weapons": [
+          "Artillery Blind Strike"
+        ],
+        "specialRules": [
+          "Offboard Support"
+        ],
+        "notes": "A Blind Strike is targeted at any friendly formation. Place a Blind marker next to the targeted formation. For the rest of the turn, the entire formation counts as being in Cover. Unlike other Offboard Support assets, Artillery strikes arrive immediately."
+      },
+      {
         "name": "Lightning Interceptor",
         "type": "AC",
         "speed": "Fighter",
