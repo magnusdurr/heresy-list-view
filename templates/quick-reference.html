@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{army}} - Quick Reference Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            margin: 0.25in;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 4px;
+        }
+        h2 {
+            font-size: 11px;
+            margin: 10px 0 5px 0;
+            background-color: #f0f0f0;
+            padding: 3px 6px;
+            border-left: 3px solid #333;
+        }
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+            table-layout: fixed;
+        }
+        .main-table th {
+            background-color: #333;
+            color: white;
+            padding: 5px 4px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 8px;
+            border: 1px solid #666;
+        }
+        .main-table td {
+            border: 1px solid #ccc;
+            padding: 4px 3px;
+            vertical-align: top;
+            font-size: 8px;
+        }
+        .main-table th:nth-child(1), .main-table td:nth-child(1) { width: 19%; } /* Unit Name */
+        .main-table th:nth-child(2), .main-table td:nth-child(2) { width: 4%; }  /* Type */
+        .main-table th:nth-child(3), .main-table td:nth-child(3) { width: 5%; }  /* Speed */
+        .main-table th:nth-child(4), .main-table td:nth-child(4) { width: 5%; }  /* Armour */
+        .main-table th:nth-child(5), .main-table td:nth-child(5) { width: 4%; }  /* CC */
+        .main-table th:nth-child(6), .main-table td:nth-child(6) { width: 4%; }  /* FF */
+        .main-table th:nth-child(7), .main-table td:nth-child(7) { width: 41%; } /* Weapons */
+        .main-table th:nth-child(8), .main-table td:nth-child(8) { width: 18%; } /* Special Rules */
+        
+        .unit-name {
+            font-weight: bold;
+            font-size: 9px;
+        }
+        .variant-name {
+            font-style: italic;
+            color: #666;
+            font-size: 8px;
+        }
+        .stat-cell {
+            text-align: center;
+        }
+        .weapons-cell {
+            font-size: 8px;
+        }
+        .weapon-line {
+            margin-bottom: 2px;
+            line-height: 1.2;
+        }
+        .weapon-line strong {
+            color: #333;
+        }
+        .special-rules-cell {
+            font-size: 7px;
+            font-style: italic;
+            color: #555;
+        }
+        .weapon-mount {
+            margin-bottom: 4px;
+        }
+        .mount-header {
+            font-size: 9px;
+            margin-bottom: 2px;
+            color: #444;
+        }
+        .weapon-mount-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2px;
+        }
+        .weapon-mount-table td {
+            border: 1px solid #ddd;
+            padding: 2px 3px;
+            font-size: 7px;
+            vertical-align: top;
+        }
+        .weapon-type-header {
+            background-color: #f0f0f0;
+        }
+        .weapon-type {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: center;
+            font-size: 8px;
+            padding: 1px 3px;
+            color: #444;
+        }
+        .weapon-options {
+            width: 100%;
+            padding: 2px 6px;
+        }
+        .weapon-option {
+            margin-bottom: 1px;
+            line-height: 1.1;
+        }
+        .special-rules-section {
+            margin-top: 8px;
+            margin-bottom: 15px;
+            padding: 6px 8px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #666;
+            page-break-inside: avoid;
+        }
+        .special-rules-section h3 {
+            font-size: 10px;
+            margin: 0 0 6px 0;
+            color: #333;
+            font-weight: bold;
+        }
+        .special-rules-list {
+            font-size: 8px;
+            line-height: 1.3;
+        }
+        .special-rule-item {
+            margin-bottom: 3px;
+        }
+        .special-rule-item strong {
+            color: #444;
+        }
+        @page {
+            margin: 0.2in 0.3in;
+            size: A4 landscape;
+        }
+        @media print {
+            body { 
+                font-size: 8px;
+                margin: 0.2in 0.25in;
+            }
+            .no-print {
+                display: none;
+            }
+            .main-table {
+                page-break-inside: avoid;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+            h2 {
+                font-size: 10px;
+                margin: 8px 0 4px 0;
+            }
+        }
+        .print-controls {
+            text-align: center;
+            margin-bottom: 12px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="print-controls no-print">
+        <button class="btn" onclick="window.print()">Print</button>
+        <button class="btn" onclick="window.close()">Close</button>
+    </div>
+    
+    <h1>{{fraction}} - {{army}} Quick Reference</h1>
+    
+    {{#each unitSections}}
+        {{#each this}}
+            {{#if unit.length}}
+            <h2>{{name}}</h2>
+            
+            <table class="main-table">
+                <thead>
+                    <tr>
+                        <th>Unit Name</th>
+                        <th>Type</th>
+                        <th>Speed</th>
+                        <th>Armour</th>
+                        <th>CC</th>
+                        <th>FF</th>
+                        <th>Weapons</th>
+                        <th>Special Rules</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each unit}}
+                        {{#if variants}}
+                            {{#each variants}}
+                            <tr>
+                                <td class="unit-name">
+                                    {{../name}}<br>
+                                    <span class="variant-name">({{name}})</span>
+                                </td>
+                                <td class="stat-cell">{{#if type}}{{type}}{{/if}}</td>
+                                <td class="stat-cell">{{#if speed}}{{speed}}cm{{/if}}</td>
+                                <td class="stat-cell">{{#if armour}}{{armour}}+{{/if}}</td>
+                                <td class="stat-cell">{{#if cc}}{{cc}}+{{/if}}</td>
+                                <td class="stat-cell">{{#if ff}}{{ff}}+{{/if}}</td>
+                                <td class="weapons-cell">
+                                    {{#if weapons}}
+                                        {{#each weapons}}
+                                            {{#with (parseWeapon this)}}
+                                                {{#if modes}}
+                                                    <div class="weapon-line">
+                                                        <strong>{{weaponDisplayName this}}:</strong>
+                                                        {{#each modes}}
+                                                            {{#if range}}{{range}}cm{{/if}}{{#if range}}{{#if firepower}}, {{/if}}{{/if}}{{#if firepower}}{{firepower}}{{/if}}{{#if specialRules}} ({{#each specialRules}}{{name}}{{#unless @last}}, {{/unless}}{{/each}}){{/if}}{{#unless @last}}; {{/unless}}
+                                                        {{/each}}
+                                                    </div>
+                                                {{else}}
+                                                    <div class="weapon-line"><strong>{{weaponDisplayName this}}:</strong> No data</div>
+                                                {{/if}}
+                                            {{/with}}
+                                        {{/each}}
+                                    {{/if}}
+                                </td>
+                                <td class="special-rules-cell">
+                                    {{#if specialRules}}
+                                        {{join specialRules ", "}}
+                                    {{else}}
+                                        {{#if ../specialRules}}
+                                            {{join ../specialRules ", "}}
+                                        {{/if}}
+                                    {{/if}}
+                                </td>
+                            </tr>
+                            {{/each}}
+                        {{else}}
+                            <tr>
+                                <td class="unit-name">{{name}}</td>
+                                <td class="stat-cell">{{#if type}}{{type}}{{/if}}</td>
+                                <td class="stat-cell">{{#if speed}}{{speed}}cm{{/if}}</td>
+                                <td class="stat-cell">{{#if armour}}{{armour}}+{{/if}}</td>
+                                <td class="stat-cell">{{#if cc}}{{cc}}+{{/if}}</td>
+                                <td class="stat-cell">{{#if ff}}{{ff}}+{{/if}}</td>
+                                <td class="weapons-cell">
+                                    {{#if weapons}}
+                                        {{#each weapons}}
+                                            {{#with (parseWeapon this)}}
+                                                {{#if modes}}
+                                                    <div class="weapon-line">
+                                                        <strong>{{weaponDisplayName this}}:</strong>
+                                                        {{#each modes}}
+                                                            {{#if range}}{{range}}cm{{/if}}{{#if range}}{{#if firepower}}, {{/if}}{{/if}}{{#if firepower}}{{firepower}}{{/if}}{{#if specialRules}} ({{#each specialRules}}{{name}}{{#unless @last}}, {{/unless}}{{/each}}){{/if}}{{#unless @last}}; {{/unless}}
+                                                        {{/each}}
+                                                    </div>
+                                                {{else}}
+                                                    <div class="weapon-line"><strong>{{weaponDisplayName this}}:</strong> No data</div>
+                                                {{/if}}
+                                            {{/with}}
+                                        {{/each}}
+                                    {{else}}
+                                        {{#if weaponMounts}}
+                                            {{#each weaponMounts}}
+                                                <div class="weapon-mount">
+                                                    <div class="mount-header"><strong>{{mount}}{{#if notes}} ({{notes}}){{/if}}</strong></div>
+                                                    <table class="weapon-mount-table">
+                                                        {{#each types}}
+                                                        <tr class="weapon-type-header">
+                                                            <td class="weapon-type">{{name}}</td>
+                                                        </tr>
+                                                        {{#each weapons}}
+                                                        <tr>
+                                                            <td class="weapon-options">
+                                                                {{#with (parseWeapon this)}}
+                                                                    {{#each modes}}
+                                                                        <div class="weapon-option">{{weaponDisplayName ../this}}: {{#if range}}{{range}}cm{{/if}}{{#if range}}{{#if firepower}}, {{/if}}{{/if}}{{#if firepower}}{{firepower}}{{/if}}{{#if specialRules}} ({{#each specialRules}}{{name}}{{#unless @last}}, {{/unless}}{{/each}}){{/if}}</div>
+                                                                    {{/each}}
+                                                                {{/with}}
+                                                            </td>
+                                                        </tr>
+                                                        {{/each}}
+                                                        {{/each}}
+                                                    </table>
+                                                </div>
+                                            {{/each}}
+                                        {{/if}}
+                                    {{/if}}
+                                </td>
+                                <td class="special-rules-cell">
+                                    {{#if specialRules}}
+                                        {{join specialRules ", "}}
+                                    {{/if}}
+                                </td>
+                            </tr>
+                        {{/if}}
+                    {{/each}}
+                </tbody>
+            </table>
+            {{/if}}
+        {{/each}}
+    {{/each}}
+    
+    <div class="special-rules-section">
+        <h2>Special Rules Reference</h2>
+        <div class="special-rules-list">
+            {{#each (collectAllSpecialRules unitSections)}}
+            <div class="special-rule-item">
+                <strong>{{name}}:</strong> {{description}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</body>
+</html> 
