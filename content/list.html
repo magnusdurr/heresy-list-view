@@ -39,6 +39,11 @@
 
                 content.append(eaTemplating.templates['army'](data));
 
+                // Add event handler for print button
+                $('#printQuickRef').on('click', function() {
+                    eaTemplating.generateQuickReference(data, formattedUnits);
+                });
+
                 formattedUnits.forEach(function (units) {
                     content.append(eaTemplating.templates['units'](units));
                 });

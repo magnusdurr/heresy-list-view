@@ -1,10 +1,17 @@
 <h2>{{fraction}} - {{army}}</h2>
 <p>
     <small>Version {{version}} - {{release}}</small>
-    {{#if armyforge}}
-    <br><small><b>Armyforge:</b> <a href="../snapfire/chooser.html?list={{armyforge}}" target="_blank" class="external">{{army}}</a></small>
-    {{/if}}
 </p>
+<div class="text-center mb-3">
+    {{#if armyforge}}
+    <a href="../snapfire/chooser.html?list={{armyforge}}" target="_blank" class="btn btn-primary btn-sm">
+        ⚔️ Armyforge
+    </a>
+    {{/if}}
+    <button id="printQuickRef" class="btn btn-info btn-sm">
+        🖨️ Print Quick Reference Sheet
+    </button>
+</div>
 
 {{#if intro}}
 <p>{{{intro}}}</p>
