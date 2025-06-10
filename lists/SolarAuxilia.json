@@ -579,6 +579,7 @@
         ],
         "specialRules": [
          "Transport(2)",
+         "Offboard Support",
          "Subterranean Assault",
          "Walker"
         ]

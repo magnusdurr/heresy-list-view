@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Offboard Support",
+    "specialRules": [
+    ],
+    "unit": [
+      {
+        "name": "Deathstrike Warp Missile",
+        "type": "CH",
+        "weapons": [
+          "Deathstrike Warp Missile"
+        ],
+        "specialRules": [
+          "Offboard Support",
+          "Deathstrike"
+        ],
+        "notes": "A Deathstrike Warp Missile attack may only be targeted at War Engines, and always hits the target."
+      },
+      {
+        "name": "Deathstrike Plasma Missile",
+        "type": "CH",
+        "weapons": [
+          "Deathstrike Plasma Missile"
+        ],
+        "specialRules": [
+          "Offboard Support",
+          "Barrage(Large)",
+          "Deathstrike"
+        ]
+      },
+      {
+        "name": "Artillery Barrage",
+        "type": "CH",
+        "weapons": [
+          "Artillery Barrage"
+        ],
+        "specialRules": [
+          "Offboard Support",
+          "Barrage(Small)",
+          "Artillery"
+        ]
+      },
+      {
+        "name": "Artillery Phospex Barrage",
+        "type": "CH",
+        "weapons": [
+          "Artillery Phospex Barrage"
+        ],
+        "specialRules": [
+          "Offboard Support",
+          "Barrage(Small)",
+          "Artillery"
+        ]
+      },
+      {
+        "name": "Artillery Blind Barrage",
+        "type": "CH",
+        "weapons": [
+          "Artillery Blind Barrage"
+        ],
+        "specialRules": [
+          "Offboard Support",
+          "Blind Burst",
+          "Artillery"
+        ]
+      },
+      {
+        "name": "Drop Pods",
+        "type": "CH",
+        "weapons": [
+          "Drop Pods"
+        ],
+        "specialRules": [
+          "Offboard Support",
+          "Drop Pods"
+        ]
+      },
+      {
+        "name": "Orbital Pin-Point Attack",
+        "type": "CH",
+        "weapons": [
+          "Orbital Pin-Point Attack"
+        ],
+        "specialRules": [
+          "Offboard Support"
+        ],
+        "notes": "A Orbital Pin-Point Attack may only be targeted at War Engines, and always hits the target."
+      },
+      {
+        "name": "Orbital Barrage",
+        "type": "CH",
+        "weapons": [
+          "Orbital Barrage"
+        ],
+        "specialRules": [
+          "Offboard Support",
+          "Barrage(Small)"
+        ]
+      }
+    ]
+  }
+]

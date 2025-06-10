@@ -10,13 +10,7 @@
   "specialRules": [
     "Army of Mankind",
     "Chivalry",
-    "And They Shall Know No Fear",
-    "Offboard Support",
-    "Deathstrike Attacks",
-    "Deathstrike Warp Missile Attack",
-    "Deathstrike Plasma Missile Attack",
-    "Artillery Barrage",
-    "Subterranean Assault"
+    "And They Shall Know No Fear"
   ],
   "units": [
     {
@@ -59,12 +53,19 @@
       "from": "ImperialNavy.json",
       "units": [
         "Thunderbolt Fighter",
-        "Marauder|Bomber|Destroyer|Colossus|Pathfinder",
+        "Marauder|Bomber|Destroyer|Colossus|Pathfinder"
+      ],
+      "unitRules": [
+      ]
+    },
+    {
+      "from": "OffboardSupport.json",
+      "units": [
         "Deathstrike Warp Missile",
         "Deathstrike Plasma Missile",
         "Artillery Barrage",
-        "Artillery Phospex Strike",
-        "Artillery Blind Strike"
+        "Artillery Phospex Barrage",
+        "Artillery Blind Barrage"
       ],
       "unitRules": [
       ]
@@ -751,7 +752,7 @@
                 "options": [
                   {
                     "addNames": [
-                      "Artillery Blind Strike"
+                      "Artillery Blind Barrage"
                     ],
                     "addCount": 2,
                     "upgradePoints": 1
@@ -764,7 +765,7 @@
                 "options": [
                   {
                     "addNames": [
-                      "Artillery Phospex Strike"
+                      "Artillery Phospex Barrage"
                     ],
                     "addCount": 1,
                     "upgradePoints": 1
@@ -800,38 +801,6 @@
             }
           ],
           "formationPoints": 0
-        },
-        {
-          "name": "Deathstrike Warp Missile Attack",
-          "unitSpec": {
-            "Deathstrike Warp Missile": 1
-          },
-          "upgrades": [],
-          "upgradePoints": 1
-        },
-        {
-          "name": "Deathstrike Plasma Missile Attack",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 1
-        },
-        {
-          "name": "Artillery Barrage Strike",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 1
-        },
-        {
-          "name": "Artillery Phospex Strike",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 1
-        },
-        {
-          "name": "2x Artillery Blind Strikes",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 1
         }
       ]
     },

@@ -393,7 +393,7 @@
     {
       "title": "Evasive",
       "description": [
-        "Units with the 'Evasive' special rule may consolidate up to 15 cm after winning an assault, or supporting a winning assault."
+        "Units with the 'Evasive' special rule may consolidate up to 15 cm after winning an assault."
       ]
     },
     {
@@ -761,7 +761,7 @@
     {
       "title": "Honour Guard",
       "description": [
-        "Units with the Honour Guard special rule gain the 'Fearless' and 'Blitz' special rules as long as their formation contains a unit with the 'Primarch' special rule."
+        "Units with the Honour Guard special rule gain the 'Fearless' and 'Blitz' special rules as long as their formation contains a unit with the 'Primarch' special rule. In addition, the formation counts as containing one additional character with the 'Inspiring' special rule."
       ]
     },
     {
@@ -931,16 +931,6 @@
       "description": [
         "Before rolling for the first turn and before teleports the player may select one enemy formation per formation of containing at least one unit with the 'Sabotage' special rule (both formations must have been deployed on the battlefield) and roll a D6.",
         "On 2-5, the enemy formation begins the game with a Blast Marker. On a roll of 6, it begins with d3 Blast Markers. On a roll of 1, the formation with 'Sabotage' recieves a Blast Marker. No formation may be subject to Sabotage more than once, even if the first roll is a 1."
-      ]
-    },
-    {
-      "title": "Alpha Legion Transports",
-      "description": [
-        "The Alpha Legion are a highly mobile army. Because of this, the points cost of a detachment usually includes enough Rhino transport vehicles to transport it and any upgrades that have been taken. Determine the number of Rhinos needed after all upgrades have been purchased. The number of Rhinos will always be the minimum needed to carry the formation, you can’t take extras along to cover any losses!",
-        "Note that many formations don’t receive Rhinos, usually because they can’t fit into them. Detachments that come with Rhinos will be noted as having plus transport in the units section of the army list opposite.",
-        "Also note that you don’t have to take Rhinos if you don’t want to. If you’d rather field the formation on foot instead, so it can act as a garrison for example, or be transported in a Storm Eagle, then you may do so.",
-        "In addition, you may choose to replace a detachment’s Rhinos with Drop Pods. If you do this then the detachment will enter play in a Drop Pods using the rules for Planetfall (see Planetfall). Note that if you choose to do this you will also require a Chaos Strike Cruiser deploy the Drop Pods from.",
-        "Before each game, after the opposing army is known but before objectives are placed, the Alpha Legion player may choose which formations with the plus transport aspect are deployed in Rhinos, Drop Pods or on foot. If the formation has any units unable to deploy in Drop Pods then that option cannot be selected."
       ]
     },
     {
@@ -1126,15 +1116,22 @@
     {
       "title": "Drop Pods",
       "description": [
-        "A formation consisting completely of units of INF (without the 'Bulky', 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Nimble' special rules may be placed in Drop Pods. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action. Place the Drop Pod with its center within 15 cm of the unit with the 'Vox-Caster' special rule. Calling down a Drop Pod counts as an additional action, so the player using it may not retain the initiative afterwards.",
+        "A formation consisting completely of units of INF (without the 'Bulky', 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Nimble' special rules may be placed in Drop Pods. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
         "Once the Drop Pod arrives at the battlefield, move the Drop Pod marker up to 15 cm in any direction that does not place it in an enemy zone of control. Any enemy units within 10 cm of the centre of the drop pod are attacked by an AP6+/AT6+ (Disrupt) attack. After these attacks have been resolved, place the Drop Pods contents fully within 10 cm of the centre of the Drop Pod."
       ]
     },
     {
       "title": "Dreadclaws",
       "description": [
-        "A formation consisting completely of units of INF (without the 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Nimble' special rules may be placed in Dreadclaws. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action. Place the Dreadclaw with its center within 15 cm of the unit with the 'Vox-Caster' special rule. Calling down a Dreadclaw counts as an additional action, so the player using it may not retain the initiative afterwards.",
+        "A formation consisting completely of units of INF (without the 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Nimble' special rules may be placed in Dreadclaws. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
         "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 20 cm in any direction that does not place it in an enemy zone of control. Then place the Dreadclaw contents fully within 10 cm of the centre of the Dreadclaw."
+      ]
+    },
+    {
+      "title": "Dreadnought Drop Pods",
+      "description": [
+        "A formation consisting completely of units of LV & AV with the 'Walker' special rules may be placed in Dreadnought Drop Pods. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
+        "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 15 cm in any direction that does not place it in an enemy zone of control. Then place the Dreadclaw contents fully within 10 cm of the centre of the Dreadclaw."
       ]
     },
     {
@@ -1146,14 +1143,14 @@
     {
       "title": "Palisade Drop Pod",
       "description": [
-        "A Palisade Drop Pod may only be used alongside other Drop Pods, and is added to a formation in Drop Pods or Dreadclaws during deployment. All models in the formation counts as being in Cover and gains the Invulnerable Save special rule for the purposes of Overwatch when they exit their Drop Pods."
+        "A Palisade Drop Pod may only be used alongside other Drop Pods, and is added to a formation in Drop Pods or Dreadclaws during deployment. Place a Palisade marker next to the formation. All models in it counts as being in Cover and gains the Invulnerable Save special rule until it has been activated the first time."
       ]
     },
     {
       "title": "Subterranean Assault",
       "description": [
         "A Subterranean Assault may only enter the battlefield through an Offboard Support action. Place a tunneling marker with its center within 5 cm of the unit with the 'Vox-Caster' special rule.",
-        "The tunneling marker may only be placed on the friendly half of the battlefield during the first turn but can be anywhere on the battlefield from the second turn onwards. Calling for a Subterranean Assault counts as an additional action, so the player using it may not retain the initiative afterwards.",
+        "The tunneling marker may only be placed on the friendly half of the battlefield during the first turn but can be anywhere on the battlefield from the second turn onwards.",
         "Once the Subterranean Assault arrives at the battlefield, move the tunneling marker up to 15 cm in any direction that does not place it in an enemy zone of control or inside terrain that is impassable for AV and/or WE. Then place the unit(s) transporting the Subterranean Assault fully within 10 cm of the centre of the tunneling marker with the transported units inside. The surfacing of a Subterranean Assault transport is not considered to be movement for the purposes of Overwatch, and does not count as an action for the formation."
       ]
     },
@@ -1178,7 +1175,7 @@
     {
       "title": "Barrage(x)",
       "description": [
-        "A weapon with the Barrage(x) special rule uses the barrage rules, with the template size indicated within parenthesis. It works exactly like a normal barrage weapon, except that the to hit, special rules, etc. is specified by the weapon entry."
+        "A weapon with the Barrage(x) special rule uses the barrage rules, with the template size indicated within parenthesis. It works exactly like a normal barrage weapon, except that the to-hit, special rules, etc. is specified by the weapon entry."
       ]
     },
     {
@@ -1212,41 +1209,37 @@
       ]
     },
     {
-      "title": "Artillery Barrage",
+      "title": "Artillery",
       "description": [
-        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP3+/AT6+ (Disrupt, Siege) attack."
+        "Offboard Support from Artillery has no delay, but will arrive immediately."
       ]
     },
     {
-      "title": "Artillery Phospex Barrage",
+      "title": "Deathstrike",
       "description": [
-        "An Artillery Barrage has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place the small barrage template with its centre over the marker. Any unit under the template is attacked by an AP5+/AT6+ (Disrupt, IC) attack."
+        "Unlike other Offboard Support assets Deathstrike missiles have unlimited range, but are reliant on more precise targeting data. This means that any marker put down on the battlefield needs to be confirmed by a second Offboard Support action by a unit with 'Vox-Caster' before the attack will commence. All markers that have not been confirmed expire at the end of each turn."
       ]
     },
     {
-      "title": "Artillery Minefield Strike",
+      "title": "Blind Burst",
       "description": [
-        "A Minefield Submunitions attack has a range of 30 cm. Unlike other Offboard Support assets, Artillery strikes arrive immediately. Place a Minefield template (same size as a small barrage template) with its centre over the marker. No part of the template may be placed over any terrain or model. For the rest of the battle, this area is now considered to be dangerous terrain."
+        "A Blind Burst is targeted at any friendly formation within 30 cm. Place a Blind Burst marker next to the targeted formation. For the rest of the turn, the entire formation counts as being in Cover."
       ]
     },
     {
-      "title": "Artillery Blind Strike",
+      "title": "Minefield Submunitions",
       "description": [
-        "A Blind Burst is targeted at any friendly formation within 30 cm. Place a Blind marker next to the targeted formation. For the rest of the turn, the entire formation counts as being in Cover. Unlike other Offboard Support assets, Artillery strikes arrive immediately."
+        "A Minefield Submunitions attack has a range of 30 cm.  Place a Minefield template (same size as a small barrage template) with its centre over the marker. No part of the template may be placed over any terrain or model. For the rest of the battle, this area is now considered to be dangerous terrain."
       ]
     },
+    
     {
       "title": "Divisio Assassinorum and Cults Abominatio",
       "description": [
         "Assassins may be placed in a formation with a Vox-Caster using a Offboard Support action. Place an appropriate marker next to the formation to show that the assassin is now present in that formation. The effect is automatically triggered whenever the formation is next directly involved in an assault. If the formation is broken before this happens, the marker is lost, and the asset may not be used again."
       ]
     },
-    {
-      "title": "Deathstrike Attacks",
-      "description": [
-        "Unlike other Offboard Support assets Deathstrike missiles have unlimited range, but are reliant on more precise targeting data. This means that any marker put down on the battlefield needs to be confirmed by a second Offboard Support action by a unit with 'Vox-Caster' before the attack will commence. All markers that have not been confirmed expire at the end of each turn."
-      ]
-    },
+    
     {
       "title": "Deathstrike Warp Missile Attack",
       "description": [

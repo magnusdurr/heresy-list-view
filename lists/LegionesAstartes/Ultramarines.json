@@ -10,13 +10,7 @@
   "armyRules": "The 'And They Shall Know No Fear' special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
     "And They Shall Know No Fear",
-    "Army of Mankind",
-            "Offboard Support",
-        "Drop Pods",
-        "Orbital Pin-Point Attack",
-        "Orbital Barrage",
-        "Artillery Barrage",
-        "Artillery Blind Strike"
+    "Army of Mankind"
   ],
   "units": [
     {
@@ -77,6 +71,18 @@
       ],
       "unitRules": [
 
+      ]
+    },
+        {
+      "from": "OffboardSupport.json",
+      "units": [
+        "Drop Pods",
+        "Orbital Pin-Point Attack",
+        "Orbital Barrage",
+        "Artillery Barrage",
+        "Artillery Blind Barrage"
+      ],
+      "unitRules": [
       ]
     },
     {
@@ -626,7 +632,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": 4
+          "upgradePoints": 3
         },
         {
           "name": "Leviathan Detachment",
@@ -765,37 +771,80 @@
     },
     {
       "name": "Ultramarines Offboard Support Assets",
-      "description": "May only have one Offboard Support Asset for each Core Detachment",
+      "description": "May only have one Offboard Support Asset for each Core Section",
       "formations": [
         {
-          "name": "Drop Pods",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 2
-        },
-        {
-          "name": "Orbital Pin-Point Attack",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 1
-        },
-        {
-          "name": "Orbital Barrage",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 1
-        },
-        {
-          "name": "Artillery Barrage",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 1
-        },
-        {
-          "name": "2x Artillery Blind Strikes",
-          "unitSpec": {},
-          "upgrades": [],
-          "upgradePoints": 1
+          "name": "Offboard support",
+          "unitSpec": {
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Drop Pods"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Artillery Blind Barrage"
+                    ],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Artillery Barrage"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Orbital Barrage"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Orbital Pin-Point Attack"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 0
         }
       ]
     },

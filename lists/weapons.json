@@ -5156,7 +5156,6 @@
           "firepower": "AP4+/AT5+",
           "range": "∞",
           "specialRules": [
-            "Barrage(large)"
           ]
         }
       ]
@@ -5168,7 +5167,6 @@
           "firepower": "AP3+/AT6+",
           "range": 30,
           "specialRules": [
-            "Barrage(small)",
             "Disrupt",
             "Siege"
           ]
@@ -5176,13 +5174,12 @@
       ]
     },
     {
-      "name": "Artillery Phospex Strike",
+      "name": "Artillery Phospex Barrage",
       "modes": [
         {
           "firepower": "AP4+/AT6+",
           "range": 45,
           "specialRules": [
-            "Barrage(small)",
             "Disrupt",
             "IC"
           ]
@@ -5190,11 +5187,49 @@
       ]
     },
     {
-      "name": "Artillery Blind Strike",
+      "name": "Artillery Blind Barrage",
       "modes": [
         {
           "firepower": "Special",
-          "range": 30
+          "range": 30,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drop Pods",
+      "modes": [
+        {
+          "firepower": "Special",
+          "range": 15,
+          "specialRules": [
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Orbital Pin-Point Attack",
+      "modes": [
+        {
+          "range": 30,
+          "specialRules": [
+              "MW",
+              "TK(D3)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Orbital Barrage",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 45,
+          "specialRules": [
+              "MW",
+              "Siege"
+          ]
         }
       ]
     }
@@ -5203,6 +5238,18 @@
     {
       "name": "Apocalyptic Barrage",
       "description": "Apocalyptic Barrage"
+    },
+    {
+      "name": "Crippling",
+      "description": "Crippling"
+    },
+    {
+      "name": "Offboard Support",
+      "description": "Offboard Support"
+    },
+    {
+      "name": "Crippling",
+      "description": "Crippling"
     },
     {
       "name": "Crippling",
