@@ -600,7 +600,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 4,
+            "cc": 5,
             "ff": 5,
             "weapons": [
               "Plasma Gun|3"
@@ -611,7 +611,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 4,
+            "cc": 5,
             "ff": 3,
             "weapons": [
               "Flamer |3"
@@ -622,8 +622,8 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 4,
-            "ff": 2,
+            "cc": 5,
+            "ff": 3,
             "weapons": [
               "Rotor Cannon|3"
             ]
@@ -633,7 +633,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 4,
+            "cc": 5,
             "ff": 5,
             "weapons": [
               "Volkite Calvier|3"
@@ -644,7 +644,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 4,
+            "cc": 5,
             "ff": 5,
             "weapons": [
               "Melta Gun |3"
@@ -655,7 +655,7 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 4,
+            "cc": 5,
             "ff": 5,
             "weapons": [
               "Graviton Gun|3"
@@ -743,7 +743,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 5,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
               "Missile Launcher|3"
             ]
@@ -754,7 +754,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 5,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
               "Plasma Cannon|3"
             ]
@@ -765,7 +765,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 5,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
               "Lascannon|3"
             ]
@@ -776,7 +776,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 5,
-            "ff": 2,
+            "ff": 3,
             "weapons": [
               "Heavy Bolter|3"
             ]
@@ -787,7 +787,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 5,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
               "Multi-Melta|3"
             ]
@@ -798,7 +798,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 5,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
               "Autocannon|3"
             ]
@@ -809,7 +809,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 5,
-            "ff": 4,
+            "ff": 5,
             "weapons": [
               "Volkite Culvertin|3"
             ]
@@ -820,7 +820,7 @@
             "speed": 15,
             "armour": 4,
             "cc": 5,
-            "ff": 3,
+            "ff": 4,
             "weapons": [
               "Heavy Flamer |3"
             ]

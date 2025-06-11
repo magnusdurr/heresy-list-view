@@ -154,12 +154,12 @@
                   {
                     "addNames": ["Legion Support Squad"],
                     "addCount": 2,
-                    "upgradePoints": 1
+                    "upgradePoints": 0
                   },
                   {
                     "addNames": ["Legion Heavy Support Squad"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 1
                   }
                 ]
               }
@@ -171,6 +171,16 @@
                     "addNames": ["Legion Tactical Squad"],
                     "addCount": 2,
                     "upgradePoints": 2
+                  },
+                                    {
+                    "addNames": ["Legion Support Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Legion Heavy Support Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
                   },
                   {
                     "addNames": ["Contemptor Dreadnought"],
