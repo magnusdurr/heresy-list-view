@@ -1,302 +1,269 @@
-<h2>Rules</h2>
-<p class="lead">
-    EA-Heresy is based on the NetEA rules, which can be found over at the <a href="https://tp.net-armageddon.org/" target="_blank" class="external">NetEA Tournament Pack</a> site. However, we have also made a number of changes and additions to these rules, which can be found below under 'New Rules' headings. While some of these rules could be considered optional, most are not, and these new rules effectively makes EA-Heresy a different game from the core rules, and not particularly compatible with playing games against the 40k armies of e.g. NetEA, Epic-UK, F-ERC, or EA:Ragnarök.
-</p>
-<p class="lead">
-    While the biggest differences are found in how War Engines work, how Aircraft operate, and the deployment of Offboard Support assets such as Drop Pods and Teleporters, there are a few changes in the details of Assaults and Blast Markers that have quite a big impact on the game. Another very big change is in the basic scenario 'Urban Assault' which is based on the EA:Ragnarök 'Fire the Beacons' scenario. It it we introduce the concept of 'Strongholds', which are a replacement for the 'Large Building' terrain feature, and which are effectively neutral War Engines. Strongholds are influenced by the rules for 'Structures' in Legions Imperialis and destructible buildings in the 1st edition of Epic Space Marine. Strongholds are a compulsory type of terrain that play a big part in the main scenario for EA-Heresy, and are for this reason the basis of a significant amount of rules. As Strongholds are a type of terrain, these can be found in the 'Terrain' section of this site.
-</p>
-<p class="lead">
-    Eventually, this project intends to produce its own version of the core rules, where these changes can be seen in context, which also will aid players who might be familiar with rule-sets derived from the 2:nd edition of epic or who have never played any edition.   
-</p>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Special Rules</h2>
+    <div class="d-flex align-items-center flex-wrap">
+        <div class="btn-group mr-3 mb-2" role="group" aria-label="Rule Filter" id="tag-filters">
+            <button type="button" class="btn btn-outline-secondary active" data-filter="all">All</button>
+            <!-- Dynamic tag buttons will be inserted here -->
+        </div>
+        <div class="custom-control custom-switch mb-2">
+            <input type="checkbox" class="custom-control-input" id="excludeCore" checked>
+            <label class="custom-control-label" for="excludeCore">Exclude Core</label>
+        </div>
+    </div>
+</div>
 
 <p class="lead">
-    In addition, there are a number of rules in the NetEA Epic Game Rules that can be interpreted in more than one way. Below the 'New Rules' are 'Rule interpretations & house-rules', that we have used when developing the EA:Ragnarök and EA-Heresy lists. We suggest you also use these when playing EA-Heresy games. Also make sure to check out the 'Special Rules' s
+    This page contains all special rules available in EA-Heresy.
 </p>
 
+<div id="rules-container">
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <p>Loading special rules...</p>
+    </div>
+</div>
 
-<h6>The BTS</h6>
-<p>
-    An army's BTS is determined by adding the formation points, upgrade points, titan points, and ally points of each formation. The formation with the highest total is the BTS. If there are several with the same total, the opponent decides which is the BTS. This decision is done after objectives have been placed, but before garrisons are deployed.
-</p>
+<style>
+/* Custom styling for the special rules page */
+.rule-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+}
 
+.rule-card:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-color: #adb5bd;
+}
 
-<h4>New Rules - Strategy Phase</h4>
-<h6>The Strategy Rating</h6>
-<p>
-    The Strategy rating is between 6 to 1 (5 (Most Legiones Astartes), 2 (Most Solar Auxilia), 1 (Imperialis Militia, Taghmata Omnissah). Roll two dice, add them together, and add the army's strategy rating when rolling strategy rolls at the start of any turn. Add an additional +1 to the roll if you have spent less Titan points than your opponent.
-</p>
-<p>
-    In the first turn, the player who has spent the least Titan points wins draws. If both players have spent equal Titan points, roll again, this time just 2D6 without any modifiers.
-</p>
+.rule-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem 0.375rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.rule-title {
+    font-weight: 600;
+    color: #495057;
+    margin: 0;
+    font-size: 1.1rem;
+}
 
-<h4>New Rules - Actions</h4>
-<h6>Overwatch</h6>
-<p>
-    Formations that successfully activates with an Overwatch order may also move 5 cm. This extra movement is voluntary (e.g. if a player wishes to avoid triggering enemy Overwatch).
-</p>
+.rule-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
 
-<h6>Offboard Support</h6>
-<p>
-    Calling for Offboard Support is a new action that a player can take after having completed an Advance, Overwatch, Marshal, or Sustain Fire action with an unbroken formation that contains a unit with the Vox-Caster special rule. This counts as retaining the initiative, and thus cannot be done if the initiative has already been retained once. The Offboard Support action automatically succeeds.
-</p>
-<p>
-    Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (depending on the type of Offboard Support) within Line of Sight of the unit with the Vox-Caster special rule to indicate where the Offboard Support asset will come down. The Offboard Support is then carried out according to its special rules before the start of the next friendly action, or before the end phase, depending on which comes first.
-</p>
+/* Default styling for all badges */
+.rule-badge {
+    background-color: #6c757d;
+    color: white;
+}
 
+/* Specific styling for known tag types */
+.rule-badge.unit { background-color: #007bff; color: white; }
+.rule-badge.weapon { background-color: #ffc107; color: #212529; }
+.rule-badge.army { background-color: #6c757d; color: white; }
+.rule-badge.core { background-color: #e9ecef; color: #6c757d; }
+.rule-badge.formation { background-color: #28a745; color: white; }
 
-<h4>New Rules - Movement</h4>
+.rule-badges {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
 
-<h6>Movement through friendly formations</h6>
-<p>
-    INF may move freely through all types of units, and can be moved through freely.
-</p>
+/* Dynamic filter buttons layout */
+#tag-filters {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
 
-<h6>Movement through enemy formations</h6>
-<p>
-    Units may move past enemy formations when becoming broken or failing to rally while broken. This bonus movement ignores enemy zones of control, and may move over enemy units.
-</p>
+#tag-filters .btn {
+    margin-bottom: 0.25rem;
+}
 
+.rule-content {
+    padding: 1rem;
+}
 
-<h4>New Rules - Assaults</h4>
+.rule-description {
+    margin: 0;
+    line-height: 1.6;
+    color: #495057;
+}
 
-<h6>Countercharges</h6>
-<p>
-    Units in formations that are Engaged may choose whether to counter-charge against the closest enemy unit in the formation that Engaged it, and may ignore already Engaged enemy models while doing so, or alternatively counter-charge against the closest enemy unit.
-</p>
-<p>
-    Units in formations that become Engaged do not have to stay in coherency while counter-charging, but must attempt to move back into coherency when the Assault is over.
-</p>
+.rule-description ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
 
-<h6>Supporting Formations</h6>
-<p>
-    Units do not ignore BMs when supporting an Assault, but are suppressed just like with Shooting (from back to front).
-</p>
+.rule-description li {
+    margin-bottom: 0.25rem;
+}
 
-<h6>New Combat Resolution Modifier Table (Cumulative)</h6>
-<p>
-    <ul>
-        <li>Each point of damage inflicted during the Assault: +1</li>
-        <li>More units than the opposing formation: +1</li>
-        <li>More than two times as many units as the opposing formation: +1</li>
-        <li>No Blast Markers: +1</li>
-        <li>Opponent has more Blast Markers: +1</li>
-        <li>Opponent has more Blast Markers than their combined number of units / DC, or is broken: +1</li>
-        <li>Each unit with the Inspiring special rule: +1</li>
-    </ul>
-</p>
+.custom-control-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
 
-<h4>New Rules - War Engines</h4>
+.btn-outline-secondary.active {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+}
 
-<h6>War Engine Basic Rules</h6>
-<p>
-    <ul>
-        <li>WE no longer block LOS.</li>
-        <li>WE may allocate CC hits beyond base contact.</li>
-        <li>WE may not barge.</li>
-        <li>WE must allocate at least one dice to CC for each unit / DC in base contact during an assault. </li>
-        <li>WE may not use Extra Attacks in FF if engaged in CC. </li>
-        <li>WE CC attacks allocated towards INF suffer -1 to hit.</li>
-        <li>WE CC attacks allocated against other War Engines gain an additional +1 to hit.</li>
-        <li>Aircraft gain an additional +1 to hit War Engines with 3 or more DC.</li>
-        <li>Damage from Critical Hits can cause further Critical Hits.</li>
-    </ul>
-</p>
+#rules-count {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+</style>
 
-<h4>New Rules - Blast Markers, Breaking, Rallying</h4>
-<p>
-    Formations only become broken after exceeding the number of units, not equaling them. This means that a formation can become completely suppressed without becoming broken.
-</p>
-<p>
-    Formations that attempt to rally suffer an additional -1 penalty if it is completely on the enemy half of the battlefield.
-</p>
-<p>
-    Only unbroken enemy units count for the “enemies within 30 cm” check.
-</p>
-<p>
-    Formations that are completely inside a War Engine transport or Stronghold gains an additional +1 to rally.
-</p>
-
-
-<h4>New Rules - Aircraft</h4>
-
-<h6>Hover</h6>
-<p>
-    Aircraft with Hover are treated as AC with Bomber during their first approach to the battlefield. Once at the final location, they transition into becoming Support Craft (for WE) or Skimmers (for AV) for the rest of the battle.
-</p>
-<p>
-    Transitioning into becoming a Support Craft or Skimmer counts as movement for overwatch. An aircraft which transitions into a Support Craft may either shoot (counting as having doubled, suffering an additional -1 modifier to hit), or disembark any transported units. Disembarking from an Aircraft that is transitioning into a Support Craft does not count as an activation, but does count as movement for the purposes of Overwatch.
-</p>
-
-<h6>Support Craft</h6>
-<p>
-    Support Craft may only contest objectives.
-</p>
-
-<h6>Support Craft Transports</h6>
-<p>
-    Support Craft may pick up friendly formations on the battlefield by ending its movement close to or on top of the formation(s) that are to be picked up. If all units in the formation(s) are within 5 cm of the Support Craft, they may be picked up. Any units in the formation that cannot fit are destroyed, causing a BM on that formation for each destroyed unit.
-</p>
-<p>
-    Units with Jump Pack or Skimmer may disembark up to 15 cm away from Support Craft, instead of the usual 5 cm.
-</p>
-<p>
-    Support Craft may embark and disembark formations that have already activated this round, including broken formations.
-</p>
-<p>
-    Each time a Support Craft suffers a BM for coming under fire, each transported formation also suffers one BM. This includes any BMs suffered during the approach move.
-</p>
-
-
-<h6>Aircraft Movement</h6>
-<p>
-    Aircraft no longer linger on the battlefield after carrying out ground attacks, interceptions, or CAP. Instead they immediately fly off after carrying out their action, and after any enemy formations have had a chance to carry out a CAP mission. Flying formations gain one BM for getting shot at while on the way in, and one on the way out as normal.
-</p>
-
-<h6>Aircraft CAP</h6>
-<p>
-    Formations of Fighter and Fighter-Bomber AC may start the game on CAP. This counts as their action for the first turn.
-</p>
-
-<h6>Shooting at WE</h6>
-<p>
-    Aircraft gain an additional +1 modifier when shooting at WE with 1-2 DC, and +2 when shooting at WE with 3 or more DC. This bonus does not apply to BP type weapons.
-</p>
-
-
-<h3>EA:Ragnarök - Heresy rule interpretations & house-rules</h3>
-<h6>Say it and its true</h6>
-<p>
-    Effectively lots of things may move on a table. If a player is able to put a unit 6cm away from another unit, or 10cm into terrain, then saying they are doing so makes it so. This means if later a piece is budged say to cause intermingle, it won't be treated as such. - If you think it can't be done, advise your opponent when they 'say it'.
-</p>
-
-<h6>Contacting more than one enemy unit during an engage</h6>
-<p>
-    A gray zone in the rules is under what conditions a unit can touch more than one enemy unit when it engages. While units must move towards enemy units once they enter their zone of control is clear, but less clear is how creative with angling your models in the phase you can be. Our suggestion is to be liberal in interpreting this, and that
-    engaging or counter charging units can always contact up to two enemy units if they have enough speed to do so, and there is enough physical space to fit.
-</p>
-
-<h6>When is a formation 'in a position to support'?</h6>
-<p>
-    After an Engage has been resolved, formations on the losing side recieves a Blast Marker, but it is not entirely clear exactly at which point during the Engage that this is determined. Our suggestion is that formations with units that has rolled FF dice (or could have been allowed to roll FF dice if they had an FF value or had not been broken), are considered to have been in a position to support. This resolves the situation in which units from the enemy formation were within 15cm from a formation at the start of the Engage, but were eliminated before the supporting formation had a chance to support.
-</p>
-
-<h6>Resolving hits from Supporting attacks</h6>
-<p>
-    In order to determine the direction and order of hits from supporting fire, such hits are resolved one supporting formation at a time, in any order that the controlling player wishes.
-</p>
-
-<h6>Preserve allocation order between normal and macro hits</h6>
-<p>
-    Macro and standard hits are resolved in separate phases of shooting and assaults. We suggest you preserve the
-    allocation order between the two phases. I.e. Imperial Guard with a Gorgon assault and receive 2 normal hits and 1
-    TK. The Gorgon and guardsmen are equally close to the enemy. If the Imperial Guard player choose to take the normal
-    hits into the Gorgon, and it doesnt die, he must also take the TK into the Gorgon. Likewise if he take the regular
-    hits into the guardsmen and they dont die the TK goes into the guardsmen. If the Guardsmen die from the normal hits
-    the TK goes into the nearest surviving unit to the enemy.
-</p>
-
-<h6>Formations mixing BP and standard weapons</h6>
-<p>
-    As far as we understand there are no rules defining how things work when a formation fires both BP and standard
-    weapons. We suggest the following house-rule: A formation can chose to fire it's BP weapons before or after any
-    non-BP weapons has been fired. This includes Macro and Titan Killer BP weapons (an exception to the
-    macro-always-goes-last rule). Resolve the BP shooting as a separate phase i.e. allocate and resolve hits from the BP
-    weapon
-    before moving on to ordinary weapons. Hits from ordinary weapons should be allocated front-to-back, as usual. This
-    means that units that were hit by the BP weapon and survived can be allocated a second hit from standard
-    shooting.
-</p>
-
-<h6>Maximize the effect of special rules when shooting</h6>
-<p>
-    There are cases where some of the weapons fired has special rules while others don't. It could be Tau Railgun
-    Hammerheads (where some of the AT fire has <i>Lance</i>) or a Baneblade where one of the weapons has <i>
-        Ignore
-        Cover
-    </i>. Hits are (as always) allocated from the front to the back but if it matters how the hits with special
-    rules are allocated, if should be done to favor of the shooting formation. E.g. A Baneblade fires at orks, where
-    three orks are in the open while the rest is in a house (4+ cover save). The Baneblade fires all its weapons into
-    cover (to be able to hit all the Orks). It scores four AP hits without special rules and one with the <i>
-        ignore
-        cover
-    </i> special rule. In this case the <i>ignore cover</i> hit should not be allocated to any of the three Orks
-    hit in the open but to one of the two Orks in the house to maximize the effect of <i>ignore cover</i>. Another
-    example would be the Hammerheads shooting at a Chaos Armoured Company of two Predators and two Land Raiders. The
-    Hammerheads score one standard hit and two with <i>lance</i>. The Predators are in front of the Chaos formation and
-    will take the two first hits. The remaining hit, allocated to the Land Raider, should be one of the two hits with
-    <i>lance</i>.
-</p>
-
-<h6>Disembarking & embarking ground transports</h6>
-<p>
-    When disembarking from a transport the disembarking unit should be placed within 5cm of the transport. Only a part
-    of the model needs to be within 5cm of the transport vehicle, not the whole model. When embarking on a ground
-    transport the transport needs to touch the unit it is picking up.
-</p>
-
-<h6>Disembarking & embarking air transports</h6>
-<p>
-    When disembarking from an air transport the disembarking unit should be placed within 5cm (or 15cm if the unit has
-    <i>jump packs</i>) of the transport. Only a part of the model needs to be within 5cm (or 15cm) of the transport
-    vehicle, not the whole model. When an air transport lands to pick up a formation, all units within (any part of the
-    model) 5cm of the transport can be picked up. The air transport can land on (barge) the units it is picking up. This
-    way you don't have to prepare a free "landing zone" inside a large formation in order to get all units in the
-    formation in range to be picked up. A formation may also move on to a landed air transport, in which case all units
-    needs to touch the landed air transport in order to embark (no 5cm "pickup zone" in this case)
-</p>
-
-<h6>Barging with transport aircraft</h6>
-<p>
-    The rules does not explicitly allow or disallow transport aircraft from barging, but does state that barging is made as part of movement.
-    But as aircraft landing or taking off is not considered movement for Overwatch purposes, it seems most consistent to not allow transport
-    aircraft to barge.
-</p>
-
-<h6>Broken air transports</h6>
-<p>
-    In case an air transport breaks (without dying) it can choose to stay on the board and rally like any other
-    ground unit or to make a disengagement move. The rules for what happens if it chooses to fly off is a bit
-    vague. We suggest the following: As soon as the unit/formation takes of in order to fly out it once again
-    counts as an aircraft, with a number of blast markers equal to the number it took to break the unit or
-    formation. It can (like any other aircraft) pick up additional blastmarkes on the way out, if shot by enemy
-    flak and/or if it exits from any table edge other than its own table edge.
-    E.g. an Ork Landa is broken by shooting on the ground and choses to fly off in the end phase. Once airborn
-    it will have 3 blast markers (one for each DC). It is also hit by enemy flak (without being wounded) on the
-    way out, resulting in 4 BMs when trying to activate in the next turn.
-</p>
-
-<h6>Aircraft sniping</h6>
-<p>
-    The rules does not restrict you from placing ground attacking aircrafts inside a formation or even on top of
-    enemy units in order to allocate hits to chosen enemy characters or units. This feels a bit gamy, and we
-    suggest the following house-rule: Aircrafts on a ground attack mission may not be placed within 5cm of an
-    enemy unit in the formation it is targeting. The restriction is always 5cm even for units with the
-    <i>Scout</i> special rule.
-</p>
-
-<h6>Always roll for critical hits</h6>
-<p>
-    Players must always roll for critical hits in any situation where the critical hit may affect units or formations
-    around the war engine,
-    even if the War Engine was reduced to 0 DC before crits have been rolled for.
-</p>
-
-<h6>Terrain height, skimmers & hills</h6>
-<p>
-    Terrain and War Engines are "infinitely high" to ground units with regards to line of sight. No ground unit can see
-    directly through a piece of terrain – unless they are in it. Popped up skimmers can see over terrain, but can only
-    see units that are further away from the edge of the terrain piece than they are. Same rule as for popped up
-    skimmers also apply for units on hills. Aircrafts can always see over all terrain. In addition, see the 'Terrain'
-    section on this website.
-</p>
-<h6>Skimmers, terrain and movement</h6>
-<p>
-    Skimmers only checks for dangerous and difficult terrain at the start and at the end of their total movement, unless otherwise stated by the player.
-    Skimmers that ignore intervening terrain can obviously not claim cover from such terrain, and counts as being popped up for Overwatch purposes.
-</p>
-
-
-<!--
-<h6>TODO: WE transport transporting units, separate formations, may intermingle?</h6>
--->
+<script>
+$(document).ready(function() {
+    var allRules = [];
+    
+    // Load special rules data
+    $.get('lists/specialRules.json')
+        .done(function(data) {
+            allRules = data.rules;
+            setupDynamicFilters(allRules);
+            displaySpecialRules(allRules);
+            setupFiltering(allRules);
+        })
+        .fail(function() {
+            $('#rules-container').html('<div class="alert alert-danger">Failed to load special rules data.</div>');
+        });
+    
+    function prepareRulesForTemplate(rules, totalRules) {
+        // Sort rules alphabetically by title (case-insensitive)
+        const sortedRules = rules.slice().sort(function(a, b) {
+            return a.title.toLowerCase().localeCompare(b.title.toLowerCase());
+        });
+        
+        return {
+            rulesCount: 'Showing ' + sortedRules.length + ' of ' + totalRules + ' rules',
+            rules: sortedRules.map(function(rule) {
+                // Generate badges based on tags
+                var badges = [];
+                if (rule.tags && Array.isArray(rule.tags)) {
+                    rule.tags.forEach(function(tag) {
+                        badges.push({
+                            class: tag,
+                            text: tag.charAt(0).toUpperCase() + tag.slice(1)
+                        });
+                    });
+                }
+                
+                return {
+                    title: rule.title,
+                    description: rule.description,
+                    badges: badges,
+                    tags: rule.tags || []
+                };
+            })
+        };
+    }
+    
+    function displaySpecialRules(rules, filteredRules = null) {
+        const rulesToShow = filteredRules || rules;
+        
+        if (rulesToShow.length === 0) {
+            $('#rules-container').html('<div class="alert alert-info">No rules match the current filter criteria.</div>');
+            return;
+        }
+        
+        // Check if template is loaded
+        if (!eaTemplating.templates['special-rules-list']) {
+            $('#rules-container').html('<div class="alert alert-warning">Template loading... Please try again in a moment.</div>');
+            return;
+        }
+        
+        const templateData = prepareRulesForTemplate(rulesToShow, allRules.length);
+        const html = eaTemplating.templates['special-rules-list'](templateData);
+        $('#rules-container').html(html);
+    }
+    
+    function setupDynamicFilters(rules) {
+        // Collect all unique tags (excluding 'core' which is handled specially)
+        var allTags = new Set();
+        
+        rules.forEach(function(rule) {
+            if (rule.tags && Array.isArray(rule.tags)) {
+                rule.tags.forEach(function(tag) {
+                    if (tag !== 'core') {
+                        allTags.add(tag);
+                    }
+                });
+            }
+        });
+        
+        // Sort tags alphabetically
+        var sortedTags = Array.from(allTags).sort();
+        
+        // Generate dynamic filter buttons
+        var tagFiltersContainer = $('#tag-filters');
+        
+        sortedTags.forEach(function(tag) {
+            var buttonText = tag.charAt(0).toUpperCase() + tag.slice(1);
+            var button = $('<button type="button" class="btn btn-outline-secondary" data-filter="' + tag + '">' + buttonText + '</button>');
+            tagFiltersContainer.append(button);
+        });
+    }
+    
+    function setupFiltering(rules) {
+        const excludeCheckbox = $('#excludeCore');
+        
+        function applyFilters() {
+            const activeFilter = $('#tag-filters button.active').data('filter');
+            const excludeCore = excludeCheckbox.is(':checked');
+            
+            let filteredRules = rules;
+            
+            // Apply core filter (special case)
+            if (excludeCore) {
+                filteredRules = filteredRules.filter(rule => {
+                    // Check tags array for core tag
+                    return !(rule.tags && Array.isArray(rule.tags) && rule.tags.includes('core'));
+                });
+            }
+            
+            // Apply tag filter
+            if (activeFilter && activeFilter !== 'all') {
+                filteredRules = filteredRules.filter(rule => {
+                    // Check if rule has the selected tag
+                    return rule.tags && Array.isArray(rule.tags) && rule.tags.includes(activeFilter);
+                });
+            }
+            
+            displaySpecialRules(allRules, filteredRules);
+        }
+        
+        // Dynamic filter button handlers (using event delegation)
+        $('#tag-filters').on('click', 'button[data-filter]', function() {
+            $('#tag-filters button').removeClass('active');
+            $(this).addClass('active');
+            applyFilters();
+        });
+        
+        // Checkbox handler
+        excludeCheckbox.on('change', function() {
+            applyFilters();
+        });
+        
+        // Initial filter application
+        applyFilters();
+    }
+});
+</script>

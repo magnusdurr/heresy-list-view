@@ -5,63 +5,63 @@
       "description": [
         "Attacks with the 'Fixed Forward' special rule may only be directed against targets that are at least partially within a 90 degree arc in the front of the unit."
       ],
-      "core": true
+      "tags": ["core", "weapon"]
     },
     {
       "title": "FwA",
       "description": [
         "Attacks with the 'Forward Arc' special rule may only be directed against targets that are at least partially within a 180 degree arc in the front of the unit."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Leader",
       "description": [
         "A formation that includes any units with the 'Leader' special rule may remove one extra Blast Marker for each such unit whenever it Regroups (either by making a Marshal or Hold action) or successfully Rallies."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Infiltrators",
       "description": [
         "Units with the 'Infiltrators' special rule doubles their speed value when their formation performs an Engage action. They can also ignore Zones of Control from the formation they are charging, allowing them to sneak past enemy units when they charge. Note that this does not allow them to move over enemy units."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Inspiring",
       "description": [
         "Each unit with the 'Inspiring' special rule that are directly involved in an assault, and survives until the combat resolution, adds +1 to the result roll."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Supreme Commander",
       "description": [
         "A unit with the 'Supreme Commander' special rule count as having the 'Commander' and 'Leader' special rules. In addition, each unit with Supreme Commander in the army allows a player to re-roll one failed action or rally test once per turn. If the unit with Supreme Commander is in the reserves, its re-roll may only be used on the formation it is in or transported by. If there are several units with Supreme Commander in the army, it is necessary to keep track of which re-roll belongs to which unit."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Jump Packs",
       "description": [
         "Units with the 'Jump Packs' special rule ignores terrain effects and friendly units as they move. They may not end their movement on Impassable terrain or on top of friendly models, and if they land in Difficult or Dangerous terrain they must take a terrain test. Units with this special rule are affected by enemy units and Zones of Control normally, and cannot jump over enemy formations."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Mounted",
       "description": [
         "Units with the 'Mounted' special rule count as Armoured Vehicles for terrain effects, and as Infantry for all other purposes."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Walker",
       "description": [
         "Units with the 'Walker' special rule may re-roll any failed Dangerous terrain tests, and ignores Difficult terrain tests."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "First Strike",
@@ -70,7 +70,7 @@
       "If opposing units both have First Strike, then all such attacks are resolved simultaneously and their results applied to both sides before other attacks are resolved.",
         "Note that First Strike has no effect for Supporting Attacks."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Fearless",
@@ -79,42 +79,42 @@
         "When Broken or otherwise forced to take a Withdrawal move, Fearless units may choose not to withdraw, and if the unit elects to withdraw it will be destroyed only if it ends its move within 5 cm of the enemy rather than 15 cm. Note that other units in the formation that are not Fearless will be affected normally by additional hits for Blast Markers or losing an Assault.",
         "Fearless units that remain stationary do not take additional damage. If units remain in base contact with a Fearless unit, then the opposing formation will automatically be drawn in to an assault on either formation."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Invulnerable Save",
       "description": [
         "Units with the 'Invulnerable Save' special rule receive a second save of 6+ if they fail their first save for any reason. No modifiers ever apply to the second save. This save may be used against MW attacks, but may not be used against other types of damage that ignores saves completely, such as damage from terrain, extra damage from assaults or Blast Markers, or being too close to the enemy after completing a withdrawal move after becoming broken or failing to rally."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Single Shot",
       "description": [
         "Weapons with the 'Single Shot' special rule may be only be used once per battle and may not then be fired again. To avoid confusion, this should be noted by either adding or removing a token from the unit, or recording the use on a piece of paper."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Ind",
       "description": [
         "Weapons with the 'Indirect Fire' special rule are allowed to fire indirectly if their formation successfully conducts a Sustained Fire action. Units using Indirect Fire receive a +1 modifier for taking a Sustained Fire action as usual. No Line of Sight to the target is required for Indirect Fire, and only suffers a -1 modifier if the target is in cover, and not merely obscured. Weapons firing indirectly double their range, but the target must be at least partially within 30 cm."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Reinforced Armour",
       "description": [
         "Units with the 'Reinforced Armour' special rule may still take their saving throw when hit by attacks with 'MW' special rule. In addition, they may re-roll a failed save against any non-MW hit, including those inflicted during an assault. If the first save rolled was another type of save (e.g. a Cover Save or an Ion Shield), the re-roll must be made using the unit's normal armour."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Thick Rear Armour",
       "description": [
         "Units with the 'Thick Rear Armour' special rule ignore the -1 save modifier when they are caught in a Crossfire, but will still suffer an additional Blast Marker if they suffer any damage."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "MW",
@@ -122,7 +122,7 @@
         "Only units with Reinforced Armour or Invulnerable Save receive a saving throw against hits with the 'Macro Weapon' special rule. Cover Saves are also negated, although the -1 to hit modifier does apply.",
         "If an attacking formation scores both normal and MW hits, then the opposing player must allocate and make any saves for the normal hits first, and then allocate and make any saves for the MW hits. Hits from MW must first be allocated to units that have survived normal hits, after this they may be allocated to the rest of the formation."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "TK(x)",
@@ -130,35 +130,35 @@
         "Hits caused by weapons with the 'Titan Killer(x)' special rule ignores the 'Reinforced Armour' special rule. In addition, if a TK(x) hit is caused on a War Engine, it suffers damage equal to 'x'. Each point of damage will reduce the War Engine damage capacity by 1. Roll for critical hits for each point of damage inflicted.",
         "When allocating Titan killer hits that may cause multiple points of damage, roll for damage immediately after allocating the hit. For formation hit allocation purposes, the War Engine counts as having been allocated a number of hits equal to the damage rolled."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "EA(x)",
       "description": [
         "Weapons with the 'Extra Attacks(x)' special rule receive a number of extra attacks equal to 'x' during Assaults. Special Rules that are on a weapon with Extra Attacks only apply to the extra attacks. Extra Attacks from Small Arms may only be used if the unit is not in base contact with an enemy unit during the Assault, in EA-Heresy this also applies to War Engines."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "IC",
       "description": [
         "Weapons with the 'Ignore Cover' special rule ignore cover to-hit modifiers, and negate Infantry Cover Saves."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Sniper",
       "description": [
         "Hits caused by a weapon with the 'Sniper' special rule ignores normal hit allocation rules, and may be targeted on any unit in the target formation that is within range and line of sight of the attack (FF and CC attacks have a 15 cm range). These hits are allocated at the same time as normal hits, but are completely separate from normal allocation rules. In addition, the target suffers an additional -1 save modifier to its normal, Reinforced Armour, or Cover saves."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Disrupt",
       "description": [
         "Hits with the 'Disrupt' special rule inflict a Blast Marker on an enemy formation for each hit they inflict instead of for each kill they inflict. Note that such hits are saved for normally. Any units that fail their save are removed as casualties but do not cause a second Blast marker to be placed on the target formation."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Expendable",
@@ -166,20 +166,21 @@
         "A formation does not receive a Blast Marker when a unit with Expendable is destroyed, including the extra Blast Marker from the first casualty of a crossfire and for units destroyed for being out of formation after a move. If an Expendable unit is hit by a weapon with Disrupt it does not inflict a Blast marker.",
         "If a formation is comprised completely of units with 'Expendable' they lose the benefit of all rules above. Expendable units killed in an assault still count for the purposes of working out its result."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Slow",
       "description": [
         "Weapons with the 'Slow Firing' special rule must take one turn to reload after they have fired, and may not fire during the next turn. All shots have to be fired at once, it is not possible to 'save' shots between turns. Place a suitable token next to the unit to mark that a weapon with 'Slow Firing' has been used, and remove it during the next turn's End Phase. Units that are reloading still counts for suppression, even though their weapons cannot fire."
       ],
-      "core": true
+      "tags": ["core"]
     },
     {
       "title": "Machine Spirit",
       "description": [
         "Unless within 15cm of a friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with <i>Machine Spirit</i> may only perform the Hold, Engage, Marshal, Sustained Fire and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when attempting to Rally."
-      ]
+      ],
+      "tags": ["unit", "formation"]
     },
     {
       "title": "Cybernetica Cortex",
@@ -304,13 +305,15 @@
       "title": "Shield Disruptor",
       "description": [
         "Each point of damage from a hit with the 'Shield Disruptor' special rule will knock down two Construct Shields or Void Shields(x). If a unit with only one field remaining is hit the field knocked down, but the hit does not carry over. In addition, Shield Disruptor hits ignores Ion Shields and Dispersion Fields."
-      ]
+      ],
+      "tags": ["weapon"]
     },
     {
       "title": "Warriors of the Void",
       "description": [
         "All Solar Auxilia Sections receive a +1 modifier to their Action Test when carrying out an Engage or March action, and gains a +1 modifier to their Rally Tests as long as the formation contains a unit with a character."
-      ]
+      ],
+      "tags": ["army"]
     },
     {
       "title": "Army of Mankind",
@@ -412,7 +415,8 @@
       "title": "Blitz",
       "description": [
         "Units with the 'Blitz' special rule gains an additional 5 cm in speed when conducting an Engage action."
-      ]
+      ],
+      "tags": ["unit"]
     },
     {
       "title": "Evasive",
@@ -531,7 +535,8 @@
       "title": "Energetic",
       "description": [
         "Weapons with the 'Energetic' special rule gains an additional +1 to hit when the unit's formation conducts a Sustain Fire action."
-      ]
+      ],
+      "tags": ["weapon"]
     },
     {
       "title": "Titan Hunter",
@@ -633,7 +638,8 @@
       "title": "Psyker",
       "description": [
         "Teleporting units placed within 15 cm of any enemy units with the 'Psyker' special rule suffer Teleport Mishap for any 1 and 2 rolled, instead of just 1."
-      ]
+      ],
+      "tags": ["unit"]
     },
     {
       "title": "Perils of the Warp",
@@ -1206,13 +1212,15 @@
       "title": "Orbital Pin-Point Attack",
       "description": [
         "A Pin-Point attack has a range of 30 cm, and may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(D3) attack on a single War Engine under the center of the marker."
-      ]
+      ],
+      "tags": ["weapon"]
     },
     {
       "title": "Orbital Barrage",
       "description": [
         "An Orbital Barrage has a range of 45 cm. Once it arrives on the battlefield, place the small barrage template with its centre over the marker. Any unit under the template is attacked by an BP 3 (MW, Siege) attack."
-      ]
+      ],
+      "tags": ["weapon"]
     },
     {
       "title": "Orbital Phospex Barrage",

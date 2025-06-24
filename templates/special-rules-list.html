@@ -1,0 +1,25 @@
+<div id="rules-count">{{rulesCount}}</div>
+
+{{#each rules}}
+<div class="rule-card" data-tags="{{#each tags}}{{this}}{{#unless @last}},{{/unless}}{{/each}}">
+    <div class="rule-header">
+        <h5 class="rule-title">{{title}}</h5>
+        <div class="rule-badges">
+            {{#each badges}}
+            <span class="rule-badge {{class}}">{{text}}</span>
+            {{/each}}
+        </div>
+    </div>
+    <div class="rule-content">
+        <div class="rule-description">
+            {{#if (isArray description)}}
+                {{#each description}}
+                <p>{{{this}}}</p>
+                {{/each}}
+            {{else}}
+                <p>{{{description}}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
+{{/each}} 

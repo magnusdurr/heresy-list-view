@@ -88,6 +88,10 @@ var eaTemplating = {
             eaTemplating.templates['quick-reference'] = Handlebars.compile(template);
         });
 
+        $.get("templates/special-rules-list.html").done(function (template) {
+            eaTemplating.templates['special-rules-list'] = Handlebars.compile(template);
+        });
+
         Handlebars.registerHelper('appendPlural', function (number) {
             return number > 1 ? "s" : "";
         });
@@ -589,6 +593,14 @@ var eaTemplating = {
             return displayName;
         });
 
+        // Helper to check if a rule is core
+        Handlebars.registerHelper('isRuleCore', function (rule) {
+            if (!rule) return false;
+            
+            // Check tags array for core tag
+            return rule.tags && Array.isArray(rule.tags) && rule.tags.includes('core');
+        });
+
         // Helper to parse special rule string and return rule object
         Handlebars.registerHelper('parseSpecialRule', function (ruleName) {
             if (typeof ruleName !== 'string') {
@@ -662,11 +674,14 @@ var eaTemplating = {
                 
                 // Add the rule to our collection
                 if (rule && rule.description) {
+                    // Check if rule is core based on tags
+                    var isCore = rule.tags && Array.isArray(rule.tags) && rule.tags.includes('core');
+                    
                     allRules.push({
                         name: normalizedName,
                         description: Array.isArray(rule.description) ? rule.description.join(' ') : rule.description,
                         source: source,
-                        core: rule.core || false
+                        core: isCore
                     });
                 } else {
                     allRules.push({
