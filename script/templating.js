@@ -630,7 +630,7 @@ var eaTemplating = {
                 return allRules;
             }
             
-            function addRule(ruleName) {
+            function addRule(ruleName, source) {
                 // First, normalize the rule name to handle parameterized versions
                 var normalizedName = ruleName;
                 if (ruleName.includes('(') && ruleName.includes(')')) {
@@ -664,12 +664,16 @@ var eaTemplating = {
                 if (rule && rule.description) {
                     allRules.push({
                         name: normalizedName,
-                        description: Array.isArray(rule.description) ? rule.description.join(' ') : rule.description
+                        description: Array.isArray(rule.description) ? rule.description.join(' ') : rule.description,
+                        source: source,
+                        core: rule.core || false
                     });
                 } else {
                     allRules.push({
                         name: normalizedName,
-                        description: 'Description not available.'
+                        description: 'Description not available.',
+                        source: source,
+                        core: false
                     });
                 }
             }
@@ -678,7 +682,7 @@ var eaTemplating = {
                 // Collect rules from unit itself
                 if (unit.specialRules && Array.isArray(unit.specialRules)) {
                     unit.specialRules.forEach(function(ruleName) {
-                        addRule(ruleName);
+                        addRule(ruleName, 'unit');
                     });
                 }
                 
@@ -687,7 +691,7 @@ var eaTemplating = {
                     unit.variants.forEach(function(variant) {
                         if (variant.specialRules && Array.isArray(variant.specialRules)) {
                             variant.specialRules.forEach(function(ruleName) {
-                                addRule(ruleName);
+                                addRule(ruleName, 'unit');
                             });
                         }
                     });
@@ -702,7 +706,7 @@ var eaTemplating = {
                                 if (mode.specialRules && Array.isArray(mode.specialRules)) {
                                     mode.specialRules.forEach(function(rule) {
                                         var ruleName = rule.name || rule;
-                                        addRule(ruleName);
+                                        addRule(ruleName, 'weapon');
                                     });
                                 }
                             });
@@ -723,7 +727,7 @@ var eaTemplating = {
                                                 if (mode.specialRules && Array.isArray(mode.specialRules)) {
                                                     mode.specialRules.forEach(function(rule) {
                                                         var ruleName = rule.name || rule;
-                                                        addRule(ruleName);
+                                                        addRule(ruleName, 'weapon');
                                                     });
                                                 }
                                             });
@@ -750,7 +754,7 @@ var eaTemplating = {
                                                         if (mode.specialRules && Array.isArray(mode.specialRules)) {
                                                             mode.specialRules.forEach(function(rule) {
                                                                 var ruleName = rule.name || rule;
-                                                                addRule(ruleName);
+                                                                addRule(ruleName, 'weapon');
                                                             });
                                                         }
                                                     });
@@ -771,7 +775,7 @@ var eaTemplating = {
                                         if (mode.specialRules && Array.isArray(mode.specialRules)) {
                                             mode.specialRules.forEach(function(rule) {
                                                 var ruleName = rule.name || rule;
-                                                addRule(ruleName);
+                                                addRule(ruleName, 'weapon');
                                             });
                                         }
                                     });

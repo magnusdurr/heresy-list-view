@@ -1597,7 +1597,7 @@
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Heavy transport(2)"
+          "Heavy Transport(2)"
         ]
       },
       {
@@ -1633,7 +1633,7 @@
         "specialRules": [
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Heavy transport(1)"
+          "Heavy Transport(1)"
         ]
       },
       {
@@ -1919,7 +1919,7 @@
           "Damage Capacity (2)",
           "Reinforced Armour",
           "Thick Rear Armour",
-          "Heavy transport(4)",
+          "Heavy Transport(4)",
           "Ion Shield (5+)"
         ],
         "crit": "The Spartan is destroyed."

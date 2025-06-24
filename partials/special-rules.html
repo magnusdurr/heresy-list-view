@@ -1,19 +1,151 @@
 {{#if specialRules}}
 <div class="card" style="margin-top: .8rem">
-    <div class="card-header"><b>Special Rules</b></div>
+    <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+            <b>Special Rules</b>
+            <div class="d-flex align-items-center">
+                <div class="btn-group btn-group-sm me-3" role="group" aria-label="Filter special rules by source">
+                    <button type="button" class="btn btn-outline-secondary active" data-filter="unit">Unit Rules</button>
+                    <button type="button" class="btn btn-outline-secondary" data-filter="weapon">Weapon Rules</button>
+                    <button type="button" class="btn btn-outline-secondary" data-filter="all">All</button>
+                </div>
+                <div class="custom-control custom-switch" style="margin-left: 1rem;">
+                    <input type="checkbox" class="form-check-input" data-exclude-core checked>
+                    <label class="form-check-label" data-exclude-core-label>Exclude Core</label>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="card-body">
         <dl class="row special-rules-table">
             {{#each specialRules}}
-                {{#with (parseSpecialRule this)}}
-                    <dt class="col-lg-2 special-rules-row">{{title}}</dt>
-                    <dd class="col-lg-10 special-rules-row">
-                        {{#each description}}
-                            <p class="card-text">{{{this}}}</p>
-                        {{/each}}
+                {{#if name}}
+                    {{!-- Handle object format (from collectSpecialRules) --}}
+                    <dt class="col-lg-2 special-rules-row rule-{{source}}{{#if core}} rule-core{{/if}}" data-source="{{source}}" data-core="{{core}}">{{name}}</dt>
+                    <dd class="col-lg-10 special-rules-row rule-{{source}}{{#if core}} rule-core{{/if}}" data-source="{{source}}" data-core="{{core}}">
+                        <p class="card-text">{{{description}}}</p>
                     </dd>
-                {{/with}}
+                {{else}}
+                    {{!-- Handle string format (current usage) --}}
+                    {{#with (parseSpecialRule this)}}
+                        <dt class="col-lg-2 special-rules-row rule-army" data-source="army">{{title}}</dt>
+                        <dd class="col-lg-10 special-rules-row rule-army" data-source="army">
+                            {{#each description}}
+                                <p class="card-text">{{{this}}}</p>
+                            {{/each}}
+                        </dd>
+                    {{/with}}
+                {{/if}}
             {{/each}}
         </dl>
     </div>
 </div>
+
+<script>
+(function() {
+    // Only initialize once globally
+    if (window.specialRulesInitialized) {
+        return;
+    }
+    window.specialRulesInitialized = true;
+    
+    function applyFilters(card) {
+        // Get current filter values
+        var activeBtn = card.querySelector('[data-filter].active');
+        var sourceFilter = activeBtn ? activeBtn.getAttribute('data-filter') : 'unit';
+        var checkboxElement = card.querySelector('[data-exclude-core]');
+        var excludeCore = checkboxElement ? checkboxElement.checked : false;
+        
+        // Apply filters to all rules
+        card.querySelectorAll('.special-rules-row').forEach(function(row) {
+            var source = row.getAttribute('data-source');
+            var isCore = row.getAttribute('data-core') === 'true';
+            var showBySource = false;
+            var showByCore = true;
+            
+            // Check source filter
+            if (sourceFilter === 'all') {
+                showBySource = true;
+            } else if (sourceFilter === 'unit') {
+                showBySource = (source === 'unit' || source === 'army');
+            } else if (sourceFilter === 'weapon') {
+                showBySource = (source === 'weapon');
+            }
+            
+            // Check core filter
+            if (excludeCore && isCore) {
+                showByCore = false;
+            }
+            
+            // Show only if both filters pass
+            row.style.display = (showBySource && showByCore) ? '' : 'none';
+        });
+    }
+    
+    // Handle source filter button clicks
+    document.addEventListener('click', function(e) {
+        if (e.target.matches('[data-filter]')) {
+            var card = e.target.closest('.card');
+            
+            // Update active button
+            card.querySelectorAll('[data-filter]').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            e.target.classList.add('active');
+            
+            // Apply filters
+            applyFilters(card);
+        }
+    });
+    
+    // Handle exclude core checkbox changes
+    document.addEventListener('change', function(e) {
+        if (e.target.matches('[data-exclude-core]')) {
+            var card = e.target.closest('.card');
+            applyFilters(card);
+        }
+    });
+    
+    // Handle exclude core label clicks
+    document.addEventListener('click', function(e) {
+        if (e.target.matches('[data-exclude-core-label]') || e.target.closest('[data-exclude-core-label]')) {
+            var label = e.target.matches('[data-exclude-core-label]') ? e.target : e.target.closest('[data-exclude-core-label]');
+            var card = label.closest('.card');
+            var checkbox = card.querySelector('[data-exclude-core]');
+            if (checkbox) {
+                checkbox.checked = !checkbox.checked;
+                // Trigger change event
+                checkbox.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        }
+    });
+    
+    // Apply default filters with a longer delay to ensure all cards are rendered
+    setTimeout(function() {
+        var cards = document.querySelectorAll('.card');
+        cards.forEach(function(card) {
+            if (card.querySelector('.special-rules-table')) {
+                applyFilters(card);
+            }
+        });
+    }, 500);
+    
+    // Also apply when new content is dynamically loaded
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            mutation.addedNodes.forEach(function(node) {
+                if (node.nodeType === 1 && node.querySelector && node.querySelector('.special-rules-table')) {
+                    var card = node.closest('.card') || node;
+                    if (card.querySelector('.special-rules-table')) {
+                        setTimeout(function() { 
+                            applyFilters(card); 
+                        }, 100);
+                    }
+                }
+            });
+        });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+})();
+</script>
 {{/if}}
