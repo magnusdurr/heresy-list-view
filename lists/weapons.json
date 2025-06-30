@@ -5217,6 +5217,76 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Vindicare Assassin",
+      "modes": [
+        {
+          "firepower": "FF2+",
+          "range": "Small Arms",
+          "specialRules": [
+              "EA(+1)",
+              "Sniper",
+              "First Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Culexus Assassin",
+      "modes": [
+        {
+          "firepower": "FF4+",
+          "range": "Small Arms",
+          "specialRules": [
+              "EA(+2)",
+              "Force",
+              "Disrupt",
+              "First Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Callidus Assassin",
+      "modes": [
+        {
+          "firepower": "CC3+",
+          "range": "Assault Weapon",
+          "specialRules": [
+              "EA(+2)",
+              "Sniper",
+              "First Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eversor Assassin",
+      "modes": [
+        {
+          "firepower": "CC3+",
+          "range": "Assault Weapon",
+          "specialRules": [
+              "EA(+3)",
+              "First Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infernus Abomination",
+      "modes": [
+        {
+          "firepower": "CC4+",
+          "range": "Assault Weapon",
+          "specialRules": [
+              "EA(+2)",
+              "MW",
+              "First Strike"
+          ]
+        }
+      ]
     }
     ],
   "rules": [

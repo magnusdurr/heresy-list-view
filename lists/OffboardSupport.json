@@ -96,6 +96,56 @@
           "Offboard Support",
           "Barrage(Small)"
         ]
+      },
+      {
+        "name": "Clade Vindicare Assassin",
+        "type": "CH",
+        "weapons": [
+          "Vindicare Assassin"
+        ],
+        "specialRules": [
+          "Assassin"
+        ]
+      },
+      {
+        "name": "Clade Culexus Assassin",
+        "type": "CH",
+        "weapons": [
+          "Culexus Assassin"
+        ],
+        "specialRules": [
+          "Assassin"
+        ]
+      },
+      {
+        "name": "Clade Callidus Assassin",
+        "type": "CH",
+        "weapons": [
+          "Callidus Assassin"
+        ],
+        "specialRules": [
+          "Assassin"
+        ]
+      },
+      {
+        "name": "Clade Eversor Assassin",
+        "type": "CH",
+        "weapons": [
+          "Eversor Assassin"
+        ],
+        "specialRules": [
+          "Assassin"
+        ]
+      },
+      {
+        "name": "Cults Abominatio Infernus",
+        "type": "CH",
+        "weapons": [
+          "Infernus Abomination"
+        ],
+        "specialRules": [
+          "Assassin"
+        ]
       }
     ]
   }

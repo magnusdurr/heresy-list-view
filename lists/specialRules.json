@@ -801,9 +801,9 @@
       ]
     },
     {
-      "title": "Expert Reconnaissance",
+      "title": "Assassin",
       "description": [
-        "Friendly Raven Guard formations that enter the battlefield through <i>Planetfall</i> that are placed within 30cm of a unit with the <i>Expert Reconnaissance</i> special rule does not roll for scatter. In addition, friendly Raven Guard formations that enter the battlefield through <i>Teleport</i> and are placed within 15cm of a unit with the <i>Expert Reconnaissance</i> special rule may re-roll 1:s when testing for Teleport Mishap."
+        "This asset may be used once per battle combined with a Engage action by a formation that contains a character. The assassin is considered to be located in the character's unit. Any damage caused counts towards combat resolution."
       ]
     },
     {
