@@ -632,6 +632,129 @@ var eaTemplating = {
             };
         });
 
+        // Helper to extract special rules from a single unit (shared logic)
+        eaTemplating.extractRulesFromUnit = function(unit, addRuleCallback) {
+            // Collect rules from unit itself
+            if (unit.specialRules && Array.isArray(unit.specialRules)) {
+                unit.specialRules.forEach(function(ruleName) {
+                    addRuleCallback(ruleName, 'unit');
+                });
+            }
+            
+            // Collect rules from variants
+            if (unit.variants && Array.isArray(unit.variants)) {
+                unit.variants.forEach(function(variant) {
+                    if (variant.specialRules && Array.isArray(variant.specialRules)) {
+                        variant.specialRules.forEach(function(ruleName) {
+                            addRuleCallback(ruleName, 'unit');
+                        });
+                    }
+                });
+            }
+            
+            // Helper function to process weapons array
+            function processWeapons(weapons, source) {
+                if (weapons && Array.isArray(weapons)) {
+                    weapons.forEach(function(weaponString) {
+                        var weapon = Handlebars.helpers.parseWeapon(weaponString);
+                        if (weapon && weapon.modes) {
+                            weapon.modes.forEach(function(mode) {
+                                if (mode.specialRules && Array.isArray(mode.specialRules)) {
+                                    mode.specialRules.forEach(function(rule) {
+                                        var ruleName = rule && rule.name ? rule.name : rule;
+                                        if (ruleName && typeof ruleName === 'string') {
+                                            addRuleCallback(ruleName, source || 'weapon');
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                }
+            }
+            
+            // Helper function to process weapon mounts
+            function processWeaponMounts(weaponMounts) {
+                if (weaponMounts && Array.isArray(weaponMounts)) {
+                    weaponMounts.forEach(function(mount) {
+                        if (mount.types && Array.isArray(mount.types)) {
+                            mount.types.forEach(function(type) {
+                                if (type.weapons && Array.isArray(type.weapons)) {
+                                    processWeapons(type.weapons, 'weapon');
+                                }
+                            });
+                        }
+                    });
+                }
+            }
+            
+            // Collect rules from unit weapons
+            processWeapons(unit.weapons);
+            
+            // Collect rules from unit weapon mounts
+            processWeaponMounts(unit.weaponMounts);
+            
+            // Collect rules from variants' weapons and weapon mounts
+            if (unit.variants && Array.isArray(unit.variants)) {
+                unit.variants.forEach(function(variant) {
+                    processWeapons(variant.weapons);
+                    processWeaponMounts(variant.weaponMounts);
+                });
+            }
+        };
+
+        // Helper to process and add a special rule (shared logic)
+        eaTemplating.processSpecialRule = function(ruleName, allRules, ruleNames, options) {
+            options = options || {};
+            var source = options.source;
+            var includeSourceAndCore = options.includeSourceAndCore || false;
+            
+            // First, normalize the rule name to handle parameterized versions
+            var normalizedName = ruleName;
+            if (ruleName.includes('(') && ruleName.includes(')')) {
+                // Normalize parameterized rules to template form (e.g., "MW(2)" -> "MW(x)")
+                normalizedName = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
+            }
+            
+            // Check if we already have this rule (use normalized name for deduplication)
+            if (ruleNames.has(normalizedName)) {
+                return;
+            }
+            
+            // Try to find the rule definition
+            var rule = eaTemplating.specialRulesData[ruleName];
+            
+            // If no exact match found, try with the normalized template name
+            if (!rule && normalizedName !== ruleName) {
+                rule = eaTemplating.specialRulesData[normalizedName];
+                
+                // If still not found, try with space before parentheses
+                if (!rule) {
+                    var spaceVersion = ruleName.replace(/\s*\([^)]+\)/g, ' (x)');
+                    rule = eaTemplating.specialRulesData[spaceVersion];
+                }
+            }
+            
+            // Add to our deduplication set
+            ruleNames.add(normalizedName);
+            
+            // Create the rule object
+            var ruleObject = {
+                name: normalizedName,
+                description: rule && rule.description ? 
+                    (Array.isArray(rule.description) ? rule.description.join(' ') : rule.description) : 
+                    'Description not available.'
+            };
+            
+            // Add source and core properties if requested
+            if (includeSourceAndCore) {
+                ruleObject.source = source;
+                ruleObject.core = rule && rule.tags && Array.isArray(rule.tags) && rule.tags.includes('core');
+            }
+            
+            allRules.push(ruleObject);
+        };
+
         // Helper to collect all special rules from units in a section
         Handlebars.registerHelper('collectSpecialRules', function (units) {
             var allRules = [];
@@ -642,164 +765,14 @@ var eaTemplating = {
             }
             
             function addRule(ruleName, source) {
-                // First, normalize the rule name to handle parameterized versions
-                var normalizedName = ruleName;
-                if (ruleName.includes('(') && ruleName.includes(')')) {
-                    // Normalize parameterized rules to template form (e.g., "MW(2)" -> "MW(x)")
-                    normalizedName = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
-                }
-                
-                // Check if we already have this rule (use normalized name for deduplication)
-                if (ruleNames.has(normalizedName)) {
-                    return;
-                }
-                
-                // Try to find the rule definition
-                var rule = eaTemplating.specialRulesData[ruleName];
-                
-                // If no exact match found, try with the normalized template name
-                if (!rule && normalizedName !== ruleName) {
-                    rule = eaTemplating.specialRulesData[normalizedName];
-                    
-                    // If still not found, try with space before parentheses
-                    if (!rule) {
-                        var spaceVersion = ruleName.replace(/\s*\([^)]+\)/g, ' (x)');
-                        rule = eaTemplating.specialRulesData[spaceVersion];
-                    }
-                }
-                
-                // Add to our deduplication set
-                ruleNames.add(normalizedName);
-                
-                // Add the rule to our collection
-                if (rule && rule.description) {
-                    // Check if rule is core based on tags
-                    var isCore = rule.tags && Array.isArray(rule.tags) && rule.tags.includes('core');
-                    
-                    allRules.push({
-                        name: normalizedName,
-                        description: Array.isArray(rule.description) ? rule.description.join(' ') : rule.description,
-                        source: source,
-                        core: isCore
-                    });
-                } else {
-                    allRules.push({
-                        name: normalizedName,
-                        description: 'Description not available.',
-                        source: source,
-                        core: false
-                    });
-                }
+                eaTemplating.processSpecialRule(ruleName, allRules, ruleNames, {
+                    source: source,
+                    includeSourceAndCore: true
+                });
             }
             
             units.forEach(function(unit) {
-                // Collect rules from unit itself
-                if (unit.specialRules && Array.isArray(unit.specialRules)) {
-                    unit.specialRules.forEach(function(ruleName) {
-                        addRule(ruleName, 'unit');
-                    });
-                }
-                
-                // Collect rules from variants
-                if (unit.variants && Array.isArray(unit.variants)) {
-                    unit.variants.forEach(function(variant) {
-                        if (variant.specialRules && Array.isArray(variant.specialRules)) {
-                            variant.specialRules.forEach(function(ruleName) {
-                                addRule(ruleName, 'unit');
-                            });
-                        }
-                    });
-                }
-                
-                // Collect rules from weapons
-                if (unit.weapons && Array.isArray(unit.weapons)) {
-                    unit.weapons.forEach(function(weaponString) {
-                        var weapon = Handlebars.helpers.parseWeapon(weaponString);
-                        if (weapon && weapon.modes) {
-                            weapon.modes.forEach(function(mode) {
-                                if (mode.specialRules && Array.isArray(mode.specialRules)) {
-                                    mode.specialRules.forEach(function(rule) {
-                                        var ruleName = rule && rule.name ? rule.name : rule;
-                                        if (ruleName && typeof ruleName === 'string') {
-                                            addRule(ruleName, 'weapon');
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-                
-                // Collect rules from weapon mounts (for Titans, etc.)
-                if (unit.weaponMounts && Array.isArray(unit.weaponMounts)) {
-                    unit.weaponMounts.forEach(function(mount) {
-                        if (mount.types && Array.isArray(mount.types)) {
-                            mount.types.forEach(function(type) {
-                                if (type.weapons && Array.isArray(type.weapons)) {
-                                    type.weapons.forEach(function(weaponString) {
-                                        var weapon = Handlebars.helpers.parseWeapon(weaponString);
-                                        if (weapon && weapon.modes) {
-                                            weapon.modes.forEach(function(mode) {
-                                                if (mode.specialRules && Array.isArray(mode.specialRules)) {
-                                                    mode.specialRules.forEach(function(rule) {
-                                                        var ruleName = rule.name || rule;
-                                                        addRule(ruleName, 'weapon');
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-                
-                // Collect rules from variants' weapon mounts
-                if (unit.variants && Array.isArray(unit.variants)) {
-                    unit.variants.forEach(function(variant) {
-                        if (variant.weaponMounts && Array.isArray(variant.weaponMounts)) {
-                            variant.weaponMounts.forEach(function(mount) {
-                                if (mount.types && Array.isArray(mount.types)) {
-                                    mount.types.forEach(function(type) {
-                                        if (type.weapons && Array.isArray(type.weapons)) {
-                                            type.weapons.forEach(function(weaponString) {
-                                                var weapon = Handlebars.helpers.parseWeapon(weaponString);
-                                                if (weapon && weapon.modes) {
-                                                    weapon.modes.forEach(function(mode) {
-                                                        if (mode.specialRules && Array.isArray(mode.specialRules)) {
-                                                            mode.specialRules.forEach(function(rule) {
-                                                                var ruleName = rule.name || rule;
-                                                                addRule(ruleName, 'weapon');
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                        
-                        // Collect rules from variant weapons
-                        if (variant.weapons && Array.isArray(variant.weapons)) {
-                            variant.weapons.forEach(function(weaponString) {
-                                var weapon = Handlebars.helpers.parseWeapon(weaponString);
-                                if (weapon && weapon.modes) {
-                                    weapon.modes.forEach(function(mode) {
-                                        if (mode.specialRules && Array.isArray(mode.specialRules)) {
-                                            mode.specialRules.forEach(function(rule) {
-                                                var ruleName = rule.name || rule;
-                                                addRule(ruleName, 'weapon');
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
+                eaTemplating.extractRulesFromUnit(unit, addRule);
             });
             
             // Sort rules alphabetically by name
@@ -820,47 +793,9 @@ var eaTemplating = {
             }
             
             function addRule(ruleName) {
-                // First, normalize the rule name to handle parameterized versions
-                var normalizedName = ruleName;
-                if (ruleName.includes('(') && ruleName.includes(')')) {
-                    // Normalize parameterized rules to template form (e.g., "MW(2)" -> "MW(x)")
-                    normalizedName = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
-                }
-                
-                // Check if we already have this rule (use normalized name for deduplication)
-                if (ruleNames.has(normalizedName)) {
-                    return;
-                }
-                
-                // Try to find the rule definition
-                var rule = eaTemplating.specialRulesData[ruleName];
-                
-                // If no exact match found, try with the normalized template name
-                if (!rule && normalizedName !== ruleName) {
-                    rule = eaTemplating.specialRulesData[normalizedName];
-                    
-                    // If still not found, try with space before parentheses
-                    if (!rule) {
-                        var spaceVersion = ruleName.replace(/\s*\([^)]+\)/g, ' (x)');
-                        rule = eaTemplating.specialRulesData[spaceVersion];
-                    }
-                }
-                
-                // Add to our deduplication set
-                ruleNames.add(normalizedName);
-                
-                // Add the rule to our collection
-                if (rule && rule.description) {
-                    allRules.push({
-                        name: normalizedName,
-                        description: Array.isArray(rule.description) ? rule.description.join(' ') : rule.description
-                    });
-                } else {
-                    allRules.push({
-                        name: normalizedName,
-                        description: 'Description not available.'
-                    });
-                }
+                eaTemplating.processSpecialRule(ruleName, allRules, ruleNames, {
+                    includeSourceAndCore: false
+                });
             }
             
             // Iterate through all unit sections
@@ -868,115 +803,8 @@ var eaTemplating = {
                 if (Array.isArray(sectionGroup)) {
                     sectionGroup.forEach(function(section) {
                         if (section.unit && Array.isArray(section.unit)) {
-                            // Use the existing collectSpecialRules logic for each section
                             section.unit.forEach(function(unit) {
-                                // Collect rules from unit itself
-                                if (unit.specialRules && Array.isArray(unit.specialRules)) {
-                                    unit.specialRules.forEach(function(ruleName) {
-                                        addRule(ruleName);
-                                    });
-                                }
-                                
-                                // Collect rules from variants
-                                if (unit.variants && Array.isArray(unit.variants)) {
-                                    unit.variants.forEach(function(variant) {
-                                        if (variant.specialRules && Array.isArray(variant.specialRules)) {
-                                            variant.specialRules.forEach(function(ruleName) {
-                                                addRule(ruleName);
-                                            });
-                                        }
-                                    });
-                                }
-                                
-                                // Collect rules from weapons
-                                if (unit.weapons && Array.isArray(unit.weapons)) {
-                                    unit.weapons.forEach(function(weaponString) {
-                                        var weapon = Handlebars.helpers.parseWeapon(weaponString);
-                                        if (weapon && weapon.modes) {
-                                            weapon.modes.forEach(function(mode) {
-                                                if (mode.specialRules && Array.isArray(mode.specialRules)) {
-                                                    mode.specialRules.forEach(function(rule) {
-                                                        var ruleName = rule && rule.name ? rule.name : rule;
-                                                        if (ruleName && typeof ruleName === 'string') {
-                                                            addRule(ruleName);
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                                
-                                // Collect rules from weapon mounts (for Titans, etc.)
-                                if (unit.weaponMounts && Array.isArray(unit.weaponMounts)) {
-                                    unit.weaponMounts.forEach(function(mount) {
-                                        if (mount.types && Array.isArray(mount.types)) {
-                                            mount.types.forEach(function(type) {
-                                                if (type.weapons && Array.isArray(type.weapons)) {
-                                                    type.weapons.forEach(function(weaponString) {
-                                                        var weapon = Handlebars.helpers.parseWeapon(weaponString);
-                                                        if (weapon && weapon.modes) {
-                                                            weapon.modes.forEach(function(mode) {
-                                                                if (mode.specialRules && Array.isArray(mode.specialRules)) {
-                                                                    mode.specialRules.forEach(function(rule) {
-                                                                        var ruleName = rule.name || rule;
-                                                                        addRule(ruleName);
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                                
-                                // Collect rules from variants' weapon mounts
-                                if (unit.variants && Array.isArray(unit.variants)) {
-                                    unit.variants.forEach(function(variant) {
-                                        if (variant.weaponMounts && Array.isArray(variant.weaponMounts)) {
-                                            variant.weaponMounts.forEach(function(mount) {
-                                                if (mount.types && Array.isArray(mount.types)) {
-                                                    mount.types.forEach(function(type) {
-                                                        if (type.weapons && Array.isArray(type.weapons)) {
-                                                            type.weapons.forEach(function(weaponString) {
-                                                                var weapon = Handlebars.helpers.parseWeapon(weaponString);
-                                                                if (weapon && weapon.modes) {
-                                                                    weapon.modes.forEach(function(mode) {
-                                                                        if (mode.specialRules && Array.isArray(mode.specialRules)) {
-                                                                            mode.specialRules.forEach(function(rule) {
-                                                                                var ruleName = rule.name || rule;
-                                                                                addRule(ruleName);
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                        
-                                        // Collect rules from variant weapons
-                                        if (variant.weapons && Array.isArray(variant.weapons)) {
-                                            variant.weapons.forEach(function(weaponString) {
-                                                var weapon = Handlebars.helpers.parseWeapon(weaponString);
-                                                if (weapon && weapon.modes) {
-                                                    weapon.modes.forEach(function(mode) {
-                                                        if (mode.specialRules && Array.isArray(mode.specialRules)) {
-                                                            mode.specialRules.forEach(function(rule) {
-                                                                var ruleName = rule.name || rule;
-                                                                addRule(ruleName);
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
+                                eaTemplating.extractRulesFromUnit(unit, addRule);
                             });
                         }
                     });
