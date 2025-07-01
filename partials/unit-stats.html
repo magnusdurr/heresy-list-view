@@ -1,0 +1,18 @@
+<table class="table-sm stats-table">
+    <tbody>
+    <tr>
+        <td>Type</td>
+        <td>Speed</td>
+        <td>Armour</td>
+        <td>CC</td>
+        <td>FF</td>
+    </tr>
+    <tr>
+        <td>{{#if type}}{{type}}{{else}}n/a{{/if}}</td>
+        <td>{{#if speed}}{{appendOnNumber speed 'cm'}}{{else}}n/a{{/if}}</td>
+        <td>{{#if armour}}{{armour}}+{{else}}n/a{{/if}}</td>
+        <td>{{#if cc}}{{cc}}+{{else}}n/a{{/if}}</td>
+        <td colspan="3">{{#if ff}}{{ff}}+{{else}}n/a{{/if}}</td>
+    </tr>
+    </tbody>
+</table>

@@ -58,6 +58,10 @@ var eaTemplating = {
             Handlebars.registerPartial('upgrade', template);
         });
 
+        $.get("partials/unit-stats.html").done(function (template) {
+            Handlebars.registerPartial('unit-stats', template);
+        });
+
         $.get("templates/army.html").done(function (template) {
             eaTemplating.templates['army'] = Handlebars.compile(template);
         });
