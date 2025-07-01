@@ -11,8 +11,8 @@
                     {{#each modes}}
                         <tr>
                             <td scope="row">
-                                {{#if join}}
-                                    <i>{{join}}</i>
+                                {{#if this.join}}
+                                    <i style="font-size: small; text-transform: uppercase; margin-left: 1rem;">- {{this.join}} -</i>
                                 {{else}}
                                     {{weaponDisplayName ../this}}
                                 {{/if}}
@@ -22,11 +22,11 @@
                                 {{#if firepower}}
                                     {{firepower}}{{#each specialRules}}, <i>{{specialRuleTooltip this}}</i>{{/each}}
                                 {{else}}
-                                                        {{#each specialRules}}
-                        {{#if @first}}
-                            <i>{{specialRuleTooltip this}}</i>
-                        {{else}}, <i>{{specialRuleTooltip this}}</i>{{/if}}
-                    {{/each}}
+                                    {{#each specialRules}}
+                                        {{#if @first}}<i>{{specialRuleTooltip this}}</i>
+                                        {{else}}, <i>{{specialRuleTooltip this}}</i>
+                                        {{/if}}
+                                    {{/each}}
                                 {{/if}}
                             </td>
                         </tr>
@@ -53,8 +53,8 @@
                             {{#each modes}}
                                 <tr>
                                     <td scope="row">
-                                        {{#if join}}
-                                            <i>{{join}}</i>
+                                        {{#if this.join}}
+                                            <i style="font-size: small; text-transform: uppercase; margin-left: 1rem;">- {{this.join}} -</i>
                                         {{else}}
                                             {{weaponDisplayName ../this}}
                                         {{/if}}

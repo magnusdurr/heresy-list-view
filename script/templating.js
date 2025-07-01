@@ -203,7 +203,8 @@ var eaTemplating = {
         // Helper to parse weapon string and return weapon object
         Handlebars.registerHelper('parseWeapon', function (weaponString) {
             if (typeof weaponString !== 'string') {
-                return weaponString; // Already an object
+                console.error("parseWeapon received invalid weaponString:", weaponString);
+                return weaponString;
             }
             
             var values = weaponString.split('|');
@@ -259,6 +260,7 @@ var eaTemplating = {
         // Helper to parse special rule string and return rule object
         Handlebars.registerHelper('parseSpecialRule', function (ruleName) {
             if (typeof ruleName !== 'string') {
+                console.error("parseSpecialRule received invalid ruleName:", ruleName);
                 return ruleName; // Already an object
             }
             

@@ -4583,6 +4583,7 @@
           ]
         },
         {
+          "join": "and",
           "firepower": "Assault Weapons",
           "specialRules": [
             "MW"
