@@ -184,15 +184,7 @@ var eaTemplating = {
 
             // Convert to string in case we get a non-string value
             ruleName = String(ruleName);
-            var rule = eaTemplating.specialRulesData[ruleName];
-            
-            // If no exact match, try to find a parameterized version
-            if (!rule) {
-                // Replace any content in parentheses with (x) to match template rules, and remove any whitespace before parentheses
-                // e.g. "Graviton(2)" becomes "Graviton(x)", "Graviton (2)" becomes "Graviton(x)"
-                var templateName = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
-                rule = eaTemplating.specialRulesData[templateName];
-            }
+            var rule = eaTemplating.findSpecialRule(ruleName);
             
             if (rule && rule.description) {
                 // Join description paragraphs with double line breaks for better formatting
@@ -275,30 +267,18 @@ var eaTemplating = {
                 return ruleName; // Already an object
             }
             
-            var rule = eaTemplating.specialRulesData[ruleName];
-            
-            // If no exact match, try to find a parameterized version
-            if (!rule) {
-                // Try without space first (most common format like MW(x), TK(x))
-                var templateNameNoSpace = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
-                rule = eaTemplating.specialRulesData[templateNameNoSpace];
-                
-                // If still not found, try with space
-                if (!rule) {
-                    var templateNameWithSpace = ruleName.replace(/\s*\([^)]+\)/g, ' (x)');
-                    rule = eaTemplating.specialRulesData[templateNameWithSpace];
-                }
-            }
+            var rule = eaTemplating.findSpecialRule(ruleName);
             
             if (rule) {
                 return rule;
+            } else {
+                // Fallback for unknown rules
+                console.error("Special rule not found in data:", ruleName);
+                return {
+                    "title": ruleName,
+                    "description": ["Unknown special rule: " + ruleName]
+                };
             }
-            
-            // Fallback for unknown rules
-            return {
-                "title": ruleName,
-                "description": ["Unknown special rule: " + ruleName]
-            };
         });
 
         // Helper to extract special rules from a single unit (shared logic)
@@ -391,18 +371,7 @@ var eaTemplating = {
             }
             
             // Try to find the rule definition
-            var rule = eaTemplating.specialRulesData[ruleName];
-            
-            // If no exact match found, try with the normalized template name
-            if (!rule && normalizedName !== ruleName) {
-                rule = eaTemplating.specialRulesData[normalizedName];
-                
-                // If still not found, try with space before parentheses
-                if (!rule) {
-                    var spaceVersion = ruleName.replace(/\s*\([^)]+\)/g, ' (x)');
-                    rule = eaTemplating.specialRulesData[spaceVersion];
-                }
-            }
+            var rule = eaTemplating.findSpecialRule(ruleName);
             
             // Add to our deduplication set
             ruleNames.add(normalizedName);
@@ -488,6 +457,35 @@ var eaTemplating = {
             return allRules;
         });
 
+        // Shared helper function to find special rule by name with normalization
+        eaTemplating.findSpecialRule = function(ruleName) {
+            if (!ruleName || typeof ruleName !== 'string') {
+                return null;
+            }
+            
+            // Try exact match first
+            var rule = eaTemplating.specialRulesData[ruleName];
+            if (rule) {
+                return rule;
+            }
+            
+            // If no exact match, try to find a parameterized version
+            // Normalize parameterized rules to template form (e.g., "MW(2)" -> "MW(x)")
+            var templateNameNoSpace = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
+            rule = eaTemplating.specialRulesData[templateNameNoSpace];
+            if (rule) {
+                return rule;
+            }
+            
+            // If still not found, try with space before parentheses
+            var templateNameWithSpace = ruleName.replace(/\s*\([^)]+\)/g, ' (x)');
+            rule = eaTemplating.specialRulesData[templateNameWithSpace];
+            if (rule) {
+                return rule;
+            }
+            
+            return null;
+        };
 
     },
 
