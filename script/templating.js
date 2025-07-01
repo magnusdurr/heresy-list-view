@@ -78,10 +78,6 @@ var eaTemplating = {
             eaTemplating.templates['special-rules-list'] = Handlebars.compile(template);
         });
 
-        Handlebars.registerHelper('appendPlural', function (number) {
-            return number > 1 ? "s" : "";
-        });
-
         Handlebars.registerHelper('numberAsText', function (number, capitalize) {
             function toText(number) {
                 if (number === 1) {
@@ -148,10 +144,6 @@ var eaTemplating = {
             return options.fn(context, {data: data})
         });
 
-        Handlebars.registerHelper('hasSpecialNotes', function (value) {
-            return value !== undefined && (value.specialRules !== undefined || value.notes !== undefined || value.crit !== undefined);
-        });
-
         Handlebars.registerHelper('join', function (array, separator) {
             if (array && Array.isArray(array)) {
                 return array.join(separator || ', ');
@@ -196,8 +188,7 @@ var eaTemplating = {
             
             // If no exact match, try to find a parameterized version
             if (!rule) {
-                // Replace any content in parentheses with (x) to match template rules
-                // Also remove any whitespace before parentheses
+                // Replace any content in parentheses with (x) to match template rules, and remove any whitespace before parentheses
                 // e.g. "Graviton(2)" becomes "Graviton(x)", "Graviton (2)" becomes "Graviton(x)"
                 var templateName = ruleName.replace(/\s*\([^)]+\)/g, '(x)');
                 rule = eaTemplating.specialRulesData[templateName];
@@ -276,15 +267,6 @@ var eaTemplating = {
             }
             
             return displayName;
-        });
-
-
-        // Helper to check if a rule is core
-        Handlebars.registerHelper('isRuleCore', function (rule) {
-            if (!rule) return false;
-            
-            // Check tags array for core tag
-            return rule.tags && Array.isArray(rule.tags) && rule.tags.includes('core');
         });
 
         // Helper to parse special rule string and return rule object
