@@ -3,6 +3,7 @@
     <div class="card-header">
         <div class="d-flex justify-content-between align-items-center">
             <b>Special Rules</b>
+            {{#unless (eq enableFiltering false)}}
             <div class="d-flex align-items-center">
                 <div class="btn-group btn-group-sm me-3" role="group" aria-label="Filter special rules by source">
                     <button type="button" class="btn btn-outline-secondary active" data-filter="unit">Unit Rules</button>
@@ -14,10 +15,11 @@
                     <label class="form-check-label" data-exclude-core-label>Exclude Core</label>
                 </div>
             </div>
+            {{/unless}}
         </div>
     </div>
     <div class="card-body">
-        <dl class="row special-rules-table">
+        <dl class="row special-rules-table" data-enable-filtering="{{#if (eq enableFiltering false)}}false{{else}}true{{/if}}">
             {{#each specialRules}}
                 {{#if name}}
                     {{!-- Handle object format (from collectSpecialRules) --}}
@@ -50,6 +52,12 @@
     window.specialRulesInitialized = true;
     
     function applyFilters(card) {
+        // Check if filtering is enabled for this card
+        var table = card.querySelector('.special-rules-table');
+        if (!table || table.getAttribute('data-enable-filtering') === 'false') {
+            return;
+        }
+        
         // Get current filter values
         var activeBtn = card.querySelector('[data-filter].active');
         var sourceFilter = activeBtn ? activeBtn.getAttribute('data-filter') : 'unit';
