@@ -10,7 +10,8 @@
   "armyRules": "The 'And They Shall Know No Fear' special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
     "And They Shall Know No Fear",
-    "Army of Mankind"
+    "Army of Mankind",
+    "Chivalry"
   ],
   "units": [
     {

@@ -1,25 +1,25 @@
-<div id="rules-count">{{rulesCount}}</div>
+<div class="mb-3">
+    <small class="text-muted">{{rulesCount}}</small>
+</div>
 
 {{#each rules}}
-<div class="rule-card" data-tags="{{#each tags}}{{this}}{{#unless @last}},{{/unless}}{{/each}}">
-    <div class="rule-header">
-        <h5 class="rule-title">{{title}}</h5>
-        <div class="rule-badges">
+<div class="card mb-3" data-tags="{{#each tags}}{{this}}{{#unless @last}},{{/unless}}{{/each}}">
+    <div class="card-header d-flex justify-content-between align-items-center py-2">
+        <span class="fw-bold">{{title}}</span>
+        <div class="d-flex flex-wrap gap-1">
             {{#each badges}}
-            <span class="rule-badge {{class}}">{{text}}</span>
+            <span class="badge badge-{{class}}">{{text}}</span>
             {{/each}}
         </div>
     </div>
-    <div class="rule-content">
-        <div class="rule-description">
-            {{#if (isArray description)}}
-                {{#each description}}
-                <p>{{{this}}}</p>
-                {{/each}}
-            {{else}}
-                <p>{{{description}}}</p>
-            {{/if}}
-        </div>
+    <div class="card-body">
+        {{#if (isArray description)}}
+            {{#each description}}
+            <p class="card-text">{{{this}}}</p>
+            {{/each}}
+        {{else}}
+            <p class="card-text">{{{description}}}</p>
+        {{/if}}
     </div>
 </div>
 {{/each}} 

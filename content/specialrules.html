@@ -1,13 +1,20 @@
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <h2>Special Rules</h2>
-    <div class="d-flex align-items-center flex-wrap">
-        <div class="btn-group mr-3 mb-2" role="group" aria-label="Rule Filter" id="tag-filters">
-            <button type="button" class="btn btn-outline-secondary active" data-filter="all">All</button>
-            <!-- Dynamic tag buttons will be inserted here -->
+<div class="mb-4">
+    <h2 class="mb-3">Special Rules</h2>
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-9 mb-2">
+            <div class="d-flex flex-wrap align-items-center">
+                <label class="form-label me-2 mb-1">Filter by type:</label>
+                <div class="btn-group btn-group-sm flex-wrap" role="group" aria-label="Rule Filter" id="tag-filters">
+                    <button type="button" class="btn btn-outline-secondary active" data-filter="all">All</button>
+                    <!-- Dynamic tag buttons will be inserted here -->
+                </div>
+            </div>
         </div>
-        <div class="custom-control custom-switch mb-2">
-            <input type="checkbox" class="custom-control-input" id="excludeCore" checked>
-            <label class="custom-control-label" for="excludeCore">Exclude Core</label>
+        <div class="col-12 col-lg-3 mb-2">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="excludeCore" checked>
+                <label class="form-check-label" for="excludeCore">Exclude Core</label>
+            </div>
         </div>
     </div>
 </div>
@@ -26,107 +33,19 @@
 </div>
 
 <style>
-/* Custom styling for the special rules page */
-.rule-card {
-    border: 1px solid #dee2e6;
-    border-radius: 0.375rem;
-    margin-bottom: 1rem;
-    background: #fff;
-    transition: all 0.2s ease-in-out;
-}
-
-.rule-card:hover {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    border-color: #adb5bd;
-}
-
-.rule-header {
-    background: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
-    padding: 0.75rem 1rem;
-    border-radius: 0.375rem 0.375rem 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.rule-title {
-    font-weight: 600;
-    color: #495057;
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-.rule-badge {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
-    font-weight: 500;
-}
-
-/* Default styling for all badges */
-.rule-badge {
-    background-color: #6c757d;
-    color: white;
-}
-
-/* Specific styling for known tag types */
-.rule-badge.unit { background-color: #007bff; color: white; }
-.rule-badge.weapon { background-color: #ffc107; color: #212529; }
-.rule-badge.army { background-color: #6c757d; color: white; }
-.rule-badge.core { background-color: #e9ecef; color: #6c757d; }
-.rule-badge.formation { background-color: #28a745; color: white; }
-
-.rule-badges {
-    display: flex;
-    gap: 0.25rem;
+/* Minimal custom styling - mostly using Bootstrap defaults */
+.btn-group.flex-wrap {
     flex-wrap: wrap;
 }
 
-/* Dynamic filter buttons layout */
-#tag-filters {
-    flex-wrap: wrap;
-    gap: 0.25rem;
-}
-
-#tag-filters .btn {
+.btn-group.flex-wrap .btn {
+    margin-right: 0.25rem;
     margin-bottom: 0.25rem;
 }
 
-.rule-content {
-    padding: 1rem;
-}
-
-.rule-description {
-    margin: 0;
-    line-height: 1.6;
-    color: #495057;
-}
-
-.rule-description ul {
-    margin: 0.5rem 0;
-    padding-left: 1.5rem;
-}
-
-.rule-description li {
-    margin-bottom: 0.25rem;
-}
-
-.custom-control-label {
-    color: #6c757d;
-    font-size: 0.9rem;
-}
-
-.btn-outline-secondary.active {
-    background-color: #6c757d;
-    border-color: #6c757d;
-    color: white;
-}
-
-#rules-count {
-    color: #6c757d;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+/* Small gap utility for older Bootstrap versions */
+.gap-1 > * + * {
+    margin-left: 0.25rem;
 }
 </style>
 
@@ -146,6 +65,24 @@ $(document).ready(function() {
             $('#rules-container').html('<div class="alert alert-danger">Failed to load special rules data.</div>');
         });
     
+    // Map rule tags to Bootstrap badge classes
+    function getBadgeClass(tag) {
+        const badgeMap = {
+            'unit': 'primary',
+            'weapon': 'warning',
+            'army': 'secondary', 
+            'core': 'light',
+            'formation': 'success',
+            'legion': 'info',
+            'loyalist': 'primary',
+            'traitor': 'danger',
+            'alpha': 'dark',
+            'titan': 'secondary',
+            'offboard': 'secondary'
+        };
+        return badgeMap[tag] || 'secondary';
+    }
+    
     function prepareRulesForTemplate(rules, totalRules) {
         // Sort rules alphabetically by title (case-insensitive)
         const sortedRules = rules.slice().sort(function(a, b) {
@@ -160,7 +97,7 @@ $(document).ready(function() {
                 if (rule.tags && Array.isArray(rule.tags)) {
                     rule.tags.forEach(function(tag) {
                         badges.push({
-                            class: tag,
+                            class: getBadgeClass(tag),
                             text: tag.charAt(0).toUpperCase() + tag.slice(1)
                         });
                     });
