@@ -49,16 +49,12 @@
         "Spartan|Lascannon|Destroyer",
         "Kratos|Battle Tank|Melta",
         "Fellblade Super-Heavy Tank"
-      ],
-      "unitRules": [
       ]
     },
     {
       "from": "LegioCybernetica.json",
       "units": [
         "Tarantula|Lascannon|Bolter|Hyperios"
-      ],
-      "unitRules": [
       ]
     },
     {
@@ -68,9 +64,6 @@
         "Xiphon Interceptor",
         "Fire Raptor|Heavy Bolter|Autocannon|Lascannon",
         "Storm Eagle"
-      ],
-      "unitRules": [
-
       ]
     },
         {
@@ -81,8 +74,6 @@
         "Orbital Barrage",
         "Artillery Barrage",
         "Artillery Blind Barrage"
-      ],
-      "unitRules": [
       ]
     },
     {
@@ -94,8 +85,6 @@
         "Reaver Battle Titan",
         "Warlord Battle Titan",
         "Warlord-Sinister Psi-Titan"
-      ],
-      "unitRules": [
       ]
     },
     {
@@ -109,9 +98,6 @@
         "Charonite Ogryns",
         "Aethon Heavy Sentinel|Multi-Laser|Flamer|Autocannon",
         "Leman Russ|Battle Tank|Vanquisher|Annihilator|Exterminator"
-      ],
-      "unitRules": [
-        "Army of Mankind"
       ]
     }
   ],

@@ -21,36 +21,22 @@ var eaTemplating = {
         // Load weapons data
         $.get("lists/weapons.json").done(function (data) {
             eaTemplating.weaponsData = {
-                weapons: {},
-                rules: {}
+                weapons: {}
             };
             
-            if (data.rules) {
-                data.rules.forEach(function(rule) {
-                    eaTemplating.weaponsData.rules[rule.name] = rule;
-                });
-            }
-            
-            if (data.weapons) {
+            if (data.weapons && Array.isArray(data.weapons)) {
                 data.weapons.forEach(function(weapon) {
-                    // Process special rules for weapons
-                    weapon.modes.forEach(function(mode) {
-                        if (mode.specialRules) {
-                            mode.specialRules = mode.specialRules.map(function(sRule) {
-                                if (eaTemplating.weaponsData.rules[sRule]) {
-                                    return eaTemplating.weaponsData.rules[sRule];
-                                } else {
-                                    return {
-                                        "name": sRule,
-                                        "description": "Unknown special rule " + sRule
-                                    };
-                                }
-                            });
-                        }
-                    });
-                    eaTemplating.weaponsData.weapons[weapon.name] = weapon;
+                    if (weapon && weapon.name) {
+                        eaTemplating.weaponsData.weapons[weapon.name] = weapon;
+                    }
                 });
+                
+                console.log('Weapons data loaded:', Object.keys(eaTemplating.weaponsData.weapons).length, 'weapons');
+            } else {
+                console.error('Invalid weapons data format');
             }
+        }).fail(function(jqxhr, textStatus, error) {
+            console.error('Failed to load weapons data:', error);
         });
 
         // Load units data - this will be populated when army data is loaded
@@ -197,6 +183,16 @@ var eaTemplating = {
         });
 
         Handlebars.registerHelper('specialRuleTooltip', function (ruleName) {
+            if (ruleName === undefined || ruleName === null || ruleName === '') {
+                console.warn("specialRuleTooltip received invalid ruleName:", ruleName);
+                return new Handlebars.SafeString(
+                    '<span class="special-rule-tooltip" data-tooltip="ERROR: Invalid rule name">UNDEFINED</span>'
+                );
+            }
+
+            // Convert to string in case we get a non-string value
+            ruleName = String(ruleName);
+            console.log("specialRuleTooltip", ruleName);
             var rule = eaTemplating.specialRulesData[ruleName];
             
             // If no exact match, try to find a parameterized version
@@ -273,8 +269,8 @@ var eaTemplating = {
                         weapon.modes.forEach(function(mode) {
                             if (mode.specialRules && mode.specialRules.length > 0) {
                                 mode.specialRules.forEach(function(rule) {
-                                    var ruleName = rule.name || rule;
-                                    if (allSpecialRules.indexOf(ruleName) === -1) {
+                                    var ruleName = rule && rule.name ? rule.name : rule;
+                                    if (ruleName && typeof ruleName === 'string' && allSpecialRules.indexOf(ruleName) === -1) {
                                         allSpecialRules.push(ruleName);
                                     }
                                 });
@@ -512,6 +508,7 @@ var eaTemplating = {
 
         // Helper to parse weapon string and return weapon object
         Handlebars.registerHelper('parseWeapon', function (weaponString) {
+            console.log("parseWeapon", weaponString);
             if (typeof weaponString !== 'string') {
                 return weaponString; // Already an object
             }
@@ -532,18 +529,20 @@ var eaTemplating = {
                 }
                 
                 // Add extra special rules if specified
-                if (specialRule && eaTemplating.weaponsData.rules && eaTemplating.weaponsData.rules[specialRule]) {
+                if (specialRule) {
                     weaponObject.modes.forEach(function (mode) {
                         if (!mode.specialRules) {
                             mode.specialRules = [];
                         }
-                        mode.specialRules.push(eaTemplating.weaponsData.rules[specialRule]);
+                        mode.specialRules.push(specialRule);
                     });
                 }
-                
+
+                console.log("Parsed weapon object:", weaponObject);
                 return weaponObject;
             }
-            
+
+            console.error("Weapon not found in data:", weaponName);
             // Fallback for unknown weapons
             return {
                 "name": weaponName,
@@ -656,16 +655,16 @@ var eaTemplating = {
                 }
                 
                 // Try to find the rule definition
-                var rule = eaTemplating.specialRulesData[ruleName] || eaTemplating.weaponsData.rules[ruleName];
+                var rule = eaTemplating.specialRulesData[ruleName];
                 
                 // If no exact match found, try with the normalized template name
                 if (!rule && normalizedName !== ruleName) {
-                    rule = eaTemplating.specialRulesData[normalizedName] || eaTemplating.weaponsData.rules[normalizedName];
+                    rule = eaTemplating.specialRulesData[normalizedName];
                     
                     // If still not found, try with space before parentheses
                     if (!rule) {
                         var spaceVersion = ruleName.replace(/\s*\([^)]+\)/g, ' (x)');
-                        rule = eaTemplating.specialRulesData[spaceVersion] || eaTemplating.weaponsData.rules[spaceVersion];
+                        rule = eaTemplating.specialRulesData[spaceVersion];
                     }
                 }
                 
@@ -720,8 +719,10 @@ var eaTemplating = {
                             weapon.modes.forEach(function(mode) {
                                 if (mode.specialRules && Array.isArray(mode.specialRules)) {
                                     mode.specialRules.forEach(function(rule) {
-                                        var ruleName = rule.name || rule;
-                                        addRule(ruleName, 'weapon');
+                                        var ruleName = rule && rule.name ? rule.name : rule;
+                                        if (ruleName && typeof ruleName === 'string') {
+                                            addRule(ruleName, 'weapon');
+                                        }
                                     });
                                 }
                             });
@@ -832,16 +833,16 @@ var eaTemplating = {
                 }
                 
                 // Try to find the rule definition
-                var rule = eaTemplating.specialRulesData[ruleName] || eaTemplating.weaponsData.rules[ruleName];
+                var rule = eaTemplating.specialRulesData[ruleName];
                 
                 // If no exact match found, try with the normalized template name
                 if (!rule && normalizedName !== ruleName) {
-                    rule = eaTemplating.specialRulesData[normalizedName] || eaTemplating.weaponsData.rules[normalizedName];
+                    rule = eaTemplating.specialRulesData[normalizedName];
                     
                     // If still not found, try with space before parentheses
                     if (!rule) {
                         var spaceVersion = ruleName.replace(/\s*\([^)]+\)/g, ' (x)');
-                        rule = eaTemplating.specialRulesData[spaceVersion] || eaTemplating.weaponsData.rules[spaceVersion];
+                        rule = eaTemplating.specialRulesData[spaceVersion];
                     }
                 }
                 
@@ -895,8 +896,10 @@ var eaTemplating = {
                                             weapon.modes.forEach(function(mode) {
                                                 if (mode.specialRules && Array.isArray(mode.specialRules)) {
                                                     mode.specialRules.forEach(function(rule) {
-                                                        var ruleName = rule.name || rule;
-                                                        addRule(ruleName);
+                                                        var ruleName = rule && rule.name ? rule.name : rule;
+                                                        if (ruleName && typeof ruleName === 'string') {
+                                                            addRule(ruleName);
+                                                        }
                                                     });
                                                 }
                                             });
@@ -994,55 +997,33 @@ var eaTemplating = {
     // Function to ensure weapons data is loaded
     ensureWeaponsDataLoaded: function() {
         return new Promise(function(resolve, reject) {
-            if (eaTemplating.weaponsData.weapons && Object.keys(eaTemplating.weaponsData.weapons).length > 100) {
+            // Simple check - if we have any weapons loaded, we're good
+            if (eaTemplating.weaponsData.weapons && Object.keys(eaTemplating.weaponsData.weapons).length > 50) {
                 resolve();
                 return;
             }
             
-            $.get("lists/weapons.json").done(function (data) {
-                eaTemplating.weaponsData = {
-                    weapons: {},
-                    rules: {}
-                };
-                
-                if (data.rules) {
-                    data.rules.forEach(function(rule) {
-                        eaTemplating.weaponsData.rules[rule.name] = rule;
-                    });
-                }
-                
-                if (data.weapons) {
-                    data.weapons.forEach(function(weapon) {
-                        if (weapon.modes) {
-                            weapon.modes.forEach(function(mode) {
-                                if (mode.specialRules) {
-                                    mode.specialRules = mode.specialRules.map(function(sRule) {
-                                        if (eaTemplating.weaponsData.rules[sRule]) {
-                                            return eaTemplating.weaponsData.rules[sRule];
-                                        } else {
-                                            return {
-                                                "name": sRule,
-                                                "description": "Unknown special rule " + sRule
-                                            };
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                        eaTemplating.weaponsData.weapons[weapon.name] = weapon;
-                    });
-                }
-                
-                var weaponCount = Object.keys(eaTemplating.weaponsData.weapons).length;
-                if (weaponCount < 50) {
-                    reject('Weapons data appears incomplete');
+            // Wait for up to 5 seconds for the initial load to complete
+            var maxWaitTime = 5000; // 5 seconds
+            var checkInterval = 100; // Check every 100ms
+            var totalWaitTime = 0;
+            
+            var waitForLoad = function() {
+                if (eaTemplating.weaponsData.weapons && Object.keys(eaTemplating.weaponsData.weapons).length > 50) {
+                    resolve();
                     return;
                 }
                 
-                resolve();
-            }).fail(function(jqxhr, textStatus, error) {
-                reject(error);
-            });
+                totalWaitTime += checkInterval;
+                if (totalWaitTime >= maxWaitTime) {
+                    reject('Weapons data failed to load within expected time');
+                    return;
+                }
+                
+                setTimeout(waitForLoad, checkInterval);
+            };
+            
+            waitForLoad();
         });
     },
 

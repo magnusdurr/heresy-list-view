@@ -20,13 +20,13 @@
                             <td>{{appendOnNumber range 'cm'}}</td>
                             <td>
                                 {{#if firepower}}
-                                    {{firepower}}{{#each specialRules}}, <i>{{specialRuleTooltip name}}</i>{{/each}}
+                                    {{firepower}}{{#each specialRules}}, <i>{{specialRuleTooltip this}}</i>{{/each}}
                                 {{else}}
-                                    {{#each specialRules}}
-                                        {{#if @first}}
-                                            <i>{{specialRuleTooltip name}}</i>
-                                        {{else}}, <i>{{specialRuleTooltip name}}</i>{{/if}}
-                                    {{/each}}
+                                                        {{#each specialRules}}
+                        {{#if @first}}
+                            <i>{{specialRuleTooltip this}}</i>
+                        {{else}}, <i>{{specialRuleTooltip this}}</i>{{/if}}
+                    {{/each}}
                                 {{/if}}
                             </td>
                         </tr>
@@ -61,7 +61,7 @@
                                     </td>
                                     <td>{{appendOnNumber range 'cm'}}</td>
                                     <td>
-                                        {{firepower}}{{#each specialRules}}, <i><small>{{specialRuleTooltip name}}</small></i>{{/each}}
+                                        {{firepower}}{{#each specialRules}}, <i><small>{{specialRuleTooltip this}}</small></i>{{/each}}
                                     </td>
                                 </tr>
                             {{/each}}
