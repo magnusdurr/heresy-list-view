@@ -135,15 +135,6 @@ var eaTemplating = {
             }
         });
 
-        Handlebars.registerHelper('upgrade', function (context, options) {
-            if (options.data) {
-                var data = Handlebars.createFrame(options.data);
-                data.options = context.options !== undefined ? context.options.length : 0;
-            }
-
-            return options.fn(context, {data: data})
-        });
-
         Handlebars.registerHelper('join', function (array, separator) {
             if (array && Array.isArray(array)) {
                 return array.join(separator || ', ');
