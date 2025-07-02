@@ -2,6 +2,7 @@
   "index": [
     {
       "section": "Legiones Astartes - Loyalist",
+      "color": "badge-primary",
       "index": [
         {
           "name": "",
@@ -9,12 +10,14 @@
           "lists": [
             {
               "name": "Ultramarines",
+              "description": "XIII legion",
               "file": "Ultramarines",
               "status": "approved",
               "img": "images/Legions_Ultramarines.jpg"
             },
             {
               "name": "Imperial Fists",
+              "description": "VII legion",
               "file": "ImperialFists",
               "status": "beta",
               "img": "images/Legions_ImperialFists.JPG"
@@ -25,6 +28,7 @@
     },
     {
       "section": "Legiones Astartes - Traitor",
+      "color": "badge-danger",
       "index": [
         {
           "name": "",
@@ -32,12 +36,14 @@
           "lists": [
             {
               "name": "Sons of Horus",
+              "description": "XVI legion",
               "file": "SonsofHorus",
               "status": "approved",
               "img": "images/Legions_SonsOfHorus.jpg"
             },
             {
               "name": "Emperor's Children",
+              "description": "III legion",
               "file": "EmperorsChildren",
               "status": "beta",
               "img": "images/Legions_EmperorsChildren.jpg"
@@ -46,56 +52,48 @@
         }
       ]
     },
-    
     {
       "section": "Imperialis Auxilia",
+      "color": "badge-success",
       "index": [
-          {
+        {
           "name": "Solar Auxilia",
           "abbreviation": "SolarAuxilia",
           "lists": [
             {
-              "name": "Saturnyne Rams (I-Xth CoH)",
+              "name": "Saturnyne Rams",
+              "description": "IX cohort",
               "file": "SaturnyneRams",
               "status": "beta",
               "img": "images/Auxilia_SaturnyneRams.png"
-            }
-          ]
-        },
-        {
-          "name": "Solar Auxilia",
-          "abbreviation": "SolarAuxilia",
-          "lists": [
+            },
             {
-              "name": "Cthonian Headhunters (CXLII CoH)",
+              "name": "Cthonian Headhunters",
+              "description": "CXLII cohort",
               "file": "CthonianHeadhunters",
               "status": "approved",
               "img": "images/Auxilia_CthonianHeadHunters.png"
-            }
-          ]
-        },
-        {
-          "name": "Solar Auxilia",
-          "abbreviation": "SolarAuxilia",
-          "lists": [
+            },
             {
-              "name": "Calth High Guard (CCLVth CoH)",
+              "name": "Calth High Guard",
+              "description": "CCLV cohort",
               "file": "CalthHighGuard",
               "status": "approved",
               "img": "images/Auxilia_CalthHighGuard.png"
             }
-         ]
+          ]
         }
       ]
     },
     {
       "section": "Imperialis Militia",
+      "color": "badge-warning",
       "index": [
         {
           "name": "Imperialis Militia",
           "abbreviation": "Imperialis Militia",
           "lists": [
-              {
+            {
               "name": "Aquila Asterius",
               "file": "AquilaAsterius",
               "status": "approved",
@@ -113,8 +111,9 @@
     },
     {
       "section": "Mechanicum",
+      "color": "badge-info",
       "index": [
-              {
+        {
           "name": "Taghmata Omnissiah",
           "abbreviation": "TaghmataOmnissiah",
           "lists": [
@@ -172,6 +171,7 @@
     },
     {
       "section": "Dark Mechanicus",
+      "color": "badge-dark",
       "index": [
         {
           "name": "",

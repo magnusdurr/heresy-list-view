@@ -1,25 +1,41 @@
-{{#each index}}
-<div class="text-center">
-    <h2>{{section}}</h2>
-</div>
 <div class="container">
     <div class="row">
         {{#each index}}
-        <div class="col-12 d-block d-sm-none text-center" style="margin-top: 15px"><h5>{{name}}</h5></div>
+        {{#each index}}
         {{#each lists}}
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" style="margin-top: 10px">
-            <a href="content/list.html?race={{../abbreviation}}&list={{file}}">
-                <img class="img-responsive" style="width:100%" src="{{img}}" alt="{{name}}"/>
-                <small>
-                    <span class="d-none d-sm-inline">{{../name}}<br></span>
-                    {{name}}
-                    <br class="d-none d-sm-inline">
-                    {{#if (not status "approved")}}<i>{{status}}</i>{{/if}}
-                </small>
-            </a>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" style="margin-top: 15px;">
+            <div class="card h-100 border-0 shadow-sm" style="transition: transform 0.2s;">
+                <div class="card-header p-1 bg-transparent border-0">
+                    <span class="badge {{../../color}}" style="font-size: 0.7em;">
+                        {{../../section}}
+                    </span>
+                </div>
+                <a href="content/list.html?race={{../abbreviation}}&list={{file}}" 
+                    class="text-decoration-none text-dark"
+                    onmouseover="this.parentElement.style.transform='scale(1.05)'"
+                    onmouseout="this.parentElement.style.transform='scale(1)'">
+
+                    <img class="card-img-top" style="height: 150px; max-width: 100%; object-fit: contain;" src="{{img}}" alt="{{name}}"/>
+
+                    <div class="card-body p-2">
+                        <div class="text-center">
+                            <small class="d-block">
+                                <b>{{name}}</b>
+                                {{#if description}}
+                                    <br>
+                                    <small class="text-muted">{{description}}</small>
+                                {{/if}}
+                            </small>
+                            {{#if (not status "approved")}}
+                                <small><em class="text-warning">{{status}}</em></small>
+                            {{/if}}
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
+        {{/each}}
         {{/each}}
         {{/each}}
     </div>
 </div>
-{{/each}}
