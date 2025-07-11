@@ -936,7 +936,20 @@
           "upgrades": [
             {
               "replace": {
-                "removeName": "Battle Weapon",
+                "removeName": "Carapace Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Arm Battle Weapon",
                 "removeCount": 1,
                 "options": [
                   {
