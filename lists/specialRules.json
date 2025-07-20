@@ -566,7 +566,7 @@
     {
       "title": "Crippling",
       "description": [
-        "A weapon with the 'Crippling' special rule causes critical hits on War Engines on a 5+."
+        "A weapon with the 'Crippling' special rule causes critical hits on War Engines on a 5+. Any damage caused by these critical hits also counts as being 'Crippling'."
       ],
       "tags": ["weapon"]
     },
