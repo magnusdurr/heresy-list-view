@@ -616,7 +616,7 @@
       "name": "Kalliope Heavy Mortar",
       "modes": [
         {
-          "firepower": "1BP",
+          "firepower": "AP4+/AT6+",
           "range": 30,
           "specialRules": [
             "Ind",
@@ -629,9 +629,10 @@
       "name": "Howitzer Cannon",
       "modes": [
         {
-          "firepower": "1BP",
+          "firepower": "AP4+/AT5+",
           "range": 45,
           "specialRules": [
+            "Siege",
             "Ind"
           ]
         }
@@ -644,14 +645,7 @@
           "firepower": "AP4+/AT5+",
           "range": 90,
           "specialRules": [
-            "Siege"
-          ]
-        },
-        {
-          "firepower": "1BP",
-          "join": "or",
-          "range": 60,
-          "specialRules": [
+            "Siege",
             "Ind"
           ]
         }
@@ -673,17 +667,10 @@
       "name": "Twin Earthshaker Cannon",
       "modes": [
         {
-          "firepower": "AP3+/AT5+",
+          "firepower": "AP3+/AT4+",
           "range": 90,
           "specialRules": [
-            "Siege"
-          ]
-        },
-        {
-          "firepower": "2BP",
-          "join": "or",
-          "range": 60,
-          "specialRules": [
+            "Siege",
             "Ind"
           ]
         }
@@ -693,10 +680,11 @@
       "name": "Twin Earthshaker Cannon ",
       "modes": [
         {
-          "firepower": "AP3+/AT5+",
+          "firepower": "AP3+/AT4+",
           "range": 90,
           "specialRules": [
-            "Siege"
+            "Siege",
+            "Ind"
           ]
         }
       ]
@@ -707,15 +695,6 @@
         {
           "firepower": "AP3+/AT5+",
           "range": 60,
-          "specialRules": [
-            "IC",
-            "Siege"
-          ]
-        },
-        {
-          "firepower": "1BP",
-          "join": "or",
-          "range": 45,
           "specialRules": [
             "Ind",
             "IC",
@@ -741,13 +720,13 @@
       "name": "Colossus Siege Mortar",
       "modes": [
         {
-          "firepower": "2BP",
+          "firepower": "AP3+/AT5+",
           "range": 45,
           "specialRules": [
             "Ind",
             "IC",
             "Siege",
-            "Slow"
+            "Disrupt"
           ]
         }
       ]

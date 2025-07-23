@@ -151,7 +151,7 @@
                   {
                     "addNames": ["Malcador"],
                     "addCount": 1,
-                    "upgradePoints": 2
+                    "upgradePoints": 1
                   },
                   {
                     "addNames": ["Auxilia Lasrifle Squad"],
@@ -205,7 +205,7 @@
                   {
                     "addNames": ["Malcador"],
                     "addCount": 1,
-                    "upgradePoints": 2
+                    "upgradePoints": 1
                   },
                   {
                     "addNames": ["Auxilia Lasrifle Squad"],
@@ -985,17 +985,17 @@
                   {
                     "addNames": ["Legion Support Squad|Plasma"],
                     "addCount": 2,
-                    "upgradePoints": 1
+                    "upgradePoints": 0
                   },
                   {
                     "addNames": ["Legion Heavy Support Squad|Missile Launcher"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 1
                   },
                   {
                     "addNames": ["Contemptor Dreadnought"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 1
                   }
                 ]
               }

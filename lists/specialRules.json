@@ -566,7 +566,7 @@
     {
       "title": "Crippling",
       "description": [
-        "A weapon with the 'Crippling' special rule causes critical hits on War Engines on a 5+. Any damage caused by these critical hits also counts as being 'Crippling'."
+        "A weapon with the 'Crippling' special rule causes critical hits on War Engines on a 5+."
       ],
       "tags": ["weapon"]
     },
@@ -870,30 +870,23 @@
     {
       "title": "Subterranean Assault",
       "description": [
-        "A Subterranean Assault may only enter the battlefield through an Offboard Support action. Place a tunneling marker with its center within 5 cm of the unit with the 'Vox-Caster' special rule.",
-        "The tunneling marker may only be placed on the friendly half of the battlefield during the first turn but can be anywhere on the battlefield from the second turn onwards.",
-        "Once the Subterranean Assault arrives at the battlefield, move the tunneling marker up to 15 cm in any direction that does not place it in an enemy zone of control or inside terrain that is impassable for AV and/or WE. Then place the unit(s) transporting the Subterranean Assault fully within 10 cm of the centre of the tunneling marker with the transported units inside. The surfacing of a Subterranean Assault transport is not considered to be movement for the purposes of Overwatch, and does not count as an action for the formation."
+        "A Subterranean Assault may only enter the battlefield through an Offboard Support action. Unlike other Offboard Support Actions a Subterranean Assault will arrive immediately. Place the unit(s) transporting the Subterranean Assault fully within 20 cm of the unit with Vox-Caster that performed the Offboard Support action. You may then disembark any units inside." 
+        "The surfacing of a Subterranean Assault transport, as well as any disembarkment of the units inside, is not considered to be movement for the purposes of Overwatch.",
+        "Surfacing a Subterranean Assault does not count as an action for the tunneling formation, but still counts as retaining the initiative."
       ],
       "tags": ["formation", "offboard"]
     },
     {
       "title": "Ordinatus Aktaeus Subterranean Assault",
       "description": [
-        "An Ordinatus Aktaeus Burrowing Transport has the 'Assault Transport(8)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
+        "An Ordinatus Aktaeus Burrowing Transport has the 'Assault Transport(8)' special rule. It will enter play using the 'Subterranean Assault' special rule."
       ],
       "tags": ["formation", "offboard"]
     },
     {
       "title": "Hellbore Subterranean Assault",
       "description": [
-        "A Hellbore Burrowing Transport has the 'Assault Transport(12)' special rule. Any formation transported inside must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
-      ],
-      "tags": ["formation", "offboard"]
-    },
-    {
-      "title": "Ordinatus Aktaeus Subterranean Assault",
-      "description": [
-        "Any non-allied formation consisting completely of units of INF, and/or LV & AV with the 'Nimble' special rules and is no more than eight units large may be mounted in an Ordinatus Aktaeus Burrowing Transport. These must be placed in the reserves after objectives have been placed, but before garrisons. It will enter play using the 'Tunnelers' special rule. The Hellbore Burrowing Transport does not count as part of the formation it transports after entering the battlefield, but acts like any WE transport."
+        "A Hellbore Burrowing Transport has the 'Assault Transport(12)' special rule. It will enter play using the 'Subterranean Assault' special rule."
       ],
       "tags": ["formation", "offboard"]
     },
