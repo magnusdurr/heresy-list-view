@@ -1191,7 +1191,7 @@
         "speed": 15,
         "armour": 3,
         "cc": 3,
-        "ff": 3,
+        "ff": 4,
             "weapons": [
           "Kheres Assault Cannon",
           "Gravis Power Fist"

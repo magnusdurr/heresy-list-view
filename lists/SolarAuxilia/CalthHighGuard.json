@@ -159,6 +159,11 @@
                     "upgradePoints": 2
                   },
                   {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
                     "addNames": ["Termite Assault Drill"],
                     "addCount": 3,
                     "upgradePoints": 2
@@ -171,7 +176,7 @@
           "upgradePoints": 1
         },
         {
-          "name": "1+ Auxilia Lasrifle Tercio",
+          "name": "Auxilia Lasrifle Tercio",
           "unitSpec": {
             "Auxilia Captain": 1,
             "Auxilia Command Squad|Calth": 1,
@@ -209,6 +214,11 @@
                   },
                   {
                     "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
                     "addCount": 4,
                     "upgradePoints": 2
                   },

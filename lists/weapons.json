@@ -3405,8 +3405,8 @@
       "name": "Neutron Beam Laser",
       "modes": [
         {
-          "firepower": "3x AP6+/AT5+",
-          "range": 30,
+          "firepower": "AP6+/AT4+",
+          "range": 60,
           "specialRules": [
             "Shield Disruptor",
             "Disrupt",
