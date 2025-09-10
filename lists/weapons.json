@@ -642,10 +642,9 @@
       "name": "Earthshaker Cannon",
       "modes": [
         {
-          "firepower": "AP4+/AT5+",
+          "firepower": "AP4+/AT4+",
           "range": 90,
           "specialRules": [
-            "Siege",
             "Ind"
           ]
         }
@@ -655,10 +654,9 @@
       "name": "Earthshaker Cannon ",
       "modes": [
         {
-          "firepower": "AP4+/AT5+",
+          "firepower": "AP4+/AT4+",
           "range": 90,
           "specialRules": [
-            "Siege"
           ]
         }
       ]
@@ -667,10 +665,9 @@
       "name": "Twin Earthshaker Cannon",
       "modes": [
         {
-          "firepower": "AP3+/AT4+",
+          "firepower": "AP3+/AT3+",
           "range": 90,
           "specialRules": [
-            "Siege",
             "Ind"
           ]
         }
@@ -680,10 +677,9 @@
       "name": "Twin Earthshaker Cannon ",
       "modes": [
         {
-          "firepower": "AP3+/AT4+",
+          "firepower": "AP3+/AT3+",
           "range": 90,
           "specialRules": [
-            "Siege",
             "Ind"
           ]
         }
@@ -693,7 +689,7 @@
       "name": "Medusa Siege Gun",
       "modes": [
         {
-          "firepower": "AP3+/AT5+",
+          "firepower": "AP4+/AT5+",
           "range": 60,
           "specialRules": [
             "Ind",
@@ -707,8 +703,8 @@
       "name": "Medusa Siege Gun ",
       "modes": [
         {
-          "firepower": "AP3+/AT5+",
-          "range": 45,
+          "firepower": "AP4+/AT5+",
+          "range": 60,
           "specialRules": [
             "IC",
             "Siege"
