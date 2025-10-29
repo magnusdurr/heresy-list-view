@@ -121,26 +121,59 @@
           "unitSpec": {
             "Auxilia Legate Marshal": 1,
             "Auxilia Command Squad|Calth": 1,
-            "Auxilia Lasrifle Squad": 4,
-            "Auxilia Flamer Squad": 1
+            "Auxilia Lasrifle Squad": 7
           },
           "upgrades": [
-            {
+          {
               "add": {
                 "options": [
                   {
                     "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
+                    "addCount": 4,
+                    "upgradePoints": 2
                   },
                   {
                     "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+          },
+          {
+              "replace": {
+                "removeName": "Lasrifle Squad",
+                "removeCount": 4,
+                "options": [
+                     {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Charonite Ogryns"],
                     "addCount": 2,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Veletarii"],
+                    "addCount": 4,
                     "upgradePoints": 1
-                  },
+                     }
+                  ]
+               }
+            },
+            {
+              "add": {
+                "options": [
                   {
                     "addNames": ["Charonite Ogryns"],
-                    "addCount": 1,
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Veletarii"],
+                    "addCount": 2,
                     "upgradePoints": 1
                   },
                   {
@@ -149,23 +182,18 @@
                     "upgradePoints": 1
                   },
                   {
+                    "addNames": ["Cyclops"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
                     "addNames": ["Malcador"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 4,
-                    "upgradePoints": 2
-                  },
-                  {
-                    "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 4,
-                    "upgradePoints": 2
+                    "addCount": 2,
+                    "upgradePoints": 3
                   },
                   {
                     "addNames": ["Termite Assault Drill"],
-                    "addCount": 3,
+                    "addCount": 4,
                     "upgradePoints": 2
                   }
                 ]
@@ -180,26 +208,43 @@
           "unitSpec": {
             "Auxilia Captain": 1,
             "Auxilia Command Squad|Calth": 1,
-            "Auxilia Lasrifle Squad": 4,
-            "Auxilia Flamer Squad": 1
+            "Auxilia Lasrifle Squad": 7
           },
           "upgrades": [
+            {
+              "replace": {
+                "removeName": "Lasrifle Squad",
+                "removeCount": 4,
+                "options": [
+                     {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Veletarii"],
+                    "addCount": 4,
+                    "upgradePoints": 1
+                     }
+                  ]
+               }
+            },
             {
               "add": {
                 "options": [
                   {
-                    "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
                     "addNames": ["Charonite Ogryns"],
-                    "addCount": 1,
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Veletarii"],
+                    "addCount": 2,
                     "upgradePoints": 1
                   },
                   {
@@ -208,23 +253,18 @@
                     "upgradePoints": 1
                   },
                   {
+                    "addNames": ["Cyclops"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
                     "addNames": ["Malcador"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 4,
-                    "upgradePoints": 2
-                  },
-                  {
-                    "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 4,
-                    "upgradePoints": 2
+                    "addCount": 2,
+                    "upgradePoints": 3
                   },
                   {
                     "addNames": ["Termite Assault Drill"],
-                    "addCount": 3,
+                    "addCount": 4,
                     "upgradePoints": 2
                   }
                 ]
@@ -245,9 +285,35 @@
               "add": {
                 "options": [
                   {
+                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
                     "addNames": ["Cyclops"],
                     "addCount": 2,
                     "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 2,
+                    "upgradePoints": 2
                   }
                 ]
               }
@@ -267,7 +333,12 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Cyclops"],
+                    "addNames": ["Veletarii"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Hermes Light Sentinel Squadron"],
                     "addCount": 2,
                     "upgradePoints": 1
                   }
@@ -275,7 +346,8 @@
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         }
       ]
     },
@@ -296,9 +368,20 @@
                     "addNames": ["Auxilia Adjutant"],
                     "addCount": 1,
                     "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Hermes Light Sentinel Squadron"],
+                    "addCount": 2,
+                    "upgradePoints": 1
                   },
                   {
-                    "addNames": ["Cyclops"],
+                    "addNames": ["Veletarii"],
                     "addCount": 2,
                     "upgradePoints": 1
                   }
@@ -314,6 +397,28 @@
             "Veletarii": 4
           },
           "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Adjutant"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veletarii"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
             {
               "add": {
                 "options": [
@@ -340,7 +445,7 @@
                   {
                     "addNames": ["Termite Assault Drill"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 1
                   }
                 ]
               }
@@ -359,14 +464,9 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Auxilia Lasrifle Squad"],
+                    "addNames": ["Charonite Ogryns"],
                     "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
+                    "upgradePoints": 2
                   },
                   {
                     "addNames": ["Veletarii"],
@@ -392,6 +492,17 @@
           },
           "upgrades": [
             {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Adjutant"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
               "replace": {
                 "removeName": "Auxilia Rapier|Laser Destroyer",
                 "removeCount": 4,
@@ -413,14 +524,9 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Cyclops"],
+                    "addNames": ["Tarantula"],
                     "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Auxilia Adjutant"],
-                    "addCount": 1,
-                    "upgradePoints": 1
+                    "upgradePoints": 2
                   }
                 ]
               }
@@ -444,6 +550,17 @@
             "Leman Russ": 3
           },
           "upgrades": [
+              {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Adjutant"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
             {
               "add": {
                 "options": [
@@ -454,9 +571,31 @@
                   }
                 ]
               }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Hermes Light Sentinel Squadron"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Auxilia Artillery Battery",
@@ -509,12 +648,23 @@
             "Aethon Heavy Sentinel": 4
           },
           "upgrades": [
-            {
+              {
               "add": {
                 "options": [
                   {
                     "addNames": ["Auxilia Adjutant"],
                     "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Hermes Light Sentinel Squadron"],
+                    "addCount": 2,
                     "upgradePoints": 1
                   },
                   {
@@ -571,13 +721,22 @@
                     "addNames": ["Cyclops"],
                     "addCount": 2,
                     "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Hermes Light Sentinel Squadron"],
+                    "addCount": 2,
+                    "upgradePoints": 1
                   }
                 ]
               }
             }
           ],
-          "formationPoints": 1,
-          "upgradePoints": 1
+          "formationPoints": 1
         },
         {
           "name": "Auxilia Siege Artillery Battery",
@@ -585,8 +744,7 @@
             "Colossus Bombard": 3
           },
           "upgrades": [],
-          "formationPoints": 1,
-          "upgradePoints": 1
+          "formationPoints": 1
         },
         {
           "name": "Heavy Malcador Squadron",
@@ -618,6 +776,17 @@
           },
           "upgrades": [
             {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Adjutant"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
               "replace": {
                 "removeName": "Auxilia Super-Heavy Tank|Baneblade",
                 "removeCount": 1,
@@ -647,22 +816,13 @@
                     "addCount": 1,
                     "upgradePoints": 1
                   }
-                ]
-              }
-            },
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Auxilia Adjutant"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
+
                 ]
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Auxilia Leman Russ Company",
@@ -731,7 +891,8 @@
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         }
       ]
     },

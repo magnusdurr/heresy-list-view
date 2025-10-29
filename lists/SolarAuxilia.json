@@ -289,7 +289,8 @@
           "Skirmisher",
           "Walker",
           "Nimble",
-          "Blitz"
+          "Blitz",
+          "Vanguard"
         ]
       },
       {
@@ -315,14 +316,15 @@
             "cc": 6,
              "ff": 4,
             "weapons": [
-              "Heavy Flamer |2"
+              "Twin Heavy Flamer "
             ]
           }
         ],
         "specialRules": [
             "Skirmisher",
             "Walker",
-            "Nimble"
+            "Nimble",
+          "Vanguard"
         ]
       },
       {
@@ -405,7 +407,8 @@
         ],
         "specialRules": [
             "Skirmisher",
-            "Walker"
+            "Walker",
+          "Spearhead"
         ]
       },
       {
@@ -564,6 +567,7 @@
         ],
         "specialRules": [
         "Blitz",
+          "Spearhead",
           "Transport(2)"
         ]
       },
@@ -706,7 +710,8 @@
         ],
         "specialRules": [
           "Reinforced Armour",
-          "Walker"
+          "Walker",
+          "Spearhead"
         ]
       },
       {
@@ -716,7 +721,7 @@
           {
         "name": "Defender",
         "type": "WE",
-        "speed": 15,
+        "speed": 10,
         "armour": 4,
         "cc": 6,
         "ff": 2,
@@ -732,7 +737,7 @@
         "speed": 15,
         "armour": 4,
         "cc": 6,
-        "ff": 3,
+        "ff": 4,
         "weapons": [
           "Vanquisher Cannon||FwA",
           "Autocannon|3|FwA"
@@ -756,6 +761,7 @@
           "Reinforced Armour",
           "Walker"
         ],
+        "notes":  "Defender variant: Spearhead",
         "crit": "The Malcador is destroyed."
       },
       {
@@ -793,7 +799,7 @@
           {
         "name": "Infernus",
         "type": "WE",
-        "speed": 20,
+        "speed": 15,
         "armour": 5,
         "cc": 6,
         "ff": 4,
@@ -807,6 +813,7 @@
           "Damage Capacity(2)",
           "Reinforced Armour"
         ],
+        "notes":  "Infernus variant: Spearhead",
         "crit": "The unit is destroyed."
       },
       {
@@ -841,6 +848,8 @@
         "specialRules": [
           "Damage Capacity(2)",
           "Reinforced Armour",
+          "Spearhead",
+          "Vanguard",
           "Ion Shield (5+)",
           "Walker"
         ],
@@ -944,6 +953,7 @@
           "Damage Capacity(3)",
           "Reinforced Armour"
         ],
+        "notes": "Hellhammer and Stormsword Variants: Walker. Stormhammer Variant: Thick Rear Armour",
         "crit": "The Super-Heavy Tank is destroyed."
       },
       {

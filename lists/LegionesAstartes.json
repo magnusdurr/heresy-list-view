@@ -1108,7 +1108,8 @@
         "specialRules": [
           "Skimmer",
           "Mounted",
-          "Vanguard"
+          "Vanguard",
+          "Spearhead"
         ]
       },
       {
@@ -1143,7 +1144,8 @@
         "specialRules": [
           "Skirmisher",
           "Skimmer",
-          "Vanguard"
+          "Vanguard",
+          "Spearhead"
         ]
       },
          {
@@ -1178,7 +1180,8 @@
         "specialRules": [
           "Skirmisher",
           "Skimmer",
-          "Vanguard"
+          "Vanguard",
+          "Spearhead"
         ]
       },
       {
@@ -1418,6 +1421,7 @@
           }
         ],
         "specialRules": [
+        "Spearhead",
         "Transport(2)"
         ]
       },
@@ -1433,6 +1437,7 @@
         ],
         "specialRules": [
         "Blitz",
+        "Spearhead",
           "Transport(2)"
         ]
       },
@@ -1448,6 +1453,7 @@
         ],
         "specialRules": [
         "Walker",
+        "Spearhead",
           "Transport(2)"
         ]
       },
@@ -1465,6 +1471,7 @@
           "Leader",
           "Commander",
           "Vox-Caster",
+          "Spearhead",
           "Teleport Homer"
         ]
       },

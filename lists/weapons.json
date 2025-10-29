@@ -231,7 +231,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -249,7 +249,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+D3)"
+            "Extra Attacks(+D3)"
           ]
         }
       ]
@@ -619,8 +619,8 @@
           "firepower": "AP4+/AT6+",
           "range": 30,
           "specialRules": [
-            "Ind",
-            "IC"
+            "Indirect Fire",
+            "Ignore Cover"
           ]
         }
       ]
@@ -633,7 +633,7 @@
           "range": 45,
           "specialRules": [
             "Siege",
-            "Ind"
+            "Indirect Fire"
           ]
         }
       ]
@@ -645,7 +645,7 @@
           "firepower": "AP4+/AT4+",
           "range": 90,
           "specialRules": [
-            "Ind"
+            "Indirect Fire"
           ]
         }
       ]
@@ -668,7 +668,7 @@
           "firepower": "AP3+/AT3+",
           "range": 90,
           "specialRules": [
-            "Ind"
+            "Indirect Fire"
           ]
         }
       ]
@@ -680,7 +680,7 @@
           "firepower": "AP3+/AT3+",
           "range": 90,
           "specialRules": [
-            "Ind"
+            "Indirect Fire"
           ]
         }
       ]
@@ -692,8 +692,8 @@
           "firepower": "AP4+/AT5+",
           "range": 60,
           "specialRules": [
-            "Ind",
-            "IC",
+            "Indirect Fire",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -706,7 +706,7 @@
           "firepower": "AP4+/AT5+",
           "range": 60,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -719,8 +719,8 @@
           "firepower": "AP3+/AT5+",
           "range": 45,
           "specialRules": [
-            "Ind",
-            "IC",
+            "Indirect Fire",
+            "Ignore Cover",
             "Siege",
             "Disrupt"
           ]
@@ -788,7 +788,7 @@
           "firepower": "AP3+/AT4+",
           "range": 45,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -801,7 +801,7 @@
           "firepower": "3BP",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1175,7 +1175,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -1394,7 +1394,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -1412,7 +1412,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+2)"
+            "Extra Attacks(+2)"
           ]
         }
       ]
@@ -1431,7 +1431,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -1450,7 +1450,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -1469,7 +1469,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+2)"
+            "Extra Attacks(+2)"
           ]
         }
       ]
@@ -1488,7 +1488,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+2)"
+            "Extra Attacks(+2)"
           ]
         }
       ]
@@ -1501,7 +1501,7 @@
           "range": 30,
           "specialRules": [
             "Siege",
-            "IC"
+            "Ignore Cover"
           ]
         }
       ]
@@ -1512,7 +1512,7 @@
         {
           "firepower": "Small Arms",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         },
@@ -1520,7 +1520,7 @@
           "firepower": "Assault Weapons",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1533,7 +1533,7 @@
           "firepower": "AP5+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1546,7 +1546,7 @@
           "firepower": "AP5+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1559,7 +1559,7 @@
           "firepower": "AP5+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         },
@@ -1567,7 +1567,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1580,7 +1580,7 @@
           "firepower": "AP5+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         },
@@ -1588,7 +1588,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1601,7 +1601,7 @@
           "firepower": "AP4+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1614,7 +1614,7 @@
           "firepower": "AP4+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         },
@@ -1622,7 +1622,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1635,7 +1635,7 @@
           "firepower": "AP3+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1648,7 +1648,7 @@
           "firepower": "AP3+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         },
@@ -1656,7 +1656,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1669,7 +1669,7 @@
           "firepower": "AP3+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1682,7 +1682,7 @@
           "firepower": "AP3+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         },
@@ -1690,7 +1690,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1703,7 +1703,7 @@
           "firepower": "2BP",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1716,7 +1716,7 @@
           "firepower": "2BP",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1729,7 +1729,7 @@
           "firepower": "3BP",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1742,7 +1742,7 @@
           "firepower": "6BP",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1755,7 +1755,7 @@
           "firepower": "6BP",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -1926,7 +1926,7 @@
           "range": 15,
           "specialRules": [
             "Disrupt",
-            "SS"
+            "Single Shot"
           ]
         }
       ]
@@ -2011,7 +2011,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "Disrupt"
           ]
         }
@@ -2031,7 +2031,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+3)",
+            "Extra Attacks(+3)",
             "Disrupt"
           ]
         }
@@ -2051,7 +2051,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+4)",
+            "Extra Attacks(+4)",
             "Disrupt"
           ]
         }
@@ -2075,7 +2075,7 @@
           "firepower": "AP5+/AT5+",
           "range": 45,
           "specialRules": [
-            "Ind",
+            "Indirect Fire",
             "Siege"
           ]
         }
@@ -2088,7 +2088,7 @@
           "firepower": "1BP",
           "range": 45,
           "specialRules": [
-            "Ind"
+            "Indirect Fire"
           ]
         }
       ]
@@ -2100,8 +2100,8 @@
           "firepower": "1BP",
           "range": 30,
           "specialRules": [
-            "Ind",
-            "IC"
+            "Indirect Fire",
+            "Ignore Cover"
           ]
         }
       ]
@@ -2124,7 +2124,7 @@
           "firepower": "2BP",
           "range": 30,
           "specialRules": [
-            "Ind",
+            "Indirect Fire",
             "Slow",
             "Siege"
           ]
@@ -2197,9 +2197,9 @@
         {
           "firepower": "Assault Weapon",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "Self-Destruct",
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -2256,7 +2256,7 @@
           "firepower": "3BP",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Disrupt"
           ]
         }
@@ -2269,8 +2269,8 @@
           "firepower": "6BP",
           "range": 60,
           "specialRules": [
-            "Ind",
-            "IC",
+            "Indirect Fire",
+            "Ignore Cover",
             "Disrupt"
           ]
         }
@@ -2283,7 +2283,7 @@
           "firepower": "6BP",
           "range": 60,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Disrupt"
           ]
         }
@@ -2296,7 +2296,7 @@
           "firepower": "10BP",
           "range": 100,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Disrupt"
           ]
         }
@@ -2362,7 +2362,7 @@
           "range": "∞",
           "specialRules": [
             "Disrupt",
-            "Ind"
+            "Indirect Fire"
           ]
         }
       ]
@@ -2381,7 +2381,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -2436,7 +2436,7 @@
         {
           "firepower": "Small Arms",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -2448,7 +2448,7 @@
           "firepower": "AP4+/AT6+",
           "range": 45,
           "specialRules": [
-            "Ind",
+            "Indirect Fire",
             "Siege"
           ]
         }
@@ -2461,8 +2461,8 @@
           "firepower": "AP4+/AT6+",
           "range": 30,
           "specialRules": [
-            "Ind",
-            "IC",
+            "Indirect Fire",
+            "Ignore Cover",
             "Shield Piercer"
           ]
         }
@@ -2706,7 +2706,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)",
             "Titan Hunter"
@@ -2744,14 +2744,14 @@
           "specialRules": [
             "MW",
             "TK(D3)",
-            "IC"
+            "Ignore Cover"
           ]
         },
         {
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)"
           ]
@@ -2767,7 +2767,7 @@
           "specialRules": [
             "MW",
             "TK(D3)",
-            "IC",
+            "Ignore Cover",
             "FwA"
           ]
         },
@@ -2775,7 +2775,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)"
           ]
@@ -2791,7 +2791,7 @@
           "specialRules": [
             "MW",
             "TK(D3)",
-            "IC",
+            "Ignore Cover",
             "FxF"
           ]
         },
@@ -2799,7 +2799,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)"
           ]
@@ -2815,7 +2815,7 @@
           "specialRules": [
             "MW",
             "TK(D3)",
-            "IC",
+            "Ignore Cover",
             "FxF"
           ]
         },
@@ -2823,7 +2823,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)"
           ]
@@ -2839,7 +2839,7 @@
           "specialRules": [
             "MW",
             "TK(D3)",
-            "IC"
+            "Ignore Cover"
           ]
         },
         {
@@ -2861,7 +2861,7 @@
           "specialRules": [
             "MW",
             "TK(D3)",
-            "IC",
+            "Ignore Cover",
             "FxF"
           ]
         },
@@ -2869,7 +2869,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+2)",
+            "Extra Attacks(+2)",
             "MW",
             "TK(1)"
           ]
@@ -3125,7 +3125,7 @@
           "firepower": "AP5+/AT6+",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -3460,7 +3460,7 @@
           "firepower": "AP4+/AT6+",
           "range": 45,
           "specialRules": [
-            "Ind"
+            "Indirect Fire"
           ]
         }
       ]
@@ -3472,7 +3472,7 @@
           "firepower": "2x AP4+/AT6+",
           "range": 45,
           "specialRules": [
-            "Ind"
+            "Indirect Fire"
           ]
         }
       ]
@@ -3649,7 +3649,7 @@
           "firepower": "Assault Weapon",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(D3)"
           ]
@@ -3687,7 +3687,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW"
           ]
         }
@@ -3707,7 +3707,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+2)",
+            "Extra Attacks(+2)",
             "MW",
             "TK(1)"
           ]
@@ -3728,7 +3728,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+3)",
+            "Extra Attacks(+3)",
             "MW",
             "TK(1)"
           ]
@@ -3749,7 +3749,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+4)",
+            "Extra Attacks(+4)",
             "MW",
             "TK(1)"
           ]
@@ -3860,7 +3860,7 @@
         {
           "firepower": "Small Arms",
           "specialRules": [
-            "IC"
+            "Ignore Cover"
           ]
         }
       ]
@@ -3871,7 +3871,7 @@
         {
           "firepower": "Small Arms",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         }
@@ -3881,10 +3881,10 @@
       "name": "Volkite Charger",
       "modes": [
         {
-          "firepower": "AP6+/AT5+",
+          "firepower": "AP6+/AT6+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         },
@@ -3892,7 +3892,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         }
@@ -3902,10 +3902,10 @@
       "name": "Volkite Chargers",
       "modes": [
         {
-          "firepower": "AP6+/AT5+",
+          "firepower": "AP6+/AT6+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         },
@@ -3913,7 +3913,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         }
@@ -3923,10 +3923,10 @@
       "name": "Volkite Calvier",
       "modes": [
         {
-          "firepower": "AP6+/AT5+",
+          "firepower": "AP6+/AT6+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         },
@@ -3934,7 +3934,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         }
@@ -3944,10 +3944,10 @@
       "name": "Twin Volkite Calvier",
       "modes": [
         {
-          "firepower": "AP6+/AT4+",
+          "firepower": "AP6+/AT5+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         },
@@ -3955,7 +3955,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         }
@@ -3965,10 +3965,10 @@
       "name": "Volkite Culvertin",
       "modes": [
         {
-          "firepower": "AP6+/AT4+",
+          "firepower": "AP6+/AT5+",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         }
@@ -3978,10 +3978,10 @@
       "name": "Volkite Dual-Culverin",
       "modes": [
         {
-          "firepower": "AP5+/AT4+",
+          "firepower": "AP5+/AT5+",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Disruptor"
           ]
         }
@@ -3991,10 +3991,10 @@
       "name": "Volkite Veuglaire",
       "modes": [
         {
-          "firepower": "AP5+/AT3+",
+          "firepower": "AP5+/AT4+",
           "range": 15,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4005,10 +4005,10 @@
       "name": "Volkite Chierovile",
       "modes": [
         {
-          "firepower": "AP5+/AT3+",
+          "firepower": "AP5+/AT4+",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4019,10 +4019,10 @@
       "name": "Volkite Saker",
       "modes": [
         {
-          "firepower": "AP5+/AT3+",
+          "firepower": "AP5+/AT4+",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4033,10 +4033,10 @@
       "name": "Volkite Demi-Culverin",
       "modes": [
         {
-          "firepower": "AP5+/AT3+",
+          "firepower": "AP5+/AT4+",
           "range": 45,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4050,7 +4050,7 @@
           "firepower": "2x AP5+/AT3+",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4064,7 +4064,7 @@
           "firepower": "3x AP5+/AT3+",
           "range": 30,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4078,7 +4078,7 @@
           "firepower": "4x AP5+/AT3+",
           "range": 45,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4092,7 +4092,7 @@
           "firepower": "4x AP5+/AT3+",
           "range": 45,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4106,7 +4106,7 @@
           "firepower": "5x AP5+/AT3+",
           "range": 45,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Crippling",
             "Shield Disruptor"
           ]
@@ -4217,7 +4217,7 @@
           "specialRules": [
             "MW",
             "TK(1)",
-            "IC",
+            "Ignore Cover",
             "Shield Piercer",
             "Shock Pulse"
           ]
@@ -4227,7 +4227,7 @@
           "join": "or",
           "range": 45,
           "specialRules": [
-            "IC",
+            "Ignore Cover",
             "Shield Piercer",
             "Disrupt"
           ]
@@ -4240,7 +4240,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -4251,7 +4251,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -4262,7 +4262,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+D3)"
+            "Extra Attacks(+D3)"
           ]
         }
       ]
@@ -4273,7 +4273,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -4306,7 +4306,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -4383,7 +4383,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW"
           ]
         }
@@ -4401,7 +4401,7 @@
         {
           "firepower": "Assault Weapon",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW"
           ]
         },
@@ -4428,13 +4428,13 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         },
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)"
           ]
@@ -4447,7 +4447,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "Disrupt"
           ]
@@ -4460,7 +4460,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW"
           ]
         }
@@ -4494,7 +4494,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "Devastating Charge"
           ]
@@ -4507,7 +4507,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW"
           ]
         }
@@ -4519,7 +4519,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW"
           ]
         }
@@ -4531,7 +4531,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "Force"
           ]
         }
@@ -4578,7 +4578,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW"
           ]
         }
@@ -4601,7 +4601,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(D2)"
           ]
@@ -4626,7 +4626,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(D3+1)"
           ]
@@ -4639,7 +4639,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(D3+3)"
           ]
@@ -4652,7 +4652,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(D6)",
             "Siege"
@@ -4666,7 +4666,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+2)",
+            "Extra Attacks(+2)",
             "Devastating Charge",
             "MW",
             "TK(1)"
@@ -4680,7 +4680,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "EA(+4)",
+            "Extra Attacks(+4)",
             "MW"
           ]
         }
@@ -4692,7 +4692,7 @@
         {
           "firepower": "Small Arms",
           "specialRules": [
-            "EA(+1)"
+            "Extra Attacks(+1)"
           ]
         }
       ]
@@ -4732,7 +4732,7 @@
           "range": 15,
           "specialRules": [
             "Perils of the Warp",
-            "IC",
+            "Ignore Cover",
             "Sniper"
           ]
         }
@@ -4786,7 +4786,7 @@
           "range": 15,
           "specialRules": [
             "Perils of the Warp",
-            "IC",
+            "Ignore Cover",
             "Siege"
           ]
         }
@@ -4800,7 +4800,7 @@
           "range": 15,
           "specialRules": [
             "Perils of the Warp",
-            "IC",
+            "Ignore Cover",
             "Disrupt",
             "Siege"
           ]
@@ -4815,7 +4815,7 @@
           "range": 15,
           "specialRules": [
             "Perils of the Warp",
-            "IC"
+            "Ignore Cover"
           ]
         }
       ]
@@ -4955,7 +4955,7 @@
         {
           "firepower": "Assault Weapon",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW"
           ]
         }
@@ -4974,7 +4974,7 @@
         {
           "firepower": "Assault Weapon",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)",
             "Siege"
@@ -5002,7 +5002,7 @@
         {
           "firepower": "Assault Weapon",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)",
             "Siege"
@@ -5023,7 +5023,7 @@
         {
           "firepower": "Small Arms",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "MW",
             "TK(1)",
             "Shield Piercer",
@@ -5050,7 +5050,7 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "EA(+1)",
+            "Extra Attacks(+1)",
             "Lance",
             "Shock Pulse",
             "Shield Piercer",
@@ -5113,7 +5113,7 @@
           "range": 45,
           "specialRules": [
             "Disrupt",
-            "IC"
+            "Ignore Cover"
           ]
         }
       ]
@@ -5170,7 +5170,7 @@
           "firepower": "FF2+",
           "range": "Small Arms",
           "specialRules": [
-              "EA(+1)",
+              "Extra Attacks(+1)",
               "Sniper",
               "First Strike"
           ]
@@ -5184,7 +5184,7 @@
           "firepower": "FF4+",
           "range": "Small Arms",
           "specialRules": [
-              "EA(+2)",
+              "Extra Attacks(+2)",
               "Force",
               "Disrupt",
               "First Strike"
@@ -5199,7 +5199,7 @@
           "firepower": "CC3+",
           "range": "Assault Weapon",
           "specialRules": [
-              "EA(+2)",
+              "Extra Attacks(+2)",
               "Sniper",
               "First Strike"
           ]
@@ -5213,7 +5213,7 @@
           "firepower": "CC3+",
           "range": "Assault Weapon",
           "specialRules": [
-              "EA(+3)",
+              "Extra Attacks(+3)",
               "First Strike"
           ]
         }
@@ -5226,7 +5226,7 @@
           "firepower": "CC4+",
           "range": "Assault Weapon",
           "specialRules": [
-              "EA(+2)",
+              "Extra Attacks(+2)",
               "MW",
               "First Strike"
           ]

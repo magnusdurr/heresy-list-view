@@ -85,7 +85,7 @@
           {
             "name": "Demolitor",
         "type": "LV",
-        "speed": 15,
+        "speed": 20,
         "armour": 5,
         "cc": 3,
         "weapons": [
@@ -95,7 +95,7 @@
           {
             "name": "Incinerator",
         "type": "LV",
-        "speed": 15,
+        "speed": 20,
         "armour": 5,
         "cc": 3,
         "weapons": [
@@ -109,7 +109,7 @@
         "Fearless",
         "Blitz",
         "Walker",
-          "Vanguard"
+         "Vanguard"
         ]
       },
       {

@@ -52,7 +52,7 @@
     {
       "title": "Mounted",
       "description": [
-        "Units with the 'Mounted' special rule count as Armoured Vehicles for terrain effects, and as Infantry for all other purposes."
+        "Units with the 'Mounted' special rule count as Armoured Vehicles for cover and terrain effects, and as Infantry for all other purposes."
       ],
       "tags": ["core", "unit"]
     },
@@ -66,11 +66,11 @@
     {
       "title": "First Strike",
       "description": [
-      "Weapons and units with the 'First Strike' special rule resolve their attacks and inflict damage during assaults before other units makes their attacks. This may result in some enemy units being destroyed before they can attack, and may prevent units from using their CC attacks if the unit they were in base-to-base with was destroyed.",  
-      "If opposing units both have First Strike, then all such attacks are resolved simultaneously and their results applied to both sides before other attacks are resolved.",
+      "Weapons with the 'First Strike' special rule resolve their attacks and inflict damage during assaults before other units makes their attacks. This may result in some enemy units being destroyed before they can attack, and may prevent units from using their CC attacks if the unit they were in base-to-base with was destroyed.",  
+      "If opposing units are both equipped with weapons that have First Strike, then all such attacks are resolved simultaneously and their results applied to both sides before other attacks are resolved.",
         "Note that First Strike has no effect for Supporting Attacks."
       ],
-      "tags": ["core", "weapon", "unit"]
+      "tags": ["core", "weapon"]
     },
     {
       "title": "Fearless",
@@ -82,9 +82,9 @@
       "tags": ["core", "unit"]
     },
     {
-      "title": "Invulnerable Save",
+      "title": "Invulnerable Save(x)",
       "description": [
-        "Units with the 'Invulnerable Save' special rule receive a second save of 6+ if they fail their first save for any reason. No modifiers ever apply to the second save. This save may be used against MW attacks, but may not be used against other types of damage that ignores saves completely, such as damage from terrain, extra damage from assaults or Blast Markers, or being too close to the enemy after completing a withdrawal move after becoming broken or failing to rally."
+        "Units with the 'Invulnerable Save' special rule receive a second save of 6+, or the number within brackets, if they fail their first save for any reason. No modifiers ever apply to the second save. This save may be used against MW attacks, but may not be used against other types of damage that ignores saves completely, such as damage from terrain, extra damage from assaults or Blast Markers, or being too close to the enemy after completing a withdrawal move after becoming broken or failing to rally."
       ],
       "tags": ["core", "unit"]
     },
@@ -96,7 +96,7 @@
       "tags": ["core", "weapon"]
     },
     {
-      "title": "Ind",
+      "title": "Indirect Fire",
       "description": [
         "Weapons with the 'Indirect Fire' special rule are allowed to fire indirectly if their formation successfully conducts a Sustained Fire action. Units using Indirect Fire receive a +1 modifier for taking a Sustained Fire action as usual. No Line of Sight to the target is required for Indirect Fire, and only suffers a -1 modifier if the target is in cover, and not merely obscured. Weapons firing indirectly double their range, but the target must be at least partially within 30 cm."
       ],
@@ -133,16 +133,16 @@
       "tags": ["core", "weapon"]
     },
     {
-      "title": "EA(x)",
+      "title": "Extra Attacks(x)",
       "description": [
-        "Weapons with the 'Extra Attacks(x)' special rule receive a number of extra attacks equal to 'x' during Assaults. Special Rules that are on a weapon with Extra Attacks only apply to the extra attacks. Extra Attacks from Small Arms may only be used if the unit is not in base contact with an enemy unit during the Assault, in EA-Heresy this also applies to War Engines."
+        "Weapons with the 'Extra Attacks(x)' (or EA(x)) special rule receive a number of extra attacks equal to 'x' during Assaults. Special Rules that are on a weapon with Extra Attacks only apply to the extra attacks. Extra Attacks from Small Arms may only be used if the unit is not in base contact with an enemy unit during the Assault."
       ],
       "tags": ["core", "weapon"]
     },
     {
-      "title": "IC",
+      "title": "Ignore Cover",
       "description": [
-        "Weapons with the 'Ignore Cover' special rule ignore cover to-hit modifiers, and negate Infantry Cover Saves."
+        "Weapons with the 'Ignore Cover' special rule ignore cover to-hit modifiers, and negate Cover Saves."
       ],
       "tags": ["core", "weapon"]
     },
@@ -265,10 +265,23 @@
       "tags": ["unit", "titan"]
     },
     {
+      "title": "Skimmer",
+      "description": [
+        "Units with the Skimmer special rule are equipped with devices that allow them to hover a short distance above the ground, so that they can fly over terrain that would slow other units down.",
+        "Skimmers may ignore Dangerous or impassable terrain as they move. They may not land on impassable terrain, and if they land in Dangerous terrain they must take a Dangerous Terrain test. Skimmers may also move over other friendly units as they move, but may not land on them. Enemy units and Zones of Control affect skimmers normally.",
+        "A skimmer may declare that it is popping up at the start of any action that it takes, including when the skimmer goes into overwatch. A skimmer may not pop up as part of a Sustained Fire action or a Marshal action, but may pop-up when it goes into Overwatch. Popping up counts as movement for the purposes of triggering firing by enemy units on Overwatch.",
+        "A skimmer that has popped up, pops down at the conclusion of the action. Skimmers on overwatch do not pop down until after they make their overwatch attack. Skimmers with a transport capacity may not embark or disembark units while they are popped up, and if they are destroyed while they are popped up then any units on board will be destroyed with no save. Infantry in base contact with a Skimmer that is popped up may not use it to count as being in cover.",
+        "A skimmer that has popped up is assumed to be flying high enough that nearby intervening terrain that is closer to the skimmer than the target does not block Line of Sight. To check if the Line of Sight is blocked, simply measure the distance between the skimmer and the terrain, and then measure the distance between the terrain and the target unit.",
+        "If the skimmer is nearer to the intervening terrain then the line of fire is not blocked. If the skimmer is further from the terrain, then work out the line of fire normally. If the distance is is equal, then both the skimmer and the target unit can fire at each other, but they both count as being in cover and the cover to hit modifier will apply.",
+        "Skimmers may always choose to use their Firefight value in an assault, even if there are enemy units in base contact with the skimmer. If they do this then the enemy must use their Firefight value also. This represents the skimmer lifting off the ground out of reach of enemy ground units."
+
+      ],
+      "tags": ["core", "unit"]
+    },
+    {
       "title": "Support Craft",
       "description": [
-        "Support Craft are Skimmers, which for all line of sight and terrain purposes count as ‘popped up’ at all times. If the Support Craft has a transport option, it may embark and disembark units as normal. Embarked units are allowed a save (see 1.7.5) if the Support Craft is destroyed.",
-        "Support Craft do not block line of sight, must always use their Skimmer ability to force a firefight in engagements and Infantry in base contact with a Support Craft may not use it to count as being in cover."
+        "Support Craft are Skimmers, which for all line of sight and terrain purposes count as ‘popped up’ at all times. Support Craft may only disembark units, and can never load troops during the battle. Support Craft may only use their Firefight value during assaults. As with Skimmers, Infantry in base contact with a Support Craft may not use it to count as being in cover."
       ],
       "tags": ["core", "unit", "titan"]
     },
@@ -427,6 +440,13 @@
       "tags": ["unit"]
     },
     {
+      "title": "Spearhead",
+      "description": [
+        "Formations that contains at least one unit with the 'Spearhead' special rule counts the Deployment Zone as being 30 cm instead of the usual 15 cm."
+      ],
+      "tags": ["unit"]
+    },
+    {
       "title": "Vanguard",
       "description": [
         "Formations that contains at least one unit with the 'Vanguard' special rule does not suffer -1 to rally when completely on the enemy half of the table."
@@ -436,7 +456,7 @@
     {
       "title": "Vox-Caster",
       "description": [
-        "A formation containing at least one unit with the 'Vox-Caster' special rule may be used for carrying out an Offboard Support action as detailed in the 'new actions' part of the rules."
+        "A formation containing at least one unit with the Vox-Caster special rule may be used for carrying out Offboard Support actions. In this case, all measurements are made from the unit with Vox-Caster. Vox-Caster can be used while being embarked in a transport, counting LoS from the transporting unit. ."
       ],
       "tags": ["unit"]
     },
@@ -457,7 +477,7 @@
     {
       "title": "Heavy Transport(x)",
       "description": [
-        "Units with the 'Heavy Transport(x)' special rule may transport 'x' number of INF, which may have the 'Bulky' special rule. Each 'Bulky' unit takes two spaces each"
+        "Units with the 'Heavy Transport(x)' special rule may transport 'x' number of INF, which may have the 'Bulky', but not the 'Mounted' special rule. Each 'Bulky' unit takes two spaces each."
       ],
       "tags": ["unit"]
     },
@@ -471,14 +491,14 @@
     {
       "title": "Skirmisher",
       "description": [
-        "Units with the 'Skirmisher' special rule is in coherency if they are within 10 cm from another unit instead of the usual 5 cm. Units with 'Skirmisher' may garrison according to the same rules as units with 'Scout'."
+        "Units with the 'Skirmisher' special rule is in coherency if they are within 10 cm from another unit instead of the usual 5 cm. This special rule replaces the Scout special rule in the original Epic Armageddon rules for all purposes."
       ],
       "tags": ["unit"]
     },
     {
       "title": "Nimble",
       "description": [
-        "AV and LV with the 'Nimble' special rule may enter Strongholds like INF, taking two spaces each."
+        "Units with the 'Nimble' special rule may enter Strongholds like INF, taking two spaces each."
       ],
       "tags": ["unit"]
     },
@@ -587,7 +607,7 @@
     {
       "title": "Graviton(x)",
       "description": [
-        "Weapons with the 'Graviton(x)' special rule gains the 'MW' and 'TK(x)' special rules against WE and/or any units with the 'Reinforced Armour' special rule. Weapon suffers an additional -1 to hit if the unit carrying it conducted a Double action."
+        "Weapons with the 'Graviton(x)' special rule gains the 'MW' and 'TK(x)' special rules against WE and/or any units with the 'Reinforced Armour' special rule. Weapons with this special rule suffers an additional -1 to hit if the unit carrying it conducted a Double action."
       ],
       "tags": ["weapon"]
     },
@@ -622,7 +642,7 @@
     {
       "title": "Primarch",
       "description": [
-        "Units with the 'Primarch' special rule have Damage Capacity like WE but acts and takes damage as INF in all other aspects. The Primarch also counts having the 'Supreme Commander' special rule, which means that the army may have two Supreme Commander re-rolls per turn. The Primarch unit counts as an additional BTS in the army, which means that this objective can be lost twice."
+        "Units with the 'Primarch' special rule have Damage Capacity like WE but acts and takes damage as INF in all other aspects. A Primarch also counts having the 'Supreme Commander' special rule, which means that the army may have two Supreme Commander re-rolls per turn. A Primarch unit counts as an additional BTS in the army, which means that this objective can be lost twice."
       ],
       "tags": ["unit", "legion"]
     },
@@ -692,8 +712,7 @@
       "title": "Commander",
       "description": [
         "A unit with the Commander special rule can order another unactivated formation to follow them when they make an assault, as long as the formation have at least one unit within 15 cm of the unit with the Commander special rule. Make a single initiative roll for both formations, counting a -1 modifier if any have Blast markers. If the test is failed then both formations receives a Blast marker. The formation with the Commander must take a hold action, but the other formation may take an action later in the turn.",
-        "If the test is passed then both formations takes an Engage action. Treat the two formations as if they were a single formation for all rules purposes for the duration of the assault. A 2D6 roll is used to resolve a combined assault. If the attackers lose then each formation is broken. If they win then each formation receives a number of Blast markers equal to the casualties it suffered during the assault.",
-        "The Commander rule can also be used to defend against enemy assaults, by declaring that one friendly formation within 15 cm of the unit with the Commander special rule becomes intermingled in the assault, in the same manner as if the opponent had done this declaration. Defensive or Offensive use of the Commander special rule may only be done once for each side in an assault, no matter how many units with Commander are involved."
+        "If the test is passed then both formations takes an Engage action. Treat the two formations as if they were a single formation for all rules purposes for the duration of the assault. A 2D6 roll is used to resolve a combined assault. If the attackers lose then each formation is broken. If they win then each formation receives a number of Blast markers equal to the casualties it suffered during the assault."
       ],
       "tags": ["core", "unit"]
     },
@@ -757,7 +776,7 @@
     {
       "title": "Lance",
       "description": [
-        "When units with Reinforced Armour are hit by a weapon with the Lance ability they do not get to re-roll failed armour saves."
+        "Units with the Reinforced Armour special rule that are hit by a weapon with Lance do not get to re-roll failed armour saves."
       ],
       "tags": ["weapon"]
     },
@@ -793,20 +812,6 @@
       "tags": ["formation", "daemonic", "alpha"]
     },
     {
-      "title": "Regeneration",
-      "description": [
-        "The 'Regeneration' special rule functions exactly like an Invulnerable Save except that it is a 5+ save rather than 6+. Against Titan Killer attacks, WE must make one Regeneration save against each point of damage."
-      ],
-      "tags": ["unit"]
-    },
-    {
-      "title": "Invincibility",
-      "description": [
-        "The 'Invincibility' special rule functions exactly like an Invulnerable Save except that it is a 4+ save rather than 6+. Against Titan Killer attacks, WE must make one Invincibility save against each point of damage."
-      ],
-      "tags": ["unit"]
-    },
-    {
       "title": "Teleport Homer",
       "description": [
         "Units that Teleport within 15 cm from a friendly, unbroken unit with Teleport Homer already on the battlefield may re-roll 1:s when testing for Teleport Mishap. May not be used if there are any unbroken enemy units with the 'Psyker', 'Daemonic', or 'Prescience' special rules within 15 cm of the unit."
@@ -816,8 +821,9 @@
     {
       "title": "Offboard Support",
       "description": [
-        "Calling for Offboard Support is a new action that a player can take after having completed an Advance, Overwatch, Marshal, or Sustain Fire action with an unbroken formation that contains a unit with the Vox-Caster special rule. This counts as retaining the initiative, and thus cannot be done if the initiative has already been retained once. The Offboard Support action automatically succeeds.",
-        "Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (depending on the type of Offboard Support) within Line of Sight of the unit with the Vox-Caster special rule to indicate where the Offboard Support asset will come down/up. The Offboard Support is then carried out according to its special rules before the start of the next friendly action, or before the end phase, depending on which comes first."
+        "Calling for Offboard Support is a new action that a player can take after having completed an Advance, Overwatch, Marshal, or Sustain Fire action with an unbroken formation that contains a unit with the Vox-Caster special rule. This counts as retaining the initiative, and thus cannot be done if the initiative has already been retained once. There is no need to do an Action Test in this case, the Offboard Support action automatically succeeds.",
+        "Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (depending on the type of Offboard Support) within Line of Sight of the unit with the Vox-Caster special rule to indicate where the Offboard Support asset will come enter the Battlefield.",
+        "The Offboard Support is then carried out according to its special rules before the start of the next friendly action, or before the end phase, depending on which comes first."
       ],
       "tags": ["action", "offboard"]
     },
@@ -942,7 +948,7 @@
     {
       "title": "Deathstrike",
       "description": [
-        "Unlike other Offboard Support assets Deathstrike missiles have unlimited range, but are reliant on more precise targeting data. This means that any marker put down on the battlefield needs to be confirmed by a second Offboard Support action by a unit with 'Vox-Caster' before the attack will commence. All markers that have not been confirmed expire at the end of each turn."
+        "Resolving a Deathstrike attack requires more detailed targeting data. Any marker put down on the Battlefield needs to be confirmed by a second Offboard Support action by a unit with 'Vox-Caster' before the attack will commence. All markers that have not been confirmed expire at the end of each turn. "
       ],
       "tags": ["offboard"]
     },
