@@ -195,6 +195,11 @@
                     "addNames": ["Termite Assault Drill"],
                     "addCount": 4,
                     "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Termite Assault Drill"],
+                    "addCount": 6,
+                    "upgradePoints": 3
                   }
                 ]
               }
@@ -266,6 +271,11 @@
                     "addNames": ["Termite Assault Drill"],
                     "addCount": 4,
                     "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Termite Assault Drill"],
+                    "addCount": 6,
+                    "upgradePoints": 3
                   }
                 ]
               }
@@ -286,13 +296,13 @@
                 "options": [
                   {
                     "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 4,
-                    "upgradePoints": 2
+                    "addCount": 2,
+                    "upgradePoints": 1
                   },
                   {
                     "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 4,
-                    "upgradePoints": 2
+                    "addCount": 2,
+                    "upgradePoints": 1
                   }
                 ]
               }
@@ -389,7 +399,8 @@
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Veletaris Storm Section",
@@ -465,8 +476,29 @@
                 "options": [
                   {
                     "addNames": ["Charonite Ogryns"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 3,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Auxilia Lasrifle Squad"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
                   },
                   {
                     "addNames": ["Veletarii"],
@@ -547,20 +579,10 @@
         {
           "name": "Auxilia Leman Russ Squadron",
           "unitSpec": {
-            "Leman Russ": 3
+            "Leman Russ": 3,
+            "Auxilia Adjutant": 1
           },
           "upgrades": [
-              {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Auxilia Adjutant"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            },
             {
               "add": {
                 "options": [
@@ -645,20 +667,10 @@
         {
           "name": "Auxilia Heavy Sentinel Patrol",
           "unitSpec": {
-            "Aethon Heavy Sentinel": 4
+            "Aethon Heavy Sentinel": 4,
+            "Auxilia Adjutant": 1
           },
           "upgrades": [
-              {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Auxilia Adjutant"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            },
             {
               "add": {
                 "options": [
@@ -772,20 +784,10 @@
         {
           "name": "Super-Heavy Tank Squadron",
           "unitSpec": {
-            "Auxilia Super-Heavy Tank|Baneblade": 1
+            "Auxilia Super-Heavy Tank|Baneblade": 1,
+            "Auxilia Adjutant": 1
           },
           "upgrades": [
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Auxilia Adjutant"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            },
             {
               "replace": {
                 "removeName": "Auxilia Super-Heavy Tank|Baneblade",
@@ -807,12 +809,12 @@
                     "upgradePoints": 0
                   },
                   {
-                    "addNames": ["Auxilia Super-Heavy Tank|Shadowsword"],
+                    "addNames": ["Auxilia Super-Heavy Tank|Stormhammer"],
                     "addCount": 1,
-                    "upgradePoints": 1
+                    "upgradePoints": 0
                   },
                   {
-                    "addNames": ["Auxilia Super-Heavy Tank|Stormhammer"],
+                    "addNames": ["Auxilia Super-Heavy Tank|Shadowsword"],
                     "addCount": 1,
                     "upgradePoints": 1
                   }
@@ -859,7 +861,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": -2
+          "upgradePoints": -3
         },
         {
           "name": "Marauder Squadron",
@@ -892,7 +894,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": -1
+          "upgradePoints": -2
         }
       ]
     },
@@ -1026,6 +1028,36 @@
           "formationPoints": 1,
           "upgradePoints": 2,
           "titanPoints": 2,
+          "alliedPoints": 1
+        },
+        {
+          "name": "Dire Wolf",
+          "unitSpec": {
+            "Dire Wolf Heavy Scout Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 1,
+          "upgradePoints": 1,
+          "titanPoints": 1,
           "alliedPoints": 1
         },
         {
@@ -1212,6 +1244,7 @@
             }
           ],
           "formationPoints": 1,
+          "upgradePoints": -1,
           "alliedPoints": 1
         },
         {

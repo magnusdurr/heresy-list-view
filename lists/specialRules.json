@@ -946,13 +946,6 @@
       "tags": ["offboard"]
     },
     {
-      "title": "Deathstrike",
-      "description": [
-        "Resolving a Deathstrike attack requires more detailed targeting data. Any marker put down on the Battlefield needs to be confirmed by a second Offboard Support action by a unit with 'Vox-Caster' before the attack will commence. All markers that have not been confirmed expire at the end of each turn. "
-      ],
-      "tags": ["offboard"]
-    },
-    {
       "title": "Blind Burst",
       "description": [
         "A Blind Burst is targeted at any friendly formation within 30 cm. Place a Blind Burst marker next to the targeted formation. For the rest of the turn, the entire formation counts as being in Cover."
@@ -978,28 +971,28 @@
     {
       "title": "Deathstrike Warp Missile Attack",
       "description": [
-        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(D3), Shield Piercer attack on a single War Engine under the center of the marker."
+        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(1), Shield Piercer, Crippling attack on a single War Engine under the center of the marker."
       ],
       "tags": ["offboard"]
     },
     {
       "title": "Deathstrike Vortex Missile Attack",
       "description": [
-        "A Vortex Missile attack places a small barrage template over the marker. All units under it suffers an AP4+/AT4+, MW, TK(1), Shield Disruptor attack."
+        "A Vortex Missile attack places a small barrage template over the marker. All units under it suffers an AP6+/AT6+, MW, TK(1), IC, Shield Disruptor attack."
       ],
       "tags": ["offboard"]
     },
     {
       "title": "Deathstrike Plasma Missile Attack",
       "description": [
-        "A Plasma Missile attack places the large barrage template over the marker. All units under it suffers an AP4+/AT5+ attack."
+        "A Plasma Missile attack places the large barrage template over the marker. All units under it suffers an AP5+/AT6+, IC, Shield Disruptor attack."
       ],
       "tags": ["offboard"]
     },
     {
       "title": "Deathstrike Stasis Missile Attack",
       "description": [
-        "A Stasis Missile attack places the large barrage template over the marker. Any formation with a majority of units under the template suffers an additional -2 to activate this turn. Any formation with less than half of its units under the template suffers an -1 to activate this turn. In addition, any formation under it suffers a BM for coming under fire."
+        "A Stasis Missile attack places the large barrage template over the marker. Any formation under the template suffers an additional -1 to activate this turn, and suffers a BM for coming under fire."
       ],
       "tags": ["offboard"]
     }

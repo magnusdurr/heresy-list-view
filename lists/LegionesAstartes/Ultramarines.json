@@ -220,27 +220,29 @@
                   {
                     "addNames": ["Support Rhino"],
                     "addCount": 2,
-                    "upgradePoints": 1
+                    "upgradePoints": 0
                   },
                   {
                     "addNames": ["Land Raider"],
                     "addCount": 2,
-                    "upgradePoints": 3
+                    "upgradePoints": 2
                   },
                   {
                     "addNames": ["Spartan"],
                     "addCount": 1,
-                    "upgradePoints": 3
+                    "upgradePoints": 2
                   }
                 ]
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
         {
           "name": "Veteran Detachment",
           "formationPoints": 1,
+          "upgradePoints": 1
           "max": 1,
           "unitSpec": {
             "Lieutenant": 1,
@@ -253,7 +255,7 @@
                   {
                     "addNames": ["Rhino"],
                     "addCount": 2,
-                    "upgradePoints": 0
+                    "upgradePoints": 1
                   },
                   {
                     "addNames": ["Contemptor Dreadnought"],
@@ -271,17 +273,17 @@
                   {
                     "addNames": ["Support Rhino"],
                     "addCount": 2,
-                    "upgradePoints": 1
+                    "upgradePoints": 0
                   },
                   {
                     "addNames": ["Land Raider"],
                     "addCount": 2,
-                    "upgradePoints": 3
+                    "upgradePoints": 2
                   },
                   {
                     "addNames": ["Spartan"],
                     "addCount": 1,
-                    "upgradePoints": 3
+                    "upgradePoints": 2
                   }
                 ]
               }
@@ -457,7 +459,8 @@
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Sky-Hunter Detachment",
@@ -466,7 +469,8 @@
             "Sky-Hunter Squadron": 3
           },
           "upgrades": [],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Outrider Detachment",
@@ -475,7 +479,8 @@
             "Legion Outrider": 4
           },
           "upgrades": [],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         }
       ]
     },
@@ -545,7 +550,7 @@
                   {
                     "addNames": ["Rhino"],
                     "addCount": 2,
-                    "upgradePoints": 0
+                    "upgradePoints": 1
                   },
                   {
                     "addNames": ["Contemptor Dreadnought"],
@@ -563,17 +568,17 @@
                   {
                     "addNames": ["Support Rhino"],
                     "addCount": 2,
-                    "upgradePoints": 1
+                    "upgradePoints": 0
                   },
                   {
                     "addNames": ["Land Raider"],
                     "addCount": 2,
-                    "upgradePoints": 3
+                    "upgradePoints": 2
                   },
                   {
                     "addNames": ["Spartan"],
                     "addCount": 1,
-                    "upgradePoints": 3
+                    "upgradePoints": 2
                   }
                 ]
               }
@@ -723,7 +728,8 @@
             "Storm Eagle": 1
           },
           "upgrades": [],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Thunderhawk Gunship",
@@ -732,7 +738,7 @@
           },
           "upgrades": [],
           "formationPoints": 1,
-          "upgradePoints": 2
+          "upgradePoints": 1
         },
         {
           "name": "Fire Raptor",
@@ -741,7 +747,7 @@
           },
           "upgrades": [],
           "formationPoints": 1,
-          "upgradePoints": -1
+          "upgradePoints": -2
         },
         {
           "name": "Xiphon Interceptor",
@@ -870,6 +876,7 @@
             }
           ],
           "formationPoints": 1,
+          "upgradePoints": 1,
           "titanPoints": 1,
           "alliedPoints": 1
         },
@@ -894,7 +901,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": 2,
+          "upgradePoints": 3,
           "titanPoints": 2,
           "alliedPoints": 1
         },
@@ -924,7 +931,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": 1,
+          "upgradePoints": 2,
           "titanPoints": 1,
           "alliedPoints": 1
         },
@@ -978,6 +985,7 @@
             }
           ],
           "formationPoints": 2,
+          "upgradePoints": 1,
           "titanPoints": 2,
           "alliedPoints": 1
         },
@@ -1018,7 +1026,7 @@
             }
           ],
           "formationPoints": 2,
-          "upgradePoints": 1,
+          "upgradePoints": 2,
           "titanPoints": 3,
           "alliedPoints": 1
         },
@@ -1063,73 +1071,46 @@
         {
           "name": "Auxilia Lasrifle Tercio",
           "unitSpec": {
-            "Auxilia Command Squad": 1,
             "Auxilia Captain": 1,
-            "Auxilia Lasrifle Squad": 4,
-            "Auxilia Flamer Squad": 1
+            "Auxilia Command Squad|Calth": 1,
+            "Auxilia Lasrifle Squad": 7
           },
           "upgrades": [
             {
-              "add": {
+              "replace": {
+                "removeName": "Lasrifle Squad",
+                "removeCount": 4,
                 "options": [
-                  {
-                    "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
+                     {
                     "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Veletarii"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
+                    "addCount": 4,
+                    "upgradePoints": 0
+                     },
+                     {
                     "addNames": ["Charonite Ogryns"],
-                    "addCount": 1,
+                    "addCount": 2,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Veletarii"],
+                    "addCount": 4,
                     "upgradePoints": 1
-                  }
-                ]
-              }
+                     }
+                  ]
+               }
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": -1,
-          "alliedPoints": 1
+          "upgradePoints": -1
         },
         {
           "name": "Ogryn Charonite Section",
           "unitSpec": {
-            "Charonite Ogryns": 3
+            "Charonite Ogryns": 4
           },
-          "upgrades": [
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Veletarii"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
+          "upgrades": [],
           "formationPoints": 1,
-          "upgradePoints": -2,
+          "upgradePoints": -1,
           "alliedPoints": 1
         },
         {
@@ -1137,29 +1118,7 @@
           "unitSpec": {
             "Veletarii": 4
           },
-          "upgrades": [
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Charonite Ogryns"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
+          "upgrades": [],
           "formationPoints": 1,
           "upgradePoints": -2,
           "alliedPoints": 1
