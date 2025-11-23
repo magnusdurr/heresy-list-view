@@ -239,7 +239,7 @@
     {
       "title": "God Machine(x)",
       "description": [
-        "Whenever a unit with the 'God Machine' special rule is destroyed that isn't an army BTS, the opponent scores (x) additional Victory Points. In addition, whenever a unit with this special rule is destroyed, all friendly formations within 45 cm suffers (x) Blast Markers."
+        "Whenever a unit with the 'God Machine' special rule is destroyed, the opponent scores (x) additional Victory Points."
       ],
       "tags": ["unit", "titan"]
     },
@@ -260,7 +260,7 @@
     {
       "title": "System Breakdown",
       "description": [
-        "A War Engine with the 'System Breakdown' special rule that have less than half of their remaining DC left suffer an additional -1 to activate, and may no longer use the 'Split Fire' or 'Ripple Fire' special rules."
+        "A War Engine with the 'System Breakdown' special rule that has less than half of its remaining DC left suffer an additional -1 when attempting to activate, and may no longer use the 'Split Fire' or 'Ripple Fire' special rules."
       ],
       "tags": ["unit", "titan"]
     },
