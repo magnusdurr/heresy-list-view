@@ -967,11 +967,17 @@
       ],
       "tags": ["offboard"]
     },
-    
+    {
+      "title": "Deathstrike Missile Attack",
+      "description": [
+        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(2), Shield Piercer attack on a single War Engine under the center of the marker."
+      ],
+      "tags": ["offboard"]
+    },
     {
       "title": "Deathstrike Warp Missile Attack",
       "description": [
-        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(1), Shield Piercer, Crippling attack on a single War Engine under the center of the marker."
+        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(2), Shield Piercer attack on a single War Engine under the center of the marker."
       ],
       "tags": ["offboard"]
     },

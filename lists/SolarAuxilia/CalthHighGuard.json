@@ -61,6 +61,7 @@
     {
       "from": "OffboardSupport.json",
       "units": [
+        "Deathstrike Missile",
         "Deathstrike Warp Missile",
         "Deathstrike Plasma Missile",
         "Artillery Barrage",
@@ -357,7 +358,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": -1
+          "upgradePoints": -2
         }
       ]
     },
@@ -400,7 +401,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": -1
+          "upgradePoints": -2
         },
         {
           "name": "Veletaris Storm Section",
@@ -939,6 +940,19 @@
                   {
                     "addNames": [
                       "Artillery Phospex Barrage"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Deathstrike Missile"
                     ],
                     "addCount": 1,
                     "upgradePoints": 1

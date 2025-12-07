@@ -265,7 +265,7 @@
           {
             "name": "Multi-Laser",
             "type": "LV",
-            "speed": 20,
+            "speed": 25,
             "armour": 6,
             "cc": 6,
              "ff": 5,
@@ -276,7 +276,7 @@
           {
             "name": "Grenadier",
             "type": "LV",
-            "speed": 20,
+            "speed": 25,
             "armour": 6,
             "cc": 6,
              "ff": 5,
@@ -289,8 +289,8 @@
           "Skirmisher",
           "Walker",
           "Nimble",
-          "Blitz",
-          "Vanguard"
+          "Vanguard",
+          "Spearhead"
         ]
       },
       {
@@ -300,7 +300,7 @@
           {
             "name": "Volkite",
             "type": "LV",
-            "speed": 15,
+            "speed": 20,
             "armour": 5,
             "cc": 6,
              "ff": 4,
@@ -311,7 +311,7 @@
           {
             "name": "Flamer",
             "type": "LV",
-            "speed": 15,
+            "speed": 20,
             "armour": 5,
             "cc": 6,
              "ff": 4,
@@ -324,7 +324,8 @@
             "Skirmisher",
             "Walker",
             "Nimble",
-          "Vanguard"
+          "Vanguard",
+          "Spearhead"
         ]
       },
       {

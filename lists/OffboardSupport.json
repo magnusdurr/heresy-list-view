@@ -5,14 +5,24 @@
     ],
     "unit": [
       {
+        "name": "Deathstrike Missile",
+        "type": "CH",
+        "weapons": [
+          "Deathstrike Missile"
+        ],
+        "specialRules": [
+          "Offboard Support"
+        ],
+        "notes": "A Deathstrike Missile attack may only be targeted at War Engines, and always hits the target."
+      },
+      {
         "name": "Deathstrike Warp Missile",
         "type": "CH",
         "weapons": [
           "Deathstrike Warp Missile"
         ],
         "specialRules": [
-          "Offboard Support",
-          "Deathstrike"
+          "Offboard Support"
         ],
         "notes": "A Deathstrike Warp Missile attack may only be targeted at War Engines, and always hits the target."
       },
@@ -24,8 +34,7 @@
         ],
         "specialRules": [
           "Offboard Support",
-          "Barrage(Large)",
-          "Deathstrike"
+          "Barrage(Large)"
         ]
       },
       {

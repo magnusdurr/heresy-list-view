@@ -5069,13 +5069,26 @@
       ]
     },
     {
+      "name": "Deathstrike Missile",
+      "modes": [
+        {
+          "range": "30",
+          "specialRules": [
+            "MW",
+            "TK(D2)",
+            "Crippling"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Deathstrike Warp Missile",
       "modes": [
         {
-          "range": "∞",
+          "range": "30",
           "specialRules": [
             "MW",
-            "TK(D3)",
+            "TK(D2)",
             "Shield Piercer"
           ]
         }
@@ -5086,7 +5099,7 @@
       "modes": [
         {
           "firepower": "AP4+/AT5+",
-          "range": "∞",
+          "range": "30",
           "specialRules": [
           ]
         }
@@ -5096,7 +5109,7 @@
       "name": "Artillery Barrage",
       "modes": [
         {
-          "firepower": "AP3+/AT6+",
+          "firepower": "AP3+/AT5+",
           "range": 30,
           "specialRules": [
             "Disrupt",
@@ -5109,8 +5122,8 @@
       "name": "Artillery Phospex Barrage",
       "modes": [
         {
-          "firepower": "AP4+/AT6+",
-          "range": 45,
+          "firepower": "AP4+/AT5+",
+          "range": 30,
           "specialRules": [
             "Disrupt",
             "Ignore Cover"
@@ -5155,7 +5168,7 @@
       "modes": [
         {
           "firepower": "AP4+/AT5+",
-          "range": 45,
+          "range": 30,
           "specialRules": [
             "MW",
             "Siege"
