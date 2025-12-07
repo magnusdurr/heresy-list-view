@@ -114,7 +114,7 @@
   "sections": [
     {
       "name": "Calth High Guard Core Sections",
-      "description": "May not have more Malcador Companies or Light Sentinel Patrols than Command Tercios and Lasrifle Tercios",
+      "description": "May not have more Malcador Companies or Light Sentinel Patrols than Section Command Tercios and Lasrifle Tercios",
       "formations": [
         {
           "name": "1 Section Command Tercio",
