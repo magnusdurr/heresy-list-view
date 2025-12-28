@@ -442,7 +442,7 @@
     {
       "title": "Spearhead",
       "description": [
-        "Formations that contains at least one unit with the 'Spearhead' special rule counts the Deployment Zone as being 30 cm instead of the usual 15 cm."
+        "Formations that contains at least one unit with the 'Spearhead' special rule counts the Deployment Zone as being 30 cm instead of the usual 15 cm. They may not be deployed inside Strongholds."
       ],
       "tags": ["unit"]
     },
