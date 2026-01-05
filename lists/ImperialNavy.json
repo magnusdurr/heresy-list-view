@@ -43,6 +43,32 @@
         ]
       },
       {
+        "name": "Aquila Lander",
+        "type": "AC/LV",
+        "speed": "30/Hover",
+        "armour": 4,
+        "ff": 5,
+        "weapons": [
+          "Heavy Bolter"
+        ],
+        "specialRules": [
+        "Transport(1)"
+        ]
+      },
+      {
+        "name": "Arvus Lighter",
+        "type": "AC/LV",
+        "speed": "25/Hover",
+        "armour": 5,
+        "ff": 6,
+        "weapons": [
+          "Twin Multi-Laser"
+        ],
+        "specialRules": [
+        "Transport(2)"
+        ]
+      },
+      {
         "name": "Marauder",
         "type": "AC",
         "variants": [
@@ -91,32 +117,6 @@
           }
         ],
         "notes": "The Marauder Pathfinder has the 'Vox-Caster' special rule."
-      },
-      {
-        "name": "Aquila Lander",
-        "type": "AC/LV",
-        "speed": "35/Hover",
-        "armour": 3,
-        "ff": 5,
-        "weapons": [
-          "Heavy Bolter"
-        ],
-        "specialRules": [
-        "Transport(1)"
-        ]
-      },
-      {
-        "name": "Arvus Lighter",
-        "type": "AC/LV",
-        "speed": "30/Hover",
-        "armour": 4,
-        "ff": 6,
-        "weapons": [
-          "Twin Multi-Laser"
-        ],
-        "specialRules": [
-        "Transport(2)"
-        ]
       },
       {
         "name": "Hecate Heavy Dropship",

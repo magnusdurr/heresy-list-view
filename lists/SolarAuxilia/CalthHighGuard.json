@@ -3,7 +3,7 @@
   "army": "Calth High Guard (CCLVth Cohort)",
   "version": "1.0.Alpha",
   "release": "2025-00-20",
-  "intro": "Calth High Guard (CCLVth CoH) follow the Ultramar Pattern Doctrine, with an emphasis on large infantry formations. Its armies gain 10 formation points (F/p), 12 upgrade points (U/p), 3 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation. In addition, the Calth High Guard gains a number of free upgrade points (equal to the number of Titan points) that may only be used for purchasing Offboard Support Assets. So in a normal sized battle, they gain 3 extra Upgrade points for this purpose.",
+  "intro": "The Calth High Guard gain 10 formation points <span class=\"badge badge-primary\">FP</span> 12 upgrade points <span class=\"badge badge-success\">UP</span> and 3 titan points <span class=\"badge badge-warning\">TP</span> for a normal sized battle. A negative <span class=\"badge badge-success\">UP</span> value means that you gain that many upgrade points for taking a particular formation. In addition, the Calth High Guard gains a number of free upgrade points (equal to the number of titan points) that may only be used for purchasing Offboard Support Assets. In a normal sized battle, they thus gain <span class=\"badge badge-success\">3 UP</span> for this purpose.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The 'And They Shall Know No Fear' special rule applies to all Legiones Astartes Allied Detachments.",
@@ -53,6 +53,7 @@
       "from": "ImperialNavy.json",
       "units": [
         "Thunderbolt Fighter",
+        "Lightning Interceptor",
         "Marauder|Bomber|Destroyer|Colossus|Pathfinder"
       ],
       "unitRules": [
@@ -183,11 +184,6 @@
                     "upgradePoints": 1
                   },
                   {
-                    "addNames": ["Cyclops"],
-                    "addCount": 4,
-                    "upgradePoints": 2
-                  },
-                  {
                     "addNames": ["Malcador"],
                     "addCount": 2,
                     "upgradePoints": 3
@@ -259,11 +255,6 @@
                     "upgradePoints": 1
                   },
                   {
-                    "addNames": ["Cyclops"],
-                    "addCount": 4,
-                    "upgradePoints": 2
-                  },
-                  {
                     "addNames": ["Malcador"],
                     "addCount": 2,
                     "upgradePoints": 3
@@ -317,11 +308,6 @@
                     "upgradePoints": 1
                   },
                   {
-                    "addNames": ["Cyclops"],
-                    "addCount": 4,
-                    "upgradePoints": 2
-                  },
-                  {
                     "addNames": ["Charonite Ogryns"],
                     "addCount": 2,
                     "upgradePoints": 2
@@ -343,6 +329,11 @@
             {
               "add": {
                 "options": [
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
                   {
                     "addNames": ["Veletarii"],
                     "addCount": 2,
@@ -388,6 +379,11 @@
                 "options": [
                   {
                     "addNames": ["Hermes Light Sentinel Squadron"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
                     "addCount": 2,
                     "upgradePoints": 1
                   },
@@ -607,11 +603,6 @@
                     "addNames": ["Cyclops"],
                     "addCount": 2,
                     "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Cyclops"],
-                    "addCount": 4,
-                    "upgradePoints": 2
                   }
                 ]
               }
@@ -736,11 +727,6 @@
                     "upgradePoints": 1
                   },
                   {
-                    "addNames": ["Cyclops"],
-                    "addCount": 4,
-                    "upgradePoints": 2
-                  },
-                  {
                     "addNames": ["Hermes Light Sentinel Squadron"],
                     "addCount": 2,
                     "upgradePoints": 1
@@ -833,7 +819,19 @@
             "Auxilia Adjutant": 1,
             "Leman Russ": 8
           },
-          "upgrades": [],
+          "upgrades": [
+          {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
           "formationPoints": 2,
           "upgradePoints": 3
         }
@@ -861,6 +859,16 @@
               }
             }
           ],
+          "formationPoints": 1,
+          "upgradePoints": -3
+        },
+        {
+          "name": "Lightning Squadron",
+          "unitSpec": {
+            "Lightning Interceptor": 3
+          },
+          "upgrades": [
+            ],
           "formationPoints": 1,
           "upgradePoints": -3
         },
@@ -952,7 +960,7 @@
                 "options": [
                   {
                     "addNames": [
-                      "Deathstrike Missile"
+                      "Deathstrike Godspear Missile"
                     ],
                     "addCount": 1,
                     "upgradePoints": 1
@@ -991,201 +999,9 @@
         }
       ]
     },
-      {
-      "name": "Allies: Collegia Titanica Banners",
-      "description": "",
-      "formations": [
-        {
-          "name": "Warhound",
-          "unitSpec": {
-            "Warhound Scout Titan": 1
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Battle Weapon",
-                "removeCount": 1,
-                "options": [
-                  {
-                    "addNames": ["Support Weapon"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1,
-          "titanPoints": 1,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Warhound Pack",
-          "unitSpec": {
-            "Warhound Scout Titan": 2
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Battle Weapon",
-                "removeCount": 1,
-                "options": [
-                  {
-                    "addNames": ["Support Weapon"],
-                    "addCount": 1,
-                    "upgradePoints": 2
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1,
-          "upgradePoints": 2,
-          "titanPoints": 2,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Dire Wolf",
-          "unitSpec": {
-            "Dire Wolf Heavy Scout Titan": 1
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Battle Weapon",
-                "removeCount": 1,
-                "options": [
-                  {
-                    "addNames": ["Support Weapon"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Heavy Support Weapon"],
-                    "addCount": 1,
-                    "upgradePoints": 2
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1,
-          "upgradePoints": 1,
-          "titanPoints": 1,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Reaver",
-          "unitSpec": {
-            "Reaver Battle Titan": 1
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Battle Weapon",
-                "removeCount": 1,
-                "options": [
-                  {
-                    "addNames": ["Support Weapon"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Heavy Support Weapon"],
-                    "addCount": 1,
-                    "upgradePoints": 2
-                  }
-                ]
-              }
-            },
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Veteran Princeps"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 2,
-          "titanPoints": 2,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Warlord",
-          "unitSpec": {
-            "Warlord Battle Titan": 1
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Battle Weapon",
-                "removeCount": 1,
-                "options": [
-                  {
-                    "addNames": ["Support Weapon"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Heavy Support Weapon"],
-                    "addCount": 1,
-                    "upgradePoints": 2
-                  }
-                ]
-              }
-            },
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Veteran Princeps"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 2,
-          "upgradePoints": 1,
-          "titanPoints": 3,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Warmaster",
-          "unitSpec": {
-            "Veteran Princeps": 1,
-            "Warmaster Heavy Battle Titan": 1
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Battle Weapon",
-                "removeCount": 2,
-                "options": [
-                  {
-                    "addNames": ["Support Weapon"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 3,
-          "upgradePoints": 3,
-          "titanPoints": 4,
-          "alliedPoints": 1
-        }
-      ]
-    },
     {
-      "name": "Allies: Legiones Astartes Detachments",
-      "description": "The first formation selected must be a Tactical Detachment",
+      "name": "Legiones Astartes Detachments and Questoris Familia Lances",
+      "description": "May only have one Legiones Astartes Detachment or Questoris Familia Lance per two Solar Auxilia Core Sections",
       "formations": [
         {
           "name": "Tactical Detachment",
@@ -1208,34 +1024,6 @@
                     "addNames": ["Legion Heavy Support Squad|Missile Launcher"],
                     "addCount": 2,
                     "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Contemptor Dreadnought"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Land Speeder Detachment",
-          "unitSpec": {
-            "Proteus Land Speeder": 3
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Proteus Land Speeder",
-                "removeCount": 3,
-                "options": [
-                  {
-                    "addNames": ["Javelin Attack Speeder"],
-                    "addCount": 3,
-                    "upgradePoints": 0
                   }
                 ]
               }
@@ -1244,48 +1032,21 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Proteus Land Speeder"],
-                    "addCount": 1,
+                    "addNames": ["Rhino"],
+                    "addCount": 2,
                     "upgradePoints": 1
                   },
                   {
-                    "addNames": ["Javelin Attack Speeder"],
-                    "addCount": 1,
+                    "addNames": ["Support Rhino"],
+                    "addCount": 2,
                     "upgradePoints": 1
                   }
                 ]
               }
             }
           ],
-          "formationPoints": 1,
-          "upgradePoints": -1,
-          "alliedPoints": 1
+          "formationPoints": 1
         },
-        {
-          "name": "Predator Detachment",
-          "unitSpec": {
-            "Predator": 3
-          },
-          "upgrades": [],
-          "formationPoints": 1,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Sicarian Detachment",
-          "unitSpec": {
-            "Sicarian": 2
-          },
-          "upgrades": [],
-          "formationPoints": 1,
-          "upgradePoints": -1,
-          "alliedPoints": 1
-        }
-      ]
-    },
-    {
-      "name": "Allies: Questoris Familia Lances",
-      "description": "",
-      "formations": [
         {
           "name": "Armiger Lance",
           "unitSpec": {
@@ -1306,8 +1067,7 @@
               }
             }
           ],
-          "formationPoints": 1,
-          "alliedPoints": 1
+          "formationPoints": 1
         },
         {
           "name": "Questoris Lance",
@@ -1365,10 +1125,195 @@
               }
             }
           ],
+          "formationPoints": 1
+        }
+      ]
+    },
+    {
+      "name": "Collegia Titanica Banners",
+      "description": "",
+      "formations": [
+        {
+          "name": "Warhound",
+          "unitSpec": {
+            "Warhound Scout Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
           "formationPoints": 1,
-          "alliedPoints": 1
+          "titanPoints": 1
+        },
+        {
+          "name": "Warhound Pack",
+          "unitSpec": {
+            "Warhound Scout Titan": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 1,
+          "upgradePoints": 2,
+          "titanPoints": 2
+        },
+        {
+          "name": "Dire Wolf",
+          "unitSpec": {
+            "Dire Wolf Heavy Scout Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 1,
+          "upgradePoints": 1,
+          "titanPoints": 1
+        },
+        {
+          "name": "Reaver",
+          "unitSpec": {
+            "Reaver Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 2,
+          "titanPoints": 2
+        },
+        {
+          "name": "Warlord",
+          "unitSpec": {
+            "Warlord Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 2,
+          "upgradePoints": 1,
+          "titanPoints": 3
+        },
+        {
+          "name": "Warmaster",
+          "unitSpec": {
+            "Veteran Princeps": 1,
+            "Warmaster Heavy Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 3,
+          "upgradePoints": 3,
+          "titanPoints": 4
         }
       ]
     }
-  ]
+  ]   
 }

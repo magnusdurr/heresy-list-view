@@ -2069,14 +2069,13 @@
       ]
     },
     {
-      "name": "Scorpius Missile Launcher",
+      "name": "Scorpius Multi-Launcher",
       "modes": [
         {
-          "firepower": "AP5+/AT5+",
+          "firepower": "2x AP6+/AT6+",
           "range": 45,
           "specialRules": [
-            "Indirect Fire",
-            "Siege"
+            "Indirect Fire"
           ]
         }
       ]
@@ -2085,10 +2084,11 @@
       "name": "Whirlwind Missile Launcher",
       "modes": [
         {
-          "firepower": "1BP",
+          "firepower": "AP4+/AT6+",
           "range": 45,
           "specialRules": [
-            "Indirect Fire"
+            "Indirect Fire",
+            "Siege"
           ]
         }
       ]
@@ -4756,11 +4756,11 @@
       "name": "Telepathic Terror",
       "modes": [
         {
-          "firepower": "AP2+",
+          "firepower": "AP3+",
           "range": 15,
           "specialRules": [
             "Perils of the Warp",
-            "Rad"
+            "Sniper"
           ]
         }
       ]
@@ -5198,7 +5198,6 @@
           "range": "Small Arms",
           "specialRules": [
               "Extra Attacks(+2)",
-              "Force",
               "Disrupt",
               "First Strike"
           ]

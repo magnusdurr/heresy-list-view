@@ -83,14 +83,12 @@
         "weapons": [
           "Aetheric Lightning",
           "Telepathic Terror",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
-        "Prescience",
-          "Psyker",
+          "Blitz",
           "Invulnerable Save",
           "Leader",
-          "Teleport Homer",
           "Vox-Caster"
         ]
       },
@@ -99,11 +97,10 @@
         "type": "CH",
         "weapons": [
         "Aetheric Lightning",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
-        "Blitz",
-          "Psyker",
+          "Blitz",
           "Psychic Succour",
           "Leader",
           "Vox-Caster"
@@ -114,12 +111,10 @@
         "type": "CH",
         "weapons": [
           "Aetheric Lightning",
-          "Psychic Blast",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
-        "Blitz",
-          "Psyker",
+          "Blitz",
           "Invulnerable Save",
           "Machine Empathy",
           "Leader",
@@ -132,11 +127,10 @@
         "weapons": [
           "Aetheric Lightning",
           "Firestorm",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
-        "Blitz",
-          "Psyker",
+          "Blitz",
           "Invulnerable Save",
           "Leader",
           "Vox-Caster"
@@ -147,12 +141,11 @@
         "type": "CH",
         "weapons": [
           "Aetheric Lightning",
-          "Psychic Dart",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
-        "Prescience",
-          "Psyker",
+          "Prescience",
+          "Blitz",
           "Invulnerable Save",
           "Leader",
           "Vox-Caster"
@@ -164,12 +157,11 @@
         "weapons": [
           "Aetheric Lightning",
           "Biomantic Hammer",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
-        "Blitz",
-          "Psyker",
-          "Regeneration",
+          "Blitz",
+          "Invulnerable Save",
           "Leader",
           "Vox-Caster"
         ]
@@ -181,7 +173,6 @@
         ],
         "specialRules": [
           "Prescience",
-          "Psyker",
           "Leader",
           "Vox-Caster"
         ]
@@ -192,11 +183,10 @@
         "weapons": [
           "Aetheric Lightning",
           "Breach the Veil",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
-        "Prescience",
-          "Psyker",
+          "Blitz",
           "Invulnerable Save",
           "Leader",
           "Vox-Caster"
@@ -208,11 +198,10 @@
         "weapons": [
           "Aetheric Lightning",
           "Piercing the Aether",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
-        "Prescience",
-          "Psyker",
+        "Blitz",
           "Invulnerable Save",
           "Leader",
           "Vox-Caster"
@@ -224,11 +213,10 @@
         "weapons": [
           "Aetheric Lightning",
           "Vortex of Chaos",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
         "Blitz",
-          "Psyker",
           "Invulnerable Save",
           "Leader",
           "Vox-Caster"
@@ -240,15 +228,14 @@
         "weapons": [
           "Aetheric Lightning",
           "Storm's Fury",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
           "Blitz",
-          "Psyker",
           "Invulnerable Save",
           "Leader",
-          "Evasive",
-          "Vox-Caster"
+          "Vox-Caster",
+          "Evasive"
         ]
       },
       {
@@ -257,11 +244,10 @@
         "weapons": [
           "Aetheric Lightning",
           "Winds of Fenris",
-          "Force Weapon"
+          "Power Weapon"
         ],
         "specialRules": [
         "Blitz",
-          "Psyker",
           "Invulnerable Save",
           "Leader",
           "Vox-Caster"
@@ -1482,7 +1468,7 @@
           {
             "name": "Castellan",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 6,
         "ff": 6,
@@ -1494,19 +1480,19 @@
           {
             "name": "Scorpius",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 6,
         "ff": 6,
             "weapons": [
-          "Scorpius Missile Launcher",
+          "Scorpius Multi-Launcher",
           "Combi-Bolter"
             ]
           },
           {
             "name": "Hyperios",
         "type": "AV",
-        "speed": 30,
+        "speed": 25,
         "armour": 5,
         "cc": 6,
         "ff": 6,
@@ -1565,9 +1551,9 @@
         ]
       },
        {
-        "name": "Vindicator Demolisher",
+        "name": "Vindicator",
         "type": "AV",
-        "speed": 25,
+        "speed": 20,
         "armour": 4,
         "cc": 6,
         "ff": 4,
@@ -1576,7 +1562,8 @@
           "Combi-Bolter"
         ],
         "specialRules": [
-          "Walker"
+          "Walker",
+          "Spearhead"
         ]
       },
       {
@@ -1588,6 +1575,9 @@
         "ff": 6,
         "weapons": [
           "Magna Laser Destroyer"
+        ],
+        "specialRules": [
+          "Spearhead"
         ]
       },
       {
@@ -2069,10 +2059,29 @@
           "Twin Heavy Bolter||FxF"
         ],
         "specialRules": [
-          "Damage Capacity (4)",
+          "Damage Capacity (3)",
           "Reinforced Armour"
         ],
         "crit": "The Fellblade is destroyed."
+      },
+      {
+        "name": "Glaive Super-Heavy Tank",
+        "type": "WE",
+        "speed": "15",
+        "armour": 4,
+        "cc": 6,
+        "ff": 3,
+        "weapons": [
+          "Volkite Carronade",
+          "Quad Heavy Bolter|2|FxF",
+          "Twin Heavy Bolter||FxF"
+        ],
+        "specialRules": [
+          "Damage Capacity (3)",
+          "Reinforced Armour",
+          "Blitz"
+        ],
+        "crit": "The Glaive is destroyed."
       },
             {
         "name": "Falchion Super-Heavy Tank",
@@ -2087,7 +2096,7 @@
         "ff": 5,
         "weapons": [
           "Twin Vulcano Cannon",
-          "Laser Destroyer|2|FxF",
+          "Quad Lascannon|2|FxF",
           "Twin Heavy Bolter||FxF"
         ]
           },
@@ -2103,31 +2112,26 @@
           "Laser Destroyer|2|FxF",
           "Twin Heavy Bolter||FxF"
         ]
-          }
-        ],
-        "specialRules": [
-          "Damage Capacity: 4",
-          "Reinforced Armour"
-        ],
-        "crit": "The Falchion is destroyed."
-      },
-       {
-        "name": "Glaive Super-Heavy Tank",
+          },
+          {
+            "name": "Ascalon",
         "type": "WE",
         "speed": "15",
         "armour": 4,
         "cc": 6,
-        "ff": 4,
+        "ff": 5,
         "weapons": [
-          "Volkite Carronade",
-          "Quad Lascannon|2|FxF",
+          "Inferno Gun",
+          "Quad Heavy Bolter|2|FxF",
           "Twin Heavy Bolter||FxF"
+        ]
+          }
         ],
         "specialRules": [
-          "Damage Capacity (4)",
+          "Damage Capacity: 3",
           "Reinforced Armour"
         ],
-        "crit": "The Glaive is destroyed."
+        "crit": "The Falchion is destroyed."
       },
       {
         "name": "Legion Mastodon",

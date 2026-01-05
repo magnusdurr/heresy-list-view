@@ -663,7 +663,7 @@
     {
       "title": "Perils of the Warp",
       "description": [
-        "Roll two dice whenever attempting to use a weapon with this special rule. On a roll of a 3-5, it cannot be used this turn. On a roll of 2, the unit wielding the weapon suffers a hit, and its formation suffers a BM for having come under fire."
+        "Roll a dice whenever attempting to use a weapon with this special rule. On a roll of a 1, it cannot be used this turn, and its formation suffers a BM."
       ],
       "tags": ["weapon", "psyker"]
     },
@@ -968,23 +968,23 @@
       "tags": ["offboard"]
     },
     {
-      "title": "Deathstrike Missile Attack",
+      "title": "Deathstrike Godspear Missile Attack",
       "description": [
-        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(2), Shield Piercer attack on a single War Engine under the center of the marker."
+        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(D2), Crippling, Shield Disruptor attack on a single War Engine under the center of the marker."
       ],
       "tags": ["offboard"]
     },
     {
       "title": "Deathstrike Warp Missile Attack",
       "description": [
-        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(2), Shield Piercer attack on a single War Engine under the center of the marker."
+        "A Warp Missile attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(D2), Shield Piercer attack on a single War Engine under the center of the marker."
       ],
       "tags": ["offboard"]
     },
     {
       "title": "Deathstrike Vortex Missile Attack",
       "description": [
-        "A Vortex Missile attack places a small barrage template over the marker. All units under it suffers an AP6+/AT6+, MW, TK(1), IC, Shield Disruptor attack."
+        "A Vortex Missile attack places a small barrage template over the marker. All units under it suffers an AP6+/AT5+, MW, TK(1), IC, Shield Disruptor attack."
       ],
       "tags": ["offboard"]
     },

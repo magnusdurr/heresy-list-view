@@ -3,10 +3,10 @@
   "army": "Ultramarines (XIII) Legion",
   "version": "1.0.Alpha",
   "release": "2025-00-00",
-  "intro": "Ultramarines Legion armies gain 12 formation points <span class=\"badge badge-primary\">12 FP</span>, 14 upgrade points <span class=\"badge badge-success\">14 UP</span>, 4 Titan points <span class=\"badge badge-warning\">4 TP</span>, and 4 Ally points <span class=\"badge badge-info\">4 AP</span> for a normal sized battle. A negative UP value means that you gain that many upgrade points for taking a particular formation.",
+  "intro": "Ultramarines Legion armies gain 10 formation points <span class=\"badge badge-primary\">FP</span> 12 upgrade points <span class=\"badge badge-success\">UP</span> and 3 titan points <span class=\"badge badge-warning\">TP</span> for a normal sized battle. A negative <span class=\"badge badge-success\">UP</span> value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
   "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
-  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+. Solar Auxilia Allied Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule.",
+  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+. Solar Auxilia Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule.",
   "armyRules": "The 'And They Shall Know No Fear' special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
     "And They Shall Know No Fear",
@@ -46,10 +46,13 @@
         "Support Rhino|Havoc|Melta",
         "Sicarian|Accelerator|Omega|Punisher|Arcus",
         "Land Raider",
+        "Vindicator",
+        "Whirlwind|Castellan|Scorpius|Hyperios",
         "Sabre Strike Tank|Anvilus|Neutron",
         "Spartan|Lascannon|Destroyer",
         "Kratos|Battle Tank|Melta",
-        "Fellblade Super-Heavy Tank"
+        "Fellblade Super-Heavy Tank",
+        "Glaive Super-Heavy Tank"
       ]
     },
     {
@@ -96,9 +99,7 @@
         "Auxilia Lasrifle Squad",
         "Auxilia Flamer Squad",
         "Veletarii",
-        "Charonite Ogryns",
-        "Aethon Heavy Sentinel|Multi-Laser|Flamer|Autocannon",
-        "Leman Russ|Battle Tank|Vanquisher|Annihilator|Exterminator"
+        "Charonite Ogryns"
       ]
     }
   ],
@@ -170,12 +171,33 @@
                     "upgradePoints": 3
                   },
                   {
+                    "addNames": ["Cataphractii Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Fulmentarus Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
                     "addNames": ["Contemptor Dreadnought"],
                     "addCount": 2,
                     "upgradePoints": 2
                   },
                   {
-                    "addNames": ["Cataphractii Terminator Squad"],
+                    "addNames": ["Leviathan Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Deredeo Dreadnought"],
                     "addCount": 2,
                     "upgradePoints": 3
                   }
@@ -261,6 +283,16 @@
                     "addNames": ["Contemptor Dreadnought"],
                     "addCount": 2,
                     "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Cataphractii Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Fulmentarus Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
                   }
                 ]
               }
@@ -319,7 +351,7 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Contemptor Dreadnought"],
+                    "addNames": ["Legion Rapier|Laser Destroyer"],
                     "addCount": 2,
                     "upgradePoints": 2
                   }
@@ -335,7 +367,19 @@
           "unitSpec": {
             "Tarantula": 4
           },
-          "upgrades": [],
+          "upgrades": [
+          {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Tarantula"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+          }
+           ],
           "formationPoints": 1,
           "upgradePoints": -2
         },
@@ -352,6 +396,11 @@
                     "addNames": ["Land Raider"],
                     "addCount": 1,
                     "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Land Raider"],
+                    "addCount": 2,
+                    "upgradePoints": 4
                   }
                 ]
               }
@@ -372,6 +421,11 @@
                     "addNames": ["Predator"],
                     "addCount": 1,
                     "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Predator"],
+                    "addCount": 3,
+                    "upgradePoints": 4
                   }
                 ]
               }
@@ -386,12 +440,18 @@
           },
           "upgrades": [
             {
-              "add": {
+              "add": 
+              {
                 "options": [
                   {
                     "addNames": ["Sicarian"],
                     "addCount": 1,
                     "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Sicarian"],
+                    "addCount": 2,
+                    "upgradePoints": 3
                   }
                 ]
               }
@@ -416,6 +476,17 @@
                     "addNames": ["Captain", "Chaplain", "Librarian - Thaumaturgy"],
                     "addCount": 1,
                     "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Legion Assault Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
                   }
                 ]
               }
@@ -468,7 +539,19 @@
             "Lieutenant": 1,
             "Sky-Hunter Squadron": 3
           },
-          "upgrades": [],
+          "upgrades": [
+          {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Sky-Hunter Squadron"],
+                    "addCount": 3,
+                    "upgradePoints": 4
+                  }
+                ]
+              }
+            }
+          ],
           "formationPoints": 1,
           "upgradePoints": -1
         },
@@ -478,7 +561,19 @@
             "Lieutenant": 1,
             "Legion Outrider": 4
           },
-          "upgrades": [],
+          "upgrades": [
+          {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Legion Outrider"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
+          ],
           "formationPoints": 1,
           "upgradePoints": -1
         }
@@ -516,7 +611,7 @@
                   {
                     "addNames": ["Fulmentarus Terminator Squad"],
                     "addCount": 3,
-                    "upgradePoints": 1
+                    "upgradePoints": 0
                   }
                 ]
               }
@@ -526,6 +621,11 @@
                 "options": [
                   {
                     "addNames": ["Cataphractii Terminator Squad"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Fulmentarus Terminator Squad"],
                     "addCount": 1,
                     "upgradePoints": 2
                   }
@@ -677,6 +777,62 @@
           "formationPoints": 1
         },
         {
+          "name": "Vindicator Detachment",
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Vindicator": 3
+          },
+          "upgrades": [
+            {
+              "add": 
+              {
+                "options": [
+                  {
+                    "addNames": ["Vindicator"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 1
+        },
+        {
+          "name": "Whirlwind Detachment",
+          "unitSpec": {
+            "Whirlwind|Castellan": 4
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Whirlwind|Castellan",
+                "removeCount": 4,
+                "options": [
+                  {
+                    "addNames": ["Whirlwind|Scorpius"],
+                    "addCount": 4,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Whirlwind|Hyperios"],
+                    "addCount": 2,
+                    "upgradePoints": 1,
+                    "individual": true
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 1
+        },
+        {
           "name": "Sabre Detachment",
           "unitSpec": {
             "Sabre Strike Tank": 3
@@ -703,16 +859,43 @@
           "unitSpec": {
             "Kratos": 2
           },
-          "upgrades": [],
+          "upgrades": [
+          {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Kratos"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
+          ],
           "formationPoints": 1,
           "upgradePoints": 1
         },
         {
           "name": "Fellblade Detachment",
           "unitSpec": {
+            "Lieutenant": 1,
             "Fellblade Super-Heavy Tank": 1
           },
-          "upgrades": [],
+          "upgrades": [
+          {
+              "replace": {
+                "removeName": "Fellblade Super-Heavy Tank",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Glaive Super-Heavy Tank"],
+                    "addCount": 1,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            }
+          ],
           "formationPoints": 1,
           "titanPoints": 1
         }
@@ -852,7 +1035,48 @@
       ]
     },
     {
-      "name": "Allies: Collegia Titanica Banners",
+      "name": "Solar Auxilia Sections",
+      "description": "May only have one Solar Auxilia Section per two Core Detachments",
+      "formations": [
+        {
+          "name": "Auxilia Lasrifle Tercio",
+          "unitSpec": {
+            "Auxilia Captain": 1,
+            "Auxilia Command Squad|Calth": 1,
+            "Auxilia Lasrifle Squad": 7
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Lasrifle Squad",
+                "removeCount": 4,
+                "options": [
+                     {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Veletarii"],
+                    "addCount": 4,
+                    "upgradePoints": 2
+                     }
+                  ]
+               }
+            }
+          ],
+          "formationPoints": 1,
+          "upgradePoints": -1
+        }
+      ]
+    },
+    {
+      "name": "Collegia Titanica Banners",
       "description": "",
       "formations": [
         {
@@ -877,8 +1101,7 @@
           ],
           "formationPoints": 1,
           "upgradePoints": 1,
-          "titanPoints": 1,
-          "alliedPoints": 1
+          "titanPoints": 1
         },
         {
           "name": "Warhound Pack",
@@ -902,8 +1125,7 @@
           ],
           "formationPoints": 1,
           "upgradePoints": 3,
-          "titanPoints": 2,
-          "alliedPoints": 1
+          "titanPoints": 2
         },
         {
           "name": "Dire Wolf",
@@ -932,8 +1154,7 @@
           ],
           "formationPoints": 1,
           "upgradePoints": 2,
-          "titanPoints": 1,
-          "alliedPoints": 1
+          "titanPoints": 1
         },
         {
           "name": "Reaver",
@@ -986,8 +1207,7 @@
           ],
           "formationPoints": 2,
           "upgradePoints": 1,
-          "titanPoints": 2,
-          "alliedPoints": 1
+          "titanPoints": 2
         },
         {
           "name": "Warlord",
@@ -1027,8 +1247,7 @@
           ],
           "formationPoints": 2,
           "upgradePoints": 2,
-          "titanPoints": 3,
-          "alliedPoints": 1
+          "titanPoints": 3
         },
         {
           "name": "Warlord-Sinister",
@@ -1059,100 +1278,7 @@
           ],
           "formationPoints": 2,
           "upgradePoints": 4,
-          "titanPoints": 3,
-          "alliedPoints": 1
-        }
-      ]
-    },
-    {
-      "name": "Allies: Solar Auxilia Sections",
-      "description": "The first formation selected must be an Auxilia Lasrifle Tercio",
-      "formations": [
-        {
-          "name": "Auxilia Lasrifle Tercio",
-          "unitSpec": {
-            "Auxilia Captain": 1,
-            "Auxilia Command Squad|Calth": 1,
-            "Auxilia Lasrifle Squad": 7
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Lasrifle Squad",
-                "removeCount": 4,
-                "options": [
-                     {
-                    "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 4,
-                    "upgradePoints": 0
-                     },
-                     {
-                    "addNames": ["Charonite Ogryns"],
-                    "addCount": 2,
-                    "upgradePoints": 0
-                     },
-                     {
-                    "addNames": ["Veletarii"],
-                    "addCount": 4,
-                    "upgradePoints": 1
-                     }
-                  ]
-               }
-            }
-          ],
-          "formationPoints": 1,
-          "upgradePoints": -1
-        },
-        {
-          "name": "Ogryn Charonite Section",
-          "unitSpec": {
-            "Charonite Ogryns": 4
-          },
-          "upgrades": [],
-          "formationPoints": 1,
-          "upgradePoints": -1,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Veletaris Storm Section",
-          "unitSpec": {
-            "Veletarii": 4
-          },
-          "upgrades": [],
-          "formationPoints": 1,
-          "upgradePoints": -2,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Auxilia Heavy Sentinel Patrol",
-          "unitSpec": {
-            "Aethon Heavy Sentinel": 4
-          },
-          "upgrades": [],
-          "formationPoints": 1,
-          "upgradePoints": 1,
-          "alliedPoints": 1
-        },
-        {
-          "name": "Auxilia Leman Russ Squadron",
-          "unitSpec": {
-            "Leman Russ": 3
-          },
-          "upgrades": [
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Leman Russ"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1,
-          "alliedPoints": 1
+          "titanPoints": 3
         }
       ]
     }
