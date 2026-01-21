@@ -926,11 +926,12 @@
         {
           "name": "Fire Raptor",
           "unitSpec": {
+            "Lieutenant": 1,
             "Fire Raptor": 1
           },
           "upgrades": [],
           "formationPoints": 1,
-          "upgradePoints": -2
+          "upgradePoints": -1
         },
         {
           "name": "Xiphon Interceptor",

@@ -92,7 +92,6 @@
           "Vanguard",
           "Transport(10)"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
         "crit": "The Imperator Titan takes a point of damage."
       },
 
@@ -149,7 +148,6 @@
           "Vanguard",
           "Transport(10)"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
         "crit": "The Warmonger Titan takes a point of damage."
       },
       {
@@ -232,7 +230,6 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
         "crit": "The Warmaster Titan takes a point of damage."
       },
 
@@ -302,7 +299,6 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
         "crit": "The Warmaster Titan takes a point of damage."
       },
       {
@@ -386,7 +382,6 @@
           "Vanguard",
           "Prescience"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
         "crit": "The Warlord-Sinister Titan takes a point of damage."
       },
       {
@@ -463,7 +458,6 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
         "crit": "The Warlord Titan takes a point of damage."
       },
       {
@@ -537,7 +531,6 @@
           "Ponderous",
           "Steadfast"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
        "crit": "The Warbringer Titan takes a point of damage."
       },
 
@@ -615,7 +608,6 @@
           "Steadfast",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide.",
         "crit": "The Reaver Titan takes a point of damage."
       },
  
@@ -671,7 +663,6 @@
           "Reinforced Armour",
           "Walker"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
         "crit": "The Dire Wolf is destroyed."
       },
 
@@ -720,7 +711,6 @@
           "Walker",
           "Vanguard"
         ],
-        "notes": "May step over units and pieces of terrain that that are lower than the unit’s knees and less than 5cm wide",
         "crit": "The Warhound takes a point of damage."
       }
     ]

@@ -149,7 +149,7 @@
     {
       "title": "Sniper",
       "description": [
-        "Hits caused by a weapon with the 'Sniper' special rule ignores normal hit allocation rules, and may be targeted on any unit in the target formation that is within range and line of sight of the attack (FF and CC attacks have a 15 cm range). These hits are allocated at the same time as normal hits, but are completely separate from normal allocation rules. In addition, the target suffers an additional -1 save modifier to its normal, Reinforced Armour, or Cover saves."
+        "Hits caused by a weapon with the 'Sniper' special rule ignores normal hit allocation rules, and may be targeted on any unit in the target formation that is within range and line of sight of the attack (FF and CC attacks have a 15 cm range). These hits are allocated at the same time as normal hits, but are completely separate from normal allocation rules. In addition, the target suffers a -1 save modifier to its Armour value or Cover save."
       ],
       "tags": ["core", "weapon"]
     },
@@ -814,15 +814,15 @@
     {
       "title": "Teleport Homer",
       "description": [
-        "Units that Teleport within 15 cm from a friendly, unbroken unit with Teleport Homer already on the battlefield may re-roll 1:s when testing for Teleport Mishap. May not be used if there are any unbroken enemy units with the 'Psyker', 'Daemonic', or 'Prescience' special rules within 15 cm of the unit."
+        "Units that Teleport within 15 cm from a friendly, unbroken unit with Teleport Homer already on the battlefield may re-roll 1:s when testing for Teleport Mishap."
       ],
       "tags": ["unit", "offboard"]
     },
     {
       "title": "Offboard Support",
       "description": [
-        "Calling for Offboard Support is a new action that a player can take after having completed an Advance, Overwatch, Marshal, or Sustain Fire action with an unbroken formation that contains a unit with the Vox-Caster special rule. This counts as retaining the initiative, and thus cannot be done if the initiative has already been retained once. There is no need to do an Action Test in this case, the Offboard Support action automatically succeeds.",
-        "Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (depending on the type of Offboard Support) within Line of Sight of the unit with the Vox-Caster special rule to indicate where the Offboard Support asset will come enter the Battlefield.",
+        "The Offboard Support action may only be taken after an unbroken formation containing a unit with the Vox-Caster special rule has completed an Advance, Marshal, Overwatch or Sustain Fire Action. It is automatically successful, and is an exception to the rule that no formation may be activated more than once. The Offboard Support action counts as retaining the initiative and so may not be taken if the formation is already retaining the initiative.",
+        "Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (the range specified by the type of Offboard Support) and within Line of Sight of the unit with the Vox-Caster special rule (if used while being embarked in a transport or within a Stronghold, count LoS from the transporting unit). The marker indicates where the Offboard Support asset will enter the Battlefield.",
         "The Offboard Support is then carried out according to its special rules before the start of the next friendly action, or before the end phase, depending on which comes first."
       ],
       "tags": ["action", "offboard"]
@@ -838,38 +838,38 @@
     {
       "title": "Drop Pods",
       "description": [
-        "A formation consisting completely of units of INF (without the 'Bulky', 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Nimble' special rules may be placed in Drop Pods. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
-        "Once the Drop Pod arrives at the battlefield, move the Drop Pod marker up to 15 cm in any direction that does not place it in an enemy zone of control. Any enemy units within 10 cm of the centre of the drop pod are attacked by an AP6+/AT6+ (Disrupt) attack. After these attacks have been resolved, place the Drop Pods contents fully within 10 cm of the centre of the Drop Pod."
+        "A formation consisting completely of units of INF without the Bulky, Jump Packs or Mounted special rules, and/or LV & AV with the Nimble special rule may be placed in Drop Pods. These must be placed in the reserves along with the Drop Pod marker after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
+        "Once the Drop Pod arrives at the battlefield, move the Drop Pod marker up to 15 cm in any direction that does not place it in an enemy zone of control. Any enemy units within 10 cm of the centre of the Drop Pod are attacked by an AP6+/AT6+ (Disrupt) attack. After these attacks have been resolved, place its contents fully within 10 cm of the centre of the Drop Pod."
       ],
       "tags": ["formation", "offboard"]
     },
     {
       "title": "Dreadclaws",
       "description": [
-        "A formation consisting completely of units of INF (without the 'Jump Packs' or 'Mounted' special rules), and/or LV & AV with the 'Nimble' special rules may be placed in Dreadclaws. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
-        "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 20 cm in any direction that does not place it in an enemy zone of control. Then place the Dreadclaw contents fully within 10 cm of the centre of the Dreadclaw."
+        "A formation consisting completely of units of INF without the Bulky, Jump Packs or Mounted special rules, and/or LV & AV with the Nimble special rule may be placed in Dreadclaws. These must be placed in the reserves along with the Dreadclaw marker after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
+        "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 30 cm in any direction that does not place it in an enemy zone of control. Then place its contents fully within 10 cm of the centre of the Dreadclaw."
       ],
       "tags": ["formation", "offboard"]
     },
     {
       "title": "Dreadnought Drop Pods",
       "description": [
-        "A formation consisting completely of units of LV & AV with the 'Walker' special rules may be placed in Dreadnought Drop Pods. These must be placed in the reserves after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
-        "Once the Dreadclaw arrives at the battlefield, move the Dreadclaw marker up to 15 cm in any direction that does not place it in an enemy zone of control. Then place the Dreadclaw contents fully within 10 cm of the centre of the Dreadclaw."
+        "A formation consisting completely of units of LV & AV with the Walker special rule may be placed in Dreadnought Drop Pods. These must be placed in the reserves along with the Dreadnough Drop Pods after objectives have been placed, but before garrisons. They may only enter the battlefield through an Offboard Support action.",
+        "Once the Dreadnought Drop Pods arrives at the battlefield, move the Dreadnought Drop Pods up to 15 cm in any direction that does not place it in an enemy zone of control. Then place its contents fully within 10 cm of the centre of the Dreadnought Drop Pod."
       ],
       "tags": ["formation", "offboard"]
     },
     {
       "title": "Deathwind",
       "description": [
-        "A Deathwind attack places a marker within 15 cm of the model with 'Vox-Caster'. Once it arrives on the battlefield, it may be moved by 15 cm in any direction. Place the large barrage template with the centre hole over the marker. Any model under the template is attacked by a AP6+/AT6+ (Disrupt) attack"
+        "A Deathwind attack places a marker within 15 cm of the model with 'Vox-Caster'. Once it arrives on the battlefield, it may be moved by 30 cm in any direction. Place the large barrage template with the centre hole over the marker. Any model under the template is attacked by a AP6+/AT6+ (Disrupt) attack"
       ],
       "tags": ["formation", "offboard"]
     },
     {
       "title": "Palisade Drop Pod",
       "description": [
-        "A Palisade Drop Pod may only be used alongside other Drop Pods, and is added to a formation in Drop Pods or Dreadclaws during deployment. Place a Palisade marker next to the formation. All models in it counts as being in Cover and gains the Invulnerable Save special rule until it has been activated the first time."
+        "A Palisade Drop Pod may only be used alongside other Drop Pods, and is added to a formation in Drop Pods, Dreadclaws, or Dreadnought Drop Pods during deployment. All models in it counts as being in Cover and gains the Thick Rear Armour special rule against any Overwatch fire when disembarking."
       ],
       "tags": ["formation", "offboard"]
     },

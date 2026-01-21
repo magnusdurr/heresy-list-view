@@ -2073,9 +2073,16 @@
       "modes": [
         {
           "firepower": "2x AP6+/AT6+",
-          "range": 45,
+          "range": 30,
           "specialRules": [
             "Indirect Fire"
+          ]
+        },
+        {
+         "firepower": "2x AP6+/AT6+",
+         "join": "or",
+          "range": 60,
+          "specialRules": [
           ]
         }
       ]
@@ -2084,11 +2091,10 @@
       "name": "Whirlwind Missile Launcher",
       "modes": [
         {
-          "firepower": "AP4+/AT6+",
+          "firepower": "AP3+/AT6+",
           "range": 45,
           "specialRules": [
-            "Indirect Fire",
-            "Siege"
+            "Indirect Fire"
           ]
         }
       ]
