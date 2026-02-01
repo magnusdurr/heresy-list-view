@@ -1,7 +1,7 @@
 {
   "index": [
     {
-      "section": "Legiones Astartes - Loyalist",
+      "section": "Legiones Astartes",
       "color": "badge-primary",
       "index": [
         {
@@ -28,7 +28,7 @@
     },
     {
       "section": "Legiones Astartes - Traitor",
-      "color": "badge-danger",
+      "color": "badge-info",
       "index": [
         {
           "name": "",
@@ -68,13 +68,6 @@
               "img": "images/Auxilia_SaturnyneRams.png"
             },
             {
-              "name": "Cthonian Headhunters",
-              "description": "CXLII cohort",
-              "file": "CthonianHeadhunters",
-              "status": "approved",
-              "img": "images/Auxilia_CthonianHeadHunters.png"
-            },
-            {
               "name": "Calth High Guard",
               "description": "CCLV cohort",
               "file": "CalthHighGuard",
@@ -86,8 +79,27 @@
       ]
     },
     {
+      "section": "Imperialis Auxilia - Traitor",
+      "color": "badge-success",
+      "index": [
+        {
+          "name": "Solar Auxilia",
+          "abbreviation": "SolarAuxilia",
+          "lists": [
+            {
+              "name": "Cthonian Headhunters",
+              "description": "CXLII cohort",
+              "file": "CthonianHeadhunters",
+              "status": "approved",
+              "img": "images/Auxilia_CthonianHeadHunters.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "section": "Imperialis Militia",
-      "color": "badge-warning",
+      "color": "badge-secondary",
       "index": [
         {
           "name": "Imperialis Militia",
@@ -96,8 +108,8 @@
             {
               "name": "Aquila Asterius",
               "file": "AquilaAsterius",
-              "status": "approved",
-              "img": "images/Militia_Imp_3.JPG"
+              "status": "beta",
+              "img": "images/Symbol_Militia2.jpg"
             },
             {
               "name": "Slaves to the Void",
@@ -111,7 +123,7 @@
     },
     {
       "section": "Mechanicum",
-      "color": "badge-info",
+      "color": "badge-danger",
       "index": [
         {
           "name": "Taghmata Omnissiah",
@@ -128,42 +140,6 @@
               "file": "PhaetonTaghmata",
               "status": "beta",
               "img": "images/Taghmata_TriplexPhall.JPG"
-            }
-          ]
-        },
-        {
-          "name": "Skitarii",
-          "abbreviation": "Skitarii",
-          "lists": [
-            {
-              "name": "Synod of Mars",
-              "file": "legionesskitariimetalica",
-              "status": "beta",
-              "img": "images/Skitarii_Mars.jpg"
-            },
-            {
-              "name": "Ordo Reductor",
-              "file": "legionesskitariimetalica",
-              "status": "beta",
-              "img": "images/Skitarii_OrdoReductor.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Questoris",
-          "abbreviation": "Questoris",
-          "lists": [
-            {
-              "name": "House Orhlacc",
-              "file": "HouseOrhlacc",
-              "status": "approved",
-              "img": "images/Questoris_House_Orhlacc_2.JPG"
-            },
-            {
-              "name": "House Raven",
-              "file": "questorismechanicus",
-              "status": "beta",
-              "img": "images/Questoris_House_Raven.JPG"
             }
           ]
         }
@@ -188,6 +164,80 @@
               "file": "ForgeUrdesh",
               "status": "approved",
               "img": "images/DarkMechanicus_Urdesh_2.JPG"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Questoris Familia",
+      "color": "badge-warning",
+      "index": [
+        {
+          "name": "Questoris",
+          "abbreviation": "Questoris",
+          "lists": [
+            {
+              "name": "House Orhlacc",
+              "file": "HouseOrhlacc",
+              "status": "approved",
+              "img": "images/Questoris_House_Orhlacc_2.JPG"
+            },
+            {
+              "name": "House Raven",
+              "file": "questorismechanicus",
+              "status": "beta",
+              "img": "images/Questoris_House_Raven.JPG"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Universal Army Lists",
+      "color": "badge-light",
+      "index": [
+        {
+          "name": "",
+          "abbreviation": "",
+          "lists": [
+            {
+              "name": "Adeptus Astartes",
+              "description": "",
+              "file": "Astartes_Universal",
+              "status": "approved",
+              "img": "images/Symbol_Astartes.jpg"
+            },
+            {
+              "name": "Solar Auxilia",
+              "description": "",
+              "file": "Solar_Universal",
+              "status": "approved",
+              "img": "images/Symbol_SolarAuxilia.jpg"
+            },
+            {
+              "name": "Imperialis Militia",
+              "file": "Milita_Universal",
+              "status": "beta",
+              "img": "images/Symbol_Militia3.JPG"
+            },
+            {
+              "name": "Mechanicum",
+              "file": "Mechanicum_Universal",
+              "status": "beta",
+              "img": "images/Symbol_Mechanicus.JPG"
+            },
+            {
+              "name": "Questoris Familia",
+              "file": "Questoris_Universal",
+              "status": "beta",
+              "img": "images/Symbol_Questoris.png"
+            },
+            {
+              "name": "Collegia Titantica",
+              "file": "Titanica_Universal",
+              "status": "beta",
+              "img": "images/Symbol_Titanica.JPG"
             }
           ]
         }
