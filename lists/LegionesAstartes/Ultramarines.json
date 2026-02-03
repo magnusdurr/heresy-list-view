@@ -10,8 +10,7 @@
   "armyRules": "The 'And They Shall Know No Fear' special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
     "And They Shall Know No Fear",
-    "Army of Mankind",
-    "Chivalry"
+    "Army of Mankind"
   ],
   "units": [
     {
@@ -95,7 +94,7 @@
       "from": "SolarAuxilia.json",
       "units": [
         "Auxilia Captain",
-        "Auxilia Command Squad",
+        "Auxilia Command Squad|Calth",
         "Auxilia Lasrifle Squad",
         "Auxilia Flamer Squad",
         "Veletarii",
@@ -169,16 +168,6 @@
                     "addNames": ["Legion Heavy Support Squad"],
                     "addCount": 2,
                     "upgradePoints": 3
-                  },
-                  {
-                    "addNames": ["Cataphractii Terminator Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 3
-                  },
-                  {
-                    "addNames": ["Fulmentarus Terminator Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 3
                   }
                 ]
               }
@@ -198,6 +187,16 @@
                   },
                   {
                     "addNames": ["Deredeo Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Cataphractii Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Fulmentarus Terminator Squad"],
                     "addCount": 2,
                     "upgradePoints": 3
                   }
@@ -256,6 +255,17 @@
                   }
                 ]
               }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Legion Assault Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
             }
           ],
           "formationPoints": 1,
@@ -264,10 +274,10 @@
         {
           "name": "Veteran Detachment",
           "formationPoints": 1,
-          "upgradePoints": 1,
+          "upgradePoints": 2,
           "max": 1,
           "unitSpec": {
-            "Lieutenant": 1,
+            "Captain": 1,
             "Legion Veteran Squad": 4
           },
           "upgrades": [
@@ -278,21 +288,6 @@
                     "addNames": ["Rhino"],
                     "addCount": 2,
                     "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Contemptor Dreadnought"],
-                    "addCount": 2,
-                    "upgradePoints": 2
-                  },
-                  {
-                    "addNames": ["Cataphractii Terminator Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 3
-                  },
-                  {
-                    "addNames": ["Fulmentarus Terminator Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 3
                   }
                 ]
               }
@@ -343,16 +338,10 @@
                     "addNames": ["Legion Rapier|Quad Launcher"],
                     "addCount": 4,
                     "upgradePoints": 1
-                  }
-                ]
-              }
-            },
-            {
-              "add": {
-                "options": [
+                  },
                   {
                     "addNames": ["Legion Rapier|Laser Destroyer"],
-                    "addCount": 2,
+                    "addCount": 6,
                     "upgradePoints": 2
                   }
                 ]
@@ -374,7 +363,8 @@
                   {
                     "addNames": ["Tarantula"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 1,
+                    "individual": true
                   }
                 ]
               }
@@ -394,13 +384,9 @@
                 "options": [
                   {
                     "addNames": ["Land Raider"],
-                    "addCount": 1,
-                    "upgradePoints": 2
-                  },
-                  {
-                    "addNames": ["Land Raider"],
                     "addCount": 2,
-                    "upgradePoints": 4
+                    "upgradePoints": 2,
+                    "individual": true
                   }
                 ]
               }
@@ -421,11 +407,6 @@
                     "addNames": ["Predator"],
                     "addCount": 1,
                     "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Predator"],
-                    "addCount": 3,
-                    "upgradePoints": 4
                   }
                 ]
               }
@@ -447,11 +428,6 @@
                     "addNames": ["Sicarian"],
                     "addCount": 1,
                     "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Sicarian"],
-                    "addCount": 2,
-                    "upgradePoints": 3
                   }
                 ]
               }
@@ -476,17 +452,6 @@
                     "addNames": ["Captain", "Chaplain", "Librarian - Thaumaturgy"],
                     "addCount": 1,
                     "upgradePoints": 1
-                  }
-                ]
-              }
-            },
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Legion Assault Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 3
                   }
                 ]
               }
@@ -539,19 +504,6 @@
             "Lieutenant": 1,
             "Sky-Hunter Squadron": 3
           },
-          "upgrades": [
-          {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Sky-Hunter Squadron"],
-                    "addCount": 3,
-                    "upgradePoints": 4
-                  }
-                ]
-              }
-            }
-          ],
           "formationPoints": 1,
           "upgradePoints": -1
         },
@@ -561,21 +513,30 @@
             "Lieutenant": 1,
             "Legion Outrider": 4
           },
+          "formationPoints": 1,
+          "upgradePoints": -1
+        },
+        {
+          "name": "Vindicator Detachment",
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Vindicator": 3
+          },
           "upgrades": [
-          {
-              "add": {
+            {
+              "add": 
+              {
                 "options": [
                   {
-                    "addNames": ["Legion Outrider"],
-                    "addCount": 2,
-                    "upgradePoints": 2
+                    "addNames": ["Vindicator"],
+                    "addCount": 1,
+                    "upgradePoints": 1
                   }
                 ]
               }
             }
           ],
-          "formationPoints": 1,
-          "upgradePoints": -1
+          "formationPoints": 1
         }
       ]
     },
@@ -691,7 +652,7 @@
           "name": "Locutarus Storm Detachment",
           "max": 1,
           "unitSpec": {
-            "Lieutenant": 1,
+            "Captain": 1,
             "Locutarus Storm Squad": 4
           },
           "upgrades": [],
@@ -715,18 +676,29 @@
                     "upgradePoints": 2
                   },
                   {
+                    "addNames": ["Leviathan Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Deredeo Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
                     "addNames": ["Cataphractii Terminator Squad"],
                     "addCount": 2,
                     "upgradePoints": 3
                   },
                   {
-                    "addNames": ["Land Raider"],
+                    "addNames": ["Fulmentarus Terminator Squad"],
                     "addCount": 2,
-                    "upgradePoints": 3
-                  },
-                  {
-                    "addNames": ["Spartan"],
-                    "addCount": 1,
                     "upgradePoints": 3
                   }
                 ]
@@ -767,28 +739,6 @@
                 "options": [
                   {
                     "addNames": ["Deredeo Dreadnought"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1
-        },
-        {
-          "name": "Vindicator Detachment",
-          "unitSpec": {
-            "Lieutenant": 1,
-            "Vindicator": 3
-          },
-          "upgrades": [
-            {
-              "add": 
-              {
-                "options": [
-                  {
-                    "addNames": ["Vindicator"],
                     "addCount": 1,
                     "upgradePoints": 1
                   }
@@ -866,7 +816,7 @@
                   {
                     "addNames": ["Kratos"],
                     "addCount": 1,
-                    "upgradePoints": 2
+                    "upgradePoints": 3
                   }
                 ]
               }
@@ -876,9 +826,8 @@
           "upgradePoints": 1
         },
         {
-          "name": "Fellblade Detachment",
+          "name": "Super-Heavy Assault Detachment",
           "unitSpec": {
-            "Lieutenant": 1,
             "Fellblade Super-Heavy Tank": 1
           },
           "upgrades": [
@@ -1037,7 +986,7 @@
     },
     {
       "name": "Solar Auxilia Sections",
-      "description": "May only have one Solar Auxilia Section per two Core Detachments",
+      "description": "May have one Solar Auxilia Section per two Core Detachments",
       "formations": [
         {
           "name": "Auxilia Lasrifle Tercio",
@@ -1065,7 +1014,7 @@
                      {
                     "addNames": ["Veletarii"],
                     "addCount": 4,
-                    "upgradePoints": 2
+                    "upgradePoints": 1
                      }
                   ]
                }

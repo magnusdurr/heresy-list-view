@@ -2,32 +2,6 @@
   "index": [
     {
       "section": "Legiones Astartes",
-      "color": "badge-primary",
-      "index": [
-        {
-          "name": "",
-          "abbreviation": "LegionesAstartes",
-          "lists": [
-            {
-              "name": "Ultramarines",
-              "description": "XIII legion",
-              "file": "Ultramarines",
-              "status": "approved",
-              "img": "images/Legions_Ultramarines.jpg"
-            },
-            {
-              "name": "Imperial Fists",
-              "description": "VII legion",
-              "file": "ImperialFists",
-              "status": "beta",
-              "img": "images/Legions_ImperialFists.JPG"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Legiones Astartes - Traitor",
       "color": "badge-info",
       "index": [
         {
@@ -35,18 +9,32 @@
           "abbreviation": "LegionesAstartes",
           "lists": [
             {
-              "name": "Sons of Horus",
-              "description": "XVI legion",
-              "file": "SonsofHorus",
-              "status": "approved",
-              "img": "images/Legions_SonsOfHorus.jpg"
-            },
-            {
               "name": "Emperor's Children",
-              "description": "III legion",
+              "description": "III legion - Traitor",
               "file": "EmperorsChildren",
               "status": "beta",
               "img": "images/Legions_EmperorsChildren.jpg"
+            },
+            {
+              "name": "Imperial Fists",
+              "description": "VII legion - Loyalist",
+              "file": "ImperialFists",
+              "status": "beta",
+              "img": "images/Legions_ImperialFists.JPG"
+            },
+            {
+              "name": "Ultramarines",
+              "description": "XIII legion - Loyalist",
+              "file": "Ultramarines",
+              "status": "approved",
+              "img": "images/Legions_Ultramarines.jpg"
+            },
+            {
+              "name": "Sons of Horus",
+              "description": "XVI legion - Traitor",
+              "file": "SonsofHorus",
+              "status": "approved",
+              "img": "images/Legions_SonsOfHorus.jpg"
             }
           ]
         }
@@ -62,36 +50,24 @@
           "lists": [
             {
               "name": "Saturnyne Rams",
-              "description": "IX cohort",
+              "description": "IX cohort - Loyalist",
               "file": "SaturnyneRams",
               "status": "beta",
               "img": "images/Auxilia_SaturnyneRams.png"
             },
             {
-              "name": "Calth High Guard",
-              "description": "CCLV cohort",
-              "file": "CalthHighGuard",
-              "status": "approved",
-              "img": "images/Auxilia_CalthHighGuard.png"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Imperialis Auxilia - Traitor",
-      "color": "badge-success",
-      "index": [
-        {
-          "name": "Solar Auxilia",
-          "abbreviation": "SolarAuxilia",
-          "lists": [
-            {
               "name": "Cthonian Headhunters",
-              "description": "CXLII cohort",
+              "description": "CXLII cohort - Traitor",
               "file": "CthonianHeadhunters",
               "status": "approved",
               "img": "images/Auxilia_CthonianHeadHunters.png"
+            },
+            {
+              "name": "Calth High Guard",
+              "description": "CCLV cohort - Loyalist",
+              "file": "CalthHighGuard",
+              "status": "approved",
+              "img": "images/Auxilia_CalthHighGuard.png"
             }
           ]
         }
@@ -132,7 +108,7 @@
             {
               "name": "Phaeton Taghmata",
               "file": "PhaetonTaghmata",
-              "status": "approved",
+              "status": "beta",
               "img": "images/Taghmata_Phae_3.JPG"
             },
             {
@@ -162,7 +138,7 @@
             {
               "name": "Forge Urdesh",
               "file": "ForgeUrdesh",
-              "status": "approved",
+              "status": "beta",
               "img": "images/DarkMechanicus_Urdesh_2.JPG"
             }
           ]
@@ -180,7 +156,7 @@
             {
               "name": "House Orhlacc",
               "file": "HouseOrhlacc",
-              "status": "approved",
+              "status": "beta",
               "img": "images/Questoris_House_Orhlacc_2.JPG"
             },
             {
@@ -202,7 +178,7 @@
           "abbreviation": "",
           "lists": [
             {
-              "name": "Adeptus Astartes",
+              "name": "Legiones Astartes",
               "description": "",
               "file": "Astartes_Universal",
               "status": "approved",
@@ -228,15 +204,16 @@
               "img": "images/Symbol_Mechanicus.JPG"
             },
             {
+
               "name": "Questoris Familia",
               "file": "Questoris_Universal",
-              "status": "beta",
+              "status": "approved",
               "img": "images/Symbol_Questoris.png"
             },
             {
               "name": "Collegia Titantica",
               "file": "Titanica_Universal",
-              "status": "beta",
+              "status": "approved",
               "img": "images/Symbol_Titanica.JPG"
             }
           ]
