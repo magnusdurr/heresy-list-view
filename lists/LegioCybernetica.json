@@ -36,7 +36,7 @@
         "type": "LV",
         "speed": "Immobile",
         "armour": 5,
-        "ff": 5,
+        "ff": 6,
         "weapons": [
           "Twin Lascannon"
         ]
@@ -55,7 +55,7 @@
         "type": "LV",
         "speed": "Immobile",
         "armour": 5,
-        "ff": 3,
+        "ff": 4,
             "weapons": [
           "Twin Heavy Bolter"
             ]
@@ -74,8 +74,7 @@
         "specialRules": [
         "Cybernetica Cortex",
         "Expendable",
-        "Fearless",
-          "Vanguard"
+        "Fearless"
         ]
       },
              {
@@ -108,8 +107,7 @@
         "Expendable",
         "First Strike",
         "Blitz",
-        "Walker",
-         "Vanguard"
+        "Walker"
         ]
       },
       {

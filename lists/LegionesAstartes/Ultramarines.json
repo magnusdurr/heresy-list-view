@@ -501,7 +501,6 @@
         {
           "name": "Sky-Hunter Detachment",
           "unitSpec": {
-            "Lieutenant": 1,
             "Sky-Hunter Squadron": 3
           },
           "formationPoints": 1,
@@ -1227,7 +1226,7 @@
             }
           ],
           "formationPoints": 2,
-          "upgradePoints": 4,
+          "upgradePoints": 5,
           "titanPoints": 3
         }
       ]

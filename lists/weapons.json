@@ -380,7 +380,7 @@
       "name": "AC Hellstrike Missiles",
       "modes": [
         {
-          "firepower": "2x AP6+/AT4+",
+          "firepower": "2x AT5+",
           "range": 60,
           "specialRules": [
           ]

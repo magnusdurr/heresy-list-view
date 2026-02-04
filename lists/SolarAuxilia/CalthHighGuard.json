@@ -1,15 +1,14 @@
 {
   "fraction": "Solar Auxilia",
   "army": "Calth High Guard (CCLVth Cohort)",
-  "version": "1.0.Alpha",
-  "release": "2025-00-20",
+  "version": "1.0.Beta",
+  "release": "2026-02-01",
   "intro": "The Calth High Guard gain 10 formation points <span class=\"badge badge-primary\">FP</span> 12 upgrade points <span class=\"badge badge-success\">UP</span> and 3 titan points <span class=\"badge badge-warning\">TP</span> for a normal sized battle. A negative <span class=\"badge badge-success\">UP</span> value means that you gain that many upgrade points for taking a particular formation. In addition, the Calth High Guard gains a number of free upgrade points (equal to the number of titan points) that may only be used for purchasing Offboard Support Assets. In a normal sized battle, they thus gain <span class=\"badge badge-success\">3 UP</span> for this purpose.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
   "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
   "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The 'And They Shall Know No Fear' special rule applies to all Legiones Astartes Allied Detachments.",
   "specialRules": [
     "Army of Mankind",
-    "Chivalry",
     "And They Shall Know No Fear"
   ],
   "units": [
@@ -43,7 +42,7 @@
     {
       "from": "LegioCybernetica.json",
       "units": [
-        "Tarantula|Lascannon|Hyperios",
+        "Tarantula|Lascannon|Hyperios|Multi-Laser",
         "Cyclops|Demolitor|Incinerator"
       ],
       "unitRules": [
@@ -79,11 +78,13 @@
         "Legion Support Squad|Plasma",
         "Legion Tactical Squad",
         "Legion Heavy Support Squad|Missile Launcher",
-        "Contemptor Dreadnought|Assault|Gravis",
+        "Rhino",
+        "Support Rhino|Havoc|Melta",
+        "Javelin Attack Speeder|Cyclone|Lascannon",
+        "Sky-Hunter Squadron|Bolter",
         "Proteus Land Speeder|Melta|Plasma",
         "Javelin Attack Speeder|Cyclone|Lascannon",
-        "Predator|Annihilator|Destructor",
-        "Sicarian|Accelerator|Omega"
+        "Legion Outrider|Plasma"
       ],
       "unitRules": [
       ]
@@ -96,18 +97,6 @@
         "Warbringer Nemesis Battle Titan",
         "Warlord Battle Titan",
         "Warmaster Heavy Battle Titan"
-      ],
-      "unitRules": [
-      ]
-    },
-    {
-      "from": "QuestorisFamilia.json",
-      "units": [
-        "Armiger Knight|Warglaive|Helverin",
-        "Questoris Knight|Paladin|Errant|Crusader (Battle Cannon)|Crusader (Thermal Cannon)|Gallant|Warden",
-        "Questoris Stormspear Pod",
-        "Questoris Ironstorm Pod",
-        "Questoris Icarus Autocannon"
       ],
       "unitRules": [
       ]
@@ -288,13 +277,13 @@
                 "options": [
                   {
                     "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
+                    "addCount": 4,
+                    "upgradePoints": 2
                   },
                   {
                     "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
+                    "addCount": 4,
+                    "upgradePoints": 2
                   }
                 ]
               }
@@ -330,17 +319,23 @@
               "add": {
                 "options": [
                   {
+                    "addNames": ["Hermes Light Sentinel Squadron"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
                     "addNames": ["Cyclops"],
                     "addCount": 2,
                     "upgradePoints": 1
                   },
                   {
                     "addNames": ["Veletarii"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Hermes Light Sentinel Squadron"],
                     "addCount": 2,
                     "upgradePoints": 1
                   }
@@ -378,11 +373,6 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Hermes Light Sentinel Squadron"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
                     "addNames": ["Cyclops"],
                     "addCount": 2,
                     "upgradePoints": 1
@@ -391,6 +381,11 @@
                     "addNames": ["Veletarii"],
                     "addCount": 2,
                     "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 2,
+                    "upgradePoints": 2
                   }
                 ]
               }
@@ -431,29 +426,14 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Auxilia Lasrifle Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Auxilia Flamer Squad"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Charonite Ogryns"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Cyclops"],
+                    "addNames": ["Termite Assault Drill"],
                     "addCount": 2,
                     "upgradePoints": 1
                   },
                   {
                     "addNames": ["Termite Assault Drill"],
-                    "addCount": 2,
-                    "upgradePoints": 1
+                    "addCount": 3,
+                    "upgradePoints": 2
                   }
                 ]
               }
@@ -472,14 +452,21 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Charonite Ogryns"],
+                    "addNames": ["Auxilia Adjutant"],
                     "addCount": 1,
                     "upgradePoints": 1
-                  },
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
                   {
                     "addNames": ["Charonite Ogryns"],
                     "addCount": 3,
-                    "upgradePoints": 3
+                    "upgradePoints": 1,
+                    "individual": true
                   }
                 ]
               }
@@ -555,7 +542,8 @@
                   {
                     "addNames": ["Tarantula"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 1,
+                    "individual": true
                   }
                 ]
               }
@@ -569,7 +557,20 @@
           "unitSpec": {
             "Tarantula": 4
           },
-          "upgrades": [],
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Tarantula"],
+                    "addCount": 2,
+                    "upgradePoints": 1,
+                    "individual": true
+                  }
+                ]
+            }
+          }
+          ],
           "formationPoints": 1,
           "upgradePoints": -2
         },
@@ -1000,8 +1001,8 @@
       ]
     },
     {
-      "name": "Legiones Astartes Detachments and Questoris Familia Lances",
-      "description": "May only have one Legiones Astartes Detachment or Questoris Familia Lance per two Solar Auxilia Core Sections",
+      "name": "Legiones Astartes Detachments",
+      "description": "May have one Legiones Astartes Detachment per two Solar Auxilia Core Sections",
       "formations": [
         {
           "name": "Tactical Detachment",
@@ -1048,56 +1049,19 @@
           "formationPoints": 1
         },
         {
-          "name": "Armiger Lance",
+          "name": "Land Speeder Detachment",
           "unitSpec": {
-            "Armiger Knight Warglaive": 3
+            "Proteus Land Speeder": 3
           },
           "upgrades": [
             {
               "replace": {
-                "removeName": "Armiger Knight Warglaive",
+                "removeName": "Proteus Land Speeder",
                 "removeCount": 3,
                 "options": [
                   {
-                    "addNames": ["Armiger Knight Helverin"],
+                    "addNames": ["Javelin Attack Speeder"],
                     "addCount": 3,
-                    "upgradePoints": 0
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1
-        },
-        {
-          "name": "Questoris Lance",
-          "unitSpec": {
-            "Questoris Knight Paladin": 2
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Questoris Knight Paladin",
-                "removeCount": 2,
-                "options": [
-                  {
-                    "addNames": ["Questoris Knight Crusader"],
-                    "addCount": 2,
-                    "upgradePoints": 0
-                  },
-                  {
-                    "addNames": ["Questoris Knight Errant"],
-                    "addCount": 2,
-                    "upgradePoints": 0
-                  },
-                  {
-                    "addNames": ["Questoris Knight Warden"],
-                    "addCount": 2,
-                    "upgradePoints": 0
-                  },
-                  {
-                    "addNames": ["Questoris Knight Gallant"],
-                    "addCount": 2,
                     "upgradePoints": 0
                   }
                 ]
@@ -1107,25 +1071,38 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Questoris Ironstorm Pod"],
-                    "addCount": 2,
+                    "addNames": ["Proteus Land Speeder"],
+                    "addCount": 1,
                     "upgradePoints": 1
                   },
                   {
-                    "addNames": ["Questoris Stormspear Pod"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Questoris Icarus Autocannon"],
-                    "addCount": 2,
+                    "addNames": ["Javelin Attack Speeder"],
+                    "addCount": 1,
                     "upgradePoints": 1
                   }
                 ]
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
+        },
+        {
+          "name": "Sky-Hunter Detachment",
+          "unitSpec": {
+            "Sky-Hunter Squadron": 3
+          },
+          "formationPoints": 1,
+          "upgradePoints": -1
+        },
+        {
+          "name": "Outrider Detachment",
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Legion Outrider": 4
+          },
+          "formationPoints": 1,
+          "upgradePoints": -1
         }
       ]
     },

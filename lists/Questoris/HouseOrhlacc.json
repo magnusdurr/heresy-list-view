@@ -98,16 +98,85 @@
       "description": "Up to one Dominus Banner for each Questoris Banner",
       "formations": [
         {
-          "name": "Questoris",
-          "units": "Two Questoris Knight-Paladins, Crusaders, Errants, Wardens or Gallants. May not mix configurations",
-          "extraUnits": [
-            "Add one Questoris Knight of the same configuration: 125 points",
-            "Add one Twin Icarus Autocannon to each Questoris Knight in a formation with Knight-Paladins, Crusaders or Errants: 25 points",
-            "Seneschal",
-            "Lord Seneschal"
-          ],
-          "points": 325
-        }
+  "name": "Armiger Lance",
+  "unitSpec": {
+    "Armiger Knight Warglaive": 3
+  },
+  "upgrades": [
+    {
+      "replace": {
+        "removeName": "Armiger Knight Warglaive",
+        "removeCount": 3,
+        "options": [
+          {
+            "addNames": ["Armiger Knight Helverin"],
+            "addCount": 3,
+            "upgradePoints": 0
+          }
+        ]
+      }
+    }
+  ],
+  "formationPoints": 1
+},
+{
+  "name": "Questoris Lance",
+  "unitSpec": {
+    "Questoris Knight Paladin": 2
+  },
+  "upgrades": [
+    {
+      "replace": {
+        "removeName": "Questoris Knight Paladin",
+        "removeCount": 2,
+        "options": [
+          {
+            "addNames": ["Questoris Knight Crusader"],
+            "addCount": 2,
+            "upgradePoints": 0
+          },
+          {
+            "addNames": ["Questoris Knight Errant"],
+            "addCount": 2,
+            "upgradePoints": 0
+          },
+          {
+            "addNames": ["Questoris Knight Warden"],
+            "addCount": 2,
+            "upgradePoints": 0
+          },
+          {
+            "addNames": ["Questoris Knight Gallant"],
+            "addCount": 2,
+            "upgradePoints": 0
+          }
+        ]
+      }
+    },
+    {
+      "add": {
+        "options": [
+          {
+            "addNames": ["Questoris Ironstorm Pod"],
+            "addCount": 2,
+            "upgradePoints": 1
+          },
+          {
+            "addNames": ["Questoris Stormspear Pod"],
+            "addCount": 2,
+            "upgradePoints": 1
+          },
+          {
+            "addNames": ["Questoris Icarus Autocannon"],
+            "addCount": 2,
+            "upgradePoints": 1
+          }
+        ]
+      }
+    }
+  ],
+  "formationPoints": 1
+}
       ]
     },
     {
