@@ -34,7 +34,7 @@
           "Walker",
           "Nimble",
           "Reinforced Armour",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Artificia Machina",
           "Ponderous",
           "Vox-Caster"
@@ -59,7 +59,7 @@
           "Walker",
           "Nimble",
           "Reinforced Armour",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Artificia Machina",
           "Ponderous",
           "Vox-Caster"
@@ -78,7 +78,7 @@
         ],
         "specialRules": [
           "Leader",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Artificia Machina",
           "Ponderous",
           "Steadfast",
@@ -95,7 +95,7 @@
           "Power Weapon"
         ],
         "specialRules": [
-        "Invulnerable Save",
+        "Invulnerable Save(6+)",
         "Ponderous",
         "Steadfast",
         "Vox-Caster"
@@ -314,7 +314,7 @@
         "specialRules": [
         "Walker",
           "Nimble",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Ponderous",
           "Steadfast"
         ]
@@ -379,7 +379,7 @@
         "specialRules": [
           "Walker",
           "Nimble",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Ponderous",
           "Steadfast"
         ]

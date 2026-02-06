@@ -85,6 +85,7 @@
         "Veteran Princeps",
         "Warhound Scout Titan",
         "Dire Wolf Heavy Scout Titan",
+        "Warbringer Nemesis Battle Titan",
         "Reaver Battle Titan",
         "Warlord Battle Titan",
         "Warlord-Sinister Psi-Titan"
@@ -1106,6 +1107,59 @@
           "titanPoints": 1
         },
         {
+          "name": "Warbringer Nemesis",
+          "unitSpec": {
+            "Warbringer Nemesis Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Carapace Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Arm Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 2,
+          "upgradePoints": 1,
+          "titanPoints": 2
+        },
+        {
           "name": "Reaver",
           "unitSpec": {
             "Reaver Battle Titan": 1
@@ -1158,6 +1212,7 @@
           "upgradePoints": 1,
           "titanPoints": 2
         },
+
         {
           "name": "Warlord",
           "unitSpec": {

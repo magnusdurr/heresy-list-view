@@ -31,7 +31,7 @@
           "Power Weapon"
         ],
         "specialRules": [
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader"
         ]
       },
@@ -44,7 +44,7 @@
         "specialRules": [
           "Commander",
           "Teleport Homer",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Blitz",
           "Vox-Caster"
@@ -58,7 +58,7 @@
         ],
         "specialRules": [
           "Inspiring",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Blitz",
           "Vox-Caster"
@@ -72,7 +72,7 @@
         ],
         "specialRules": [
           "Machine Empathy",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -87,7 +87,7 @@
         ],
         "specialRules": [
           "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -115,7 +115,7 @@
         ],
         "specialRules": [
           "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Machine Empathy",
           "Leader",
           "Vox-Caster"
@@ -131,7 +131,7 @@
         ],
         "specialRules": [
           "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -146,7 +146,7 @@
         "specialRules": [
           "Prescience",
           "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -161,7 +161,7 @@
         ],
         "specialRules": [
           "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -187,7 +187,7 @@
         ],
         "specialRules": [
           "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -202,7 +202,7 @@
         ],
         "specialRules": [
         "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -217,7 +217,7 @@
         ],
         "specialRules": [
         "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -232,7 +232,7 @@
         ],
         "specialRules": [
           "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster",
           "Evasive"
@@ -248,7 +248,7 @@
         ],
         "specialRules": [
         "Blitz",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Leader",
           "Vox-Caster"
         ]
@@ -262,7 +262,7 @@
         "specialRules": [
           "Supreme Commander",
           "Vox-Caster",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Blitz"
         ]
       },
@@ -285,7 +285,7 @@
           "Inspiring",
           "Fearless",
           "Reinforced Armour",
-          "Invulnerable Save"
+          "Invulnerable Save(6+)"
         ]
       },
       {
@@ -475,7 +475,7 @@
         ],
         "specialRules": [
           "Honour Guard",
-          "Invulnerable Save"
+          "Invulnerable Save(6+)"
         ]
       },
       {
@@ -491,7 +491,7 @@
           "Lascutter"
         ],
         "specialRules": [
-          "Invulnerable Save"
+          "Invulnerable Save(6+)"
         ]
       },
       {

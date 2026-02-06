@@ -15,7 +15,7 @@
           "Supreme Commander",
           "Blitz",
           "Vox-Caster",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Inspiring"
         ]
       },
@@ -30,7 +30,7 @@
           "Leader",
           "Blitz",
           "Vox-Caster",
-          "Invulnerable Save"
+          "Invulnerable Save(6+)"
         ]
       },
       {
@@ -41,7 +41,7 @@
         "specialRules": [
           "Prescience",
           "Psyker",
-          "Invulnerable Save"
+          "Invulnerable Save(6+)"
         ]
       },
       {
@@ -53,7 +53,7 @@
         ],
         "specialRules": [
           "Psyker",
-          "Invulnerable Save"
+          "Invulnerable Save(6+)"
         ]
       },
       {
@@ -79,7 +79,7 @@
         "specialRules": [
           "Commander",
           "Vox-Caster",
-          "Invulnerable Save"
+          "Invulnerable Save(6+)"
         ]
       },
       {
@@ -493,7 +493,7 @@
           "Damage Capacity (3)",
           "Reinforced Armour",
           "Inspiring",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Chaos Gate",
           "Walker"
         ],
@@ -546,7 +546,7 @@
           "Void Shield (1)",
           "Reinforced Armour",
           "Inspiring",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Walker"
         ],
         "crit": "The unit is destroyed. All friendly formations within 10 cm suffers a Blast Marker."

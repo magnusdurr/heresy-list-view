@@ -4,11 +4,12 @@
     "specialRules": [
     ],
     "unit": [
+
       {
-        "name": "Deathstrike Missile",
+        "name": "Deathstrike Godspear Missile",
         "type": "CH",
         "weapons": [
-          "Deathstrike Missile"
+          "Deathstrike Godspear Missile"
         ],
         "specialRules": [
           "Offboard Support"
@@ -46,7 +47,7 @@
         "specialRules": [
           "Offboard Support",
           "Barrage(Small)",
-          "Artillery"
+          "Rapid Response"
         ]
       },
       {
@@ -58,7 +59,7 @@
         "specialRules": [
           "Offboard Support",
           "Barrage(Small)",
-          "Artillery"
+          "Rapid Response"
         ]
       },
       {
@@ -70,7 +71,7 @@
         "specialRules": [
           "Offboard Support",
           "Blind Burst",
-          "Artillery"
+          "Rapid Response"
         ]
       },
       {
@@ -113,7 +114,8 @@
           "Vindicare Assassin"
         ],
         "specialRules": [
-          "Assassin"
+          "Assassin",
+          "Rapid Response"
         ]
       },
       {
@@ -123,7 +125,8 @@
           "Culexus Assassin"
         ],
         "specialRules": [
-          "Assassin"
+          "Assassin",
+          "Rapid Response"
         ]
       },
       {
@@ -133,7 +136,8 @@
           "Callidus Assassin"
         ],
         "specialRules": [
-          "Assassin"
+          "Assassin",
+          "Rapid Response"
         ]
       },
       {
@@ -143,7 +147,8 @@
           "Eversor Assassin"
         ],
         "specialRules": [
-          "Assassin"
+          "Assassin",
+          "Rapid Response"
         ]
       },
       {
@@ -153,7 +158,8 @@
           "Infernus Abomination"
         ],
         "specialRules": [
-          "Assassin"
+          "Assassin",
+          "Rapid Response"
         ]
       }
     ]

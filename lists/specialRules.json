@@ -84,7 +84,7 @@
     {
       "title": "Invulnerable Save(x)",
       "description": [
-        "Units with the 'Invulnerable Save' special rule receive a second save of 6+, or the number within brackets, if they fail their first save for any reason. No modifiers ever apply to the second save. This save may be used against MW attacks, but may not be used against other types of damage that ignores saves completely, such as damage from terrain, extra damage from assaults or Blast Markers, or being too close to the enemy after completing a withdrawal move after becoming broken or failing to rally."
+        "Units with the 'Invulnerable Save(x)' special rule receive a second save equal to the number within brackets, if they fail their first save for any reason. No modifiers ever apply to the second save. This save may be used against MW attacks, but may not be used against other types of damage that ignores saves completely, such as damage from terrain, extra damage from assaults or Blast Markers, or being too close to the enemy after completing a withdrawal move after becoming broken or failing to rally."
       ],
       "tags": ["core", "unit"]
     },
@@ -821,8 +821,7 @@
     {
       "title": "Offboard Support",
       "description": [
-        "The Offboard Support action may only be taken after an unbroken formation containing a unit with the Vox-Caster special rule has completed an Advance, Marshal, Overwatch or Sustain Fire Action. It is automatically successful, and is an exception to the rule that no formation may be activated more than once. The Offboard Support action counts as retaining the initiative and so may not be taken if the formation is already retaining the initiative.",
-        "Unless otherwise specified in the description of the Offboard Support asset, the following procedure is used. Place a marker within x cm (the range specified by the type of Offboard Support) and within Line of Sight of the unit with the Vox-Caster special rule (if used while being embarked in a transport or within a Stronghold, count LoS from the transporting unit). The marker indicates where the Offboard Support asset will enter the Battlefield.",
+        "Place a marker within 30 cm, or the range specified by the type of Offboard Support, and within Line of Sight of the unit with the Vox-Caster special rule. If used while being embarked in a transport or within a Stronghold, count LoS from the transporting unit. The center of the marker indicates the spot the Offboard Support asset will enter the Battlefield.",
         "The Offboard Support is then carried out according to its special rules before the start of the next friendly action, or before the end phase, depending on which comes first."
       ],
       "tags": ["action", "offboard"]
@@ -876,9 +875,9 @@
     {
       "title": "Subterranean Assault",
       "description": [
-        "A Subterranean Assault may only enter the battlefield through an Offboard Support action. Unlike other Offboard Support Actions a Subterranean Assault will arrive immediately. Place the unit(s) transporting the Subterranean Assault fully within 20 cm of the unit with Vox-Caster that performed the Offboard Support action. You may then disembark any units inside.",
+        "A Subterranean Assault may only enter the battlefield through an Offboard Support action. Place the unit(s) transporting the Subterranean Assault fully within 20 cm of the unit with Vox-Caster that performed the Offboard Support action. You may then disembark any units inside.",
         "The surfacing of a Subterranean Assault transport, as well as any disembarkment of the units inside, is not considered to be movement for the purposes of Overwatch.",
-        "Surfacing a Subterranean Assault does not count as an action for the tunneling formation, but still counts as retaining the initiative."
+        "While surfacing a Subterranean Assault does not count as an action for the tunneling formation, it still counts as retaining the initiative."
       ],
       "tags": ["formation", "offboard"]
     },
@@ -906,7 +905,7 @@
     {
       "title": "Orbital Pin-Point Attack",
       "description": [
-        "A Pin-Point attack has a range of 30 cm, and may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(D3) attack on a single War Engine under the center of the marker."
+        "A Pin-Point attack may only be targeted at War Engines. Once it arrives on the battlefield, it will inflict an automatic MW, TK(D3) attack on a single War Engine under the center of the marker."
       ],
       "tags": ["offboard"]
     },
@@ -939,9 +938,9 @@
       "tags": ["offboard"]
     },
     {
-      "title": "Artillery",
+      "title": "Rapid Response",
       "description": [
-        "Offboard Support from Artillery has no delay, but will arrive immediately."
+        "Offboard Support with the Rapid Response special rule has no delay, but arrives immediately."
       ],
       "tags": ["offboard"]
     },
@@ -961,9 +960,9 @@
     },
     
     {
-      "title": "Divisio Assassinorum and Cults Abominatio",
+      "title": "Assassin",
       "description": [
-        "Assassins may be placed in a formation with a Vox-Caster using a Offboard Support action. Place an appropriate marker next to a unit in that formation to show that the assassin is now present in that unit. The effect is automatically triggered whenever the formation is next directly involved in an assault. If the formation is broken before this happens, or the unit with the marker is destroyed, the marker is lost. Once used, or lost, the asset may not be used again."
+        "The Assassin may be placed in a formation with at least one Infantry unit using a Offboard Support action. Place an appropriate marker next to the formation to show that the assassin is now present there. The assassin cannot be targeted, as it is considered to be in all Infantry units simultaneously. Its effect is automatically triggered whenever the formation is next directly involved in an assault, and can be used from any Infantry unit in the formation. If the formation becomes broken, or all Infantry units are destroyed, the assassin is lost. Once used, or lost, the assassin disappears and may not be used again during the battle."
       ],
       "tags": ["offboard"]
     },

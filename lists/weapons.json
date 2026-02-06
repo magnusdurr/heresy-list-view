@@ -5075,14 +5075,15 @@
       ]
     },
     {
-      "name": "Deathstrike Missile",
+      "name": "Deathstrike Godspear Missile",
       "modes": [
         {
           "range": "30",
           "specialRules": [
             "MW",
             "TK(D2)",
-            "Crippling"
+            "Crippling",
+            "Shield Disruptor"
           ]
         }
       ]
@@ -5205,6 +5206,7 @@
           "specialRules": [
               "Extra Attacks(+2)",
               "Disrupt",
+              "Shield Piercer",
               "First Strike"
           ]
         }

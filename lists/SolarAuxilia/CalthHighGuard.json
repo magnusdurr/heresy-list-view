@@ -61,12 +61,14 @@
     {
       "from": "OffboardSupport.json",
       "units": [
-        "Deathstrike Missile",
+        "Deathstrike Godspear Missile",
         "Deathstrike Warp Missile",
         "Deathstrike Plasma Missile",
         "Artillery Barrage",
         "Artillery Phospex Barrage",
-        "Artillery Blind Barrage"
+        "Artillery Blind Barrage",
+        "Clade Vindicare Assassin",
+        "Clade Culexus Assassin"
       ],
       "unitRules": [
       ]
@@ -94,7 +96,9 @@
       "units": [
         "Veteran Princeps",
         "Warhound Scout Titan",
+        "Dire Wolf Heavy Scout Titan",
         "Warbringer Nemesis Battle Titan",
+        "Reaver Battle Titan",
         "Warlord Battle Titan",
         "Warmaster Heavy Battle Titan"
       ],
@@ -668,11 +672,6 @@
               "add": {
                 "options": [
                   {
-                    "addNames": ["Hermes Light Sentinel Squadron"],
-                    "addCount": 2,
-                    "upgradePoints": 1
-                  },
-                  {
                     "addNames": ["Cyclops"],
                     "addCount": 2,
                     "upgradePoints": 1
@@ -809,6 +808,17 @@
 
                 ]
               }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
             }
           ],
           "formationPoints": 1,
@@ -828,6 +838,11 @@
                     "addNames": ["Cyclops"],
                     "addCount": 2,
                     "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Cyclops"],
+                    "addCount": 4,
+                    "upgradePoints": 2
                   }
                 ]
               }
@@ -991,6 +1006,34 @@
                     ],
                     "addCount": 1,
                     "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Clade Vindicare Assassin"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1,
+                    "oncePerArmy": true
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Clade Culexus Assassin"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1,
+                    "oncePerArmy": true
                   }
                 ]
               }
@@ -1187,14 +1230,27 @@
           "titanPoints": 1
         },
         {
-          "name": "Reaver",
+          "name": "Warbringer Nemesis",
           "unitSpec": {
-            "Reaver Battle Titan": 1
+            "Warbringer Nemesis Battle Titan": 1
           },
           "upgrades": [
             {
               "replace": {
-                "removeName": "Battle Weapon",
+                "removeName": "Carapace Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Arm Battle Weapon",
                 "removeCount": 1,
                 "options": [
                   {
@@ -1223,6 +1279,60 @@
             }
           ],
           "formationPoints": 2,
+          "upgradePoints": 1,
+          "titanPoints": 2
+        },
+        {
+          "name": "Reaver",
+          "unitSpec": {
+            "Reaver Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Carapace Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Arm Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 2,
+          "upgradePoints": 1,
           "titanPoints": 2
         },
         {

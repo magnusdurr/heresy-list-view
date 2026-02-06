@@ -13,7 +13,7 @@
         "specialRules": [
           "Supreme Commander",
           "Vox-Caster",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Inspiring"
         ]
       },
@@ -27,7 +27,7 @@
           "Commander",
           "Leader",
           "Vox-Caster",
-          "Invulnerable Save",
+          "Invulnerable Save(6+)",
           "Inspiring"
         ]
       },
@@ -586,6 +586,7 @@
         "specialRules": [
          "Transport(2)",
          "Offboard Support",
+         "Rapid Response",
          "Subterranean Assault",
          "Walker"
         ]
