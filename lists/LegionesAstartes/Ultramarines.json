@@ -5,7 +5,7 @@
   "release": "2026-00-00",
   "intro": "Ultramarines Legion armies gain 10 formation points <span class=\"badge badge-primary\">FP</span> 12 upgrade points <span class=\"badge badge-success\">UP</span> and 3 titan points <span class=\"badge badge-warning\">TP</span> for a normal sized battle. A negative <span class=\"badge badge-success\">UP</span> value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_Ultramarines",
-  "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
+  "strategy": "Ultramarines armies have a Strategy Rating of 4.",
   "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+. Solar Auxilia Sections have an initiative of 2+ and are subject to the 'Army of Mankind' special rule.",
   "armyRules": "The 'And They Shall Know No Fear' special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [

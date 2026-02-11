@@ -5,8 +5,8 @@
   "release": "2026-02-01",
   "intro": "The Calth High Guard gain 10 formation points <span class=\"badge badge-primary\">FP</span> 12 upgrade points <span class=\"badge badge-success\">UP</span> and 3 titan points <span class=\"badge badge-warning\">TP</span> for a normal sized battle. A negative <span class=\"badge badge-success\">UP</span> value means that you gain that many upgrade points for taking a particular formation. In addition, the Calth High Guard gains a number of free upgrade points (equal to the number of titan points) that may only be used for purchasing Offboard Support Assets. In a normal sized battle, they thus gain <span class=\"badge badge-success\">3 UP</span> for this purpose.",
   "armyforge": "EAH_SolarAuxilia_CalthHighGuard",
-  "strategy": "Solar Auxilia armies have a Strategy Rating of 2.",
-  "Initiative": "Legiones Astartes Allied Detachments and Collegia Titanica Allied Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Questoris Familia Lances have an Initiative Rating of 2+ and are subject to the 'Chivalry' special rule. The 'And They Shall Know No Fear' special rule applies to all Legiones Astartes Allied Detachments.",
+  "strategy": "Calth High Guard armies have a Strategy Rating of 2.",
+  "Initiative": "Legiones Astartes Detachments and Collegia Titanica Banners have an Initiative Rating of 1+. Calth High Guard Sections have an Initiative Rating of 2+, and are subject to the 'Army of Mankind' special rule. Legio Cybernetica Maniples have an initiative of 2+. The 'And They Shall Know No Fear' special rule applies to all Legiones Astartes Detachments.",
   "specialRules": [
     "Army of Mankind",
     "And They Shall Know No Fear"
@@ -67,8 +67,7 @@
         "Artillery Barrage",
         "Artillery Phospex Barrage",
         "Artillery Blind Barrage",
-        "Clade Vindicare Assassin",
-        "Clade Culexus Assassin"
+        "Clade Vindicare Assassin"
       ],
       "unitRules": [
       ]
@@ -1023,20 +1022,6 @@
                   }
                 ]
               }
-            },
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": [
-                      "Clade Culexus Assassin"
-                    ],
-                    "addCount": 1,
-                    "upgradePoints": 1,
-                    "oncePerArmy": true
-                  }
-                ]
-              }
             }
           ],
           "formationPoints": 0
@@ -1174,6 +1159,7 @@
             }
           ],
           "formationPoints": 1,
+          "upgradePoints": 1,
           "titanPoints": 1
         },
         {
@@ -1197,7 +1183,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": 2,
+          "upgradePoints": 3,
           "titanPoints": 2
         },
         {
@@ -1226,7 +1212,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": 1,
+          "upgradePoints": 2,
           "titanPoints": 1
         },
         {
@@ -1372,7 +1358,7 @@
             }
           ],
           "formationPoints": 2,
-          "upgradePoints": 1,
+          "upgradePoints": 2,
           "titanPoints": 3
         },
         {
