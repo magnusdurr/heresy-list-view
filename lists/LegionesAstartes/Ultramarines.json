@@ -74,7 +74,8 @@
       "units": [
         "Drop Pods",
         "Orbital Pin-Point Attack",
-        "Orbital Barrage",
+        "Orbital Macro Barrage",
+        "Orbital Plasma Barrage",
         "Artillery Barrage",
         "Artillery Blind Barrage"
       ]
@@ -958,7 +959,20 @@
                 "options": [
                   {
                     "addNames": [
-                      "Orbital Barrage"
+                      "Orbital Macro Barrage"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+                        {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Orbital Plasma Barrage"
                     ],
                     "addCount": 1,
                     "upgradePoints": 1

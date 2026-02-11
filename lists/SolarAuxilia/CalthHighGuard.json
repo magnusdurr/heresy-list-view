@@ -80,12 +80,7 @@
         "Legion Tactical Squad",
         "Legion Heavy Support Squad|Missile Launcher",
         "Rhino",
-        "Support Rhino|Havoc|Melta",
-        "Javelin Attack Speeder|Cyclone|Lascannon",
-        "Sky-Hunter Squadron|Bolter",
-        "Proteus Land Speeder|Melta|Plasma",
-        "Javelin Attack Speeder|Cyclone|Lascannon",
-        "Legion Outrider|Plasma"
+        "Support Rhino|Havoc|Melta"
       ],
       "unitRules": [
       ]
@@ -184,11 +179,6 @@
                     "addNames": ["Termite Assault Drill"],
                     "addCount": 4,
                     "upgradePoints": 2
-                  },
-                  {
-                    "addNames": ["Termite Assault Drill"],
-                    "addCount": 6,
-                    "upgradePoints": 3
                   }
                 ]
               }
@@ -255,11 +245,6 @@
                     "addNames": ["Termite Assault Drill"],
                     "addCount": 4,
                     "upgradePoints": 2
-                  },
-                  {
-                    "addNames": ["Termite Assault Drill"],
-                    "addCount": 6,
-                    "upgradePoints": 3
                   }
                 ]
               }
@@ -1075,62 +1060,6 @@
             }
           ],
           "formationPoints": 1
-        },
-        {
-          "name": "Land Speeder Detachment",
-          "unitSpec": {
-            "Proteus Land Speeder": 3
-          },
-          "upgrades": [
-            {
-              "replace": {
-                "removeName": "Proteus Land Speeder",
-                "removeCount": 3,
-                "options": [
-                  {
-                    "addNames": ["Javelin Attack Speeder"],
-                    "addCount": 3,
-                    "upgradePoints": 0
-                  }
-                ]
-              }
-            },
-            {
-              "add": {
-                "options": [
-                  {
-                    "addNames": ["Proteus Land Speeder"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  },
-                  {
-                    "addNames": ["Javelin Attack Speeder"],
-                    "addCount": 1,
-                    "upgradePoints": 1
-                  }
-                ]
-              }
-            }
-          ],
-          "formationPoints": 1,
-          "upgradePoints": -1
-        },
-        {
-          "name": "Sky-Hunter Detachment",
-          "unitSpec": {
-            "Sky-Hunter Squadron": 3
-          },
-          "formationPoints": 1,
-          "upgradePoints": -1
-        },
-        {
-          "name": "Outrider Detachment",
-          "unitSpec": {
-            "Lieutenant": 1,
-            "Legion Outrider": 4
-          },
-          "formationPoints": 1,
-          "upgradePoints": -1
         }
       ]
     },

@@ -7,7 +7,7 @@
 
       {
         "name": "Deathstrike Godspear Missile",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Deathstrike Godspear Missile"
         ],
@@ -18,7 +18,7 @@
       },
       {
         "name": "Deathstrike Warp Missile",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Deathstrike Warp Missile"
         ],
@@ -29,7 +29,7 @@
       },
       {
         "name": "Deathstrike Plasma Missile",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Deathstrike Plasma Missile"
         ],
@@ -40,7 +40,7 @@
       },
       {
         "name": "Artillery Barrage",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Artillery Barrage"
         ],
@@ -52,7 +52,7 @@
       },
       {
         "name": "Artillery Phospex Barrage",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Artillery Phospex Barrage"
         ],
@@ -64,7 +64,7 @@
       },
       {
         "name": "Artillery Blind Barrage",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Artillery Blind Barrage"
         ],
@@ -76,7 +76,7 @@
       },
       {
         "name": "Drop Pods",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Drop Pods"
         ],
@@ -87,7 +87,7 @@
       },
       {
         "name": "Orbital Pin-Point Attack",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Orbital Pin-Point Attack"
         ],
@@ -97,10 +97,10 @@
         "notes": "A Orbital Pin-Point Attack may only be targeted at War Engines, and always hits the target."
       },
       {
-        "name": "Orbital Barrage",
-        "type": "CH",
+        "name": "Orbital Macro Barrage",
+        "type": "Special",
         "weapons": [
-          "Orbital Barrage"
+          "Orbital Macro Barrage"
         ],
         "specialRules": [
           "Offboard Support",
@@ -108,8 +108,19 @@
         ]
       },
       {
+        "name": "Orbital Plasma Barrage",
+        "type": "Special",
+        "weapons": [
+          "Orbital Plasma Barrage"
+        ],
+        "specialRules": [
+          "Offboard Support",
+          "Barrage(Large)"
+        ]
+      },
+      {
         "name": "Clade Vindicare Assassin",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Vindicare Assassin"
         ],
@@ -120,7 +131,7 @@
       },
       {
         "name": "Clade Culexus Assassin",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Culexus Assassin"
         ],
@@ -131,7 +142,7 @@
       },
       {
         "name": "Clade Callidus Assassin",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Callidus Assassin"
         ],
@@ -142,7 +153,7 @@
       },
       {
         "name": "Clade Eversor Assassin",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Eversor Assassin"
         ],
@@ -153,7 +164,7 @@
       },
       {
         "name": "Cults Abominatio Infernus",
-        "type": "CH",
+        "type": "Special",
         "weapons": [
           "Infernus Abomination"
         ],

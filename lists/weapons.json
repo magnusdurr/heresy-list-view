@@ -4040,7 +4040,7 @@
       "modes": [
         {
           "firepower": "AP5+/AT4+",
-          "range": 45,
+          "range": 30,
           "specialRules": [
             "Ignore Cover",
             "Crippling",
@@ -5171,7 +5171,7 @@
       ]
     },
     {
-      "name": "Orbital Barrage",
+      "name": "Orbital Macro Barrage",
       "modes": [
         {
           "firepower": "AP4+/AT5+",
@@ -5183,6 +5183,17 @@
         }
       ]
     },
+        {
+      "name": "Orbital Plasma Barrage",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": "30",
+          "specialRules": [
+          ]
+        }
+      ]
+    },
     {
       "name": "Vindicare Assassin",
       "modes": [
@@ -5190,7 +5201,6 @@
           "firepower": "FF2+",
           "range": "Small Arms",
           "specialRules": [
-              "Extra Attacks(+1)",
               "Sniper",
               "First Strike"
           ]
@@ -5204,7 +5214,7 @@
           "firepower": "FF4+",
           "range": "Small Arms",
           "specialRules": [
-              "Extra Attacks(+2)",
+              "Extra Attacks(+1)",
               "Disrupt",
               "Shield Piercer",
               "First Strike"
@@ -5219,7 +5229,7 @@
           "firepower": "CC3+",
           "range": "Assault Weapon",
           "specialRules": [
-              "Extra Attacks(+2)",
+              "Extra Attacks(+1)",
               "Sniper",
               "First Strike"
           ]
@@ -5233,7 +5243,7 @@
           "firepower": "CC3+",
           "range": "Assault Weapon",
           "specialRules": [
-              "Extra Attacks(+3)",
+              "Extra Attacks(+2)",
               "First Strike"
           ]
         }
@@ -5246,7 +5256,7 @@
           "firepower": "CC4+",
           "range": "Assault Weapon",
           "specialRules": [
-              "Extra Attacks(+2)",
+              "Extra Attacks(+1)",
               "MW",
               "First Strike"
           ]
