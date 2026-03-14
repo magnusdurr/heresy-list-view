@@ -381,7 +381,7 @@
       "modes": [
         {
           "firepower": "2x AT5+",
-          "range": 60,
+          "range": 45,
           "specialRules": [
           ]
         }
@@ -413,7 +413,7 @@
       "name": "AC Colossus Bomb",
       "modes": [
         {
-          "firepower": "AT5+",
+          "firepower": "AT6+",
           "range": 15,
           "specialRules": [
             "Shield Piercer",
@@ -1184,10 +1184,61 @@
       "name": "Disintegrator",
       "modes": [
         {
-          "firepower": "AP6+",
-          "range": 30,
+          "firepower": "AP5+/AT6+",
+          "range": 15,
           "specialRules": [
-            "MW"
+            "Energetic",
+            "Lance",
+            "Shield Disruptor"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Twin Heavy Disintegrators",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 15,
+          "specialRules": [
+            "Energetic",
+            "Lance",
+            "Shield Disruptor"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "Shield Disruptor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paired Twin Heavy Disintegrators",
+      "modes": [
+        {
+          "firepower": "AP3+/AT5+",
+          "range": 15,
+          "specialRules": [
+            "Energetic",
+            "Lance",
+            "Shield Disruptor"
+          ]
+        },
+        {
+          "firepower": "Small Arms",
+          "join": "and",
+          "specialRules": [
+            "Shield Disruptor"
           ]
         }
       ]
@@ -3065,6 +3116,18 @@
       ]
     },
     {
+      "name": "Particle Shredders",
+      "modes": [
+        {
+          "firepower": "3x AP6+/AT6+",
+          "range": 15,
+          "specialRules": [
+            "Energetic"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Plasma Gun",
       "modes": [
         {
@@ -3128,10 +3191,36 @@
       "name": "Plasma Mortar",
       "modes": [
         {
-          "firepower": "AP5+/AT6+",
+          "firepower": "AP4+/AT5+",
           "range": 30,
           "specialRules": [
-            "Ignore Cover",
+            "Indirect Fire",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plasma Bombard",
+      "modes": [
+        {
+          "firepower": "AP4+/AT5+",
+          "range": 30,
+          "specialRules": [
+            "Indirect Fire",
+            "Siege"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paired Plasma Bombard",
+      "modes": [
+        {
+          "firepower": "2x AP4+/AT5+",
+          "range": 30,
+          "specialRules": [
+            "Indirect Fire",
             "Siege"
           ]
         }
@@ -4473,6 +4562,17 @@
       ]
     },
     {
+      "name": "Disruption Fist",
+      "modes": [
+        {
+          "firepower": "Assault Weapons",
+          "specialRules": [
+            "TK(1)"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Power Swords",
       "modes": [
         {
@@ -5132,7 +5232,6 @@
           "firepower": "AP4+/AT5+",
           "range": 30,
           "specialRules": [
-            "Disrupt",
             "Ignore Cover"
           ]
         }

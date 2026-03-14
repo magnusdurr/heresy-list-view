@@ -814,7 +814,7 @@
     {
       "title": "Teleport Homer",
       "description": [
-        "Units that Teleport within 15 cm from a friendly, unbroken unit with Teleport Homer already on the battlefield may re-roll 1:s when testing for Teleport Mishap."
+        "Units that Teleport within 15 cm from a friendly, unbroken unit with Teleport Homer already on the battlefield may re-roll failed rolls when testing for Teleport Mishap."
       ],
       "tags": ["unit", "offboard"]
     },
@@ -831,6 +831,13 @@
       "description": [
         "A formation consisting completely of units with the 'Teleport' special rule must be placed in the reserves before deployment. They may only enter the battlefield through an Offboard Support action. Immediately place the formation with all units completely within 15 cm of the unit with the 'Vox-Caster' special rule, and roll a D6 for each, to test if any teleport mishaps occured. For each roll of 1, the teleporting formation suffers a BM.",
         "Unlike some other Offboard Support actions, Teleporting grants immediately grants the controlling player the chance to retain the initiative twice, meaning that the formation that just arrived may attempt carry out an action."
+      ],
+      "tags": ["formation", "offboard"]
+    },
+    {
+      "title": "Saturnine Teleport",
+      "description": [
+        "When rolling for teleport mishap, the teleporting formation suffers a BM on a 1, 2, or 3, instead of just 1."
       ],
       "tags": ["formation", "offboard"]
     },

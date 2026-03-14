@@ -102,7 +102,6 @@
             "speed": "Bomber",
         "armour": 4,
             "weapons": [
-        "AC Hellstrike Missiles|2|FxF",
         "AC Heavy Bolter Turret|2|"
             ]
           },
@@ -112,7 +111,6 @@
             "speed": "Bomber",
         "armour": 4,
             "weapons": [
-          "AC Hellstrike Missiles||FxF",
           "AC Colossus Bomb||FxF",
           "AC Heavy Bolter Turret|2|"
             ]

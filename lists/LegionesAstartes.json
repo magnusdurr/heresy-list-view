@@ -922,18 +922,58 @@
       {
         "name": "Saturnine Terminator Squad",
         "type": "LV",
+        "variants": [
+          {
+            "name": "Bombard",
+        "type": "LV",
         "speed": 15,
         "armour": 4,
         "cc": 4,
-        "ff": 2,
-        "weapons": [
-          "Combi-Bolters",
-          "Combi-Melta",
-          "Power Weapons"
+        "ff": 3,
+            "weapons": [
+              "Paired Plasma Bombard"
+            ]
+          },
+          {
+            "name": "Disintegrator",
+        "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "ff": 3,
+            "weapons": [
+              "Paired Twin Heavy Disintegrators"
+            ]
+          },
+          {
+            "name": "Disruptor",
+        "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 4,
+        "ff": 3,
+            "weapons": [
+              "Twin Heavy Disintegrators",
+              "Disruptor"
+            ]
+          },
+          {
+            "name": "Commander",
+        "type": "LV",
+        "speed": 15,
+        "armour": 4,
+        "cc": 2,
+        "ff": 4,
+            "weapons": [
+              "Particle Shredders",
+              "Power Weapons"
+            ]
+          }
         ],
         "specialRules": [
           "Reinforced Armour",
           "Teleport",
+          "Saturnine Teleport",
           "Thick Rear Armour",
           "Vanguard",
           "Walker",

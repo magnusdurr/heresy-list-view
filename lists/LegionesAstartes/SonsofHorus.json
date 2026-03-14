@@ -1,15 +1,16 @@
 {
   "fraction": "Traitor Legiones Astartes",
   "army": "Sons of Horus (XVI) Legion",
-  "version": "1.0.Alpha",
-  "release": "2025-00-00",
-  "intro": "Sons of Horus Legion armies gain 12 formation points (F/p), 14 upgrade points (U/p), 4 Titan points (T/p), and 4 Ally points (A/p) for a normal sized battle. A negative U/p value means that you gain that many upgrade points for taking a particular formation.",
+  "version": "1.0.Beta",
+  "release": "2026-00-00",
+  "intro": "Sons of Horus Legion armies gain 10 formation points <span class=\"badge badge-primary\">FP</span> 12 upgrade points <span class=\"badge badge-success\">UP</span> and 3 titan points <span class=\"badge badge-warning\">TP</span> for a normal sized battle. A negative <span class=\"badge badge-success\">UP</span> value means that you gain that many upgrade points for taking a particular formation.",
   "armyforge": "EAH_LegionesAstartes_SonsofHorus",
-  "strategy": "Legiones Astartes armies have a Strategy Rating of 4.",
-  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Allied Banners have an initiative of 1+. Legio Cybernetica Maniples have an initiative of 2+ and are subject to the 'Cybernetica Cortex' special rule. Cthonian Headhunter Sections have an Initiative Rating of 2+, and are subject to the 'A Lean Race of Killers' special rule. Taghmata Omnissah Allied Maniples have an initiative of 2+ and are subject to the 'Malefica Mechanica' special rule.",
-  "armyRules": "The <i>And They Shall Know No Fear (ATSKNF)</i> special rule applies to all Sons of Horus Legion Detachments.",
+  "strategy": "Sons of Horus armies have a Strategy Rating of 4.",
+  "Initiative": "All Legiones Astartes Detachments and Collegia Titanica Banners have an initiative of 1+. Solar Auxilia Sections have an initiative of 2+ and are subject to the 'A Lean Race of Killers' special rule.",
+  "armyRules": "The 'And They Shall Know No Fear' special rule applies to all Ultramarines Legion Detachments.",
   "specialRules": [
-    "And They Shall Know No Fear (ATSKNF)"
+    "And They Shall Know No Fear",
+    "A Lean Race of Killers"
   ],
   "units": [
     {
@@ -22,16 +23,16 @@
         "Librarian - Anathemata",
         "Praetor",
         "Legion Assault Squad",
-        "Legion Support Squad|Rotor",
+        "Legion Support Squad|Plasma|Rotor",
         "Legion Tactical Squad",
-        "Legion Heavy Support Squad|Heavy Bolter",
+        "Legion Heavy Support Squad|Missile Launcher|Heavy Bolter",
         "Legion Despoiler Squad",
         "Catulan Reaver Squad",
         "Legion Destroyer Squad",
         "Cataphractii Terminator Squad",
         "Justaerin Terminator Squad",
+        "Saturnine Terminator Squad|Bombard|Disruptor|Disintegrator|Commander",
         "Legion Outriders|Bolter",
-        "Legion Rapier|Laser Destroyer|Quad Launcher",
         "Proteus Land Speeder|Melta|Plasma",
         "Javelin Attack Speeder|Cyclone|Lascannon",
         "Sky-Hunter Squadron|Bolter",
@@ -41,31 +42,13 @@
         "Predator|Annihilator|Destructor|Projector",
         "Rhino",
         "Support Rhino|Bolter|Melta",
-        "Vindicator Demolisher",
+        "Vindicator",
         "Vindicator Destroyer",
         "Land Raider",
         "Sabre Strike Tank|Anvilus|Neutron",
         "Spartan|Lascannon|Destroyer",
         "Kratos|Battle Tank|Melta",
         "Falchion Super-Heavy Tank|Vulcano Cannon|Neutron-Wave"
-      ],
-      "unitRules": [
-        "Energetic",
-        "Crippling",
-        "Psyker",
-        "Prescience",
-        "Force",
-        "Skirmisher",
-        "Siege",
-        "Vox-Caster",
-        "Vanguard",
-        "Evasive",
-        "Blitz",
-        "Transport (x)",
-        "Heavy Transport (x)",
-        "Assault Transport (x)",
-        "Primarch",
-        "Honour Guard"
       ]
     },
     {
@@ -75,14 +58,17 @@
         "Xiphon Interceptor",
         "Fire Raptor|Heavy Bolter|Autocannon|Lascannon",
         "Storm Eagle"
-      ],
-      "unitRules": [
-        "Offboard Support",
+      ]
+    },
+        {
+      "from": "OffboardSupport.json",
+      "units": [
         "Drop Pods",
         "Orbital Pin-Point Attack",
-        "Orbital Barrage",
-        "Artillery Barrage Strike",
-        "Artillery Blind Strike"
+        "Orbital Macro Barrage",
+        "Orbital Plasma Barrage",
+        "Artillery Barrage",
+        "Artillery Blind Barrage"
       ]
     },
     {
@@ -91,19 +77,10 @@
         "Veteran Princeps",
         "Warhound Scout Titan",
         "Dire Wolf Heavy Scout Titan",
+        "Warbringer Nemesis Battle Titan",
         "Reaver Battle Titan",
-        "Warlord Battle Titan"
-      ],
-      "unitRules": [
-        "Void Shields",
-        "Towering",
-        "Beam Projector",
-        "Graviton",
-        "Titan Hunter",
-        "Shield Piercer",
-        "Shield Disruptor",
-        "Ponderous",
-        "Steadfast"
+        "Warlord Battle Titan",
+        "Warmaster Heavy Battle Titan"
       ]
     },
     {
@@ -117,40 +94,7 @@
         "Dracosan|Lascannon|Demolisher",
         "Aurox",
         "Veletarii",
-        "Charonite Ogryns",
-        "Basilisk",
-        "Medusa"
-      ],
-      "unitRules": [
-        "A Lean Race of Killers",
-        "Ion Shield (x)"
-      ]
-    },
-    {
-      "from": "TaghmataOmnissah.json",
-      "units": [
-        "Tech-Priest Auxilia",
-        "Thallax Cohort|Multi-Laser",
-        "Ursarax Cohort",
-        "Myridon Secutor Host|Plasma-Fusil",
-        "Myridon Destructor Host|Beamer"
-      ],
-      "unitRules": [
-        "Malefica Mechanica"
-      ]
-    },
-    {
-      "from": "LegioCybernetica.json",
-      "units": [
-        "Tarantula|Lascannon|Bolter|Hyperios",
-        "Cyclops|Demolitor|Incinerator",
-        "Adsecularis Tech-Thrall Cohort",
-        "Vorax Battle-Automata Cohort",
-        "Arlatax Battle-Automata",
-        "Castellax Battle-Automata Cohort"
-      ],
-      "unitRules": [
-        "Cybernetica Cortex"
+        "Charonite Ogryns"
       ]
     }
   ],
@@ -161,386 +105,1192 @@
       "formations": [
         {
           "name": "Tactical Detachment",
-          "units": "One Lieutenant character, four Legion Tactical Squads",
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
-            "Replace two Legion Tactical Squads with two Legion Despoiler Squads (Free), two Legion Support Squads (1 U/p), or two Legion Heavy Support Squads (2 U/p)",
-            "Add two Legion Tactical Squads (2 U/p), two Contemptor Dreadnoughts of any single configuration (2 U/p), or two Cataphractii Terminator Squads (3 U/p)"
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Legion Tactical Squad": 4
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Lieutenant",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Captain", "Chaplain", "Librarian - Thaumaturgy"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Praetor"],
+                    "addCount": 1,
+                    "upgradePoints": 2,
+                    "oncePerArmy": true
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Legion Tactical Squad",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Legion Support Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Legion Heavy Support Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Legion Tactical Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                                    {
+                    "addNames": ["Legion Support Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Legion Heavy Support Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Contemptor Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Leviathan Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Deredeo Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Cataphractii Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Fulmentarus Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
-        },
-        {
-          "name": "Despoiler Detachment",
-          "units": "One Lieutenant character, four Legion Despoiler Squads",
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
-            "Add two Contemptor Dreadnoughts of any single configuration (2 U/p) or two Cataphractii Terminator Squads (3 U/p)"
-          ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
           "name": "Mechanized Tactical Detachment",
-          "units": "One Lieutenant character, four Legion Tactical Squads, two Rhinos",
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian (1 U/p), or with a Praetor (0-1 in the army, 2 U/p)",
-            "Replace two Rhinos in the formation with two Support Rhino of any single configuration: 1 U/p",
-            "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
-            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Legion Tactical Squad": 4,
+            "Rhino": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Lieutenant",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Captain", "Chaplain", "Librarian - Thaumaturgy"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Praetor"],
+                    "addCount": 1,
+                    "upgradePoints": 2,
+                    "oncePerArmy": true
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Rhino",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Support Rhino"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Land Raider"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Spartan"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Legion Assault Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1,
+          "upgradePoints": 1
+        },
+        {
+          "name": "Veteran Detachment",
+          "formationPoints": 1,
+          "upgradePoints": 2,
+          "max": 1,
+          "unitSpec": {
+            "Captain": 1,
+            "Legion Veteran Squad": 4
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Rhino"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Rhino",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Support Rhino"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Land Raider"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Spartan"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "name": "Sons of Horus Special Detachments",
+      "name": "Ultramarines Special Detachments",
       "description": "May have one Special Detachment for each Core Detachment",
       "formations": [
         {
           "name": "Rapier Detachment",
-          "units": "Four Legion Rapier Laser Destroyer",
-          "extraUnits": [
-          "Replace four Rapier Laser Destroyer with four Rapier Quad Launchers: 1 U/p",
-          "Add up to two Tarantulas of any configurations: 1 U/p each"
+          "unitSpec": {
+            "Legion Rapier|Laser Destroyer": 4
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Legion Rapier|Laser Destroyer",
+                "removeCount": 4,
+                "options": [
+                  {
+                    "addNames": ["Legion Rapier|Quad Launcher"],
+                    "addCount": 4,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Legion Rapier|Laser Destroyer"],
+                    "addCount": 6,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
-          "name": "Mechanized Support Detachment",
-          "units": "One Lieutenant, four Legion Support Squads, two Rhinos",
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
-            "Replace two Legion Support Squads with two Legion Heavy Support Squads (1 U/p), or replace four Legion Support Squads with four Legion Heavy Support Squads (2 U/p)",
-            "Replace two Rhinos in the formation with two Support Rhinos of any single configuration: 1 U/p",
-            "Replace two Rhinos in the formation with two Land Raiders: 3 U/p",
-            "Replace two Rhinos in the formation with one Spartan of any configuration: 3 U/p"
-          ],
-          "points": "1 F/p, 1 U/p"
+          "name": "Tarantula Maniple",
+          "unitSpec": {
+            "Tarantula": 4
+          },
+          "upgrades": [
+          {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Tarantula"],
+                    "addCount": 2,
+                    "upgradePoints": 1,
+                    "individual": true
+                  }
+                ]
+              }
+          }
+           ],
+          "formationPoints": 1,
+          "upgradePoints": -2
         },
         {
           "name": "Land Raider Detachment",
-          "units": "Two Land Raiders",
-          "extraUnits": [
-            "Add one Land Raider: 2 U/p"
+          "unitSpec": {
+            "Land Raider": 2
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Land Raider"],
+                    "addCount": 2,
+                    "upgradePoints": 2,
+                    "individual": true
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
           "name": "Predator Detachment",
-          "units": "Three Predators of any configurations",
-          "extraUnits": [
-            "Add one Predator of any configuration: 1 U/p"
+          "unitSpec": {
+            "Predator": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Predator"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
-          "name": "Vindicator Detachment",
-          "units": "Three Vindicators of any configuration",
-          "extraUnits": [
-            "Add up to one Vindicator of any configuration: 1 U/p"
+          "name": "Sicarian Detachment",
+          "unitSpec": {
+            "Sicarian": 2
+          },
+          "upgrades": [
+            {
+              "add": 
+              {
+                "options": [
+                  {
+                    "addNames": ["Sicarian"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Assault Detachment",
-          "units": "One Lieutenant character, four Legion Assault Squads",
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p"
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Legion Assault Squad": 4
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Lieutenant",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Captain", "Chaplain", "Librarian - Thaumaturgy"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
           "name": "Land Speeder Detachment",
-          "units": "Three Land Speeders or Attack Speeders of any configuration",
-          "extraUnits": [
-            "Add one Land Speeder or Attack Speeder of any configuration: 1 U/p"
+          "unitSpec": {
+            "Proteus Land Speeder": 3
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Proteus Land Speeder",
+                "removeCount": 3,
+                "options": [
+                  {
+                    "addNames": ["Javelin Attack Speeder"],
+                    "addCount": 3,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Proteus Land Speeder"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Javelin Attack Speeder"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Sky-Hunter Detachment",
-          "units": "One Lieutenant character, three Sky-Hunter Squadrons",
-          "extraUnits": [
-          ],
-          "points": "1 F/p"
+          "unitSpec": {
+            "Sky-Hunter Squadron": 3
+          },
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Outrider Detachment",
-          "units": "One Lieutenant character, four Legion Outriders",
-          "extraUnits": [
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Legion Outrider": 4
+          },
+          "formationPoints": 1,
+          "upgradePoints": -1
+        },
+        {
+          "name": "Vindicator Detachment",
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Vindicator": 3
+          },
+          "upgrades": [
+            {
+              "add": 
+              {
+                "options": [
+                  {
+                    "addNames": ["Vindicator"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         }
       ]
     },
     {
-      "name": "Sons of Horus Elite Detachments",
+      "name": "Ultramarines Elite Detachments",
       "description": "May only have one Elite Detachment for each two Core or Special Detachments",
       "formations": [
         {
           "name": "Terminator Detachment",
-          "units": "One Lieutenant character, three Cataphractii Terminator Squads",
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p",
-            "Add one Cataphractii Terminator Squad: 2 U/p"
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Cataphractii Terminator Squad": 3
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Lieutenant",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Captain", "Chaplain", "Librarian - Thaumaturgy"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Cataphractii Terminator Squad",
+                "removeCount": 3,
+                "options": [
+                  {
+                    "addNames": ["Fulmentarus Terminator Squad"],
+                    "addCount": 3,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Cataphractii Terminator Squad"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Fulmentarus Terminator Squad"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
         {
-          "name": "Destroyer Detachment",
-          "units": "One Lieutenant character, four Legion Destroyer Squads",
-          "extraUnits": [
+          "name": "Nemesis Destroyer Detachment",
+          "max": 1,
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Nemesis Destroyer Squad": 4
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Rhino"],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Contemptor Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Rhino",
+                "removeCount": 2,
+                "options": [
+                  {
+                    "addNames": ["Support Rhino"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                  },
+                  {
+                    "addNames": ["Land Raider"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Spartan"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 2
         },
         {
-          "name": "0-1 Catulan Reaver Detachment",
-          "units": "One Lieutenant character, four Catulan Reaver Squads",
-          "extraUnits": [
-            "Replace the Lieutenant character with a Captain, Chaplain, or Librarian: 1 U/p"
-          ],
-          "points": "1 F/p, 2 U/p"
+          "name": "Locutarus Storm Detachment",
+          "max": 1,
+          "unitSpec": {
+            "Captain": 1,
+            "Locutarus Storm Squad": 4
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "upgradePoints": 2
         },
         {
-          "name": "0-1 Primarch Detachment",
-          "units": "Horus Lupercal, Breaker of Tyrants, three Justaerin Terminator Squads",
-          "extraUnits": [
+          "name": "Primarch Detachment",
+          "max": 1,
+          "unitSpec": {
+            "Roboute Guilliman, Master of Ultramar": 1,
+            "Invictarus Suzerain Squad": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Contemptor Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 2
+                  },
+                  {
+                    "addNames": ["Leviathan Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Deredeo Dreadnought"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Cataphractii Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  },
+                  {
+                    "addNames": ["Fulmentarus Terminator Squad"],
+                    "addCount": 2,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 6 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 3
         },
         {
           "name": "Leviathan Detachment",
-          "units": "Three Leviathan Dreadnoughts of any configuration",
-          "extraUnits": [
-            "Add one Leviathan Dreadnought of any configuration: 1 U/p"
+          "unitSpec": {
+            "Leviathan Dreadnought": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Leviathan Dreadnought"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
         },
         {
           "name": "Deredeo Detachment",
-          "units": "Three Deredeo Dreadnoughts of any configuration",
-          "extraUnits": [
-            "Add one Deredeo Dreadnought of any configuration: 1 U/p"
+          "unitSpec": {
+            "Deredeo Dreadnought": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Deredeo Dreadnought"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p"
+          "formationPoints": 1
+        },
+        {
+          "name": "Whirlwind Detachment",
+          "unitSpec": {
+            "Whirlwind|Castellan": 4
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Whirlwind|Castellan",
+                "removeCount": 4,
+                "options": [
+                  {
+                    "addNames": ["Whirlwind|Scorpius"],
+                    "addCount": 4,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Whirlwind|Hyperios"],
+                    "addCount": 2,
+                    "upgradePoints": 1,
+                    "individual": true
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 1
         },
         {
           "name": "Sabre Detachment",
-          "units": "Three Sabre Strike Tanks of any configuration",
-          "extraUnits": [
-          "Add up to three Sabre Strike Tanks of any configuration: 1 U/p each"
+          "unitSpec": {
+            "Sabre Strike Tank": 3
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Sabre Strike Tank"],
+                    "addCount": 3,
+                    "upgradePoints": 1,
+                    "individual": true
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Kratos Detachment",
-          "units": "Two Kratos of any configuration",
-          "extraUnits": [
+          "unitSpec": {
+            "Kratos": 2
+          },
+          "upgrades": [
+          {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Kratos"],
+                    "addCount": 1,
+                    "upgradePoints": 3
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p"
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
         {
-          "name": "Falchion Detachment",
-          "units": "One Falchion Super-Heavy Tank of any configuration",
-          "extraUnits": [
+          "name": "Super-Heavy Assault Detachment",
+          "unitSpec": {
+            "Fellblade Super-Heavy Tank": 1
+          },
+          "upgrades": [
+          {
+              "replace": {
+                "removeName": "Fellblade Super-Heavy Tank",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Glaive Super-Heavy Tank"],
+                    "addCount": 1,
+                    "upgradePoints": 0
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p, 1 T/p"
+          "formationPoints": 1,
+          "upgradePoints": 1
         }
       ]
     },
     {
-      "name": "Sons of Horus Navy Detachments",
+      "name": "Ultramarines Navy Detachments",
       "description": "May only have one Navy Detachment for each two Core or Special Detachments",
       "formations": [
         {
           "name": "Storm Eagle",
-          "units": "One Storm Eagle",
-          "points": "1 F/p"
+          "unitSpec": {
+            "Storm Eagle": 1
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
-          "name": "Sokar Stormbird",
-          "units": "One Sokar Stormbird of any configuration",
-          "points": "1 F/p, 2 U/p, 1 T/p"
+          "name": "Thunderhawk Gunship",
+          "unitSpec": {
+            "Thunderhawk Gunship": 1
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "upgradePoints": 1
         },
         {
           "name": "Fire Raptor",
-          "units": "One Fire Raptor of any configuration",
-          "points": "1 F/p, -1 U/p"
+          "unitSpec": {
+            "Lieutenant": 1,
+            "Fire Raptor": 1
+          },
+          "upgrades": [],
+          "formationPoints": 1,
+          "upgradePoints": -1
         },
         {
           "name": "Xiphon Interceptor",
-          "units": "Two Xiphon Interceptors",
-          "extraUnits": [
-            "Add one additional Xiphon Interceptor: 2 U/p"
+          "unitSpec": {
+            "Xiphon Interceptor": 2
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Xiphon Interceptor"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, -2 U/p"
+          "formationPoints": 1,
+          "upgradePoints": -2
         }
       ]
     },
     {
-      "name": "Sons of Horus Offboard Support Assets",
-      "description": "",
+      "name": "Ultramarines Offboard Support Assets",
+      "description": "May only have one Offboard Support Asset for each Core Section",
       "formations": [
         {
-          "name": "Dreadclaws",
-          "points": "2 U/p"
-        },
-        {
-          "name": "Orbital Pin-Point Attack",
-          "points": "1 U/p"
-        },
-        {
-          "name": "Orbital Phospex Barrage",
-          "points": "1 U/p"
-        },
-        {
-          "name": "Artillery Barrage",
-          "points": "1 U/p"
-        },
-        {
-          "name": "2x Artillery Blind Strikes",
-          "points": "1 U/p"
+          "name": "Offboard support",
+          "unitSpec": {
+          },
+          "upgrades": [
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Drop Pods"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Artillery Blind Barrage"
+                    ],
+                    "addCount": 2,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Artillery Barrage"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Orbital Macro Barrage"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+                        {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Orbital Plasma Barrage"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": [
+                      "Orbital Pin-Point Attack"
+                    ],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 0
         }
       ]
     },
     {
-      "name": "Allies: Collegia Titanica Banners",
+      "name": "Solar Auxilia Sections",
+      "description": "May have one Solar Auxilia Section per two Core Detachments",
+      "formations": [
+        {
+          "name": "Auxilia Lasrifle Tercio",
+          "unitSpec": {
+            "Auxilia Captain": 1,
+            "Auxilia Command Squad|Calth": 1,
+            "Auxilia Lasrifle Squad": 7
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Lasrifle Squad",
+                "removeCount": 4,
+                "options": [
+                     {
+                    "addNames": ["Auxilia Flamer Squad"],
+                    "addCount": 4,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Charonite Ogryns"],
+                    "addCount": 2,
+                    "upgradePoints": 0
+                     },
+                     {
+                    "addNames": ["Veletarii"],
+                    "addCount": 4,
+                    "upgradePoints": 1
+                     }
+                  ]
+               }
+            }
+          ],
+          "formationPoints": 1,
+          "upgradePoints": -1
+        }
+      ]
+    },
+    {
+      "name": "Collegia Titanica Banners",
       "description": "",
       "formations": [
         {
           "name": "Warhound",
-          "units": "One Warhound Scout Titan",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon: 1 U/p"
+          "unitSpec": {
+            "Warhound Scout Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
+          "formationPoints": 1,
+          "upgradePoints": 1,
+          "titanPoints": 1
         },
         {
           "name": "Warhound Pack",
-          "units": "Two Warhound Scout Titans (must have the same armament)",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon: 2 U/p"
+          "unitSpec": {
+            "Warhound Scout Titan": 2
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 2 U/p, 2 T/p, 1 A/p"
+          "formationPoints": 1,
+          "upgradePoints": 3,
+          "titanPoints": 2
         },
         {
           "name": "Dire Wolf",
-          "units": "One Dire Wolf Heavy Scout Titan",
-          "extraUnits": [
-            "Replace the Battle Weapon with a Support Weapon (1 U/p) or with a Heavy Support Weapon (2 U/p)"
+          "unitSpec": {
+            "Dire Wolf Heavy Scout Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 U/p, 1 T/p, 1 A/p"
+          "formationPoints": 1,
+          "upgradePoints": 2,
+          "titanPoints": 1
+        },
+        {
+          "name": "Warbringer Nemesis",
+          "unitSpec": {
+            "Warbringer Nemesis Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Carapace Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Arm Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "formationPoints": 2,
+          "upgradePoints": 1,
+          "titanPoints": 2
         },
         {
           "name": "Reaver",
-          "units": "One Reaver Battle Titan",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 2 U/p"
+          "unitSpec": {
+            "Reaver Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Carapace Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            },
+            {
+              "replace": {
+                "removeName": "Arm Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "2 F/p, 2 T/p, 1 A/p"
+          "formationPoints": 2,
+          "upgradePoints": 1,
+          "titanPoints": 2
         },
+
         {
           "name": "Warlord",
-          "units": "One Warlord Battle Titan",
-          "extraUnits": [
-            "Replace one Battle Weapon with a Support Weapon (1 U/p) or Heavy Support Weapon (2 U/p).",
-            "Add one Veteran Princeps character to the formation: 2 U/p"
+          "unitSpec": {
+            "Warlord Battle Titan": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            },
+            {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Veteran Princeps"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
           ],
-          "points": "2 F/p, 1 U/p, 3 T/p, 1 A/p"
-        }
-      ]
-    },
-    {
-      "name": "Allies: Solar Auxilia Sections",
-      "description":  "The first formation selected must be an Auxilia Lasrifle Tercio",
-      "formations": [
-          {
-          "name": "Auxilia Lasrifle Tercio",
-          "units": "One Auxilia Captain in an Auxilia Command Squad, four Auxilia Lasrifle Squads, one Auxilia Flamer Squad",
-          "extraUnits": [
-           "Replace four Auxilia Lasrifle Squads with four Auxilia Feral Squads: Free",
-            "Add three Aurox: 1 U/p"
-          ],
-          "points": "1 F/p"
+          "formationPoints": 2,
+          "upgradePoints": 2,
+          "titanPoints": 3
         },
         {
-          "name": "Auxilia Dracosan Section",
-          "units": "One Auxilia Command Squad with an Auxilia Captain, three Auxilia Lasrifle Squads, one Dracosan - Lascannon",
-          "extraUnits": [
-            "Replace three Auxilia Lasrifle Squads with three Auxilia Feral Squads: Free",
-            "Replace one Dracosan Lascannon with two Dracosan - Demolisher: 2 U/p"
+          "name": "Warlord-Sinister",
+          "max": 1,
+          "unitSpec": {
+            "Warlord-Sinister Psi-Titan": 1,
+            "Veteran Princeps": 1
+          },
+          "upgrades": [
+            {
+              "replace": {
+                "removeName": "Battle Weapon",
+                "removeCount": 1,
+                "options": [
+                  {
+                    "addNames": ["Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  },
+                  {
+                    "addNames": ["Heavy Support Weapon"],
+                    "addCount": 1,
+                    "upgradePoints": 2
+                  }
+                ]
+              }
+            }
           ],
-          "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Ogryn Charonite Section",
-          "units": "Three Charonite Ogryns",
-          "extraUnits": [
-            "Add two Auxilia Lasrifle Squads, two Auxilia Flamer Squads, or two Auxilia Feral Squads: 1 U/p"
-          ],
-          "points": "1 F/p, -2 U/p, 1 A/p"
-        },
-        {
-          "name": "Veletaris Storm Section",
-          "units": "Four Veletarii",
-          "extraUnits": [
-            "Add two Veletarii: 2 U/p"
-          ],
-          "points": "1 F/p, -2 U/p, 1 A/p"
-        },
-        {
-          "name": "Auxilia Artillery Battery",
-          "units": "Three Basilisk and/or Medusa",
-          "extraUnits": [
-          "Add one Basilisk and/or Medusa: 1 U/p"
-          ],
-          "points": "1 F/p"
-        }
-      ]
-    },
-    {
-      "name": "Allies: Taghmata Omnissah Maniples",
-      "description": "The first formation selected must be an Adsecularis Maniple",
-      "formations": [
-        {
-          "name": "Adsecularis Maniple",
-          "units": "One Tech-Priest Auxilia, five Adsecularis Tech-Thrall Cohorts",
-          "extraUnits": [
-            "Add up to two Vorax Battle-Automata Cohorts: 1 U/p each",
-            "Add two Myrmidon Secutor Hosts: 2 U/p"
-          ],
-          "points": "1 F/p, -1 U/p, 1 A/p"
-        },
-         {
-          "name": "Thallax Maniple",
-          "units": "Four Thallax Cohorts",
-          "extraUnits": [
-           "Add up to two Ursarax Cohorts: 1 U/p each",
-            "Add up to two Vorax Battle-Automata Cohorts: 1 U/p each"
-          ],
-          "points": "1 F/p, 1 A/p"
-        },
-        {
-          "name": "Castellax Maniple",
-          "units": "Four Castellax Battle-Automata Cohorts",
-          "extraUnits": [
-          ],
-          "points": "1 F/p, -1 U/p, 1 A/p"
-        },
-        {
-          "name": "Myridon Maniple",
-          "units": "Four Myridon Destructors",
-          "extraUnits": [
-          "Add up to two Arlatax Battle-Automata: 1 U/p each"
-          ],
-          "points": "1 F/p, 1 U/p, 1 A/p"
-        },
-        {
-          "name": "Arlatax Maniple",
-          "units": "Four Arlatax Battle-Automata",
-          "extraUnits": [
-          ],
-          "points": "1 F/p, -1 U/p, 1 A/p"
+          "formationPoints": 2,
+          "upgradePoints": 5,
+          "titanPoints": 3
         }
       ]
     }
