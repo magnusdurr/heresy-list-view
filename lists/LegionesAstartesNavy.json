@@ -47,6 +47,7 @@
         ],
         "specialRules": [
           "Damage Capacity (2)",
+          "Vanguard",
           "Reinforced Armour",
           "Thick Rear Armour"
         ],
@@ -65,6 +66,7 @@
         ],
         "specialRules": [
           "Damage Capacity (2)",
+          "Vanguard",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Heavy Transport (4)"
@@ -102,6 +104,7 @@
         ],
         "specialRules": [
           "Damage Capacity (3)",
+          "Vanguard",
           "Reinforced Armour",
           "Thick Rear Armour",
           "Assault Transport (8)",
@@ -121,6 +124,7 @@
         ],
         "specialRules": [
           "Damage Capacity (3)",
+          "Vanguard",
           "Planetfall",
           "Reinforced Armour",
           "Transport",
@@ -160,6 +164,7 @@
         ],
         "specialRules": [
           "Damage Capacity (6)",
+          "Vanguard",
           "Void Shields (2)",
           "Reinforced Armour",
           "Thick Rear Armour",

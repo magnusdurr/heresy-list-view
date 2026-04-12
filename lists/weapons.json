@@ -4314,7 +4314,7 @@
             "TK(1)",
             "Ignore Cover",
             "Shield Piercer",
-            "Shock Pulse"
+            "Disrupt"
           ]
         },
         {
@@ -4446,7 +4446,8 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "Lance",
-            "Shock Pulse"
+            "Disrupt",
+            "Devastating Charge"
           ]
         }
       ]
@@ -5143,11 +5144,11 @@
       "name": "Natrix Shock Lance",
       "modes": [
         {
-          "firepower": "AT4+",
+          "firepower": "AT3+",
           "range": 15,
           "specialRules": [
             "Lance",
-            "Shock Pulse",
+            "Disrupt",
             "Shield Piercer",
             "FwA"
           ]
@@ -5156,11 +5157,11 @@
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
-            "Extra Attacks(+1)",
+            "Extra Attacks(+2)",
             "Lance",
-            "Shock Pulse",
-            "Shield Piercer",
-            "Devastating Charge"
+            "Disrupt",
+            "Devastating Charge",
+            "Shield Piercer"
           ]
         }
       ]
