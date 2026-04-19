@@ -5129,6 +5129,7 @@
       "modes": [
         {
           "firepower": "Small Arms",
+          "join": "and",
           "specialRules": [
             "Extra Attacks(+1)",
             "MW",
@@ -5144,24 +5145,15 @@
       "name": "Natrix Shock Lance",
       "modes": [
         {
-          "firepower": "AT3+",
-          "range": 15,
-          "specialRules": [
-            "Lance",
-            "Disrupt",
-            "Shield Piercer",
-            "FwA"
-          ]
-        },
-        {
           "firepower": "Small Arms",
           "join": "and",
           "specialRules": [
             "Extra Attacks(+2)",
             "Lance",
             "Disrupt",
-            "Devastating Charge",
-            "Shield Piercer"
+            "Shield Piercer",
+            "Devastating Charge"
+            
           ]
         }
       ]

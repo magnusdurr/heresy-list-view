@@ -1005,9 +1005,7 @@
         {
           "name": "Auxilia Lasrifle Tercio",
           "unitSpec": {
-            "Auxilia Captain": 1,
-            "Auxilia Command Squad|Calth": 1,
-            "Auxilia Lasrifle Squad": 7
+            "Auxilia Lasrifle Squad": 8
           },
           "upgrades": [
             {
@@ -1035,7 +1033,7 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": -1
+          "upgradePoints": -2
         }
       ]
     },

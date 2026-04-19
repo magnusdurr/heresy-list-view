@@ -969,7 +969,7 @@
     {
       "title": "Assassin",
       "description": [
-        "The Assassin may be placed in a formation with at least one Infantry unit using a Offboard Support action. Place an appropriate marker next to the formation to show that the assassin is now present there. The assassin cannot be targeted, as it is considered to be in all Infantry units simultaneously. Its effect is automatically triggered whenever the formation is next directly involved in an assault, and can be used from any Infantry unit in the formation. If the formation becomes broken, or all Infantry units are destroyed, the assassin is lost. Once used, or lost, the assassin disappears and may not be used again during the battle."
+        "The Assassin may be placed in a formation with at least one Infantry unit using a Offboard Support action. Place an appropriate marker next to the formation to show that the assassin is now present there. The assassin cannot be targeted, as it is considered to be in all Infantry units simultaneously. Its effect is automatically triggered whenever the formation is next directly involved in an assault, either as a defender or attacker, and can be used from any Infantry unit in the formation. The assassin cannot be used in support. If the formation becomes broken, or all Infantry units are destroyed, the assassin is lost. Once used, or lost, the assassin disappears and may not be used again during the battle."
       ],
       "tags": ["offboard"]
     },

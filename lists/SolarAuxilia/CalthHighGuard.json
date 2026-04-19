@@ -860,14 +860,25 @@
             }
           ],
           "formationPoints": 1,
-          "upgradePoints": -3
+          "upgradePoints": -2
         },
         {
           "name": "Lightning Squadron",
           "unitSpec": {
-            "Lightning Interceptor": 3
+            "Lightning Interceptor": 2
           },
           "upgrades": [
+                          {
+              "add": {
+                "options": [
+                  {
+                    "addNames": ["Lightning Interceptor"],
+                    "addCount": 1,
+                    "upgradePoints": 1
+                  }
+                ]
+              }
+            }
             ],
           "formationPoints": 1,
           "upgradePoints": -3
@@ -902,8 +913,7 @@
               }
             }
           ],
-          "formationPoints": 1,
-          "upgradePoints": -2
+          "formationPoints": 1
         }
       ]
     },
@@ -1020,7 +1030,6 @@
         {
           "name": "Tactical Detachment",
           "unitSpec": {
-            "Lieutenant": 1,
             "Legion Tactical Squad": 4
           },
           "upgrades": [
@@ -1059,7 +1068,8 @@
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": -1
         }
       ]
     },
