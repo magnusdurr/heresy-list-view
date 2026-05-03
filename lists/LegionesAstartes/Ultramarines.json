@@ -1005,6 +1005,7 @@
         {
           "name": "Auxilia Lasrifle Tercio",
           "unitSpec": {
+            "Adjutant": 1,
             "Auxilia Lasrifle Squad": 8
           },
           "upgrades": [
