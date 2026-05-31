@@ -520,12 +520,13 @@
         "cc": 2,
         "ff": 5,
         "weapons": [
-          "Bolt Pistols",
+          "Graviton Pistols",
           "Power Swords"
         ],
         "specialRules": [
           "Jump Packs",
-          "Vanguard"
+          "Vanguard",
+          "Evasive"
         ]
       },
       {
@@ -586,10 +587,10 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 5,
+            "cc": 4,
             "ff": 5,
             "weapons": [
-              "Plasma Gun|3"
+              "Plasma Gun|2"
             ]
           },
           {
@@ -597,10 +598,10 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 5,
-            "ff": 3,
+            "cc": 4,
+            "ff": 4,
             "weapons": [
-              "Flamer |3"
+              "Flamer |2"
             ]
           },
           {
@@ -608,10 +609,10 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 5,
-            "ff": 3,
+            "cc": 4,
+            "ff": 4,
             "weapons": [
-              "Rotor Cannon|3"
+              "Rotor Cannon|2"
             ]
           },
           {
@@ -619,10 +620,10 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 5,
+            "cc": 4,
             "ff": 5,
             "weapons": [
-              "Volkite Calvier|3"
+              "Volkite Calvier|2"
             ]
           },
           {
@@ -630,10 +631,10 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 5,
+            "cc": 4,
             "ff": 5,
             "weapons": [
-              "Melta Gun |3"
+              "Melta Guns "
             ]
           },
           {
@@ -641,10 +642,10 @@
             "type": "INF",
             "speed": 15,
             "armour": 4,
-            "cc": 5,
+            "cc": 4,
             "ff": 5,
             "weapons": [
-              "Graviton Gun|3"
+              "Graviton Gun|2"
             ]
           }
         ]
@@ -1311,6 +1312,7 @@
           }
         ],
         "specialRules": [
+          "Blitz",
           "Walker",
           "Nimble"
         ]

@@ -226,13 +226,6 @@
           "range": 30,
           "specialRules": [
           ]
-        },
-        {
-          "firepower": "Small Arms",
-          "join": "and",
-          "specialRules": [
-            "Extra Attacks(+1)"
-          ]
         }
       ]
     },
@@ -3242,7 +3235,7 @@
       "name": "Hellfire Plasma Cannonade",
       "modes": [
         {
-          "firepower": "2x AP6+/AT5+",
+          "firepower": "2x AP6+/AT6+",
           "range": 30,
           "specialRules": [
             "Energetic"
@@ -3733,7 +3726,7 @@
       "modes": [
         {
           "firepower": "AP4+/AT4+",
-          "range": 15,
+          "range": 30,
           "specialRules": [
             "Graviton(1)",
             "Energetic",
@@ -3745,6 +3738,7 @@
           "join": "and",
           "specialRules": [
             "Extra Attacks(+1)",
+            "Titan Hunter",
             "MW",
             "TK(D3)"
           ]
@@ -4734,6 +4728,8 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "Extra Attacks(+1)",
+            "Titan Hunter",
+            "Crippling",
             "MW",
             "TK(D3+1)"
           ]
@@ -4760,9 +4756,10 @@
           "firepower": "Assault Weapons",
           "specialRules": [
             "Extra Attacks(+1)",
+            "Titan Hunter",
+            "Crippling",
             "MW",
-            "TK(D6)",
-            "Siege"
+            "TK(D6)"
           ]
         }
       ]
@@ -4787,7 +4784,7 @@
         {
           "firepower": "Assault Weapons",
           "specialRules": [
-            "Extra Attacks(+4)",
+            "Extra Attacks(+3)",
             "MW"
           ]
         }

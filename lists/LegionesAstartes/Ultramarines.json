@@ -180,7 +180,7 @@
                   {
                     "addNames": ["Contemptor Dreadnought"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 3
                   },
                   {
                     "addNames": ["Leviathan Dreadnought"],
@@ -617,7 +617,7 @@
                   {
                     "addNames": ["Contemptor Dreadnought"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 3
                   }
                 ]
               }
@@ -674,7 +674,7 @@
                   {
                     "addNames": ["Contemptor Dreadnought"],
                     "addCount": 2,
-                    "upgradePoints": 2
+                    "upgradePoints": 3
                   },
                   {
                     "addNames": ["Leviathan Dreadnought"],
@@ -808,6 +808,7 @@
         {
           "name": "Kratos Detachment",
           "unitSpec": {
+            "Lieutenant": 1,
             "Kratos": 2
           },
           "upgrades": [
@@ -829,6 +830,7 @@
         {
           "name": "Super-Heavy Assault Detachment",
           "unitSpec": {
+            "Lieutenant": 1,
             "Fellblade Super-Heavy Tank": 1
           },
           "upgrades": [

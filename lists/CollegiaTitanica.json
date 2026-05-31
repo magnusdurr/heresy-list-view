@@ -167,8 +167,8 @@
         "type": "WE",
         "speed": 15,
         "armour": 4,
-        "cc": 4,
-        "ff": 5,
+        "cc": 5,
+        "ff": 4,
         "weaponMounts": [
            {
             "mount": "CARAPACE",
@@ -239,7 +239,7 @@
         "speed": 15,
         "armour": 4,
         "cc": 5,
-        "ff": 5,
+        "ff": 4,
         "weaponMounts": [
            {
             "mount": "CARAPACE",
