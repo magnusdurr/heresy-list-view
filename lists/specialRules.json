@@ -178,7 +178,7 @@
     {
       "title": "Cybernetica Cortex",
       "description": [
-        "Unless within 30cm of an unbroken friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex' special rule may only perform the Hold, Engage, Marshal, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 15cm of an enemy formation when rallying."
+        "Unless within 30cm of an unbroken friendly unit with the 'Vox-Caster' special rule, a formation that exclusively consists of units with the 'Cybernetica Cortex' special rule may only perform the Hold, Engage, Marshal, Sustained Fire, and Overwatch actions. In addition, such formations may only contest objectives, and always counts as being within 30cm of an enemy formation when rallying."
       ],
       "tags": ["unit", "formation", "mechanicum"]
     },
@@ -260,7 +260,7 @@
     {
       "title": "System Breakdown",
       "description": [
-        "A War Engine with the 'System Breakdown' special rule that has less than half of its remaining DC left suffer an additional -1 when attempting to activate, and may no longer use the 'Split Fire' or 'Ripple Fire' special rules."
+        "A War Engine with the 'System Breakdown' special rule that has less than half of its remaining DC left suffer an additional -1 when attempting to activate or rally, and may no longer use the 'Split Fire' or 'Ripple Fire' special rules."
       ],
       "tags": ["unit", "titan"]
     },

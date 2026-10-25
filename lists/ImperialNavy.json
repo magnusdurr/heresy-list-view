@@ -91,7 +91,6 @@
             "weapons": [
           "AC Autocannon Array||FxF",
           "AC Hellstrike Missiles||FxF",
-          "AC Bomb Racks||FxF",
           "AC Heavy Bolter Turret",
           "AC Assault Cannon Turret"
             ]
@@ -102,6 +101,7 @@
             "speed": "Bomber",
         "armour": 4,
             "weapons": [
+         "AC Bomb Racks||FxF",
         "AC Heavy Bolter Turret|2|"
             ]
           },
