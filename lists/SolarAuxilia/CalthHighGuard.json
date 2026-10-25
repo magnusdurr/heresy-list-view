@@ -913,7 +913,8 @@
               }
             }
           ],
-          "formationPoints": 1
+          "formationPoints": 1,
+          "upgradePoints": 1
         }
       ]
     },
